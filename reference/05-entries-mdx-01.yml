@@ -75,6 +75,10 @@
     to:
       type: DomesdayPlace
       placeId: '45796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -133,6 +137,10 @@
     to:
       type: DomesdayPlace
       placeId: '32356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -231,6 +239,10 @@
     to:
       type: DomesdayPlace
       placeId: '30526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -280,6 +292,10 @@
     to:
       type: DomesdayPlace
       placeId: '29761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Gore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -400,6 +416,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -442,6 +462,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -502,6 +526,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -552,6 +580,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -604,6 +636,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -652,6 +688,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -701,6 +741,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -748,6 +792,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -790,6 +838,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -829,6 +881,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -864,6 +920,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -918,6 +978,10 @@
     to:
       type: DomesdayPlace
       placeId: '39911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -958,6 +1022,10 @@
     to:
       type: DomesdayPlace
       placeId: '26166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1021,6 +1089,10 @@
     to:
       type: DomesdayPlace
       placeId: '26166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1067,6 +1139,10 @@
     to:
       type: DomesdayPlace
       placeId: '65716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1121,6 +1197,10 @@
     to:
       type: DomesdayPlace
       placeId: '65716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1171,6 +1251,10 @@
     to:
       type: DomesdayPlace
       placeId: '70521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1222,6 +1306,10 @@
     to:
       type: DomesdayPlace
       placeId: '29601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1266,6 +1354,10 @@
     to:
       type: DomesdayPlace
       placeId: '52976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1320,6 +1412,10 @@
     to:
       type: DomesdayPlace
       placeId: '64541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1367,6 +1463,10 @@
     to:
       type: DomesdayPlace
       placeId: '53491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1415,6 +1515,10 @@
     to:
       type: DomesdayPlace
       placeId: '35126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1461,6 +1565,10 @@
     to:
       type: DomesdayPlace
       placeId: '35126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1510,6 +1618,10 @@
     to:
       type: DomesdayPlace
       placeId: '45186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1554,6 +1666,10 @@
     to:
       type: DomesdayPlace
       placeId: '33781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1603,6 +1719,10 @@
     to:
       type: DomesdayPlace
       placeId: '33781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1648,6 +1768,10 @@
     to:
       type: DomesdayPlace
       placeId: '7241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1694,6 +1818,10 @@
     to:
       type: DomesdayPlace
       placeId: '57966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1739,6 +1867,10 @@
     to:
       type: DomesdayPlace
       placeId: '53491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1793,6 +1925,10 @@
     to:
       type: DomesdayPlace
       placeId: '21166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1860,6 +1996,10 @@
     to:
       type: DomesdayPlace
       placeId: '68821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1897,6 +2037,10 @@
     to:
       type: DomesdayPlace
       placeId: '68821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1943,6 +2087,10 @@
     to:
       type: DomesdayPlace
       placeId: '28941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1977,6 +2125,10 @@
     to:
       type: DomesdayPlace
       placeId: '28941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1996,7 +2148,7 @@
     phillimore: 4,5
     county: MDX
     countyName: Middlesex
-    kind: manor
+    kind: urban
     places: Staines
     name: Staines (Middlesex 4,5)
     holding: borough
@@ -2026,6 +2178,10 @@
     to:
       type: DomesdayPlace
       placeId: '57696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2069,6 +2225,10 @@
     to:
       type: DomesdayPlace
       placeId: '60466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2110,6 +2270,10 @@
     to:
       type: DomesdayPlace
       placeId: '55331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2154,6 +2318,10 @@
     to:
       type: DomesdayPlace
       placeId: '27626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2197,6 +2365,10 @@
     to:
       type: DomesdayPlace
       placeId: '29256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2238,6 +2410,10 @@
     to:
       type: DomesdayPlace
       placeId: '18176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2278,6 +2454,10 @@
     to:
       type: DomesdayPlace
       placeId: '36251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Gore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2338,6 +2518,10 @@
     to:
       type: DomesdayPlace
       placeId: '31151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Gore
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2403,6 +2587,10 @@
     to:
       type: DomesdayPlace
       placeId: '29666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2509,6 +2697,10 @@
     to:
       type: DomesdayPlace
       placeId: '65746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2568,6 +2760,10 @@
     to:
       type: DomesdayPlace
       placeId: '30256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2615,6 +2811,10 @@
     to:
       type: DomesdayPlace
       placeId: '29271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2662,6 +2862,10 @@
     to:
       type: DomesdayPlace
       placeId: '29666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2713,6 +2917,10 @@
     to:
       type: DomesdayPlace
       placeId: '29636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2770,6 +2978,10 @@
     to:
       type: DomesdayPlace
       placeId: '16806'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2817,6 +3029,10 @@
     to:
       type: DomesdayPlace
       placeId: '31861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2866,6 +3082,10 @@
     to:
       type: DomesdayPlace
       placeId: '19706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2917,6 +3137,10 @@
     to:
       type: DomesdayPlace
       placeId: '34481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3005,6 +3229,10 @@
     to:
       type: DomesdayPlace
       placeId: '57696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3055,6 +3283,10 @@
     to:
       type: DomesdayPlace
       placeId: '57696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3100,6 +3332,10 @@
     to:
       type: DomesdayPlace
       placeId: '24666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3144,6 +3380,10 @@
     to:
       type: DomesdayPlace
       placeId: '24666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3193,6 +3433,10 @@
     to:
       type: DomesdayPlace
       placeId: '35536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3239,6 +3483,10 @@
     to:
       type: DomesdayPlace
       placeId: '58091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Gore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3303,6 +3551,10 @@
     to:
       type: DomesdayPlace
       placeId: '22341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -3391,6 +3643,10 @@
     to:
       type: DomesdayPlace
       placeId: '35126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3438,6 +3694,10 @@
     to:
       type: DomesdayPlace
       placeId: '27626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3481,6 +3741,10 @@
     to:
       type: DomesdayPlace
       placeId: '27626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3527,6 +3791,10 @@
     to:
       type: DomesdayPlace
       placeId: '34481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3582,6 +3850,10 @@
     to:
       type: DomesdayPlace
       placeId: '46041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3630,6 +3902,10 @@
     to:
       type: DomesdayPlace
       placeId: '43336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Edmonton
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3679,6 +3955,10 @@
     to:
       type: DomesdayPlace
       placeId: '23411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Edmonton
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -3750,6 +4030,10 @@
     to:
       type: DomesdayPlace
       placeId: '52991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3796,6 +4080,10 @@
     to:
       type: DomesdayPlace
       placeId: '36251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Gore
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3867,6 +4155,10 @@
     to:
       type: DomesdayPlace
       placeId: '58326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3915,6 +4207,10 @@
     to:
       type: DomesdayPlace
       placeId: '58326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3978,6 +4274,10 @@
     to:
       type: DomesdayPlace
       placeId: '5581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4031,6 +4331,10 @@
     to:
       type: DomesdayPlace
       placeId: '30256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4102,6 +4406,10 @@
     to:
       type: DomesdayPlace
       placeId: '35121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Hounslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4150,6 +4458,10 @@
     to:
       type: DomesdayPlace
       placeId: '28966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Hounslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4214,6 +4526,10 @@
     to:
       type: DomesdayPlace
       placeId: '29506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4270,6 +4586,10 @@
     to:
       type: DomesdayPlace
       placeId: '28381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4377,6 +4697,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: DEFENDANT
     to:
       type: DomesdayPerson
@@ -4428,6 +4752,10 @@
     to:
       type: DomesdayPlace
       placeId: '34481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4491,6 +4819,10 @@
     to:
       type: DomesdayPlace
       placeId: '58711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4563,6 +4895,10 @@
     to:
       type: DomesdayPlace
       placeId: '57696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4634,6 +4970,10 @@
     to:
       type: DomesdayPlace
       placeId: '57696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Spelthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4684,6 +5024,10 @@
     to:
       type: DomesdayPlace
       placeId: '58091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Gore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4748,6 +5092,10 @@
     to:
       type: DomesdayPlace
       placeId: '18351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4814,6 +5162,10 @@
     to:
       type: DomesdayPlace
       placeId: '14511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4879,6 +5231,10 @@
     to:
       type: DomesdayPlace
       placeId: '35636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4949,6 +5305,10 @@
     to:
       type: DomesdayPlace
       placeId: '64241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5007,6 +5367,10 @@
     to:
       type: DomesdayPlace
       placeId: '35126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5075,6 +5439,10 @@
     to:
       type: DomesdayPlace
       placeId: '64536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Edmonton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5132,6 +5500,10 @@
     to:
       type: DomesdayPlace
       placeId: '39441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Ossulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5204,6 +5576,10 @@
     to:
       type: DomesdayPlace
       placeId: '27626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: MDX:Elthorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson

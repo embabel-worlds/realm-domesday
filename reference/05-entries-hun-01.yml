@@ -26,6 +26,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -61,6 +65,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -90,6 +98,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -116,6 +128,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -141,6 +157,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -172,6 +192,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9214'
@@ -193,6 +217,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9215'
@@ -214,6 +242,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9216'
@@ -237,6 +269,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -262,6 +298,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -303,6 +343,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9219'
@@ -328,6 +372,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -362,6 +410,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -396,6 +448,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -430,6 +486,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -458,6 +518,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9224'
@@ -481,6 +545,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9225'
@@ -505,6 +573,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9226'
@@ -526,6 +598,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9227'
@@ -548,6 +624,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
 - type: DomesdayEntry
   data:
     entryId: '9228'
@@ -574,6 +654,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -662,6 +746,10 @@
     to:
       type: DomesdayPlace
       placeId: '29831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -707,6 +795,10 @@
     to:
       type: DomesdayPlace
       placeId: '8366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -750,6 +842,10 @@
     to:
       type: DomesdayPlace
       placeId: '58841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -784,6 +880,10 @@
     to:
       type: DomesdayPlace
       placeId: '47296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -834,6 +934,10 @@
     to:
       type: DomesdayPlace
       placeId: '27461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -879,6 +983,10 @@
     to:
       type: DomesdayPlace
       placeId: '26691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -923,6 +1031,10 @@
     to:
       type: DomesdayPlace
       placeId: '35901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -969,6 +1081,10 @@
     to:
       type: DomesdayPlace
       placeId: '9226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1012,6 +1128,10 @@
     to:
       type: DomesdayPlace
       placeId: '27376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1053,6 +1173,10 @@
     to:
       type: DomesdayPlace
       placeId: '27071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1110,6 +1234,10 @@
     to:
       type: DomesdayPlace
       placeId: '17986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1156,6 +1284,10 @@
     to:
       type: DomesdayPlace
       placeId: '58476'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1204,6 +1336,10 @@
     to:
       type: DomesdayPlace
       placeId: '20261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1251,6 +1387,10 @@
     to:
       type: DomesdayPlace
       placeId: '11001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1293,6 +1433,10 @@
     to:
       type: DomesdayPlace
       placeId: '20036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1335,6 +1479,10 @@
     to:
       type: DomesdayPlace
       placeId: '47286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1382,6 +1530,10 @@
     to:
       type: DomesdayPlace
       placeId: '58841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1439,6 +1591,10 @@
     to:
       type: DomesdayPlace
       placeId: '38716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1480,6 +1636,10 @@
     to:
       type: DomesdayPlace
       placeId: '48931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1542,6 +1702,10 @@
     to:
       type: DomesdayPlace
       placeId: '29566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1609,6 +1773,10 @@
     to:
       type: DomesdayPlace
       placeId: '16886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1651,6 +1819,10 @@
     to:
       type: DomesdayPlace
       placeId: '7736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1691,6 +1863,10 @@
     to:
       type: DomesdayPlace
       placeId: '57076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1732,6 +1908,10 @@
     to:
       type: DomesdayPlace
       placeId: '57406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1771,6 +1951,10 @@
     to:
       type: DomesdayPlace
       placeId: '57406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1832,6 +2016,10 @@
     to:
       type: DomesdayPlace
       placeId: '43821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1875,6 +2063,10 @@
     to:
       type: DomesdayPlace
       placeId: '63536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: NTH:Polebrook
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1940,6 +2132,10 @@
     to:
       type: DomesdayPlace
       placeId: '60201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1990,6 +2186,10 @@
     to:
       type: DomesdayPlace
       placeId: '52001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2033,6 +2233,10 @@
     to:
       type: DomesdayPlace
       placeId: '10711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -2079,6 +2283,10 @@
     to:
       type: DomesdayPlace
       placeId: '71536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2121,6 +2329,10 @@
     to:
       type: DomesdayPlace
       placeId: '66406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2163,6 +2375,10 @@
     to:
       type: DomesdayPlace
       placeId: '32821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2209,6 +2425,10 @@
     to:
       type: DomesdayPlace
       placeId: '53411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -2267,6 +2487,10 @@
     to:
       type: DomesdayPlace
       placeId: '33571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -2314,6 +2538,10 @@
     to:
       type: DomesdayPlace
       placeId: '73451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2353,6 +2581,10 @@
     to:
       type: DomesdayPlace
       placeId: '51041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2395,6 +2627,10 @@
     to:
       type: DomesdayPlace
       placeId: '67341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2437,6 +2673,10 @@
     to:
       type: DomesdayPlace
       placeId: '54011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2479,6 +2719,10 @@
     to:
       type: DomesdayPlace
       placeId: '23241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2515,6 +2759,10 @@
     to:
       type: DomesdayPlace
       placeId: '40616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: NTH:Willybrook
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2559,6 +2807,10 @@
     to:
       type: DomesdayPlace
       placeId: '73761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2606,6 +2858,10 @@
     to:
       type: DomesdayPlace
       placeId: '31021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2639,6 +2895,10 @@
     to:
       type: DomesdayPlace
       placeId: '31021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2690,6 +2950,10 @@
     to:
       type: DomesdayPlace
       placeId: '31026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2738,6 +3002,10 @@
     to:
       type: DomesdayPlace
       placeId: '46916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2777,6 +3045,10 @@
     to:
       type: DomesdayPlace
       placeId: '20311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2817,6 +3089,10 @@
     to:
       type: DomesdayPlace
       placeId: '26691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2861,6 +3137,10 @@
     to:
       type: DomesdayPlace
       placeId: '12401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2905,6 +3185,10 @@
     to:
       type: DomesdayPlace
       placeId: '10046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2947,6 +3231,10 @@
     to:
       type: DomesdayPlace
       placeId: '69001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2986,6 +3274,10 @@
     to:
       type: DomesdayPlace
       placeId: '26691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3029,6 +3321,10 @@
     to:
       type: DomesdayPlace
       placeId: '23001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3093,6 +3389,10 @@
     to:
       type: DomesdayPlace
       placeId: '73686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3134,6 +3434,10 @@
     to:
       type: DomesdayPlace
       placeId: '58031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3175,6 +3479,10 @@
     to:
       type: DomesdayPlace
       placeId: '72291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3216,6 +3524,10 @@
     to:
       type: DomesdayPlace
       placeId: '28286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3259,6 +3571,10 @@
     to:
       type: DomesdayPlace
       placeId: '45701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -3305,6 +3621,10 @@
     to:
       type: DomesdayPlace
       placeId: '56036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3346,6 +3666,10 @@
     to:
       type: DomesdayPlace
       placeId: '58796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3380,6 +3704,10 @@
     to:
       type: DomesdayPlace
       placeId: '69861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: CAM:Ely 1
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3448,6 +3776,10 @@
     to:
       type: DomesdayPlace
       placeId: '25176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3489,6 +3821,10 @@
     to:
       type: DomesdayPlace
       placeId: '1551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3529,6 +3865,10 @@
     to:
       type: DomesdayPlace
       placeId: '47296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3574,6 +3914,10 @@
     to:
       type: DomesdayPlace
       placeId: '47296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3647,6 +3991,10 @@
     to:
       type: DomesdayPlace
       placeId: '26891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3691,6 +4039,10 @@
     to:
       type: DomesdayPlace
       placeId: '14721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3741,6 +4093,10 @@
     to:
       type: DomesdayPlace
       placeId: '56036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3785,6 +4141,10 @@
     to:
       type: DomesdayPlace
       placeId: '58796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3853,6 +4213,10 @@
     to:
       type: DomesdayPlace
       placeId: '48391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3927,6 +4291,10 @@
     to:
       type: DomesdayPlace
       placeId: '66271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3972,6 +4340,10 @@
     to:
       type: DomesdayPlace
       placeId: '17566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4035,6 +4407,10 @@
     to:
       type: DomesdayPlace
       placeId: '25306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4101,6 +4477,10 @@
     to:
       type: DomesdayPlace
       placeId: '36181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4143,6 +4523,10 @@
     to:
       type: DomesdayPlace
       placeId: '36181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Stodden
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4188,6 +4572,10 @@
     to:
       type: DomesdayPlace
       placeId: '61176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4233,6 +4621,10 @@
     to:
       type: DomesdayPlace
       placeId: '36181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4278,6 +4670,10 @@
     to:
       type: DomesdayPlace
       placeId: '36181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4341,6 +4737,10 @@
     to:
       type: DomesdayPlace
       placeId: '67181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4400,6 +4800,10 @@
     to:
       type: DomesdayPlace
       placeId: '28846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -4475,6 +4879,10 @@
     to:
       type: DomesdayPlace
       placeId: '67401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4537,6 +4945,10 @@
     to:
       type: DomesdayPlace
       placeId: '18116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4603,6 +5015,10 @@
     to:
       type: DomesdayPlace
       placeId: '46911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4667,6 +5083,10 @@
     to:
       type: DomesdayPlace
       placeId: '54011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4710,6 +5130,10 @@
     to:
       type: DomesdayPlace
       placeId: '12611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4754,6 +5178,10 @@
     to:
       type: DomesdayPlace
       placeId: '67671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4791,6 +5219,10 @@
     to:
       type: DomesdayPlace
       placeId: '47286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4846,6 +5278,10 @@
     to:
       type: DomesdayPlace
       placeId: '58841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4895,6 +5331,10 @@
     to:
       type: DomesdayPlace
       placeId: '47286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4934,6 +5374,10 @@
     to:
       type: DomesdayPlace
       placeId: '47286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4987,6 +5431,10 @@
     to:
       type: DomesdayPlace
       placeId: '14721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5031,6 +5479,10 @@
     to:
       type: DomesdayPlace
       placeId: '8361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5078,6 +5530,10 @@
     to:
       type: DomesdayPlace
       placeId: '60201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5114,6 +5570,10 @@
     to:
       type: DomesdayPlace
       placeId: '61176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5158,6 +5618,10 @@
     to:
       type: DomesdayPlace
       placeId: '13561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5199,6 +5663,10 @@
     to:
       type: DomesdayPlace
       placeId: '29566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5247,6 +5715,10 @@
     to:
       type: DomesdayPlace
       placeId: '29566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5299,6 +5771,10 @@
     to:
       type: DomesdayPlace
       placeId: '26691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -5361,6 +5837,10 @@
     to:
       type: DomesdayPlace
       placeId: '71451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5408,6 +5888,10 @@
     to:
       type: DomesdayPlace
       placeId: '71451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5472,6 +5956,10 @@
     to:
       type: DomesdayPlace
       placeId: '63536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: NTH:Polebrook
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5532,6 +6020,10 @@
     to:
       type: DomesdayPlace
       placeId: '40406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: NTH:Polebrook
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5586,6 +6078,10 @@
     to:
       type: DomesdayPlace
       placeId: '69001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5625,6 +6121,10 @@
     to:
       type: DomesdayPlace
       placeId: '72421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5660,6 +6160,10 @@
     to:
       type: DomesdayPlace
       placeId: '27376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5699,6 +6203,10 @@
     to:
       type: DomesdayPlace
       placeId: '31026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5735,6 +6243,10 @@
     to:
       type: DomesdayPlace
       placeId: '48196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: CAM:Papworth
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5767,6 +6279,10 @@
     to:
       type: DomesdayPlace
       placeId: '46916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5805,6 +6321,10 @@
     to:
       type: DomesdayPlace
       placeId: '67401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5847,6 +6367,10 @@
     to:
       type: DomesdayPlace
       placeId: '68951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5891,6 +6415,10 @@
     to:
       type: DomesdayPlace
       placeId: '68951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5930,6 +6458,10 @@
     to:
       type: DomesdayPlace
       placeId: '57286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5970,6 +6502,10 @@
     to:
       type: DomesdayPlace
       placeId: '48911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6008,6 +6544,10 @@
     to:
       type: DomesdayPlace
       placeId: '8391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6046,6 +6586,10 @@
     to:
       type: DomesdayPlace
       placeId: '13561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6114,6 +6658,10 @@
     to:
       type: DomesdayPlace
       placeId: '17361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6163,6 +6711,10 @@
     to:
       type: DomesdayPlace
       placeId: '54011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6205,6 +6757,10 @@
     to:
       type: DomesdayPlace
       placeId: '60201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -6249,6 +6805,10 @@
     to:
       type: DomesdayPlace
       placeId: '43586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6294,6 +6854,10 @@
     to:
       type: DomesdayPlace
       placeId: '24066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6342,6 +6906,10 @@
     to:
       type: DomesdayPlace
       placeId: '24066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -6394,6 +6962,10 @@
     to:
       type: DomesdayPlace
       placeId: '46916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6441,6 +7013,10 @@
     to:
       type: DomesdayPlace
       placeId: '48391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6485,6 +7061,10 @@
     to:
       type: DomesdayPlace
       placeId: '20261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6550,6 +7130,10 @@
     to:
       type: DomesdayPlace
       placeId: '58211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6611,6 +7195,10 @@
     to:
       type: DomesdayPlace
       placeId: '73761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6660,6 +7248,10 @@
     to:
       type: DomesdayPlace
       placeId: '31021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6729,6 +7321,10 @@
     to:
       type: DomesdayPlace
       placeId: '67401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6798,6 +7394,10 @@
     to:
       type: DomesdayPlace
       placeId: '23851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6855,6 +7455,10 @@
     to:
       type: DomesdayPlace
       placeId: '68951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6898,6 +7502,10 @@
     to:
       type: DomesdayPlace
       placeId: '57286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6960,6 +7568,10 @@
     to:
       type: DomesdayPlace
       placeId: '18591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7011,6 +7623,10 @@
     to:
       type: DomesdayPlace
       placeId: '31026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7076,6 +7692,10 @@
     to:
       type: DomesdayPlace
       placeId: '24066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7140,6 +7760,10 @@
     to:
       type: DomesdayPlace
       placeId: '67671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7173,6 +7797,10 @@
     to:
       type: DomesdayPlace
       placeId: '35891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Stodden
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7209,6 +7837,10 @@
     to:
       type: DomesdayPlace
       placeId: '13561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7242,6 +7874,10 @@
     to:
       type: DomesdayPlace
       placeId: '9226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7277,6 +7913,10 @@
     to:
       type: DomesdayPlace
       placeId: '72421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7320,6 +7960,10 @@
     to:
       type: DomesdayPlace
       placeId: '54011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7350,7 +7994,7 @@
     phillimore: D1
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: urban
     section: Huntingdonshire claims
     places: Huntingdon
     name: Huntingdon (Huntingdonshire D1)
@@ -7369,6 +8013,10 @@
     to:
       type: DomesdayPlace
       placeId: '34101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7404,7 +8052,7 @@
     phillimore: D2
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D2
   relations:
@@ -7431,7 +8079,7 @@
     phillimore: D3
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D3
   relations:
@@ -7466,7 +8114,7 @@
     phillimore: D4
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Broughton
     name: Broughton (Huntingdonshire D4)
@@ -7480,6 +8128,10 @@
     to:
       type: DomesdayPlace
       placeId: '10711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Hurstingstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7499,7 +8151,7 @@
     phillimore: D5
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D5
   relations:
@@ -7518,7 +8170,7 @@
     phillimore: D6
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D6
   relations:
@@ -7537,7 +8189,7 @@
     phillimore: D7
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D7
     hasChurch: true
@@ -7581,7 +8233,7 @@
     phillimore: D8
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Hemingford [Grey]
     name: Hemingford [Grey] (Huntingdonshire D8)
@@ -7596,6 +8248,10 @@
     to:
       type: DomesdayPlace
       placeId: '31026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7627,7 +8283,7 @@
     phillimore: D9
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D9
   relations:
@@ -7654,7 +8310,7 @@
     phillimore: D10
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire D10)'
@@ -7672,6 +8328,10 @@
     to:
       type: DomesdayPlace
       placeId: '68951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7687,7 +8347,7 @@
     phillimore: D11
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D11
   relations:
@@ -7714,7 +8374,7 @@
     phillimore: D12
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D12
   relations:
@@ -7741,7 +8401,7 @@
     phillimore: D13
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire D13)'
@@ -7755,6 +8415,10 @@
     to:
       type: DomesdayPlace
       placeId: '68951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Toseland
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7774,7 +8438,7 @@
     phillimore: D14
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Swineshead
     name: Swineshead (Huntingdonshire D14)
@@ -7788,6 +8452,10 @@
     to:
       type: DomesdayPlace
       placeId: '61176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7807,7 +8475,7 @@
     phillimore: D15
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D15
   relations:
@@ -7826,7 +8494,7 @@
     phillimore: D16
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Pertenhall
     name: Pertenhall (Huntingdonshire D16)
@@ -7840,6 +8508,10 @@
     to:
       type: DomesdayPlace
       placeId: '48931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7855,7 +8527,7 @@
     phillimore: D17
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Catworth
     name: Catworth (Huntingdonshire D17)
@@ -7869,6 +8541,10 @@
     to:
       type: DomesdayPlace
       placeId: '13561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7884,7 +8560,7 @@
     phillimore: D18
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Little Catworth
     name: Little Catworth (Huntingdonshire D18)
@@ -7898,6 +8574,10 @@
     to:
       type: DomesdayPlace
       placeId: '13571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7921,7 +8601,7 @@
     phillimore: D19
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Easton
     name: Easton (Huntingdonshire D19)
@@ -7940,6 +8620,10 @@
     to:
       type: DomesdayPlace
       placeId: '57406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BDF:Stodden
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -7955,7 +8639,7 @@
     phillimore: D20
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Keyston
     name: Keyston (Huntingdonshire D20)
@@ -7969,6 +8653,10 @@
     to:
       type: DomesdayPlace
       placeId: '35901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7992,7 +8680,7 @@
     phillimore: D21
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D21
   relations:
@@ -8019,7 +8707,7 @@
     phillimore: D22
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: '[Great, Little and Steeple] Gidding'
     name: '[Great, Little and Steeple] Gidding (Huntingdonshire D22)'
@@ -8037,6 +8725,10 @@
     to:
       type: DomesdayPlace
       placeId: '26691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
 - type: DomesdayEntry
   data:
     entryId: '9423'
@@ -8044,7 +8736,7 @@
     phillimore: D23
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Buckworth
     name: Buckworth (Huntingdonshire D23)
@@ -8062,6 +8754,10 @@
     to:
       type: DomesdayPlace
       placeId: '48391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
 - type: DomesdayEntry
   data:
     entryId: '9424'
@@ -8069,7 +8765,7 @@
     phillimore: D24
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Brampton
     name: Brampton (Huntingdonshire D24)
@@ -8083,6 +8779,10 @@
     to:
       type: DomesdayPlace
       placeId: '9226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -8094,7 +8794,7 @@
     phillimore: D25
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Grafham
     name: Grafham (Huntingdonshire D25)
@@ -8108,6 +8808,10 @@
     to:
       type: DomesdayPlace
       placeId: '27376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Leightonstone
   - predicate: DEFENDANT
     to:
       type: DomesdayPerson
@@ -8119,7 +8823,7 @@
     phillimore: D26
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Conington
     name: Conington (Huntingdonshire D26)
@@ -8134,6 +8838,10 @@
     to:
       type: DomesdayPlace
       placeId: '17361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -8149,7 +8857,7 @@
     phillimore: D27
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Sawtry
     name: Sawtry (Huntingdonshire D27)
@@ -8164,6 +8872,10 @@
     to:
       type: DomesdayPlace
       placeId: '54011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -8187,7 +8899,7 @@
     phillimore: D28
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     places: Fletton
     name: Fletton (Huntingdonshire D28)
@@ -8202,6 +8914,10 @@
     to:
       type: DomesdayPlace
       placeId: '25176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: HUN:Normancross
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -8217,7 +8933,7 @@
     phillimore: D29
     county: HUN
     countyName: Huntingdonshire
-    kind: manor
+    kind: claim
     section: Huntingdonshire claims
     name: Huntingdonshire D29
   relations:

@@ -63,7 +63,9 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column: &id001
+      - wasteEntries
+      - wasteManors
       args:
         county: BUK
 - question: How many Domesday entries are there for Buckinghamshire?
@@ -191,7 +193,7 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column: *id001
       args:
         county: DEV
 - question: How many Domesday entries are there for Dorset?
@@ -319,7 +321,7 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column: *id001
       args:
         county: HUN
 - question: How many Domesday entries are there for huntingdonshire?
@@ -447,7 +449,7 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column: *id001
       args:
         county: NTH
 - question: How many Domesday entries are there for Northamptonshire?
@@ -575,7 +577,7 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column: *id001
       args:
         county: SOM
 - question: How many Domesday entries are there for Staffordshire?
@@ -703,7 +705,7 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column: *id001
       args:
         county: WOR
 - question: How many Domesday entries are there for worcestershire?
@@ -952,7 +954,9 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: wasteEntries
+      column:
+      - wasteEntries
+      - wasteManors
 - question: How many entries are there in Great Domesday?
   category: england-total
   expect:
@@ -970,7 +974,9 @@ answerable:
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: value1086Pence
+      column:
+      - value1086Pence
+      - manorsValue1086Pence
 - question: What was England worth before the Conquest?
   category: england-total
   expect:
@@ -1815,7 +1821,9 @@ answerable:
   expect:
     matchesView:
       name: DomesdayPersonSummary
-      column: entries
+      column:
+      - entries
+      - manors
       args:
         name: Earl Roger (of Shrewsbury)
 - question: In how many counties did Count Robert of Mortain hold land as a tenant-in-chief?
@@ -1839,7 +1847,9 @@ answerable:
   expect:
     matchesView:
       name: DomesdayPersonSummary
-      column: entries
+      column:
+      - entries
+      - manors
       args:
         name: Earl Hugh (of Chester)
 - question: In how many counties did Bishop Geoffrey of Coutances of St Lô hold land as a tenant-in-chief?
@@ -1863,7 +1873,9 @@ answerable:
   expect:
     matchesView:
       name: DomesdayPersonSummary
-      column: entries
+      column:
+      - entries
+      - manors
       args:
         name: Countess Judith
 - question: Who took over the lands of Earl Harold after the Conquest?

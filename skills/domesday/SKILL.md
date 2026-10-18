@@ -22,10 +22,16 @@ DomesdayEntry -[LORD_1066 | OVERLORD_1066 | TENANT_IN_CHIEF | TENANT_1086 | SUBT
 - **Who held it is an edge, by role.** "Who held X in 1066" = `LORD_1066`. "Who held X in 1086" =
   `TENANT_IN_CHIEF` (held of the king) and `TENANT_1086` (held of the tenant-in-chief, the man on the
   ground). "Who took over X's land" = the same entries' `LORD_1066` and `TENANT_IN_CHIEF`.
-- **People are one record per name per county.** To ask about a person across England, match by
-  name and aggregate — `DomesdayPersonSummary` and `DomesdayPersonHoldings` do. Find the exact name
-  with `DomesdayPersonSearch` first: Hull writes `Bishop Odo/of Bayeux`, `Count Robert/of Mortain`,
-  `Earl Roger (of Shrewsbury)`, `King William`, `King Edward`, `Earl Harold`, `Queen Edith`.
+- **People are one record per name per county.** To ask about a person across England, match on
+  `canonicalName` and aggregate by it — `DomesdayPersonSummary` and `DomesdayPersonHoldings` do.
+  `name` keeps Hull's brackets for words it supplied, so one man is `Earl Harold`, `(Earl) Harold` and
+  `{Earl} Harold`; grouping by `name` splits him three ways. Find the name with `DomesdayPersonSearch`
+  first: `Bishop Odo/of Bayeux`, `Count Robert/of Mortain`, `Earl Roger of Shrewsbury`, `King William`.
+- **A hundred's figures are the county's entries**, DISTINCT per hundred, filtered on the entry's
+  county: detached parts put a county's entries on another county's places (Oswaldslow,
+  Worcestershire, reaches into Gloucestershire and Warwickshire). `DomesdayHundredSummary` does this.
+- **Boroughs are not manors.** Shrewsbury, Oxford and the other towns are kind `urban`; "manor"
+  questions filter `e.kind = 'manor'`.
 - **Places recur.** There are several Abbertons and dozens of Nortons; always show the county.
   `DomesdayPlaceSearch` first, then `DomesdayPlaceEntries` with its `placeId`.
 
@@ -68,7 +74,7 @@ DomesdayEntry -[LORD_1066 | OVERLORD_1066 | TENANT_IN_CHIEF | TENANT_1086 | SUBT
 | women landholders | `DomesdayWomenLandholders` |
 | county comparison, change since 1066, waste, mills | `DomesdayCountySummary` |
 | hundreds of a county | `DomesdayHundredSummary {county}` |
-| richest manors | `DomesdayRichestManors {county}` |
+| richest manors (boroughs are kind `urban`; `kind: all` for every entry) | `DomesdayRichestManors {county, kind}` |
 | biggest falls / rises in value | `DomesdayValueChange {direction, county}` |
 | the Harrying of the North / waste | `DomesdayWaste {county}` |
 | castles, markets, churches | `DomesdayFeature {feature, county}` |
@@ -90,7 +96,7 @@ MATCH (p:DomesdayPlace)<-[:DESCRIBES]-(e:DomesdayEntry)
 WHERE toLower(p.name) = 'abberley'
 OPTIONAL MATCH (e)-[:LORD_1066]->(l:DomesdayPerson)
 OPTIONAL MATCH (e)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
-RETURN p.countyName AS county, e.ref AS ref, collect(DISTINCT l.name) AS lord1066, collect(DISTINCT t.name) AS tenantInChief
+RETURN p.countyName AS county, e.ref AS ref, collect(DISTINCT l.canonicalName) AS lord1066, collect(DISTINCT t.canonicalName) AS tenantInChief
 
 // mills in each county
 MATCH (e:DomesdayEntry) RETURN e.countyName AS county, sum(e.mills) AS mills ORDER BY mills DESC

@@ -33,6 +33,9 @@ CASES = [
      and any(p['role'] == 'LORD_1066' for p in r[0]['people']) else f'entry 8146 wrong: {r[:1]}'),
     ('DomesdayPersonHoldings', {}, None),
     ('DomesdayPersonHoldings', {'name': 'Earl Harold'}, lambda r: None if len(r) > 50 else f'Harold holds {len(r)}'),
+    # Hull's brackets mark supplied words: `(Earl) Harold` is Earl Harold, 248 entries as lord in 1066 (236 under one spelling).
+    ('DomesdayPersonSummary', {'name': '(Earl) Harold'}, lambda r: None if any(
+        x['role'] == 'LORD_1066' and x['entries'] == 248 for x in r) else f'Harold variants not folded {r[:1]}'),
     ('DomesdayPersonSummary', {}, None),
     ('DomesdayGreatestLandholders', {}, lambda r: None if r and r[0]['tenantInChief'] == 'King William'
      else f'first is {r[0]["tenantInChief"] if r else None}'),
@@ -57,13 +60,21 @@ CASES = [
     ('DomesdayBeforeAndAfter', {'county': 'YKS'}, lambda r: None if r and r[0]['valueChangePercent'] < -40 else f'Yorkshire should have fallen hard: {r[:1]}'),
     ('DomesdayHundredSummary', {}, None),
     ('DomesdayHundredSummary', {'county': 'YKS'}, None),
-    ('DomesdayRichestManors', {}, None),
+    # Oswaldslow's detached parts lie in Gloucestershire and Warwickshire places; counted from the county's entries it leads.
+    ('DomesdayHundredSummary', {'county': 'Worcestershire'}, lambda r: None if any(
+        x['hundred'] == 'Oswaldslow' and x['households'] == 1148 for x in r)
+        and max(r, key=lambda x: x['households'])['hundred'] == 'Oswaldslow' else f'Oswaldslow {r[:3]}'),
+    ('DomesdayRichestManors', {}, lambda r: None if all(x['kind'] == 'manor' for x in r)
+     and r[0]['places'] == 'Neatham' else f'richest manors {r[:2]}'),
+    ('DomesdayRichestManors', {'kind': 'all', 'limit': 3}, lambda r: None if r[0]['places'] == 'Shrewsbury'
+     else f'richest of all {r[:1]}'),
     ('DomesdayRichestManors', {'county': 'KEN', 'limit': 5}, None),
     ('DomesdayValueChange', {}, lambda r: None if all(x['changePounds'] < 0 for x in r) else 'a rise among falls'),
     ('DomesdayValueChange', {'direction': 'rise', 'county': 'WOR'},
      lambda r: None if all(x['changePounds'] > 0 for x in r) else 'a fall among rises'),
     ('DomesdayWaste', {}, lambda r: None if r and r[0]['countyOrEntry'] == 'Yorkshire' else f'first is {r[:1]}'),
     ('DomesdayWaste', {'county': 'YKS', 'limit': 10}, None),
+    ('DomesdayWaste', {'county': 'Yorkshire', 'limit': 10}, lambda r: None if len(r) == 10 else f'{len(r)} by name'),
     ('DomesdayFeature', {}, None),
     ('DomesdayFeature', {'feature': 'market'}, None),
     ('DomesdayFeature', {'feature': 'church', 'county': 'WOR', 'limit': 5}, None),

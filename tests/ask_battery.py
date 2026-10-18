@@ -86,8 +86,10 @@ def reconciles(expected, rows):
     if isinstance(expected, (int, float)) and not isinstance(expected, bool):
         # The same money may come back in pence or in pounds, whichever the view or the answer chose;
         # a view's pounds are rounded to two places, so pence match within the 2.4d that rounding allows.
+        # Domesday counts halves (a household shared between two manors), and an answer that rounds
+        # 214,191.5 households to 214,192 states the same figure: a fractional count matches its whole.
         x = float(expected)
-        targets = [(x, 0.005), (x / 240, 0.005), (x * 240, 2.5)]
+        targets = [(x, 0.5 if x != int(x) else 0.005), (x / 240, 0.005), (x * 240, 2.5)]
         return any(abs(n - t) <= e for v in top for n in numbers(v) for t, e in targets)
     wanted = strings(expected)
     have = [s for v in top for s in strings(v)]

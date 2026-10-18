@@ -25,6 +25,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
 - type: DomesdayEntry
   data:
     entryId: '7428'
@@ -47,6 +51,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -76,6 +84,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -110,6 +122,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -220,6 +236,10 @@
     to:
       type: DomesdayPlace
       placeId: '14536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -263,6 +283,10 @@
     to:
       type: DomesdayPlace
       placeId: '12506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Edlogan
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -305,6 +329,10 @@
     to:
       type: DomesdayPlace
       placeId: '20351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -680,6 +708,10 @@
     to:
       type: DomesdayPlace
       placeId: '12511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -756,6 +788,10 @@
     to:
       type: DomesdayPlace
       placeId: '14536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -801,6 +837,10 @@
     to:
       type: DomesdayPlace
       placeId: '12671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -844,6 +884,10 @@
     to:
       type: DomesdayPlace
       placeId: '14536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -899,6 +943,10 @@
     to:
       type: DomesdayPlace
       placeId: '14536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Is Coed
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1025,6 +1073,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -1115,6 +1167,10 @@
     to:
       type: DomesdayPlace
       placeId: '14531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cheltenham
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -1183,6 +1239,10 @@
     to:
       type: DomesdayPlace
       placeId: '9536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1263,6 +1323,10 @@
     to:
       type: DomesdayPlace
       placeId: '29516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1308,6 +1372,10 @@
     to:
       type: DomesdayPlace
       placeId: '29511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -1359,6 +1427,10 @@
     to:
       type: DomesdayPlace
       placeId: '10606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1403,6 +1475,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -1457,6 +1533,10 @@
     to:
       type: DomesdayPlace
       placeId: '15551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1500,6 +1580,10 @@
     to:
       type: DomesdayPlace
       placeId: '15551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -1553,6 +1637,10 @@
     to:
       type: DomesdayPlace
       placeId: '71346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1593,6 +1681,10 @@
     to:
       type: DomesdayPlace
       placeId: '56511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1654,6 +1746,10 @@
     to:
       type: DomesdayPlace
       placeId: '36396'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1714,6 +1810,10 @@
     to:
       type: DomesdayPlace
       placeId: '42501'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Kiftsgate
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1770,6 +1870,10 @@
     to:
       type: DomesdayPlace
       placeId: '50516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bledisloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1828,6 +1932,10 @@
     to:
       type: DomesdayPlace
       placeId: '1511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1956,6 +2064,10 @@
     to:
       type: DomesdayPlace
       placeId: '36411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Berkeley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2006,6 +2118,10 @@
     to:
       type: DomesdayPlace
       placeId: '18746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Berkeley
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -2078,6 +2194,10 @@
     to:
       type: DomesdayPlace
       placeId: '45176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Berkeley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2156,6 +2276,10 @@
     to:
       type: DomesdayPlace
       placeId: '54986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Berkeley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2203,6 +2327,10 @@
     to:
       type: DomesdayPlace
       placeId: '41686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Edderstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2222,7 +2350,7 @@
     phillimore: 1,21
     county: GLS
     countyName: Gloucestershire
-    kind: manor
+    kind: urban
     places: Bristol
     name: Bristol (Gloucestershire 1,21)
     holding: borough
@@ -2258,6 +2386,10 @@
     to:
       type: DomesdayPlace
       placeId: '41176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2315,6 +2447,10 @@
     to:
       type: DomesdayPlace
       placeId: '16871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2357,6 +2493,10 @@
     to:
       type: DomesdayPlace
       placeId: '33921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2445,6 +2585,10 @@
     to:
       type: DomesdayPlace
       placeId: '24831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2517,6 +2661,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2587,6 +2735,10 @@
     to:
       type: DomesdayPlace
       placeId: '21266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2633,6 +2785,10 @@
     to:
       type: DomesdayPlace
       placeId: '61401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2679,6 +2835,10 @@
     to:
       type: DomesdayPlace
       placeId: '38761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2725,6 +2885,10 @@
     to:
       type: DomesdayPlace
       placeId: '67626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2769,6 +2933,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2808,6 +2976,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2855,6 +3027,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2906,6 +3082,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2951,6 +3131,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2998,6 +3182,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3048,6 +3236,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3097,6 +3289,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3130,6 +3326,10 @@
     to:
       type: DomesdayPlace
       placeId: '62021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3167,6 +3367,10 @@
     to:
       type: DomesdayPlace
       placeId: '2821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Tewkesbury
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3219,6 +3423,10 @@
     to:
       type: DomesdayPlace
       placeId: '35496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Deerhurst
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3262,6 +3470,10 @@
     to:
       type: DomesdayPlace
       placeId: '71001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Tewkesbury
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3326,6 +3538,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3375,6 +3591,10 @@
     to:
       type: DomesdayPlace
       placeId: '65726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3426,6 +3646,10 @@
     to:
       type: DomesdayPlace
       placeId: '59301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tibblestone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3510,6 +3734,10 @@
     to:
       type: DomesdayPlace
       placeId: '62411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3561,6 +3789,10 @@
     to:
       type: DomesdayPlace
       placeId: '21266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Edderstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3608,6 +3840,10 @@
     to:
       type: DomesdayPlace
       placeId: '3446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3650,6 +3886,10 @@
     to:
       type: DomesdayPlace
       placeId: '24161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3788,6 +4028,10 @@
     to:
       type: DomesdayPlace
       placeId: '21741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -3851,6 +4095,10 @@
     to:
       type: DomesdayPlace
       placeId: '50516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bledisloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3893,6 +4141,10 @@
     to:
       type: DomesdayPlace
       placeId: '40726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Lydney
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3944,6 +4196,10 @@
     to:
       type: DomesdayPlace
       placeId: '63716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tidenham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4013,6 +4269,10 @@
     to:
       type: DomesdayPlace
       placeId: '14441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4057,6 +4317,10 @@
     to:
       type: DomesdayPlace
       placeId: '2136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bibury
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4102,6 +4366,10 @@
     to:
       type: DomesdayPlace
       placeId: '5496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Tibblestone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4157,6 +4425,10 @@
     to:
       type: DomesdayPlace
       placeId: '5496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Tewkesbury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -4213,6 +4485,10 @@
     to:
       type: DomesdayPlace
       placeId: '64076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4261,6 +4537,10 @@
     to:
       type: DomesdayPlace
       placeId: '31086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4303,6 +4583,10 @@
     to:
       type: DomesdayPlace
       placeId: '72116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -4351,6 +4635,10 @@
     to:
       type: DomesdayPlace
       placeId: '40926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Twyford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4403,6 +4691,10 @@
     to:
       type: DomesdayPlace
       placeId: '1681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4451,6 +4743,10 @@
     to:
       type: DomesdayPlace
       placeId: '4601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4499,6 +4795,10 @@
     to:
       type: DomesdayPlace
       placeId: '4601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4563,6 +4863,10 @@
     to:
       type: DomesdayPlace
       placeId: '15461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4605,6 +4909,10 @@
     to:
       type: DomesdayPlace
       placeId: '33811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4651,6 +4959,10 @@
     to:
       type: DomesdayPlace
       placeId: '46196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4701,6 +5013,10 @@
     to:
       type: DomesdayPlace
       placeId: '46796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4755,6 +5071,10 @@
     to:
       type: DomesdayPlace
       placeId: '61156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cheltenham
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -4796,6 +5116,10 @@
     to:
       type: DomesdayPlace
       placeId: '55701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4838,6 +5162,10 @@
     to:
       type: DomesdayPlace
       placeId: '28901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4898,6 +5226,10 @@
     to:
       type: DomesdayPlace
       placeId: '16486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4962,6 +5294,10 @@
     to:
       type: DomesdayPlace
       placeId: '17191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5022,6 +5358,10 @@
     to:
       type: DomesdayPlace
       placeId: '57936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Whitstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5107,6 +5447,10 @@
     to:
       type: DomesdayPlace
       placeId: '70211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5159,6 +5503,10 @@
     to:
       type: DomesdayPlace
       placeId: '13771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5207,6 +5555,10 @@
     to:
       type: DomesdayPlace
       placeId: '37901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longbridge
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5308,6 +5660,10 @@
     to:
       type: DomesdayPlace
       placeId: '59111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brentry
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5369,6 +5725,10 @@
     to:
       type: DomesdayPlace
       placeId: '16761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5423,6 +5783,10 @@
     to:
       type: DomesdayPlace
       placeId: '24016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bibury
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5477,6 +5841,10 @@
     to:
       type: DomesdayPlace
       placeId: '6576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bibury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5580,6 +5948,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5644,6 +6016,10 @@
     to:
       type: DomesdayPlace
       placeId: '17291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5709,6 +6085,10 @@
     to:
       type: DomesdayPlace
       placeId: '57206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tibblestone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5813,6 +6193,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cheltenham
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5895,6 +6279,10 @@
     to:
       type: DomesdayPlace
       placeId: '47031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5942,6 +6330,10 @@
     to:
       type: DomesdayPlace
       placeId: '65796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bagstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6006,6 +6398,10 @@
     to:
       type: DomesdayPlace
       placeId: '226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bagstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6054,6 +6450,10 @@
     to:
       type: DomesdayPlace
       placeId: '28831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6096,6 +6496,10 @@
     to:
       type: DomesdayPlace
       placeId: '60216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6136,6 +6540,10 @@
     to:
       type: DomesdayPlace
       placeId: '59226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6185,6 +6593,10 @@
     to:
       type: DomesdayPlace
       placeId: '21006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Pucklechurch
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6228,6 +6640,10 @@
     to:
       type: DomesdayPlace
       placeId: '67291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Pucklechurch
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6270,6 +6686,10 @@
     to:
       type: DomesdayPlace
       placeId: '38461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Ledbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6313,6 +6733,10 @@
     to:
       type: DomesdayPlace
       placeId: '21861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6356,6 +6780,10 @@
     to:
       type: DomesdayPlace
       placeId: '20596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Edderstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6421,6 +6849,10 @@
     to:
       type: DomesdayPlace
       placeId: '47056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6469,6 +6901,10 @@
     to:
       type: DomesdayPlace
       placeId: '2781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Pucklechurch
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6545,6 +6981,10 @@
     to:
       type: DomesdayPlace
       placeId: '50356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Pucklechurch
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6606,6 +7046,10 @@
     to:
       type: DomesdayPlace
       placeId: '39631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6678,6 +7122,10 @@
     to:
       type: DomesdayPlace
       placeId: '4781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6719,6 +7167,10 @@
     to:
       type: DomesdayPlace
       placeId: '25991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6759,6 +7211,10 @@
     to:
       type: DomesdayPlace
       placeId: '8671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6800,6 +7256,10 @@
     to:
       type: DomesdayPlace
       placeId: '16876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6841,6 +7301,10 @@
     to:
       type: DomesdayPlace
       placeId: '931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bibury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6882,6 +7346,10 @@
     to:
       type: DomesdayPlace
       placeId: '11066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6923,6 +7391,10 @@
     to:
       type: DomesdayPlace
       placeId: '32081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Tibblestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6964,6 +7436,10 @@
     to:
       type: DomesdayPlace
       placeId: '31711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7004,6 +7480,10 @@
     to:
       type: DomesdayPlace
       placeId: '50136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7045,6 +7525,10 @@
     to:
       type: DomesdayPlace
       placeId: '66171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7088,6 +7572,10 @@
     to:
       type: DomesdayPlace
       placeId: '44061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7127,6 +7615,10 @@
     to:
       type: DomesdayPlace
       placeId: '1701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7169,6 +7661,10 @@
     to:
       type: DomesdayPlace
       placeId: '21591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7192,7 +7688,7 @@
     phillimore: 10,14
     county: GLS
     countyName: Gloucestershire
-    kind: manor
+    kind: urban
     places: Gloucester
     name: Gloucester (Gloucestershire 10,14)
     holding: borough
@@ -7210,6 +7706,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7272,6 +7772,10 @@
     to:
       type: DomesdayPlace
       placeId: '55371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7314,6 +7818,10 @@
     to:
       type: DomesdayPlace
       placeId: '7601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7355,6 +7863,10 @@
     to:
       type: DomesdayPlace
       placeId: '65726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7392,6 +7904,10 @@
     to:
       type: DomesdayPlace
       placeId: '25721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7431,6 +7947,10 @@
     to:
       type: DomesdayPlace
       placeId: '836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tewkesbury
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7474,6 +7994,10 @@
     to:
       type: DomesdayPlace
       placeId: '44741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7519,6 +8043,10 @@
     to:
       type: DomesdayPlace
       placeId: '58176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7561,6 +8089,10 @@
     to:
       type: DomesdayPlace
       placeId: '14176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7601,6 +8133,10 @@
     to:
       type: DomesdayPlace
       placeId: '56881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7640,6 +8176,10 @@
     to:
       type: DomesdayPlace
       placeId: '32856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7679,6 +8219,10 @@
     to:
       type: DomesdayPlace
       placeId: '411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7716,6 +8260,10 @@
     to:
       type: DomesdayPlace
       placeId: '31626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7781,6 +8329,10 @@
     to:
       type: DomesdayPlace
       placeId: '71021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7862,6 +8414,10 @@
     to:
       type: DomesdayPlace
       placeId: '42076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -7911,6 +8467,10 @@
     to:
       type: DomesdayPlace
       placeId: '381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -7956,6 +8516,10 @@
     to:
       type: DomesdayPlace
       placeId: '8496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -8011,6 +8575,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8052,6 +8620,10 @@
     to:
       type: DomesdayPlace
       placeId: '61106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8097,6 +8669,10 @@
     to:
       type: DomesdayPlace
       placeId: '70131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8136,6 +8712,10 @@
     to:
       type: DomesdayPlace
       placeId: '68916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8176,6 +8756,10 @@
     to:
       type: DomesdayPlace
       placeId: '59251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8219,6 +8803,10 @@
     to:
       type: DomesdayPlace
       placeId: '31621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8307,6 +8895,10 @@
     to:
       type: DomesdayPlace
       placeId: '21356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8367,6 +8959,10 @@
     to:
       type: DomesdayPlace
       placeId: '18171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8409,6 +9005,10 @@
     to:
       type: DomesdayPlace
       placeId: '30406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8468,6 +9068,10 @@
     to:
       type: DomesdayPlace
       placeId: '41776'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8528,6 +9132,10 @@
     to:
       type: DomesdayPlace
       placeId: '45116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8608,6 +9216,10 @@
     to:
       type: DomesdayPlace
       placeId: '21611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8676,6 +9288,10 @@
     to:
       type: DomesdayPlace
       placeId: '21266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8735,6 +9351,10 @@
     to:
       type: DomesdayPlace
       placeId: '19861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Deerhurst
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8848,6 +9468,14 @@
     to:
       type: DomesdayPlace
       placeId: '70316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Deerhurst
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Deerhurst
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9035,6 +9663,14 @@
     to:
       type: DomesdayPlace
       placeId: '35496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Deerhurst
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Deerhurst
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9099,6 +9735,10 @@
     to:
       type: DomesdayPlace
       placeId: '3191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9158,6 +9798,10 @@
     to:
       type: DomesdayPlace
       placeId: '52366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9219,6 +9863,10 @@
     to:
       type: DomesdayPlace
       placeId: '49276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9257,6 +9905,10 @@
     to:
       type: DomesdayPlace
       placeId: '43341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9321,6 +9973,10 @@
     to:
       type: DomesdayPlace
       placeId: '33381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9378,6 +10034,10 @@
     to:
       type: DomesdayPlace
       placeId: '15556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9443,6 +10103,10 @@
     to:
       type: DomesdayPlace
       placeId: '1691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9485,6 +10149,10 @@
     to:
       type: DomesdayPlace
       placeId: '21196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9527,6 +10195,10 @@
     to:
       type: DomesdayPlace
       placeId: '45831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9567,6 +10239,10 @@
     to:
       type: DomesdayPlace
       placeId: '50131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9626,6 +10302,10 @@
     to:
       type: DomesdayPlace
       placeId: '29006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9695,6 +10375,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9743,6 +10427,10 @@
     to:
       type: DomesdayPlace
       placeId: '63321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9782,6 +10470,10 @@
     to:
       type: DomesdayPlace
       placeId: '22526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9822,6 +10514,10 @@
     to:
       type: DomesdayPlace
       placeId: '12846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9852,6 +10548,10 @@
     to:
       type: DomesdayPlace
       placeId: '69096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9967,6 +10667,10 @@
     to:
       type: DomesdayPlace
       placeId: '39936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10026,6 +10730,10 @@
     to:
       type: DomesdayPlace
       placeId: '52341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10073,6 +10781,10 @@
     to:
       type: DomesdayPlace
       placeId: '37876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10117,6 +10829,10 @@
     to:
       type: DomesdayPlace
       placeId: '56916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10180,6 +10896,10 @@
     to:
       type: DomesdayPlace
       placeId: '59511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10219,6 +10939,10 @@
     to:
       type: DomesdayPlace
       placeId: '1486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Lydney
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10263,6 +10987,10 @@
     to:
       type: DomesdayPlace
       placeId: '1486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Lydney
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10295,6 +11023,10 @@
     to:
       type: DomesdayPlace
       placeId: '73281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Lydney
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10337,6 +11069,10 @@
     to:
       type: DomesdayPlace
       placeId: '72331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Twyford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10374,6 +11110,10 @@
     to:
       type: DomesdayPlace
       placeId: '63716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tidenham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10414,6 +11154,10 @@
     to:
       type: DomesdayPlace
       placeId: '21586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10458,6 +11202,10 @@
     to:
       type: DomesdayPlace
       placeId: '61576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10499,6 +11247,10 @@
     to:
       type: DomesdayPlace
       placeId: '55661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10543,6 +11295,10 @@
     to:
       type: DomesdayPlace
       placeId: '19141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -10595,6 +11351,10 @@
     to:
       type: DomesdayPlace
       placeId: '3771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10627,6 +11387,10 @@
     to:
       type: DomesdayPlace
       placeId: '61101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10685,6 +11449,10 @@
     to:
       type: DomesdayPlace
       placeId: '15551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10728,6 +11496,10 @@
     to:
       type: DomesdayPlace
       placeId: '21586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10768,6 +11540,10 @@
     to:
       type: DomesdayPlace
       placeId: '56081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10808,6 +11584,10 @@
     to:
       type: DomesdayPlace
       placeId: '68941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10847,6 +11627,10 @@
     to:
       type: DomesdayPlace
       placeId: '63631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10890,6 +11674,10 @@
     to:
       type: DomesdayPlace
       placeId: '34141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10938,6 +11726,10 @@
     to:
       type: DomesdayPlace
       placeId: '40016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10978,6 +11770,10 @@
     to:
       type: DomesdayPlace
       placeId: '58591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11016,6 +11812,10 @@
     to:
       type: DomesdayPlace
       placeId: '68646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -11050,6 +11850,10 @@
     to:
       type: DomesdayPlace
       placeId: '45196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11088,6 +11892,10 @@
     to:
       type: DomesdayPlace
       placeId: '40736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Lydney
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11119,6 +11927,10 @@
     to:
       type: DomesdayPlace
       placeId: '31516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Lydney
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11157,6 +11969,10 @@
     to:
       type: DomesdayPlace
       placeId: '28906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11219,6 +12035,10 @@
     to:
       type: DomesdayPlace
       placeId: '71001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Tewkesbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11275,6 +12095,10 @@
     to:
       type: DomesdayPlace
       placeId: '48471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11321,6 +12145,10 @@
     to:
       type: DomesdayPlace
       placeId: '66066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Chelthorn
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -11368,6 +12196,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11408,6 +12240,10 @@
     to:
       type: DomesdayPlace
       placeId: '22331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11444,6 +12280,10 @@
     to:
       type: DomesdayPlace
       placeId: '12666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11484,6 +12324,10 @@
     to:
       type: DomesdayPlace
       placeId: '3576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11522,6 +12366,10 @@
     to:
       type: DomesdayPlace
       placeId: '24356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11574,6 +12422,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -11627,6 +12479,10 @@
     to:
       type: DomesdayPlace
       placeId: '13406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11665,6 +12521,10 @@
     to:
       type: DomesdayPlace
       placeId: '61781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11703,6 +12563,10 @@
     to:
       type: DomesdayPlace
       placeId: '4606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11742,6 +12606,10 @@
     to:
       type: DomesdayPlace
       placeId: '68646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11778,6 +12646,10 @@
     to:
       type: DomesdayPlace
       placeId: '21356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11838,6 +12710,10 @@
     to:
       type: DomesdayPlace
       placeId: '21746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11872,6 +12748,10 @@
     to:
       type: DomesdayPlace
       placeId: '21746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11944,6 +12824,10 @@
     to:
       type: DomesdayPlace
       placeId: '73001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11978,6 +12862,10 @@
     to:
       type: DomesdayPlace
       placeId: '17291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12016,6 +12904,10 @@
     to:
       type: DomesdayPlace
       placeId: '39596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12071,6 +12963,10 @@
     to:
       type: DomesdayPlace
       placeId: '43796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12107,6 +13003,10 @@
     to:
       type: DomesdayPlace
       placeId: '6716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12144,6 +13044,10 @@
     to:
       type: DomesdayPlace
       placeId: '43516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12192,6 +13096,10 @@
     to:
       type: DomesdayPlace
       placeId: '61791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12233,6 +13141,10 @@
     to:
       type: DomesdayPlace
       placeId: '1041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bledisloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12295,6 +13207,10 @@
     to:
       type: DomesdayPlace
       placeId: '38401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cheltenham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12335,6 +13251,10 @@
     to:
       type: DomesdayPlace
       placeId: '28421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12374,6 +13294,10 @@
     to:
       type: DomesdayPlace
       placeId: '69841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12412,6 +13336,10 @@
     to:
       type: DomesdayPlace
       placeId: '55681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12453,6 +13381,10 @@
     to:
       type: DomesdayPlace
       placeId: '65561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12515,6 +13447,10 @@
     to:
       type: DomesdayPlace
       placeId: '35506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12563,6 +13499,10 @@
     to:
       type: DomesdayPlace
       placeId: '47906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12605,6 +13545,10 @@
     to:
       type: DomesdayPlace
       placeId: '13286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12648,6 +13592,10 @@
     to:
       type: DomesdayPlace
       placeId: '34521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12691,6 +13639,10 @@
     to:
       type: DomesdayPlace
       placeId: '52111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12757,6 +13709,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12800,6 +13756,10 @@
     to:
       type: DomesdayPlace
       placeId: '21596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12849,6 +13809,10 @@
     to:
       type: DomesdayPlace
       placeId: '48071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -12899,6 +13863,10 @@
     to:
       type: DomesdayPlace
       placeId: '22526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12940,6 +13908,10 @@
     to:
       type: DomesdayPlace
       placeId: '40926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Twyford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12977,6 +13949,10 @@
     to:
       type: DomesdayPlace
       placeId: '63716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Tidenham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13025,6 +14001,10 @@
     to:
       type: DomesdayPlace
       placeId: '50721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13077,6 +14057,10 @@
     to:
       type: DomesdayPlace
       placeId: '22006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13120,6 +14104,10 @@
     to:
       type: DomesdayPlace
       placeId: '30206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13165,6 +14153,10 @@
     to:
       type: DomesdayPlace
       placeId: '71021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13208,6 +14200,10 @@
     to:
       type: DomesdayPlace
       placeId: '71021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13257,6 +14253,10 @@
     to:
       type: DomesdayPlace
       placeId: '59861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13298,6 +14298,10 @@
     to:
       type: DomesdayPlace
       placeId: '56076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13345,6 +14349,10 @@
     to:
       type: DomesdayPlace
       placeId: '46626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13387,6 +14395,10 @@
     to:
       type: DomesdayPlace
       placeId: '56516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13435,6 +14447,10 @@
     to:
       type: DomesdayPlace
       placeId: '72796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13496,6 +14512,10 @@
     to:
       type: DomesdayPlace
       placeId: '20801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13564,6 +14584,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13616,6 +14640,10 @@
     to:
       type: DomesdayPlace
       placeId: '66366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13655,6 +14683,10 @@
     to:
       type: DomesdayPlace
       placeId: '66366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13695,6 +14727,10 @@
     to:
       type: DomesdayPlace
       placeId: '19141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13738,6 +14774,10 @@
     to:
       type: DomesdayPlace
       placeId: '30616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13805,6 +14845,10 @@
     to:
       type: DomesdayPlace
       placeId: '16481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13849,6 +14893,10 @@
     to:
       type: DomesdayPlace
       placeId: '20596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Edderstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13889,6 +14937,10 @@
     to:
       type: DomesdayPlace
       placeId: '56251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Pucklechurch
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13944,6 +14996,10 @@
     to:
       type: DomesdayPlace
       placeId: '67281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13984,6 +15040,10 @@
     to:
       type: DomesdayPlace
       placeId: '58066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14046,6 +15106,10 @@
     to:
       type: DomesdayPlace
       placeId: '61576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14080,6 +15144,10 @@
     to:
       type: DomesdayPlace
       placeId: '19141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14137,6 +15205,10 @@
     to:
       type: DomesdayPlace
       placeId: '14051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14180,6 +15252,10 @@
     to:
       type: DomesdayPlace
       placeId: '17021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14219,6 +15295,10 @@
     to:
       type: DomesdayPlace
       placeId: '10531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14249,6 +15329,10 @@
     to:
       type: DomesdayPlace
       placeId: '29676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14305,6 +15389,10 @@
     to:
       type: DomesdayPlace
       placeId: '1671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14347,6 +15435,10 @@
     to:
       type: DomesdayPlace
       placeId: '61101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14415,6 +15507,10 @@
     to:
       type: DomesdayPlace
       placeId: '52101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14456,6 +15552,10 @@
     to:
       type: DomesdayPlace
       placeId: '33441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14500,6 +15600,10 @@
     to:
       type: DomesdayPlace
       placeId: '53911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14565,6 +15669,10 @@
     to:
       type: DomesdayPlace
       placeId: '14981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Greston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14624,6 +15732,10 @@
     to:
       type: DomesdayPlace
       placeId: '52106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14662,6 +15774,10 @@
     to:
       type: DomesdayPlace
       placeId: '65566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14698,6 +15814,10 @@
     to:
       type: DomesdayPlace
       placeId: '44736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -14765,6 +15885,10 @@
     to:
       type: DomesdayPlace
       placeId: '64356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Edderstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14832,6 +15956,10 @@
     to:
       type: DomesdayPlace
       placeId: '21266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14872,6 +16000,10 @@
     to:
       type: DomesdayPlace
       placeId: '59206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Ledbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14918,6 +16050,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14954,6 +16090,10 @@
     to:
       type: DomesdayPlace
       placeId: '47006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15015,6 +16155,10 @@
     to:
       type: DomesdayPlace
       placeId: '5221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15071,6 +16215,10 @@
     to:
       type: DomesdayPlace
       placeId: '46626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15109,6 +16257,10 @@
     to:
       type: DomesdayPlace
       placeId: '65261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15152,6 +16304,10 @@
     to:
       type: DomesdayPlace
       placeId: '13771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15202,6 +16358,10 @@
     to:
       type: DomesdayPlace
       placeId: '51546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15247,6 +16407,10 @@
     to:
       type: DomesdayPlace
       placeId: '51546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15285,6 +16449,10 @@
     to:
       type: DomesdayPlace
       placeId: '3576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15329,6 +16497,10 @@
     to:
       type: DomesdayPlace
       placeId: '29551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15387,6 +16559,10 @@
     to:
       type: DomesdayPlace
       placeId: '43421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15424,6 +16600,10 @@
     to:
       type: DomesdayPlace
       placeId: '2411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15464,6 +16644,10 @@
     to:
       type: DomesdayPlace
       placeId: '21616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15509,6 +16693,10 @@
     to:
       type: DomesdayPlace
       placeId: '19141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15552,6 +16740,10 @@
     to:
       type: DomesdayPlace
       placeId: '20281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15598,6 +16790,10 @@
     to:
       type: DomesdayPlace
       placeId: '69256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15634,6 +16830,10 @@
     to:
       type: DomesdayPlace
       placeId: '54851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15681,6 +16881,10 @@
     to:
       type: DomesdayPlace
       placeId: '34526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15724,6 +16928,10 @@
     to:
       type: DomesdayPlace
       placeId: '55696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15767,6 +16975,10 @@
     to:
       type: DomesdayPlace
       placeId: '29521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Whitstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15811,6 +17023,10 @@
     to:
       type: DomesdayPlace
       placeId: '43976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Whitstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15843,6 +17059,10 @@
     to:
       type: DomesdayPlace
       placeId: '39596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15879,6 +17099,10 @@
     to:
       type: DomesdayPlace
       placeId: '17291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15944,6 +17168,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15989,6 +17217,10 @@
     to:
       type: DomesdayPlace
       placeId: '22001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16050,6 +17282,10 @@
     to:
       type: DomesdayPlace
       placeId: '22001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16111,6 +17347,10 @@
     to:
       type: DomesdayPlace
       placeId: '4601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16158,6 +17398,10 @@
     to:
       type: DomesdayPlace
       placeId: '13776'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -16231,6 +17475,10 @@
     to:
       type: DomesdayPlace
       placeId: '54851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16295,6 +17543,10 @@
     to:
       type: DomesdayPlace
       placeId: '26981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -16337,6 +17589,10 @@
     to:
       type: DomesdayPlace
       placeId: '52916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Westbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16404,6 +17660,10 @@
     to:
       type: DomesdayPlace
       placeId: '25731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Langley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16473,6 +17733,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16537,6 +17801,10 @@
     to:
       type: DomesdayPlace
       placeId: '35516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16580,6 +17848,10 @@
     to:
       type: DomesdayPlace
       placeId: '30206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Brightwells Barrow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16619,6 +17891,10 @@
     to:
       type: DomesdayPlace
       placeId: '1696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16663,6 +17939,10 @@
     to:
       type: DomesdayPlace
       placeId: '47016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16708,6 +17988,10 @@
     to:
       type: DomesdayPlace
       placeId: '3811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16747,6 +18031,10 @@
     to:
       type: DomesdayPlace
       placeId: '261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16784,6 +18072,10 @@
     to:
       type: DomesdayPlace
       placeId: '29146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16851,6 +18143,10 @@
     to:
       type: DomesdayPlace
       placeId: '64096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16893,6 +18189,10 @@
     to:
       type: DomesdayPlace
       placeId: '64096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16954,6 +18254,10 @@
     to:
       type: DomesdayPlace
       placeId: '50761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16992,6 +18296,10 @@
     to:
       type: DomesdayPlace
       placeId: '50761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17034,6 +18342,10 @@
     to:
       type: DomesdayPlace
       placeId: '50761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17073,6 +18385,10 @@
     to:
       type: DomesdayPlace
       placeId: '50751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17116,6 +18432,10 @@
     to:
       type: DomesdayPlace
       placeId: '68996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17158,6 +18478,10 @@
     to:
       type: DomesdayPlace
       placeId: '70576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17223,6 +18547,10 @@
     to:
       type: DomesdayPlace
       placeId: '10396'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17267,6 +18595,10 @@
     to:
       type: DomesdayPlace
       placeId: '55656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17307,6 +18639,10 @@
     to:
       type: DomesdayPlace
       placeId: '53601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17347,6 +18683,10 @@
     to:
       type: DomesdayPlace
       placeId: '3851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17408,6 +18748,10 @@
     to:
       type: DomesdayPlace
       placeId: '9536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17449,6 +18793,10 @@
     to:
       type: DomesdayPlace
       placeId: '14606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17498,6 +18846,10 @@
     to:
       type: DomesdayPlace
       placeId: '801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17553,6 +18905,10 @@
     to:
       type: DomesdayPlace
       placeId: '54851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17612,6 +18968,10 @@
     to:
       type: DomesdayPlace
       placeId: '53516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17646,6 +19006,10 @@
     to:
       type: DomesdayPlace
       placeId: '54851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17684,6 +19048,10 @@
     to:
       type: DomesdayPlace
       placeId: '24056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17724,6 +19092,10 @@
     to:
       type: DomesdayPlace
       placeId: '3181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Greston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17765,6 +19137,10 @@
     to:
       type: DomesdayPlace
       placeId: '56076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17806,6 +19182,10 @@
     to:
       type: DomesdayPlace
       placeId: '43466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17867,6 +19247,10 @@
     to:
       type: DomesdayPlace
       placeId: '1676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17918,6 +19302,10 @@
     to:
       type: DomesdayPlace
       placeId: '1676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17957,6 +19345,10 @@
     to:
       type: DomesdayPlace
       placeId: '46626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -18005,6 +19397,10 @@
     to:
       type: DomesdayPlace
       placeId: '31841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Grumbalds Ash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18050,6 +19446,10 @@
     to:
       type: DomesdayPlace
       placeId: '64466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bagstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18091,6 +19491,10 @@
     to:
       type: DomesdayPlace
       placeId: '58061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -18142,6 +19546,10 @@
     to:
       type: DomesdayPlace
       placeId: '25871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18202,6 +19610,10 @@
     to:
       type: DomesdayPlace
       placeId: '71241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18245,6 +19657,10 @@
     to:
       type: DomesdayPlace
       placeId: '69046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18292,6 +19708,10 @@
     to:
       type: DomesdayPlace
       placeId: '46216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18330,6 +19750,10 @@
     to:
       type: DomesdayPlace
       placeId: '5151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18370,6 +19794,10 @@
     to:
       type: DomesdayPlace
       placeId: '49876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Greston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18404,6 +19832,10 @@
     to:
       type: DomesdayPlace
       placeId: '55681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Wattlescomb
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18445,6 +19877,10 @@
     to:
       type: DomesdayPlace
       placeId: '71221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18491,6 +19927,10 @@
     to:
       type: DomesdayPlace
       placeId: '21601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18540,6 +19980,10 @@
     to:
       type: DomesdayPlace
       placeId: '22866'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18593,6 +20037,10 @@
     to:
       type: DomesdayPlace
       placeId: '61251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18635,6 +20083,10 @@
     to:
       type: DomesdayPlace
       placeId: '21606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Rapsgate
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18695,6 +20147,10 @@
     to:
       type: DomesdayPlace
       placeId: '48366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18736,6 +20192,14 @@
     to:
       type: DomesdayPlace
       placeId: '71241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bisley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18797,6 +20261,10 @@
     to:
       type: DomesdayPlace
       placeId: '39936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Witley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18847,6 +20315,10 @@
     to:
       type: DomesdayPlace
       placeId: '1676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -18889,6 +20361,10 @@
     to:
       type: DomesdayPlace
       placeId: '50131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18930,6 +20406,10 @@
     to:
       type: DomesdayPlace
       placeId: '45831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18972,6 +20452,10 @@
     to:
       type: DomesdayPlace
       placeId: '56076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19017,6 +20501,10 @@
     to:
       type: DomesdayPlace
       placeId: '231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bagstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -19072,6 +20560,10 @@
     to:
       type: DomesdayPlace
       placeId: '70156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bagstone
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -19114,6 +20606,10 @@
     to:
       type: DomesdayPlace
       placeId: '2411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19175,6 +20671,10 @@
     to:
       type: DomesdayPlace
       placeId: '66351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19210,6 +20710,10 @@
     to:
       type: DomesdayPlace
       placeId: '54851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Chelthorn
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19264,6 +20768,10 @@
     to:
       type: DomesdayPlace
       placeId: '37941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WIL:Cricklade
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19325,6 +20833,10 @@
     to:
       type: DomesdayPlace
       placeId: '30466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19364,6 +20876,10 @@
     to:
       type: DomesdayPlace
       placeId: '30611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19408,6 +20924,10 @@
     to:
       type: DomesdayPlace
       placeId: '73506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bradley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19471,6 +20991,10 @@
     to:
       type: DomesdayPlace
       placeId: '55676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19511,6 +21035,10 @@
     to:
       type: DomesdayPlace
       placeId: '55676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19553,6 +21081,10 @@
     to:
       type: DomesdayPlace
       placeId: '55676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19621,6 +21153,10 @@
     to:
       type: DomesdayPlace
       placeId: '14026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bagstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -19688,6 +21224,10 @@
     to:
       type: DomesdayPlace
       placeId: '16121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -19725,6 +21265,10 @@
     to:
       type: DomesdayPlace
       placeId: '16121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19753,6 +21297,10 @@
     to:
       type: DomesdayPlace
       placeId: '7446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19809,6 +21357,10 @@
     to:
       type: DomesdayPlace
       placeId: '28071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19870,6 +21422,10 @@
     to:
       type: DomesdayPlace
       placeId: '1676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Garsdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19925,6 +21481,10 @@
     to:
       type: DomesdayPlace
       placeId: '71021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19967,6 +21527,10 @@
     to:
       type: DomesdayPlace
       placeId: '71021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Barrington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20002,6 +21566,10 @@
     to:
       type: DomesdayPlace
       placeId: '21586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20034,6 +21602,10 @@
     to:
       type: DomesdayPlace
       placeId: '52341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Longtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20073,6 +21645,10 @@
     to:
       type: DomesdayPlace
       placeId: '5221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cirencester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20109,6 +21685,10 @@
     to:
       type: DomesdayPlace
       placeId: '23071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Dudstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20143,6 +21723,10 @@
     to:
       type: DomesdayPlace
       placeId: '6706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Chelthorn
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20182,6 +21766,10 @@
     to:
       type: DomesdayPlace
       placeId: '44736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Salmonsbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20218,6 +21806,10 @@
     to:
       type: DomesdayPlace
       placeId: '38401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Cheltenham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20271,6 +21863,10 @@
     to:
       type: DomesdayPlace
       placeId: '70956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Holford
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20310,6 +21906,10 @@
     to:
       type: DomesdayPlace
       placeId: '931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Bibury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20351,6 +21951,10 @@
     to:
       type: DomesdayPlace
       placeId: '40026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Whitstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20392,6 +21996,10 @@
     to:
       type: DomesdayPlace
       placeId: '7361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Swinehead
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20435,6 +22043,10 @@
     to:
       type: DomesdayPlace
       placeId: '72111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20477,6 +22089,10 @@
     to:
       type: DomesdayPlace
       placeId: '69366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20522,6 +22138,10 @@
     to:
       type: DomesdayPlace
       placeId: '1016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Blacklow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20561,6 +22181,10 @@
     to:
       type: DomesdayPlace
       placeId: '52926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson

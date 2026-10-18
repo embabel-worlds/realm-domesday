@@ -28,7 +28,8 @@ def load(pattern):
 
 
 COUNTY_FIGURES = [
-    # (column, noun phrase, phrasings)
+    # (column, noun phrase, phrasings) — a list of columns where the words bear two readings ("manors" for
+    # every entry, or for kind `manor` alone) and either answer is right
     ('villagers', 'villagers', ['How many villagers were there in {c}?', 'how many villagers in {c} in 1086', 'Number of villagers recorded in {c}']),
     ('smallholders', 'smallholders', ['How many smallholders were recorded in {c}?', 'how many smallholders did {c} have']),
     ('slaves', 'slaves', ['How many slaves were there in {c}?', 'how many slaves did Domesday record in {c}', 'count the slaves in {c}']),
@@ -36,7 +37,7 @@ COUNTY_FIGURES = [
     ('mills', 'mills', ['How many mills were there in {c}?', 'how many mills did {c} have in 1086']),
     ('ploughTeams', 'plough teams', ['How many plough teams were there in {c}?', 'how many ploughs in {c}']),
     ('churchEntries', 'churches', ['How many churches were recorded in {c}?', 'how many entries in {c} mention a church']),
-    ('wasteEntries', 'waste', ['How many manors in {c} were waste?', 'how much waste was there in {c}']),
+    (['wasteEntries', 'wasteManors'], 'waste', ['How many manors in {c} were waste?', 'how much waste was there in {c}']),
     ('entries', 'entries', ['How many Domesday entries are there for {c}?', 'how many entries does {c} have in Domesday']),
     ('value1086Pence', 'value', ['What was {c} worth in 1086?', 'total annual value of {c} in 1086']),
     ('value1066Pence', 'value 1066', ['What was {c} worth before the Conquest?', 'value of {c} in 1066']),
@@ -55,9 +56,10 @@ ENGLAND = [
     ('ploughTeams', ['How many plough teams were there in all of England?']),
     ('churchEntries', ['How many churches are recorded in Domesday?']),
     ('castleEntries', ['How many castles are mentioned in Domesday?']),
-    ('wasteEntries', ['How many manors were waste in 1086?']),
+    (['wasteEntries', 'wasteManors'], ['How many manors were waste in 1086?']),
     ('entries', ['How many entries are there in Great Domesday?']),
-    ('value1086Pence', ['What was England worth in 1086?', 'total value of all the manors in 1086']),
+    ('value1086Pence', ['What was England worth in 1086?']),
+    (['value1086Pence', 'manorsValue1086Pence'], ['total value of all the manors in 1086']),
     ('value1066Pence', ['What was England worth before the Conquest?']),
     ('sheep', ['How many sheep are recorded in Domesday?']),
     ('goats', ['how many goats there are in england', 'How many goats did Domesday count?']),
@@ -219,7 +221,7 @@ def main():
     for i, n in enumerate(tics[:10]):
         q([f"How much was {natural(n)}'s land worth in 1086?", f'How many manors did {natural(n)} hold in 1086?',
            f'In how many counties did {natural(n)} hold land as a tenant-in-chief?'][i % 3], 'DomesdayPersonSummary',
-          ['value1086Pence', 'entries', 'countyCount'][i % 3], {'name': n}, 'person')
+          ['value1086Pence', ['entries', 'manors'], 'countyCount'][i % 3], {'name': n}, 'person')
     lords = [n for n, _ in value_by['LORD_1066'].most_common(12) if ',' not in n and not n.startswith('King ')]
     for n in lords[:8]:
         answerable.append({'question': f'Who took over the lands of {natural(n)} after the Conquest?', 'category': 'conquest',

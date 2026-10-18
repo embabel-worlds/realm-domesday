@@ -24,6 +24,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
 - type: DomesdayEntry
   data:
     entryId: '10614'
@@ -49,6 +53,10 @@
     to:
       type: DomesdayPlace
       placeId: '39911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
 - type: DomesdayEntry
   data:
     entryId: '10615'
@@ -71,6 +79,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -97,6 +109,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
 - type: DomesdayEntry
   data:
     entryId: '10617'
@@ -119,6 +135,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -144,6 +164,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -173,6 +197,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -214,6 +242,10 @@
     to:
       type: DomesdayPlace
       placeId: '40176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -239,6 +271,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -264,6 +300,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -356,6 +396,10 @@
     to:
       type: DomesdayPlace
       placeId: '70351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -394,6 +438,10 @@
     to:
       type: DomesdayPlace
       placeId: '67786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -431,6 +479,10 @@
     to:
       type: DomesdayPlace
       placeId: '45561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -464,6 +516,10 @@
     to:
       type: DomesdayPlace
       placeId: '19436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -501,6 +557,10 @@
     to:
       type: DomesdayPlace
       placeId: '62781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
 - type: DomesdayEntry
   data:
     entryId: '10628'
@@ -524,6 +584,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -558,6 +622,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -583,6 +651,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
 - type: DomesdayEntry
   data:
     entryId: '10631'
@@ -664,6 +736,10 @@
     to:
       type: DomesdayPlace
       placeId: '19001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -712,6 +788,10 @@
     to:
       type: DomesdayPlace
       placeId: '19001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -759,6 +839,10 @@
     to:
       type: DomesdayPlace
       placeId: '29791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -803,6 +887,10 @@
     to:
       type: DomesdayPlace
       placeId: '10811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -937,6 +1025,10 @@
     to:
       type: DomesdayPlace
       placeId: '67596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1024,6 +1116,10 @@
     to:
       type: DomesdayPlace
       placeId: '8551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1071,6 +1167,10 @@
     to:
       type: DomesdayPlace
       placeId: '50121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1116,6 +1216,10 @@
     to:
       type: DomesdayPlace
       placeId: '53336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1167,6 +1271,10 @@
     to:
       type: DomesdayPlace
       placeId: '69316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1210,6 +1318,10 @@
     to:
       type: DomesdayPlace
       placeId: '62781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1259,6 +1371,10 @@
     to:
       type: DomesdayPlace
       placeId: '20441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1310,6 +1426,10 @@
     to:
       type: DomesdayPlace
       placeId: '70301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1367,6 +1487,10 @@
     to:
       type: DomesdayPlace
       placeId: '46596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1407,6 +1531,10 @@
     to:
       type: DomesdayPlace
       placeId: '7351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1472,6 +1600,10 @@
     to:
       type: DomesdayPlace
       placeId: '37771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1520,6 +1652,10 @@
     to:
       type: DomesdayPlace
       placeId: '37771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1569,6 +1705,10 @@
     to:
       type: DomesdayPlace
       placeId: '40346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1619,6 +1759,10 @@
     to:
       type: DomesdayPlace
       placeId: '40346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1679,6 +1823,10 @@
     to:
       type: DomesdayPlace
       placeId: '68201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1727,6 +1875,10 @@
     to:
       type: DomesdayPlace
       placeId: '35906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1770,6 +1922,10 @@
     to:
       type: DomesdayPlace
       placeId: '63841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -1824,7 +1980,7 @@
     phillimore: 3,1
     county: LEC
     countyName: Leicestershire
-    kind: manor
+    kind: urban
     places: Leicester
     name: Leicester (Leicestershire 3,1)
     holding: borough
@@ -1851,6 +2007,10 @@
     to:
       type: DomesdayPlace
       placeId: '38576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1888,6 +2048,10 @@
     to:
       type: DomesdayPlace
       placeId: '37001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1924,6 +2088,10 @@
     to:
       type: DomesdayPlace
       placeId: '38741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1957,6 +2125,10 @@
     to:
       type: DomesdayPlace
       placeId: '54981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1995,6 +2167,10 @@
     to:
       type: DomesdayPlace
       placeId: '17816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2049,6 +2225,10 @@
     to:
       type: DomesdayPlace
       placeId: '49961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2097,6 +2277,10 @@
     to:
       type: DomesdayPlace
       placeId: '43491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2148,6 +2332,10 @@
     to:
       type: DomesdayPlace
       placeId: '66681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2197,6 +2385,10 @@
     to:
       type: DomesdayPlace
       placeId: '36186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2236,6 +2428,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2288,6 +2484,10 @@
     to:
       type: DomesdayPlace
       placeId: '32816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2336,6 +2536,10 @@
     to:
       type: DomesdayPlace
       placeId: '19431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2388,6 +2592,10 @@
     to:
       type: DomesdayPlace
       placeId: '19006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2438,6 +2646,10 @@
     to:
       type: DomesdayPlace
       placeId: '9401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2487,6 +2699,10 @@
     to:
       type: DomesdayPlace
       placeId: '11186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2532,6 +2748,10 @@
     to:
       type: DomesdayPlace
       placeId: '32801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2598,6 +2818,10 @@
     to:
       type: DomesdayPlace
       placeId: '2186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2657,6 +2881,10 @@
     to:
       type: DomesdayPlace
       placeId: '37746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2698,6 +2926,10 @@
     to:
       type: DomesdayPlace
       placeId: '22096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2735,6 +2967,10 @@
     to:
       type: DomesdayPlace
       placeId: '22096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2798,6 +3034,10 @@
     to:
       type: DomesdayPlace
       placeId: '11446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2835,6 +3075,10 @@
     to:
       type: DomesdayPlace
       placeId: '41811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2873,6 +3117,10 @@
     to:
       type: DomesdayPlace
       placeId: '4921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2911,6 +3159,10 @@
     to:
       type: DomesdayPlace
       placeId: '58416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2952,6 +3204,10 @@
     to:
       type: DomesdayPlace
       placeId: '54401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2993,6 +3249,10 @@
     to:
       type: DomesdayPlace
       placeId: '47996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3024,6 +3284,10 @@
     to:
       type: DomesdayPlace
       placeId: '36721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3091,6 +3355,10 @@
     to:
       type: DomesdayPlace
       placeId: '60696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3134,6 +3402,10 @@
     to:
       type: DomesdayPlace
       placeId: '5641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3184,6 +3456,10 @@
     to:
       type: DomesdayPlace
       placeId: '48451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3219,6 +3495,10 @@
     to:
       type: DomesdayPlace
       placeId: '60756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3253,6 +3533,10 @@
     to:
       type: DomesdayPlace
       placeId: '34676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3285,6 +3569,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3320,6 +3608,10 @@
     to:
       type: DomesdayPlace
       placeId: '70356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3377,6 +3669,10 @@
     to:
       type: DomesdayPlace
       placeId: '3561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3421,6 +3717,10 @@
     to:
       type: DomesdayPlace
       placeId: '26011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3465,6 +3765,10 @@
     to:
       type: DomesdayPlace
       placeId: '33986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3499,6 +3803,10 @@
     to:
       type: DomesdayPlace
       placeId: '17741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3540,6 +3848,10 @@
     to:
       type: DomesdayPlace
       placeId: '8331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3601,6 +3913,10 @@
     to:
       type: DomesdayPlace
       placeId: '36901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3640,6 +3956,10 @@
     to:
       type: DomesdayPlace
       placeId: '53881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3688,6 +4008,10 @@
     to:
       type: DomesdayPlace
       placeId: '31951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3731,6 +4055,10 @@
     to:
       type: DomesdayPlace
       placeId: '56041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3769,6 +4097,10 @@
     to:
       type: DomesdayPlace
       placeId: '55316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3812,6 +4144,10 @@
     to:
       type: DomesdayPlace
       placeId: '55051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -3871,6 +4207,10 @@
     to:
       type: DomesdayPlace
       placeId: '60756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -3918,6 +4258,10 @@
     to:
       type: DomesdayPlace
       placeId: '21156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3966,6 +4310,10 @@
     to:
       type: DomesdayPlace
       placeId: '7356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4011,6 +4359,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4054,6 +4406,10 @@
     to:
       type: DomesdayPlace
       placeId: '67041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4102,6 +4458,10 @@
     to:
       type: DomesdayPlace
       placeId: '62096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4147,6 +4507,10 @@
     to:
       type: DomesdayPlace
       placeId: '62096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4192,6 +4556,10 @@
     to:
       type: DomesdayPlace
       placeId: '62981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4241,6 +4609,10 @@
     to:
       type: DomesdayPlace
       placeId: '67231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4289,6 +4661,10 @@
     to:
       type: DomesdayPlace
       placeId: '55781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4337,6 +4713,10 @@
     to:
       type: DomesdayPlace
       placeId: '67166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4405,6 +4785,10 @@
     to:
       type: DomesdayPlace
       placeId: '46276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4444,6 +4828,10 @@
     to:
       type: DomesdayPlace
       placeId: '1911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4480,6 +4868,10 @@
     to:
       type: DomesdayPlace
       placeId: '6951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -4539,6 +4931,10 @@
     to:
       type: DomesdayPlace
       placeId: '3561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4581,6 +4977,10 @@
     to:
       type: DomesdayPlace
       placeId: '20676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4644,6 +5044,10 @@
     to:
       type: DomesdayPlace
       placeId: '70351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4704,6 +5108,10 @@
     to:
       type: DomesdayPlace
       placeId: '26011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4738,6 +5146,10 @@
     to:
       type: DomesdayPlace
       placeId: '54981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4785,6 +5197,10 @@
     to:
       type: DomesdayPlace
       placeId: '55521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4839,6 +5255,10 @@
     to:
       type: DomesdayPlace
       placeId: '51131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4879,6 +5299,10 @@
     to:
       type: DomesdayPlace
       placeId: '27966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4918,6 +5342,10 @@
     to:
       type: DomesdayPlace
       placeId: '36721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4952,6 +5380,10 @@
     to:
       type: DomesdayPlace
       placeId: '20156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4986,6 +5418,10 @@
     to:
       type: DomesdayPlace
       placeId: '58416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5020,6 +5456,10 @@
     to:
       type: DomesdayPlace
       placeId: '36721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5057,6 +5497,10 @@
     to:
       type: DomesdayPlace
       placeId: '45081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5095,6 +5539,10 @@
     to:
       type: DomesdayPlace
       placeId: '48496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5131,6 +5579,10 @@
     to:
       type: DomesdayPlace
       placeId: '34676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5159,6 +5611,10 @@
     to:
       type: DomesdayPlace
       placeId: '62956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5196,6 +5652,10 @@
     to:
       type: DomesdayPlace
       placeId: '58931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5238,6 +5698,10 @@
     to:
       type: DomesdayPlace
       placeId: '12081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5277,6 +5741,10 @@
     to:
       type: DomesdayPlace
       placeId: '13171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5315,6 +5783,10 @@
     to:
       type: DomesdayPlace
       placeId: '46356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5352,6 +5824,10 @@
     to:
       type: DomesdayPlace
       placeId: '63411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5395,6 +5871,10 @@
     to:
       type: DomesdayPlace
       placeId: '5846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5433,6 +5913,10 @@
     to:
       type: DomesdayPlace
       placeId: '7191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5474,6 +5958,10 @@
     to:
       type: DomesdayPlace
       placeId: '1821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5513,6 +6001,10 @@
     to:
       type: DomesdayPlace
       placeId: '63506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5552,6 +6044,10 @@
     to:
       type: DomesdayPlace
       placeId: '55521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5584,6 +6080,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5630,6 +6130,10 @@
     to:
       type: DomesdayPlace
       placeId: '56661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5666,6 +6170,10 @@
     to:
       type: DomesdayPlace
       placeId: '63441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5706,6 +6214,10 @@
     to:
       type: DomesdayPlace
       placeId: '63441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5754,6 +6266,10 @@
     to:
       type: DomesdayPlace
       placeId: '56661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5792,6 +6308,10 @@
     to:
       type: DomesdayPlace
       placeId: '65706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5825,6 +6345,10 @@
     to:
       type: DomesdayPlace
       placeId: '46566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5867,6 +6391,10 @@
     to:
       type: DomesdayPlace
       placeId: '48456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5902,6 +6430,10 @@
     to:
       type: DomesdayPlace
       placeId: '55051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5944,6 +6476,10 @@
     to:
       type: DomesdayPlace
       placeId: '53881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5985,6 +6521,10 @@
     to:
       type: DomesdayPlace
       placeId: '70711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6018,6 +6558,10 @@
     to:
       type: DomesdayPlace
       placeId: '70711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6061,6 +6605,10 @@
     to:
       type: DomesdayPlace
       placeId: '18701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6102,6 +6650,10 @@
     to:
       type: DomesdayPlace
       placeId: '10761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6144,6 +6696,10 @@
     to:
       type: DomesdayPlace
       placeId: '23386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6188,6 +6744,10 @@
     to:
       type: DomesdayPlace
       placeId: '26936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6230,6 +6790,10 @@
     to:
       type: DomesdayPlace
       placeId: '9521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6265,6 +6829,10 @@
     to:
       type: DomesdayPlace
       placeId: '36721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6300,6 +6868,10 @@
     to:
       type: DomesdayPlace
       placeId: '60696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6340,6 +6912,10 @@
     to:
       type: DomesdayPlace
       placeId: '12451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6375,6 +6951,10 @@
     to:
       type: DomesdayPlace
       placeId: '45006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6415,6 +6995,10 @@
     to:
       type: DomesdayPlace
       placeId: '4321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6459,6 +7043,10 @@
     to:
       type: DomesdayPlace
       placeId: '55081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6499,6 +7087,10 @@
     to:
       type: DomesdayPlace
       placeId: '17831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6533,6 +7125,10 @@
     to:
       type: DomesdayPlace
       placeId: '17831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6575,6 +7171,10 @@
     to:
       type: DomesdayPlace
       placeId: '23876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6618,6 +7218,10 @@
     to:
       type: DomesdayPlace
       placeId: '34781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6651,6 +7255,10 @@
     to:
       type: DomesdayPlace
       placeId: '59621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6699,6 +7307,10 @@
     to:
       type: DomesdayPlace
       placeId: '26541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6745,6 +7357,10 @@
     to:
       type: DomesdayPlace
       placeId: '25941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6787,6 +7403,10 @@
     to:
       type: DomesdayPlace
       placeId: '54931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6830,6 +7450,10 @@
     to:
       type: DomesdayPlace
       placeId: '59561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6875,6 +7499,10 @@
     to:
       type: DomesdayPlace
       placeId: '37746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6918,6 +7546,10 @@
     to:
       type: DomesdayPlace
       placeId: '26926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6953,6 +7585,10 @@
     to:
       type: DomesdayPlace
       placeId: '26926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6996,6 +7632,10 @@
     to:
       type: DomesdayPlace
       placeId: '61336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7037,6 +7677,10 @@
     to:
       type: DomesdayPlace
       placeId: '7191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7075,6 +7719,10 @@
     to:
       type: DomesdayPlace
       placeId: '63506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7117,6 +7765,10 @@
     to:
       type: DomesdayPlace
       placeId: '73376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7168,6 +7820,10 @@
     to:
       type: DomesdayPlace
       placeId: '56136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7210,6 +7866,10 @@
     to:
       type: DomesdayPlace
       placeId: '2481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7253,6 +7913,10 @@
     to:
       type: DomesdayPlace
       placeId: '1401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7300,6 +7964,10 @@
     to:
       type: DomesdayPlace
       placeId: '58516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7342,6 +8010,10 @@
     to:
       type: DomesdayPlace
       placeId: '69931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7385,6 +8057,10 @@
     to:
       type: DomesdayPlace
       placeId: '67011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7431,6 +8107,10 @@
     to:
       type: DomesdayPlace
       placeId: '62786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7467,6 +8147,10 @@
     to:
       type: DomesdayPlace
       placeId: '62786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7506,6 +8190,10 @@
     to:
       type: DomesdayPlace
       placeId: '8331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7551,6 +8239,10 @@
     to:
       type: DomesdayPlace
       placeId: '4836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7595,6 +8287,10 @@
     to:
       type: DomesdayPlace
       placeId: '45081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7656,6 +8352,10 @@
     to:
       type: DomesdayPlace
       placeId: '58381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7692,6 +8392,10 @@
     to:
       type: DomesdayPlace
       placeId: '64276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7730,6 +8434,10 @@
     to:
       type: DomesdayPlace
       placeId: '55346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -7770,6 +8478,10 @@
     to:
       type: DomesdayPlace
       placeId: '58381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7808,6 +8520,10 @@
     to:
       type: DomesdayPlace
       placeId: '17786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7850,6 +8566,10 @@
     to:
       type: DomesdayPlace
       placeId: '73386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7884,6 +8604,10 @@
     to:
       type: DomesdayPlace
       placeId: '54506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7912,6 +8636,10 @@
     to:
       type: DomesdayPlace
       placeId: '73286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7947,6 +8675,10 @@
     to:
       type: DomesdayPlace
       placeId: '47291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7982,6 +8714,10 @@
     to:
       type: DomesdayPlace
       placeId: '65681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8020,6 +8756,10 @@
     to:
       type: DomesdayPlace
       placeId: '27241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8057,6 +8797,10 @@
     to:
       type: DomesdayPlace
       placeId: '55076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8093,6 +8837,10 @@
     to:
       type: DomesdayPlace
       placeId: '17326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8133,6 +8881,10 @@
     to:
       type: DomesdayPlace
       placeId: '56701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8166,6 +8918,10 @@
     to:
       type: DomesdayPlace
       placeId: '55316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8206,6 +8962,10 @@
     to:
       type: DomesdayPlace
       placeId: '33631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8252,6 +9012,10 @@
     to:
       type: DomesdayPlace
       placeId: '45056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8289,6 +9053,10 @@
     to:
       type: DomesdayPlace
       placeId: '16741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8326,6 +9094,10 @@
     to:
       type: DomesdayPlace
       placeId: '54521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DBY:Repton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8366,6 +9138,10 @@
     to:
       type: DomesdayPlace
       placeId: '54526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DBY:Repton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8402,6 +9178,10 @@
     to:
       type: DomesdayPlace
       placeId: '8161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8439,6 +9219,10 @@
     to:
       type: DomesdayPlace
       placeId: '1911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8478,6 +9262,10 @@
     to:
       type: DomesdayPlace
       placeId: '61111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8529,6 +9317,10 @@
     to:
       type: DomesdayPlace
       placeId: '45506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8560,6 +9352,10 @@
     to:
       type: DomesdayPlace
       placeId: '45506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8594,6 +9390,10 @@
     to:
       type: DomesdayPlace
       placeId: '72126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8632,6 +9432,10 @@
     to:
       type: DomesdayPlace
       placeId: '47361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8672,6 +9476,14 @@
     to:
       type: DomesdayPlace
       placeId: '20696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DBY:Repton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8722,6 +9534,10 @@
     to:
       type: DomesdayPlace
       placeId: '12066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8753,6 +9569,10 @@
     to:
       type: DomesdayPlace
       placeId: '71011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8802,6 +9622,10 @@
     to:
       type: DomesdayPlace
       placeId: '19436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8845,6 +9669,10 @@
     to:
       type: DomesdayPlace
       placeId: '11871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8888,6 +9716,10 @@
     to:
       type: DomesdayPlace
       placeId: '45076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8919,6 +9751,10 @@
     to:
       type: DomesdayPlace
       placeId: '39371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DBY:Repton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8978,6 +9814,10 @@
     to:
       type: DomesdayPlace
       placeId: '33261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9019,6 +9859,10 @@
     to:
       type: DomesdayPlace
       placeId: '42196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9055,6 +9899,10 @@
     to:
       type: DomesdayPlace
       placeId: '29336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9092,6 +9940,10 @@
     to:
       type: DomesdayPlace
       placeId: '4251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9146,6 +9998,10 @@
     to:
       type: DomesdayPlace
       placeId: '8371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9199,6 +10055,10 @@
     to:
       type: DomesdayPlace
       placeId: '51466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9252,6 +10112,10 @@
     to:
       type: DomesdayPlace
       placeId: '37051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9304,6 +10168,10 @@
     to:
       type: DomesdayPlace
       placeId: '37951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9344,6 +10212,10 @@
     to:
       type: DomesdayPlace
       placeId: '40346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9391,6 +10263,10 @@
     to:
       type: DomesdayPlace
       placeId: '4246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9440,6 +10316,10 @@
     to:
       type: DomesdayPlace
       placeId: '19006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9494,6 +10374,10 @@
     to:
       type: DomesdayPlace
       placeId: '15751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9536,6 +10420,10 @@
     to:
       type: DomesdayPlace
       placeId: '33506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9616,6 +10504,10 @@
     to:
       type: DomesdayPlace
       placeId: '8371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9689,6 +10581,10 @@
     to:
       type: DomesdayPlace
       placeId: '58471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9755,6 +10651,10 @@
     to:
       type: DomesdayPlace
       placeId: '26756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9797,6 +10697,10 @@
     to:
       type: DomesdayPlace
       placeId: '55316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9841,6 +10745,10 @@
     to:
       type: DomesdayPlace
       placeId: '36141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9883,6 +10791,10 @@
     to:
       type: DomesdayPlace
       placeId: '28091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9924,6 +10836,10 @@
     to:
       type: DomesdayPlace
       placeId: '54931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9968,6 +10884,10 @@
     to:
       type: DomesdayPlace
       placeId: '62956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10014,6 +10934,10 @@
     to:
       type: DomesdayPlace
       placeId: '8326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10064,6 +10988,10 @@
     to:
       type: DomesdayPlace
       placeId: '35921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10107,6 +11035,10 @@
     to:
       type: DomesdayPlace
       placeId: '45561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10166,6 +11098,10 @@
     to:
       type: DomesdayPlace
       placeId: '48451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10202,6 +11138,10 @@
     to:
       type: DomesdayPlace
       placeId: '38741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10237,6 +11177,10 @@
     to:
       type: DomesdayPlace
       placeId: '26011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10277,6 +11221,10 @@
     to:
       type: DomesdayPlace
       placeId: '21641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10315,6 +11263,10 @@
     to:
       type: DomesdayPlace
       placeId: '2501'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10352,6 +11304,10 @@
     to:
       type: DomesdayPlace
       placeId: '23876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10387,6 +11343,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10426,6 +11386,10 @@
     to:
       type: DomesdayPlace
       placeId: '66681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10475,6 +11439,10 @@
     to:
       type: DomesdayPlace
       placeId: '17741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10517,6 +11485,10 @@
     to:
       type: DomesdayPlace
       placeId: '4321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10555,6 +11527,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10709,6 +11685,10 @@
     to:
       type: DomesdayPlace
       placeId: '8326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10749,6 +11729,10 @@
     to:
       type: DomesdayPlace
       placeId: '34676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10786,6 +11770,10 @@
     to:
       type: DomesdayPlace
       placeId: '56521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10830,6 +11818,10 @@
     to:
       type: DomesdayPlace
       placeId: '62956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10874,6 +11866,10 @@
     to:
       type: DomesdayPlace
       placeId: '68201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10920,6 +11916,10 @@
     to:
       type: DomesdayPlace
       placeId: '56521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10964,6 +11964,10 @@
     to:
       type: DomesdayPlace
       placeId: '51346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11006,6 +12010,10 @@
     to:
       type: DomesdayPlace
       placeId: '27851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11048,6 +12056,10 @@
     to:
       type: DomesdayPlace
       placeId: '54506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11093,6 +12105,10 @@
     to:
       type: DomesdayPlace
       placeId: '39806'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -11138,6 +12154,10 @@
     to:
       type: DomesdayPlace
       placeId: '19431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11179,6 +12199,10 @@
     to:
       type: DomesdayPlace
       placeId: '50951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11215,6 +12239,10 @@
     to:
       type: DomesdayPlace
       placeId: '70726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11257,6 +12285,10 @@
     to:
       type: DomesdayPlace
       placeId: '16741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11298,6 +12330,10 @@
     to:
       type: DomesdayPlace
       placeId: '51146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11346,6 +12382,10 @@
     to:
       type: DomesdayPlace
       placeId: '35796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11385,6 +12425,10 @@
     to:
       type: DomesdayPlace
       placeId: '29336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11429,6 +12473,10 @@
     to:
       type: DomesdayPlace
       placeId: '73386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11480,6 +12528,14 @@
     to:
       type: DomesdayPlace
       placeId: '54146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11542,6 +12598,10 @@
     to:
       type: DomesdayPlace
       placeId: '37071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -11577,6 +12637,10 @@
     to:
       type: DomesdayPlace
       placeId: '73376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11619,6 +12683,10 @@
     to:
       type: DomesdayPlace
       placeId: '53616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11660,6 +12728,10 @@
     to:
       type: DomesdayPlace
       placeId: '73286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11699,6 +12771,10 @@
     to:
       type: DomesdayPlace
       placeId: '12066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11759,6 +12835,10 @@
     to:
       type: DomesdayPlace
       placeId: '38741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11794,6 +12874,10 @@
     to:
       type: DomesdayPlace
       placeId: '59546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11829,6 +12913,10 @@
     to:
       type: DomesdayPlace
       placeId: '50326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11865,6 +12953,10 @@
     to:
       type: DomesdayPlace
       placeId: '60756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11900,6 +12992,10 @@
     to:
       type: DomesdayPlace
       placeId: '51141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11933,6 +13029,10 @@
     to:
       type: DomesdayPlace
       placeId: '54861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11974,6 +13074,10 @@
     to:
       type: DomesdayPlace
       placeId: '17326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12001,6 +13105,10 @@
     to:
       type: DomesdayPlace
       placeId: '56751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12038,6 +13146,10 @@
     to:
       type: DomesdayPlace
       placeId: '46841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12070,6 +13182,10 @@
     to:
       type: DomesdayPlace
       placeId: '25121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12106,6 +13222,10 @@
     to:
       type: DomesdayPlace
       placeId: '56661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12139,6 +13259,10 @@
     to:
       type: DomesdayPlace
       placeId: '25121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12182,6 +13306,10 @@
     to:
       type: DomesdayPlace
       placeId: '71541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12220,6 +13348,10 @@
     to:
       type: DomesdayPlace
       placeId: '35916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12260,6 +13392,10 @@
     to:
       type: DomesdayPlace
       placeId: '35916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12292,6 +13428,10 @@
     to:
       type: DomesdayPlace
       placeId: '71541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12332,6 +13472,10 @@
     to:
       type: DomesdayPlace
       placeId: '63841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12373,6 +13517,10 @@
     to:
       type: DomesdayPlace
       placeId: '46251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12408,6 +13556,10 @@
     to:
       type: DomesdayPlace
       placeId: '56996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12441,6 +13593,10 @@
     to:
       type: DomesdayPlace
       placeId: '71631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12497,6 +13653,10 @@
     to:
       type: DomesdayPlace
       placeId: '33506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12542,6 +13702,10 @@
     to:
       type: DomesdayPlace
       placeId: '33506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12588,6 +13752,10 @@
     to:
       type: DomesdayPlace
       placeId: '15751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12636,6 +13804,10 @@
     to:
       type: DomesdayPlace
       placeId: '15751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12702,6 +13874,10 @@
     to:
       type: DomesdayPlace
       placeId: '47326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12750,6 +13926,10 @@
     to:
       type: DomesdayPlace
       placeId: '68856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12818,6 +13998,10 @@
     to:
       type: DomesdayPlace
       placeId: '19446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12879,6 +14063,10 @@
     to:
       type: DomesdayPlace
       placeId: '63366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12916,6 +14104,10 @@
     to:
       type: DomesdayPlace
       placeId: '59591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12957,6 +14149,10 @@
     to:
       type: DomesdayPlace
       placeId: '43491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12996,6 +14192,10 @@
     to:
       type: DomesdayPlace
       placeId: '8326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13043,6 +14243,10 @@
     to:
       type: DomesdayPlace
       placeId: '36141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13090,6 +14294,10 @@
     to:
       type: DomesdayPlace
       placeId: '58016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13154,6 +14362,10 @@
     to:
       type: DomesdayPlace
       placeId: '59526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13180,6 +14392,10 @@
     to:
       type: DomesdayPlace
       placeId: '67011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13218,6 +14434,10 @@
     to:
       type: DomesdayPlace
       placeId: '57601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13279,6 +14499,10 @@
     to:
       type: DomesdayPlace
       placeId: '25541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13318,6 +14542,10 @@
     to:
       type: DomesdayPlace
       placeId: '2186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13359,6 +14587,10 @@
     to:
       type: DomesdayPlace
       placeId: '40341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13403,6 +14635,10 @@
     to:
       type: DomesdayPlace
       placeId: '40341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13445,6 +14681,10 @@
     to:
       type: DomesdayPlace
       placeId: '2491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13495,6 +14735,10 @@
     to:
       type: DomesdayPlace
       placeId: '51246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13549,6 +14793,10 @@
     to:
       type: DomesdayPlace
       placeId: '20431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13585,6 +14833,10 @@
     to:
       type: DomesdayPlace
       placeId: '62096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13619,6 +14871,10 @@
     to:
       type: DomesdayPlace
       placeId: '54841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13646,6 +14902,10 @@
     to:
       type: DomesdayPlace
       placeId: '59036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13702,6 +14962,10 @@
     to:
       type: DomesdayPlace
       placeId: '28566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13745,6 +15009,10 @@
     to:
       type: DomesdayPlace
       placeId: '27031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13787,6 +15055,10 @@
     to:
       type: DomesdayPlace
       placeId: '35906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13830,6 +15102,10 @@
     to:
       type: DomesdayPlace
       placeId: '6861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13878,6 +15154,10 @@
     to:
       type: DomesdayPlace
       placeId: '52391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13943,6 +15223,10 @@
     to:
       type: DomesdayPlace
       placeId: '63411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -13988,6 +15272,10 @@
     to:
       type: DomesdayPlace
       placeId: '63411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14073,6 +15361,10 @@
     to:
       type: DomesdayPlace
       placeId: '73286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14114,6 +15406,10 @@
     to:
       type: DomesdayPlace
       placeId: '68146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14155,6 +15451,10 @@
     to:
       type: DomesdayPlace
       placeId: '66046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14194,6 +15494,10 @@
     to:
       type: DomesdayPlace
       placeId: '39176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14228,6 +15532,10 @@
     to:
       type: DomesdayPlace
       placeId: '7356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14263,6 +15571,10 @@
     to:
       type: DomesdayPlace
       placeId: '59591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14295,6 +15607,10 @@
     to:
       type: DomesdayPlace
       placeId: '61186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14342,6 +15658,10 @@
     to:
       type: DomesdayPlace
       placeId: '49091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14389,6 +15709,10 @@
     to:
       type: DomesdayPlace
       placeId: '56996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14425,6 +15749,10 @@
     to:
       type: DomesdayPlace
       placeId: '49091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14464,6 +15792,10 @@
     to:
       type: DomesdayPlace
       placeId: '50716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14501,6 +15833,10 @@
     to:
       type: DomesdayPlace
       placeId: '12076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14549,6 +15885,10 @@
     to:
       type: DomesdayPlace
       placeId: '63411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14587,6 +15927,10 @@
     to:
       type: DomesdayPlace
       placeId: '36566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14625,6 +15969,10 @@
     to:
       type: DomesdayPlace
       placeId: '61331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14668,6 +16016,10 @@
     to:
       type: DomesdayPlace
       placeId: '58471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14720,6 +16072,10 @@
     to:
       type: DomesdayPlace
       placeId: '19436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14763,6 +16119,10 @@
     to:
       type: DomesdayPlace
       placeId: '71631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14804,6 +16164,10 @@
     to:
       type: DomesdayPlace
       placeId: '19436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14863,6 +16227,10 @@
     to:
       type: DomesdayPlace
       placeId: '57601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14918,6 +16286,10 @@
     to:
       type: DomesdayPlace
       placeId: '44291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14973,6 +16345,10 @@
     to:
       type: DomesdayPlace
       placeId: '19431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15011,6 +16387,10 @@
     to:
       type: DomesdayPlace
       placeId: '4671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15068,6 +16448,10 @@
     to:
       type: DomesdayPlace
       placeId: '8326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15123,6 +16507,10 @@
     to:
       type: DomesdayPlace
       placeId: '2491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15154,6 +16542,10 @@
     to:
       type: DomesdayPlace
       placeId: '44291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15213,6 +16605,10 @@
     to:
       type: DomesdayPlace
       placeId: '50306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15241,6 +16637,10 @@
     to:
       type: DomesdayPlace
       placeId: '73376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15305,6 +16705,10 @@
     to:
       type: DomesdayPlace
       placeId: '47726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15344,6 +16748,10 @@
     to:
       type: DomesdayPlace
       placeId: '32206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15408,6 +16816,10 @@
     to:
       type: DomesdayPlace
       placeId: '40601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15445,6 +16857,10 @@
     to:
       type: DomesdayPlace
       placeId: '43491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15480,6 +16896,10 @@
     to:
       type: DomesdayPlace
       placeId: '13521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15541,6 +16961,10 @@
     to:
       type: DomesdayPlace
       placeId: '35966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15594,6 +17018,10 @@
     to:
       type: DomesdayPlace
       placeId: '54526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DBY:Repton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15631,6 +17059,10 @@
     to:
       type: DomesdayPlace
       placeId: '20681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15687,6 +17119,10 @@
     to:
       type: DomesdayPlace
       placeId: '46566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15727,6 +17163,10 @@
     to:
       type: DomesdayPlace
       placeId: '48451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15768,6 +17208,10 @@
     to:
       type: DomesdayPlace
       placeId: '17741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15808,6 +17252,10 @@
     to:
       type: DomesdayPlace
       placeId: '26011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15844,6 +17292,10 @@
     to:
       type: DomesdayPlace
       placeId: '54981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15885,6 +17337,10 @@
     to:
       type: DomesdayPlace
       placeId: '70711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15925,6 +17381,10 @@
     to:
       type: DomesdayPlace
       placeId: '30721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15966,6 +17426,10 @@
     to:
       type: DomesdayPlace
       placeId: '10761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16000,6 +17464,10 @@
     to:
       type: DomesdayPlace
       placeId: '41536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16041,6 +17509,10 @@
     to:
       type: DomesdayPlace
       placeId: '23271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16077,6 +17549,10 @@
     to:
       type: DomesdayPlace
       placeId: '51896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16117,6 +17593,10 @@
     to:
       type: DomesdayPlace
       placeId: '51346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16158,6 +17638,10 @@
     to:
       type: DomesdayPlace
       placeId: '68146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16194,6 +17678,10 @@
     to:
       type: DomesdayPlace
       placeId: '61331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16239,6 +17727,10 @@
     to:
       type: DomesdayPlace
       placeId: '40346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16281,6 +17773,10 @@
     to:
       type: DomesdayPlace
       placeId: '25681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16323,6 +17819,10 @@
     to:
       type: DomesdayPlace
       placeId: '28091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16366,6 +17866,10 @@
     to:
       type: DomesdayPlace
       placeId: '8551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16406,6 +17910,10 @@
     to:
       type: DomesdayPlace
       placeId: '47491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16444,6 +17952,10 @@
     to:
       type: DomesdayPlace
       placeId: '7536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16488,6 +18000,10 @@
     to:
       type: DomesdayPlace
       placeId: '58931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16527,6 +18043,10 @@
     to:
       type: DomesdayPlace
       placeId: '26961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16567,6 +18087,10 @@
     to:
       type: DomesdayPlace
       placeId: '54146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16613,6 +18137,10 @@
     to:
       type: DomesdayPlace
       placeId: '40266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16651,6 +18179,10 @@
     to:
       type: DomesdayPlace
       placeId: '70351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16691,6 +18223,10 @@
     to:
       type: DomesdayPlace
       placeId: '47841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16734,6 +18270,10 @@
     to:
       type: DomesdayPlace
       placeId: '1141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16768,6 +18308,10 @@
     to:
       type: DomesdayPlace
       placeId: '59561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16805,6 +18349,10 @@
     to:
       type: DomesdayPlace
       placeId: '18376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16837,6 +18385,10 @@
     to:
       type: DomesdayPlace
       placeId: '68201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16874,6 +18426,10 @@
     to:
       type: DomesdayPlace
       placeId: '62096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16916,6 +18472,10 @@
     to:
       type: DomesdayPlace
       placeId: '2486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16954,6 +18514,10 @@
     to:
       type: DomesdayPlace
       placeId: '45056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16992,6 +18556,10 @@
     to:
       type: DomesdayPlace
       placeId: '26286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17026,6 +18594,10 @@
     to:
       type: DomesdayPlace
       placeId: '26286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17063,6 +18635,10 @@
     to:
       type: DomesdayPlace
       placeId: '10596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17095,6 +18671,10 @@
     to:
       type: DomesdayPlace
       placeId: '68146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17127,6 +18707,10 @@
     to:
       type: DomesdayPlace
       placeId: '68146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17161,6 +18745,10 @@
     to:
       type: DomesdayPlace
       placeId: '1141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17201,6 +18789,10 @@
     to:
       type: DomesdayPlace
       placeId: '54016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17241,6 +18833,10 @@
     to:
       type: DomesdayPlace
       placeId: '57601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17299,6 +18895,10 @@
     to:
       type: DomesdayPlace
       placeId: '5846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17338,6 +18938,10 @@
     to:
       type: DomesdayPlace
       placeId: '48456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17380,6 +18984,10 @@
     to:
       type: DomesdayPlace
       placeId: '4246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17439,6 +19047,10 @@
     to:
       type: DomesdayPlace
       placeId: '11871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17472,6 +19084,10 @@
     to:
       type: DomesdayPlace
       placeId: '45521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17507,6 +19123,10 @@
     to:
       type: DomesdayPlace
       placeId: '45521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17544,6 +19164,10 @@
     to:
       type: DomesdayPlace
       placeId: '11871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17572,6 +19196,10 @@
     to:
       type: DomesdayPlace
       placeId: '33531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17609,6 +19237,10 @@
     to:
       type: DomesdayPlace
       placeId: '73376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17645,6 +19277,10 @@
     to:
       type: DomesdayPlace
       placeId: '22171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17680,6 +19316,10 @@
     to:
       type: DomesdayPlace
       placeId: '51896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17712,6 +19352,10 @@
     to:
       type: DomesdayPlace
       placeId: '2306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17741,6 +19385,10 @@
     to:
       type: DomesdayPlace
       placeId: '54981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17846,6 +19494,10 @@
     to:
       type: DomesdayPlace
       placeId: '33531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17889,6 +19541,10 @@
     to:
       type: DomesdayPlace
       placeId: '40176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17953,6 +19609,10 @@
     to:
       type: DomesdayPlace
       placeId: '40176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17990,6 +19650,10 @@
     to:
       type: DomesdayPlace
       placeId: '12076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18036,6 +19700,10 @@
     to:
       type: DomesdayPlace
       placeId: '62096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Gartree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18089,6 +19757,10 @@
     to:
       type: DomesdayPlace
       placeId: '35326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18128,6 +19800,10 @@
     to:
       type: DomesdayPlace
       placeId: '35326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Goscote
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18206,6 +19882,10 @@
     to:
       type: DomesdayPlace
       placeId: '33506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18255,6 +19935,10 @@
     to:
       type: DomesdayPlace
       placeId: '33506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18308,6 +19992,10 @@
     to:
       type: DomesdayPlace
       placeId: '15751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Framland
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18385,6 +20073,10 @@
     to:
       type: DomesdayPlace
       placeId: '3561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18431,6 +20123,10 @@
     to:
       type: DomesdayPlace
       placeId: '3561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18481,6 +20177,10 @@
     to:
       type: DomesdayPlace
       placeId: '7386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18532,6 +20232,10 @@
     to:
       type: DomesdayPlace
       placeId: '69451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18569,6 +20273,10 @@
     to:
       type: DomesdayPlace
       placeId: '48451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18614,6 +20322,10 @@
     to:
       type: DomesdayPlace
       placeId: '10911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18663,6 +20375,10 @@
     to:
       type: DomesdayPlace
       placeId: '15786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18703,6 +20419,10 @@
     to:
       type: DomesdayPlace
       placeId: '55046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18747,6 +20467,10 @@
     to:
       type: DomesdayPlace
       placeId: '49476'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18791,6 +20515,10 @@
     to:
       type: DomesdayPlace
       placeId: '3921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18837,6 +20565,10 @@
     to:
       type: DomesdayPlace
       placeId: '34456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18877,6 +20609,10 @@
     to:
       type: DomesdayPlace
       placeId: '36141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18919,6 +20655,10 @@
     to:
       type: DomesdayPlace
       placeId: '36141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: LEC:Guthlaxton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson

@@ -117,6 +117,10 @@
     to:
       type: DomesdayPlace
       placeId: '27691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Northern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -158,6 +162,10 @@
     to:
       type: DomesdayPlace
       placeId: '17941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Northern Hundred)
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -226,6 +234,10 @@
     to:
       type: DomesdayPlace
       placeId: '60016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Northern Hundred)
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -267,6 +279,10 @@
     to:
       type: DomesdayPlace
       placeId: '62241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Northern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -329,6 +345,10 @@
     to:
       type: DomesdayPlace
       placeId: '62241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Northern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -386,6 +406,10 @@
     to:
       type: DomesdayPlace
       placeId: '61846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Northern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -439,6 +463,10 @@
     to:
       type: DomesdayPlace
       placeId: '69531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Southern Hundred)
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -482,6 +510,10 @@
     to:
       type: DomesdayPlace
       placeId: '23996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Southern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -524,6 +556,10 @@
     to:
       type: DomesdayPlace
       placeId: '69916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Southern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -586,6 +622,10 @@
     to:
       type: DomesdayPlace
       placeId: '3506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Southern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -645,6 +685,10 @@
     to:
       type: DomesdayPlace
       placeId: '11671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Southern Hundred)
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -708,6 +752,10 @@
     to:
       type: DomesdayPlace
       placeId: '2856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Alstoe (Southern Hundred)
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -767,6 +815,10 @@
     to:
       type: DomesdayPlace
       placeId: '46596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Martinsley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -808,6 +860,10 @@
     to:
       type: DomesdayPlace
       placeId: '46596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Martinsley
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -854,6 +910,10 @@
     to:
       type: DomesdayPlace
       placeId: '28816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Martinsley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -897,6 +957,10 @@
     to:
       type: DomesdayPlace
       placeId: '51791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Martinsley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -968,6 +1032,10 @@
     to:
       type: DomesdayPlace
       placeId: '57871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: RUT:Martinsley
   - predicate: NAMES
     to:
       type: DomesdayPerson

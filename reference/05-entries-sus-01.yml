@@ -90,6 +90,10 @@
     to:
       type: DomesdayPlace
       placeId: '14851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bosham
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -138,6 +142,10 @@
     to:
       type: DomesdayPlace
       placeId: '52611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -204,6 +212,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Malling
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -254,6 +266,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Malling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -297,6 +313,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Malling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -338,6 +358,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Malling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -381,6 +405,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Malling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -422,6 +450,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Malling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -460,6 +492,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -510,6 +546,10 @@
     to:
       type: DomesdayPlace
       placeId: '72616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -557,6 +597,10 @@
     to:
       type: DomesdayPlace
       placeId: '58081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Falmer
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -576,7 +620,7 @@
     phillimore: 2,4
     county: SUS
     countyName: Sussex
-    kind: manor
+    kind: urban
     places: Lewes
     name: Lewes (Sussex 2,4)
     holding: borough
@@ -594,6 +638,10 @@
     to:
       type: DomesdayPlace
       placeId: '41061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Swanborough
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -641,6 +689,10 @@
     to:
       type: DomesdayPlace
       placeId: '48046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pagham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -689,6 +741,10 @@
     to:
       type: DomesdayPlace
       placeId: '61506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pagham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -738,6 +794,10 @@
     to:
       type: DomesdayPlace
       placeId: '38001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Singleton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -784,6 +844,10 @@
     to:
       type: DomesdayPlace
       placeId: '48291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -825,6 +889,10 @@
     to:
       type: DomesdayPlace
       placeId: '61641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -863,6 +931,10 @@
     to:
       type: DomesdayPlace
       placeId: '61641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -927,6 +999,10 @@
     to:
       type: DomesdayPlace
       placeId: '7266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -988,6 +1064,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Henfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1044,6 +1124,10 @@
     to:
       type: DomesdayPlace
       placeId: '14851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1118,6 +1202,10 @@
     to:
       type: DomesdayPlace
       placeId: '24801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1163,6 +1251,10 @@
     to:
       type: DomesdayPlace
       placeId: '1611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1228,6 +1320,10 @@
     to:
       type: DomesdayPlace
       placeId: '56091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Somerley
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1285,6 +1381,10 @@
     to:
       type: DomesdayPlace
       placeId: '54746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Somerley
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1338,6 +1438,10 @@
     to:
       type: DomesdayPlace
       placeId: '71761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Somerley
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1393,6 +1497,10 @@
     to:
       type: DomesdayPlace
       placeId: '50181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Preston
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1487,6 +1595,10 @@
     to:
       type: DomesdayPlace
       placeId: '48226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -1564,6 +1676,10 @@
     to:
       type: DomesdayPlace
       placeId: '53256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Guestling
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -1624,6 +1740,10 @@
     to:
       type: DomesdayPlace
       placeId: '58786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -1676,6 +1796,10 @@
     to:
       type: DomesdayPlace
       placeId: '12171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bury
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -1760,6 +1884,10 @@
     to:
       type: DomesdayPlace
       placeId: '62511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bosham
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -1855,6 +1983,10 @@
     to:
       type: DomesdayPlace
       placeId: '23166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dumpford
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -1918,6 +2050,10 @@
     to:
       type: DomesdayPlace
       placeId: '50176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Singleton
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -1975,6 +2111,10 @@
     to:
       type: DomesdayPlace
       placeId: '38066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -2021,6 +2161,10 @@
     to:
       type: DomesdayPlace
       placeId: '8266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bosham
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2095,6 +2239,10 @@
     to:
       type: DomesdayPlace
       placeId: '57251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Holmestrow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2138,6 +2286,10 @@
     to:
       type: DomesdayPlace
       placeId: '20726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Stockbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2211,6 +2363,10 @@
     to:
       type: DomesdayPlace
       placeId: '49026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2303,6 +2459,10 @@
     to:
       type: DomesdayPlace
       placeId: '65866'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2347,6 +2507,10 @@
     to:
       type: DomesdayPlace
       placeId: '5646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -2386,6 +2550,10 @@
     to:
       type: DomesdayPlace
       placeId: '5136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -2423,6 +2591,10 @@
     to:
       type: DomesdayPlace
       placeId: '70771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Longbridge
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -2460,6 +2632,10 @@
     to:
       type: DomesdayPlace
       placeId: '44901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -2498,6 +2674,10 @@
     to:
       type: DomesdayPlace
       placeId: '48706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -2538,6 +2718,10 @@
     to:
       type: DomesdayPlace
       placeId: '32956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2575,6 +2759,10 @@
     to:
       type: DomesdayPlace
       placeId: '24896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2606,6 +2794,10 @@
     to:
       type: DomesdayPlace
       placeId: '13481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2646,6 +2838,10 @@
     to:
       type: DomesdayPlace
       placeId: '11371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bexhill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2680,6 +2876,10 @@
     to:
       type: DomesdayPlace
       placeId: '18911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2716,6 +2916,10 @@
     to:
       type: DomesdayPlace
       placeId: '70836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2752,6 +2956,10 @@
     to:
       type: DomesdayPlace
       placeId: '32526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2844,6 +3052,10 @@
     to:
       type: DomesdayPlace
       placeId: '24651'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2908,6 +3120,10 @@
     to:
       type: DomesdayPlace
       placeId: '32956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2988,6 +3204,10 @@
     to:
       type: DomesdayPlace
       placeId: '13481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3037,6 +3257,10 @@
     to:
       type: DomesdayPlace
       placeId: '42206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3086,6 +3310,10 @@
     to:
       type: DomesdayPlace
       placeId: '45741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3156,6 +3384,10 @@
     to:
       type: DomesdayPlace
       placeId: '31376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Foxearle
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3203,6 +3435,10 @@
     to:
       type: DomesdayPlace
       placeId: '67591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Foxearle
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3264,6 +3500,10 @@
     to:
       type: DomesdayPlace
       placeId: '2416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Foxearle
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3314,6 +3554,10 @@
     to:
       type: DomesdayPlace
       placeId: '25781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Foxearle
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3459,6 +3703,10 @@
     to:
       type: DomesdayPlace
       placeId: '30106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bexhill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3587,6 +3835,10 @@
     to:
       type: DomesdayPlace
       placeId: '30106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bexhill
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -3639,6 +3891,10 @@
     to:
       type: DomesdayPlace
       placeId: '24896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3737,6 +3993,10 @@
     to:
       type: DomesdayPlace
       placeId: '32526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3797,6 +4057,10 @@
     to:
       type: DomesdayPlace
       placeId: '17706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -3852,6 +4116,10 @@
     to:
       type: DomesdayPlace
       placeId: '68721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3897,6 +4165,10 @@
     to:
       type: DomesdayPlace
       placeId: '18911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3945,6 +4217,10 @@
     to:
       type: DomesdayPlace
       placeId: '70836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4034,6 +4310,10 @@
     to:
       type: DomesdayPlace
       placeId: '69346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4079,6 +4359,10 @@
     to:
       type: DomesdayPlace
       placeId: '44276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4123,6 +4407,10 @@
     to:
       type: DomesdayPlace
       placeId: '44901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4201,6 +4489,10 @@
     to:
       type: DomesdayPlace
       placeId: '5646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4245,6 +4537,10 @@
     to:
       type: DomesdayPlace
       placeId: '10656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4282,6 +4578,10 @@
     to:
       type: DomesdayPlace
       placeId: '24036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4324,6 +4624,10 @@
     to:
       type: DomesdayPlace
       placeId: '24041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4362,6 +4666,10 @@
     to:
       type: DomesdayPlace
       placeId: '24041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4435,6 +4743,10 @@
     to:
       type: DomesdayPlace
       placeId: '9926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -4478,6 +4790,10 @@
     to:
       type: DomesdayPlace
       placeId: '19491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Netherfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4555,6 +4871,10 @@
     to:
       type: DomesdayPlace
       placeId: '67321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Hawksborough
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4598,6 +4918,10 @@
     to:
       type: DomesdayPlace
       placeId: '5556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4634,6 +4958,10 @@
     to:
       type: DomesdayPlace
       placeId: '5556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4672,6 +5000,10 @@
     to:
       type: DomesdayPlace
       placeId: '5556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4709,6 +5041,10 @@
     to:
       type: DomesdayPlace
       placeId: '24996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4746,6 +5082,10 @@
     to:
       type: DomesdayPlace
       placeId: '2141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4782,6 +5122,10 @@
     to:
       type: DomesdayPlace
       placeId: '37971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4818,6 +5162,10 @@
     to:
       type: DomesdayPlace
       placeId: '22411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4854,6 +5202,10 @@
     to:
       type: DomesdayPlace
       placeId: '51956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4890,6 +5242,10 @@
     to:
       type: DomesdayPlace
       placeId: '63846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4926,6 +5282,10 @@
     to:
       type: DomesdayPlace
       placeId: '19766'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4962,6 +5322,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4998,6 +5362,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5038,6 +5406,10 @@
     to:
       type: DomesdayPlace
       placeId: '54796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5074,6 +5446,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5114,6 +5490,10 @@
     to:
       type: DomesdayPlace
       placeId: '19766'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5154,6 +5534,10 @@
     to:
       type: DomesdayPlace
       placeId: '37971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5194,6 +5578,10 @@
     to:
       type: DomesdayPlace
       placeId: '10741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Longbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5236,6 +5624,10 @@
     to:
       type: DomesdayPlace
       placeId: '37971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5273,6 +5665,10 @@
     to:
       type: DomesdayPlace
       placeId: '58941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5315,6 +5711,10 @@
     to:
       type: DomesdayPlace
       placeId: '23671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5356,6 +5756,10 @@
     to:
       type: DomesdayPlace
       placeId: '22411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5399,6 +5803,10 @@
     to:
       type: DomesdayPlace
       placeId: '24996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5442,6 +5850,10 @@
     to:
       type: DomesdayPlace
       placeId: '50171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5479,6 +5891,10 @@
     to:
       type: DomesdayPlace
       placeId: '66751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5523,6 +5939,10 @@
     to:
       type: DomesdayPlace
       placeId: '51956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5568,6 +5988,10 @@
     to:
       type: DomesdayPlace
       placeId: '30596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shoyswell
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5620,6 +6044,10 @@
     to:
       type: DomesdayPlace
       placeId: '13976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5660,6 +6088,10 @@
     to:
       type: DomesdayPlace
       placeId: '55451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5696,6 +6128,10 @@
     to:
       type: DomesdayPlace
       placeId: '716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5733,6 +6169,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5774,6 +6214,10 @@
     to:
       type: DomesdayPlace
       placeId: '716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5814,6 +6258,10 @@
     to:
       type: DomesdayPlace
       placeId: '71431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5852,6 +6300,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5892,6 +6344,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5932,6 +6388,10 @@
     to:
       type: DomesdayPlace
       placeId: '51956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5972,6 +6432,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6012,6 +6476,10 @@
     to:
       type: DomesdayPlace
       placeId: '24996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6052,6 +6520,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6092,6 +6564,10 @@
     to:
       type: DomesdayPlace
       placeId: '35261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6134,6 +6610,10 @@
     to:
       type: DomesdayPlace
       placeId: '51956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6176,6 +6656,10 @@
     to:
       type: DomesdayPlace
       placeId: '24996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6216,6 +6700,10 @@
     to:
       type: DomesdayPlace
       placeId: '22411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6257,6 +6745,10 @@
     to:
       type: DomesdayPlace
       placeId: '55451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6292,6 +6784,10 @@
     to:
       type: DomesdayPlace
       placeId: '37971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6332,6 +6828,10 @@
     to:
       type: DomesdayPlace
       placeId: '11531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6372,6 +6872,10 @@
     to:
       type: DomesdayPlace
       placeId: '19766'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6410,6 +6914,10 @@
     to:
       type: DomesdayPlace
       placeId: '716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6453,6 +6961,10 @@
     to:
       type: DomesdayPlace
       placeId: '53541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Henhurst
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6497,6 +7009,10 @@
     to:
       type: DomesdayPlace
       placeId: '21216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Henhurst
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6677,6 +7193,10 @@
     to:
       type: DomesdayPlace
       placeId: '21911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6723,6 +7243,10 @@
     to:
       type: DomesdayPlace
       placeId: '6381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6766,6 +7290,10 @@
     to:
       type: DomesdayPlace
       placeId: '21911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6850,6 +7378,10 @@
     to:
       type: DomesdayPlace
       placeId: '54741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -6894,6 +7426,10 @@
     to:
       type: DomesdayPlace
       placeId: '11596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Henhurst
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -7032,6 +7568,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7071,6 +7611,10 @@
     to:
       type: DomesdayPlace
       placeId: '22411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7109,6 +7653,10 @@
     to:
       type: DomesdayPlace
       placeId: '54671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7144,6 +7692,10 @@
     to:
       type: DomesdayPlace
       placeId: '716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7181,6 +7733,10 @@
     to:
       type: DomesdayPlace
       placeId: '716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7222,6 +7778,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7263,6 +7823,10 @@
     to:
       type: DomesdayPlace
       placeId: '24996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7305,6 +7869,10 @@
     to:
       type: DomesdayPlace
       placeId: '36871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Gostrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7349,6 +7917,10 @@
     to:
       type: DomesdayPlace
       placeId: '65896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Gostrow
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -7397,6 +7969,10 @@
     to:
       type: DomesdayPlace
       placeId: '28021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Guestling
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -7449,6 +8025,10 @@
     to:
       type: DomesdayPlace
       placeId: '39136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -7536,6 +8116,10 @@
     to:
       type: DomesdayPlace
       placeId: '23746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7577,6 +8161,10 @@
     to:
       type: DomesdayPlace
       placeId: '49451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7640,6 +8228,10 @@
     to:
       type: DomesdayPlace
       placeId: '34556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7688,6 +8280,10 @@
     to:
       type: DomesdayPlace
       placeId: '26966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7754,6 +8350,10 @@
     to:
       type: DomesdayPlace
       placeId: '39136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Baldslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7792,6 +8392,10 @@
     to:
       type: DomesdayPlace
       placeId: '15721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7832,6 +8436,10 @@
     to:
       type: DomesdayPlace
       placeId: '13976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7871,6 +8479,10 @@
     to:
       type: DomesdayPlace
       placeId: '30836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7908,6 +8520,10 @@
     to:
       type: DomesdayPlace
       placeId: '30836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7946,6 +8562,10 @@
     to:
       type: DomesdayPlace
       placeId: '30836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Goldspur
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8030,6 +8650,10 @@
     to:
       type: DomesdayPlace
       placeId: '23911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8091,6 +8715,10 @@
     to:
       type: DomesdayPlace
       placeId: '31666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8134,6 +8762,10 @@
     to:
       type: DomesdayPlace
       placeId: '54641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8182,6 +8814,10 @@
     to:
       type: DomesdayPlace
       placeId: '40136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8227,6 +8863,10 @@
     to:
       type: DomesdayPlace
       placeId: '5876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8267,6 +8907,10 @@
     to:
       type: DomesdayPlace
       placeId: '54641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8308,6 +8952,10 @@
     to:
       type: DomesdayPlace
       placeId: '54641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8387,6 +9035,10 @@
     to:
       type: DomesdayPlace
       placeId: '25351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8426,6 +9078,10 @@
     to:
       type: DomesdayPlace
       placeId: '34236'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8470,6 +9126,10 @@
     to:
       type: DomesdayPlace
       placeId: '68261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8522,6 +9182,10 @@
     to:
       type: DomesdayPlace
       placeId: '5041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Staple
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8560,7 +9224,7 @@
     phillimore: 10,1
     county: SUS
     countyName: Sussex
-    kind: manor
+    kind: urban
     places: Pevensey
     name: Pevensey (Sussex 10,1)
     holding: borough
@@ -8577,6 +9241,10 @@
     to:
       type: DomesdayPlace
       placeId: '49026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -8702,6 +9370,10 @@
     to:
       type: DomesdayPlace
       placeId: '21916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -8763,6 +9435,10 @@
     to:
       type: DomesdayPlace
       placeId: '5556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8811,6 +9487,10 @@
     to:
       type: DomesdayPlace
       placeId: '21956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8853,6 +9533,10 @@
     to:
       type: DomesdayPlace
       placeId: '6496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8900,6 +9584,10 @@
     to:
       type: DomesdayPlace
       placeId: '15366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8950,6 +9638,10 @@
     to:
       type: DomesdayPlace
       placeId: '73796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8997,6 +9689,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9046,6 +9742,10 @@
     to:
       type: DomesdayPlace
       placeId: '21956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9131,6 +9831,10 @@
     to:
       type: DomesdayPlace
       placeId: '35186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9176,6 +9880,10 @@
     to:
       type: DomesdayPlace
       placeId: '50171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9244,6 +9952,10 @@
     to:
       type: DomesdayPlace
       placeId: '5556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9292,6 +10004,10 @@
     to:
       type: DomesdayPlace
       placeId: '14076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9348,6 +10064,10 @@
     to:
       type: DomesdayPlace
       placeId: '14076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9394,6 +10114,10 @@
     to:
       type: DomesdayPlace
       placeId: '63846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9440,6 +10164,10 @@
     to:
       type: DomesdayPlace
       placeId: '55451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9488,6 +10216,10 @@
     to:
       type: DomesdayPlace
       placeId: '55451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9532,6 +10264,10 @@
     to:
       type: DomesdayPlace
       placeId: '63846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9572,6 +10308,10 @@
     to:
       type: DomesdayPlace
       placeId: '63846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9625,6 +10365,10 @@
     to:
       type: DomesdayPlace
       placeId: '24996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9683,6 +10427,10 @@
     to:
       type: DomesdayPlace
       placeId: '37971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Totnore
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9725,6 +10473,10 @@
     to:
       type: DomesdayPlace
       placeId: '23936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9771,6 +10523,10 @@
     to:
       type: DomesdayPlace
       placeId: '23936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9825,6 +10581,10 @@
     to:
       type: DomesdayPlace
       placeId: '35261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9877,6 +10637,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9942,6 +10706,10 @@
     to:
       type: DomesdayPlace
       placeId: '12111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9989,6 +10757,10 @@
     to:
       type: DomesdayPlace
       placeId: '23936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10039,6 +10811,10 @@
     to:
       type: DomesdayPlace
       placeId: '14106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10088,6 +10864,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -10186,6 +10966,10 @@
     to:
       type: DomesdayPlace
       placeId: '19781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10236,6 +11020,10 @@
     to:
       type: DomesdayPlace
       placeId: '19781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10284,6 +11072,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10334,6 +11126,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10383,6 +11179,10 @@
     to:
       type: DomesdayPlace
       placeId: '51181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10430,6 +11230,10 @@
     to:
       type: DomesdayPlace
       placeId: '67241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10468,6 +11272,10 @@
     to:
       type: DomesdayPlace
       placeId: '70771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Longbridge
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10506,6 +11314,10 @@
     to:
       type: DomesdayPlace
       placeId: '70771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Longbridge
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10553,6 +11365,10 @@
     to:
       type: DomesdayPlace
       placeId: '70771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Longbridge
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10600,6 +11416,10 @@
     to:
       type: DomesdayPlace
       placeId: '25316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Longbridge
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10649,6 +11469,10 @@
     to:
       type: DomesdayPlace
       placeId: '61626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10683,6 +11507,10 @@
     to:
       type: DomesdayPlace
       placeId: '24991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -10731,6 +11559,10 @@
     to:
       type: DomesdayPlace
       placeId: '24991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10773,6 +11605,10 @@
     to:
       type: DomesdayPlace
       placeId: '24991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10819,6 +11655,10 @@
     to:
       type: DomesdayPlace
       placeId: '30841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10902,6 +11742,10 @@
     to:
       type: DomesdayPlace
       placeId: '24991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Flexborough
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10951,6 +11795,10 @@
     to:
       type: DomesdayPlace
       placeId: '48666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dill
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10994,6 +11842,10 @@
     to:
       type: DomesdayPlace
       placeId: '30421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11033,6 +11885,10 @@
     to:
       type: DomesdayPlace
       placeId: '31156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11079,6 +11935,10 @@
     to:
       type: DomesdayPlace
       placeId: '54741'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11119,6 +11979,10 @@
     to:
       type: DomesdayPlace
       placeId: '56101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11158,6 +12022,10 @@
     to:
       type: DomesdayPlace
       placeId: '56101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11199,6 +12067,10 @@
     to:
       type: DomesdayPlace
       placeId: '54796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11239,6 +12111,10 @@
     to:
       type: DomesdayPlace
       placeId: '991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11281,6 +12157,10 @@
     to:
       type: DomesdayPlace
       placeId: '991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Alciston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11352,6 +12232,10 @@
     to:
       type: DomesdayPlace
       placeId: '70421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Hartfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11395,6 +12279,10 @@
     to:
       type: DomesdayPlace
       placeId: '29816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Hartfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11512,6 +12400,10 @@
     to:
       type: DomesdayPlace
       placeId: '48256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Hartfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11597,6 +12489,10 @@
     to:
       type: DomesdayPlace
       placeId: '72876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Framfield
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -11650,6 +12546,10 @@
     to:
       type: DomesdayPlace
       placeId: '33411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Framfield
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -11706,6 +12606,10 @@
     to:
       type: DomesdayPlace
       placeId: '72621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11742,6 +12646,10 @@
     to:
       type: DomesdayPlace
       placeId: '28431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11785,6 +12693,10 @@
     to:
       type: DomesdayPlace
       placeId: '14596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11821,6 +12733,10 @@
     to:
       type: DomesdayPlace
       placeId: '70586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Willingdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11859,6 +12775,10 @@
     to:
       type: DomesdayPlace
       placeId: '48536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11894,6 +12814,10 @@
     to:
       type: DomesdayPlace
       placeId: '19111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11934,6 +12858,10 @@
     to:
       type: DomesdayPlace
       placeId: '33341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11976,6 +12904,10 @@
     to:
       type: DomesdayPlace
       placeId: '19111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12015,6 +12947,10 @@
     to:
       type: DomesdayPlace
       placeId: '33286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12053,6 +12989,10 @@
     to:
       type: DomesdayPlace
       placeId: '33286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12084,6 +13024,10 @@
     to:
       type: DomesdayPlace
       placeId: '32956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ninfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12116,6 +13060,10 @@
     to:
       type: DomesdayPlace
       placeId: '51541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12162,6 +13110,10 @@
     to:
       type: DomesdayPlace
       placeId: '48536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12220,6 +13172,10 @@
     to:
       type: DomesdayPlace
       placeId: '37661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12275,6 +13231,10 @@
     to:
       type: DomesdayPlace
       placeId: '29156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12315,6 +13275,10 @@
     to:
       type: DomesdayPlace
       placeId: '29156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -12357,6 +13321,10 @@
     to:
       type: DomesdayPlace
       placeId: '8606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12396,6 +13364,10 @@
     to:
       type: DomesdayPlace
       placeId: '21916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12425,6 +13397,10 @@
     to:
       type: DomesdayPlace
       placeId: '72621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12465,6 +13441,10 @@
     to:
       type: DomesdayPlace
       placeId: '51956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12505,6 +13485,10 @@
     to:
       type: DomesdayPlace
       placeId: '15721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -12551,6 +13535,10 @@
     to:
       type: DomesdayPlace
       placeId: '15721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12605,6 +13593,10 @@
     to:
       type: DomesdayPlace
       placeId: '22411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12658,6 +13650,10 @@
     to:
       type: DomesdayPlace
       placeId: '22411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12696,6 +13692,10 @@
     to:
       type: DomesdayPlace
       placeId: '13976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12744,6 +13744,10 @@
     to:
       type: DomesdayPlace
       placeId: '66751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12792,6 +13796,10 @@
     to:
       type: DomesdayPlace
       placeId: '37971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12829,6 +13837,10 @@
     to:
       type: DomesdayPlace
       placeId: '58941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12871,6 +13883,10 @@
     to:
       type: DomesdayPlace
       placeId: '14881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Shiplake
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12920,6 +13936,10 @@
     to:
       type: DomesdayPlace
       placeId: '55906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12959,6 +13979,10 @@
     to:
       type: DomesdayPlace
       placeId: '55906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -12997,6 +14021,10 @@
     to:
       type: DomesdayPlace
       placeId: '24626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13038,6 +14066,10 @@
     to:
       type: DomesdayPlace
       placeId: '72616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13083,6 +14115,10 @@
     to:
       type: DomesdayPlace
       placeId: '67456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13127,6 +14163,10 @@
     to:
       type: DomesdayPlace
       placeId: '70436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13212,6 +14252,10 @@
     to:
       type: DomesdayPlace
       placeId: '30581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13259,6 +14303,10 @@
     to:
       type: DomesdayPlace
       placeId: '67546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13305,6 +14353,10 @@
     to:
       type: DomesdayPlace
       placeId: '9131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13354,6 +14406,10 @@
     to:
       type: DomesdayPlace
       placeId: '69271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13400,6 +14456,10 @@
     to:
       type: DomesdayPlace
       placeId: '61626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13445,6 +14505,10 @@
     to:
       type: DomesdayPlace
       placeId: '24166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:East Grinstead
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13485,6 +14549,10 @@
     to:
       type: DomesdayPlace
       placeId: '33406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13532,6 +14600,10 @@
     to:
       type: DomesdayPlace
       placeId: '7106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13580,6 +14652,10 @@
     to:
       type: DomesdayPlace
       placeId: '55101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13623,6 +14699,10 @@
     to:
       type: DomesdayPlace
       placeId: '25166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13671,6 +14751,10 @@
     to:
       type: DomesdayPlace
       placeId: '25166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13718,6 +14802,10 @@
     to:
       type: DomesdayPlace
       placeId: '4266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13767,6 +14855,10 @@
     to:
       type: DomesdayPlace
       placeId: '4266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13814,6 +14906,10 @@
     to:
       type: DomesdayPlace
       placeId: '34981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rushmonden
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -13925,6 +15021,10 @@
     to:
       type: DomesdayPlace
       placeId: '42136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13963,7 +15063,7 @@
     phillimore: 11,1
     county: SUS
     countyName: Sussex
-    kind: manor
+    kind: urban
     places: Chichester
     name: Chichester (Sussex 11,1)
     holding: borough
@@ -13979,6 +15079,10 @@
     to:
       type: DomesdayPlace
       placeId: '14851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Stockbridge
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -13998,7 +15102,7 @@
     phillimore: 11,2
     county: SUS
     countyName: Sussex
-    kind: manor
+    kind: urban
     places: Arundel
     name: Arundel (Sussex 11,2)
     holding: borough
@@ -14019,6 +15123,10 @@
     to:
       type: DomesdayPlace
       placeId: '2256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -14096,6 +15204,10 @@
     to:
       type: DomesdayPlace
       placeId: '56226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Singleton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -14158,6 +15270,10 @@
     to:
       type: DomesdayPlace
       placeId: '6991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Singleton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14202,6 +15318,10 @@
     to:
       type: DomesdayPlace
       placeId: '38006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Singleton
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14266,6 +15386,10 @@
     to:
       type: DomesdayPlace
       placeId: '29856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dumpford
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -14326,6 +15450,10 @@
     to:
       type: DomesdayPlace
       placeId: '65316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dumpford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14375,6 +15503,10 @@
     to:
       type: DomesdayPlace
       placeId: '65266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dumpford
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14455,6 +15587,10 @@
     to:
       type: DomesdayPlace
       placeId: '15311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Dumpford
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14512,6 +15648,10 @@
     to:
       type: DomesdayPlace
       placeId: '58621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14571,6 +15711,10 @@
     to:
       type: DomesdayPlace
       placeId: '16521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14630,6 +15774,10 @@
     to:
       type: DomesdayPlace
       placeId: '39266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14678,6 +15826,10 @@
     to:
       type: DomesdayPlace
       placeId: '11266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14737,6 +15889,10 @@
     to:
       type: DomesdayPlace
       placeId: '54706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -14794,6 +15950,10 @@
     to:
       type: DomesdayPlace
       placeId: '14851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14844,6 +16004,10 @@
     to:
       type: DomesdayPlace
       placeId: '64111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14897,6 +16061,10 @@
     to:
       type: DomesdayPlace
       placeId: '27371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14957,6 +16125,10 @@
     to:
       type: DomesdayPlace
       placeId: '49021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15017,6 +16189,10 @@
     to:
       type: DomesdayPlace
       placeId: '63801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15073,6 +16249,10 @@
     to:
       type: DomesdayPlace
       placeId: '27956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15135,6 +16315,10 @@
     to:
       type: DomesdayPlace
       placeId: '21391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15191,6 +16375,10 @@
     to:
       type: DomesdayPlace
       placeId: '60636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15242,6 +16430,10 @@
     to:
       type: DomesdayPlace
       placeId: '4306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -15294,6 +16486,10 @@
     to:
       type: DomesdayPlace
       placeId: '26886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -15347,6 +16543,10 @@
     to:
       type: DomesdayPlace
       placeId: '59576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -15438,6 +16638,10 @@
     to:
       type: DomesdayPlace
       placeId: '11956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Rotherbridge
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15584,6 +16788,10 @@
     to:
       type: DomesdayPlace
       placeId: '68611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15641,6 +16849,10 @@
     to:
       type: DomesdayPlace
       placeId: '41431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15702,6 +16914,10 @@
     to:
       type: DomesdayPlace
       placeId: '50796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15752,6 +16968,10 @@
     to:
       type: DomesdayPlace
       placeId: '41431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15804,6 +17024,10 @@
     to:
       type: DomesdayPlace
       placeId: '41431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15854,6 +17078,10 @@
     to:
       type: DomesdayPlace
       placeId: '40141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15908,6 +17136,10 @@
     to:
       type: DomesdayPlace
       placeId: '17166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -15976,6 +17208,10 @@
     to:
       type: DomesdayPlace
       placeId: '59626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16025,6 +17261,10 @@
     to:
       type: DomesdayPlace
       placeId: '41431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Westbourne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16084,6 +17324,10 @@
     to:
       type: DomesdayPlace
       placeId: '25006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Stockbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16128,6 +17372,10 @@
     to:
       type: DomesdayPlace
       placeId: '52996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Stockbridge
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16180,6 +17428,10 @@
     to:
       type: DomesdayPlace
       placeId: '44436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Stockbridge
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16270,6 +17522,10 @@
     to:
       type: DomesdayPlace
       placeId: '34096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Stockbridge
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16317,6 +17573,10 @@
     to:
       type: DomesdayPlace
       placeId: '7136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wittering
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16369,6 +17629,10 @@
     to:
       type: DomesdayPlace
       placeId: '35166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wittering
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -16417,6 +17681,10 @@
     to:
       type: DomesdayPlace
       placeId: '57051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wittering
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -16466,6 +17734,10 @@
     to:
       type: DomesdayPlace
       placeId: '71766'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wittering
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16516,6 +17788,10 @@
     to:
       type: DomesdayPlace
       placeId: '59596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16560,6 +17836,10 @@
     to:
       type: DomesdayPlace
       placeId: '59596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16607,6 +17887,10 @@
     to:
       type: DomesdayPlace
       placeId: '17526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16658,6 +17942,10 @@
     to:
       type: DomesdayPlace
       placeId: '17526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16702,6 +17990,10 @@
     to:
       type: DomesdayPlace
       placeId: '48226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16747,6 +18039,10 @@
     to:
       type: DomesdayPlace
       placeId: '46461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16794,6 +18090,10 @@
     to:
       type: DomesdayPlace
       placeId: '46511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16847,6 +18147,10 @@
     to:
       type: DomesdayPlace
       placeId: '50406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -16900,6 +18204,10 @@
     to:
       type: DomesdayPlace
       placeId: '27606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -16952,6 +18260,10 @@
     to:
       type: DomesdayPlace
       placeId: '15066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17004,6 +18316,10 @@
     to:
       type: DomesdayPlace
       placeId: '60456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17057,6 +18373,10 @@
     to:
       type: DomesdayPlace
       placeId: '40781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17090,6 +18410,10 @@
     to:
       type: DomesdayPlace
       placeId: '40781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17135,6 +18459,10 @@
     to:
       type: DomesdayPlace
       placeId: '64101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17185,6 +18513,10 @@
     to:
       type: DomesdayPlace
       placeId: '67541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17239,6 +18571,10 @@
     to:
       type: DomesdayPlace
       placeId: '46416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17290,6 +18626,10 @@
     to:
       type: DomesdayPlace
       placeId: '46416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17346,6 +18686,10 @@
     to:
       type: DomesdayPlace
       placeId: '1756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17395,6 +18739,10 @@
     to:
       type: DomesdayPlace
       placeId: '1756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17445,6 +18793,10 @@
     to:
       type: DomesdayPlace
       placeId: '59286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17496,6 +18848,10 @@
     to:
       type: DomesdayPlace
       placeId: '11836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -17545,6 +18901,10 @@
     to:
       type: DomesdayPlace
       placeId: '50216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17588,6 +18948,10 @@
     to:
       type: DomesdayPlace
       placeId: '27261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17632,6 +18996,10 @@
     to:
       type: DomesdayPlace
       placeId: '27261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17679,6 +19047,10 @@
     to:
       type: DomesdayPlace
       placeId: '27261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -17731,6 +19103,10 @@
     to:
       type: DomesdayPlace
       placeId: '27261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17781,6 +19157,10 @@
     to:
       type: DomesdayPlace
       placeId: '68516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -17826,6 +19206,10 @@
     to:
       type: DomesdayPlace
       placeId: '16206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17877,6 +19261,10 @@
     to:
       type: DomesdayPlace
       placeId: '16206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17919,6 +19307,10 @@
     to:
       type: DomesdayPlace
       placeId: '39551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17966,6 +19358,10 @@
     to:
       type: DomesdayPlace
       placeId: '6816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bury
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -18017,6 +19413,10 @@
     to:
       type: DomesdayPlace
       placeId: '29361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Bury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18065,6 +19465,10 @@
     to:
       type: DomesdayPlace
       placeId: '7051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18112,6 +19516,10 @@
     to:
       type: DomesdayPlace
       placeId: '66646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -18166,6 +19574,10 @@
     to:
       type: DomesdayPlace
       placeId: '4486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18209,6 +19621,10 @@
     to:
       type: DomesdayPlace
       placeId: '42841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18258,6 +19674,10 @@
     to:
       type: DomesdayPlace
       placeId: '59366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18302,6 +19722,10 @@
     to:
       type: DomesdayPlace
       placeId: '64461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18345,6 +19769,10 @@
     to:
       type: DomesdayPlace
       placeId: '6931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18432,6 +19860,10 @@
     to:
       type: DomesdayPlace
       placeId: '56561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18507,6 +19939,10 @@
     to:
       type: DomesdayPlace
       placeId: '8201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18593,6 +20029,10 @@
     to:
       type: DomesdayPlace
       placeId: '46876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18640,6 +20080,10 @@
     to:
       type: DomesdayPlace
       placeId: '21951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Binsted
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18976,6 +20420,10 @@
     to:
       type: DomesdayPlace
       placeId: '8646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -19036,6 +20484,10 @@
     to:
       type: DomesdayPlace
       placeId: '28921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19090,6 +20542,10 @@
     to:
       type: DomesdayPlace
       placeId: '28601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19138,6 +20594,10 @@
     to:
       type: DomesdayPlace
       placeId: '68731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -19253,6 +20713,10 @@
     to:
       type: DomesdayPlace
       placeId: '59996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19301,6 +20765,10 @@
     to:
       type: DomesdayPlace
       placeId: '59996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19352,6 +20820,10 @@
     to:
       type: DomesdayPlace
       placeId: '59996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19402,6 +20874,10 @@
     to:
       type: DomesdayPlace
       placeId: '42621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -19457,6 +20933,10 @@
     to:
       type: DomesdayPlace
       placeId: '53011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19502,6 +20982,10 @@
     to:
       type: DomesdayPlace
       placeId: '67021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19552,6 +21036,10 @@
     to:
       type: DomesdayPlace
       placeId: '67021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19588,6 +21076,10 @@
     to:
       type: DomesdayPlace
       placeId: '28601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Box
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19686,7 +21178,7 @@
     phillimore: 12,1
     county: SUS
     countyName: Sussex
-    kind: manor
+    kind: urban
     places: Lewes
     name: Lewes (Sussex 12,1)
     holding: borough
@@ -19704,6 +21196,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Swanborough
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -19741,6 +21237,10 @@
     to:
       type: DomesdayPlace
       placeId: '49026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Pevensey
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -19795,6 +21295,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Swanborough
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19864,6 +21368,10 @@
     to:
       type: DomesdayPlace
       placeId: '52346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Holmestrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19924,6 +21432,10 @@
     to:
       type: DomesdayPlace
       placeId: '48286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Preston
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19982,6 +21494,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -20049,6 +21565,10 @@
     to:
       type: DomesdayPlace
       placeId: '24206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Falmer
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -20106,6 +21626,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Holmestrow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20160,6 +21684,10 @@
     to:
       type: DomesdayPlace
       placeId: '47221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Holmestrow
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20213,6 +21741,10 @@
     to:
       type: DomesdayPlace
       placeId: '52666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Whalesbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20271,6 +21803,10 @@
     to:
       type: DomesdayPlace
       placeId: '47756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Whalesbourne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20323,6 +21859,10 @@
     to:
       type: DomesdayPlace
       placeId: '47756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Whalesbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20371,6 +21911,10 @@
     to:
       type: DomesdayPlace
       placeId: '9941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Whalesbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20425,6 +21969,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Whalesbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20477,6 +22025,10 @@
     to:
       type: DomesdayPlace
       placeId: '9941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Whalesbourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20529,6 +22081,10 @@
     to:
       type: DomesdayPlace
       placeId: '24206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Falmer
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20615,6 +22171,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Falmer
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -20670,6 +22230,10 @@
     to:
       type: DomesdayPlace
       placeId: '71351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Swanborough
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20720,6 +22284,10 @@
     to:
       type: DomesdayPlace
       placeId: '5661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20776,6 +22344,10 @@
     to:
       type: DomesdayPlace
       placeId: '10226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20827,6 +22399,10 @@
     to:
       type: DomesdayPlace
       placeId: '6001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20879,6 +22455,10 @@
     to:
       type: DomesdayPlace
       placeId: '36366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -20924,6 +22504,10 @@
     to:
       type: DomesdayPlace
       placeId: '49856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20964,6 +22548,10 @@
     to:
       type: DomesdayPlace
       placeId: '49856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -21005,6 +22593,10 @@
     to:
       type: DomesdayPlace
       placeId: '48381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21062,6 +22654,10 @@
     to:
       type: DomesdayPlace
       placeId: '48841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -21113,6 +22709,10 @@
     to:
       type: DomesdayPlace
       placeId: '65351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21164,6 +22764,10 @@
     to:
       type: DomesdayPlace
       placeId: '55601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21215,6 +22819,10 @@
     to:
       type: DomesdayPlace
       placeId: '50041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21267,6 +22875,10 @@
     to:
       type: DomesdayPlace
       placeId: '48156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21319,6 +22931,10 @@
     to:
       type: DomesdayPlace
       placeId: '48156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21384,6 +23000,10 @@
     to:
       type: DomesdayPlace
       placeId: '53341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21442,6 +23062,10 @@
     to:
       type: DomesdayPlace
       placeId: '45346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21492,6 +23116,10 @@
     to:
       type: DomesdayPlace
       placeId: '48841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poynings
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -21548,6 +23176,10 @@
     to:
       type: DomesdayPlace
       placeId: '34256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Buttinghill
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -21617,6 +23249,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Buttinghill
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21663,6 +23299,10 @@
     to:
       type: DomesdayPlace
       placeId: '70081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Buttinghill
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21722,6 +23362,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Buttinghill
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21777,6 +23421,10 @@
     to:
       type: DomesdayPlace
       placeId: '59906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21834,6 +23482,10 @@
     to:
       type: DomesdayPlace
       placeId: '68811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21893,6 +23545,10 @@
     to:
       type: DomesdayPlace
       placeId: '49506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21946,6 +23602,10 @@
     to:
       type: DomesdayPlace
       placeId: '15061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22008,6 +23668,10 @@
     to:
       type: DomesdayPlace
       placeId: '15061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22051,6 +23715,10 @@
     to:
       type: DomesdayPlace
       placeId: '72616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22103,6 +23771,10 @@
     to:
       type: DomesdayPlace
       placeId: '67546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Streat
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22156,6 +23828,10 @@
     to:
       type: DomesdayPlace
       placeId: '5661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Burbeach
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22210,6 +23886,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Barcombe
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22264,6 +23944,10 @@
     to:
       type: DomesdayPlace
       placeId: '29016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Barcombe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22331,6 +24015,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Barcombe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22390,6 +24078,10 @@
     to:
       type: DomesdayPlace
       placeId: '39036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Barcombe
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22430,6 +24122,10 @@
     to:
       type: DomesdayPlace
       placeId: '1176'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Barcombe
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22468,6 +24164,10 @@
     to:
       type: DomesdayPlace
       placeId: '47756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Falmer
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22516,6 +24216,10 @@
     to:
       type: DomesdayPlace
       placeId: '5981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wyndham
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -22568,6 +24272,10 @@
     to:
       type: DomesdayPlace
       placeId: '5981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wyndham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22609,6 +24317,10 @@
     to:
       type: DomesdayPlace
       placeId: '2541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Swanborough
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22679,6 +24391,10 @@
     to:
       type: DomesdayPlace
       placeId: '5661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Burbeach
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22796,6 +24512,10 @@
     to:
       type: DomesdayPlace
       placeId: '23546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Burbeach
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22842,6 +24562,10 @@
     to:
       type: DomesdayPlace
       placeId: '55816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Burbeach
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -22887,6 +24611,10 @@
     to:
       type: DomesdayPlace
       placeId: '65351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Burbeach
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -22944,6 +24672,10 @@
     to:
       type: DomesdayPlace
       placeId: '64566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Burbeach
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22990,6 +24722,10 @@
     to:
       type: DomesdayPlace
       placeId: '1796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23042,6 +24778,10 @@
     to:
       type: DomesdayPlace
       placeId: '67676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -23110,6 +24850,10 @@
     to:
       type: DomesdayPlace
       placeId: '58786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23157,6 +24901,10 @@
     to:
       type: DomesdayPlace
       placeId: '24926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23208,6 +24956,10 @@
     to:
       type: DomesdayPlace
       placeId: '60451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23256,6 +25008,10 @@
     to:
       type: DomesdayPlace
       placeId: '71531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23305,6 +25061,10 @@
     to:
       type: DomesdayPlace
       placeId: '67311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23357,6 +25117,10 @@
     to:
       type: DomesdayPlace
       placeId: '40781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23447,6 +25211,10 @@
     to:
       type: DomesdayPlace
       placeId: '13991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23486,6 +25254,10 @@
     to:
       type: DomesdayPlace
       placeId: '13991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23536,6 +25308,10 @@
     to:
       type: DomesdayPlace
       placeId: '17521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23584,6 +25360,10 @@
     to:
       type: DomesdayPlace
       placeId: '1951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23630,6 +25410,10 @@
     to:
       type: DomesdayPlace
       placeId: '46881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23677,6 +25461,10 @@
     to:
       type: DomesdayPlace
       placeId: '72236'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Henfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23728,6 +25516,10 @@
     to:
       type: DomesdayPlace
       placeId: '67271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Henfield
   - predicate: UNDERLORD_1066
     to:
       type: DomesdayPerson
@@ -23772,6 +25564,10 @@
     to:
       type: DomesdayPlace
       placeId: '72371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wyndham
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23822,6 +25618,10 @@
     to:
       type: DomesdayPlace
       placeId: '55441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wyndham
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23865,6 +25665,10 @@
     to:
       type: DomesdayPlace
       placeId: '43996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wyndham
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23910,6 +25714,10 @@
     to:
       type: DomesdayPlace
       placeId: '53521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Wyndham
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -23959,6 +25767,10 @@
     to:
       type: DomesdayPlace
       placeId: '36366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24019,6 +25831,10 @@
     to:
       type: DomesdayPlace
       placeId: '36366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Aldrington
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24072,6 +25888,10 @@
     to:
       type: DomesdayPlace
       placeId: '10226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24127,6 +25947,10 @@
     to:
       type: DomesdayPlace
       placeId: '30816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24173,6 +25997,10 @@
     to:
       type: DomesdayPlace
       placeId: '30816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -24223,6 +26051,10 @@
     to:
       type: DomesdayPlace
       placeId: '21676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24279,6 +26111,10 @@
     to:
       type: DomesdayPlace
       placeId: '21676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24329,6 +26165,10 @@
     to:
       type: DomesdayPlace
       placeId: '72906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24373,6 +26213,10 @@
     to:
       type: DomesdayPlace
       placeId: '72906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24420,6 +26264,10 @@
     to:
       type: DomesdayPlace
       placeId: '72906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24477,6 +26325,10 @@
     to:
       type: DomesdayPlace
       placeId: '57111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24537,6 +26389,10 @@
     to:
       type: DomesdayPlace
       placeId: '57111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24585,6 +26441,10 @@
     to:
       type: DomesdayPlace
       placeId: '57111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24626,6 +26486,10 @@
     to:
       type: DomesdayPlace
       placeId: '16631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24672,6 +26536,10 @@
     to:
       type: DomesdayPlace
       placeId: '19581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24734,6 +26602,10 @@
     to:
       type: DomesdayPlace
       placeId: '37381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24789,6 +26661,10 @@
     to:
       type: DomesdayPlace
       placeId: '37381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24848,6 +26724,10 @@
     to:
       type: DomesdayPlace
       placeId: '16631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24901,6 +26781,10 @@
     to:
       type: DomesdayPlace
       placeId: '34256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Brightford
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24956,6 +26840,10 @@
     to:
       type: DomesdayPlace
       placeId: '67676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25006,6 +26894,10 @@
     to:
       type: DomesdayPlace
       placeId: '15066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25054,6 +26946,10 @@
     to:
       type: DomesdayPlace
       placeId: '62041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25106,6 +27002,10 @@
     to:
       type: DomesdayPlace
       placeId: '44461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easewrithe
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25230,6 +27130,10 @@
     to:
       type: DomesdayPlace
       placeId: '67541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:West Grinstead
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25280,6 +27184,10 @@
     to:
       type: DomesdayPlace
       placeId: '34596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Ifield
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25372,6 +27280,10 @@
     to:
       type: DomesdayPlace
       placeId: '11416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Steyning
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25415,6 +27327,10 @@
     to:
       type: DomesdayPlace
       placeId: '1756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Poling
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25489,6 +27405,10 @@
     to:
       type: DomesdayPlace
       placeId: '72341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -25540,6 +27460,10 @@
     to:
       type: DomesdayPlace
       placeId: '34986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Easebourne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson

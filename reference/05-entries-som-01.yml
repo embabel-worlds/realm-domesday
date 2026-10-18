@@ -103,6 +103,10 @@
     to:
       type: DomesdayPlace
       placeId: '57096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -180,6 +184,10 @@
     to:
       type: DomesdayPlace
       placeId: '68011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -254,6 +262,10 @@
     to:
       type: DomesdayPlace
       placeId: '48991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -312,6 +324,10 @@
     to:
       type: DomesdayPlace
       placeId: '18646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -386,6 +402,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -465,6 +485,18 @@
     to:
       type: DomesdayPlace
       placeId: '43676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -523,6 +555,10 @@
     to:
       type: DomesdayPlace
       placeId: '5616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Hartcliffe with Bedminster
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -582,6 +618,10 @@
     to:
       type: DomesdayPlace
       placeId: '26021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -609,7 +649,7 @@
     phillimore: 1,9
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Bruton
     name: Bruton (Somerset 1,9)
     holding: borough
@@ -651,6 +691,10 @@
     to:
       type: DomesdayPlace
       placeId: '26021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -686,7 +730,7 @@
     phillimore: 1,10
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Milborne [Port]
     name: Milborne [Port] (Somerset 1,10)
     holding: borough
@@ -725,6 +769,10 @@
     to:
       type: DomesdayPlace
       placeId: '43031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: INSTITUTION
     to:
       type: DomesdayPerson
@@ -786,6 +834,10 @@
     to:
       type: DomesdayPlace
       placeId: '43316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -844,6 +896,10 @@
     to:
       type: DomesdayPlace
       placeId: '21351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -914,6 +970,10 @@
     to:
       type: DomesdayPlace
       placeId: '70666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -958,6 +1018,10 @@
     to:
       type: DomesdayPlace
       placeId: '44941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1002,6 +1066,10 @@
     to:
       type: DomesdayPlace
       placeId: '13011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1050,6 +1118,10 @@
     to:
       type: DomesdayPlace
       placeId: '37551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1097,6 +1169,10 @@
     to:
       type: DomesdayPlace
       placeId: '71181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1149,6 +1225,10 @@
     to:
       type: DomesdayPlace
       placeId: '18531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1204,6 +1284,10 @@
     to:
       type: DomesdayPlace
       placeId: '37681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Curry
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1276,6 +1360,10 @@
     to:
       type: DomesdayPlace
       placeId: '18616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Crewkerne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1330,6 +1418,10 @@
     to:
       type: DomesdayPlace
       placeId: '17341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1425,6 +1517,10 @@
     to:
       type: DomesdayPlace
       placeId: '12811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1473,6 +1569,10 @@
     to:
       type: DomesdayPlace
       placeId: '16641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1519,6 +1619,10 @@
     to:
       type: DomesdayPlace
       placeId: '29381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1565,6 +1669,10 @@
     to:
       type: DomesdayPlace
       placeId: '31276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1633,6 +1741,10 @@
     to:
       type: DomesdayPlace
       placeId: '43316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1690,6 +1802,10 @@
     to:
       type: DomesdayPlace
       placeId: '41911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Martock
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1773,6 +1889,10 @@
     to:
       type: DomesdayPlace
       placeId: '5086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1868,6 +1988,10 @@
     to:
       type: DomesdayPlace
       placeId: '5086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1919,6 +2043,10 @@
     to:
       type: DomesdayPlace
       placeId: '5111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1934,7 +2062,7 @@
     phillimore: 1,31
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Bath
     name: Bath (Somerset 1,31)
     holding: borough
@@ -1980,6 +2108,10 @@
     to:
       type: DomesdayPlace
       placeId: '43031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2049,6 +2181,10 @@
     to:
       type: DomesdayPlace
       placeId: '17726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2089,6 +2225,10 @@
     to:
       type: DomesdayPlace
       placeId: '69621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2125,6 +2265,10 @@
     to:
       type: DomesdayPlace
       placeId: '49391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2170,6 +2314,10 @@
     to:
       type: DomesdayPlace
       placeId: '44356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -2212,7 +2360,7 @@
     phillimore: 2,1
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Taunton
     name: Taunton (Somerset 2,1)
     holding: borough
@@ -2243,6 +2391,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2266,7 +2418,7 @@
     phillimore: 2,2
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Taunton
     name: Taunton (Somerset 2,2)
     holding: borough
@@ -2281,6 +2433,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2378,6 +2534,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2411,6 +2571,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2448,6 +2612,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2492,6 +2660,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2549,6 +2721,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2622,6 +2798,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2688,6 +2868,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2751,6 +2935,10 @@
     to:
       type: DomesdayPlace
       placeId: '49386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2799,6 +2987,10 @@
     to:
       type: DomesdayPlace
       placeId: '7581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -2846,6 +3038,10 @@
     to:
       type: DomesdayPlace
       placeId: '51861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2918,6 +3114,10 @@
     to:
       type: DomesdayPlace
       placeId: '18616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Crewkerne
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -2980,6 +3180,10 @@
     to:
       type: DomesdayPlace
       placeId: '14936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3051,6 +3255,10 @@
     to:
       type: DomesdayPlace
       placeId: '62296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3121,6 +3329,10 @@
     to:
       type: DomesdayPlace
       placeId: '20886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3170,6 +3382,10 @@
     to:
       type: DomesdayPlace
       placeId: '13861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3217,6 +3433,10 @@
     to:
       type: DomesdayPlace
       placeId: '32141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3265,6 +3485,10 @@
     to:
       type: DomesdayPlace
       placeId: '59331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3315,6 +3539,10 @@
     to:
       type: DomesdayPlace
       placeId: '44941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3361,6 +3589,10 @@
     to:
       type: DomesdayPlace
       placeId: '70751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3404,6 +3636,10 @@
     to:
       type: DomesdayPlace
       placeId: '19126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3452,6 +3688,10 @@
     to:
       type: DomesdayPlace
       placeId: '71706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3502,6 +3742,10 @@
     to:
       type: DomesdayPlace
       placeId: '29731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3551,6 +3795,10 @@
     to:
       type: DomesdayPlace
       placeId: '34286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3603,6 +3851,10 @@
     to:
       type: DomesdayPlace
       placeId: '22781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3651,6 +3903,10 @@
     to:
       type: DomesdayPlace
       placeId: '71396'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3703,6 +3959,10 @@
     to:
       type: DomesdayPlace
       placeId: '2536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3751,6 +4011,10 @@
     to:
       type: DomesdayPlace
       placeId: '16391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3799,6 +4063,10 @@
     to:
       type: DomesdayPlace
       placeId: '63886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3851,6 +4119,10 @@
     to:
       type: DomesdayPlace
       placeId: '46306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3897,6 +4169,10 @@
     to:
       type: DomesdayPlace
       placeId: '15716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3944,6 +4220,10 @@
     to:
       type: DomesdayPlace
       placeId: '24351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3991,6 +4271,10 @@
     to:
       type: DomesdayPlace
       placeId: '16011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4046,6 +4330,10 @@
     to:
       type: DomesdayPlace
       placeId: '10101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4088,6 +4376,10 @@
     to:
       type: DomesdayPlace
       placeId: '7281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4136,6 +4428,10 @@
     to:
       type: DomesdayPlace
       placeId: '68961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4183,6 +4479,10 @@
     to:
       type: DomesdayPlace
       placeId: '53636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4231,6 +4531,10 @@
     to:
       type: DomesdayPlace
       placeId: '22111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4279,6 +4583,10 @@
     to:
       type: DomesdayPlace
       placeId: '49816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4325,6 +4633,10 @@
     to:
       type: DomesdayPlace
       placeId: '68961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4372,6 +4684,10 @@
     to:
       type: DomesdayPlace
       placeId: '15641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4416,6 +4732,10 @@
     to:
       type: DomesdayPlace
       placeId: '30366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4453,6 +4773,10 @@
     to:
       type: DomesdayPlace
       placeId: '35581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4493,6 +4817,10 @@
     to:
       type: DomesdayPlace
       placeId: '5086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4545,6 +4873,10 @@
     to:
       type: DomesdayPlace
       placeId: '12241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4594,6 +4926,10 @@
     to:
       type: DomesdayPlace
       placeId: '4626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4642,6 +4978,10 @@
     to:
       type: DomesdayPlace
       placeId: '49791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4689,6 +5029,10 @@
     to:
       type: DomesdayPlace
       placeId: '2801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4743,6 +5087,10 @@
     to:
       type: DomesdayPlace
       placeId: '25851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4791,6 +5139,10 @@
     to:
       type: DomesdayPlace
       placeId: '37686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4843,6 +5195,10 @@
     to:
       type: DomesdayPlace
       placeId: '72426'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4876,6 +5232,10 @@
     to:
       type: DomesdayPlace
       placeId: '60936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4924,6 +5284,10 @@
     to:
       type: DomesdayPlace
       placeId: '17216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -4968,6 +5332,10 @@
     to:
       type: DomesdayPlace
       placeId: '73081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5019,6 +5387,10 @@
     to:
       type: DomesdayPlace
       placeId: '71061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5084,6 +5456,10 @@
     to:
       type: DomesdayPlace
       placeId: '25631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5138,6 +5514,10 @@
     to:
       type: DomesdayPlace
       placeId: '59881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5198,6 +5578,10 @@
     to:
       type: DomesdayPlace
       placeId: '23436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5246,6 +5630,10 @@
     to:
       type: DomesdayPlace
       placeId: '65651'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5292,6 +5680,10 @@
     to:
       type: DomesdayPlace
       placeId: '65651'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -5349,6 +5741,10 @@
     to:
       type: DomesdayPlace
       placeId: '50911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5408,6 +5804,10 @@
     to:
       type: DomesdayPlace
       placeId: '31041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5459,6 +5859,10 @@
     to:
       type: DomesdayPlace
       placeId: '3646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5509,6 +5913,10 @@
     to:
       type: DomesdayPlace
       placeId: '42761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5561,6 +5969,10 @@
     to:
       type: DomesdayPlace
       placeId: '40516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5604,6 +6016,10 @@
     to:
       type: DomesdayPlace
       placeId: '47161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5651,6 +6067,10 @@
     to:
       type: DomesdayPlace
       placeId: '61876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5704,6 +6124,10 @@
     to:
       type: DomesdayPlace
       placeId: '52271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5770,6 +6194,10 @@
     to:
       type: DomesdayPlace
       placeId: '35861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5816,6 +6244,10 @@
     to:
       type: DomesdayPlace
       placeId: '39641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5864,6 +6296,10 @@
     to:
       type: DomesdayPlace
       placeId: '45646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5911,6 +6347,10 @@
     to:
       type: DomesdayPlace
       placeId: '24486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5958,6 +6398,10 @@
     to:
       type: DomesdayPlace
       placeId: '22141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6006,6 +6450,10 @@
     to:
       type: DomesdayPlace
       placeId: '29736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6052,6 +6500,10 @@
     to:
       type: DomesdayPlace
       placeId: '23341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6101,6 +6553,10 @@
     to:
       type: DomesdayPlace
       placeId: '12821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6147,6 +6603,10 @@
     to:
       type: DomesdayPlace
       placeId: '36386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6195,6 +6655,10 @@
     to:
       type: DomesdayPlace
       placeId: '36386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6241,6 +6705,10 @@
     to:
       type: DomesdayPlace
       placeId: '28571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6294,6 +6762,10 @@
     to:
       type: DomesdayPlace
       placeId: '39626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6343,6 +6815,10 @@
     to:
       type: DomesdayPlace
       placeId: '66341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6386,6 +6862,10 @@
     to:
       type: DomesdayPlace
       placeId: '43001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6434,6 +6914,10 @@
     to:
       type: DomesdayPlace
       placeId: '67956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6482,6 +6966,10 @@
     to:
       type: DomesdayPlace
       placeId: '59721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6550,6 +7038,10 @@
     to:
       type: DomesdayPlace
       placeId: '68316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wells Forum
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -6629,6 +7121,10 @@
     to:
       type: DomesdayPlace
       placeId: '17071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury East
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6672,6 +7168,10 @@
     to:
       type: DomesdayPlace
       placeId: '36261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury East
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -6724,6 +7224,10 @@
     to:
       type: DomesdayPlace
       placeId: '14006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury East
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6769,6 +7273,10 @@
     to:
       type: DomesdayPlace
       placeId: '39491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6813,6 +7321,10 @@
     to:
       type: DomesdayPlace
       placeId: '71806'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury West
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -6860,6 +7372,10 @@
     to:
       type: DomesdayPlace
       placeId: '68291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury West
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6911,6 +7427,10 @@
     to:
       type: DomesdayPlace
       placeId: '40671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury West
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -6959,6 +7479,10 @@
     to:
       type: DomesdayPlace
       placeId: '4091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -7030,6 +7554,10 @@
     to:
       type: DomesdayPlace
       placeId: '23796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -7092,6 +7620,10 @@
     to:
       type: DomesdayPlace
       placeId: '68656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wells Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7135,6 +7667,10 @@
     to:
       type: DomesdayPlace
       placeId: '71191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury East
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7183,6 +7719,10 @@
     to:
       type: DomesdayPlace
       placeId: '14831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -7253,6 +7793,10 @@
     to:
       type: DomesdayPlace
       placeId: '73656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -7309,6 +7853,10 @@
     to:
       type: DomesdayPlace
       placeId: '68011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7350,6 +7898,10 @@
     to:
       type: DomesdayPlace
       placeId: '67256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7401,6 +7953,10 @@
     to:
       type: DomesdayPlace
       placeId: '39666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wells Forum
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7439,6 +7995,10 @@
     to:
       type: DomesdayPlace
       placeId: '43316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7482,6 +8042,10 @@
     to:
       type: DomesdayPlace
       placeId: '40671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury West
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7529,7 +8093,7 @@
     phillimore: 7,1
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Bath
     name: Bath (Somerset 7,1)
     holding: borough
@@ -7549,6 +8113,10 @@
     to:
       type: DomesdayPlace
       placeId: '5086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7596,6 +8164,10 @@
     to:
       type: DomesdayPlace
       placeId: '50336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7639,6 +8211,10 @@
     to:
       type: DomesdayPlace
       placeId: '58251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7682,6 +8258,10 @@
     to:
       type: DomesdayPlace
       placeId: '70766'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -7734,6 +8314,10 @@
     to:
       type: DomesdayPlace
       placeId: '68871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7783,6 +8367,10 @@
     to:
       type: DomesdayPlace
       placeId: '5121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7830,6 +8418,10 @@
     to:
       type: DomesdayPlace
       placeId: '17051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7877,6 +8469,10 @@
     to:
       type: DomesdayPlace
       placeId: '14056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7929,6 +8525,10 @@
     to:
       type: DomesdayPlace
       placeId: '40806'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7976,6 +8576,10 @@
     to:
       type: DomesdayPlace
       placeId: '5111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8025,6 +8629,10 @@
     to:
       type: DomesdayPlace
       placeId: '5096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8075,6 +8683,10 @@
     to:
       type: DomesdayPlace
       placeId: '72311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8127,6 +8739,10 @@
     to:
       type: DomesdayPlace
       placeId: '17696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8169,6 +8785,10 @@
     to:
       type: DomesdayPlace
       placeId: '23836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8211,6 +8831,10 @@
     to:
       type: DomesdayPlace
       placeId: '2871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8294,6 +8918,10 @@
     to:
       type: DomesdayPlace
       placeId: '1731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Glaston Twelve Hides
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8346,6 +8974,10 @@
     to:
       type: DomesdayPlace
       placeId: '71171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -8408,6 +9040,10 @@
     to:
       type: DomesdayPlace
       placeId: '49581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8453,6 +9089,10 @@
     to:
       type: DomesdayPlace
       placeId: '40691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8524,6 +9164,10 @@
     to:
       type: DomesdayPlace
       placeId: '72336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -8584,6 +9228,10 @@
     to:
       type: DomesdayPlace
       placeId: '42976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8627,6 +9275,10 @@
     to:
       type: DomesdayPlace
       placeId: '17771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8675,6 +9327,10 @@
     to:
       type: DomesdayPlace
       placeId: '21656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8726,6 +9382,10 @@
     to:
       type: DomesdayPlace
       placeId: '7411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -8776,6 +9436,10 @@
     to:
       type: DomesdayPlace
       placeId: '58566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8841,6 +9505,10 @@
     to:
       type: DomesdayPlace
       placeId: '67056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8894,6 +9562,10 @@
     to:
       type: DomesdayPlace
       placeId: '12246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8939,6 +9611,10 @@
     to:
       type: DomesdayPlace
       placeId: '21396'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8990,6 +9666,10 @@
     to:
       type: DomesdayPlace
       placeId: '67056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9035,6 +9715,10 @@
     to:
       type: DomesdayPlace
       placeId: '27706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9083,6 +9767,10 @@
     to:
       type: DomesdayPlace
       placeId: '47681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9131,6 +9819,10 @@
     to:
       type: DomesdayPlace
       placeId: '28756'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -9204,6 +9896,10 @@
     to:
       type: DomesdayPlace
       placeId: '12246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9261,6 +9957,10 @@
     to:
       type: DomesdayPlace
       placeId: '37926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9335,6 +10035,10 @@
     to:
       type: DomesdayPlace
       placeId: '55356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -9413,6 +10117,10 @@
     to:
       type: DomesdayPlace
       placeId: '48736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -9471,6 +10179,10 @@
     to:
       type: DomesdayPlace
       placeId: '4041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Glaston Twelve Hides
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9521,6 +10233,10 @@
     to:
       type: DomesdayPlace
       placeId: '20836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9580,6 +10296,10 @@
     to:
       type: DomesdayPlace
       placeId: '5076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -9646,6 +10366,10 @@
     to:
       type: DomesdayPlace
       placeId: '42346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9715,6 +10439,10 @@
     to:
       type: DomesdayPlace
       placeId: '69336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -9773,6 +10501,10 @@
     to:
       type: DomesdayPlace
       placeId: '73151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9832,6 +10564,10 @@
     to:
       type: DomesdayPlace
       placeId: '43706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -9894,6 +10630,10 @@
     to:
       type: DomesdayPlace
       placeId: '41561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -9962,6 +10702,10 @@
     to:
       type: DomesdayPlace
       placeId: '37361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -10042,6 +10786,10 @@
     to:
       type: DomesdayPlace
       placeId: '63921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10098,6 +10846,10 @@
     to:
       type: DomesdayPlace
       placeId: '18371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10151,6 +10903,10 @@
     to:
       type: DomesdayPlace
       placeId: '9716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -10210,6 +10966,10 @@
     to:
       type: DomesdayPlace
       placeId: '22566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10257,6 +11017,10 @@
     to:
       type: DomesdayPlace
       placeId: '20946'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10301,6 +11065,10 @@
     to:
       type: DomesdayPlace
       placeId: '20361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10341,6 +11109,10 @@
     to:
       type: DomesdayPlace
       placeId: '53366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10400,6 +11172,18 @@
     to:
       type: DomesdayPlace
       placeId: '59881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10443,6 +11227,18 @@
     to:
       type: DomesdayPlace
       placeId: '36406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10481,6 +11277,10 @@
     to:
       type: DomesdayPlace
       placeId: '12246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Whitley
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10516,6 +11316,10 @@
     to:
       type: DomesdayPlace
       placeId: '39236'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10596,6 +11400,10 @@
     to:
       type: DomesdayPlace
       placeId: '62501'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10637,6 +11445,10 @@
     to:
       type: DomesdayPlace
       placeId: '15246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10682,6 +11494,10 @@
     to:
       type: DomesdayPlace
       placeId: '34691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10735,6 +11551,10 @@
     to:
       type: DomesdayPlace
       placeId: '35096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10771,6 +11591,10 @@
     to:
       type: DomesdayPlace
       placeId: '35096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10813,6 +11637,10 @@
     to:
       type: DomesdayPlace
       placeId: '21121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -10873,6 +11701,10 @@
     to:
       type: DomesdayPlace
       placeId: '12816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -10919,6 +11751,10 @@
     to:
       type: DomesdayPlace
       placeId: '13461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -10995,6 +11831,10 @@
     to:
       type: DomesdayPlace
       placeId: '34726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -11042,6 +11882,10 @@
     to:
       type: DomesdayPlace
       placeId: '60781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -11097,6 +11941,10 @@
     to:
       type: DomesdayPlace
       placeId: '54591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11139,6 +11987,10 @@
     to:
       type: DomesdayPlace
       placeId: '28891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11181,6 +12033,10 @@
     to:
       type: DomesdayPlace
       placeId: '40831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11224,6 +12080,22 @@
     to:
       type: DomesdayPlace
       placeId: '60781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11298,6 +12170,10 @@
     to:
       type: DomesdayPlace
       placeId: '50481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Huntspill and Puriton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11362,6 +12238,10 @@
     to:
       type: DomesdayPlace
       placeId: '18616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Crewkerne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11492,6 +12372,10 @@
     to:
       type: DomesdayPlace
       placeId: '43031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11564,6 +12448,10 @@
     to:
       type: DomesdayPlace
       placeId: '53366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11630,6 +12518,10 @@
     to:
       type: DomesdayPlace
       placeId: '26021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: INSTITUTION
     to:
       type: DomesdayPerson
@@ -11672,6 +12564,10 @@
     to:
       type: DomesdayPlace
       placeId: '59041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11711,6 +12607,10 @@
     to:
       type: DomesdayPlace
       placeId: '12926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: INSTITUTION
     to:
       type: DomesdayPerson
@@ -11744,6 +12644,10 @@
     to:
       type: DomesdayPlace
       placeId: '43316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11782,6 +12686,10 @@
     to:
       type: DomesdayPlace
       placeId: '48991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11816,6 +12724,10 @@
     to:
       type: DomesdayPlace
       placeId: '13061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: INSTITUTION
     to:
       type: DomesdayPerson
@@ -11857,6 +12769,10 @@
     to:
       type: DomesdayPlace
       placeId: '48986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: INSTITUTION
     to:
       type: DomesdayPerson
@@ -11904,6 +12820,10 @@
     to:
       type: DomesdayPlace
       placeId: '5706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -11943,6 +12863,10 @@
     to:
       type: DomesdayPlace
       placeId: '38671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11978,6 +12902,10 @@
     to:
       type: DomesdayPlace
       placeId: '51761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12012,6 +12940,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: INSTITUTION
     to:
       type: DomesdayPerson
@@ -12069,6 +13001,10 @@
     to:
       type: DomesdayPlace
       placeId: '32706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12096,6 +13032,10 @@
     to:
       type: DomesdayPlace
       placeId: '36041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -12162,6 +13102,10 @@
     to:
       type: DomesdayPlace
       placeId: '45421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12207,6 +13151,10 @@
     to:
       type: DomesdayPlace
       placeId: '17126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12254,6 +13202,10 @@
     to:
       type: DomesdayPlace
       placeId: '39066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12301,6 +13253,10 @@
     to:
       type: DomesdayPlace
       placeId: '40331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12341,6 +13297,10 @@
     to:
       type: DomesdayPlace
       placeId: '14551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12390,6 +13350,10 @@
     to:
       type: DomesdayPlace
       placeId: '5886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12436,6 +13400,10 @@
     to:
       type: DomesdayPlace
       placeId: '36461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12483,6 +13451,10 @@
     to:
       type: DomesdayPlace
       placeId: '17226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12549,6 +13521,10 @@
     to:
       type: DomesdayPlace
       placeId: '61976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12596,6 +13572,10 @@
     to:
       type: DomesdayPlace
       placeId: '53691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12634,6 +13614,10 @@
     to:
       type: DomesdayPlace
       placeId: '1071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12680,6 +13664,10 @@
     to:
       type: DomesdayPlace
       placeId: '31276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12748,6 +13736,10 @@
     to:
       type: DomesdayPlace
       placeId: '18646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12799,6 +13791,10 @@
     to:
       type: DomesdayPlace
       placeId: '54591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12844,6 +13840,10 @@
     to:
       type: DomesdayPlace
       placeId: '17226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12892,6 +13892,10 @@
     to:
       type: DomesdayPlace
       placeId: '69686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12938,6 +13942,10 @@
     to:
       type: DomesdayPlace
       placeId: '55351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12977,6 +13985,10 @@
     to:
       type: DomesdayPlace
       placeId: '40121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13026,6 +14038,10 @@
     to:
       type: DomesdayPlace
       placeId: '18896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13075,6 +14091,10 @@
     to:
       type: DomesdayPlace
       placeId: '35101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13123,6 +14143,10 @@
     to:
       type: DomesdayPlace
       placeId: '63921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -13170,6 +14194,10 @@
     to:
       type: DomesdayPlace
       placeId: '36406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13217,6 +14245,10 @@
     to:
       type: DomesdayPlace
       placeId: '59381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13262,6 +14294,10 @@
     to:
       type: DomesdayPlace
       placeId: '21056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13310,6 +14346,10 @@
     to:
       type: DomesdayPlace
       placeId: '59381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13352,6 +14392,10 @@
     to:
       type: DomesdayPlace
       placeId: '59381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13403,6 +14447,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13452,6 +14500,10 @@
     to:
       type: DomesdayPlace
       placeId: '10926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13496,6 +14548,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13546,6 +14602,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13590,6 +14650,10 @@
     to:
       type: DomesdayPlace
       placeId: '10231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13639,6 +14703,10 @@
     to:
       type: DomesdayPlace
       placeId: '2406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13691,6 +14759,10 @@
     to:
       type: DomesdayPlace
       placeId: '27641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13732,6 +14804,10 @@
     to:
       type: DomesdayPlace
       placeId: '2016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13776,6 +14852,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13829,6 +14909,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13887,6 +14971,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13939,6 +15027,10 @@
     to:
       type: DomesdayPlace
       placeId: '58366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13987,6 +15079,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14034,6 +15130,10 @@
     to:
       type: DomesdayPlace
       placeId: '5701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14086,6 +15186,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14140,6 +15244,10 @@
     to:
       type: DomesdayPlace
       placeId: '63451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Curry
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14187,6 +15295,10 @@
     to:
       type: DomesdayPlace
       placeId: '62516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Curry
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14235,6 +15347,10 @@
     to:
       type: DomesdayPlace
       placeId: '42586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Crewkerne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14289,6 +15405,10 @@
     to:
       type: DomesdayPlace
       placeId: '18616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Crewkerne
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14340,6 +15460,10 @@
     to:
       type: DomesdayPlace
       placeId: '18641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14392,6 +15516,10 @@
     to:
       type: DomesdayPlace
       placeId: '50156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14432,6 +15560,10 @@
     to:
       type: DomesdayPlace
       placeId: '2406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14479,6 +15611,10 @@
     to:
       type: DomesdayPlace
       placeId: '29731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14530,6 +15666,10 @@
     to:
       type: DomesdayPlace
       placeId: '58601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14578,6 +15718,10 @@
     to:
       type: DomesdayPlace
       placeId: '8926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14628,6 +15772,10 @@
     to:
       type: DomesdayPlace
       placeId: '61731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -14683,6 +15831,10 @@
     to:
       type: DomesdayPlace
       placeId: '46256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14723,6 +15875,10 @@
     to:
       type: DomesdayPlace
       placeId: '25381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14769,6 +15925,10 @@
     to:
       type: DomesdayPlace
       placeId: '14181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14821,6 +15981,10 @@
     to:
       type: DomesdayPlace
       placeId: '15191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14865,6 +16029,10 @@
     to:
       type: DomesdayPlace
       placeId: '48871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14912,6 +16080,10 @@
     to:
       type: DomesdayPlace
       placeId: '46786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14960,6 +16132,10 @@
     to:
       type: DomesdayPlace
       placeId: '15271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15005,6 +16181,10 @@
     to:
       type: DomesdayPlace
       placeId: '15191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15053,6 +16233,10 @@
     to:
       type: DomesdayPlace
       placeId: '15191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15102,6 +16286,10 @@
     to:
       type: DomesdayPlace
       placeId: '46326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15149,6 +16337,10 @@
     to:
       type: DomesdayPlace
       placeId: '48631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15198,6 +16390,10 @@
     to:
       type: DomesdayPlace
       placeId: '16321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15244,6 +16440,10 @@
     to:
       type: DomesdayPlace
       placeId: '16261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15291,6 +16491,10 @@
     to:
       type: DomesdayPlace
       placeId: '73571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15334,6 +16538,10 @@
     to:
       type: DomesdayPlace
       placeId: '72486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15381,6 +16589,10 @@
     to:
       type: DomesdayPlace
       placeId: '60801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15434,6 +16646,10 @@
     to:
       type: DomesdayPlace
       placeId: '55361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15488,6 +16704,10 @@
     to:
       type: DomesdayPlace
       placeId: '51441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15535,6 +16755,10 @@
     to:
       type: DomesdayPlace
       placeId: '35336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15581,6 +16805,10 @@
     to:
       type: DomesdayPlace
       placeId: '13111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15620,6 +16848,10 @@
     to:
       type: DomesdayPlace
       placeId: '22421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15668,6 +16900,10 @@
     to:
       type: DomesdayPlace
       placeId: '4616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15717,6 +16953,10 @@
     to:
       type: DomesdayPlace
       placeId: '59386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15765,6 +17005,10 @@
     to:
       type: DomesdayPlace
       placeId: '19071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15816,6 +17060,10 @@
     to:
       type: DomesdayPlace
       placeId: '976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15862,6 +17110,10 @@
     to:
       type: DomesdayPlace
       placeId: '3636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15906,6 +17158,10 @@
     to:
       type: DomesdayPlace
       placeId: '25286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15952,6 +17208,10 @@
     to:
       type: DomesdayPlace
       placeId: '15631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15995,6 +17255,10 @@
     to:
       type: DomesdayPlace
       placeId: '68891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16042,6 +17306,10 @@
     to:
       type: DomesdayPlace
       placeId: '43031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16061,7 +17329,7 @@
     phillimore: 19,71
     county: SOM
     countyName: Somerset
-    kind: manor
+    kind: urban
     places: Milborne [Port]
     name: Milborne [Port] (Somerset 19,71)
     holding: borough
@@ -16087,6 +17355,10 @@
     to:
       type: DomesdayPlace
       placeId: '43031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16128,6 +17400,10 @@
     to:
       type: DomesdayPlace
       placeId: '41786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16165,6 +17441,10 @@
     to:
       type: DomesdayPlace
       placeId: '41786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16207,6 +17487,10 @@
     to:
       type: DomesdayPlace
       placeId: '271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16253,6 +17537,10 @@
     to:
       type: DomesdayPlace
       placeId: '65031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Harethorne
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16299,6 +17587,10 @@
     to:
       type: DomesdayPlace
       placeId: '50046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16343,6 +17635,10 @@
     to:
       type: DomesdayPlace
       placeId: '62466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16387,6 +17683,10 @@
     to:
       type: DomesdayPlace
       placeId: '62466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16434,6 +17734,10 @@
     to:
       type: DomesdayPlace
       placeId: '15056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16481,6 +17785,10 @@
     to:
       type: DomesdayPlace
       placeId: '15056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16527,6 +17835,10 @@
     to:
       type: DomesdayPlace
       placeId: '33666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16571,6 +17883,10 @@
     to:
       type: DomesdayPlace
       placeId: '40491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16612,6 +17928,10 @@
     to:
       type: DomesdayPlace
       placeId: '73781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16650,6 +17970,10 @@
     to:
       type: DomesdayPlace
       placeId: '73781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16697,6 +18021,10 @@
     to:
       type: DomesdayPlace
       placeId: '56906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16757,6 +18085,10 @@
     to:
       type: DomesdayPlace
       placeId: '43731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Tintinhull
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -16816,6 +18148,10 @@
     to:
       type: DomesdayPlace
       placeId: '44356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16887,6 +18223,10 @@
     to:
       type: DomesdayPlace
       placeId: '31041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -16930,6 +18270,10 @@
     to:
       type: DomesdayPlace
       placeId: '2016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -16973,6 +18317,10 @@
     to:
       type: DomesdayPlace
       placeId: '49786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17038,6 +18386,10 @@
     to:
       type: DomesdayPlace
       placeId: '19276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17080,6 +18432,10 @@
     to:
       type: DomesdayPlace
       placeId: '19276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17119,6 +18475,10 @@
     to:
       type: DomesdayPlace
       placeId: '45421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17164,6 +18524,10 @@
     to:
       type: DomesdayPlace
       placeId: '28356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17212,6 +18576,10 @@
     to:
       type: DomesdayPlace
       placeId: '48881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17262,6 +18630,10 @@
     to:
       type: DomesdayPlace
       placeId: '66746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17312,6 +18684,10 @@
     to:
       type: DomesdayPlace
       placeId: '15826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17358,6 +18734,10 @@
     to:
       type: DomesdayPlace
       placeId: '55056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17396,6 +18776,10 @@
     to:
       type: DomesdayPlace
       placeId: '51851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17437,6 +18821,10 @@
     to:
       type: DomesdayPlace
       placeId: '15121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17476,6 +18864,10 @@
     to:
       type: DomesdayPlace
       placeId: '51611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17524,6 +18916,10 @@
     to:
       type: DomesdayPlace
       placeId: '14101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17564,6 +18960,10 @@
     to:
       type: DomesdayPlace
       placeId: '19291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17608,6 +19008,10 @@
     to:
       type: DomesdayPlace
       placeId: '49146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17653,6 +19057,10 @@
     to:
       type: DomesdayPlace
       placeId: '27311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17691,6 +19099,10 @@
     to:
       type: DomesdayPlace
       placeId: '16801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17735,6 +19147,10 @@
     to:
       type: DomesdayPlace
       placeId: '47526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17775,6 +19191,10 @@
     to:
       type: DomesdayPlace
       placeId: '72491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17823,6 +19243,10 @@
     to:
       type: DomesdayPlace
       placeId: '32381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17863,6 +19287,10 @@
     to:
       type: DomesdayPlace
       placeId: '20611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17903,6 +19331,10 @@
     to:
       type: DomesdayPlace
       placeId: '48981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17948,6 +19380,10 @@
     to:
       type: DomesdayPlace
       placeId: '1571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -17994,6 +19430,10 @@
     to:
       type: DomesdayPlace
       placeId: '15126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18039,6 +19479,10 @@
     to:
       type: DomesdayPlace
       placeId: '15126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18082,6 +19526,10 @@
     to:
       type: DomesdayPlace
       placeId: '49211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18127,6 +19575,10 @@
     to:
       type: DomesdayPlace
       placeId: '58956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18174,6 +19626,10 @@
     to:
       type: DomesdayPlace
       placeId: '34581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18218,6 +19674,10 @@
     to:
       type: DomesdayPlace
       placeId: '50891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18265,6 +19725,10 @@
     to:
       type: DomesdayPlace
       placeId: '60981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18303,6 +19767,10 @@
     to:
       type: DomesdayPlace
       placeId: '62136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18345,6 +19813,10 @@
     to:
       type: DomesdayPlace
       placeId: '581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18389,6 +19861,10 @@
     to:
       type: DomesdayPlace
       placeId: '22631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18435,6 +19911,10 @@
     to:
       type: DomesdayPlace
       placeId: '71681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18477,6 +19957,10 @@
     to:
       type: DomesdayPlace
       placeId: '60091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18516,6 +20000,10 @@
     to:
       type: DomesdayPlace
       placeId: '7431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18562,6 +20050,10 @@
     to:
       type: DomesdayPlace
       placeId: '72861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -18613,6 +20105,10 @@
     to:
       type: DomesdayPlace
       placeId: '37116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18664,6 +20160,10 @@
     to:
       type: DomesdayPlace
       placeId: '40121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18709,6 +20209,10 @@
     to:
       type: DomesdayPlace
       placeId: '43676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18753,6 +20257,10 @@
     to:
       type: DomesdayPlace
       placeId: '43676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18798,6 +20306,10 @@
     to:
       type: DomesdayPlace
       placeId: '28656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18836,6 +20348,10 @@
     to:
       type: DomesdayPlace
       placeId: '16726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18880,6 +20396,10 @@
     to:
       type: DomesdayPlace
       placeId: '33886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -18925,6 +20445,10 @@
     to:
       type: DomesdayPlace
       placeId: '66481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -18970,6 +20494,10 @@
     to:
       type: DomesdayPlace
       placeId: '66481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19009,6 +20537,10 @@
     to:
       type: DomesdayPlace
       placeId: '23321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19066,6 +20598,10 @@
     to:
       type: DomesdayPlace
       placeId: '36116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19112,6 +20648,10 @@
     to:
       type: DomesdayPlace
       placeId: '67906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19162,6 +20702,10 @@
     to:
       type: DomesdayPlace
       placeId: '69111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19208,6 +20752,10 @@
     to:
       type: DomesdayPlace
       placeId: '2841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19249,6 +20797,10 @@
     to:
       type: DomesdayPlace
       placeId: '10416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19286,6 +20838,10 @@
     to:
       type: DomesdayPlace
       placeId: '10416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19323,6 +20879,10 @@
     to:
       type: DomesdayPlace
       placeId: '49426'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19370,6 +20930,10 @@
     to:
       type: DomesdayPlace
       placeId: '50351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -19425,6 +20989,10 @@
     to:
       type: DomesdayPlace
       placeId: '21121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19477,6 +21045,10 @@
     to:
       type: DomesdayPlace
       placeId: '1241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19514,6 +21086,10 @@
     to:
       type: DomesdayPlace
       placeId: '20976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19558,6 +21134,10 @@
     to:
       type: DomesdayPlace
       placeId: '23961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19598,6 +21178,10 @@
     to:
       type: DomesdayPlace
       placeId: '23961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19641,6 +21225,10 @@
     to:
       type: DomesdayPlace
       placeId: '59306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19678,6 +21266,10 @@
     to:
       type: DomesdayPlace
       placeId: '3871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -19720,6 +21312,10 @@
     to:
       type: DomesdayPlace
       placeId: '17011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -19760,6 +21356,10 @@
     to:
       type: DomesdayPlace
       placeId: '1061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19807,6 +21407,10 @@
     to:
       type: DomesdayPlace
       placeId: '26711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19852,6 +21456,10 @@
     to:
       type: DomesdayPlace
       placeId: '32706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19904,6 +21512,10 @@
     to:
       type: DomesdayPlace
       placeId: '20856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19948,6 +21560,10 @@
     to:
       type: DomesdayPlace
       placeId: '32701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -19990,6 +21606,10 @@
     to:
       type: DomesdayPlace
       placeId: '23961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20026,6 +21646,10 @@
     to:
       type: DomesdayPlace
       placeId: '59461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20068,6 +21692,10 @@
     to:
       type: DomesdayPlace
       placeId: '25066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20112,6 +21740,10 @@
     to:
       type: DomesdayPlace
       placeId: '21841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20160,6 +21792,10 @@
     to:
       type: DomesdayPlace
       placeId: '53686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20207,6 +21843,10 @@
     to:
       type: DomesdayPlace
       placeId: '62481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20251,6 +21891,10 @@
     to:
       type: DomesdayPlace
       placeId: '23446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20294,6 +21938,10 @@
     to:
       type: DomesdayPlace
       placeId: '39066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20340,6 +21988,10 @@
     to:
       type: DomesdayPlace
       placeId: '39066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20384,6 +22036,10 @@
     to:
       type: DomesdayPlace
       placeId: '7561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20428,6 +22084,10 @@
     to:
       type: DomesdayPlace
       placeId: '14401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20473,6 +22133,10 @@
     to:
       type: DomesdayPlace
       placeId: '55571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20514,6 +22178,10 @@
     to:
       type: DomesdayPlace
       placeId: '49701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20562,6 +22230,10 @@
     to:
       type: DomesdayPlace
       placeId: '43316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20608,6 +22280,10 @@
     to:
       type: DomesdayPlace
       placeId: '64196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20649,6 +22325,10 @@
     to:
       type: DomesdayPlace
       placeId: '32451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20687,6 +22367,10 @@
     to:
       type: DomesdayPlace
       placeId: '32451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20732,6 +22416,10 @@
     to:
       type: DomesdayPlace
       placeId: '39606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20783,6 +22471,10 @@
     to:
       type: DomesdayPlace
       placeId: '57931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20828,6 +22520,10 @@
     to:
       type: DomesdayPlace
       placeId: '24171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -20872,6 +22568,10 @@
     to:
       type: DomesdayPlace
       placeId: '24276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -20916,6 +22616,10 @@
     to:
       type: DomesdayPlace
       placeId: '69636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -20967,6 +22671,10 @@
     to:
       type: DomesdayPlace
       placeId: '71596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -21015,6 +22723,10 @@
     to:
       type: DomesdayPlace
       placeId: '10936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -21064,6 +22776,10 @@
     to:
       type: DomesdayPlace
       placeId: '35336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21115,6 +22831,10 @@
     to:
       type: DomesdayPlace
       placeId: '39236'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -21157,6 +22877,10 @@
     to:
       type: DomesdayPlace
       placeId: '2646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21200,6 +22924,10 @@
     to:
       type: DomesdayPlace
       placeId: '56911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21246,6 +22974,10 @@
     to:
       type: DomesdayPlace
       placeId: '10946'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -21320,6 +23052,10 @@
     to:
       type: DomesdayPlace
       placeId: '60781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21394,6 +23130,10 @@
     to:
       type: DomesdayPlace
       placeId: '28621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21438,6 +23178,10 @@
     to:
       type: DomesdayPlace
       placeId: '33896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21482,6 +23226,10 @@
     to:
       type: DomesdayPlace
       placeId: '69681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21525,6 +23273,10 @@
     to:
       type: DomesdayPlace
       placeId: '21691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21571,6 +23323,10 @@
     to:
       type: DomesdayPlace
       placeId: '53771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21616,6 +23372,10 @@
     to:
       type: DomesdayPlace
       placeId: '48881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -21653,6 +23413,10 @@
     to:
       type: DomesdayPlace
       placeId: '45421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21702,6 +23466,10 @@
     to:
       type: DomesdayPlace
       placeId: '24836'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21745,6 +23513,10 @@
     to:
       type: DomesdayPlace
       placeId: '65646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21792,6 +23564,10 @@
     to:
       type: DomesdayPlace
       placeId: '19116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -21840,6 +23616,10 @@
     to:
       type: DomesdayPlace
       placeId: '56406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21888,6 +23668,10 @@
     to:
       type: DomesdayPlace
       placeId: '43226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -21937,6 +23721,10 @@
     to:
       type: DomesdayPlace
       placeId: '50826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -21984,6 +23772,10 @@
     to:
       type: DomesdayPlace
       placeId: '63866'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22035,6 +23827,10 @@
     to:
       type: DomesdayPlace
       placeId: '36876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -22072,6 +23868,10 @@
     to:
       type: DomesdayPlace
       placeId: '61271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -22118,6 +23918,10 @@
     to:
       type: DomesdayPlace
       placeId: '28661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22161,6 +23965,10 @@
     to:
       type: DomesdayPlace
       placeId: '13336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22211,6 +24019,10 @@
     to:
       type: DomesdayPlace
       placeId: '14186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22269,6 +24081,10 @@
     to:
       type: DomesdayPlace
       placeId: '2371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kingsbury West
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22325,6 +24141,10 @@
     to:
       type: DomesdayPlace
       placeId: '14421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22370,6 +24190,10 @@
     to:
       type: DomesdayPlace
       placeId: '14416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22410,6 +24234,10 @@
     to:
       type: DomesdayPlace
       placeId: '60661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22457,6 +24285,10 @@
     to:
       type: DomesdayPlace
       placeId: '5521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22500,6 +24332,10 @@
     to:
       type: DomesdayPlace
       placeId: '6286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22548,6 +24384,10 @@
     to:
       type: DomesdayPlace
       placeId: '41726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22592,6 +24432,10 @@
     to:
       type: DomesdayPlace
       placeId: '48761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22636,6 +24480,10 @@
     to:
       type: DomesdayPlace
       placeId: '40666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -22703,6 +24551,10 @@
     to:
       type: DomesdayPlace
       placeId: '73601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WIL:Mere
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22769,6 +24621,10 @@
     to:
       type: DomesdayPlace
       placeId: '72736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22806,6 +24662,10 @@
     to:
       type: DomesdayPlace
       placeId: '43231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22851,6 +24711,10 @@
     to:
       type: DomesdayPlace
       placeId: '59971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22898,6 +24762,10 @@
     to:
       type: DomesdayPlace
       placeId: '59971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22941,6 +24809,10 @@
     to:
       type: DomesdayPlace
       placeId: '66931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -22976,6 +24848,10 @@
     to:
       type: DomesdayPlace
       placeId: '21646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23013,6 +24889,10 @@
     to:
       type: DomesdayPlace
       placeId: '18761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23062,6 +24942,10 @@
     to:
       type: DomesdayPlace
       placeId: '8571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -23113,6 +24997,10 @@
     to:
       type: DomesdayPlace
       placeId: '67931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23155,6 +25043,10 @@
     to:
       type: DomesdayPlace
       placeId: '3776'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -23201,6 +25093,10 @@
     to:
       type: DomesdayPlace
       placeId: '1106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -23249,6 +25145,10 @@
     to:
       type: DomesdayPlace
       placeId: '61581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23295,6 +25195,10 @@
     to:
       type: DomesdayPlace
       placeId: '61581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -23341,6 +25245,10 @@
     to:
       type: DomesdayPlace
       placeId: '1346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -23389,6 +25297,10 @@
     to:
       type: DomesdayPlace
       placeId: '9501'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23438,6 +25350,10 @@
     to:
       type: DomesdayPlace
       placeId: '70931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23500,6 +25416,10 @@
     to:
       type: DomesdayPlace
       placeId: '34616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23548,6 +25468,10 @@
     to:
       type: DomesdayPlace
       placeId: '57426'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23596,6 +25520,10 @@
     to:
       type: DomesdayPlace
       placeId: '1801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23643,6 +25571,10 @@
     to:
       type: DomesdayPlace
       placeId: '4616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23692,6 +25624,10 @@
     to:
       type: DomesdayPlace
       placeId: '9881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23736,6 +25672,10 @@
     to:
       type: DomesdayPlace
       placeId: '68391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -23784,6 +25724,10 @@
     to:
       type: DomesdayPlace
       placeId: '5251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23830,6 +25774,10 @@
     to:
       type: DomesdayPlace
       placeId: '9026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23877,6 +25825,10 @@
     to:
       type: DomesdayPlace
       placeId: '33336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -23923,6 +25875,10 @@
     to:
       type: DomesdayPlace
       placeId: '48376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -23971,6 +25927,10 @@
     to:
       type: DomesdayPlace
       placeId: '11791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24019,6 +25979,10 @@
     to:
       type: DomesdayPlace
       placeId: '34171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Huntspill and Puriton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24062,6 +26026,10 @@
     to:
       type: DomesdayPlace
       placeId: '9601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24111,6 +26079,10 @@
     to:
       type: DomesdayPlace
       placeId: '14936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24162,6 +26134,10 @@
     to:
       type: DomesdayPlace
       placeId: '29736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24200,6 +26176,10 @@
     to:
       type: DomesdayPlace
       placeId: '22421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24247,6 +26227,10 @@
     to:
       type: DomesdayPlace
       placeId: '1356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Huntspill and Puriton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24295,6 +26279,10 @@
     to:
       type: DomesdayPlace
       placeId: '34171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Huntspill and Puriton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24333,6 +26321,10 @@
     to:
       type: DomesdayPlace
       placeId: '33881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24372,6 +26364,10 @@
     to:
       type: DomesdayPlace
       placeId: '33881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bempstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24413,6 +26409,10 @@
     to:
       type: DomesdayPlace
       placeId: '271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24485,6 +26485,10 @@
     to:
       type: DomesdayPlace
       placeId: '58956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24527,6 +26531,10 @@
     to:
       type: DomesdayPlace
       placeId: '21541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24569,6 +26577,10 @@
     to:
       type: DomesdayPlace
       placeId: '416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -24612,6 +26624,10 @@
     to:
       type: DomesdayPlace
       placeId: '961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24658,6 +26674,10 @@
     to:
       type: DomesdayPlace
       placeId: '38651'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24702,6 +26722,10 @@
     to:
       type: DomesdayPlace
       placeId: '59931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24756,6 +26780,10 @@
     to:
       type: DomesdayPlace
       placeId: '10521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24810,6 +26838,10 @@
     to:
       type: DomesdayPlace
       placeId: '15696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -24863,6 +26895,10 @@
     to:
       type: DomesdayPlace
       placeId: '19326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24911,6 +26947,10 @@
     to:
       type: DomesdayPlace
       placeId: '43351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24954,6 +26994,10 @@
     to:
       type: DomesdayPlace
       placeId: '726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -24998,6 +27042,10 @@
     to:
       type: DomesdayPlace
       placeId: '10826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25047,6 +27095,10 @@
     to:
       type: DomesdayPlace
       placeId: '37571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25094,6 +27146,10 @@
     to:
       type: DomesdayPlace
       placeId: '50656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25138,6 +27194,10 @@
     to:
       type: DomesdayPlace
       placeId: '6661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25185,6 +27245,10 @@
     to:
       type: DomesdayPlace
       placeId: '10266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25226,6 +27290,10 @@
     to:
       type: DomesdayPlace
       placeId: '3466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25271,6 +27339,10 @@
     to:
       type: DomesdayPlace
       placeId: '58511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -25308,6 +27380,10 @@
     to:
       type: DomesdayPlace
       placeId: '23961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25338,6 +27414,10 @@
     to:
       type: DomesdayPlace
       placeId: '23961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -25378,6 +27458,10 @@
     to:
       type: DomesdayPlace
       placeId: '59736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25423,6 +27507,10 @@
     to:
       type: DomesdayPlace
       placeId: '46691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25464,6 +27552,10 @@
     to:
       type: DomesdayPlace
       placeId: '1076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25510,6 +27602,10 @@
     to:
       type: DomesdayPlace
       placeId: '44571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25557,6 +27653,10 @@
     to:
       type: DomesdayPlace
       placeId: '9486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25603,6 +27703,10 @@
     to:
       type: DomesdayPlace
       placeId: '37101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25649,6 +27753,10 @@
     to:
       type: DomesdayPlace
       placeId: '40636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25692,6 +27800,10 @@
     to:
       type: DomesdayPlace
       placeId: '40636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25739,6 +27851,10 @@
     to:
       type: DomesdayPlace
       placeId: '50631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25783,6 +27899,10 @@
     to:
       type: DomesdayPlace
       placeId: '36106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25835,6 +27955,10 @@
     to:
       type: DomesdayPlace
       placeId: '45416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25875,6 +27999,10 @@
     to:
       type: DomesdayPlace
       placeId: '72481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -25922,6 +28050,10 @@
     to:
       type: DomesdayPlace
       placeId: '70666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -25974,6 +28106,10 @@
     to:
       type: DomesdayPlace
       placeId: '70541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26016,6 +28152,10 @@
     to:
       type: DomesdayPlace
       placeId: '16726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26057,6 +28197,10 @@
     to:
       type: DomesdayPlace
       placeId: '67706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26104,6 +28248,10 @@
     to:
       type: DomesdayPlace
       placeId: '64476'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26152,6 +28300,10 @@
     to:
       type: DomesdayPlace
       placeId: '32456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26201,6 +28353,10 @@
     to:
       type: DomesdayPlace
       placeId: '29916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26248,6 +28404,10 @@
     to:
       type: DomesdayPlace
       placeId: '15441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26299,6 +28459,10 @@
     to:
       type: DomesdayPlace
       placeId: '17076'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26339,6 +28503,10 @@
     to:
       type: DomesdayPlace
       placeId: '55841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26389,6 +28557,10 @@
     to:
       type: DomesdayPlace
       placeId: '5106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26435,6 +28607,10 @@
     to:
       type: DomesdayPlace
       placeId: '41296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26482,6 +28658,10 @@
     to:
       type: DomesdayPlace
       placeId: '53036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26523,6 +28703,10 @@
     to:
       type: DomesdayPlace
       placeId: '49621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26572,6 +28756,10 @@
     to:
       type: DomesdayPlace
       placeId: '38641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -26615,6 +28803,10 @@
     to:
       type: DomesdayPlace
       placeId: '58991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26663,6 +28855,10 @@
     to:
       type: DomesdayPlace
       placeId: '10646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26707,6 +28903,10 @@
     to:
       type: DomesdayPlace
       placeId: '40676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26751,6 +28951,10 @@
     to:
       type: DomesdayPlace
       placeId: '3831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26792,6 +28996,10 @@
     to:
       type: DomesdayPlace
       placeId: '59336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26836,6 +29044,10 @@
     to:
       type: DomesdayPlace
       placeId: '30731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26884,6 +29096,10 @@
     to:
       type: DomesdayPlace
       placeId: '46421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -26934,6 +29150,10 @@
     to:
       type: DomesdayPlace
       placeId: '9771'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -26987,6 +29207,10 @@
     to:
       type: DomesdayPlace
       placeId: '14621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27044,6 +29268,10 @@
     to:
       type: DomesdayPlace
       placeId: '69341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27088,6 +29316,10 @@
     to:
       type: DomesdayPlace
       placeId: '32086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Crewkerne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27132,6 +29364,10 @@
     to:
       type: DomesdayPlace
       placeId: '73786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27184,6 +29420,10 @@
     to:
       type: DomesdayPlace
       placeId: '38036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27233,6 +29473,10 @@
     to:
       type: DomesdayPlace
       placeId: '32041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27284,6 +29528,10 @@
     to:
       type: DomesdayPlace
       placeId: '73781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27324,6 +29572,10 @@
     to:
       type: DomesdayPlace
       placeId: '15106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27371,6 +29623,10 @@
     to:
       type: DomesdayPlace
       placeId: '63676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27438,6 +29694,10 @@
     to:
       type: DomesdayPlace
       placeId: '59046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27487,6 +29747,10 @@
     to:
       type: DomesdayPlace
       placeId: '72636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27528,6 +29792,10 @@
     to:
       type: DomesdayPlace
       placeId: '72281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27612,6 +29880,10 @@
     to:
       type: DomesdayPlace
       placeId: '33371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27665,6 +29937,10 @@
     to:
       type: DomesdayPlace
       placeId: '14621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27734,6 +30010,10 @@
     to:
       type: DomesdayPlace
       placeId: '67131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27800,6 +30080,10 @@
     to:
       type: DomesdayPlace
       placeId: '59726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27851,6 +30135,10 @@
     to:
       type: DomesdayPlace
       placeId: '46706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27916,6 +30204,10 @@
     to:
       type: DomesdayPlace
       placeId: '58956'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -27962,6 +30254,10 @@
     to:
       type: DomesdayPlace
       placeId: '50626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28009,6 +30305,10 @@
     to:
       type: DomesdayPlace
       placeId: '33886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28053,6 +30353,10 @@
     to:
       type: DomesdayPlace
       placeId: '3831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28091,6 +30395,10 @@
     to:
       type: DomesdayPlace
       placeId: '45126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28156,6 +30464,10 @@
     to:
       type: DomesdayPlace
       placeId: '17126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28204,6 +30516,10 @@
     to:
       type: DomesdayPlace
       placeId: '40356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28248,6 +30564,10 @@
     to:
       type: DomesdayPlace
       placeId: '54761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28295,6 +30615,10 @@
     to:
       type: DomesdayPlace
       placeId: '13061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28340,6 +30664,10 @@
     to:
       type: DomesdayPlace
       placeId: '8306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28377,6 +30705,10 @@
     to:
       type: DomesdayPlace
       placeId: '64696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28412,6 +30744,10 @@
     to:
       type: DomesdayPlace
       placeId: '51096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -28455,6 +30791,10 @@
     to:
       type: DomesdayPlace
       placeId: '1066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28517,6 +30857,10 @@
     to:
       type: DomesdayPlace
       placeId: '14196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28617,6 +30961,10 @@
     to:
       type: DomesdayPlace
       placeId: '14551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Keynsham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28685,6 +31033,10 @@
     to:
       type: DomesdayPlace
       placeId: '72436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -28735,6 +31087,10 @@
     to:
       type: DomesdayPlace
       placeId: '8571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -28774,6 +31130,10 @@
     to:
       type: DomesdayPlace
       placeId: '34181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -28820,6 +31180,10 @@
     to:
       type: DomesdayPlace
       placeId: '60091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -28873,6 +31237,10 @@
     to:
       type: DomesdayPlace
       placeId: '57446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -28920,6 +31288,10 @@
     to:
       type: DomesdayPlace
       placeId: '47526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -28963,6 +31335,10 @@
     to:
       type: DomesdayPlace
       placeId: '50891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29004,6 +31380,10 @@
     to:
       type: DomesdayPlace
       placeId: '49431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29044,6 +31424,10 @@
     to:
       type: DomesdayPlace
       placeId: '41666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29091,6 +31475,10 @@
     to:
       type: DomesdayPlace
       placeId: '43676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29139,6 +31527,10 @@
     to:
       type: DomesdayPlace
       placeId: '59731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29180,6 +31572,10 @@
     to:
       type: DomesdayPlace
       placeId: '59731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -29241,6 +31637,14 @@
     to:
       type: DomesdayPlace
       placeId: '21726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -29281,6 +31685,10 @@
     to:
       type: DomesdayPlace
       placeId: '38646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -29327,6 +31735,10 @@
     to:
       type: DomesdayPlace
       placeId: '52306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -29371,6 +31783,10 @@
     to:
       type: DomesdayPlace
       placeId: '58571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -29422,6 +31838,10 @@
     to:
       type: DomesdayPlace
       placeId: '35101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -29469,6 +31889,10 @@
     to:
       type: DomesdayPlace
       placeId: '50156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29512,6 +31936,10 @@
     to:
       type: DomesdayPlace
       placeId: '27051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29564,6 +31992,10 @@
     to:
       type: DomesdayPlace
       placeId: '42576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29603,6 +32035,10 @@
     to:
       type: DomesdayPlace
       placeId: '50621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29651,6 +32087,10 @@
     to:
       type: DomesdayPlace
       placeId: '31846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Taunton and Taunton Dean
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29699,6 +32139,10 @@
     to:
       type: DomesdayPlace
       placeId: '40361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29733,6 +32177,10 @@
     to:
       type: DomesdayPlace
       placeId: '41911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -29800,6 +32248,10 @@
     to:
       type: DomesdayPlace
       placeId: '49376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29847,6 +32299,10 @@
     to:
       type: DomesdayPlace
       placeId: '71846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -29890,6 +32346,10 @@
     to:
       type: DomesdayPlace
       placeId: '22151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29934,6 +32394,10 @@
     to:
       type: DomesdayPlace
       placeId: '61321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -29986,6 +32450,10 @@
     to:
       type: DomesdayPlace
       placeId: '68891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30028,6 +32496,10 @@
     to:
       type: DomesdayPlace
       placeId: '68891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -30083,6 +32555,10 @@
     to:
       type: DomesdayPlace
       placeId: '72486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30152,6 +32628,10 @@
     to:
       type: DomesdayPlace
       placeId: '7411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -30200,6 +32680,10 @@
     to:
       type: DomesdayPlace
       placeId: '17266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30248,6 +32732,10 @@
     to:
       type: DomesdayPlace
       placeId: '41301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30295,6 +32783,10 @@
     to:
       type: DomesdayPlace
       placeId: '67256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30339,6 +32831,10 @@
     to:
       type: DomesdayPlace
       placeId: '35861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30387,6 +32883,10 @@
     to:
       type: DomesdayPlace
       placeId: '21436'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30434,6 +32934,10 @@
     to:
       type: DomesdayPlace
       placeId: '14621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Horethorne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30502,6 +33006,10 @@
     to:
       type: DomesdayPlace
       placeId: '7476'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30549,6 +33057,10 @@
     to:
       type: DomesdayPlace
       placeId: '66161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30591,6 +33103,10 @@
     to:
       type: DomesdayPlace
       placeId: '59156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30633,6 +33149,10 @@
     to:
       type: DomesdayPlace
       placeId: '59156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30680,6 +33200,10 @@
     to:
       type: DomesdayPlace
       placeId: '941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30727,6 +33251,10 @@
     to:
       type: DomesdayPlace
       placeId: '51761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -30785,6 +33313,10 @@
     to:
       type: DomesdayPlace
       placeId: '36061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WIL:Mere
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30837,6 +33369,10 @@
     to:
       type: DomesdayPlace
       placeId: '40246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -30880,6 +33416,10 @@
     to:
       type: DomesdayPlace
       placeId: '69386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -30933,6 +33473,10 @@
     to:
       type: DomesdayPlace
       placeId: '17261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -30978,6 +33522,10 @@
     to:
       type: DomesdayPlace
       placeId: '43906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -31039,6 +33587,10 @@
     to:
       type: DomesdayPlace
       placeId: '59466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31111,6 +33663,10 @@
     to:
       type: DomesdayPlace
       placeId: '40356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -31175,6 +33731,10 @@
     to:
       type: DomesdayPlace
       placeId: '37096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Hartcliffe with Bedminster
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31220,6 +33780,10 @@
     to:
       type: DomesdayPlace
       placeId: '23026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31260,6 +33824,10 @@
     to:
       type: DomesdayPlace
       placeId: '72086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31328,6 +33896,10 @@
     to:
       type: DomesdayPlace
       placeId: '32051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31372,6 +33944,10 @@
     to:
       type: DomesdayPlace
       placeId: '46321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -31443,6 +34019,10 @@
     to:
       type: DomesdayPlace
       placeId: '68871'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31485,6 +34065,10 @@
     to:
       type: DomesdayPlace
       placeId: '63676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31531,6 +34115,10 @@
     to:
       type: DomesdayPlace
       placeId: '52266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31596,6 +34184,10 @@
     to:
       type: DomesdayPlace
       placeId: '35841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31643,6 +34235,10 @@
     to:
       type: DomesdayPlace
       placeId: '65861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31681,6 +34277,10 @@
     to:
       type: DomesdayPlace
       placeId: '22141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -31744,6 +34344,10 @@
     to:
       type: DomesdayPlace
       placeId: '50656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Carhampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -31806,6 +34410,10 @@
     to:
       type: DomesdayPlace
       placeId: '16001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Portbury
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -31850,6 +34458,10 @@
     to:
       type: DomesdayPlace
       placeId: '14546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -31903,6 +34515,10 @@
     to:
       type: DomesdayPlace
       placeId: '43261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -31967,6 +34583,10 @@
     to:
       type: DomesdayPlace
       placeId: '13341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -32015,6 +34635,10 @@
     to:
       type: DomesdayPlace
       placeId: '13341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -32075,6 +34699,10 @@
     to:
       type: DomesdayPlace
       placeId: '3636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -32121,6 +34749,10 @@
     to:
       type: DomesdayPlace
       placeId: '32751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -32164,6 +34796,10 @@
     to:
       type: DomesdayPlace
       placeId: '53786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -32206,6 +34842,10 @@
     to:
       type: DomesdayPlace
       placeId: '63886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32246,6 +34886,10 @@
     to:
       type: DomesdayPlace
       placeId: '61416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32282,6 +34926,10 @@
     to:
       type: DomesdayPlace
       placeId: '61416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32321,6 +34969,10 @@
     to:
       type: DomesdayPlace
       placeId: '67451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32359,6 +35011,10 @@
     to:
       type: DomesdayPlace
       placeId: '5111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32401,6 +35057,10 @@
     to:
       type: DomesdayPlace
       placeId: '15746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32438,6 +35098,10 @@
     to:
       type: DomesdayPlace
       placeId: '37111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Norton Ferris
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32486,6 +35150,10 @@
     to:
       type: DomesdayPlace
       placeId: '25286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32521,6 +35189,10 @@
     to:
       type: DomesdayPlace
       placeId: '52271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Frome
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -32566,6 +35238,10 @@
     to:
       type: DomesdayPlace
       placeId: '25286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32603,6 +35279,10 @@
     to:
       type: DomesdayPlace
       placeId: '10346'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Hartcliffe with Bedminster
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32640,6 +35320,10 @@
     to:
       type: DomesdayPlace
       placeId: '18341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32681,6 +35365,10 @@
     to:
       type: DomesdayPlace
       placeId: '50271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Stone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32738,6 +35426,10 @@
     to:
       type: DomesdayPlace
       placeId: '67946'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Somerton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32799,6 +35491,10 @@
     to:
       type: DomesdayPlace
       placeId: '71716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32841,6 +35537,10 @@
     to:
       type: DomesdayPlace
       placeId: '68296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Milverton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -32890,6 +35590,10 @@
     to:
       type: DomesdayPlace
       placeId: '8571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -32935,6 +35639,10 @@
     to:
       type: DomesdayPlace
       placeId: '49151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -32976,6 +35684,10 @@
     to:
       type: DomesdayPlace
       placeId: '48881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33020,6 +35732,10 @@
     to:
       type: DomesdayPlace
       placeId: '45421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33067,6 +35783,10 @@
     to:
       type: DomesdayPlace
       placeId: '12926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -33108,6 +35828,10 @@
     to:
       type: DomesdayPlace
       placeId: '70246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33148,6 +35872,10 @@
     to:
       type: DomesdayPlace
       placeId: '57096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33185,6 +35913,10 @@
     to:
       type: DomesdayPlace
       placeId: '15121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33219,6 +35951,10 @@
     to:
       type: DomesdayPlace
       placeId: '53461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33252,6 +35988,10 @@
     to:
       type: DomesdayPlace
       placeId: '55901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33289,6 +36029,10 @@
     to:
       type: DomesdayPlace
       placeId: '21661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Andersfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33328,6 +36072,10 @@
     to:
       type: DomesdayPlace
       placeId: '39221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33364,6 +36112,10 @@
     to:
       type: DomesdayPlace
       placeId: '45421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:North Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33400,6 +36152,10 @@
     to:
       type: DomesdayPlace
       placeId: '32866'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33437,6 +36193,10 @@
     to:
       type: DomesdayPlace
       placeId: '43231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -33478,6 +36238,10 @@
     to:
       type: DomesdayPlace
       placeId: '21841'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33521,6 +36285,10 @@
     to:
       type: DomesdayPlace
       placeId: '4876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33569,6 +36337,10 @@
     to:
       type: DomesdayPlace
       placeId: '49381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33610,6 +36382,10 @@
     to:
       type: DomesdayPlace
       placeId: '67061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33647,6 +36423,10 @@
     to:
       type: DomesdayPlace
       placeId: '30511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33687,6 +36467,10 @@
     to:
       type: DomesdayPlace
       placeId: '22141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chewton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33739,6 +36523,10 @@
     to:
       type: DomesdayPlace
       placeId: '11156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33800,6 +36588,10 @@
     to:
       type: DomesdayPlace
       placeId: '54591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33838,6 +36630,10 @@
     to:
       type: DomesdayPlace
       placeId: '40121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -33876,6 +36672,10 @@
     to:
       type: DomesdayPlace
       placeId: '9036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -33925,6 +36725,10 @@
     to:
       type: DomesdayPlace
       placeId: '19286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -33967,6 +36771,10 @@
     to:
       type: DomesdayPlace
       placeId: '42586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Crewkerne
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -34006,6 +36814,10 @@
     to:
       type: DomesdayPlace
       placeId: '11156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -34049,6 +36861,10 @@
     to:
       type: DomesdayPlace
       placeId: '20426'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -34087,6 +36903,10 @@
     to:
       type: DomesdayPlace
       placeId: '65646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34125,6 +36945,10 @@
     to:
       type: DomesdayPlace
       placeId: '20361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:South Petherton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -34164,6 +36988,10 @@
     to:
       type: DomesdayPlace
       placeId: '271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: DOR:Horethorne
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34205,6 +37033,10 @@
     to:
       type: DomesdayPlace
       placeId: '20606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34245,6 +37077,10 @@
     to:
       type: DomesdayPlace
       placeId: '30456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Williton and Freemanners
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -34291,6 +37127,10 @@
     to:
       type: DomesdayPlace
       placeId: '58991'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Abdick and Bulstone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34327,6 +37167,10 @@
     to:
       type: DomesdayPlace
       placeId: '21061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Winterstoke
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34373,6 +37217,10 @@
     to:
       type: DomesdayPlace
       placeId: '59156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Chew
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34415,6 +37263,10 @@
     to:
       type: DomesdayPlace
       placeId: '29981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Houndsborough, Barwick and Coker
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34454,6 +37306,10 @@
     to:
       type: DomesdayPlace
       placeId: '60936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bath Forum
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34495,6 +37351,10 @@
     to:
       type: DomesdayPlace
       placeId: '11111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34536,6 +37396,10 @@
     to:
       type: DomesdayPlace
       placeId: '17036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Wellow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34579,6 +37443,10 @@
     to:
       type: DomesdayPlace
       placeId: '40696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Catsash
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34612,6 +37480,10 @@
     to:
       type: DomesdayPlace
       placeId: '54226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:-
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34654,6 +37526,10 @@
     to:
       type: DomesdayPlace
       placeId: '73161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Kilmersdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34689,6 +37565,10 @@
     to:
       type: DomesdayPlace
       placeId: '22151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Bruton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -34723,6 +37603,10 @@
     to:
       type: DomesdayPlace
       placeId: '47526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SOM:Cannington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson

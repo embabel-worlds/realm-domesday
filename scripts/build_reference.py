@@ -43,7 +43,17 @@ OUT = os.path.join(ROOT, 'reference')
 SECTION_OF = {'HC': 'HUN', 'LC': 'LIN', 'YC': 'YKS', 'YS': 'YKS', 'YB': 'YKS'}
 SECTION_NAME = {'HC': 'Huntingdonshire claims', 'LC': 'Lincolnshire claims', 'YC': 'Yorkshire claims',
                 'YS': 'Yorkshire summary', 'YB': 'Bruce fief'}
+SECTION_KIND = {'HC': 'claim', 'LC': 'claim', 'YC': 'claim', 'YS': 'summary'}
 LITTLE_DOMESDAY = {'ESS', 'NFK', 'SUF'}
+
+def canonical_name(name):
+    """
+    Hull brackets the words it supplied — () from elsewhere in Domesday, {} from outside it — so one
+    man is indexed as `Earl Harold`, `(Earl) Harold` and `{Earl} Harold`. Dropping the brackets and
+    keeping their words gives the name a count across England can group on; `name` keeps Hull's form.
+    """
+    return re.sub(r'\s+', ' ', re.sub(r'[()\[\]{}]', '', name)).strip()
+
 
 ENTRY_KIND = {'E': 'manor', 'F': 'fief heading', 'U': 'urban', 'L': 'rubric', 'I': 'index of landholders',
               'C': 'customs', 'W': 'Wales', 'B': 'Bruce fief'}
@@ -243,7 +253,7 @@ def main(cache):
     person_records = []
     for n in rows(cache, 'Names'):
         county = county_of(n['County'])
-        data = {'personId': n['NamesIdx'], 'name': n['Name']}
+        data = {'personId': n['NamesIdx'], 'name': n['Name'], 'canonicalName': canonical_name(n['Name'])}
         if county in counties:
             data['county'] = county
             data['countyName'] = counties[county]['CountyName'].title()
@@ -285,6 +295,12 @@ def main(cache):
             data['name'] = data['ref']
         if subject:
             data['holding'] = HOLDING.get(subject[0]['Pcode'][1:2], 'unclassified')
+            # Hull types a borough's own entry (Shrewsbury, Oxford) as an ordinary entry; its place says otherwise.
+            if data['kind'] == 'manor' and data['holding'] == 'borough':
+                data['kind'] = 'urban'
+        # A claim or a summary line restates a holding entered elsewhere in the county; it is not another manor.
+        if data['kind'] == 'manor' and e['county'] in SECTION_KIND:
+            data['kind'] = SECTION_KIND[e['county']]
         f = figures.figures(e)
         for key in FIGURES:
             if key in f:
@@ -300,6 +316,17 @@ def main(cache):
             if (predicate, r['PlacesIdx']) not in seen:
                 seen.add((predicate, r['PlacesIdx']))
                 relations.append({'predicate': predicate, 'to': {'type': 'DomesdayPlace', 'placeId': r['PlacesIdx']}})
+        """
+        One edge per hundred the entry is about, however many of its places lie there: summed through
+        DESCRIBES, an entry naming three places in one hundred counts three times. The hundred is the
+        place's own, so detached parts land in the hundred that actually held them.
+        """
+        for r in subject:
+            place = places_by_id[r['PlacesIdx']]
+            if place.get('hundred') and ('IN_HUNDRED', place['county'], place['hundred']) not in seen:
+                seen.add(('IN_HUNDRED', place['county'], place['hundred']))
+                relations.append({'predicate': 'IN_HUNDRED',
+                                  'to': {'type': 'DomesdayHundred', 'hundredId': f"{place['county']}:{place['hundred']}"}})
         named = {r['NamesIdx'] for r in name_refs[e['structIdx']] if ROLE.get(r['Tcode']) not in (None, 'NAMES')}
         for r in name_refs[e['structIdx']]:
             predicate = ROLE.get(r['Tcode'])

@@ -25,6 +25,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -50,6 +54,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -75,6 +83,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -104,6 +116,10 @@
     to:
       type: DomesdayPlace
       placeId: '28521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -133,6 +149,10 @@
     to:
       type: DomesdayPlace
       placeId: '72696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -162,6 +182,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -187,6 +211,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -216,6 +244,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -241,6 +273,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -266,6 +302,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -291,6 +331,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
 - type: DomesdayEntry
   data:
     entryId: '11528'
@@ -314,6 +358,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -410,6 +458,10 @@
     to:
       type: DomesdayPlace
       placeId: '36416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -457,6 +509,10 @@
     to:
       type: DomesdayPlace
       placeId: '61966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -495,6 +551,10 @@
     to:
       type: DomesdayPlace
       placeId: '70326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -534,6 +594,10 @@
     to:
       type: DomesdayPlace
       placeId: '6946'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -565,6 +629,10 @@
     to:
       type: DomesdayPlace
       placeId: '6386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -614,6 +682,10 @@
     to:
       type: DomesdayPlace
       placeId: '7711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -681,6 +753,10 @@
     to:
       type: DomesdayPlace
       placeId: '21126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -722,6 +798,10 @@
     to:
       type: DomesdayPlace
       placeId: '65041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -766,6 +846,10 @@
     to:
       type: DomesdayPlace
       placeId: '61471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -805,6 +889,10 @@
     to:
       type: DomesdayPlace
       placeId: '70496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -848,6 +936,10 @@
     to:
       type: DomesdayPlace
       placeId: '1316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -889,6 +981,10 @@
     to:
       type: DomesdayPlace
       placeId: '10481'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -929,6 +1025,10 @@
     to:
       type: DomesdayPlace
       placeId: '53826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -968,6 +1068,10 @@
     to:
       type: DomesdayPlace
       placeId: '14266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1007,6 +1111,10 @@
     to:
       type: DomesdayPlace
       placeId: '71946'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1046,6 +1154,10 @@
     to:
       type: DomesdayPlace
       placeId: '48716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1087,6 +1199,10 @@
     to:
       type: DomesdayPlace
       placeId: '52161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1126,6 +1242,10 @@
     to:
       type: DomesdayPlace
       placeId: '18316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1167,6 +1287,10 @@
     to:
       type: DomesdayPlace
       placeId: '66426'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1209,6 +1333,10 @@
     to:
       type: DomesdayPlace
       placeId: '4896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1248,6 +1376,10 @@
     to:
       type: DomesdayPlace
       placeId: '38516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1287,6 +1419,10 @@
     to:
       type: DomesdayPlace
       placeId: '52986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1327,6 +1463,10 @@
     to:
       type: DomesdayPlace
       placeId: '42131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1367,6 +1507,10 @@
     to:
       type: DomesdayPlace
       placeId: '42566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1405,6 +1549,10 @@
     to:
       type: DomesdayPlace
       placeId: '12931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1446,6 +1594,10 @@
     to:
       type: DomesdayPlace
       placeId: '22826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1489,6 +1641,10 @@
     to:
       type: DomesdayPlace
       placeId: '36516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1528,6 +1684,10 @@
     to:
       type: DomesdayPlace
       placeId: '48336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1571,6 +1731,10 @@
     to:
       type: DomesdayPlace
       placeId: '16171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1616,6 +1780,10 @@
     to:
       type: DomesdayPlace
       placeId: '61471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1657,6 +1825,10 @@
     to:
       type: DomesdayPlace
       placeId: '33136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1698,6 +1870,10 @@
     to:
       type: DomesdayPlace
       placeId: '29591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1730,6 +1906,10 @@
     to:
       type: DomesdayPlace
       placeId: '6761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1762,6 +1942,10 @@
     to:
       type: DomesdayPlace
       placeId: '11196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1794,6 +1978,10 @@
     to:
       type: DomesdayPlace
       placeId: '46661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1826,6 +2014,10 @@
     to:
       type: DomesdayPlace
       placeId: '30831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1857,6 +2049,10 @@
     to:
       type: DomesdayPlace
       placeId: '43146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1889,6 +2085,10 @@
     to:
       type: DomesdayPlace
       placeId: '55246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1921,6 +2121,10 @@
     to:
       type: DomesdayPlace
       placeId: '30266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1953,6 +2157,10 @@
     to:
       type: DomesdayPlace
       placeId: '26146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1985,6 +2193,10 @@
     to:
       type: DomesdayPlace
       placeId: '43326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2017,6 +2229,10 @@
     to:
       type: DomesdayPlace
       placeId: '17901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2049,6 +2265,10 @@
     to:
       type: DomesdayPlace
       placeId: '23451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2081,6 +2301,10 @@
     to:
       type: DomesdayPlace
       placeId: '31751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2113,6 +2337,10 @@
     to:
       type: DomesdayPlace
       placeId: '18006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2149,6 +2377,10 @@
     to:
       type: DomesdayPlace
       placeId: '31736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2181,6 +2413,10 @@
     to:
       type: DomesdayPlace
       placeId: '3086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2211,6 +2447,10 @@
     to:
       type: DomesdayPlace
       placeId: '72671'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2242,6 +2482,10 @@
     to:
       type: DomesdayPlace
       placeId: '58181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2273,6 +2517,10 @@
     to:
       type: DomesdayPlace
       placeId: '44516'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2303,6 +2551,10 @@
     to:
       type: DomesdayPlace
       placeId: '55071'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2333,6 +2585,10 @@
     to:
       type: DomesdayPlace
       placeId: '58131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2363,6 +2619,10 @@
     to:
       type: DomesdayPlace
       placeId: '24316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2394,6 +2654,10 @@
     to:
       type: DomesdayPlace
       placeId: '1406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2425,6 +2689,10 @@
     to:
       type: DomesdayPlace
       placeId: '20031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2456,6 +2724,10 @@
     to:
       type: DomesdayPlace
       placeId: '17411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2487,6 +2759,10 @@
     to:
       type: DomesdayPlace
       placeId: '14356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2518,6 +2794,10 @@
     to:
       type: DomesdayPlace
       placeId: '45576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2553,6 +2833,10 @@
     to:
       type: DomesdayPlace
       placeId: '40471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2584,6 +2868,10 @@
     to:
       type: DomesdayPlace
       placeId: '25491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2614,6 +2902,10 @@
     to:
       type: DomesdayPlace
       placeId: '23406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2645,6 +2937,10 @@
     to:
       type: DomesdayPlace
       placeId: '52781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2675,6 +2971,10 @@
     to:
       type: DomesdayPlace
       placeId: '52961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2706,6 +3006,10 @@
     to:
       type: DomesdayPlace
       placeId: '53161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2769,6 +3073,10 @@
     to:
       type: DomesdayPlace
       placeId: '9776'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2815,6 +3123,10 @@
     to:
       type: DomesdayPlace
       placeId: '5066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2855,6 +3167,10 @@
     to:
       type: DomesdayPlace
       placeId: '256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2897,6 +3213,10 @@
     to:
       type: DomesdayPlace
       placeId: '5066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2942,6 +3262,10 @@
     to:
       type: DomesdayPlace
       placeId: '30561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2986,6 +3310,10 @@
     to:
       type: DomesdayPlace
       placeId: '32191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3036,6 +3364,10 @@
     to:
       type: DomesdayPlace
       placeId: '71941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3082,6 +3414,10 @@
     to:
       type: DomesdayPlace
       placeId: '30561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3120,6 +3456,10 @@
     to:
       type: DomesdayPlace
       placeId: '30561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3161,6 +3501,10 @@
     to:
       type: DomesdayPlace
       placeId: '22371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3248,6 +3592,10 @@
     to:
       type: DomesdayPlace
       placeId: '22371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3287,6 +3635,10 @@
     to:
       type: DomesdayPlace
       placeId: '22371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3328,6 +3680,10 @@
     to:
       type: DomesdayPlace
       placeId: '22371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3368,6 +3724,10 @@
     to:
       type: DomesdayPlace
       placeId: '22371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3408,6 +3768,10 @@
     to:
       type: DomesdayPlace
       placeId: '22886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -3480,6 +3844,10 @@
     to:
       type: DomesdayPlace
       placeId: '28866'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3518,6 +3886,10 @@
     to:
       type: DomesdayPlace
       placeId: '16796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3560,6 +3932,10 @@
     to:
       type: DomesdayPlace
       placeId: '43916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3599,6 +3975,10 @@
     to:
       type: DomesdayPlace
       placeId: '21231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3679,6 +4059,10 @@
     to:
       type: DomesdayPlace
       placeId: '60421'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3755,6 +4139,10 @@
     to:
       type: DomesdayPlace
       placeId: '22371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3861,6 +4249,10 @@
     to:
       type: DomesdayPlace
       placeId: '61466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -3961,6 +4353,10 @@
     to:
       type: DomesdayPlace
       placeId: '48941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4019,6 +4415,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4059,6 +4459,10 @@
     to:
       type: DomesdayPlace
       placeId: '9411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4099,6 +4503,10 @@
     to:
       type: DomesdayPlace
       placeId: '69191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4140,6 +4548,10 @@
     to:
       type: DomesdayPlace
       placeId: '60056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4179,6 +4591,10 @@
     to:
       type: DomesdayPlace
       placeId: '10466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4216,6 +4632,10 @@
     to:
       type: DomesdayPlace
       placeId: '19606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4259,6 +4679,10 @@
     to:
       type: DomesdayPlace
       placeId: '38656'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4292,6 +4716,10 @@
     to:
       type: DomesdayPlace
       placeId: '46981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4331,6 +4759,10 @@
     to:
       type: DomesdayPlace
       placeId: '69551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4370,6 +4802,10 @@
     to:
       type: DomesdayPlace
       placeId: '5611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4430,6 +4866,10 @@
     to:
       type: DomesdayPlace
       placeId: '42161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -4477,6 +4917,10 @@
     to:
       type: DomesdayPlace
       placeId: '51796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -4544,6 +4988,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4601,6 +5049,10 @@
     to:
       type: DomesdayPlace
       placeId: '71976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4645,6 +5097,10 @@
     to:
       type: DomesdayPlace
       placeId: '2121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WOR:Seisdon
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -4689,6 +5145,10 @@
     to:
       type: DomesdayPlace
       placeId: '12206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4723,6 +5183,10 @@
     to:
       type: DomesdayPlace
       placeId: '65066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4769,6 +5233,10 @@
     to:
       type: DomesdayPlace
       placeId: '71976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -4805,6 +5273,10 @@
     to:
       type: DomesdayPlace
       placeId: '30111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4841,6 +5313,10 @@
     to:
       type: DomesdayPlace
       placeId: '68021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4877,6 +5353,10 @@
     to:
       type: DomesdayPlace
       placeId: '70496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4909,6 +5389,10 @@
     to:
       type: DomesdayPlace
       placeId: '48561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4945,6 +5429,10 @@
     to:
       type: DomesdayPlace
       placeId: '31906'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4976,6 +5464,10 @@
     to:
       type: DomesdayPlace
       placeId: '32211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5041,6 +5533,10 @@
     to:
       type: DomesdayPlace
       placeId: '30221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5089,6 +5585,10 @@
     to:
       type: DomesdayPlace
       placeId: '36511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5130,6 +5630,10 @@
     to:
       type: DomesdayPlace
       placeId: '31911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5161,6 +5665,10 @@
     to:
       type: DomesdayPlace
       placeId: '24591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5200,6 +5708,10 @@
     to:
       type: DomesdayPlace
       placeId: '48721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5240,6 +5752,10 @@
     to:
       type: DomesdayPlace
       placeId: '27026'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5300,6 +5816,10 @@
     to:
       type: DomesdayPlace
       placeId: '15731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SHR:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5340,6 +5860,10 @@
     to:
       type: DomesdayPlace
       placeId: '36311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SHR:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5381,6 +5905,10 @@
     to:
       type: DomesdayPlace
       placeId: '1466'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SHR:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5423,6 +5951,10 @@
     to:
       type: DomesdayPlace
       placeId: '19051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:-
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5470,6 +6002,10 @@
     to:
       type: DomesdayPlace
       placeId: '28521'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SHR:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5520,6 +6056,10 @@
     to:
       type: DomesdayPlace
       placeId: '36981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5564,6 +6104,10 @@
     to:
       type: DomesdayPlace
       placeId: '43921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5608,6 +6152,10 @@
     to:
       type: DomesdayPlace
       placeId: '47091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5657,6 +6205,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5706,6 +6258,10 @@
     to:
       type: DomesdayPlace
       placeId: '45826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5749,6 +6305,10 @@
     to:
       type: DomesdayPlace
       placeId: '67111'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5793,6 +6353,10 @@
     to:
       type: DomesdayPlace
       placeId: '73566'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5836,6 +6400,10 @@
     to:
       type: DomesdayPlace
       placeId: '26576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5884,6 +6452,10 @@
     to:
       type: DomesdayPlace
       placeId: '17891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5928,6 +6500,10 @@
     to:
       type: DomesdayPlace
       placeId: '16951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5966,6 +6542,10 @@
     to:
       type: DomesdayPlace
       placeId: '16951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6008,6 +6588,10 @@
     to:
       type: DomesdayPlace
       placeId: '51801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6051,6 +6635,10 @@
     to:
       type: DomesdayPlace
       placeId: '40321'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6098,6 +6686,10 @@
     to:
       type: DomesdayPlace
       placeId: '18596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6139,6 +6731,10 @@
     to:
       type: DomesdayPlace
       placeId: '20141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6185,6 +6781,10 @@
     to:
       type: DomesdayPlace
       placeId: '43571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6228,6 +6828,10 @@
     to:
       type: DomesdayPlace
       placeId: '1216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6269,6 +6873,10 @@
     to:
       type: DomesdayPlace
       placeId: '64046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6313,6 +6921,10 @@
     to:
       type: DomesdayPlace
       placeId: '42161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6354,6 +6966,10 @@
     to:
       type: DomesdayPlace
       placeId: '2696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6394,6 +7010,10 @@
     to:
       type: DomesdayPlace
       placeId: '51796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6439,6 +7059,10 @@
     to:
       type: DomesdayPlace
       placeId: '7666'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6479,6 +7103,10 @@
     to:
       type: DomesdayPlace
       placeId: '1366'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6523,6 +7151,10 @@
     to:
       type: DomesdayPlace
       placeId: '67561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6564,6 +7196,10 @@
     to:
       type: DomesdayPlace
       placeId: '14411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6609,6 +7245,10 @@
     to:
       type: DomesdayPlace
       placeId: '14411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6654,6 +7294,10 @@
     to:
       type: DomesdayPlace
       placeId: '55311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6723,6 +7367,10 @@
     to:
       type: DomesdayPlace
       placeId: '72696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SHR:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6782,6 +7430,10 @@
     to:
       type: DomesdayPlace
       placeId: '65626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6812,6 +7464,10 @@
     to:
       type: DomesdayPlace
       placeId: '12131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:-
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6850,6 +7506,10 @@
     to:
       type: DomesdayPlace
       placeId: '52401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6894,6 +7554,10 @@
     to:
       type: DomesdayPlace
       placeId: '41406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6933,6 +7597,10 @@
     to:
       type: DomesdayPlace
       placeId: '21066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6967,6 +7635,10 @@
     to:
       type: DomesdayPlace
       placeId: '24526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7013,6 +7685,10 @@
     to:
       type: DomesdayPlace
       placeId: '24526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7057,6 +7733,10 @@
     to:
       type: DomesdayPlace
       placeId: '43926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7107,6 +7787,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7142,6 +7826,10 @@
     to:
       type: DomesdayPlace
       placeId: '12131'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:-
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7199,6 +7887,10 @@
     to:
       type: DomesdayPlace
       placeId: '63796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7238,6 +7930,10 @@
     to:
       type: DomesdayPlace
       placeId: '61806'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7273,6 +7969,10 @@
     to:
       type: DomesdayPlace
       placeId: '27916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7305,6 +8005,10 @@
     to:
       type: DomesdayPlace
       placeId: '13576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7345,6 +8049,10 @@
     to:
       type: DomesdayPlace
       placeId: '30311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7431,6 +8139,10 @@
     to:
       type: DomesdayPlace
       placeId: '40036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7446,7 +8158,7 @@
     phillimore: 11,7
     county: STS
     countyName: Staffordshire
-    kind: manor
+    kind: urban
     places: Stafford
     name: Stafford (Staffordshire 11,7)
     holding: borough
@@ -7461,6 +8173,10 @@
     to:
       type: DomesdayPlace
       placeId: '57661'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7497,6 +8213,10 @@
     to:
       type: DomesdayPlace
       placeId: '67136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7544,6 +8264,10 @@
     to:
       type: DomesdayPlace
       placeId: '59146'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7587,6 +8311,10 @@
     to:
       type: DomesdayPlace
       placeId: '53831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7635,6 +8363,10 @@
     to:
       type: DomesdayPlace
       placeId: '33101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7677,6 +8409,10 @@
     to:
       type: DomesdayPlace
       placeId: '53611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: JURISDICTION_1066
     to:
       type: DomesdayPerson
@@ -7741,6 +8477,10 @@
     to:
       type: DomesdayPlace
       placeId: '15201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: SHR:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7789,6 +8529,10 @@
     to:
       type: DomesdayPlace
       placeId: '46896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7839,6 +8583,10 @@
     to:
       type: DomesdayPlace
       placeId: '57951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7882,6 +8630,10 @@
     to:
       type: DomesdayPlace
       placeId: '68966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7923,6 +8675,10 @@
     to:
       type: DomesdayPlace
       placeId: '40946'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7966,6 +8722,10 @@
     to:
       type: DomesdayPlace
       placeId: '61241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8007,6 +8767,10 @@
     to:
       type: DomesdayPlace
       placeId: '46271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8049,6 +8813,10 @@
     to:
       type: DomesdayPlace
       placeId: '40916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8094,6 +8862,10 @@
     to:
       type: DomesdayPlace
       placeId: '53166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8135,6 +8907,10 @@
     to:
       type: DomesdayPlace
       placeId: '11881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8175,6 +8951,10 @@
     to:
       type: DomesdayPlace
       placeId: '3086'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8223,6 +9003,10 @@
     to:
       type: DomesdayPlace
       placeId: '4301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8266,6 +9050,10 @@
     to:
       type: DomesdayPlace
       placeId: '51081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8306,6 +9094,10 @@
     to:
       type: DomesdayPlace
       placeId: '17456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8354,6 +9146,10 @@
     to:
       type: DomesdayPlace
       placeId: '31751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8402,6 +9198,10 @@
     to:
       type: DomesdayPlace
       placeId: '8851'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8450,6 +9250,10 @@
     to:
       type: DomesdayPlace
       placeId: '16951'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8497,6 +9301,10 @@
     to:
       type: DomesdayPlace
       placeId: '43326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8545,6 +9353,10 @@
     to:
       type: DomesdayPlace
       placeId: '64046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8592,6 +9404,10 @@
     to:
       type: DomesdayPlace
       placeId: '34796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8641,6 +9457,10 @@
     to:
       type: DomesdayPlace
       placeId: '64021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8685,6 +9505,10 @@
     to:
       type: DomesdayPlace
       placeId: '68936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8729,6 +9553,10 @@
     to:
       type: DomesdayPlace
       placeId: '27531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8777,6 +9605,10 @@
     to:
       type: DomesdayPlace
       placeId: '59296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8825,6 +9657,10 @@
     to:
       type: DomesdayPlace
       placeId: '40921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8876,6 +9712,10 @@
     to:
       type: DomesdayPlace
       placeId: '9291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8921,6 +9761,10 @@
     to:
       type: DomesdayPlace
       placeId: '22886'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8966,6 +9810,10 @@
     to:
       type: DomesdayPlace
       placeId: '7696'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9009,6 +9857,10 @@
     to:
       type: DomesdayPlace
       placeId: '20306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9057,6 +9909,10 @@
     to:
       type: DomesdayPlace
       placeId: '14356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9100,6 +9956,10 @@
     to:
       type: DomesdayPlace
       placeId: '7791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9144,6 +10004,10 @@
     to:
       type: DomesdayPlace
       placeId: '48326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9186,6 +10050,10 @@
     to:
       type: DomesdayPlace
       placeId: '46581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9227,6 +10095,10 @@
     to:
       type: DomesdayPlace
       placeId: '73191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9270,6 +10142,10 @@
     to:
       type: DomesdayPlace
       placeId: '46646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9312,6 +10188,10 @@
     to:
       type: DomesdayPlace
       placeId: '61296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9355,6 +10235,10 @@
     to:
       type: DomesdayPlace
       placeId: '70001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9399,6 +10283,10 @@
     to:
       type: DomesdayPlace
       placeId: '51796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9483,6 +10371,10 @@
     to:
       type: DomesdayPlace
       placeId: '30311'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9520,6 +10412,10 @@
     to:
       type: DomesdayPlace
       placeId: '40336'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9568,6 +10464,10 @@
     to:
       type: DomesdayPlace
       placeId: '70381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9610,6 +10510,10 @@
     to:
       type: DomesdayPlace
       placeId: '10041'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9658,6 +10562,10 @@
     to:
       type: DomesdayPlace
       placeId: '53051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9702,6 +10610,10 @@
     to:
       type: DomesdayPlace
       placeId: '60061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9750,6 +10662,10 @@
     to:
       type: DomesdayPlace
       placeId: '22296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9789,6 +10705,10 @@
     to:
       type: DomesdayPlace
       placeId: '26306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9831,6 +10751,10 @@
     to:
       type: DomesdayPlace
       placeId: '47486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9874,6 +10798,10 @@
     to:
       type: DomesdayPlace
       placeId: '53921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9918,6 +10846,10 @@
     to:
       type: DomesdayPlace
       placeId: '18091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -9960,6 +10892,10 @@
     to:
       type: DomesdayPlace
       placeId: '17561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10001,6 +10937,10 @@
     to:
       type: DomesdayPlace
       placeId: '54971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10047,6 +10987,10 @@
     to:
       type: DomesdayPlace
       placeId: '22241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10091,6 +11035,10 @@
     to:
       type: DomesdayPlace
       placeId: '38971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10142,6 +11090,10 @@
     to:
       type: DomesdayPlace
       placeId: '51716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10183,6 +11135,10 @@
     to:
       type: DomesdayPlace
       placeId: '43631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10251,6 +11207,10 @@
     to:
       type: DomesdayPlace
       placeId: '54636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10287,6 +11247,10 @@
     to:
       type: DomesdayPlace
       placeId: '43986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10319,6 +11283,10 @@
     to:
       type: DomesdayPlace
       placeId: '14276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10352,6 +11320,10 @@
     to:
       type: DomesdayPlace
       placeId: '54636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10391,6 +11363,10 @@
     to:
       type: DomesdayPlace
       placeId: '48726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10436,6 +11412,10 @@
     to:
       type: DomesdayPlace
       placeId: '48731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10481,6 +11461,10 @@
     to:
       type: DomesdayPlace
       placeId: '47281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10528,6 +11512,10 @@
     to:
       type: DomesdayPlace
       placeId: '72031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10571,6 +11559,10 @@
     to:
       type: DomesdayPlace
       placeId: '47936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10620,6 +11612,10 @@
     to:
       type: DomesdayPlace
       placeId: '23461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10666,6 +11662,10 @@
     to:
       type: DomesdayPlace
       placeId: '15546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10710,6 +11710,10 @@
     to:
       type: DomesdayPlace
       placeId: '31931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10758,6 +11762,10 @@
     to:
       type: DomesdayPlace
       placeId: '31931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10802,6 +11810,10 @@
     to:
       type: DomesdayPlace
       placeId: '1621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10852,6 +11864,10 @@
     to:
       type: DomesdayPlace
       placeId: '65391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10888,6 +11904,10 @@
     to:
       type: DomesdayPlace
       placeId: '18691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10932,6 +11952,10 @@
     to:
       type: DomesdayPlace
       placeId: '54681'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: JURISDICTION_1066
     to:
       type: DomesdayPerson
@@ -10980,6 +12004,10 @@
     to:
       type: DomesdayPlace
       placeId: '23716'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11023,6 +12051,10 @@
     to:
       type: DomesdayPlace
       placeId: '12206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11068,6 +12100,10 @@
     to:
       type: DomesdayPlace
       placeId: '48606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11116,6 +12152,10 @@
     to:
       type: DomesdayPlace
       placeId: '44166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11165,6 +12205,10 @@
     to:
       type: DomesdayPlace
       placeId: '12206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11207,6 +12251,10 @@
     to:
       type: DomesdayPlace
       placeId: '8981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11252,6 +12300,10 @@
     to:
       type: DomesdayPlace
       placeId: '916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: JURISDICTION_1066
     to:
       type: DomesdayPerson
@@ -11296,6 +12348,10 @@
     to:
       type: DomesdayPlace
       placeId: '4581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11341,6 +12397,10 @@
     to:
       type: DomesdayPlace
       placeId: '53061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11385,6 +12445,10 @@
     to:
       type: DomesdayPlace
       placeId: '48896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Offlow
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11429,6 +12493,10 @@
     to:
       type: DomesdayPlace
       placeId: '4581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11474,6 +12542,10 @@
     to:
       type: DomesdayPlace
       placeId: '29096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: WAR:Offlow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11523,6 +12595,10 @@
     to:
       type: DomesdayPlace
       placeId: '56016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -11568,6 +12644,10 @@
     to:
       type: DomesdayPlace
       placeId: '21106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11622,6 +12702,10 @@
     to:
       type: DomesdayPlace
       placeId: '63556'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11665,6 +12749,10 @@
     to:
       type: DomesdayPlace
       placeId: '69776'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11703,6 +12791,10 @@
     to:
       type: DomesdayPlace
       placeId: '45846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11744,6 +12836,10 @@
     to:
       type: DomesdayPlace
       placeId: '29121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11786,6 +12882,10 @@
     to:
       type: DomesdayPlace
       placeId: '29051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11824,6 +12924,10 @@
     to:
       type: DomesdayPlace
       placeId: '15846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11866,6 +12970,10 @@
     to:
       type: DomesdayPlace
       placeId: '20331'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11908,6 +13016,10 @@
     to:
       type: DomesdayPlace
       placeId: '37161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11945,6 +13057,10 @@
     to:
       type: DomesdayPlace
       placeId: '52256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11976,6 +13092,10 @@
     to:
       type: DomesdayPlace
       placeId: '23641'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12038,6 +13158,10 @@
     to:
       type: DomesdayPlace
       placeId: '69066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -12083,6 +13207,10 @@
     to:
       type: DomesdayPlace
       placeId: '45571'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12142,6 +13270,10 @@
     to:
       type: DomesdayPlace
       placeId: '9011'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12180,6 +13312,10 @@
     to:
       type: DomesdayPlace
       placeId: '36301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12251,6 +13387,10 @@
     to:
       type: DomesdayPlace
       placeId: '16171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Offlow
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -12293,6 +13433,10 @@
     to:
       type: DomesdayPlace
       placeId: '36301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12335,6 +13479,10 @@
     to:
       type: DomesdayPlace
       placeId: '43916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12386,6 +13534,10 @@
     to:
       type: DomesdayPlace
       placeId: '16591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Seisdon
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12423,6 +13575,10 @@
     to:
       type: DomesdayPlace
       placeId: '53926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: JURISDICTION_1066
     to:
       type: DomesdayPerson
@@ -12459,6 +13615,10 @@
     to:
       type: DomesdayPlace
       placeId: '6651'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12512,6 +13672,10 @@
     to:
       type: DomesdayPlace
       placeId: '12931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12543,6 +13707,10 @@
     to:
       type: DomesdayPlace
       placeId: '7296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12577,6 +13745,10 @@
     to:
       type: DomesdayPlace
       placeId: '37016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12615,6 +13787,10 @@
     to:
       type: DomesdayPlace
       placeId: '44341'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12655,6 +13831,10 @@
     to:
       type: DomesdayPlace
       placeId: '71166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12687,6 +13867,10 @@
     to:
       type: DomesdayPlace
       placeId: '6461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12727,6 +13911,10 @@
     to:
       type: DomesdayPlace
       placeId: '4036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12763,6 +13951,10 @@
     to:
       type: DomesdayPlace
       placeId: '4036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12802,6 +13994,10 @@
     to:
       type: DomesdayPlace
       placeId: '3356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12841,6 +14037,10 @@
     to:
       type: DomesdayPlace
       placeId: '61441'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12876,6 +14076,10 @@
     to:
       type: DomesdayPlace
       placeId: '69091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12907,6 +14111,10 @@
     to:
       type: DomesdayPlace
       placeId: '47096'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12944,6 +14152,10 @@
     to:
       type: DomesdayPlace
       placeId: '59791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12982,6 +14194,10 @@
     to:
       type: DomesdayPlace
       placeId: '18966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13019,6 +14235,10 @@
     to:
       type: DomesdayPlace
       placeId: '14391'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13057,6 +14277,10 @@
     to:
       type: DomesdayPlace
       placeId: '55971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Cuttlestone
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13085,6 +14309,10 @@
     to:
       type: DomesdayPlace
       placeId: '24751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Pirehill
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson

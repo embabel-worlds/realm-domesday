@@ -11,6 +11,30 @@
 #   `noFigure` is set, must not put a positive number forward as the answer.
 
 answerable:
+  # Questions a plausible query gets wrong, checked against the reference data: a hundred summed through its
+  # places counts an entry once per place, and Oswaldslow leads only when its detached parts (places in GLS and
+  # WAR) count; Hull spells Earl Harold three ways; Shrewsbury and Oxford are boroughs, not manors.
+  - question: "Which hundred of Worcestershire had the most households?"
+    category: traps
+    expect: { name: Oswaldslow }
+  - question: "How many households were there in Oswaldslow hundred in Worcestershire?"
+    category: traps
+    expect: { value: 1148 }
+  - question: "How many Yorkshire entries were recorded as waste?"
+    category: traps
+    expect: { value: 520 }
+  - question: "Who ended up with most of Earl Harold's manors after the Conquest?"
+    category: traps
+    expect: { name: King William }
+  - question: "What was the most valuable manor in 1086?"
+    category: traps
+    expect: { name: Neatham }
+  - question: "Which woman held the most entries as a tenant-in-chief in 1086?"
+    category: traps
+    expect: { name: Countess Judith }
+  - question: "What were Bishop Odo of Bayeux's lands in Kent worth in 1086?"
+    category: traps
+    expect: { value: 374602, money: true }
   - question: "How many villagers were there in Worcestershire?"
     expect: { matchesView: { name: DomesdayCountyFigures, column: villagers, args: { county: WOR } } }
   - question: "How many slaves were recorded in Gloucestershire?"

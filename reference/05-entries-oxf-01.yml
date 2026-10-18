@@ -25,6 +25,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -54,6 +58,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
 - type: DomesdayEntry
   data:
     entryId: '6977'
@@ -76,6 +84,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
 - type: DomesdayEntry
   data:
     entryId: '6978'
@@ -97,6 +109,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
 - type: DomesdayEntry
   data:
     entryId: '6979'
@@ -134,6 +150,10 @@
     to:
       type: DomesdayPlace
       placeId: '65686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1066
     to:
       type: DomesdayPerson
@@ -164,6 +184,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -193,6 +217,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -223,6 +251,10 @@
     to:
       type: DomesdayPlace
       placeId: '61786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -288,6 +320,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -381,6 +417,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: URBAN_HOLDER_1086
     to:
       type: DomesdayPerson
@@ -546,6 +586,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
 - type: DomesdayEntry
   data:
     entryId: '6986'
@@ -628,6 +672,10 @@
     to:
       type: DomesdayPlace
       placeId: '6066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -672,6 +720,10 @@
     to:
       type: DomesdayPlace
       placeId: '30631'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -719,6 +771,10 @@
     to:
       type: DomesdayPlace
       placeId: '37996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -773,6 +829,10 @@
     to:
       type: DomesdayPlace
       placeId: '72601'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -812,6 +872,10 @@
     to:
       type: DomesdayPlace
       placeId: '55706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -860,6 +924,10 @@
     to:
       type: DomesdayPlace
       placeId: '58986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: HELD_PART_1066
     to:
       type: DomesdayPerson
@@ -931,6 +999,10 @@
     to:
       type: DomesdayPlace
       placeId: '7701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -968,6 +1040,10 @@
     to:
       type: DomesdayPlace
       placeId: '7701'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -1027,6 +1103,10 @@
     to:
       type: DomesdayPlace
       placeId: '37541'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1072,6 +1152,10 @@
     to:
       type: DomesdayPlace
       placeId: '55706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1128,6 +1212,18 @@
     to:
       type: DomesdayPlace
       placeId: '17636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1163,6 +1259,10 @@
     to:
       type: DomesdayPlace
       placeId: '66471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -1182,7 +1282,7 @@
     phillimore: 1,12
     county: OXF
     countyName: Oxfordshire
-    kind: manor
+    kind: urban
     places: Oxford
     name: Oxford (Oxfordshire 1,12)
     holding: borough
@@ -1197,6 +1297,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1216,7 +1320,7 @@
     phillimore: 1,13
     county: OXF
     countyName: Oxfordshire
-    kind: manor
+    kind: urban
     places: Oxford
     name: Oxford (Oxfordshire 1,13)
     holding: borough
@@ -1230,6 +1334,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1291,6 +1399,10 @@
     to:
       type: DomesdayPlace
       placeId: '45171'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1360,6 +1472,10 @@
     to:
       type: DomesdayPlace
       placeId: '71736'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1407,6 +1523,10 @@
     to:
       type: DomesdayPlace
       placeId: '286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1468,6 +1588,10 @@
     to:
       type: DomesdayPlace
       placeId: '21496'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1529,6 +1653,10 @@
     to:
       type: DomesdayPlace
       placeId: '4056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1600,6 +1728,10 @@
     to:
       type: DomesdayPlace
       placeId: '20751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Dorchester
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1645,6 +1777,10 @@
     to:
       type: DomesdayPlace
       placeId: '20751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Dorchester
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1689,6 +1825,10 @@
     to:
       type: DomesdayPlace
       placeId: '59361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1727,6 +1867,10 @@
     to:
       type: DomesdayPlace
       placeId: '62046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1769,6 +1913,10 @@
     to:
       type: DomesdayPlace
       placeId: '43276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1809,6 +1957,10 @@
     to:
       type: DomesdayPlace
       placeId: '4061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Banbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -1852,6 +2004,10 @@
     to:
       type: DomesdayPlace
       placeId: '18801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Banbury
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -1895,6 +2051,10 @@
     to:
       type: DomesdayPlace
       placeId: '24081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1936,6 +2096,10 @@
     to:
       type: DomesdayPlace
       placeId: '55476'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -1978,6 +2142,10 @@
     to:
       type: DomesdayPlace
       placeId: '52416'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2023,6 +2191,10 @@
     to:
       type: DomesdayPlace
       placeId: '20751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Dorchester
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2089,6 +2261,10 @@
     to:
       type: DomesdayPlace
       placeId: '62046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2144,6 +2320,10 @@
     to:
       type: DomesdayPlace
       placeId: '43276'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2195,6 +2375,10 @@
     to:
       type: DomesdayPlace
       placeId: '4061'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Banbury
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2259,6 +2443,10 @@
     to:
       type: DomesdayPlace
       placeId: '18801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Banbury
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2328,6 +2516,10 @@
     to:
       type: DomesdayPlace
       placeId: '73611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2376,6 +2568,10 @@
     to:
       type: DomesdayPlace
       placeId: '73356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Banbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2415,6 +2611,10 @@
     to:
       type: DomesdayPlace
       placeId: '67766'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2458,6 +2658,10 @@
     to:
       type: DomesdayPlace
       placeId: '3976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2523,6 +2727,10 @@
     to:
       type: DomesdayPlace
       placeId: '17006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2570,6 +2778,10 @@
     to:
       type: DomesdayPlace
       placeId: '19816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2614,6 +2826,10 @@
     to:
       type: DomesdayPlace
       placeId: '58221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2656,6 +2872,10 @@
     to:
       type: DomesdayPlace
       placeId: '62001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -2694,6 +2914,10 @@
     to:
       type: DomesdayPlace
       placeId: '65831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2733,6 +2957,10 @@
     to:
       type: DomesdayPlace
       placeId: '65831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2774,6 +3002,10 @@
     to:
       type: DomesdayPlace
       placeId: '30006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2815,6 +3047,10 @@
     to:
       type: DomesdayPlace
       placeId: '9971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -2854,6 +3090,10 @@
     to:
       type: DomesdayPlace
       placeId: '18181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2896,6 +3136,10 @@
     to:
       type: DomesdayPlace
       placeId: '57091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2937,6 +3181,10 @@
     to:
       type: DomesdayPlace
       placeId: '25981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -2972,6 +3220,10 @@
     to:
       type: DomesdayPlace
       placeId: '54846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3011,6 +3263,10 @@
     to:
       type: DomesdayPlace
       placeId: '54846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3052,6 +3308,10 @@
     to:
       type: DomesdayPlace
       placeId: '25926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3087,6 +3347,10 @@
     to:
       type: DomesdayPlace
       placeId: '25926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3122,6 +3386,10 @@
     to:
       type: DomesdayPlace
       placeId: '24966'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3162,6 +3430,10 @@
     to:
       type: DomesdayPlace
       placeId: '25446'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3203,6 +3475,10 @@
     to:
       type: DomesdayPlace
       placeId: '72266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3236,6 +3512,10 @@
     to:
       type: DomesdayPlace
       placeId: '3986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3277,6 +3557,10 @@
     to:
       type: DomesdayPlace
       placeId: '58266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3315,6 +3599,10 @@
     to:
       type: DomesdayPlace
       placeId: '70411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3357,6 +3645,10 @@
     to:
       type: DomesdayPlace
       placeId: '7471'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3391,6 +3683,10 @@
     to:
       type: DomesdayPlace
       placeId: '31261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3428,6 +3724,10 @@
     to:
       type: DomesdayPlace
       placeId: '48846'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:-
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3464,6 +3764,10 @@
     to:
       type: DomesdayPlace
       placeId: '69676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3504,6 +3808,10 @@
     to:
       type: DomesdayPlace
       placeId: '55691'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3542,6 +3850,10 @@
     to:
       type: DomesdayPlace
       placeId: '16611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3575,6 +3887,10 @@
     to:
       type: DomesdayPlace
       placeId: '3986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3613,6 +3929,10 @@
     to:
       type: DomesdayPlace
       placeId: '9921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3650,6 +3970,10 @@
     to:
       type: DomesdayPlace
       placeId: '58266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3690,6 +4014,10 @@
     to:
       type: DomesdayPlace
       placeId: '62261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3733,6 +4061,10 @@
     to:
       type: DomesdayPlace
       placeId: '13361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3773,6 +4105,10 @@
     to:
       type: DomesdayPlace
       placeId: '4056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3809,6 +4145,10 @@
     to:
       type: DomesdayPlace
       placeId: '73611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3845,6 +4185,10 @@
     to:
       type: DomesdayPlace
       placeId: '44896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -3887,6 +4231,10 @@
     to:
       type: DomesdayPlace
       placeId: '11501'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -3930,6 +4278,10 @@
     to:
       type: DomesdayPlace
       placeId: '13361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -3966,6 +4318,10 @@
     to:
       type: DomesdayPlace
       placeId: '62006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4007,6 +4363,10 @@
     to:
       type: DomesdayPlace
       placeId: '45181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4049,6 +4409,10 @@
     to:
       type: DomesdayPlace
       placeId: '45181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4086,6 +4450,10 @@
     to:
       type: DomesdayPlace
       placeId: '45181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4119,6 +4487,10 @@
     to:
       type: DomesdayPlace
       placeId: '45181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4158,6 +4530,10 @@
     to:
       type: DomesdayPlace
       placeId: '61996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4196,6 +4572,10 @@
     to:
       type: DomesdayPlace
       placeId: '62006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4237,6 +4617,10 @@
     to:
       type: DomesdayPlace
       placeId: '3186'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4284,6 +4668,10 @@
     to:
       type: DomesdayPlace
       placeId: '4801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4326,6 +4714,10 @@
     to:
       type: DomesdayPlace
       placeId: '4801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4361,6 +4753,10 @@
     to:
       type: DomesdayPlace
       placeId: '40461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4401,6 +4797,10 @@
     to:
       type: DomesdayPlace
       placeId: '4196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4439,6 +4839,10 @@
     to:
       type: DomesdayPlace
       placeId: '1021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4480,6 +4884,10 @@
     to:
       type: DomesdayPlace
       placeId: '55911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4529,6 +4937,10 @@
     to:
       type: DomesdayPlace
       placeId: '72976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4571,6 +4983,10 @@
     to:
       type: DomesdayPlace
       placeId: '53796'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4606,6 +5022,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -4637,6 +5057,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4676,6 +5100,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -4719,6 +5147,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4765,6 +5197,10 @@
     to:
       type: DomesdayPlace
       placeId: '53561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -4815,6 +5251,10 @@
     to:
       type: DomesdayPlace
       placeId: '40816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4854,6 +5294,10 @@
     to:
       type: DomesdayPlace
       placeId: '67551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4895,6 +5339,10 @@
     to:
       type: DomesdayPlace
       placeId: '2291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4935,6 +5383,10 @@
     to:
       type: DomesdayPlace
       placeId: '62006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4970,6 +5422,10 @@
     to:
       type: DomesdayPlace
       placeId: '58266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5010,6 +5466,10 @@
     to:
       type: DomesdayPlace
       placeId: '13361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5050,6 +5510,10 @@
     to:
       type: DomesdayPlace
       placeId: '4021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5105,6 +5569,10 @@
     to:
       type: DomesdayPlace
       placeId: '62006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5149,6 +5617,10 @@
     to:
       type: DomesdayPlace
       placeId: '61996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5189,6 +5661,10 @@
     to:
       type: DomesdayPlace
       placeId: '21581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5230,6 +5706,10 @@
     to:
       type: DomesdayPlace
       placeId: '4811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5295,6 +5775,10 @@
     to:
       type: DomesdayPlace
       placeId: '39046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5338,6 +5822,10 @@
     to:
       type: DomesdayPlace
       placeId: '19081'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5380,6 +5868,10 @@
     to:
       type: DomesdayPlace
       placeId: '53781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -5422,6 +5914,10 @@
     to:
       type: DomesdayPlace
       placeId: '53781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5473,6 +5969,10 @@
     to:
       type: DomesdayPlace
       placeId: '53781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5520,6 +6020,10 @@
     to:
       type: DomesdayPlace
       placeId: '4206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5569,6 +6073,10 @@
     to:
       type: DomesdayPlace
       placeId: '26451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5609,6 +6117,10 @@
     to:
       type: DomesdayPlace
       placeId: '26451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5655,6 +6167,10 @@
     to:
       type: DomesdayPlace
       placeId: '61411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5698,6 +6214,10 @@
     to:
       type: DomesdayPlace
       placeId: '61411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5738,6 +6258,10 @@
     to:
       type: DomesdayPlace
       placeId: '2181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -5805,6 +6329,10 @@
     to:
       type: DomesdayPlace
       placeId: '18941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5865,6 +6393,10 @@
     to:
       type: DomesdayPlace
       placeId: '23456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: HELD_PART_1086
     to:
       type: DomesdayPerson
@@ -5903,6 +6435,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -5962,6 +6498,10 @@
     to:
       type: DomesdayPlace
       placeId: '67821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6026,6 +6566,10 @@
     to:
       type: DomesdayPlace
       placeId: '61786'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: PRIOR_LORD
     to:
       type: DomesdayPerson
@@ -6087,6 +6631,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6121,6 +6669,10 @@
     to:
       type: DomesdayPlace
       placeId: '19351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6154,6 +6706,10 @@
     to:
       type: DomesdayPlace
       placeId: '36831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6185,6 +6741,10 @@
     to:
       type: DomesdayPlace
       placeId: '12491'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6248,6 +6808,10 @@
     to:
       type: DomesdayPlace
       placeId: '43306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6304,6 +6868,10 @@
     to:
       type: DomesdayPlace
       placeId: '69036'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6348,6 +6916,10 @@
     to:
       type: DomesdayPlace
       placeId: '50596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6395,6 +6967,10 @@
     to:
       type: DomesdayPlace
       placeId: '61381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6440,6 +7016,10 @@
     to:
       type: DomesdayPlace
       placeId: '15476'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -6482,6 +7062,10 @@
     to:
       type: DomesdayPlace
       placeId: '2051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -6546,6 +7130,10 @@
     to:
       type: DomesdayPlace
       placeId: '33191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -6638,6 +7226,10 @@
     to:
       type: DomesdayPlace
       placeId: '15241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6678,6 +7270,10 @@
     to:
       type: DomesdayPlace
       placeId: '3986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6719,6 +7315,10 @@
     to:
       type: DomesdayPlace
       placeId: '27381'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6760,6 +7360,10 @@
     to:
       type: DomesdayPlace
       placeId: '21581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6800,6 +7404,10 @@
     to:
       type: DomesdayPlace
       placeId: '43051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6838,6 +7446,10 @@
     to:
       type: DomesdayPlace
       placeId: '7901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6877,6 +7489,10 @@
     to:
       type: DomesdayPlace
       placeId: '43611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Banbury
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6915,6 +7531,10 @@
     to:
       type: DomesdayPlace
       placeId: '55911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -6976,6 +7596,10 @@
     to:
       type: DomesdayPlace
       placeId: '34591'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7022,6 +7646,10 @@
     to:
       type: DomesdayPlace
       placeId: '43406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7082,6 +7710,10 @@
     to:
       type: DomesdayPlace
       placeId: '18181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7144,6 +7776,10 @@
     to:
       type: DomesdayPlace
       placeId: '13636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BRK:Binfield
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7186,6 +7822,10 @@
     to:
       type: DomesdayPlace
       placeId: '37891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7229,6 +7869,10 @@
     to:
       type: DomesdayPlace
       placeId: '18936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7270,6 +7914,10 @@
     to:
       type: DomesdayPlace
       placeId: '31101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7315,6 +7963,10 @@
     to:
       type: DomesdayPlace
       placeId: '59256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7354,6 +8006,10 @@
     to:
       type: DomesdayPlace
       placeId: '39016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7391,6 +8047,10 @@
     to:
       type: DomesdayPlace
       placeId: '7901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7430,6 +8090,10 @@
     to:
       type: DomesdayPlace
       placeId: '7371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7469,6 +8133,10 @@
     to:
       type: DomesdayPlace
       placeId: '23896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7508,6 +8176,10 @@
     to:
       type: DomesdayPlace
       placeId: '65621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7567,6 +8239,10 @@
     to:
       type: DomesdayPlace
       placeId: '34021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Dorchester
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -7629,6 +8305,10 @@
     to:
       type: DomesdayPlace
       placeId: '41316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7665,6 +8345,10 @@
     to:
       type: DomesdayPlace
       placeId: '26511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7725,6 +8409,10 @@
     to:
       type: DomesdayPlace
       placeId: '18901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7766,6 +8454,10 @@
     to:
       type: DomesdayPlace
       placeId: '23356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7827,6 +8519,10 @@
     to:
       type: DomesdayPlace
       placeId: '3761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7864,6 +8560,10 @@
     to:
       type: DomesdayPlace
       placeId: '13916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -7913,6 +8613,10 @@
     to:
       type: DomesdayPlace
       placeId: '56016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7958,6 +8662,10 @@
     to:
       type: DomesdayPlace
       placeId: '24856'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8005,6 +8713,10 @@
     to:
       type: DomesdayPlace
       placeId: '13916'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: HOLDER_1070
     to:
       type: DomesdayPerson
@@ -8049,6 +8761,10 @@
     to:
       type: DomesdayPlace
       placeId: '2351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:-
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8080,6 +8796,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -8133,6 +8853,10 @@
     to:
       type: DomesdayPlace
       placeId: '53246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8189,6 +8913,10 @@
     to:
       type: DomesdayPlace
       placeId: '1626'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8249,6 +8977,10 @@
     to:
       type: DomesdayPlace
       placeId: '33191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8291,6 +9023,10 @@
     to:
       type: DomesdayPlace
       placeId: '52411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8336,6 +9072,10 @@
     to:
       type: DomesdayPlace
       placeId: '48576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8384,6 +9124,10 @@
     to:
       type: DomesdayPlace
       placeId: '59531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8424,6 +9168,10 @@
     to:
       type: DomesdayPlace
       placeId: '61996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8462,6 +9210,10 @@
     to:
       type: DomesdayPlace
       placeId: '286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8502,6 +9254,10 @@
     to:
       type: DomesdayPlace
       placeId: '34611'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8542,6 +9298,10 @@
     to:
       type: DomesdayPlace
       placeId: '45976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8578,6 +9338,10 @@
     to:
       type: DomesdayPlace
       placeId: '3151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8620,6 +9384,10 @@
     to:
       type: DomesdayPlace
       placeId: '3151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -8685,6 +9453,10 @@
     to:
       type: DomesdayPlace
       placeId: '67821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8724,6 +9496,10 @@
     to:
       type: DomesdayPlace
       placeId: '27256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -8766,6 +9542,10 @@
     to:
       type: DomesdayPlace
       placeId: '6581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8803,6 +9583,10 @@
     to:
       type: DomesdayPlace
       placeId: '35941'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8839,6 +9623,10 @@
     to:
       type: DomesdayPlace
       placeId: '22291'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8878,6 +9666,10 @@
     to:
       type: DomesdayPlace
       placeId: '32971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8920,6 +9712,10 @@
     to:
       type: DomesdayPlace
       placeId: '21106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -8931,7 +9727,7 @@
     phillimore: 28,8
     county: OXF
     countyName: Oxfordshire
-    kind: manor
+    kind: urban
     places: Oxford
     name: Oxford (Oxfordshire 28,8)
     holding: borough
@@ -8948,6 +9744,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -8989,6 +9789,10 @@
     to:
       type: DomesdayPlace
       placeId: '55721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9030,6 +9834,10 @@
     to:
       type: DomesdayPlace
       placeId: '69371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9069,6 +9877,10 @@
     to:
       type: DomesdayPlace
       placeId: '39046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9113,6 +9925,10 @@
     to:
       type: DomesdayPlace
       placeId: '31581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9153,6 +9969,10 @@
     to:
       type: DomesdayPlace
       placeId: '11201'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9194,6 +10014,10 @@
     to:
       type: DomesdayPlace
       placeId: '26221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9235,6 +10059,10 @@
     to:
       type: DomesdayPlace
       placeId: '23141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9274,6 +10102,10 @@
     to:
       type: DomesdayPlace
       placeId: '29456'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9320,6 +10152,10 @@
     to:
       type: DomesdayPlace
       placeId: '59876'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9362,6 +10198,10 @@
     to:
       type: DomesdayPlace
       placeId: '69006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9404,6 +10244,10 @@
     to:
       type: DomesdayPlace
       placeId: '7621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9446,6 +10290,10 @@
     to:
       type: DomesdayPlace
       placeId: '21296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9487,6 +10335,10 @@
     to:
       type: DomesdayPlace
       placeId: '4056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9529,6 +10381,10 @@
     to:
       type: DomesdayPlace
       placeId: '67761'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9571,6 +10427,10 @@
     to:
       type: DomesdayPlace
       placeId: '52731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9605,6 +10465,10 @@
     to:
       type: DomesdayPlace
       placeId: '40461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9651,6 +10515,10 @@
     to:
       type: DomesdayPlace
       placeId: '2286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9692,6 +10560,10 @@
     to:
       type: DomesdayPlace
       placeId: '35551'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9725,6 +10597,10 @@
     to:
       type: DomesdayPlace
       placeId: '36831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9760,6 +10636,10 @@
     to:
       type: DomesdayPlace
       placeId: '32826'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9801,6 +10681,10 @@
     to:
       type: DomesdayPlace
       placeId: '61996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -9861,6 +10745,10 @@
     to:
       type: DomesdayPlace
       placeId: '43546'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9898,6 +10786,10 @@
     to:
       type: DomesdayPlace
       placeId: '5536'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9936,6 +10828,10 @@
     to:
       type: DomesdayPlace
       placeId: '2981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -9970,6 +10866,10 @@
     to:
       type: DomesdayPlace
       placeId: '46211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10016,6 +10916,10 @@
     to:
       type: DomesdayPlace
       placeId: '26136'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10053,6 +10957,10 @@
     to:
       type: DomesdayPlace
       placeId: '55721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10093,6 +11001,10 @@
     to:
       type: DomesdayPlace
       placeId: '22301'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10134,6 +11046,10 @@
     to:
       type: DomesdayPlace
       placeId: '32746'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10173,6 +11089,10 @@
     to:
       type: DomesdayPlace
       placeId: '45976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10215,6 +11135,10 @@
     to:
       type: DomesdayPlace
       placeId: '38686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10256,6 +11180,10 @@
     to:
       type: DomesdayPlace
       placeId: '15161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10297,6 +11225,10 @@
     to:
       type: DomesdayPlace
       placeId: '33396'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10332,6 +11264,10 @@
     to:
       type: DomesdayPlace
       placeId: '10586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10371,6 +11307,10 @@
     to:
       type: DomesdayPlace
       placeId: '31261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10410,6 +11350,10 @@
     to:
       type: DomesdayPlace
       placeId: '69676'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10449,6 +11393,10 @@
     to:
       type: DomesdayPlace
       placeId: '63351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: MAN_OF_OVERLORD_1066
     to:
       type: DomesdayPerson
@@ -10492,6 +11440,10 @@
     to:
       type: DomesdayPlace
       placeId: '19351'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10533,6 +11485,10 @@
     to:
       type: DomesdayPlace
       placeId: '15586'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10578,6 +11534,10 @@
     to:
       type: DomesdayPlace
       placeId: '52731'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10614,6 +11574,10 @@
     to:
       type: DomesdayPlace
       placeId: '45976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10655,6 +11619,10 @@
     to:
       type: DomesdayPlace
       placeId: '59256'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10695,6 +11663,10 @@
     to:
       type: DomesdayPlace
       placeId: '67046'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10731,6 +11703,10 @@
     to:
       type: DomesdayPlace
       placeId: '71971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10791,6 +11767,10 @@
     to:
       type: DomesdayPlace
       placeId: '34531'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -10853,6 +11833,10 @@
     to:
       type: DomesdayPlace
       placeId: '23896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10911,6 +11895,10 @@
     to:
       type: DomesdayPlace
       placeId: '46406'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -10954,6 +11942,10 @@
     to:
       type: DomesdayPlace
       placeId: '53936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -10984,6 +11976,10 @@
     to:
       type: DomesdayPlace
       placeId: '25526'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11040,6 +12036,10 @@
     to:
       type: DomesdayPlace
       placeId: '42931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11081,6 +12081,10 @@
     to:
       type: DomesdayPlace
       placeId: '27066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11150,6 +12154,10 @@
     to:
       type: DomesdayPlace
       placeId: '10726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11205,6 +12213,10 @@
     to:
       type: DomesdayPlace
       placeId: '33191'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11250,6 +12262,10 @@
     to:
       type: DomesdayPlace
       placeId: '7901'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11316,6 +12332,10 @@
     to:
       type: DomesdayPlace
       placeId: '26511'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11358,6 +12378,10 @@
     to:
       type: DomesdayPlace
       placeId: '30001'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11401,6 +12425,10 @@
     to:
       type: DomesdayPlace
       placeId: '3166'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11446,6 +12474,10 @@
     to:
       type: DomesdayPlace
       placeId: '36361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11480,6 +12512,10 @@
     to:
       type: DomesdayPlace
       placeId: '44891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11517,6 +12553,10 @@
     to:
       type: DomesdayPlace
       placeId: '13931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11559,6 +12599,10 @@
     to:
       type: DomesdayPlace
       placeId: '52621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11600,6 +12644,10 @@
     to:
       type: DomesdayPlace
       placeId: '41316'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11638,6 +12686,10 @@
     to:
       type: DomesdayPlace
       placeId: '69596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11684,6 +12736,10 @@
     to:
       type: DomesdayPlace
       placeId: '59281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11725,6 +12781,10 @@
     to:
       type: DomesdayPlace
       placeId: '45221'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11758,6 +12818,10 @@
     to:
       type: DomesdayPlace
       placeId: '66606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11800,6 +12864,10 @@
     to:
       type: DomesdayPlace
       placeId: '18181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -11837,6 +12905,10 @@
     to:
       type: DomesdayPlace
       placeId: '57091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11872,6 +12944,10 @@
     to:
       type: DomesdayPlace
       placeId: '62261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11912,6 +12988,10 @@
     to:
       type: DomesdayPlace
       placeId: '21031'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -11951,6 +13031,10 @@
     to:
       type: DomesdayPlace
       placeId: '3981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -11997,6 +13081,10 @@
     to:
       type: DomesdayPlace
       placeId: '14726'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12042,6 +13130,10 @@
     to:
       type: DomesdayPlace
       placeId: '31581'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12088,6 +13180,10 @@
     to:
       type: DomesdayPlace
       placeId: '31286'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12133,6 +13229,10 @@
     to:
       type: DomesdayPlace
       placeId: '431'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12178,6 +13278,10 @@
     to:
       type: DomesdayPlace
       placeId: '10121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12217,6 +13321,10 @@
     to:
       type: DomesdayPlace
       placeId: '10121'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12258,6 +13366,10 @@
     to:
       type: DomesdayPlace
       placeId: '6326'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12317,6 +13429,10 @@
     to:
       type: DomesdayPlace
       placeId: '26361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12378,6 +13494,10 @@
     to:
       type: DomesdayPlace
       placeId: '29711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12417,6 +13537,10 @@
     to:
       type: DomesdayPlace
       placeId: '36361'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12457,6 +13581,10 @@
     to:
       type: DomesdayPlace
       placeId: '44891'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12493,6 +13621,10 @@
     to:
       type: DomesdayPlace
       placeId: '26451'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12531,6 +13663,10 @@
     to:
       type: DomesdayPlace
       placeId: '67721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12573,6 +13709,10 @@
     to:
       type: DomesdayPlace
       placeId: '19356'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12617,6 +13757,10 @@
     to:
       type: DomesdayPlace
       placeId: '1021'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12651,6 +13795,10 @@
     to:
       type: DomesdayPlace
       placeId: '61236'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12687,6 +13835,10 @@
     to:
       type: DomesdayPlace
       placeId: '57091'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -12752,6 +13904,10 @@
     to:
       type: DomesdayPlace
       placeId: '73216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12811,6 +13967,10 @@
     to:
       type: DomesdayPlace
       placeId: '3931'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -12872,6 +14032,10 @@
     to:
       type: DomesdayPlace
       placeId: '29056'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12917,6 +14081,10 @@
     to:
       type: DomesdayPlace
       placeId: '23896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -12982,6 +14150,10 @@
     to:
       type: DomesdayPlace
       placeId: '36241'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13013,6 +14185,10 @@
     to:
       type: DomesdayPlace
       placeId: '53246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13053,6 +14229,10 @@
     to:
       type: DomesdayPlace
       placeId: '68411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13118,6 +14298,10 @@
     to:
       type: DomesdayPlace
       placeId: '8486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13155,6 +14339,10 @@
     to:
       type: DomesdayPlace
       placeId: '40461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13197,6 +14385,10 @@
     to:
       type: DomesdayPlace
       placeId: '46231'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13263,6 +14455,10 @@
     to:
       type: DomesdayPlace
       placeId: '3156'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13299,6 +14495,10 @@
     to:
       type: DomesdayPlace
       placeId: '31101'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13354,6 +14554,10 @@
     to:
       type: DomesdayPlace
       placeId: '3986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -13414,6 +14618,10 @@
     to:
       type: DomesdayPlace
       placeId: '39576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13455,6 +14663,10 @@
     to:
       type: DomesdayPlace
       placeId: '14386'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13517,6 +14729,10 @@
     to:
       type: DomesdayPlace
       placeId: '70271'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13577,6 +14793,10 @@
     to:
       type: DomesdayPlace
       placeId: '73751'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13625,6 +14845,10 @@
     to:
       type: DomesdayPlace
       placeId: '69126'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13674,6 +14898,10 @@
     to:
       type: DomesdayPlace
       placeId: '1576'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13794,6 +15022,10 @@
     to:
       type: DomesdayPlace
       placeId: '2181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13854,6 +15086,10 @@
     to:
       type: DomesdayPlace
       placeId: '4206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -13910,6 +15146,10 @@
     to:
       type: DomesdayPlace
       placeId: '8686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Stotfold
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -13971,6 +15211,10 @@
     to:
       type: DomesdayPlace
       placeId: '10816'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14030,6 +15274,10 @@
     to:
       type: DomesdayPlace
       placeId: '7306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:-
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14088,6 +15336,10 @@
     to:
       type: DomesdayPlace
       placeId: '39206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Stotfold
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14148,6 +15400,10 @@
     to:
       type: DomesdayPlace
       placeId: '42636'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14189,6 +15445,10 @@
     to:
       type: DomesdayPlace
       placeId: '49116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14251,6 +15511,10 @@
     to:
       type: DomesdayPlace
       placeId: '10251'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14313,6 +15577,10 @@
     to:
       type: DomesdayPlace
       placeId: '35141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14358,6 +15626,10 @@
     to:
       type: DomesdayPlace
       placeId: '46801'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14418,6 +15690,10 @@
     to:
       type: DomesdayPlace
       placeId: '15161'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14482,6 +15758,10 @@
     to:
       type: DomesdayPlace
       placeId: '31596'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14524,6 +15804,10 @@
     to:
       type: DomesdayPlace
       placeId: '35936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -14588,6 +15872,10 @@
     to:
       type: DomesdayPlace
       placeId: '21106'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14642,6 +15930,10 @@
     to:
       type: DomesdayPlace
       placeId: '39206'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Stotfold
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14678,6 +15970,10 @@
     to:
       type: DomesdayPlace
       placeId: '34996'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14712,6 +16008,10 @@
     to:
       type: DomesdayPlace
       placeId: '13821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14753,6 +16053,10 @@
     to:
       type: DomesdayPlace
       placeId: '52411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14787,6 +16091,10 @@
     to:
       type: DomesdayPlace
       placeId: '40461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -14820,6 +16128,10 @@
     to:
       type: DomesdayPlace
       placeId: '40461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14857,6 +16169,10 @@
     to:
       type: DomesdayPlace
       placeId: '9971'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14894,6 +16210,10 @@
     to:
       type: DomesdayPlace
       placeId: '23896'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14930,6 +16250,10 @@
     to:
       type: DomesdayPlace
       placeId: '21881'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14966,6 +16290,10 @@
     to:
       type: DomesdayPlace
       placeId: '52411'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -14998,6 +16326,10 @@
     to:
       type: DomesdayPlace
       placeId: '34461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Desborough
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15035,6 +16367,10 @@
     to:
       type: DomesdayPlace
       placeId: '7371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15063,6 +16399,10 @@
     to:
       type: DomesdayPlace
       placeId: '34461'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: BUK:Desborough
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15101,6 +16441,10 @@
     to:
       type: DomesdayPlace
       placeId: '6066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15142,6 +16486,10 @@
     to:
       type: DomesdayPlace
       placeId: '61141'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15180,6 +16528,10 @@
     to:
       type: DomesdayPlace
       placeId: '28986'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15213,6 +16565,10 @@
     to:
       type: DomesdayPlace
       placeId: '46211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15254,6 +16610,10 @@
     to:
       type: DomesdayPlace
       placeId: '67911'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15290,6 +16650,10 @@
     to:
       type: DomesdayPlace
       placeId: '6066'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15329,6 +16693,10 @@
     to:
       type: DomesdayPlace
       placeId: '39016'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15368,6 +16736,10 @@
     to:
       type: DomesdayPlace
       placeId: '1506'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15407,6 +16779,10 @@
     to:
       type: DomesdayPlace
       placeId: '3151'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15440,6 +16816,10 @@
     to:
       type: DomesdayPlace
       placeId: '13821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15481,6 +16861,10 @@
     to:
       type: DomesdayPlace
       placeId: '15196'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15524,6 +16908,10 @@
     to:
       type: DomesdayPlace
       placeId: '18181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15559,6 +16947,10 @@
     to:
       type: DomesdayPlace
       placeId: '46211'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15592,6 +16984,10 @@
     to:
       type: DomesdayPlace
       placeId: '7621'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15626,6 +17022,10 @@
     to:
       type: DomesdayPlace
       placeId: '53246'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15655,6 +17055,10 @@
     to:
       type: DomesdayPlace
       placeId: '55706'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15696,6 +17100,10 @@
     to:
       type: DomesdayPlace
       placeId: '29261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15736,6 +17144,10 @@
     to:
       type: DomesdayPlace
       placeId: '52371'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Benson
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15772,6 +17184,10 @@
     to:
       type: DomesdayPlace
       placeId: '63711'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -15811,6 +17227,10 @@
     to:
       type: DomesdayPlace
       placeId: '43401'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -15845,6 +17265,10 @@
     to:
       type: DomesdayPlace
       placeId: '47926'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Headington
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15887,6 +17311,10 @@
     to:
       type: DomesdayPlace
       placeId: '43051'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bloxham
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15933,6 +17361,10 @@
     to:
       type: DomesdayPlace
       placeId: '14281'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -15974,6 +17406,10 @@
     to:
       type: DomesdayPlace
       placeId: '72976'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16013,6 +17449,10 @@
     to:
       type: DomesdayPlace
       placeId: '376'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:-
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16077,6 +17517,10 @@
     to:
       type: DomesdayPlace
       placeId: '8006'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16126,6 +17570,10 @@
     to:
       type: DomesdayPlace
       placeId: '61266'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -16171,6 +17619,10 @@
     to:
       type: DomesdayPlace
       placeId: '67821'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16208,6 +17660,10 @@
     to:
       type: DomesdayPlace
       placeId: '67721'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16252,6 +17708,10 @@
     to:
       type: DomesdayPlace
       placeId: '52616'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Binfield
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16297,6 +17757,10 @@
     to:
       type: DomesdayPlace
       placeId: '21296'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16332,6 +17796,10 @@
     to:
       type: DomesdayPlace
       placeId: '45791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16377,6 +17845,10 @@
     to:
       type: DomesdayPlace
       placeId: '36831'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16420,6 +17892,10 @@
     to:
       type: DomesdayPlace
       placeId: '31261'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16465,6 +17941,10 @@
     to:
       type: DomesdayPlace
       placeId: '3216'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16510,6 +17990,10 @@
     to:
       type: DomesdayPlace
       placeId: '5781'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16559,6 +18043,10 @@
     to:
       type: DomesdayPlace
       placeId: '8486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16604,6 +18092,10 @@
     to:
       type: DomesdayPlace
       placeId: '8486'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16650,6 +18142,10 @@
     to:
       type: DomesdayPlace
       placeId: '50861'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16695,6 +18191,10 @@
     to:
       type: DomesdayPlace
       placeId: '35936'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
@@ -16739,6 +18239,10 @@
     to:
       type: DomesdayPlace
       placeId: '66606'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Lewknor
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16784,6 +18288,10 @@
     to:
       type: DomesdayPlace
       placeId: '25981'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16828,6 +18336,10 @@
     to:
       type: DomesdayPlace
       placeId: '45791'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Kirtlington
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16873,6 +18385,10 @@
     to:
       type: DomesdayPlace
       placeId: '45181'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16923,6 +18439,10 @@
     to:
       type: DomesdayPlace
       placeId: '61116'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -16962,6 +18482,10 @@
     to:
       type: DomesdayPlace
       placeId: '43306'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17011,6 +18535,10 @@
     to:
       type: DomesdayPlace
       placeId: '686'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Thame
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17058,6 +18586,10 @@
     to:
       type: DomesdayPlace
       placeId: '43646'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Langtree
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17099,6 +18631,10 @@
     to:
       type: DomesdayPlace
       placeId: '72226'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17145,6 +18681,10 @@
     to:
       type: DomesdayPlace
       placeId: '9921'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Bampton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17189,6 +18729,10 @@
     to:
       type: DomesdayPlace
       placeId: '17651'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17235,6 +18779,10 @@
     to:
       type: DomesdayPlace
       placeId: '53561'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17274,6 +18822,10 @@
     to:
       type: DomesdayPlace
       placeId: '34811'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Pyrton
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -17318,6 +18870,10 @@
     to:
       type: DomesdayPlace
       placeId: '72961'
+  - predicate: IN_HUNDRED
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Wootton
   - predicate: SUBTENANT_1086
     to:
       type: DomesdayPerson
