@@ -84,8 +84,11 @@ def reconciles(expected, rows):
         return False
     top = [v for k, v in rows[0].items() if not ID_COLUMN.search(k)]
     if isinstance(expected, (int, float)) and not isinstance(expected, bool):
-        targets = {round(float(expected), 2), round(float(expected) / 240, 2)}
-        return any(round(n, 2) in targets for v in top for n in numbers(v))
+        # The same money may come back in pence or in pounds, whichever the view or the answer chose;
+        # a view's pounds are rounded to two places, so pence match within the 2.4d that rounding allows.
+        x = float(expected)
+        targets = [(x, 0.005), (x / 240, 0.005), (x * 240, 2.5)]
+        return any(abs(n - t) <= e for v in top for n in numbers(v) for t, e in targets)
     wanted = strings(expected)
     have = [s for v in top for s in strings(v)]
     return bool(wanted) and all(any(w in h or h in w for h in have) for w in wanted)

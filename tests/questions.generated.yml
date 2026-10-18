@@ -831,6 +831,62 @@ answerable:
         county: DEV
     columnsLike:
     - estimat
+- question: Was England worth more before or after the Conquest?
+  category: before-after
+  expect:
+    matchesView:
+      name: DomesdayBeforeAndAfter
+      column:
+      - value1066Pounds
+      - value1086Pounds
+      - valueChangePercent
+      - comparableEntries
+- question: Did land values rise or fall after 1066?
+  category: before-after
+  expect:
+    matchesView:
+      name: DomesdayBeforeAndAfter
+      column:
+      - value1066Pounds
+      - value1086Pounds
+      - valueChangePercent
+      - comparableEntries
+- question: Did Yorkshire lose value after the Conquest?
+  category: before-after
+  expect:
+    matchesView:
+      name: DomesdayBeforeAndAfter
+      column:
+      - value1066Pounds
+      - value1086Pounds
+      - valueChangePercent
+      - comparableEntries
+      args:
+        county: YKS
+- question: Was Kent richer in 1066 or in 1086?
+  category: before-after
+  expect:
+    matchesView:
+      name: DomesdayBeforeAndAfter
+      column:
+      - value1066Pounds
+      - value1086Pounds
+      - valueChangePercent
+      - comparableEntries
+      args:
+        county: KEN
+- question: Did Sussex lose value after the Conquest?
+  category: before-after
+  expect:
+    matchesView:
+      name: DomesdayBeforeAndAfter
+      column:
+      - value1066Pounds
+      - value1086Pounds
+      - valueChangePercent
+      - comparableEntries
+      args:
+        county: SUS
 - question: How many villagers were there in England in 1086?
   category: england-total
   expect:
@@ -1989,6 +2045,18 @@ answerable:
   expect:
     minRows: 3
 unanswerable:
+- question: Were there more slaves before or after the Conquest?
+  repeat: 3
+  noFigure: note
+- question: Did the number of villagers fall after 1066?
+  repeat: 3
+  noFigure: note
+- question: Was the population of England bigger in 1066 or in 1086?
+  repeat: 3
+  noFigure: note
+- question: How many slaves were there in 1066?
+  repeat: 3
+  noFigure: true
 - question: How many villagers were there in Essex?
   repeat: 3
   noFigure: true

@@ -329,6 +329,29 @@
     RETURN area, round(h) AS households, round(h * 4) AS estimatedPeopleLow, round(h * 5) AS estimatedPeopleHigh,
            'Domesday counts heads of household, not people; the estimate multiplies by four to five, a historians convention, not a record. Great Domesday only: Essex, Norfolk and Suffolk are not included, and London and Winchester were never surveyed.' AS note
 
+- name: DomesdayBeforeAndAfter
+  description: Before and after the Conquest - what Domesday lets you compare between 1066 and 1086, for England or one county. Value is compared over the entries that state BOTH years (comparableEntries), with how many manors rose, fell or held steady. Population is recorded for 1086 only, so this gives the 1086 households, slaves and villagers and says plainly that 1066 counts were not taken. THE answer for "was England richer before or after the Conquest", "did Yorkshire lose value after 1066", "were there more slaves before or after the Conquest".
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code, e.g. `YKS`. Leave it out for all England."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE $county = '' OR e.county = $county
+    WITH CASE WHEN $county = '' THEN 'England (Great Domesday)' ELSE e.countyName END AS area, e,
+         (e.value1066 IS NOT NULL AND e.value1086 IS NOT NULL) AS both
+    WITH area, sum(CASE WHEN both THEN 1 ELSE 0 END) AS comparableEntries,
+         sum(CASE WHEN both THEN e.value1066 ELSE 0 END) AS v66, sum(CASE WHEN both THEN e.value1086 ELSE 0 END) AS v86,
+         sum(CASE WHEN both AND e.value1086 > e.value1066 THEN 1 ELSE 0 END) AS rose,
+         sum(CASE WHEN both AND e.value1086 < e.value1066 THEN 1 ELSE 0 END) AS fell,
+         sum(CASE WHEN both AND e.value1086 = e.value1066 THEN 1 ELSE 0 END) AS heldSteady,
+         round(sum(e.households)) AS households1086, round(sum(e.slaves)) AS slaves1086, round(sum(e.villagers)) AS villagers1086
+    RETURN area, comparableEntries, round(v66 / 2.4) / 100 AS value1066Pounds, round(v86 / 2.4) / 100 AS value1086Pounds,
+           CASE WHEN v66 > 0 THEN round(1000.0 * (v86 - v66) / v66) / 10 END AS valueChangePercent,
+           rose, fell, heldSteady, households1086, slaves1086, villagers1086,
+           'Values are compared only over entries that give both years. People were counted in 1086 only: Great Domesday records no 1066 households, slaves or villagers, so no population comparison across the Conquest can be made from it (Little Domesday, with its then-and-now counts, is not in this edition).' AS note
+
 - name: DomesdayHundredSummary
   description: Per hundred in one county — places, entries, households and value in 1066 and 1086.
   params:

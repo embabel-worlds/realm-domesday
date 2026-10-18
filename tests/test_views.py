@@ -53,6 +53,8 @@ CASES = [
     ('DomesdayCountyFigures', {}, None),
     ('DomesdayPopulation', {}, lambda r: None if r and r[0]['households'] == round(r[0]['households']) and abs(r[0]['estimatedPeopleLow'] - 4 * r[0]['households']) <= 4 and 'not people' in r[0]['note'] else f'population {r[:1]}'),
     ('DomesdayPopulation', {'county': 'KEN'}, lambda r: None if r and r[0]['area'] == 'Kent' else f'Kent population {r[:1]}'),
+    ('DomesdayBeforeAndAfter', {}, lambda r: None if r and r[0]['comparableEntries'] > 10000 and r[0]['rose'] + r[0]['fell'] + r[0]['heldSteady'] == r[0]['comparableEntries'] and '1086 only' in r[0]['note'] else f'before/after {r[:1]}'),
+    ('DomesdayBeforeAndAfter', {'county': 'YKS'}, lambda r: None if r and r[0]['valueChangePercent'] < -40 else f'Yorkshire should have fallen hard: {r[:1]}'),
     ('DomesdayHundredSummary', {}, None),
     ('DomesdayHundredSummary', {'county': 'YKS'}, None),
     ('DomesdayRichestManors', {}, None),

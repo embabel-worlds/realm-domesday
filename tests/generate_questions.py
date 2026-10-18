@@ -89,6 +89,10 @@ RANKINGS = [
 ]
 
 ADVERSARIAL = [
+    ('Were there more slaves before or after the Conquest?', 'note'),
+    ('Did the number of villagers fall after 1066?', 'note'),
+    ('Was the population of England bigger in 1066 or in 1086?', 'note'),
+    ('How many slaves were there in 1066?', True),
     ('How many villagers were there in Essex?', True),
     ('What was the population of Norfolk in 1086?', True),
     ('How many mills were there in Suffolk?', True),
@@ -146,6 +150,12 @@ def main():
     for code, name in [('KEN', 'Kent'), ('YKS', 'Yorkshire'), ('LIN', 'Lincolnshire'), ('DEV', 'Devon')]:
         answerable.append({'question': f'How many people lived in {name} in 1086?', 'category': 'population',
                            'expect': {'matchesView': {'name': 'DomesdayPopulation', 'column': ['households', 'estimatedPeopleLow', 'estimatedPeopleHigh'], 'args': {'county': code}}, 'columnsLike': ['estimat']}})
+    # before and after the Conquest: values compare; people were counted in 1086 only
+    for text, args in [('Was England worth more before or after the Conquest?', {}), ('Did land values rise or fall after 1066?', {}),
+                       ('Did Yorkshire lose value after the Conquest?', {'county': 'YKS'}), ('Was Kent richer in 1066 or in 1086?', {'county': 'KEN'}),
+                       ('Did Sussex lose value after the Conquest?', {'county': 'SUS'})]:
+        answerable.append({'question': text, 'category': 'before-after',
+                           'expect': {'matchesView': {'name': 'DomesdayBeforeAndAfter', 'column': ['value1066Pounds', 'value1086Pounds', 'valueChangePercent', 'comparableEntries'], **({'args': args} if args else {})}}})
     for column, phrasings in ENGLAND:
         for text in phrasings:
             q(text, 'DomesdayCountyFigures', column, None, 'england-total')
