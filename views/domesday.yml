@@ -1,0 +1,484 @@
+# The realm's answer surface.
+#
+# Money is in pence throughout (£1 = 240d) and every view that returns it also returns pounds,
+# rounded to two places, because a reader should not have to divide by 240. Figures are summed
+# only over entries that state them: an entry that gives no value is not a zero.
+#
+# People are Hull's index, one record per name per county, so views about a person across England
+# group by NAME. A name is not always one person; the views say how many county records they
+# gathered so a reader can see what was joined.
+
+# ── Finding things ────────────────────────────────────────────────────────────────────────────────
+
+- name: DomesdayPlaceSearch
+  description: Places whose modern name contains a word, with county, hundred, grid reference, coordinates and how many entries name them. Many names recur (several Abbertons, dozens of Nortons) — the county tells them apart. THE answer for "find <place> in Domesday", "is <place> in Domesday".
+  params:
+    name:
+      type: string
+      default: "Abberley"
+      description: "Part of the place's name, any case, e.g. `norton`, `Milton Keynes`."
+    limit:
+      type: int
+      default: 50
+      description: "Most places to return."
+  cypher: |
+    MATCH (p:DomesdayPlace)
+    WHERE toLower(p.name) CONTAINS toLower($name)
+    RETURN p.placeId AS placeId, p.name AS place, p.countyName AS county, p.hundred AS hundred,
+           p.gridRef AS gridRef, p.lat AS lat, p.lng AS lng, p.entryCount AS entries,
+           p.inLittleDomesday AS inLittleDomesday
+    ORDER BY place, county
+    LIMIT $limit
+
+- name: DomesdayPersonSearch
+  description: People and institutions whose name contains a word, one row per county record, with how many entries name them. THE answer for "find <person> in Domesday".
+  params:
+    name:
+      type: string
+      default: "Tosny"
+      description: "Part of the name, any case, e.g. `harold`, `bishop of worcester`, `odo`."
+    limit:
+      type: int
+      default: 50
+      description: "Most records to return."
+  cypher: |
+    MATCH (p:DomesdayPerson)
+    WHERE toLower(p.name) CONTAINS toLower($name)
+    RETURN p.personId AS personId, p.name AS person, p.countyName AS county, p.gender AS gender,
+           p.isInstitution AS isInstitution, p.entryCount AS entries
+    ORDER BY entries DESC, person
+    LIMIT $limit
+
+# ── One place, one entry, one person ──────────────────────────────────────────────────────────────
+
+- name: DomesdayPlaceEntries
+  description: Every entry about one place (by placeId), with its figures and who held it in 1066 and 1086. THE dossier for a place.
+  params:
+    placeId:
+      type: string
+      default: "1"
+      description: "The place's id, from DomesdayPlaceSearch. `1` is Abberley, Worcestershire."
+  cypher: |
+    MATCH (p:DomesdayPlace {placeId: $placeId})<-[:DESCRIBES]-(e:DomesdayEntry)
+    OPTIONAL MATCH (e)-[:LORD_1066]->(l:DomesdayPerson)
+    OPTIONAL MATCH (e)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+    OPTIONAL MATCH (e)-[:TENANT_1086]->(u:DomesdayPerson)
+    RETURN e.entryId AS entryId, e.ref AS ref, e.holding AS holding, e.folio AS folio,
+           collect(DISTINCT l.name) AS lords1066, collect(DISTINCT t.name) AS tenantsInChief,
+           collect(DISTINCT u.name) AS tenants1086,
+           e.households AS households, e.villagers AS villagers, e.smallholders AS smallholders,
+           e.slaves AS slaves, e.cottagers AS cottagers, e.freemen AS freemen, e.priests AS priests,
+           e.ploughlands AS ploughlands, e.lordsTeams AS lordsTeams, e.mensTeams AS mensTeams,
+           e.geldUnits AS geldUnits, e.value1066 AS value1066Pence, e.valueLater AS valueLaterPence,
+           e.value1086 AS value1086Pence, e.mills AS mills, e.meadowAcres AS meadowAcres,
+           e.woodlandPigs AS woodlandPigs, e.hasChurch AS church, e.hasCastle AS castle, e.isWaste AS waste
+    ORDER BY ref
+    LIMIT 50
+
+- name: DomesdayEntryDetail
+  description: One entry (by entryId) in full — every figure it states, the places it is about and includes, and every person it names with their role.
+  params:
+    entryId:
+      type: string
+      default: "8146"
+      description: "The entry's id. `8146` is Abberley, Worcestershire 15,8."
+  cypher: |
+    MATCH (e:DomesdayEntry {entryId: $entryId})
+    OPTIONAL MATCH (e)-[r]->(p:DomesdayPerson)
+    WITH e, collect(DISTINCT {role: type(r), name: p.name, personId: p.personId}) AS people
+    OPTIONAL MATCH (e)-[d:DESCRIBES|INCLUDES]->(pl:DomesdayPlace)
+    RETURN e.entryId AS entryId, e.ref AS ref, e.kind AS kind, e.holding AS holding, e.section AS section,
+           e.folio AS folio, people,
+           collect(DISTINCT {how: type(d), name: pl.name, placeId: pl.placeId, lat: pl.lat, lng: pl.lng}) AS places,
+           e.households AS households, e.villagers AS villagers, e.smallholders AS smallholders,
+           e.slaves AS slaves, e.cottagers AS cottagers, e.freemen AS freemen, e.freeMen AS freeMen,
+           e.priests AS priests, e.burgesses AS burgesses, e.ploughmen AS ploughmen, e.riders AS riders,
+           e.menAtArms AS menAtArms, e.frenchmen AS frenchmen, e.englishmen AS englishmen,
+           e.ploughlands AS ploughlands, e.lordsTeams AS lordsTeams, e.mensTeams AS mensTeams,
+           e.ploughTeams AS ploughTeams, e.geldUnits AS geldUnits,
+           e.value1066 AS value1066Pence, e.valueLater AS valueLaterPence, e.value1086 AS value1086Pence,
+           e.mills AS mills, e.meadowAcres AS meadowAcres, e.woodlandPigs AS woodlandPigs,
+           e.fisheries AS fisheries, e.saltHouses AS saltHouses, e.sheep AS sheep, e.cattle AS cattle,
+           e.goats AS goats, e.hasChurch AS church, e.hasCastle AS castle, e.hasMarket AS market,
+           e.isWaste AS waste
+
+- name: DomesdayPersonHoldings
+  description: Every entry naming a person (exact name, any county), with the role they held it in and its value. THE answer for "what did <person> hold", "where did <person> hold land". Roles — LORD_1066 held the manor before the Conquest; TENANT_IN_CHIEF held it of the king in 1086; TENANT_1086 held it of a tenant-in-chief.
+  params:
+    name:
+      type: string
+      default: "Ralph of Tosny"
+      description: "The person's name exactly as DomesdayPersonSearch returns it, e.g. `Earl Harold`, `Odo of Bayeux`."
+  cypher: |
+    MATCH (p:DomesdayPerson) WHERE toLower(p.name) = toLower($name)
+    MATCH (e:DomesdayEntry)-[r]->(p)
+    RETURN type(r) AS role, e.entryId AS entryId, e.ref AS ref, e.places AS places, e.countyName AS county,
+           e.households AS households, e.value1066 AS value1066Pence, e.value1086 AS value1086Pence
+    ORDER BY role, county, ref
+    LIMIT 500
+
+- name: DomesdayPersonSummary
+  description: One person's standing, by name across every county — entries held by role, counties, households and total value in 1066 and 1086. THE answer for "how rich was <person>", "how much land did <person> hold".
+  params:
+    name:
+      type: string
+      default: "Ralph of Tosny"
+      description: "The person's name exactly as DomesdayPersonSearch returns it."
+  cypher: |
+    MATCH (p:DomesdayPerson) WHERE toLower(p.name) = toLower($name)
+    MATCH (e:DomesdayEntry)-[r]->(p)
+    WITH type(r) AS role, count(DISTINCT p) AS countyRecords, count(DISTINCT e) AS entries,
+         collect(DISTINCT e.countyName) AS counties, sum(e.households) AS households,
+         sum(e.value1066) AS value1066Pence, sum(e.value1086) AS value1086Pence
+    RETURN role, entries, size(counties) AS countyCount, counties, countyRecords, households,
+           value1066Pence, round(value1066Pence / 2.4) / 100 AS value1066Pounds,
+           value1086Pence, round(value1086Pence / 2.4) / 100 AS value1086Pounds
+    ORDER BY entries DESC
+
+# ── The Conquest ──────────────────────────────────────────────────────────────────────────────────
+
+- name: DomesdayGreatestLandholders
+  description: The greatest landholders of 1086 — tenants-in-chief ranked by the total annual value of the entries they held of the king, with entries, counties and households. THE answer for "who were the richest men in 1086", "who gained most from the Conquest", "the biggest landholders". The king heads it (`King William`).
+  params:
+    limit:
+      type: int
+      default: 25
+      description: "How many to return."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(p:DomesdayPerson)
+    WITH p.name AS tenantInChief, count(DISTINCT e) AS entries, count(DISTINCT e.county) AS counties,
+         sum(e.households) AS households, sum(e.value1086) AS value1086Pence
+    RETURN tenantInChief, entries, counties, households, value1086Pence,
+           round(value1086Pence / 2.4) / 100 AS value1086Pounds
+    ORDER BY value1086Pence DESC
+    LIMIT $limit
+
+- name: DomesdayGreatestLords1066
+  description: The greatest landholders before the Conquest — lords of 1066 ranked by the total value of the manors they held, as Domesday records it in 1066. THE answer for "who were the richest English lords before 1066", "who held most land under Edward the Confessor". Earl Harold and King Edward lead.
+  params:
+    limit:
+      type: int
+      default: 25
+      description: "How many to return."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[:LORD_1066]->(p:DomesdayPerson)
+    WITH p.name AS lord1066, count(DISTINCT e) AS entries, count(DISTINCT e.county) AS counties,
+         sum(e.value1066) AS value1066Pence
+    RETURN lord1066, entries, counties, value1066Pence, round(value1066Pence / 2.4) / 100 AS value1066Pounds
+    ORDER BY value1066Pence DESC
+    LIMIT $limit
+
+- name: DomesdayConquestTransfers
+  description: Who replaced whom — pairs of the 1066 lord and the 1086 tenant-in-chief of the same entries, ranked by how many entries passed between them. THE answer for "who took over Harold's lands", "where did the English lords' land go".
+  params:
+    lord1066:
+      type: string
+      default: ""
+      description: "Limit to one 1066 lord, part of the name, e.g. `harold`. Empty for all."
+    limit:
+      type: int
+      default: 40
+      description: "How many pairs to return."
+  cypher: |
+    MATCH (l:DomesdayPerson)<-[:LORD_1066]-(e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+    WHERE $lord1066 = '' OR toLower(l.name) CONTAINS toLower($lord1066)
+    WITH l.name AS lord1066, t.name AS tenantInChief1086, count(DISTINCT e) AS entries,
+         sum(e.value1066) AS value1066Pence, sum(e.value1086) AS value1086Pence
+    RETURN lord1066, tenantInChief1086, entries, value1066Pence, value1086Pence
+    ORDER BY entries DESC
+    LIMIT $limit
+
+- name: DomesdayLordsByPeasants
+  description: Landholders ranked by the people on their land - the households of every entry they held in a role, and of those the peasants (villagers, smallholders, cottagers and slaves). THE answer for "which lords ruled the most peasants", "who had the most people under them", "who held the most villagers". Domesday counts heads of household, not people. Role TENANT_IN_CHIEF (default, held of the king in 1086), TENANT_1086 (the man on the ground in 1086) or LORD_1066 (before the Conquest).
+  params:
+    role:
+      type: string
+      default: "TENANT_IN_CHIEF"
+      description: "`TENANT_IN_CHIEF` (1086, held of the king), `TENANT_1086` (1086, held of a tenant-in-chief) or `LORD_1066`."
+    limit:
+      type: int
+      default: 25
+      description: "How many to return."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[r]->(p:DomesdayPerson)
+    WHERE type(r) = $role
+    WITH p.name AS holder, count(DISTINCT e) AS entries, sum(e.households) AS households,
+         sum(coalesce(e.villagers, 0) + coalesce(e.smallholders, 0) + coalesce(e.cottagers, 0) + coalesce(e.slaves, 0)) AS peasants,
+         sum(e.villagers) AS villagers, sum(e.slaves) AS slaves
+    RETURN holder, $role AS role, entries, households, peasants, villagers, slaves
+    ORDER BY households DESC
+    LIMIT $limit
+
+- name: DomesdayWomenLandholders
+  description: Women who held land, in 1066 or 1086, ranked by the entries they held — queens, countesses, widows, nuns. THE answer for "which women held land in Domesday".
+  params:
+    limit:
+      type: int
+      default: 40
+      description: "How many to return."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[r:LORD_1066|TENANT_IN_CHIEF|TENANT_1086|HELD_PART_1066|HELD_PART_1086]->(p:DomesdayPerson)
+    WHERE p.gender = 'female'
+    WITH p.name AS woman, count(DISTINCT e) AS entries, collect(DISTINCT type(r)) AS roles,
+         count(DISTINCT e.county) AS counties, sum(e.value1066) AS value1066Pence, sum(e.value1086) AS value1086Pence
+    RETURN woman, entries, roles, counties, value1066Pence, value1086Pence
+    ORDER BY entries DESC
+    LIMIT $limit
+
+# ── Counties, hundreds and the land ───────────────────────────────────────────────────────────────
+
+- name: DomesdayCounties
+  description: The 34 Domesday counties, with circuit and whether their entries are in Great Domesday (and so in this realm).
+  cypher: |
+    MATCH (c:DomesdayCounty)
+    RETURN c.code AS code, c.name AS county, c.circuit AS circuit, c.inGreatDomesday AS inGreatDomesday
+    ORDER BY county
+
+- name: DomesdayCountySummary
+  description: Per county — entries, households, plough teams, value in 1066 and 1086, the change between them, manors called waste, mills and churches. THE answer for "which county was richest", "which counties lost most value after the Conquest", "where was the waste". The change is measured only over entries that state BOTH values (comparableEntries), because many entries — most in the south-west — give a value for 1086 alone, and summing those against fewer 1066 values would invent a rise.
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WITH e, (e.value1066 IS NOT NULL AND e.value1086 IS NOT NULL) AS both
+    WITH e.countyName AS county, count(e) AS entries, sum(e.households) AS households,
+         sum(e.ploughTeams) AS ploughTeams, sum(e.value1066) AS value1066Pence, sum(e.value1086) AS value1086Pence,
+         sum(CASE WHEN both THEN 1 ELSE 0 END) AS comparableEntries,
+         sum(CASE WHEN both THEN e.value1066 ELSE 0 END) AS comparable1066,
+         sum(CASE WHEN both THEN e.value1086 ELSE 0 END) AS comparable1086,
+         sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS wasteEntries, sum(e.mills) AS mills,
+         sum(CASE WHEN e.hasChurch THEN 1 ELSE 0 END) AS churchEntries
+    RETURN county, entries, households, ploughTeams,
+           round(value1066Pence / 2.4) / 100 AS value1066Pounds, round(value1086Pence / 2.4) / 100 AS value1086Pounds,
+           comparableEntries,
+           CASE WHEN comparable1066 > 0 THEN round(1000.0 * (comparable1086 - comparable1066) / comparable1066) / 10 END AS valueChangePercent,
+           wasteEntries, mills, churchEntries
+    ORDER BY value1086Pounds DESC
+
+- name: DomesdayCountyFigures
+  description: One county's totals in one row — or ALL ENGLAND's, with county empty — entries, households and every class of people, plough teams, ploughlands, geld units, value in 1066 and 1086, mills, meadow, woodland, livestock, churches, castles, waste. THE answer for "how many villagers / slaves / mills / goats were there in <county>" and "... in England". Totals are sums over the entries that state each figure. Essex, Norfolk and Suffolk (Little Domesday) are in neither, because they have no entries here.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code, e.g. `WOR`, `KEN`, `YKS` (DomesdayCounties lists them). Leave it out for all England."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE $county = '' OR e.county = $county
+    RETURN CASE WHEN $county = '' THEN 'All England (Great Domesday)' ELSE e.countyName END AS county, count(e) AS entries, sum(e.households) AS households,
+           sum(e.villagers) AS villagers, sum(e.smallholders) AS smallholders, sum(e.slaves) AS slaves,
+           sum(e.cottagers) AS cottagers, sum(e.freemen) AS freemen, sum(e.freeMen) AS freeMen,
+           sum(e.priests) AS priests, sum(e.burgesses) AS burgesses,
+           sum(e.ploughTeams) AS ploughTeams, sum(e.lordsTeams) AS lordsTeams, sum(e.mensTeams) AS mensTeams,
+           sum(e.ploughlands) AS ploughlands, sum(e.geldUnits) AS geldUnits,
+           sum(e.value1066) AS value1066Pence, round(sum(e.value1066) / 2.4) / 100 AS value1066Pounds,
+           sum(e.value1086) AS value1086Pence, round(sum(e.value1086) / 2.4) / 100 AS value1086Pounds,
+           sum(e.mills) AS mills, sum(e.meadowAcres) AS meadowAcres, sum(e.woodlandPigs) AS woodlandPigs,
+           sum(e.sheep) AS sheep, sum(e.cattle) AS cattle, sum(e.goats) AS goats,
+           sum(CASE WHEN e.hasChurch THEN 1 ELSE 0 END) AS churchEntries,
+           sum(CASE WHEN e.hasCastle THEN 1 ELSE 0 END) AS castleEntries,
+           sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS wasteEntries
+
+- name: DomesdayCountyRanking
+  description: Counties ranked by one measure, most first (or fewest, with order asc). THE answer for "which county had the most mills / slaves / villagers / waste / castles", "which county was poorest", "rank the counties by plough teams". Measures - households, villagers, smallholders, slaves, cottagers, freemen, priests, burgesses, mills, ploughTeams, ploughlands, geldUnits, value1066, value1086 (both in pence), meadowAcres, woodlandPigs, sheep, cattle, goats, churches, castles, markets, waste, entries. Great Domesday counties only.
+  params:
+    measure:
+      type: string
+      default: "mills"
+      description: "What to rank by, e.g. `mills`, `slaves`, `value1086`, `waste`, `castles`."
+    order:
+      type: string
+      default: "desc"
+      description: "`desc` (most first, the default) or `asc` (fewest first)."
+    limit:
+      type: int
+      default: 31
+      description: "How many counties."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WITH e.countyName AS county, count(e) AS entries, sum(e.households) AS households, sum(e.villagers) AS villagers,
+         sum(e.smallholders) AS smallholders, sum(e.slaves) AS slaves, sum(e.cottagers) AS cottagers,
+         sum(e.freemen) AS freemen, sum(e.priests) AS priests, sum(e.burgesses) AS burgesses, sum(e.mills) AS mills,
+         sum(e.ploughTeams) AS ploughTeams, sum(e.ploughlands) AS ploughlands, sum(e.geldUnits) AS geldUnits,
+         sum(e.value1066) AS value1066, sum(e.value1086) AS value1086, sum(e.meadowAcres) AS meadowAcres,
+         sum(e.woodlandPigs) AS woodlandPigs, sum(e.sheep) AS sheep, sum(e.cattle) AS cattle, sum(e.goats) AS goats,
+         sum(CASE WHEN e.hasChurch THEN 1 ELSE 0 END) AS churches, sum(CASE WHEN e.hasCastle THEN 1 ELSE 0 END) AS castles,
+         sum(CASE WHEN e.hasMarket THEN 1 ELSE 0 END) AS markets, sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS waste
+    WITH county, CASE $measure
+           WHEN 'households' THEN households WHEN 'villagers' THEN villagers WHEN 'smallholders' THEN smallholders
+           WHEN 'slaves' THEN slaves WHEN 'cottagers' THEN cottagers WHEN 'freemen' THEN freemen
+           WHEN 'priests' THEN priests WHEN 'burgesses' THEN burgesses WHEN 'mills' THEN mills
+           WHEN 'ploughTeams' THEN ploughTeams WHEN 'ploughlands' THEN ploughlands WHEN 'geldUnits' THEN geldUnits
+           WHEN 'value1066' THEN value1066 WHEN 'value1086' THEN value1086 WHEN 'meadowAcres' THEN meadowAcres
+           WHEN 'woodlandPigs' THEN woodlandPigs WHEN 'sheep' THEN sheep WHEN 'cattle' THEN cattle WHEN 'goats' THEN goats
+           WHEN 'churches' THEN churches WHEN 'castles' THEN castles WHEN 'markets' THEN markets
+           WHEN 'waste' THEN waste ELSE entries END AS value
+    RETURN county, $measure AS measure, value
+    ORDER BY CASE WHEN $order = 'asc' THEN value ELSE -value END
+    LIMIT $limit
+
+- name: DomesdayPopulation
+  description: How many PEOPLE - England's or one county's population in 1086, answered honestly. Domesday counts heads of household, not people, so this gives the households recorded and the conventional estimate of people (four to five to a household), with a note saying what is and is not counted. THE answer for "how many people lived in England / in <county>", "what was the population", "how many inhabitants".
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code, e.g. `KEN`. Leave it out for all England."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE $county = '' OR e.county = $county
+    WITH CASE WHEN $county = '' THEN 'England (Great Domesday)' ELSE e.countyName END AS area, sum(e.households) AS h
+    RETURN area, round(h) AS households, round(h * 4) AS estimatedPeopleLow, round(h * 5) AS estimatedPeopleHigh,
+           'Domesday counts heads of household, not people; the estimate multiplies by four to five, a historians convention, not a record. Great Domesday only: Essex, Norfolk and Suffolk are not included, and London and Winchester were never surveyed.' AS note
+
+- name: DomesdayHundredSummary
+  description: Per hundred in one county — places, entries, households and value in 1066 and 1086.
+  params:
+    county:
+      type: string
+      default: "WOR"
+      description: "County code, e.g. `WOR`, `YKS`, `KEN` (DomesdayCounties lists them)."
+  cypher: |
+    MATCH (h:DomesdayHundred {county: $county})<-[:IN]-(p:DomesdayPlace)<-[:DESCRIBES]-(e:DomesdayEntry)
+    WITH h.name AS hundred, count(DISTINCT p) AS places, count(DISTINCT e) AS entries,
+         collect(DISTINCT e) AS es
+    UNWIND es AS e
+    RETURN hundred, places, entries, sum(e.households) AS households,
+           round(sum(e.value1066) / 2.4) / 100 AS value1066Pounds, round(sum(e.value1086) / 2.4) / 100 AS value1086Pounds
+    ORDER BY value1086Pounds DESC
+
+- name: DomesdayRichestManors
+  description: The most valuable entries of 1086, with the place, county, tenant-in-chief and households. THE answer for "the richest manors", "the most valuable estates in Domesday".
+  params:
+    county:
+      type: string
+      default: ""
+      description: "Limit to one county code, e.g. `WOR`. Empty for all England."
+    limit:
+      type: int
+      default: 25
+      description: "How many to return."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.value1086 IS NOT NULL AND ($county = '' OR e.county = $county)
+    OPTIONAL MATCH (e)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+    RETURN e.entryId AS entryId, e.ref AS ref, e.places AS places, e.countyName AS county,
+           collect(DISTINCT t.name) AS tenantsInChief, e.households AS households,
+           e.value1086 AS value1086Pence, round(e.value1086 / 2.4) / 100 AS value1086Pounds
+    ORDER BY value1086Pence DESC
+    LIMIT $limit
+
+- name: DomesdayValueChange
+  description: Entries whose annual value changed most between 1066 and 1086, falls first — the manors the Conquest hit hardest, or (direction `rise`) those that gained most. THE answer for "which manors lost most value", "where did value fall after 1066".
+  params:
+    direction:
+      type: string
+      default: "fall"
+      description: "`fall` (default) or `rise`."
+    county:
+      type: string
+      default: ""
+      description: "Limit to one county code. Empty for all England."
+    limit:
+      type: int
+      default: 25
+      description: "How many to return."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.value1066 IS NOT NULL AND e.value1086 IS NOT NULL AND ($county = '' OR e.county = $county)
+    WITH e, e.value1086 - e.value1066 AS changePence
+    WHERE ($direction = 'rise' AND changePence > 0) OR ($direction <> 'rise' AND changePence < 0)
+    RETURN e.entryId AS entryId, e.ref AS ref, e.places AS places, e.countyName AS county,
+           round(e.value1066 / 2.4) / 100 AS value1066Pounds, round(e.value1086 / 2.4) / 100 AS value1086Pounds,
+           round(changePence / 2.4) / 100 AS changePounds, e.isWaste AS waste
+    ORDER BY CASE WHEN $direction = 'rise' THEN -changePence ELSE changePence END
+    LIMIT $limit
+
+- name: DomesdayWaste
+  description: Entries that call land waste, by county — the mark of devastation, above all the Harrying of the North (1069–70) in Yorkshire. With a county, lists its waste entries; without, counts them per county.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code to list its waste entries, e.g. `YKS`. Empty to count per county."
+    limit:
+      type: int
+      default: 100
+      description: "Most rows."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.isWaste AND ($county = '' OR e.county = $county)
+    WITH CASE WHEN $county = '' THEN e.countyName ELSE e.ref END AS key,
+         CASE WHEN $county = '' THEN null ELSE e.places END AS places,
+         count(e) AS wasteEntries, sum(e.value1066) AS value1066Pence
+    RETURN key AS countyOrEntry, places, wasteEntries, round(value1066Pence / 2.4) / 100 AS value1066Pounds
+    ORDER BY wasteEntries DESC, countyOrEntry
+    LIMIT $limit
+
+- name: DomesdayFeature
+  description: Entries mentioning a castle, a market or a church — with place, county and tenant-in-chief. THE answer for "where were the castles in 1086", "which places had markets".
+  params:
+    feature:
+      type: string
+      default: "castle"
+      description: "`castle`, `market` or `church`."
+    county:
+      type: string
+      default: ""
+      description: "Limit to one county code. Empty for all England."
+    limit:
+      type: int
+      default: 200
+      description: "Most rows."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE ($county = '' OR e.county = $county)
+      AND (($feature = 'castle' AND e.hasCastle) OR ($feature = 'market' AND e.hasMarket)
+           OR ($feature = 'church' AND e.hasChurch))
+    OPTIONAL MATCH (e)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+    RETURN e.entryId AS entryId, e.ref AS ref, e.places AS places, e.countyName AS county,
+           collect(DISTINCT t.name) AS tenantsInChief
+    ORDER BY county, ref
+    LIMIT $limit
+
+# ── The map ───────────────────────────────────────────────────────────────────────────────────────
+
+- name: DomesdayMapPlaces
+  description: Located places with their summed households and value in 1086, for drawing a map — all England or one county.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code, or empty for every located place."
+  cypher: |
+    MATCH (p:DomesdayPlace)
+    WHERE p.lat IS NOT NULL AND ($county = '' OR p.county = $county)
+    OPTIONAL MATCH (p)<-[:DESCRIBES]-(e:DomesdayEntry)
+    RETURN p.placeId AS placeId, p.name AS place, p.county AS county, p.lat AS lat, p.lng AS lng,
+           sum(e.households) AS households, sum(e.value1086) AS value1086Pence,
+           max(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS waste
+    LIMIT 20000
+
+- name: DomesdayPlacesNear
+  description: Places within a distance of a point, nearest first — "what was here in 1086". Distance is approximate (flat-earth over a few kilometres).
+  params:
+    lat:
+      type: number
+      default: 52.305
+      description: "Latitude, WGS84."
+    lng:
+      type: number
+      default: -2.361
+      description: "Longitude, WGS84."
+    km:
+      type: number
+      default: 10
+      description: "Radius in kilometres."
+  cypher: |
+    MATCH (p:DomesdayPlace)
+    WHERE p.lat > $lat - $km / 111.0 AND p.lat < $lat + $km / 111.0
+      AND p.lng > $lng - $km / 68.0 AND p.lng < $lng + $km / 68.0
+    WITH p, sqrt((p.lat - $lat) ^ 2 * 12321.0 + ((p.lng - $lng) * 111.0 * cos(radians($lat))) ^ 2) AS distanceKm
+    WHERE distanceKm <= $km
+    RETURN p.placeId AS placeId, p.name AS place, p.countyName AS county, p.gridRef AS gridRef,
+           round(distanceKm * 10) / 10 AS distanceKm, p.entryCount AS entries
+    ORDER BY distanceKm
+    LIMIT 100

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domesday</title>
+<meta name="description" content="Search and explore Domesday Book (1086): every place on a map of England, every entry's people, ploughs and values, who held the land before and after the Conquest, county and hundred totals, waste and wealth — and ask it questions in plain English.">
+<link rel="icon" href="domesday.svg">
+<link rel="stylesheet" href="/api/v1/apps-runtime/v1/theme.css">
+<script src="/api/v1/apps-runtime/v1/embabel.js"></script>
+<script src="/api/v1/apps-runtime/gateway.js"></script>
+<script type="application/embabel-app+json">
+{"version":1,"name":"domesday","requires":{"lenses":[],"views":["DomesdayCounties","DomesdayMapPlaces","DomesdayPlaceSearch","DomesdayPersonSearch","DomesdayPlaceEntries","DomesdayEntryDetail","DomesdayPersonSummary","DomesdayPersonHoldings","DomesdayCountySummary","DomesdayCountyFigures","DomesdayHundredSummary","DomesdayRichestManors","DomesdayWaste","DomesdayValueChange","DomesdayFeature","DomesdayGreatestLandholders","DomesdayGreatestLords1066","DomesdayConquestTransfers","DomesdayWomenLandholders","DomesdayPlacesNear"],"realms":["realm-domesday"],"namespaces":["kg"]}}
+</script>
+<style>
+  /*
+   * Vellum and iron-gall ink, with Domesday's own rubric red for emphasis. Chart colours are the
+   * validated set (dataviz validator, 2026-10-18): rubric #b03a2e / verdigris #00879c as the
+   * fall/rise pair, an ink ramp for value; dark mode has its own validated steps, not a flip.
+   */
+  :root {
+    --vellum: #f5eedc; --vellum-2: #ece2c8; --leaf: #fbf7ec; --rule: #d9ccae;
+    --ink: #2b2116; --ink-2: #5a4b37; --muted: #7d6d55;
+    --rubric: #b03a2e; --verdigris: #00879c;
+    --ramp-1: #c4a46a; --ramp-2: #9c6b30; --ramp-3: #74471a; --ramp-4: #4a2a0c;
+    --none: #cdbf9f; --shadow: 0 1px 0 rgba(60,40,10,.06), 0 8px 24px rgba(60,40,10,.08);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --vellum: #1a1611; --vellum-2: #221d16; --leaf: #241f18; --rule: #3a3226;
+      --ink: #eee4cf; --ink-2: #cdbfa3; --muted: #a8987c;
+      --rubric: #e0675a; --verdigris: #22a0b0;
+      --ramp-1: #7a5a32; --ramp-2: #a8783e; --ramp-3: #d19b55; --ramp-4: #f0c27e;
+      --none: #4a4030; --shadow: 0 1px 0 rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--vellum); color: var(--ink); }
+  body { font-family: var(--serif); font-size: 16px; line-height: 1.45; padding-bottom: 44px; }
+  a { color: var(--rubric); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  button { font: inherit; cursor: pointer; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+
+  header.top { border-bottom: 1px solid var(--rule); background: var(--leaf); }
+  .masthead { display: flex; align-items: center; gap: 24px; padding: 18px 0 10px; flex-wrap: wrap; }
+  .wordmark { font-size: 34px; letter-spacing: .02em; line-height: 1; white-space: nowrap; }
+  .wordmark .initial { color: var(--rubric); font-size: 46px; font-weight: 600; vertical-align: -4px; }
+  .tagline { color: var(--muted); font-style: italic; font-size: 15px; }
+  .search { flex: 1; min-width: 260px; position: relative; }
+  .search input { width: 100%; padding: 10px 14px 10px 38px; border: 1px solid var(--rule); border-radius: 22px;
+    background: var(--vellum); color: var(--ink); font: 16px var(--serif); }
+  .search input:focus { outline: 2px solid var(--rubric); outline-offset: 1px; }
+  .search .glass { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  .results { position: absolute; z-index: 30; left: 0; right: 0; top: 46px; background: var(--leaf);
+    border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow); max-height: 60vh; overflow: auto; display: none; }
+  .results.open { display: block; }
+  .results h4 { margin: 0; padding: 8px 14px 4px; font: 600 11px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .results a { display: flex; justify-content: space-between; gap: 12px; padding: 7px 14px; color: var(--ink); }
+  .results a:hover, .results a.active { background: var(--vellum-2); text-decoration: none; }
+  .results small { color: var(--muted); font-family: var(--sans); }
+  nav.tabs { display: flex; gap: 4px; overflow-x: auto; }
+  nav.tabs a { padding: 10px 16px; color: var(--ink-2); border-bottom: 2px solid transparent; white-space: nowrap; font-family: var(--sans); font-size: 14px; }
+  nav.tabs a.on { color: var(--ink); border-bottom-color: var(--rubric); }
+  nav.tabs a:hover { text-decoration: none; color: var(--ink); }
+
+  main { padding: 22px 0 30px; }
+  .pane { display: none; }
+  .pane.on { display: block; }
+  h2 { font-weight: 500; font-size: 26px; margin: 0 0 4px; }
+  h3 { font-weight: 600; font-size: 18px; margin: 0 0 10px; }
+  .lede { color: var(--ink-2); margin: 0 0 18px; max-width: 70ch; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+  .card { background: var(--leaf); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .note { color: var(--muted); font-size: 13px; font-family: var(--sans); }
+  .num { font-variant-numeric: tabular-nums; font-family: var(--sans); }
+
+  /* the map */
+  .mapcard { position: relative; padding: 0; overflow: hidden; }
+  .mapbar { display: flex; gap: 12px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; font-family: var(--sans); font-size: 13px; }
+  .mapbar select { font: 13px var(--sans); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--rule); background: var(--vellum); color: var(--ink); }
+  #map { display: block; width: 100%; height: min(76vh, 760px); cursor: crosshair; }
+  .mapgrid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+  @media (max-width: 960px) { .mapgrid { grid-template-columns: 1fr; } }
+  .glance .big { font: 600 30px var(--sans); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .glance .k { font: 12px var(--sans); color: var(--muted); margin-bottom: 12px; }
+  .glance ol { padding-left: 18px; margin: 6px 0 0; font-size: 15px; }
+  .glance li { margin: 3px 0; }
+  .legend { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; color: var(--ink-2); }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
+  .legend i.ring { background: transparent; border: 2px solid var(--rubric); }
+  .tip { position: absolute; pointer-events: none; background: var(--leaf); border: 1px solid var(--rule); border-radius: 8px;
+    padding: 8px 10px; box-shadow: var(--shadow); font: 13px var(--sans); display: none; max-width: 260px; z-index: 5; }
+  .tip b { font-family: var(--serif); font-size: 15px; font-weight: 600; }
+
+  /* tables and bars */
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; font: 600 11px var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  tr.click { cursor: pointer; }
+  tr.click:hover td { background: var(--vellum-2); }
+  td.r, th.r { text-align: right; }
+  .bar { position: relative; height: 8px; background: var(--vellum-2); border-radius: 4px; min-width: 60px; }
+  .bar span { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ramp-3); border-radius: 0 4px 4px 0; }
+  .div { position: relative; height: 8px; min-width: 90px; }
+  .div::before { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+  .div span { position: absolute; top: 0; bottom: 0; }
+  .div span.fall { background: var(--rubric); right: 50%; border-radius: 4px 0 0 4px; }
+  .div span.rise { background: var(--verdigris); left: 50%; border-radius: 0 4px 4px 0; }
+  ol.rank { list-style: none; padding: 0; margin: 0; }
+  ol.rank li { display: grid; grid-template-columns: 26px 1fr auto; gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+  ol.rank li .n { color: var(--muted); font: 12px var(--sans); }
+  ol.rank li .bar { grid-column: 2 / 4; margin-top: 2px; }
+  .arrow { color: var(--muted); padding: 0 6px; }
+
+  /* the drawer: a place, an entry, a person, a county */
+  .drawer { position: fixed; top: 0; right: 0; bottom: 34px; width: min(560px, 100vw); background: var(--leaf); border-left: 1px solid var(--rule);
+    box-shadow: -10px 0 30px rgba(40,25,5,.15); transform: translateX(105%); transition: transform .22s ease; z-index: 40; overflow-y: auto; }
+  .drawer.open { transform: none; }
+  .drawer .head { position: sticky; top: 0; background: var(--leaf); padding: 18px 22px 12px; border-bottom: 1px solid var(--rule); z-index: 2; }
+  .drawer .body { padding: 16px 22px 30px; }
+  .drawer .close { position: absolute; right: 14px; top: 14px; border: 0; background: none; font-size: 26px; color: var(--muted); line-height: 1; }
+  .drawer h2 { padding-right: 30px; }
+  .meta { color: var(--ink-2); font-family: var(--sans); font-size: 13px; }
+  .entry { border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; background: var(--vellum); }
+  .entry .ref { font-weight: 600; }
+  .holders { margin: 8px 0 10px; font-size: 15px; }
+  .holders .when { font: 600 11px var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
+  .figs { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px 14px; margin-top: 8px; }
+  .fig .k { font: 11px var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .fig .v { font: 600 16px var(--sans); font-variant-numeric: tabular-nums; }
+  .fig .v small { font-weight: 400; color: var(--ink-2); }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+  .tag { font: 12px var(--sans); border: 1px solid var(--rule); border-radius: 12px; padding: 2px 9px; color: var(--ink-2); }
+  .tag.waste { border-color: var(--rubric); color: var(--rubric); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 6px 0 18px; }
+  .tile { border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; background: var(--vellum); }
+  .tile .v { font: 600 22px var(--sans); font-variant-numeric: tabular-nums; }
+  .tile .k { font: 12px var(--sans); color: var(--muted); }
+  .linkish { background: none; border: 0; color: var(--rubric); padding: 0; }
+  .btn { border: 1px solid var(--rule); background: var(--vellum); color: var(--ink); border-radius: 18px; padding: 6px 14px; font: 14px var(--sans); }
+  .btn:hover { border-color: var(--rubric); }
+  .btn.primary { background: var(--rubric); border-color: var(--rubric); color: #fff; }
+
+  /* ask */
+  .askbox { display: flex; gap: 10px; }
+  .askbox input { flex: 1; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 10px; font: 17px var(--serif); background: var(--leaf); color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 18px; }
+  .chips button { border: 1px solid var(--rule); background: var(--leaf); color: var(--ink-2); border-radius: 16px; padding: 5px 12px; font: 13px var(--sans); }
+  .chips button:hover { border-color: var(--rubric); color: var(--ink); }
+  pre.cypher { background: var(--vellum-2); border-radius: 8px; padding: 12px; overflow-x: auto; font: 12.5px ui-monospace, Menlo, monospace; white-space: pre-wrap; }
+  .state { margin: 10px 0; }
+  .empty, .err { padding: 14px 16px; border-radius: 10px; font-family: var(--sans); font-size: 14px; }
+  .empty { background: var(--vellum-2); color: var(--ink-2); }
+  .err { border: 1px solid var(--rubric); color: var(--rubric); }
+  .loading { color: var(--muted); font: italic 15px var(--serif); padding: 10px 0; }
+
+  footer.foot { text-align: center; padding: 18px 0 8px; font: 13px var(--sans); color: var(--muted); }
+  #how-it-works { display: none; }
+  #how-it-works.on { display: block; }
+  #how-it-works h3 { margin-top: 22px; }
+  #how-it-works code { font: 12.5px ui-monospace, Menlo, monospace; background: var(--vellum-2); padding: 1px 5px; border-radius: 4px; }
+  #how-it-works li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="masthead">
+      <div>
+        <div class="wordmark"><span class="initial">D</span>omesday</div>
+        <div class="tagline">The survey of England, 1086 — entry by entry</div>
+      </div>
+      <div class="search">
+        <span class="glass" aria-hidden="true">⌕</span>
+        <input id="q" type="search" placeholder="Find a place or a person — Abberley, Odo, Countess Judith…" autocomplete="off" aria-label="Search Domesday places and people">
+        <div class="results" id="results" role="listbox"></div>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#/tab/map" data-tab="map">Map</a>
+      <a href="#/tab/counties" data-tab="counties">Counties</a>
+      <a href="#/tab/conquest" data-tab="conquest">The Conquest</a>
+      <a href="#/tab/wealth" data-tab="wealth">Wealth &amp; waste</a>
+      <a href="#/tab/ask" data-tab="ask">Ask</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="pane" id="pane-map">
+    <div class="mapgrid">
+    <div class="card mapcard">
+      <div class="mapbar">
+        <label>County <select id="county-filter"><option value="">All England</option></select></label>
+        <label>Shade by <select id="shade">
+          <option value="value">value in 1086</option>
+          <option value="households">households</option>
+        </select></label>
+        <span class="legend" id="legend"></span>
+        <span class="note" id="map-count"></span>
+      </div>
+      <canvas id="map" aria-label="Map of the places Domesday names"></canvas>
+      <div class="tip" id="tip"></div>
+      <embabel-operation-state id="map-state"></embabel-operation-state>
+    </div>
+    <aside class="card glance"><h3>England in 1086</h3><div id="glance"><div class="loading">Adding up the counties…</div></div></aside>
+    </div>
+    <p class="note">Each dot is a place Domesday names, at the centre of its 1 km grid square. Click a dot to open the place; click anywhere else to see what lay within 8 km. Essex, Norfolk and Suffolk (Little Domesday) are drawn hollow: their places are known, their entries are not in this edition.</p>
+  </section>
+
+  <section class="pane" id="pane-counties">
+    <h2>The counties</h2>
+    <p class="lede">Value is the annual value to the lords, summed over every entry that states it. The change since 1066 compares only entries that give both figures — many, most of all in the south-west, give 1086 alone.</p>
+    <div class="card"><div id="counties"></div></div>
+  </section>
+
+  <section class="pane" id="pane-conquest">
+    <h2>The Conquest, in land</h2>
+    <p class="lede">Who held England before 1066, who held it of the king in 1086, and whose lands passed to whom. Ranked by the annual value Domesday records.</p>
+    <div class="grid2">
+      <div class="card"><h3>Before — the greatest lords of 1066</h3><div id="lords1066"></div></div>
+      <div class="card"><h3>After — the greatest tenants-in-chief of 1086</h3><div id="tic1086"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>Who replaced whom</h3><p class="note">The 1066 lord and the 1086 tenant-in-chief of the same entries.</p><div id="transfers"></div></div>
+      <div class="card"><h3>Women who held land</h3><div id="women"></div></div>
+    </div>
+  </section>
+
+  <section class="pane" id="pane-wealth">
+    <h2>Wealth and waste</h2>
+    <p class="lede">Waste is land Domesday calls waste — devastated or uncultivated. Its heartland is the north, harried by William in 1069–70.</p>
+    <div class="grid2">
+      <div class="card"><h3>Waste, by county</h3><div id="waste"></div></div>
+      <div class="card"><h3>The richest manors of 1086</h3><div id="richest"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>Greatest falls in value, 1066 → 1086</h3><div id="falls"></div></div>
+      <div class="card"><h3>Greatest rises</h3><div id="rises"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>Castles</h3><div id="castles"></div></div>
+      <div class="card"><h3>Markets</h3><div id="markets"></div></div>
+    </div>
+  </section>
+
+  <section class="pane" id="pane-ask">
+    <h2>Ask Domesday</h2>
+    <p class="lede">Ask in your own words. The appliance writes a query over the Domesday graph and runs it; the query is shown with every answer so you can see what was counted.</p>
+    <form class="askbox" id="ask-form">
+      <input id="ask" placeholder="How many mills were there in Kent?" autocomplete="off" aria-label="Question">
+      <button class="btn primary" type="submit">Ask</button>
+    </form>
+    <div class="chips" id="chips"></div>
+    <div id="answer"></div>
+  </section>
+
+  <section id="how-it-works" class="card">
+    <h2>How it works</h2>
+    <h3>The data</h3>
+    <p>Everything here is the <b>realm-domesday</b> realm, stored in this world's graph: the Hull Domesday Project's database (Professor J.J.N. Palmer and team, University of Hull; CC BY-NC-SA), converted from the Domesday Explorer's 2002 tables. It does not change, so there is no refresh to wait for.</p>
+    <ul>
+      <li><code>DomesdayPlace</code> — 14,776 places, 13,486 of them located from their OS grid reference.</li>
+      <li><code>DomesdayEntry</code> — the 18,174 entries of Great Domesday, each with the figures it states.</li>
+      <li><code>DomesdayPerson</code> — 14,042 names, one record per name per county, as Hull indexes them.</li>
+      <li><code>DomesdayHundred</code>, <code>DomesdayCounty</code> — the hundreds and the 34 counties.</li>
+    </ul>
+    <p>Who held what is an edge from the entry, by role: <code>LORD_1066</code>, <code>TENANT_IN_CHIEF</code> (held of the king in 1086), <code>TENANT_1086</code> (held of a tenant-in-chief), and a dozen rarer roles — Hull's own coding.</p>
+    <p>The figures were parsed from Hull's coding of the Phillimore text. Measured against Open Domesday's figures on 450 manors, they agree to 99% for villagers and smallholders, 98% for mills, meadow and slaves, 94% and 91% for value in 1066 and 1086, 88% for the men's plough teams, 84% for tax and 81% for the lord's plough teams. Every entry shows its Phillimore reference and links to its page in Open Domesday, so any figure can be checked.</p>
+    <h3>The questions</h3>
+    <p>The page asks the world by view name; each view is named Cypher saved in the realm.</p>
+    <ul>
+      <li>On load, together: <code>DomesdayCounties</code> (the county list), <code>DomesdayMapPlaces {county}</code> (every located place with its households, value and waste) and <code>DomesdayCountySummary</code> (the "England in 1086" totals beside the map, summed from the same rows the Counties tab shows).</li>
+      <li>Search: <code>DomesdayPlaceSearch {name, limit}</code> and <code>DomesdayPersonSearch {name, limit}</code>, together, as you type.</li>
+      <li>A place: <code>DomesdayPlaceEntries {placeId}</code>; an entry in full: <code>DomesdayEntryDetail {entryId}</code>; nearby: <code>DomesdayPlacesNear {lat, lng, km}</code>.</li>
+      <li>A person: <code>DomesdayPersonSummary {name}</code> and <code>DomesdayPersonHoldings {name}</code>.</li>
+      <li>A county: <code>DomesdayCountyFigures {county}</code>, <code>DomesdayHundredSummary {county}</code>, <code>DomesdayRichestManors {county, limit}</code>, <code>DomesdayWaste {county, limit}</code>; the table: <code>DomesdayCountySummary</code>.</li>
+      <li>The Conquest: <code>DomesdayGreatestLords1066</code>, <code>DomesdayGreatestLandholders</code>, <code>DomesdayConquestTransfers</code>, <code>DomesdayWomenLandholders</code>.</li>
+      <li>Wealth and waste: <code>DomesdayWaste</code>, <code>DomesdayRichestManors</code>, <code>DomesdayValueChange {direction}</code>, <code>DomesdayFeature {feature}</code>.</li>
+      <li>Ask: <code>gateway.kg.ask({question, explain: true})</code>, with the question prefixed "In Domesday Book (1086): " — this world also holds modern places and census figures, and the box means 1086. The appliance's model writes Cypher over the Domesday schema, runs it, and returns the rows with the query, which this page shows.</li>
+    </ul>
+    <p>Money is stored in pence (£1 = 20s = 240d) and shown in pounds, shillings and pence. Households are heads of household, not people.</p>
+    <h3>When it looks wrong</h3>
+    <ul>
+      <li>A place with no figures is usually a dependency named inside another manor's entry: open its "named in" entry.</li>
+      <li>Essex, Norfolk and Suffolk show places but no entries — Little Domesday is not in this edition. That is a gap in the source, not "nothing there".</li>
+      <li>A figure missing from an entry means the entry does not state it; it is not zero.</li>
+      <li>One person across England is several records (one per county); the person page gathers them by name, and says how many it gathered.</li>
+      <li>An answer to a typed question is a query a model wrote. Read the query under it; if it counts the wrong thing, use the views on the other tabs, which are fixed.</li>
+    </ul>
+    <h3>What made this possible</h3>
+    <ul>
+      <li>The page has no backend of its own: it calls the world's saved views by name at load, and the appliance runs them over the graph.</li>
+      <li>"Who replaced whom" is one traversal — entry to its 1066 lord, entry to its 1086 tenant-in-chief — not a join written for this page.</li>
+      <li>The figures came out of a 2002 database whose text store was undocumented; the realm ships the converter and a test that reconciles its figures against Open Domesday.</li>
+    </ul>
+  </section>
+
+  <footer class="foot"><a href="#how-it-works" id="how-link">How it works</a> · Data: Hull Domesday Project (CC BY-NC-SA) · Folio images: <a href="https://opendomesday.org" target="_blank" rel="noopener noreferrer">Open Domesday</a></footer>
+</main>
+
+<aside class="drawer" id="drawer" aria-live="polite">
+  <div class="head"><button class="close" id="drawer-close" aria-label="Close">×</button><div id="drawer-head"></div></div>
+  <div class="body" id="drawer-body"></div>
+</aside>
+
+<script>
+(function () {
+  'use strict';
+  var escapeHtml = embabel.html.escape;
+  var $ = function (id) { return document.getElementById(id); };
+  var counties = {};          // code -> {county, inGreatDomesday}
+  var mapRows = [];           // DomesdayMapPlaces rows
+  var loaded = {};            // which tabs have fetched
+
+  /* ── formatting ─────────────────────────────────────────────────────────────── */
+  function lsd(pence) {
+    if (pence == null || isNaN(pence)) return '—';
+    var p = Math.round(Number(pence) * 2) / 2;
+    var l = Math.floor(p / 240), s = Math.floor((p - l * 240) / 12), d = p - l * 240 - s * 12;
+    var out = [];
+    if (l) out.push('£' + l.toLocaleString('en-GB'));
+    if (s) out.push(s + 's');
+    if (d) out.push((d % 1 ? (Math.floor(d) || '') + '½' : d) + 'd');
+    return out.length ? out.join(' ') : '£0';
+  }
+  function pounds(x) { return x == null ? '—' : '£' + Math.round(Number(x)).toLocaleString('en-GB'); }
+  function n(x) {
+    if (x == null) return '—';
+    var v = Number(x);
+    return (v % 1 ? v.toLocaleString('en-GB', { maximumFractionDigits: 2 }) : v.toLocaleString('en-GB'));
+  }
+  function plural(word, count) {
+    if (Number(count) === 1) return word;
+    return word === 'freeman' ? 'freemen' : word === 'free man' ? 'free men' : word === 'burgess' ? 'burgesses' : word + 's';
+  }
+  function slug(name) { return String(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+  function personLink(name) { return '<a href="#/person/' + encodeURIComponent(name) + '">' + escapeHtml(name) + '</a>'; }
+  function placeLink(id, name) { return '<a href="#/place/' + encodeURIComponent(id) + '">' + escapeHtml(name) + '</a>'; }
+  function entryLink(id, label) { return '<a href="#/entry/' + encodeURIComponent(id) + '">' + escapeHtml(label) + '</a>'; }
+  function countyLink(code, name) { return '<a href="#/county/' + encodeURIComponent(code) + '">' + escapeHtml(name) + '</a>'; }
+  function codeOf(countyName) {
+    for (var c in counties) if (counties[c].county === countyName) return c;
+    return null;
+  }
+  function folioUrl(folio, entryId) {
+    var m = /^([A-Z]{2,3}) (\d+)$/.exec(folio || '');
+    if (!m || !counties[m[1]]) return null;
+    return 'https://opendomesday.org/book/' + slug(counties[m[1]].county) + '/' + String(m[2]).padStart(2, '0') + '/?highlight=' + encodeURIComponent(entryId);
+  }
+  var ROLE = {
+    LORD_1066: 'Lord in 1066', OVERLORD_1066: 'Overlord in 1066', MAN_OF_OVERLORD_1066: "Held as another's man, 1066",
+    UNDERLORD_1066: 'Underlord in 1066', MAN_OF_UNDERLORD_1066: "Underlord's man, 1066", HELD_PART_1066: 'Held part, 1066',
+    URBAN_HOLDER_1066: 'Urban holder, 1066', JURISDICTION_1066: 'Held jurisdiction, 1066', PRIOR_LORD: 'Lord before the 1066 holder',
+    PRIOR_OVERLORD: 'Overlord before the 1066 holder', TENANT_IN_CHIEF: 'Tenant-in-chief, 1086', TENANT_1086: 'Tenant in 1086',
+    SUBTENANT_1086: 'Subtenant in 1086', HELD_PART_1086: 'Held part, 1086', URBAN_HOLDER_1086: 'Urban holder, 1086',
+    JURISDICTION_1086: 'Held jurisdiction, 1086', HOLDER_1070: 'Holder about 1070', CLAIMANT: 'Claimant', DEFENDANT: 'Defendant',
+    OFFICIAL: 'Royal official', INSTITUTION: 'Institution', NAMES: 'Named'
+  };
+
+  /* ── calling the world ──────────────────────────────────────────────────────── */
+  async function view(name, args, el) {
+    var env = await embabel.views.invoke(name, args || {});
+    if (!env || env.status !== 'SUCCEEDED') {
+      var msg = (env && env.error && (env.error.message || env.error)) || ('The view ' + name + ' did not succeed.');
+      throw new Error(msg);
+    }
+    return env.data || [];
+  }
+  function loading(el, text) { el.innerHTML = '<div class="loading">' + escapeHtml(text || 'Reading the survey…') + '</div>'; }
+  function failed(el, e) { el.innerHTML = '<div class="err">The world did not answer: ' + escapeHtml(e && e.message || String(e)) + '. Nothing is shown because nothing came back — not because there is nothing.</div>'; }
+  function none(el, text) { el.innerHTML = '<div class="empty">' + escapeHtml(text) + '</div>'; }
+  async function fill(el, name, args, render, emptyText) {
+    loading(el);
+    try {
+      var rows = await view(name, args);
+      if (!rows.length) none(el, emptyText || 'Domesday records nothing that matches.');
+      else el.innerHTML = render(rows);
+    } catch (e) { failed(el, e); }
+  }
+
+  /* ── tabs and routing ───────────────────────────────────────────────────────── */
+  function showTab(tab) {
+    document.querySelectorAll('nav.tabs a').forEach(function (a) { a.classList.toggle('on', a.dataset.tab === tab); });
+    document.querySelectorAll('.pane').forEach(function (p) { p.classList.toggle('on', p.id === 'pane-' + tab); });
+    if (!loaded[tab]) { loaded[tab] = true; (LOADERS[tab] || function () {})(); }
+    if (tab === 'map') drawMap();
+  }
+  var currentTab = 'map';
+  function route() {
+    var h = location.hash || '';
+    var m;
+    $('how-it-works').classList.toggle('on', h === '#how-it-works');
+    if (h === '#how-it-works') { $('how-it-works').scrollIntoView({ behavior: 'smooth' }); return; }
+    if ((m = /^#\/tab\/(map|counties|conquest|wealth|ask)$/.exec(h))) { currentTab = m[1]; showTab(currentTab); closeDrawer(); return; }
+    if ((m = /^#\/place\/(\d{1,7})$/.exec(h))) return openPlace(m[1]);
+    if ((m = /^#\/entry\/(\d{1,7})$/.exec(h))) return openEntry(m[1]);
+    if ((m = /^#\/county\/([A-Z]{3})$/.exec(h))) return openCounty(m[1]);
+    if ((m = /^#\/person\/([^\/]{1,200})$/.exec(h))) return openPerson(decodeURIComponent(m[1]));
+    if ((m = /^#\/ask\/(.{1,300})$/.exec(h))) { currentTab = 'ask'; showTab('ask'); closeDrawer(); return askQuestion(decodeURIComponent(m[1])); }
+    showTab(currentTab);
+    closeDrawer();
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ── drawer ─────────────────────────────────────────────────────────────────── */
+  var drawerSeq = 0;
+  function openDrawer(head) {
+    $('drawer-head').innerHTML = head;
+    loading($('drawer-body'));
+    $('drawer').classList.add('open');
+    return ++drawerSeq;
+  }
+  function closeDrawer() { $('drawer').classList.remove('open'); drawerSeq++; }
+  $('drawer-close').addEventListener('click', function () { history.pushState(null, '', '#/tab/' + currentTab); closeDrawer(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && $('drawer').classList.contains('open')) { history.pushState(null, '', '#/tab/' + currentTab); closeDrawer(); } });
+
+  function figures(e) {
+    var f = [];
+    function add(k, v, sub) { if (v != null && v !== '') f.push('<div class="fig"><div class="k">' + escapeHtml(k) + '</div><div class="v">' + v + (sub ? ' <small>' + sub + '</small>' : '') + '</div></div>'); }
+    if (e.households != null) {
+      var classes = [['villager', e.villagers], ['smallholder', e.smallholders], ['slave', e.slaves], ['cottager', e.cottagers],
+        ['freeman', e.freemen], ['free man', e.freeMen], ['priest', e.priests], ['burgess', e.burgesses]].filter(function (p) { return p[1] != null; });
+      var parts = classes.map(function (p) { return n(p[1]) + ' ' + plural(p[0], p[1]); });
+      var rest = Number(e.households) - classes.reduce(function (a, p) { return a + Number(p[1]); }, 0);
+      if (rest > 0) parts.push(n(rest) + ' ' + plural('other', rest) + ' (Frenchmen, riders, smiths…)');
+      add('Households', n(e.households), escapeHtml(parts.join(', ')));
+    }
+    var teams = [];
+    if (e.lordsTeams != null) teams.push(n(e.lordsTeams) + " lord's");
+    if (e.mensTeams != null) teams.push(n(e.mensTeams) + " men's");
+    if (teams.length) add('Plough teams', n((e.lordsTeams || 0) + (e.mensTeams || 0)), escapeHtml(teams.join(' + ')));
+    if (e.ploughlands != null) add('Ploughlands', n(e.ploughlands));
+    if (e.geldUnits != null) add('Tax', n(e.geldUnits), 'geld units');
+    if (e.value1066Pence != null) add('Value 1066', escapeHtml(lsd(e.value1066Pence)));
+    if (e.valueLaterPence != null) add('When acquired', escapeHtml(lsd(e.valueLaterPence)));
+    if (e.value1086Pence != null) add('Value 1086', escapeHtml(lsd(e.value1086Pence)));
+    if (e.mills != null) add('Mills', n(e.mills));
+    if (e.meadowAcres != null) add('Meadow', n(e.meadowAcres), 'acres');
+    if (e.woodlandPigs != null) add('Woodland', n(e.woodlandPigs), 'pigs');
+    if (e.fisheries != null) add('Fisheries', n(e.fisheries));
+    if (e.saltHouses != null) add('Salt-houses', n(e.saltHouses));
+    if (e.sheep != null) add('Sheep', n(e.sheep));
+    if (e.cattle != null) add('Cattle', n(e.cattle));
+    return f.length ? '<div class="figs">' + f.join('') + '</div>' : '<div class="note">This entry states no figures — often a holding described inside another entry.</div>';
+  }
+  function tags(e) {
+    var t = [];
+    if (e.waste) t.push('<span class="tag waste">waste</span>');
+    if (e.church) t.push('<span class="tag">church</span>');
+    if (e.castle) t.push('<span class="tag">castle</span>');
+    if (e.market) t.push('<span class="tag">market</span>');
+    if (e.holding) t.push('<span class="tag">' + escapeHtml(e.holding) + '</span>');
+    return t.length ? '<div class="tags">' + t.join('') + '</div>' : '';
+  }
+  function names(list) {
+    var xs = (list || []).filter(Boolean);
+    return xs.length ? xs.map(personLink).join(', ') : '<span class="note">not named</span>';
+  }
+
+  async function openPlace(placeId) {
+    var seq = openDrawer('<h2>…</h2>');
+    var place = mapRows.find(function (r) { return String(r.placeId) === String(placeId); });
+    try {
+      var entries = await view('DomesdayPlaceEntries', { placeId: String(placeId) });
+      if (seq !== drawerSeq) return;
+      var meta = place || {};
+      var title = meta.place || (entries[0] && entries[0].ref) || 'Place';
+      var cname = meta.county && counties[meta.county] ? counties[meta.county].county : '';
+      $('drawer-head').innerHTML = '<h2>' + escapeHtml(title) + '</h2><div class="meta">' +
+        (cname ? countyLink(meta.county, cname) : '') + (meta.lat != null ? ' · ' + n(meta.lat) + ', ' + n(meta.lng) : '') + '</div>';
+      var body = '';
+      if (!entries.length) {
+        body = '<div class="empty">No entry is <i>about</i> this place. It is named inside another entry — as a dependency or an outlier — or it lies in Essex, Norfolk or Suffolk, whose entries this edition does not hold.</div>';
+      }
+      entries.forEach(function (e) {
+        var link = folioUrl(e.folio, e.entryId);
+        body += '<div class="entry"><div>' + entryLink(e.entryId, e.ref) + ' <span class="meta">' +
+          (link ? '· <a href="' + escapeHtml(link) + '" target="_blank" rel="noopener noreferrer">folio ' + escapeHtml(e.folio) + ' ↗</a>' : '') + '</span></div>' +
+          '<div class="holders"><span class="when">1066</span>' + names(e.lords1066) + '<span class="arrow">→</span><span class="when">1086</span>' + names(e.tenantsInChief) +
+          (e.tenants1086 && e.tenants1086.length ? ' <span class="note">held by</span> ' + names(e.tenants1086) : '') + '</div>' +
+          figures(e) + tags(e) + '</div>';
+      });
+      if (meta.lat != null) body += '<button class="btn" id="near-btn">What lay within 8 km</button><div id="near" style="margin-top:12px"></div>';
+      $('drawer-body').innerHTML = body;
+      var nb = $('near-btn');
+      if (nb) nb.addEventListener('click', function () { showNear(meta.lat, meta.lng, $('near')); });
+    } catch (e) { if (seq === drawerSeq) failed($('drawer-body'), e); }
+  }
+
+  async function showNear(lat, lng, el) {
+    await fill(el, 'DomesdayPlacesNear', { lat: Number(lat), lng: Number(lng), km: 8 }, function (rows) {
+      return '<table><tr><th>Place</th><th>County</th><th class="r">km</th><th class="r">Entries</th></tr>' + rows.map(function (r) {
+        return '<tr><td>' + placeLink(r.placeId, r.place) + '</td><td>' + escapeHtml(r.county || '') + '</td><td class="r num">' + n(r.distanceKm) + '</td><td class="r num">' + n(r.entries) + '</td></tr>';
+      }).join('') + '</table>';
+    }, 'No place Domesday names lies within 8 km of this point.');
+  }
+
+  async function openEntry(entryId) {
+    var seq = openDrawer('<h2>…</h2>');
+    try {
+      var rows = await view('DomesdayEntryDetail', { entryId: String(entryId) });
+      if (seq !== drawerSeq) return;
+      if (!rows.length) { $('drawer-head').innerHTML = '<h2>Entry ' + escapeHtml(entryId) + '</h2>'; return none($('drawer-body'), 'There is no entry with that number.'); }
+      var e = rows[0];
+      var link = folioUrl(e.folio, e.entryId);
+      $('drawer-head').innerHTML = '<h2>' + escapeHtml(e.ref) + '</h2><div class="meta">' + escapeHtml(e.kind || '') + (e.section ? ' · ' + escapeHtml(e.section) : '') +
+        (link ? ' · <a href="' + escapeHtml(link) + '" target="_blank" rel="noopener noreferrer">folio ' + escapeHtml(e.folio) + ' ↗</a>' : '') + '</div>';
+      var places = (e.places || []).filter(function (p) { return p && p.name; });
+      var about = places.filter(function (p) { return p.how === 'DESCRIBES'; }), within = places.filter(function (p) { return p.how === 'INCLUDES'; });
+      var byRole = {};
+      (e.people || []).filter(function (p) { return p && p.name; }).forEach(function (p) { (byRole[p.role] = byRole[p.role] || []).push(p.name); });
+      var body = '';
+      if (about.length) body += '<h3>About</h3><p>' + about.map(function (p) { return placeLink(p.placeId, p.name); }).join(', ') + '</p>';
+      if (within.length) body += '<h3>Holdings named within it</h3><p>' + within.map(function (p) { return placeLink(p.placeId, p.name); }).join(', ') + '</p>';
+      var order = Object.keys(ROLE);
+      var roles = Object.keys(byRole).sort(function (a, b) { return order.indexOf(a) - order.indexOf(b); });
+      if (roles.length) body += '<h3>People</h3><table>' + roles.map(function (r) { return '<tr><td class="note">' + escapeHtml(ROLE[r] || r) + '</td><td>' + byRole[r].map(personLink).join(', ') + '</td></tr>'; }).join('') + '</table>';
+      body += '<h3 style="margin-top:16px">Figures</h3>' + figures(e) + tags(e);
+      $('drawer-body').innerHTML = body;
+    } catch (err) { if (seq === drawerSeq) failed($('drawer-body'), err); }
+  }
+
+  async function openPerson(name) {
+    var seq = openDrawer('<h2>' + escapeHtml(name) + '</h2><div class="meta">One name across England</div>');
+    try {
+      var both = await Promise.all([view('DomesdayPersonSummary', { name: name }), view('DomesdayPersonHoldings', { name: name })]);
+      if (seq !== drawerSeq) return;
+      var summary = both[0], holdings = both[1];
+      if (!summary.length) return none($('drawer-body'), 'No entry names "' + name + '". Hull spells names its own way — try the search box.');
+      var records = Math.max.apply(null, summary.map(function (s) { return s.countyRecords || 1; }));
+      var body = '<p class="note">Gathered from ' + records + ' county record' + (records > 1 ? 's' : '') + ' bearing this name. A common name may be more than one person.</p>';
+      body += '<table><tr><th>Role</th><th class="r">Entries</th><th class="r">Counties</th><th class="r">Value 1066</th><th class="r">Value 1086</th></tr>' + summary.map(function (s) {
+        return '<tr><td>' + escapeHtml(ROLE[s.role] || s.role) + '</td><td class="r num">' + n(s.entries) + '</td><td class="r num">' + n(s.countyCount) + '</td><td class="r num">' + escapeHtml(lsd(s.value1066Pence)) + '</td><td class="r num">' + escapeHtml(lsd(s.value1086Pence)) + '</td></tr>';
+      }).join('') + '</table>';
+      var groups = {};
+      holdings.forEach(function (h) { (groups[h.role] = groups[h.role] || []).push(h); });
+      Object.keys(groups).forEach(function (r) {
+        body += '<h3 style="margin-top:18px">' + escapeHtml(ROLE[r] || r) + ' <span class="note">' + groups[r].length + '</span></h3><table>' + groups[r].map(function (h) {
+          return '<tr class="click" data-entry="' + escapeHtml(h.entryId) + '"><td>' + escapeHtml(h.places || '—') + '</td><td class="note">' + escapeHtml(h.ref) + '</td><td class="r num">' + escapeHtml(lsd(r.indexOf('1066') >= 0 ? h.value1066Pence : h.value1086Pence)) + '</td></tr>';
+        }).join('') + '</table>';
+      });
+      $('drawer-body').innerHTML = body;
+      $('drawer-body').querySelectorAll('tr[data-entry]').forEach(function (tr) { tr.addEventListener('click', function () { location.hash = '#/entry/' + tr.dataset.entry; }); });
+    } catch (e) { if (seq === drawerSeq) failed($('drawer-body'), e); }
+  }
+
+  async function openCounty(code) {
+    var c = counties[code];
+    var seq = openDrawer('<h2>' + escapeHtml(c ? c.county : code) + '</h2><div class="meta">County · circuit ' + escapeHtml(c ? c.circuit : '') + '</div>');
+    if (c && !c.inGreatDomesday) {
+      $('drawer-body').innerHTML = '<div class="empty">' + escapeHtml(c.county) + ' is described in Little Domesday, whose entries this edition does not hold. Its places are on the map, drawn hollow; its people are in the search. Its households, ploughs and values are not here — that is the edition, not the county.</div>';
+      return;
+    }
+    try {
+      var all = await Promise.all([
+        view('DomesdayCountyFigures', { county: code }), view('DomesdayHundredSummary', { county: code }),
+        view('DomesdayRichestManors', { county: code, limit: 10 }), view('DomesdayWaste', { county: code, limit: 25 })]);
+      if (seq !== drawerSeq) return;
+      var f = all[0][0] || {}, hundreds = all[1], richest = all[2], waste = all[3];
+      function tile(k, v) { return '<div class="tile"><div class="v">' + v + '</div><div class="k">' + escapeHtml(k) + '</div></div>'; }
+      var body = '<div class="tiles">' + tile('entries', n(f.entries)) + tile('households', n(f.households)) + tile('villagers', n(f.villagers)) +
+        tile('smallholders', n(f.smallholders)) + tile('slaves', n(f.slaves)) + tile('plough teams', n(f.ploughTeams)) +
+        tile('value 1066', pounds(f.value1066Pounds)) + tile('value 1086', pounds(f.value1086Pounds)) + tile('mills', n(f.mills)) +
+        tile('churches', n(f.churchEntries)) + tile('castles', n(f.castleEntries)) + tile('waste entries', n(f.wasteEntries)) + '</div>';
+      body += '<button class="btn" id="show-on-map">Show on the map</button>';
+      var max = Math.max.apply(null, hundreds.map(function (h) { return h.value1086Pounds || 0; }).concat([1]));
+      body += '<h3 style="margin-top:18px">Hundreds</h3><table><tr><th>Hundred</th><th class="r">Places</th><th class="r">Households</th><th class="r">1086</th><th></th></tr>' + hundreds.map(function (h) {
+        return '<tr><td>' + escapeHtml(h.hundred) + '</td><td class="r num">' + n(h.places) + '</td><td class="r num">' + n(h.households) + '</td><td class="r num">' + pounds(h.value1086Pounds) + '</td><td style="width:90px"><div class="bar"><span style="width:' + (100 * (h.value1086Pounds || 0) / max).toFixed(1) + '%"></span></div></td></tr>';
+      }).join('') + '</table>';
+      body += '<h3 style="margin-top:18px">Richest manors</h3><table>' + richest.map(function (r) {
+        return '<tr class="click" data-entry="' + escapeHtml(r.entryId) + '"><td>' + escapeHtml(r.places || r.ref) + '</td><td class="note">' + escapeHtml((r.tenantsInChief || []).join(', ')) + '</td><td class="r num">' + escapeHtml(lsd(r.value1086Pence)) + '</td></tr>';
+      }).join('') + '</table>';
+      if (waste.length) body += '<h3 style="margin-top:18px">Waste <span class="note">' + n(f.wasteEntries) + ' entries</span></h3><p>' + waste.map(function (w) { return escapeHtml(w.places || w.countyOrEntry); }).join(', ') + (f.wasteEntries > waste.length ? '…' : '') + '</p>';
+      $('drawer-body').innerHTML = body;
+      $('show-on-map').addEventListener('click', function () { $('county-filter').value = code; currentTab = 'map'; location.hash = '#/tab/map'; });
+      $('drawer-body').querySelectorAll('tr[data-entry]').forEach(function (tr) { tr.addEventListener('click', function () { location.hash = '#/entry/' + tr.dataset.entry; }); });
+    } catch (e) { if (seq === drawerSeq) failed($('drawer-body'), e); }
+  }
+
+  /* ── search ─────────────────────────────────────────────────────────────────── */
+  var searchSeq = 0, searchTimer = null;
+  $('q').addEventListener('input', function () {
+    clearTimeout(searchTimer);
+    var q = this.value.trim();
+    if (q.length < 2) { $('results').classList.remove('open'); return; }
+    searchTimer = setTimeout(function () { search(q); }, 220);
+  });
+  $('q').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { var first = $('results').querySelector('a'); if (first) { location.hash = first.getAttribute('href'); $('results').classList.remove('open'); } }
+    if (e.key === 'Escape') $('results').classList.remove('open');
+  });
+  document.addEventListener('click', function (e) { if (!$('results').contains(e.target) && e.target !== $('q')) $('results').classList.remove('open'); });
+  $('results').addEventListener('click', function () { $('results').classList.remove('open'); });
+  async function search(q) {
+    var mine = ++searchSeq, box = $('results');
+    box.classList.add('open');
+    box.innerHTML = '<div class="loading" style="padding:10px 14px">Searching…</div>';
+    try {
+      var both = await Promise.all([view('DomesdayPlaceSearch', { name: q, limit: 12 }), view('DomesdayPersonSearch', { name: q, limit: 30 })]);
+      if (mine !== searchSeq) return;
+      var places = both[0], people = both[1];
+      var seen = {}, folded = [];
+      people.forEach(function (p) { if (!seen[p.person]) { seen[p.person] = { person: p.person, entries: 0, counties: 0 }; folded.push(seen[p.person]); } seen[p.person].entries += p.entries || 0; seen[p.person].counties += 1; });
+      folded.sort(function (a, b) { return b.entries - a.entries; });
+      var html = '';
+      if (places.length) html += '<h4>Places</h4>' + places.map(function (p) { return '<a href="#/place/' + encodeURIComponent(p.placeId) + '"><span>' + escapeHtml(p.place) + '</span><small>' + escapeHtml(p.county || '') + (p.hundred ? ' · ' + escapeHtml(p.hundred) : '') + '</small></a>'; }).join('');
+      if (folded.length) html += '<h4>People</h4>' + folded.slice(0, 10).map(function (p) { return '<a href="#/person/' + encodeURIComponent(p.person) + '"><span>' + escapeHtml(p.person) + '</span><small>' + n(p.entries) + ' entries · ' + p.counties + ' count' + (p.counties > 1 ? 'ies' : 'y') + '</small></a>'; }).join('');
+      box.innerHTML = html || '<div class="empty" style="margin:8px">Domesday names no place or person containing "' + escapeHtml(q) + '". Spellings are Hull\'s modern forms — try part of the name.</div>';
+    } catch (e) { if (mine === searchSeq) box.innerHTML = '<div class="err" style="margin:8px">Search did not answer: ' + escapeHtml(e.message) + '</div>'; }
+  }
+
+  /* ── the map ────────────────────────────────────────────────────────────────── */
+  var canvas = $('map'), ctx = canvas.getContext('2d'), proj = null, buckets = null, hover = null;
+  function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function thresholds(key) {
+    var vals = mapRows.map(function (r) { return Number(r[key]) || 0; }).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
+    if (!vals.length) return [0, 0, 0];
+    return [0.25, 0.5, 0.75].map(function (q) { return vals[Math.floor(q * (vals.length - 1))]; });
+  }
+  var bounds = null;
+  /* Fit the frame to the places themselves: Domesday stops short of the far north. */
+  function mapBounds() {
+    if (bounds) return bounds;
+    var la = mapRows.map(function (r) { return r.lat; }), lo = mapRows.map(function (r) { return r.lng; });
+    bounds = [Math.min.apply(null, la) - 0.05, Math.max.apply(null, la) + 0.05, Math.min.apply(null, lo) - 0.05, Math.max.apply(null, lo) + 0.05];
+    return bounds;
+  }
+  function drawMap() {
+    if (!mapRows.length || !$('pane-map').classList.contains('on')) return;
+    var dpr = window.devicePixelRatio || 1, w = canvas.clientWidth, h = canvas.clientHeight;
+    canvas.width = w * dpr; canvas.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var b = mapBounds(), k = Math.cos(52.5 * Math.PI / 180), minLng = b[2], maxLng = b[3], minLat = b[0], maxLat = b[1], pad = 18;
+    var sx = (w - 2 * pad) / ((maxLng - minLng) * k), sy = (h - 2 * pad) / (maxLat - minLat), s = Math.min(sx, sy);
+    var ox = (w - (maxLng - minLng) * k * s) / 2, oy = (h - (maxLat - minLat) * s) / 2;
+    proj = function (lat, lng) { return [ox + (lng - minLng) * k * s, oy + (maxLat - lat) * s]; };
+    proj.invert = function (x, y) { return [maxLat - (y - oy) / s, minLng + (x - ox) / (k * s)]; };
+    ctx.fillStyle = css('--leaf'); ctx.fillRect(0, 0, w, h);
+    var key = $('shade').value === 'households' ? 'households' : 'value1086Pence';
+    var t = thresholds(key), ramp = [css('--ramp-1'), css('--ramp-2'), css('--ramp-3'), css('--ramp-4')];
+    var filter = $('county-filter').value, r = w < 700 ? 1.3 : 1.8;
+    buckets = {};
+    var shown = 0;
+    mapRows.forEach(function (row) {
+      var p = proj(row.lat, row.lng), dim = filter && row.county !== filter;
+      var v = Number(row[key]) || 0, little = counties[row.county] && !counties[row.county].inGreatDomesday;
+      ctx.globalAlpha = dim ? 0.12 : 1;
+      if (little) { ctx.strokeStyle = css('--muted'); ctx.lineWidth = 0.8; ctx.beginPath(); ctx.arc(p[0], p[1], r, 0, 6.283); ctx.stroke(); }
+      else {
+        ctx.fillStyle = v <= 0 ? css('--none') : ramp[v <= t[0] ? 0 : v <= t[1] ? 1 : v <= t[2] ? 2 : 3];
+        ctx.beginPath(); ctx.arc(p[0], p[1], r, 0, 6.283); ctx.fill();
+        if (row.waste) { ctx.strokeStyle = css('--rubric'); ctx.lineWidth = 0.9; ctx.beginPath(); ctx.arc(p[0], p[1], r + 1.3, 0, 6.283); ctx.stroke(); }
+      }
+      if (!dim) {
+        shown++;
+        var bk = Math.floor(p[0] / 8) + ':' + Math.floor(p[1] / 8);
+        (buckets[bk] = buckets[bk] || []).push({ row: row, x: p[0], y: p[1] });
+      }
+    });
+    ctx.globalAlpha = 1;
+    $('map-count').textContent = shown.toLocaleString('en-GB') + ' places';
+    var fmt = key === 'households' ? function (x) { return n(Math.round(x)); } : function (x) { return lsd(x); };
+    $('legend').innerHTML = ['≤ ' + fmt(t[0]), '≤ ' + fmt(t[1]), '≤ ' + fmt(t[2]), '> ' + fmt(t[2])].map(function (label, i) {
+      return '<span><i style="background:var(--ramp-' + (i + 1) + ')"></i>' + escapeHtml(label) + '</span>';
+    }).join('') + '<span><i style="background:var(--none)"></i>none stated</span><span><i class="ring"></i>waste</span>';
+  }
+  function nearest(x, y) {
+    if (!buckets) return null;
+    var best = null, bd = 64;
+    for (var i = -1; i <= 1; i++) for (var j = -1; j <= 1; j++) {
+      (buckets[(Math.floor(x / 8) + i) + ':' + (Math.floor(y / 8) + j)] || []).forEach(function (c) {
+        var d = (c.x - x) * (c.x - x) + (c.y - y) * (c.y - y);
+        if (d < bd) { bd = d; best = c; }
+      });
+    }
+    return best;
+  }
+  canvas.addEventListener('mousemove', function (e) {
+    var rect = canvas.getBoundingClientRect(), c = nearest(e.clientX - rect.left, e.clientY - rect.top), tip = $('tip');
+    hover = c;
+    if (!c) { tip.style.display = 'none'; return; }
+    var row = c.row, cn = counties[row.county] ? counties[row.county].county : row.county;
+    tip.innerHTML = '<b>' + escapeHtml(row.place) + '</b><br>' + escapeHtml(cn) +
+      (row.households ? '<br>' + n(row.households) + ' households' : '') + (row.value1086Pence ? '<br>worth ' + escapeHtml(lsd(row.value1086Pence)) + ' in 1086' : '') +
+      (row.waste ? '<br><span style="color:var(--rubric)">waste recorded</span>' : '');
+    tip.style.display = 'block';
+    tip.style.left = Math.min(c.x + 14, canvas.clientWidth - 270) + 'px';
+    tip.style.top = (c.y + 60) + 'px';
+  });
+  canvas.addEventListener('mouseleave', function () { $('tip').style.display = 'none'; hover = null; });
+  canvas.addEventListener('click', function (e) {
+    var rect = canvas.getBoundingClientRect(), x = e.clientX - rect.left, y = e.clientY - rect.top, c = nearest(x, y);
+    if (c) { location.hash = '#/place/' + c.row.placeId; return; }
+    if (!proj) return;
+    var ll = proj.invert(x, y);
+    var seq = openDrawer('<h2>Within 8 km</h2><div class="meta">' + n(Math.round(ll[0] * 1000) / 1000) + ', ' + n(Math.round(ll[1] * 1000) / 1000) + '</div>');
+    var el = $('drawer-body');
+    showNear(ll[0], ll[1], el).then(function () { if (seq !== drawerSeq) return; });
+  });
+  $('shade').addEventListener('change', drawMap);
+  $('county-filter').addEventListener('change', drawMap);
+  window.addEventListener('resize', function () { clearTimeout(drawMap.t); drawMap.t = setTimeout(drawMap, 120); });
+  if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawMap);
+
+  /* ── tab loaders ────────────────────────────────────────────────────────────── */
+  function ranked(rows, nameKey, valueKey, linker, valueFmt, sub) {
+    var max = Math.max.apply(null, rows.map(function (r) { return Number(r[valueKey]) || 0; }).concat([1]));
+    return '<ol class="rank">' + rows.map(function (r, i) {
+      return '<li><span class="n">' + (i + 1) + '</span><span>' + linker(r) + (sub ? ' <span class="note">' + escapeHtml(sub(r)) + '</span>' : '') + '</span><span class="num">' + escapeHtml(valueFmt(r[valueKey])) + '</span>' +
+        '<div class="bar"><span style="width:' + (100 * (Number(r[valueKey]) || 0) / max).toFixed(1) + '%"></span></div></li>';
+    }).join('') + '</ol>';
+  }
+  var LOADERS = {
+    counties: function () {
+      fill($('counties'), 'DomesdayCountySummary', {}, function (rows) {
+        var max = Math.max.apply(null, rows.map(function (r) { return r.value1086Pounds || 0; }));
+        var maxChange = Math.max.apply(null, rows.map(function (r) { return Math.abs(r.valueChangePercent || 0); }).concat([1]));
+        return '<table><tr><th>County</th><th class="r">Entries</th><th class="r">Households</th><th class="r">Plough teams</th><th class="r">Value 1086</th><th></th><th class="r">Change since 1066</th><th></th><th class="r">Waste</th><th class="r">Mills</th></tr>' + rows.map(function (r) {
+          var code = codeOf(r.county), ch = r.valueChangePercent;
+          var cls = ch == null ? '' : ch < 0 ? 'fall' : 'rise', wpct = ch == null ? 0 : (50 * Math.abs(ch) / maxChange);
+          return '<tr class="click" data-county="' + escapeHtml(code || '') + '"><td>' + escapeHtml(r.county) + '</td><td class="r num">' + n(r.entries) + '</td><td class="r num">' + n(r.households) + '</td><td class="r num">' + n(r.ploughTeams) + '</td>' +
+            '<td class="r num">' + pounds(r.value1086Pounds) + '</td><td style="width:110px"><div class="bar"><span style="width:' + (100 * (r.value1086Pounds || 0) / max).toFixed(1) + '%"></span></div></td>' +
+            '<td class="r num">' + (ch == null ? '—' : (ch > 0 ? '+' : '') + n(ch) + '%') + ' <span class="note">of ' + n(r.comparableEntries) + '</span></td><td style="width:100px"><div class="div">' + (cls ? '<span class="' + cls + '" style="width:' + wpct.toFixed(1) + '%"></span>' : '') + '</div></td>' +
+            '<td class="r num">' + n(r.wasteEntries) + '</td><td class="r num">' + n(r.mills) + '</td></tr>';
+        }).join('') + '</table><p class="note">Essex, Norfolk and Suffolk are not listed: Little Domesday is not in this edition. Click a county for its hundreds, richest manors and waste.</p>';
+      }).then(function () {
+        $('counties').querySelectorAll('tr[data-county]').forEach(function (tr) { tr.addEventListener('click', function () { if (tr.dataset.county) location.hash = '#/county/' + tr.dataset.county; }); });
+      });
+    },
+    conquest: function () {
+      fill($('lords1066'), 'DomesdayGreatestLords1066', { limit: 15 }, function (rows) {
+        return ranked(rows, 'lord1066', 'value1066Pence', function (r) { return personLink(r.lord1066); }, lsd, function (r) { return r.entries + ' entries'; });
+      });
+      fill($('tic1086'), 'DomesdayGreatestLandholders', { limit: 15 }, function (rows) {
+        return ranked(rows, 'tenantInChief', 'value1086Pence', function (r) { return personLink(r.tenantInChief); }, lsd, function (r) { return r.entries + ' entries'; });
+      });
+      fill($('transfers'), 'DomesdayConquestTransfers', { limit: 25 }, function (rows) {
+        return '<table>' + rows.map(function (r) {
+          return '<tr><td>' + personLink(r.lord1066) + '<span class="arrow">→</span>' + personLink(r.tenantInChief1086) + '</td><td class="r num">' + n(r.entries) + ' <span class="note">entries</span></td></tr>';
+        }).join('') + '</table>';
+      });
+      fill($('women'), 'DomesdayWomenLandholders', { limit: 20 }, function (rows) {
+        return ranked(rows, 'woman', 'entries', function (r) { return personLink(r.woman); }, function (v) { return n(v) + ' entries'; },
+          function (r) { return (r.roles || []).map(function (x) { return (ROLE[x] || x).replace(/, (1066|1086)$/, ' $1'); }).join(' · '); });
+      });
+    },
+    wealth: function () {
+      fill($('waste'), 'DomesdayWaste', {}, function (rows) {
+        return ranked(rows.slice(0, 15), 'countyOrEntry', 'wasteEntries', function (r) { var c = codeOf(r.countyOrEntry); return c ? countyLink(c, r.countyOrEntry) : escapeHtml(r.countyOrEntry); }, function (v) { return n(v) + ' entries'; });
+      });
+      fill($('richest'), 'DomesdayRichestManors', { limit: 15 }, function (rows) {
+        return ranked(rows, 'places', 'value1086Pence', function (r) { return entryLink(r.entryId, (r.places || r.ref)) + ' <span class="note">' + escapeHtml(r.county) + '</span>'; }, lsd, function (r) { return (r.tenantsInChief || []).join(', '); });
+      });
+      function change(el, direction) {
+        fill(el, 'DomesdayValueChange', { direction: direction, limit: 12 }, function (rows) {
+          var max = Math.max.apply(null, rows.map(function (r) { return Math.abs(r.changePounds); }).concat([1]));
+          return '<table>' + rows.map(function (r) {
+            var cls = r.changePounds < 0 ? 'fall' : 'rise';
+            return '<tr class="click" data-entry="' + escapeHtml(r.entryId) + '"><td>' + escapeHtml(r.places || r.ref) + ' <span class="note">' + escapeHtml(r.county) + '</span></td><td class="r num">' + pounds(r.value1066Pounds) + ' → ' + pounds(r.value1086Pounds) + '</td>' +
+              '<td style="width:100px"><div class="div"><span class="' + cls + '" style="width:' + (50 * Math.abs(r.changePounds) / max).toFixed(1) + '%"></span></div></td></tr>';
+          }).join('') + '</table>';
+        }).then(function () { el.querySelectorAll('tr[data-entry]').forEach(function (tr) { tr.addEventListener('click', function () { location.hash = '#/entry/' + tr.dataset.entry; }); }); });
+      }
+      change($('falls'), 'fall');
+      change($('rises'), 'rise');
+      function feature(el, kind) {
+        fill(el, 'DomesdayFeature', { feature: kind, limit: 200 }, function (rows) {
+          return '<p class="note">' + rows.length + ' entries mention a ' + kind + '.</p><p>' + rows.map(function (r) { return entryLink(r.entryId, r.places || r.ref); }).join(', ') + '</p>';
+        });
+      }
+      feature($('castles'), 'castle');
+      feature($('markets'), 'market');
+    },
+    ask: function () {
+      var chips = ['How many mills were there in Kent?', 'Which county had the most waste?', 'Who held Abberley before 1066?',
+        'How many slaves were recorded in Gloucestershire?', 'Who was the richest landholder in 1086?', 'Which women held land in Domesday?'];
+      $('chips').innerHTML = chips.map(function (c) { return '<button type="button">' + escapeHtml(c) + '</button>'; }).join('');
+      $('chips').querySelectorAll('button').forEach(function (b) { b.addEventListener('click', function () { $('ask').value = b.textContent; location.hash = '#/ask/' + encodeURIComponent(b.textContent); }); });
+    }
+  };
+
+  /* ── ask ────────────────────────────────────────────────────────────────────── */
+  var askSeq = 0;
+  var ASK_SCOPE = 'In Domesday Book (1086): ';
+  $('ask-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var q = $('ask').value.trim();
+    if (q) location.hash = '#/ask/' + encodeURIComponent(q);
+  });
+  function cell(k, v) {
+    if (v == null) return '—';
+    if (Array.isArray(v)) return escapeHtml(v.map(function (x) { return typeof x === 'object' ? JSON.stringify(x) : x; }).join(', '));
+    if (typeof v === 'number' && /pence$/i.test(k)) return escapeHtml(lsd(v));
+    if (typeof v === 'number') return n(v);
+    if (typeof v === 'boolean') return v ? 'yes' : 'no';
+    return escapeHtml(typeof v === 'object' ? JSON.stringify(v) : String(v));
+  }
+  async function askQuestion(q) {
+    var mine = ++askSeq, el = $('answer');
+    $('ask').value = q;
+    var started = Date.now();
+    el.innerHTML = '<div class="loading">Writing a query for “' + escapeHtml(q) + '” and running it… <span id="ask-clock">0s</span></div>';
+    var clock = setInterval(function () { var c = $('ask-clock'); if (c && mine === askSeq) c.textContent = Math.round((Date.now() - started) / 1000) + 's'; }, 1000);
+    try {
+      var result = await Promise.race([
+        /* The box is a Domesday surface, and this world also holds modern places and census figures:
+         * "how many people in England" means 1086 here, so the question says so. */
+        gateway.kg.ask({ question: ASK_SCOPE + q, explain: true }),
+        new Promise(function (_, reject) { setTimeout(function () { reject(new Error('No answer after two minutes; the question was stopped.')); }, 120000); })
+      ]);
+      if (mine !== askSeq) return;
+      var rows = (result && result.rows) || [], warnings = (result && result.warnings) || [];
+      var html = '';
+      if (!rows.length) {
+        html += '<div class="empty">The query ran and found nothing. That can mean Domesday does not record it, or that the question asks for something this edition does not hold (Little Domesday; the text itself; anything after 1086). Read the query below to see which.</div>';
+      } else {
+        var cols = Object.keys(rows[0]);
+        html += '<div class="card"><table><tr>' + cols.map(function (c) { return '<th>' + escapeHtml(c) + '</th>'; }).join('') + '</tr>' +
+          rows.slice(0, 200).map(function (r) { return '<tr>' + cols.map(function (c) { return '<td>' + cell(c, r[c]) + '</td>'; }).join('') + '</tr>'; }).join('') + '</table>' +
+          (rows.length > 200 ? '<p class="note">Showing 200 of ' + rows.length + ' rows.</p>' : '') + '</div>';
+      }
+      if (warnings.length) html += '<div class="err" style="margin-top:10px">' + warnings.map(escapeHtml).join('<br>') + '</div>';
+      html += '<p class="note">' + Math.round((Date.now() - started) / 100) / 10 + ' s · the figures are exactly what the query computed; money columns in pence are shown as £ s d.</p>';
+      if (result && result.cypher) html += '<details open><summary class="note">The query it ran</summary><pre class="cypher">' + escapeHtml(result.cypher) + '</pre></details>';
+      el.innerHTML = html;
+    } catch (e) {
+      if (mine === askSeq) el.innerHTML = '<div class="err">The question was not answered: ' + escapeHtml(e.message) + '. Nothing is shown because no answer came back — not because Domesday is silent.</div>';
+    } finally { clearInterval(clock); }
+  }
+
+  /* ── at a glance: totals from the county summary, so the figures agree with the Counties tab ── */
+  async function glance(summaryPromise) {
+    var el = $('glance');
+    try {
+      var rows = await summaryPromise;
+      if (!rows.length) return none(el, 'The counties returned nothing — the realm may still be seeding.');
+      /* Summed halves (a half-share of a mill or a villager) are real, but a headline reads as a count. */
+      var sum = function (k) { return Math.round(rows.reduce(function (a, r) { return a + (Number(r[k]) || 0); }, 0)); };
+      var top = rows.slice().sort(function (a, b) { return (b.value1086Pounds || 0) - (a.value1086Pounds || 0); }).slice(0, 5);
+      var wasted = rows.slice().sort(function (a, b) { return (b.wasteEntries || 0) - (a.wasteEntries || 0); }).slice(0, 3);
+      el.innerHTML =
+        '<div class="big">' + n(sum('households')) + '</div><div class="k">households recorded, in ' + n(sum('entries')) + ' entries — about ' +
+          (Math.round(sum('households') * 4 / 10000) / 100) + '–' + (Math.round(sum('households') * 5 / 10000) / 100) +
+          ' million people, at the conventional four to five to a household (an estimate, not a record)</div>' +
+        '<div class="big">' + pounds(sum('value1086Pounds')) + '</div><div class="k">a year to their lords in 1086</div>' +
+        '<div class="big">' + n(sum('ploughTeams')) + '</div><div class="k">plough teams at work</div>' +
+        '<div class="big">' + n(sum('mills')) + '</div><div class="k">mills</div>' +
+        '<h3 style="margin-top:14px">Richest counties</h3><ol>' + top.map(function (r) { var c = codeOf(r.county); return '<li>' + (c ? countyLink(c, r.county) : escapeHtml(r.county)) + ' <span class="note">' + pounds(r.value1086Pounds) + '</span></li>'; }).join('') + '</ol>' +
+        '<h3 style="margin-top:14px">Most waste</h3><ol>' + wasted.map(function (r) { var c = codeOf(r.county); return '<li>' + (c ? countyLink(c, r.county) : escapeHtml(r.county)) + ' <span class="note">' + n(r.wasteEntries) + ' entries</span></li>'; }).join('') + '</ol>' +
+        '<p class="note">Great Domesday only — Essex, Norfolk and Suffolk are not counted.</p>';
+    } catch (e) { failed(el, e); }
+  }
+
+  /* ── start ──────────────────────────────────────────────────────────────────── */
+  $('how-link').addEventListener('click', function () { setTimeout(function () { $('how-it-works').scrollIntoView({ behavior: 'smooth' }); }, 0); });
+  async function start() {
+    var ready = await embabel.manifest.ready;
+    if (ready && ready.ok === false) {
+      document.querySelector('main').insertAdjacentHTML('afterbegin', '<div class="err">This world is missing what the app needs: ' + escapeHtml(JSON.stringify(ready.missing || ready)) + '. Install realm-domesday.</div>');
+      return;
+    }
+    route();
+    /* Both start now and are awaited later; until then a rejection would surface as unhandled, so each
+     * is marked handled here and its failure is reported where it is awaited. */
+    var mapEnv = embabel.views.invoke('DomesdayMapPlaces', { county: '' }, { state: $('map-state'), expectation: 'Placing 13,486 places on the map.' });
+    var summary = view('DomesdayCountySummary', {});
+    mapEnv.catch(function () {});
+    summary.catch(function () {});
+    try {
+      var cs = await view('DomesdayCounties', {});
+      cs.forEach(function (c) { counties[c.code] = c; });
+      $('county-filter').innerHTML = '<option value="">All England</option>' + cs.map(function (c) { return '<option value="' + escapeHtml(c.code) + '">' + escapeHtml(c.county) + '</option>'; }).join('');
+    } catch (e) { /* the map still draws without names; the county list says why below */ $('map-count').textContent = 'County names unavailable: ' + e.message; }
+    glance(summary);
+    try {
+      var env = await mapEnv;
+      if (env.status !== 'SUCCEEDED') throw new Error((env.error && env.error.message) || 'the map view did not succeed');
+      mapRows = env.data || [];
+      if (!mapRows.length) $('map-count').textContent = 'The world returned no located places — the realm may still be seeding.';
+      drawMap();
+    } catch (e) { $('map-count').textContent = 'The map did not load: ' + e.message; }
+  }
+  start();
+})();
+</script>
+
+<div id="embabel-badge" style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:6px 0;background:rgba(10,10,15,0.9);border-top:1px solid rgba(99,192,245,0.2);font-size:0.75rem;color:#6b7280;z-index:9999;pointer-events:none;">
+  Created with <a href="https://worlds.embabel.com" target="_blank" rel="noopener noreferrer" style="color:#63c0f5;text-decoration:none;pointer-events:auto;">Embabel Worlds</a>
+</div>
+</body>
+</html>

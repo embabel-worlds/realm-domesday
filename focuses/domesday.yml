@@ -1,0 +1,6 @@
+name: domesday
+displayName: Domesday Book
+description: "Ask Domesday Book (1086) — places, landholders before and after the Conquest, population, values, waste"
+icon: "📜"
+realms: [realm-domesday]
+builtins: [views]

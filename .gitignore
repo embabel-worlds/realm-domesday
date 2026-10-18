@@ -1,0 +1,6 @@
+.cache/
+__pycache__/
+node_modules/
+tests/browser/screens/
+# captured from a live appliance by `node stub.mjs --capture`; holds the appliance runtime, which is not ours to publish
+tests/browser/fixtures/

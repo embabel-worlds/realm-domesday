@@ -1,0 +1,94 @@
+# The questions a person types at Domesday, and what a correct answer must satisfy.
+# Run by tests/ask_battery.py through the same ask surface the app uses (kg_ask).
+#
+# answerable — expect one of the spec's kinds:
+#   matchesView: {name, column, args}   the ask's figure equals the view's top-row figure. Money may
+#                                       come back in pence or pounds; either reconciles.
+#   nonEmpty: true / minRows: n         a floor, where no single figure is the answer.
+#
+# unanswerable — the adversarial half: questions this realm cannot answer, asked `repeat` times.
+#   Each run must reference no property the live schema does not declare (a fabrication), and, where
+#   `noFigure` is set, must not put a positive number forward as the answer.
+
+answerable:
+  - question: "How many villagers were there in Worcestershire?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: villagers, args: { county: WOR } } }
+  - question: "How many slaves were recorded in Gloucestershire?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: slaves, args: { county: GLS } } }
+  - question: "How many mills were there in Kent?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: mills, args: { county: KEN } } }
+  - question: "How many plough teams were there in Lincolnshire in 1086?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: ploughTeams, args: { county: LIN } } }
+  - question: "How many Domesday entries are there for Yorkshire?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: entries, args: { county: YKS } } }
+  - question: "How many households did Devon have in Domesday?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: households, args: { county: DEV } } }
+  - question: "Who was the richest landholder in 1086?"
+    expect: { matchesView: { name: DomesdayGreatestLandholders, column: tenantInChief } }
+  - question: "Who held the most valuable land before the Conquest?"
+    expect: { matchesView: { name: DomesdayGreatestLords1066, column: lord1066 } }
+  - question: "Which county had the most waste?"
+    expect: { matchesView: { name: DomesdayWaste, column: countyOrEntry } }
+  - question: "Which county was the richest in 1086?"
+    expect: { matchesView: { name: DomesdayCountySummary, column: county } }
+  - question: "What was Abberley worth in 1086?"
+    expect: { matchesView: { name: DomesdayPlaceEntries, column: value1086Pence, args: { placeId: "1" } } }
+  - question: "How many villagers lived at Abberley?"
+    expect: { matchesView: { name: DomesdayPlaceEntries, column: villagers, args: { placeId: "1" } } }
+  - question: "Who held Abberley before 1066?"
+    expect: { matchesView: { name: DomesdayPlaceEntries, column: lords1066, args: { placeId: "1" } } }
+  - question: "Who was the tenant-in-chief of Abberley in 1086?"
+    expect: { matchesView: { name: DomesdayPlaceEntries, column: tenantsInChief, args: { placeId: "1" } } }
+  - question: "How much was Count Robert of Mortain's land worth in 1086?"
+    expect: { matchesView: { name: DomesdayPersonSummary, column: value1086Pence, args: { name: "Count Robert/of Mortain" } } }
+  - question: "How many entries did Bishop Odo of Bayeux hold as tenant-in-chief?"
+    expect: { matchesView: { name: DomesdayPersonSummary, column: entries, args: { name: "Bishop Odo/of Bayeux" } } }
+  - question: "Who took over Earl Harold's lands after the Conquest?"
+    expect: { minRows: 3 }
+  - question: "Which women held land in Domesday?"
+    expect: { minRows: 5 }
+  - question: "Where were the castles in Domesday?"
+    expect: { minRows: 10 }
+  - question: "Which manors lost the most value between 1066 and 1086?"
+    expect: { minRows: 5 }
+  - question: "List the places in Domesday called Norton"
+    expect: { minRows: 20 }
+  - question: "What did Ralph of Tosny hold?"
+    expect: { minRows: 5 }
+  - question: "how many churches in worcestershire"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: churchEntries, args: { county: WOR } } }
+  # Asked by a user, 2026-10-18: the generator filtered countyName = 'England' and summed nothing.
+  - question: "how many goats there are in england"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: goats, args: {} } }
+  - question: "How many villagers were there in England altogether?"
+    expect: { matchesView: { name: DomesdayCountyFigures, column: villagers, args: {} } }
+  # Asked by a user, 2026-10-18.
+  - question: "which lords rule the most peasants"
+    # 1066 or 1086 are both fair readings of "rule"; the king of either is right
+    expect: { anyName: ["King William", "King Edward"] }
+  - question: "which county has the most people"
+    expect: { matchesView: { name: DomesdayCountyRanking, column: county, args: { measure: households } } }
+  - question: "how many people total in england"
+    # Asked by a user, 2026-10-18: a bare 214,191.5 is households, not people — the answer must say so and estimate
+    expect: { matchesView: { name: DomesdayPopulation, column: [households, estimatedPeopleLow, estimatedPeopleHigh] }, columnsLike: [estimat] }
+  - question: "which hundred of Worcestershire was worth most in 1086"
+    expect: { matchesView: { name: DomesdayHundredSummary, column: hundred, args: { county: WOR } } }
+
+unanswerable:
+  - question: "How many villagers were there in Essex?"
+    repeat: 3
+    noFigure: true
+  - question: "What was the population of Norfolk in 1086?"
+    repeat: 3
+    noFigure: true
+  - question: "What is the modern population of Abberley?"
+    repeat: 3
+    noFigure: true
+  - question: "What was the name of the priest at Abberley?"
+    repeat: 3
+  - question: "Quote the Domesday text for Abberley"
+    repeat: 3
+  - question: "Who held Abberley in 1200?"
+    repeat: 3
+  - question: "How many acres of arable land were there in Kent?"
+    repeat: 3

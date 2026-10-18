@@ -1,0 +1,342 @@
+# Domesday Book as a graph: five stored types, seeded from reference/ and never changed.
+#
+#   DomesdayCounty ◀─IN─ DomesdayHundred ◀─IN─ DomesdayPlace ◀─DESCRIBES / INCLUDES─ DomesdayEntry ─IN─▶ DomesdayCounty
+#                                                                                         │
+#        LORD_1066, OVERLORD_1066, TENANT_IN_CHIEF, TENANT_1086, … ─────────────────────────┴──▶ DomesdayPerson
+#
+# An ENTRY is one numbered section of the Phillimore edition ("Worcestershire 15,8") and carries the
+# figures. A PLACE is a vill in Hull's gazetteer; an entry DESCRIBES the place it is about and
+# INCLUDES the dependencies named within it. A PERSON is Hull's index of names, one record per
+# name per county; the edge from an entry says the role.
+#
+# Great Domesday only: the 31 counties of circuits 1–6. Essex, Norfolk and Suffolk (Little Domesday)
+# have places and people here but no entries, so no figures.
+
+- name: DomesdayCounty
+  description: "A Domesday county, keyed by Hull's three-letter code (`WOR`, `YKS`). `inGreatDomesday` is false for Essex, Norfolk and Suffolk, whose entries (Little Domesday) are not in this realm."
+  userAnchor: false
+  properties:
+    code:
+      identity: true
+      description: "Hull's county code, e.g. `WOR` Worcestershire, `YKS` Yorkshire, `KEN` Kent. Identity."
+    name: "The county's name, e.g. `Worcestershire`."
+    circuit:
+      type: int
+      description: "The Domesday commissioners' circuit, 1–7. Circuit 7 is Little Domesday (Essex, Norfolk, Suffolk)."
+    inGreatDomesday:
+      type: boolean
+      description: "True when the county's entries are in Great Domesday, and so in this realm."
+
+- name: DomesdayHundred
+  description: "A hundred (a wapentake in the Danelaw), the subdivision of a county Domesday was surveyed by. IN its DomesdayCounty."
+  userAnchor: false
+  properties:
+    hundredId:
+      identity: true
+      description: "County code and hundred name, e.g. `WOR:Doddingtree`. Identity."
+    name: "The hundred's name, e.g. `Doddingtree`."
+    county: "County code, e.g. `WOR`."
+    countyName: "County name, e.g. `Worcestershire`. List a county's hundreds with `h.countyName = 'Worcestershire'`."
+
+- name: DomesdayPlace
+  description: "A place Domesday names — a vill, in Hull's modern spelling (`Abberley`, `Milton Keynes`). IN its DomesdayHundred. Reached from the entries about it by DESCRIBES, and from entries that name it as a dependency by INCLUDES. Many names recur: there are several Abbertons and dozens of Nortons, so expect more than one place per name and tell them apart by county. Find by name with toLower(p.name) CONTAINS 'norton'."
+  userAnchor: false
+  properties:
+    placeId:
+      identity: true
+      description: "Hull's place id. Identity."
+    name: "The place's modern name, e.g. `Abberley`."
+    county: "County code, e.g. `WOR`."
+    countyName: "County name, e.g. `Worcestershire`."
+    hundred: "The hundred's name, when Hull records one."
+    area: "A larger area the place lies in, when Hull records one, e.g. `West Riding`, `Kesteven`."
+    locationNote: "Hull's note on where the place is, when it is not simply its grid square, e.g. `in Wales`."
+    gridRef: "OS grid reference of its 1 km square, e.g. `SO7567`. Absent when Hull could not locate the place."
+    gridRefMark: "A mark Hull put after the grid reference, `*` or `!`. The Explorer's help does not say what it means; the square is plotted all the same."
+    lat:
+      type: number
+      description: "Latitude of the centre of its grid square, WGS84."
+    lng:
+      type: number
+      description: "Longitude of the centre of its grid square, WGS84."
+    entryCount:
+      type: int
+      description: "How many entries name this place, as subject or dependency."
+    inLittleDomesday:
+      type: boolean
+      description: "True for places in Essex, Norfolk and Suffolk, whose entries are not in this realm."
+
+- name: DomesdayPerson
+  description: "A person or institution Domesday names, from Hull's index: one record per name PER COUNTY, so a magnate who held in twenty counties is twenty records sharing a name (`Robert, Count of Mortain`). To ask about a person across England, match on name and aggregate. A name is not always one person — there are many Alwins — so a plain name across counties may be several people. Reached from entries by role: LORD_1066, OVERLORD_1066, MAN_OF_OVERLORD_1066, HELD_PART_1066, TENANT_IN_CHIEF, TENANT_1086, SUBTENANT_1086, HELD_PART_1086, URBAN_HOLDER_1066, URBAN_HOLDER_1086, HOLDER_1070, CLAIMANT, DEFENDANT, OFFICIAL, NAMES."
+  userAnchor: false
+  examples:
+    # STEERING — who held land is an EDGE from the entry, by role, and wealth is the entries' value:
+    # 1086 is TENANT_IN_CHIEF (value1086), before the Conquest is LORD_1066 (value1066). Group by name.
+    - q: "who held the most valuable land in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(p:DomesdayPerson)
+        RETURN p.name AS tenantInChief, sum(e.value1086) AS value1086Pence, count(DISTINCT e) AS entries
+        ORDER BY value1086Pence DESC LIMIT 10
+    # STEERING — peasants are villagers + smallholders + cottagers + slaves (never plough teams); before the
+    # Conquest the holder is LORD_1066, in 1086 TENANT_IN_CHIEF:
+    - q: "which English lords had the most peasants before 1066"
+      cypher: |
+        MATCH (e:DomesdayEntry)-[:LORD_1066]->(p:DomesdayPerson)
+        RETURN p.name AS lord, sum(coalesce(e.villagers, 0) + coalesce(e.smallholders, 0) + coalesce(e.cottagers, 0) + coalesce(e.slaves, 0)) AS peasants
+        ORDER BY peasants DESC LIMIT 10
+    # STEERING — who took over someone's land: the 1066 lord and the 1086 tenant-in-chief of the SAME entry:
+    - q: "who took over the lands of Earl Example after the Conquest"
+      cypher: |
+        MATCH (l:DomesdayPerson)<-[:LORD_1066]-(e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+        WHERE toLower(l.name) CONTAINS 'earl' AND toLower(l.name) CONTAINS 'example'
+        RETURN t.name AS tenantInChief1086, count(DISTINCT e) AS entries ORDER BY entries DESC
+    # STEERING — a title is part of the name and is matched case-insensitively (`Bishop Odo/of Bayeux`):
+    - q: "which bishop was the richest tenant-in-chief"
+      cypher: |
+        MATCH (e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(p:DomesdayPerson) WHERE toLower(p.name) CONTAINS 'bishop'
+        RETURN p.name AS bishop, sum(e.value1086) AS value1086Pence ORDER BY value1086Pence DESC LIMIT 1
+    # STEERING — "ruled the most peasants / people" is the households of the entries a holder held:
+    - q: "which lords had the most people on their land in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(p:DomesdayPerson)
+        RETURN p.name AS lord, sum(e.households) AS households ORDER BY households DESC LIMIT 10
+    - q: "who held Exampleton before 1066"
+      cypher: |
+        MATCH (pl:DomesdayPlace)<-[:DESCRIBES]-(e:DomesdayEntry)-[:LORD_1066]->(p:DomesdayPerson)
+        WHERE toLower(pl.name) = 'exampleton'
+        RETURN pl.countyName AS county, e.ref AS ref, p.name AS lord1066
+  properties:
+    personId:
+      identity: true
+      description: "Hull's name id. Identity."
+    name: "The name as Hull indexes it, e.g. `Ralph of Tosny`, `Earl Harold`, `King William`, `Bishop of Worcester`."
+    county: "County code of the entries this record covers, when Hull gives one."
+    countyName: "County name, when Hull gives one."
+    gender:
+      description: "`male`, `female` or `unknown`, as Hull codes it."
+    isInstitution:
+      type: boolean
+      description: "True for a church, abbey or other institution rather than a person."
+    entryCount:
+      type: int
+      description: "How many entries name this record, in any role."
+
+- name: DomesdayEntry
+  description: "NOT RECORDED in Domesday, so never answer with a proxy — horses (only cobs, uncounted), ages, women or children as such, wages or earnings, anything after 1086, any modern figure, the name of any peasant; `valueLater` is the value WHEN ACQUIRED (between 1066 and 1086), never a later year; `ploughlands` is land for so many ploughs, not acres. For those, return WHERE false. One entry of Great Domesday, as the Phillimore edition numbers it (`ref`: `Worcestershire 15,8`). The figures are parsed from the entry's coded clauses; an absent figure means the entry does not state it, which is NOT zero. Money is in PENCE: £1 = 20s = 240d, so value1086 2520 is £10 10s. Edges: DESCRIBES the place it is about, INCLUDES the dependencies it names, IN its county, and one edge per person by role — LORD_1066 (held the manor before the Conquest), TENANT_IN_CHIEF (held it of the king in 1086), TENANT_1086 (held it of the tenant-in-chief in 1086), and the rest listed on DomesdayPerson."
+  userAnchor: false
+  examples:
+    # STEERING — every figure (villagers, slaves, mills, plough teams, households, value) is a property
+    # of DomesdayEntry, never of DomesdayPlace or DomesdayCounty, and a county is filtered by NAME:
+    - q: "how many smallholders were recorded in Somerset"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE e.countyName = 'Somerset'
+        RETURN sum(e.smallholders) AS smallholders
+    # STEERING — "in England" / "in Domesday" / "altogether" is every entry: no county filter at all:
+    - q: "how many oxen were there in England"
+      cypher: |
+        MATCH (e:DomesdayEntry)
+        RETURN sum(e.ploughTeams) AS ploughTeams, count(e) AS entries
+    # STEERING — a county's totals come straight from its entries: no join to a holder (an entry naming no
+    # lord would drop out) and none to places (an entry about two places would count twice):
+    - q: "what was Exampleshire worth before the Conquest"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE e.countyName = 'Exampleshire'
+        RETURN sum(e.value1066) AS value1066Pence
+    # STEERING — population is `households`, already the total of every class; isWaste is a flag, so waste is counted:
+    - q: "what was the population of Exampleshire and how much of it was waste"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE e.countyName = 'Exampleshire'
+        RETURN sum(e.households) AS households, sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS wasteEntries
+    # STEERING — the whole of England: these questions take NO county filter, never countyName = 'England':
+    - q: "what was England worth in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry)
+        RETURN sum(e.value1086) AS value1086Pence
+    - q: "how many slaves were there in England altogether"
+      cypher: |
+        MATCH (e:DomesdayEntry)
+        RETURN sum(e.slaves) AS slaves
+    # STEERING — the richest manor is the PLACE, by its entry's value; an entry with no stated value is skipped:
+    - q: "what was the most valuable manor in Exampleshire in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE e.countyName = 'Exampleshire' AND e.value1086 IS NOT NULL
+        RETURN e.places AS manor, e.ref AS ref, e.value1086 AS value1086Pence ORDER BY e.value1086 DESC LIMIT 1
+    # STEERING — a hundred's figures are its places' entries, by DESCRIBES (INCLUDES would count dependencies twice):
+    - q: "which hundred of Exampleshire was worth most in 1086"
+      cypher: |
+        MATCH (h:DomesdayHundred)<-[:IN]-(p:DomesdayPlace)<-[:DESCRIBES]-(e:DomesdayEntry)
+        WHERE p.countyName = 'Exampleshire'
+        RETURN h.name AS hundred, sum(e.value1086) AS value1086Pence ORDER BY value1086Pence DESC LIMIT 1
+    # STEERING — what Domesday does not record is refused, never answered with a neighbouring figure:
+    - q: "how many horses were there in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS horsesAreNotRecordedInDomesday LIMIT 1
+    - q: "what was Exampleshire worth in 1100"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayRecordsNoValueAfter1086 LIMIT 1
+    - q: "how many people live in Exampleshire today"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayHoldsNoModernFigures LIMIT 1
+    - q: "how many children (or women, or old people) lived in Exampleshire in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayCountsHouseholdsNotAgeOrSex LIMIT 1
+    - q: "what did a villager earn, or what was the tax in euros"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayRecordsNoWagesOrModernMoney LIMIT 1
+    - q: "how many acres of arable land were there in Exampleshire"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS arableIsRecordedAsPloughlandsNotAcres LIMIT 1
+    # STEERING — "how many PEOPLE": Domesday counts households, so the answer is households with the
+    # conventional estimate of people (four to five each) and a note saying so — never a bare household count:
+    - q: "how many people lived in England in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry)
+        WITH sum(e.households) AS h
+        RETURN round(h) AS households, round(h * 4) AS estimatedPeopleLow, round(h * 5) AS estimatedPeopleHigh,
+               'Domesday counts heads of household, not people; four to five to a household is an estimate. Essex, Norfolk and Suffolk are not included.' AS note
+    # STEERING — Domesday counts HOUSEHOLDS, not people: "people", "population", "inhabitants" is households:
+    - q: "which county had the largest population"
+      cypher: |
+        MATCH (e:DomesdayEntry)
+        RETURN e.countyName AS county, sum(e.households) AS households ORDER BY households DESC LIMIT 1
+    # STEERING — a PLACE's figures are its entries' figures, reached by DESCRIBES:
+    - q: "what was Exampleton worth in 1086 and how many households did it have"
+      cypher: |
+        MATCH (p:DomesdayPlace)<-[:DESCRIBES]-(e:DomesdayEntry) WHERE toLower(p.name) = 'exampleton'
+        RETURN p.name AS place, p.countyName AS county, e.ref AS ref, e.value1086 AS value1086Pence,
+               e.households AS households
+    # STEERING — "which county had the most X" groups entries by countyName; no edge to the county is needed:
+    - q: "which county had the most mills"
+      cypher: |
+        MATCH (e:DomesdayEntry)
+        RETURN e.countyName AS county, sum(e.mills) AS mills ORDER BY mills DESC LIMIT 1
+  properties:
+    entryId:
+      identity: true
+      description: "Hull's entry id; Open Domesday uses the same number. Identity."
+    name: "The places and reference, e.g. `Abberley (Worcestershire 15,8)`."
+    ref: "County and Phillimore section, e.g. `Worcestershire 15,8` — how a Domesday entry is cited."
+    phillimore: "Phillimore section number alone, e.g. `15,8`."
+    county: "Three-letter county code, e.g. `WOR`, `GLS`, `KEN`. Never guess a code from a name — filter on `countyName` instead."
+    countyName: "County name as written, e.g. `Worcestershire`, `Gloucestershire`, `Kent`. Filter a county by THIS: `e.countyName = 'Kent'`. There is no county called England: a question about England, all of Domesday or the whole country takes NO county filter."
+    section: "When the entry is in a part of a county's text other than its fiefs: `Lincolnshire claims`, `Yorkshire claims`, `Yorkshire summary`, `Huntingdonshire claims`, `Bruce fief`."
+    kind:
+      description: "What the entry is. `manor` for a rural holding (most entries); `urban` for a borough section; `fief heading`, `rubric`, `index of landholders`, `customs`, `Wales`."
+    holding:
+      description: "The status Hull gave the place the entry is about: `manor`, `outlier` (a berewick), `jurisdiction` (a soke), `land` (a non-manorial unit), `dependency`, `borough`, `unclassified`."
+    places: "The places the entry is about, comma-separated, e.g. `Abberley`."
+    folio: "The folio image of Great Domesday the entry is on, e.g. `WOR 9`."
+    households:
+      type: number
+      description: "Total recorded population: the sum of every class counted (villagers, smallholders, slaves, freemen, priests, …). Domesday counts heads of household, not people."
+    villagers:
+      type: number
+      description: "Villagers (villani): the richest peasants."
+    smallholders:
+      type: number
+      description: "Smallholders (bordarii)."
+    slaves:
+      type: number
+      description: "Slaves (servi), male and female."
+    cottagers:
+      type: number
+      description: "Cottagers (cotarii)."
+    freemen:
+      type: number
+      description: "Freemen — Phillimore's word for sokemen (sochemanni), common in the Danelaw."
+    freeMen:
+      type: number
+      description: "Free men (liberi homines). Distinct from freemen (sokemen)."
+    priests:
+      type: number
+      description: "Priests."
+    burgesses:
+      type: number
+      description: "Burgesses, townspeople."
+    ploughmen:
+      type: number
+      description: "Ploughmen (bovarii)."
+    riders:
+      type: number
+      description: "Riders (radmen)."
+    menAtArms:
+      type: number
+      description: "Men-at-arms."
+    frenchmen:
+      type: number
+      description: "Frenchmen."
+    englishmen:
+      type: number
+      description: "Englishmen."
+    smiths:
+      type: number
+      description: "Smiths."
+    swineherds:
+      type: number
+      description: "Swineherds."
+    beekeepers:
+      type: number
+      description: "Beekeepers."
+    fishermen:
+      type: number
+      description: "Fishermen."
+    ploughlands:
+      type: number
+      description: "Land for this many ploughs — the arable's capacity, not the teams actually there."
+    lordsTeams:
+      type: number
+      description: "Plough teams in lordship (the lord's demesne)."
+    mensTeams:
+      type: number
+      description: "Plough teams of the villagers and other peasants."
+    ploughTeams:
+      type: number
+      description: "lordsTeams + mensTeams."
+    geldUnits:
+      type: number
+      description: "Tax assessment in geld units: hides (most of England), carucates (the Danelaw) or sulungs (Kent), each counted as one unit, with their fractions."
+    value1066:
+      type: number
+      description: "What the manor was WORTH a year to its lord before the Conquest (TRE), in PENCE — the answer to \"what was X worth in 1066\"."
+    valueLater:
+      type: number
+      description: "What the manor was WORTH a year when the 1086 holder acquired it, in PENCE."
+    value1086:
+      type: number
+      description: "What the manor was WORTH a year to its lord in 1086, in PENCE — the answer to \"what was X worth\", \"how valuable\", \"how rich\"."
+    mills:
+      type: number
+      description: "Mills (a half mill is a share of one)."
+    meadowAcres:
+      type: number
+      description: "Meadow, in acres."
+    woodlandPigs:
+      type: number
+      description: "Woodland, measured by the pigs it would feed."
+    fisheries:
+      type: number
+      description: "Fisheries."
+    saltHouses:
+      type: number
+      description: "Salt-houses."
+    sheep:
+      type: number
+      description: "Sheep (counted mostly in the south-west, from Exeter Domesday)."
+    cattle:
+      type: number
+      description: "Cattle."
+    goats:
+      type: number
+      description: "Goats."
+    hasChurch:
+      type: boolean
+      description: "The entry mentions a church."
+    hasCastle:
+      type: boolean
+      description: "The entry mentions a castle."
+    hasMarket:
+      type: boolean
+      description: "The entry mentions a market."
+    isWaste:
+      type: boolean
+      description: "The entry calls land waste — devastated or uncultivated, as after the Harrying of the North."
