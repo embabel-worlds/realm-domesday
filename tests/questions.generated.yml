@@ -220,532 +220,604 @@ answerable:
       column: value1066Pence
       args:
         county: DOR
-- question: How many cottagers were there in Gloucestershire?
+- question: How many cottagers were there in Essex?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: cottagers
+      args:
+        county: ESS
+- question: How many priests were recorded in essex?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: priests
+      args:
+        county: ESS
+- question: How many acres of meadow were there in Essex?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: meadowAcres
+      args:
+        county: ESS
+- question: How much woodland, in pigs, did Gloucestershire have?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: woodlandPigs
       args:
         county: GLS
-- question: How many priests were recorded in gloucestershire?
+- question: How many castles were there in gloucestershire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: priests
+      column: castleEntries
       args:
         county: GLS
-- question: How many acres of meadow were there in Gloucestershire?
+- question: How many villagers were there in Gloucestershire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: meadowAcres
+      column: villagers
       args:
         county: GLS
-- question: How much woodland, in pigs, did Hampshire have?
-  category: county-count
-  expect:
-    matchesView:
-      name: DomesdayCountyFigures
-      column: woodlandPigs
-      args:
-        county: HAM
-- question: How many castles were there in hampshire?
-  category: county-count
-  expect:
-    matchesView:
-      name: DomesdayCountyFigures
-      column: castleEntries
-      args:
-        county: HAM
-- question: How many villagers were there in Hampshire?
-  category: county-count
-  expect:
-    matchesView:
-      name: DomesdayCountyFigures
-      column: villagers
-      args:
-        county: HAM
-- question: how many smallholders did Herefordshire have
+- question: how many smallholders did Hampshire have
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: smallholders
       args:
-        county: HEF
-- question: How many slaves were there in herefordshire?
+        county: HAM
+- question: How many slaves were there in hampshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: slaves
       args:
-        county: HEF
-- question: how many households in Herefordshire
+        county: HAM
+- question: how many households in Hampshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: households
       args:
-        county: HEF
-- question: How many mills were there in Hertfordshire?
+        county: HAM
+- question: How many mills were there in Herefordshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: mills
       args:
-        county: HRT
-- question: how many ploughs in hertfordshire
+        county: HEF
+- question: how many ploughs in herefordshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: ploughTeams
       args:
-        county: HRT
-- question: How many churches were recorded in Hertfordshire?
+        county: HEF
+- question: How many churches were recorded in Herefordshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: churchEntries
       args:
-        county: HRT
-- question: how much waste was there in Huntingdonshire
+        county: HEF
+- question: how much waste was there in Hertfordshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: *id001
       args:
-        county: HUN
-- question: How many Domesday entries are there for huntingdonshire?
+        county: HRT
+- question: How many Domesday entries are there for hertfordshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: entries
       args:
-        county: HUN
-- question: total annual value of Huntingdonshire in 1086
+        county: HRT
+- question: total annual value of Hertfordshire in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1086Pence
       args:
-        county: HUN
-- question: What was Kent worth before the Conquest?
+        county: HRT
+- question: What was Huntingdonshire worth before the Conquest?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1066Pence
       args:
-        county: KEN
-- question: How many cottagers were there in kent?
+        county: HUN
+- question: How many cottagers were there in huntingdonshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: cottagers
       args:
-        county: KEN
-- question: How many priests were recorded in Kent?
+        county: HUN
+- question: How many priests were recorded in Huntingdonshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: priests
       args:
-        county: KEN
-- question: How many acres of meadow were there in Leicestershire?
+        county: HUN
+- question: How many acres of meadow were there in Kent?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: meadowAcres
       args:
-        county: LEC
-- question: How much woodland, in pigs, did leicestershire have?
+        county: KEN
+- question: How much woodland, in pigs, did kent have?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: woodlandPigs
       args:
-        county: LEC
-- question: How many castles were there in Leicestershire?
+        county: KEN
+- question: How many castles were there in Kent?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: castleEntries
       args:
-        county: LEC
-- question: how many villagers in Lincolnshire in 1086
+        county: KEN
+- question: how many villagers in Leicestershire in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: villagers
       args:
-        county: LIN
-- question: how many smallholders did lincolnshire have
+        county: LEC
+- question: how many smallholders did leicestershire have
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: smallholders
       args:
-        county: LIN
-- question: How many slaves were there in Lincolnshire?
+        county: LEC
+- question: How many slaves were there in Leicestershire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: slaves
       args:
-        county: LIN
-- question: how many households in Middlesex
+        county: LEC
+- question: how many households in Lincolnshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: households
       args:
-        county: MDX
-- question: How many mills were there in middlesex?
+        county: LIN
+- question: How many mills were there in lincolnshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: mills
       args:
-        county: MDX
-- question: how many ploughs in Middlesex
+        county: LIN
+- question: how many ploughs in Lincolnshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: ploughTeams
       args:
-        county: MDX
-- question: How many churches were recorded in Northamptonshire?
+        county: LIN
+- question: How many churches were recorded in Middlesex?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: churchEntries
       args:
-        county: NTH
-- question: how much waste was there in northamptonshire
+        county: MDX
+- question: how much waste was there in middlesex
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: *id001
       args:
-        county: NTH
-- question: How many Domesday entries are there for Northamptonshire?
+        county: MDX
+- question: How many Domesday entries are there for Middlesex?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: entries
       args:
-        county: NTH
-- question: total annual value of Nottinghamshire in 1086
+        county: MDX
+- question: total annual value of Norfolk in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1086Pence
       args:
-        county: NTT
-- question: What was nottinghamshire worth before the Conquest?
+        county: NFK
+- question: What was norfolk worth before the Conquest?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1066Pence
       args:
-        county: NTT
-- question: How many cottagers were there in Nottinghamshire?
+        county: NFK
+- question: How many cottagers were there in Norfolk?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: cottagers
       args:
-        county: NTT
-- question: How many priests were recorded in Oxfordshire?
+        county: NFK
+- question: How many priests were recorded in Northamptonshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: priests
       args:
-        county: OXF
-- question: How many acres of meadow were there in oxfordshire?
+        county: NTH
+- question: How many acres of meadow were there in northamptonshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: meadowAcres
       args:
-        county: OXF
-- question: How much woodland, in pigs, did Oxfordshire have?
+        county: NTH
+- question: How much woodland, in pigs, did Northamptonshire have?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: woodlandPigs
       args:
-        county: OXF
-- question: How many castles were there in Rutland?
+        county: NTH
+- question: How many castles were there in Nottinghamshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: castleEntries
       args:
-        county: RUT
-- question: how many villagers in rutland in 1086
+        county: NTT
+- question: how many villagers in nottinghamshire in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: villagers
       args:
-        county: RUT
-- question: how many smallholders did Rutland have
+        county: NTT
+- question: how many smallholders did Nottinghamshire have
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: smallholders
       args:
-        county: RUT
-- question: how many slaves did Domesday record in Shropshire
+        county: NTT
+- question: how many slaves did Domesday record in Oxfordshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: slaves
       args:
-        county: SHR
-- question: how many households in shropshire
+        county: OXF
+- question: how many households in oxfordshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: households
       args:
-        county: SHR
-- question: How many mills were there in Shropshire?
+        county: OXF
+- question: How many mills were there in Oxfordshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: mills
       args:
-        county: SHR
-- question: how many ploughs in Somerset
+        county: OXF
+- question: how many ploughs in Rutland
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: ploughTeams
       args:
-        county: SOM
-- question: How many churches were recorded in somerset?
+        county: RUT
+- question: How many churches were recorded in rutland?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: churchEntries
       args:
-        county: SOM
-- question: how much waste was there in Somerset
+        county: RUT
+- question: how much waste was there in Rutland
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: *id001
       args:
-        county: SOM
-- question: How many Domesday entries are there for Staffordshire?
+        county: RUT
+- question: How many Domesday entries are there for Shropshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: entries
       args:
-        county: STS
-- question: total annual value of staffordshire in 1086
+        county: SHR
+- question: total annual value of shropshire in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1086Pence
       args:
-        county: STS
-- question: What was Staffordshire worth before the Conquest?
+        county: SHR
+- question: What was Shropshire worth before the Conquest?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1066Pence
       args:
-        county: STS
-- question: How many cottagers were there in Surrey?
+        county: SHR
+- question: How many cottagers were there in Somerset?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: cottagers
       args:
-        county: SUR
-- question: How many priests were recorded in surrey?
+        county: SOM
+- question: How many priests were recorded in somerset?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: priests
       args:
-        county: SUR
-- question: How many acres of meadow were there in Surrey?
+        county: SOM
+- question: How many acres of meadow were there in Somerset?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: meadowAcres
       args:
-        county: SUR
-- question: How much woodland, in pigs, did Sussex have?
+        county: SOM
+- question: How much woodland, in pigs, did Staffordshire have?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: woodlandPigs
       args:
-        county: SUS
-- question: How many castles were there in sussex?
+        county: STS
+- question: How many castles were there in staffordshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: castleEntries
       args:
-        county: SUS
-- question: how many villagers in Sussex in 1086
+        county: STS
+- question: how many villagers in Staffordshire in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: villagers
       args:
-        county: SUS
-- question: how many smallholders did Warwickshire have
+        county: STS
+- question: how many smallholders did Suffolk have
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: smallholders
       args:
-        county: WAR
-- question: how many slaves did Domesday record in warwickshire
+        county: SUF
+- question: how many slaves did Domesday record in suffolk
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: slaves
       args:
-        county: WAR
-- question: how many households in Warwickshire
+        county: SUF
+- question: how many households in Suffolk
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: households
       args:
-        county: WAR
-- question: How many mills were there in Wiltshire?
+        county: SUF
+- question: How many mills were there in Surrey?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: mills
       args:
-        county: WIL
-- question: how many ploughs in wiltshire
+        county: SUR
+- question: how many ploughs in surrey
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: ploughTeams
       args:
-        county: WIL
-- question: How many churches were recorded in Wiltshire?
+        county: SUR
+- question: How many churches were recorded in Surrey?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: churchEntries
       args:
-        county: WIL
-- question: how much waste was there in Worcestershire
+        county: SUR
+- question: how much waste was there in Sussex
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: *id001
       args:
-        county: WOR
-- question: How many Domesday entries are there for worcestershire?
+        county: SUS
+- question: How many Domesday entries are there for sussex?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: entries
       args:
-        county: WOR
-- question: total annual value of Worcestershire in 1086
+        county: SUS
+- question: total annual value of Sussex in 1086
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1086Pence
       args:
-        county: WOR
-- question: What was Yorkshire worth before the Conquest?
+        county: SUS
+- question: What was Warwickshire worth before the Conquest?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
       column: value1066Pence
+      args:
+        county: WAR
+- question: How many cottagers were there in warwickshire?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: cottagers
+      args:
+        county: WAR
+- question: How many priests were recorded in Warwickshire?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: priests
+      args:
+        county: WAR
+- question: How many acres of meadow were there in Wiltshire?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: meadowAcres
+      args:
+        county: WIL
+- question: How much woodland, in pigs, did wiltshire have?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: woodlandPigs
+      args:
+        county: WIL
+- question: How many castles were there in Wiltshire?
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: castleEntries
+      args:
+        county: WIL
+- question: Number of villagers recorded in Worcestershire
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: villagers
+      args:
+        county: WOR
+- question: how many smallholders did worcestershire have
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: smallholders
+      args:
+        county: WOR
+- question: how many slaves did Domesday record in Worcestershire
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: slaves
+      args:
+        county: WOR
+- question: how many households in Yorkshire
+  category: county-count
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: households
       args:
         county: YKS
-- question: How many cottagers were there in yorkshire?
+- question: How many mills were there in yorkshire?
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: cottagers
+      column: mills
       args:
         county: YKS
-- question: How many priests were recorded in Yorkshire?
+- question: how many ploughs in Yorkshire
   category: county-count
   expect:
     matchesView:
       name: DomesdayCountyFigures
-      column: priests
+      column: ploughTeams
       args:
         county: YKS
 - question: How many people were there in England in total?
@@ -1232,14 +1304,30 @@ answerable:
       column: villagers
       args:
         placeId: '44796'
-- question: Who held Folkestone before 1066?
+- question: Who held Desning before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: lords1066
       args:
-        placeId: '25301'
+        placeId: '20161'
+- question: How many villagers lived at Desning?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '20161'
+- question: Who was the tenant-in-chief of Desning in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '20161'
 - question: How many villagers lived at Folkestone?
   category: place
   expect:
@@ -1256,14 +1344,14 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '25301'
-- question: How many villagers lived at Singleton?
+- question: What was Folkestone worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: villagers
+      column: value1066Pence
       args:
-        placeId: '56226'
+        placeId: '25301'
 - question: Who was the tenant-in-chief of Singleton in 1086?
   category: place
   expect:
@@ -1280,14 +1368,14 @@ answerable:
       column: value1066Pence
       args:
         placeId: '56226'
-- question: Who was the tenant-in-chief of Battersea in 1086?
+- question: who owned Singleton in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '5171'
+        placeId: '56226'
 - question: What was Battersea worth before the Conquest?
   category: place
   expect:
@@ -1304,14 +1392,14 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '5171'
-- question: What was Isleworth worth before the Conquest?
+- question: What was Battersea worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1066Pence
+      column: value1086Pence
       args:
-        placeId: '35121'
+        placeId: '5171'
 - question: who owned Isleworth in 1086
   category: place
   expect:
@@ -1328,14 +1416,14 @@ answerable:
       column: value1086Pence
       args:
         placeId: '35121'
-- question: who owned Bloxham in 1086
+- question: Who held Isleworth before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: tenantsInChief
+      column: lords1066
       args:
-        placeId: '7701'
+        placeId: '35121'
 - question: What was Bloxham worth in 1086?
   category: place
   expect:
@@ -1352,14 +1440,14 @@ answerable:
       column: lords1066
       args:
         placeId: '7701'
-- question: What was Aylesbury worth in 1086?
+- question: How many villagers lived at Bloxham?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: villagers
       args:
-        placeId: '3541'
+        placeId: '7701'
 - question: Who held Aylesbury before 1066?
   category: place
   expect:
@@ -1376,22 +1464,38 @@ answerable:
       column: villagers
       args:
         placeId: '3541'
-- question: Who held Frieston before 1066?
+- question: Who was the tenant-in-chief of Aylesbury in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
+      column: tenantsInChief
       args:
-        placeId: '25901'
-- question: How many villagers lived at Frieston?
+        placeId: '3541'
+- question: How many villagers lived at Thaxted?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: villagers
       args:
-        placeId: '25901'
+        placeId: '62071'
+- question: Who was the tenant-in-chief of Thaxted in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '62071'
+- question: What was Thaxted worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '62071'
 - question: Who was the tenant-in-chief of Frieston in 1086?
   category: place
   expect:
@@ -1400,22 +1504,22 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '25901'
-- question: How many villagers lived at Cholsey?
+- question: What was Frieston worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: villagers
+      column: value1066Pence
       args:
-        placeId: '15381'
-- question: Who was the tenant-in-chief of Cholsey in 1086?
+        placeId: '25901'
+- question: who owned Frieston in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '15381'
+        placeId: '25901'
 - question: What was Cholsey worth before the Conquest?
   category: place
   expect:
@@ -1424,22 +1528,22 @@ answerable:
       column: value1066Pence
       args:
         placeId: '15381'
-- question: Who was the tenant-in-chief of Marshfield in 1086?
+- question: who owned Cholsey in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '41686'
-- question: What was Marshfield worth before the Conquest?
+        placeId: '15381'
+- question: What was Cholsey worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1066Pence
+      column: value1086Pence
       args:
-        placeId: '41686'
+        placeId: '15381'
 - question: who owned Marshfield in 1086
   category: place
   expect:
@@ -1448,22 +1552,22 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '41686'
-- question: What was Bromyard worth before the Conquest?
+- question: What was Marshfield worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1066Pence
+      column: value1086Pence
       args:
-        placeId: '10566'
-- question: who owned Bromyard in 1086
+        placeId: '41686'
+- question: Who held Marshfield before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: tenantsInChief
+      column: lords1066
       args:
-        placeId: '10566'
+        placeId: '41686'
 - question: What was Bromyard worth in 1086?
   category: place
   expect:
@@ -1472,7 +1576,55 @@ answerable:
       column: value1086Pence
       args:
         placeId: '10566'
-- question: who owned Kegworth in 1086
+- question: Who held Bromyard before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '10566'
+- question: How many villagers lived at Bromyard?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '10566'
+- question: Who held Bawburgh before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '5241'
+- question: How many villagers lived at Bawburgh?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '5241'
+- question: Who was the tenant-in-chief of Bawburgh in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '5241'
+- question: How many villagers lived at Kegworth?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '35326'
+- question: Who was the tenant-in-chief of Kegworth in 1086?
   category: place
   expect:
     matchesView:
@@ -1480,63 +1632,47 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '35326'
-- question: What was Kegworth worth in 1086?
+- question: What was Kegworth worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: value1066Pence
       args:
         placeId: '35326'
-- question: Who held Kegworth before 1066?
+- question: Who was the tenant-in-chief of Parwich in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '35326'
-- question: What was Parwich worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: tenantsInChief
       args:
         placeId: '48266'
-- question: Who held Parwich before 1066?
+- question: What was Parwich worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
+      column: value1066Pence
       args:
         placeId: '48266'
-- question: How many villagers lived at Parwich?
+- question: who owned Parwich in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: villagers
+      column: tenantsInChief
       args:
         placeId: '48266'
-- question: Who held Brixworth before 1066?
+- question: What was Brixworth worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
+      column: value1066Pence
       args:
         placeId: '10146'
-- question: How many villagers lived at Brixworth?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '10146'
-- question: Who was the tenant-in-chief of Brixworth in 1086?
+- question: who owned Brixworth in 1086
   category: place
   expect:
     matchesView:
@@ -1544,79 +1680,95 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '10146'
-- question: How many villagers lived at Paxton?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '48391'
-- question: Who was the tenant-in-chief of Paxton in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '48391'
-- question: What was Paxton worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '48391'
-- question: Who was the tenant-in-chief of Cranborne in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '18331'
-- question: What was Cranborne worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '18331'
-- question: who owned Cranborne in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '18331'
-- question: What was Liskeard worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '39421'
-- question: who owned Liskeard in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '39421'
-- question: What was Liskeard worth in 1086?
+- question: What was Brixworth worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: value1086Pence
       args:
+        placeId: '10146'
+- question: who owned Paxton in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '48391'
+- question: What was Paxton worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '48391'
+- question: Who held Paxton before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '48391'
+- question: What was Cranborne worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '18331'
+- question: Who held Cranborne before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '18331'
+- question: How many villagers lived at Cranborne?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '18331'
+- question: Who held Liskeard before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
         placeId: '39421'
-- question: who owned Chisledon in 1086
+- question: How many villagers lived at Liskeard?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '39421'
+- question: Who was the tenant-in-chief of Liskeard in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '39421'
+- question: How many villagers lived at Chisledon?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '15286'
+- question: Who was the tenant-in-chief of Chisledon in 1086?
   category: place
   expect:
     matchesView:
@@ -1624,63 +1776,47 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '15286'
-- question: What was Chisledon worth in 1086?
+- question: What was Chisledon worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: value1066Pence
       args:
         placeId: '15286'
-- question: Who held Chisledon before 1066?
+- question: Who was the tenant-in-chief of Bishopsteignton in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '15286'
-- question: What was Bishopsteignton worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: tenantsInChief
       args:
         placeId: '7246'
-- question: Who held Bishopsteignton before 1066?
+- question: What was Bishopsteignton worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
+      column: value1066Pence
       args:
         placeId: '7246'
-- question: How many villagers lived at Bishopsteignton?
+- question: who owned Bishopsteignton in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: villagers
+      column: tenantsInChief
       args:
         placeId: '7246'
-- question: Who held Hanstead before 1066?
+- question: What was Hanstead worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
+      column: value1066Pence
       args:
         placeId: '29241'
-- question: How many villagers lived at Hanstead?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '29241'
-- question: Who was the tenant-in-chief of Hanstead in 1086?
+- question: who owned Hanstead in 1086
   category: place
   expect:
     matchesView:
@@ -1688,126 +1824,62 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '29241'
-- question: How many villagers lived at Dunham?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '21406'
-- question: Who was the tenant-in-chief of Dunham in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '21406'
-- question: What was Dunham worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '21406'
-- question: Who was the tenant-in-chief of Ellesmere in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '22971'
-- question: What was Ellesmere worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '22971'
-- question: who owned Ellesmere in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '22971'
-- question: What was Whichford worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '69466'
-- question: who owned Whichford in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '69466'
-- question: What was Whichford worth in 1086?
+- question: What was Hanstead worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: value1086Pence
       args:
-        placeId: '69466'
-- question: who owned Bottisham in 1086
+        placeId: '29241'
+- question: who owned Dunham in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '8381'
-- question: What was Bottisham worth in 1086?
+        placeId: '21406'
+- question: What was Dunham worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: value1086Pence
       args:
-        placeId: '8381'
-- question: Who held Bottisham before 1066?
+        placeId: '21406'
+- question: Who held Dunham before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: lords1066
       args:
-        placeId: '8381'
-- question: What was Wedmore worth in 1086?
+        placeId: '21406'
+- question: What was Ellesmere worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: value1086Pence
       args:
-        placeId: '68011'
-- question: Who held Wedmore before 1066?
+        placeId: '22971'
+- question: Who held Ellesmere before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: lords1066
       args:
-        placeId: '68011'
-- question: How many villagers lived at Wedmore?
+        placeId: '22971'
+- question: How many villagers lived at Ellesmere?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: villagers
       args:
-        placeId: '68011'
+        placeId: '22971'
 - question: How much was Bishop Odo of Bayeux's land worth in 1086?
   category: person
   expect:
@@ -1842,7 +1914,7 @@ answerable:
       column: value1086Pence
       args:
         name: Count Alan (of Brittany)
-- question: How many manors did Earl Hugh of Chester hold in 1086?
+- question: How many manors did William of Warenne de Warenne hold in 1086?
   category: person
   expect:
     matchesView:
@@ -1851,24 +1923,24 @@ answerable:
       - entries
       - manors
       args:
-        name: Earl Hugh (of Chester)
-- question: In how many counties did Bishop Geoffrey of Coutances of St Lô hold land as a tenant-in-chief?
+        name: William of Warenne/de Warenne
+- question: In how many counties did Earl Hugh of Chester hold land as a tenant-in-chief?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: countyCount
       args:
-        name: Bishop Geoffrey/of Coutances/of St Lô
-- question: How much was William of Warenne de Warenne's land worth in 1086?
+        name: Earl Hugh (of Chester)
+- question: How much was Count Eustace of Boulogne's land worth in 1086?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: value1086Pence
       args:
-        name: William of Warenne/de Warenne
-- question: How many manors did Countess Judith hold in 1086?
+        name: Count Eustace (of Boulogne)
+- question: How many manors did Richard son of Count Gilbert of Clare of Tonbridge hold in 1086?
   category: person
   expect:
     matchesView:
@@ -1877,7 +1949,23 @@ answerable:
       - entries
       - manors
       args:
-        name: Countess Judith
+        name: Richard son of (Count) Gilbert/of Clare/of Tonbridge
+- question: In how many counties did Geoffrey de Mandeville hold land as a tenant-in-chief?
+  category: person
+  expect:
+    matchesView:
+      name: DomesdayPersonSummary
+      column: countyCount
+      args:
+        name: Geoffrey de Mandeville
+- question: How much was Bishop Geoffrey of Coutances of St Lô's land worth in 1086?
+  category: person
+  expect:
+    matchesView:
+      name: DomesdayPersonSummary
+      column: value1086Pence
+      args:
+        name: Bishop Geoffrey/of Coutances/of St Lô
 - question: Who took over the lands of Earl Harold after the Conquest?
   category: conquest
   expect:
@@ -1899,6 +1987,14 @@ answerable:
   expect:
     minRows: 2
 - question: Who took over the lands of Earl Algar after the Conquest?
+  category: conquest
+  expect:
+    minRows: 2
+- question: Who took over the lands of Earl Harold after the Conquest?
+  category: conquest
+  expect:
+    minRows: 2
+- question: Who took over the lands of Aelfric after the Conquest?
   category: conquest
   expect:
     minRows: 2
@@ -2057,36 +2153,9 @@ answerable:
   expect:
     minRows: 3
 unanswerable:
-- question: Were there more slaves before or after the Conquest?
-  repeat: 3
-  noFigure: note
-- question: Did the number of villagers fall after 1066?
-  repeat: 3
-  noFigure: note
 - question: Was the population of England bigger in 1066 or in 1086?
   repeat: 3
   noFigure: note
-- question: How many slaves were there in 1066?
-  repeat: 3
-  noFigure: true
-- question: How many villagers were there in Essex?
-  repeat: 3
-  noFigure: true
-- question: What was the population of Norfolk in 1086?
-  repeat: 3
-  noFigure: true
-- question: How many mills were there in Suffolk?
-  repeat: 3
-  noFigure: true
-- question: What was Essex worth in 1086?
-  repeat: 3
-  noFigure: true
-- question: How many churches were there in Norfolk?
-  repeat: 3
-  noFigure: true
-- question: What is the modern population of Abberley?
-  repeat: 3
-  noFigure: true
 - question: How many people live in Worcestershire today?
   repeat: 3
   noFigure: true
@@ -2094,9 +2163,6 @@ unanswerable:
   repeat: 3
   noFigure: false
 - question: Name the villagers who lived at Abberley
-  repeat: 3
-  noFigure: false
-- question: Quote the Domesday text for Abberley
   repeat: 3
   noFigure: false
 - question: Who held Abberley in 1200?
@@ -2141,6 +2207,3 @@ unanswerable:
 - question: What was the weather in 1086?
   repeat: 3
   noFigure: false
-- question: How many sheep were there in Essex?
-  repeat: 3
-  noFigure: true

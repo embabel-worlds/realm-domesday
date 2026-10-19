@@ -62,7 +62,9 @@ await shot(page, '03-place');
 
 // a person, from the place
 await page.click('#drawer-body a[href="#/person/Ralph%20of%20Tosny"]');
-await page.waitForFunction(() => document.querySelector('#drawer-body table'), null, { timeout: 15000 });
+// The place drawer already holds tables, so wait for the PERSON's drawer, not for any table.
+await page.waitForFunction(() => (document.querySelector('#drawer-head h2')?.textContent ?? '') === 'Ralph of Tosny'
+  && /Tenant-in-chief, 1086/.test(document.querySelector('#drawer-body')?.textContent ?? ''), null, { timeout: 15000 }).catch(() => {});
 const personText = await page.textContent('#drawer-body');
 check(/Tenant-in-chief, 1086/.test(personText), 'Ralph of Tosny lists his holdings as tenant-in-chief');
 await shot(page, '04-person');
@@ -70,10 +72,36 @@ await shot(page, '04-person');
 // an entry in full
 await page.goto(`${url}#/entry/8146`);
 await page.waitForFunction(() => (document.querySelector('#drawer-head h2')?.textContent ?? '').includes('15,8'), null, { timeout: 15000 });
-check((await page.textContent('#drawer-body')).includes('Lord in 1066'), 'entry detail lists people by role');
+const entryBody = await page.textContent('#drawer-body');
+check(entryBody.includes('Lord in 1066'), 'entry detail lists people by role');
+check(/What it says[\s\S]*Ralph of Tosny holds ABBERLEY|What it says[\s\S]*ABBERLEY/.test(entryBody), 'entry detail shows what Abberley\'s entry says');
+await page.click('#edition-toggle');
+check(/\[=|\?/.test(await page.textContent('#said')), 'the toggle shows Hull\'s edition with its apparatus');
+
+// then and now: the place drawer sets 1086 households beside 2021's
+await page.goto(`${url}#/place/1`);
+await page.waitForFunction(() => /Households, 2021/.test(document.querySelector('#place-now')?.textContent ?? ''), null, { timeout: 20000 }).catch(() => {});
+const nowText = await page.textContent('#place-now');
+check(/Households, 1086\s*32/.test(nowText) && /288/.test(nowText), 'Abberley: 32 households in 1086 beside 288 in 2021');
+
+// a person with a checked Wikipedia article
+await page.goto(`${url}#/person/${encodeURIComponent('Bishop Odo/of Bayeux')}`);
+await page.waitForFunction(() => /Odo of Bayeux/.test(document.querySelector('#person-wiki')?.textContent ?? ''), null, { timeout: 30000 }).catch(() => {});
+check(/Odo of Bayeux[\s\S]*Bayeux Tapestry/.test(await page.textContent('#person-wiki')), 'Odo has his checked Wikipedia article');
+await shot(page, '04b-person-wikipedia');
+
+// the text: an exact word is found, counted by county
+await page.goto(`${url}#/tab/text`);
+await page.fill('#text-q', 'eels');
+await page.click('#text-form button[type=submit]');
+await page.waitForSelector('#text-results .said-item', { timeout: 30000 }).catch(() => {});
+check((await page.$$('#text-results .said-item')).length >= 50, 'the text tab finds the entries that mention eels');
+check((await page.textContent('#text-where')).includes('Cambridgeshire'), 'eels are counted by county, Cambridgeshire among them');
+await shot(page, '08-text');
 
 // the tabs render rows, not their failure state
-for (const [tab, sel, min] of [['counties', '#counties tr.click', 31], ['conquest', '#tic1086 li', 10], ['wealth', '#waste li', 10]]) {
+for (const [tab, sel, min] of [['counties', '#counties tr.click', 31], ['conquest', '#tic1086 li', 10], ['wealth', '#waste li', 10],
+  ['studies', '#devastation li', 10], ['studies', '#whoheld .stack', 25], ['studies', '#antecessors tr', 10], ['studies', '#growth tr', 10]]) {
   await page.goto(`${url}#/tab/${tab}`);
   await page.waitForSelector(sel, { timeout: 20000 });
   const rows = (await page.$$(sel)).length;
@@ -89,8 +117,9 @@ await page.goto(`${url}#/county/YKS`);
 await page.waitForSelector('#drawer-body .tiles', { timeout: 20000 });
 check((await page.textContent('#drawer-body')).includes('Hundreds'), 'Yorkshire opens with its hundreds');
 await page.goto(`${url}#/county/ESS`);
-await page.waitForSelector('#drawer-body .empty', { timeout: 10000 });
-check((await page.textContent('#drawer-body')).includes('Little Domesday'), 'Essex says Little Domesday is not in this edition');
+await page.waitForSelector('#drawer-body .tiles', { timeout: 20000 });
+const essex = await page.textContent('#drawer-body');
+check(essex.includes('Little Domesday') && /read from the translation/.test(essex), 'Essex opens with its figures, and says they are read from the translation');
 
 // near a point on the map
 await page.goto(`${url}#/tab/map`);

@@ -1,0 +1,89 @@
+# England today, beside Domesday — the parishes and neighbourhoods Domesday places lie in now, with
+# the 2021 census and the 2025 indices of deprivation. Seeded from reference/00-modern-*.yml, which
+# scripts/build_crosswalk.py builds from ONS, OS and MHCLG open data (OGL v3.0; see DATA-LICENSE.md).
+#
+#   DomesdayPlace ─NOW_IN─▶ ModernParish          DomesdayPlace ─NOW_IN_NEIGHBOURHOOD─▶ ModernNeighbourhood
+#
+# A place's link is a POINT test: the centre of its 1 km Domesday grid square, inside today's
+# boundary. A parish often holds several Domesday vills (sum them before comparing), and a vill near a
+# boundary can fall in its neighbour. Compare households with households: Domesday counts heads of
+# household in 1086, the census households in 2021 — never Domesday households with residents.
+
+- name: ModernParish
+  description: "A civil parish today (December 2022 boundaries), or an unparished area of a town, that one or more Domesday places lie in, with its Census 2021 figures. Reached from DomesdayPlace by NOW_IN. Unparished areas (codes beginning E43) and parishes under 50 residents have no census figures here. THE thing to compare a Domesday vill with: households2021 beside the vill's 1086 households."
+  userAnchor: false
+  examples:
+    # STEERING — households today are households2021, NEVER usualResidents2021 (that is people):
+    - q: "how many households does Exampleton have today"
+      cypher: |
+        MATCH (par:ModernParish) WHERE toLower(par.parishName) = 'exampleton'
+        RETURN par.parishName AS parish, par.households2021 AS households2021
+    # STEERING — growth since 1086 is the parish's 2021 households against the 1086 households of the vills in it,
+    # an entry describing several vills shared equally among them:
+    - q: "which parish has grown the most since Domesday"
+      cypher: |
+        MATCH (e:DomesdayEntry)-[:DESCRIBES]->(x:DomesdayPlace) WHERE e.households IS NOT NULL
+        WITH e, count(x) AS k
+        MATCH (e)-[:DESCRIBES]->(p:DomesdayPlace)-[:NOW_IN]->(par:ModernParish) WHERE par.households2021 IS NOT NULL
+        WITH par, sum(1.0 * e.households / k) AS households1086 WHERE households1086 >= 20
+        RETURN par.parishName AS parish, households1086, par.households2021 AS households2021,
+               round(par.households2021 / households1086) AS timesAsMany
+        ORDER BY timesAsMany DESC LIMIT 1
+  properties:
+    parishCode:
+      identity: true
+      description: "The ONS code, e.g. `E04010283` (Abberley). Identity."
+    parishName: "The parish's name today."
+    ladCode: "The ONS code of its local authority district."
+    ladName: "That district, e.g. `Malvern Hills`."
+    domesdayPlaces:
+      type: int
+      description: "How many Domesday places lie in it."
+    usualResidents2021:
+      type: int
+      description: "Usual residents, Census 2021 (Nomis PP002)."
+    households2021:
+      type: int
+      description: "Households, Census 2021 (Nomis PP001) — the figure to set beside Domesday's households."
+    aged0to15:
+      type: int
+      description: "Residents aged 0–15, 2021."
+    aged16to64:
+      type: int
+      description: "Residents aged 16–64, 2021."
+    aged65plus:
+      type: int
+      description: "Residents aged 65 and over, 2021."
+    areaHectares:
+      type: number
+      description: "Area of the generalised boundary, hectares (approximate)."
+    residentsPerHectare:
+      type: number
+      description: "Usual residents per hectare, 2021."
+
+- name: ModernNeighbourhood
+  description: "A 2021 Lower Layer Super Output Area (about 1,500 people) that a Domesday place lies in, with the English Indices of Deprivation 2025 and its rural-urban class. Reached from DomesdayPlace by NOW_IN_NEIGHBOURHOOD. Decile 1 is the most deprived tenth of England's neighbourhoods, 10 the least. Welsh neighbourhoods have no deprivation figures here (the indices are England's)."
+  userAnchor: false
+  properties:
+    lsoa21Code:
+      identity: true
+      description: "The ONS code, e.g. `E01032223`. Identity."
+    lsoaName: "Its ONS name, e.g. `Malvern Hills 001A`."
+    domesdayPlaces:
+      type: int
+      description: "How many Domesday places lie in it."
+    imd2025Rank:
+      type: int
+      description: "Rank of 33,755 English neighbourhoods on the Index of Multiple Deprivation 2025; 1 is the most deprived."
+    imd2025Decile:
+      type: int
+      description: "IMD 2025 decile: 1 the most deprived tenth, 10 the least."
+    incomeDecile2025:
+      type: int
+      description: "Income-deprivation decile, 2025."
+    employmentDecile2025:
+      type: int
+      description: "Employment-deprivation decile, 2025."
+    ruc21Code: "Rural-Urban Classification 2021 code, e.g. `UN1`."
+    ruc21Name: "Its description, e.g. `Urban: Nearer to a major town or city`."
+    urbanRural: "`Urban` or `Rural`."

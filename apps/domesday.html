@@ -10,7 +10,7 @@
 <script src="/api/v1/apps-runtime/v1/embabel.js"></script>
 <script src="/api/v1/apps-runtime/gateway.js"></script>
 <script type="application/embabel-app+json">
-{"version":1,"name":"domesday","requires":{"lenses":[],"views":["DomesdayCounties","DomesdayMapPlaces","DomesdayPlaceSearch","DomesdayPersonSearch","DomesdayPlaceEntries","DomesdayEntryDetail","DomesdayPersonSummary","DomesdayPersonHoldings","DomesdayCountySummary","DomesdayCountyFigures","DomesdayHundredSummary","DomesdayRichestManors","DomesdayWaste","DomesdayValueChange","DomesdayFeature","DomesdayGreatestLandholders","DomesdayGreatestLords1066","DomesdayConquestTransfers","DomesdayWomenLandholders","DomesdayPlacesNear"],"realms":["realm-domesday"],"namespaces":["kg"]}}
+{"version":1,"name":"domesday","requires":{"lenses":[],"views":["DomesdayAntecessors","DomesdayConquestSurvivors","DomesdayConquestTransfers","DomesdayCounties","DomesdayCountyFigures","DomesdayCountySummary","DomesdayDevastation","DomesdayEntryDetail","DomesdayExtractFromText","DomesdayFateOfEnglishLords","DomesdayFeature","DomesdayFeeScatter","DomesdayGreatestLandholders","DomesdayGreatestLords1066","DomesdayGrowth","DomesdayHundredSummary","DomesdayLostVillages","DomesdayMapPlaces","DomesdayMenOf","DomesdayPersonHoldings","DomesdayPersonSearch","DomesdayPersonSummary","DomesdayPersonWikipedia","DomesdayPlaceEntries","DomesdayPlaceSearch","DomesdayPlaceWikipedia","DomesdayPlacesNear","DomesdayPloughStocking","DomesdayRichThenRichNow","DomesdayRichestManors","DomesdaySearchText","DomesdayTextMentions","DomesdayTextMentionsByCounty","DomesdayThenAndNow","DomesdayValueAnomalies","DomesdayValueChange","DomesdayWaste","DomesdayWhatItSaysAbout","DomesdayWhoHeldTheLand","DomesdayWikipediaMentions","DomesdayWomenBeforeAfter","DomesdayWomenLandholders"],"realms":["realm-domesday"],"namespaces":["kg"]}}
 </script>
 <style>
   /*
@@ -117,6 +117,22 @@
   ol.rank li .bar { grid-column: 2 / 4; margin-top: 2px; }
   .arrow { color: var(--muted); padding: 0 6px; }
 
+  /* the text, Wikipedia, studies */
+  blockquote.said { margin: 6px 0 10px; padding: 8px 12px; border-left: 3px solid var(--rubric); background: var(--vellum-2); font-size: 15px; white-space: pre-wrap; }
+  .said-item { margin-bottom: 10px; }
+  mark { background: color-mix(in srgb, var(--rubric) 22%, transparent); color: inherit; padding: 0 1px; border-radius: 2px; }
+  button.linkish { border: 0; background: none; color: var(--rubric); padding: 0; font: inherit; }
+  .card.soft { background: var(--vellum); border: 1px solid var(--rule); box-shadow: none; padding: 12px 14px; margin: 12px 0; }
+  .wiki img { float: right; max-width: 96px; max-height: 120px; margin: 0 0 6px 10px; border-radius: 4px; }
+  ul.hits { padding-left: 18px; margin: 6px 0; } ul.hits li { margin-bottom: 8px; }
+  .excerpt { font-size: 13px; color: var(--ink-2); }
+  .stack { display: flex; height: 10px; border-radius: 4px; overflow: hidden; gap: 2px; background: var(--vellum-2); }
+  .stack span { display: block; height: 100%; }
+  .legend-row { display: flex; gap: 14px; flex-wrap: wrap; font: 12px var(--sans); color: var(--ink-2); margin-bottom: 8px; }
+  .legend-row i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+  p.big { font-size: 30px; margin: 4px 0; color: var(--ink); }
+  .bar.ref100::after { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--ink-2); }
+
   /* the drawer: a place, an entry, a person, a county */
   .drawer { position: fixed; top: 0; right: 0; bottom: 34px; width: min(560px, 100vw); background: var(--leaf); border-left: 1px solid var(--rule);
     box-shadow: -10px 0 30px rgba(40,25,5,.15); transform: translateX(105%); transition: transform .22s ease; z-index: 40; overflow-y: auto; }
@@ -186,6 +202,8 @@
       <a href="#/tab/counties" data-tab="counties">Counties</a>
       <a href="#/tab/conquest" data-tab="conquest">The Conquest</a>
       <a href="#/tab/wealth" data-tab="wealth">Wealth &amp; waste</a>
+      <a href="#/tab/studies" data-tab="studies">Studies</a>
+      <a href="#/tab/text" data-tab="text">The text</a>
       <a href="#/tab/ask" data-tab="ask">Ask</a>
     </nav>
   </div>
@@ -210,7 +228,7 @@
     </div>
     <aside class="card glance"><h3>England in 1086</h3><div id="glance"><div class="loading">Adding up the counties…</div></div></aside>
     </div>
-    <p class="note">Each dot is a place Domesday names, at the centre of its 1 km grid square. Click a dot to open the place; click anywhere else to see what lay within 8 km. Essex, Norfolk and Suffolk (Little Domesday) are drawn hollow: their places are known, their entries are not in this edition.</p>
+    <p class="note">Each dot is a place Domesday names, at the centre of its 1 km grid square. Click a dot to open the place; click anywhere else to see what lay within 8 km. Essex, Norfolk and Suffolk are Little Domesday, their figures read from the translation.</p>
   </section>
 
   <section class="pane" id="pane-counties">
@@ -249,6 +267,53 @@
     </div>
   </section>
 
+  <section class="pane" id="pane-studies">
+    <h2>Studies</h2>
+    <p class="lede">The questions a historian brings to Domesday, answered across the whole survey. Each says what it counted; several are conclusions the realm's rules draw from the entries — who succeeded whom, whose man a tenant was, how far the devastation reached.</p>
+    <div class="grid2">
+      <div class="card"><h3>How far the devastation reached</h3><p class="note">Hundreds where much of the land lay waste, and the neighbouring hundreds the waste spread into — traced outward, hundred by hundred, from the worst. Share = waste entries ÷ entries in the hundred.</p><div id="devastation"></div></div>
+      <div class="card"><h3>Who held the land, 1086</h3><p class="note">Each county's recorded value by holder. The bishops of Bayeux, Coutances and Lisieux held their English land as barons, not for their churches, so they are shown apart.</p><div id="whoheld"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>Who succeeded whom</h3><p class="note">A Norman tenant-in-chief and the English lord whose land he was given — Domesday's <i>antecessor</i> — where he holds at least half of that lord's entries in a county.</p><div id="antecessors"></div></div>
+      <div class="card"><h3>A lord's men</h3><p class="note">Sub-tenants who held two or more entries of the same tenant-in-chief in a county: the honours and household knights of 1086.</p><div id="menof"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>Who held on through the Conquest</h3><p class="note">Lords of 1066 still holding in 1086 under the same name in the same county. Mostly English; Domesday records no nationality, so Edward the Confessor's Normans count too. A bare name may be two men.</p><div id="survivors"></div></div>
+      <div class="card"><h3>What became of the great English lords</h3><p class="note">Value in 1066 beside what the same name held anywhere in 1086.</p><div id="fate"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>What made a manor valuable</h3><div id="anomalies"></div></div>
+      <div class="card"><h3>Women's land, 1066 and 1086</h3><div id="womenshare"></div><h3 style="margin-top:22px">Was the land fully ploughed?</h3><p class="note">Plough teams at work ÷ ploughlands (land for so many ploughs), over entries giving both. Below 100%: land lay unploughed.</p><div id="stocking"></div></div>
+    </div>
+    <h2 style="margin-top:34px">Then and now</h2>
+    <p class="lede">Each Domesday place sits in a parish and a neighbourhood today. Households are set beside households — Domesday counted heads of household, and so did the 2021 census. Where one entry names several places, its households are shared among them.</p>
+    <div class="grid2">
+      <div class="card"><h3>Grown the most since 1086</h3><div id="growth"></div></div>
+      <div class="card"><h3>Grown the least — or shrunk</h3><p class="note">Some of these are the deserted villages of the later Middle Ages, a parish of a few farms where Domesday counted dozens of households.</p><div id="shrunk"></div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>Lost villages?</h3><p class="note">Places with no Wikidata settlement and no same-named place within 2 km today. Candidates: a renamed place or a surviving farm can look lost.</p><div id="lost"></div></div>
+      <div class="card"><h3>Were the rich places of 1086 the comfortable places of 2025?</h3><div id="richnow"></div></div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>How scattered were the great estates</h3><p class="note">Spread = the typical distance of a landholder's manors from the centre of his estate. A compact earldom on a frontier scores low; a barony granted across many shires scores high.</p><div id="scatter"></div></div>
+  </section>
+
+  <section class="pane" id="pane-text">
+    <h2>What Domesday says</h2>
+    <p class="lede">The words of the survey — the Phillimore translation, as the University of Hull transcribed it — for every county but Yorkshire, which Hull's transcription leaves out. The figures count what the clerks coded; the text keeps everything else.</p>
+    <form class="askbox" id="text-form">
+      <input id="text-q" placeholder="eels, vineyard, burgesses, a town burnt…" autocomplete="off" aria-label="Words to look for">
+      <button class="btn primary" type="submit" data-mode="word">Find the words</button>
+      <button class="btn" type="button" id="text-meaning">Search by meaning</button>
+    </form>
+    <div class="chips" id="text-chips"></div>
+    <div class="grid2">
+      <div class="card"><h3 id="text-head">Entries</h3><div id="text-results"><div class="empty">Type a word, or pick one above. "Find the words" lists every entry that uses them, exactly; "Search by meaning" asks the appliance's model to find the chapters that bear on what you describe, and shows what it read.</div></div></div>
+      <div class="card"><h3>Where</h3><div id="text-where"><div class="empty">Counts by county appear here.</div></div><h3 style="margin-top:20px">Pull it out</h3><p class="note">What the figures do not count, read out of the text by the appliance's model, each with its entry.</p><div class="chips" id="extract-chips"></div><div id="extract"></div></div>
+    </div>
+  </section>
+
   <section class="pane" id="pane-ask">
     <h2>Ask Domesday</h2>
     <p class="lede">Ask in your own words. The appliance writes a query over the Domesday graph and runs it; the query is shown with every answer so you can see what was counted.</p>
@@ -263,45 +328,56 @@
   <section id="how-it-works" class="card">
     <h2>How it works</h2>
     <h3>The data</h3>
-    <p>Everything here is the <b>realm-domesday</b> realm, stored in this world's graph: the Hull Domesday Project's database (Professor J.J.N. Palmer and team, University of Hull; CC BY-NC-SA), converted from the Domesday Explorer's 2002 tables. It does not change, so there is no refresh to wait for.</p>
+    <p>Everything here is the <b>realm-domesday</b> realm, stored in this world's graph:</p>
     <ul>
-      <li><code>DomesdayPlace</code> — 14,776 places, 13,486 of them located from their OS grid reference.</li>
-      <li><code>DomesdayEntry</code> — the 18,174 entries of Great Domesday, each with the figures it states.</li>
-      <li><code>DomesdayPerson</code> — 14,042 names, one record per name per county, as Hull indexes them.</li>
-      <li><code>DomesdayHundred</code>, <code>DomesdayCounty</code> — the hundreds and the 34 counties.</li>
+      <li><b>The figures and people</b>: the Hull Domesday Project's database (Professor J.J.N. Palmer and team, University of Hull; CC BY-NC-SA), converted from the Domesday Explorer's tables. <code>DomesdayEntry</code> — the 18,174 entries of Great Domesday and the 4,397 of Little Domesday (Essex, Norfolk, Suffolk), whose figures are read from the translation; <code>DomesdayPlace</code> — 14,334 places, 13,068 located; <code>DomesdayPerson</code> — 14,042 names, one per name per county; <code>DomesdayHundred</code>, <code>DomesdayCounty</code>.</li>
+      <li><b>The text</b>: Hull's transcription of the Phillimore translation (CC BY-NC-SA 2.0 UK), on every entry but Yorkshire's, which Hull leaves out. An entry shows the reading text; "Hull's edition" shows the apparatus — <code>[= =]</code> fief heading, <code>?M?</code> marginalia, <code>&lt;210c&gt;</code> folio, <code>[* *]</code> an identification, <code>^[ ]^</code> implied meaning, <code>{ }</code> Latin, <code>{{ }}</code> struck out.</li>
+      <li><b>Today</b>: each place's parish and neighbourhood now — <code>ModernParish</code> (Census 2021) and <code>ModernNeighbourhood</code> (Indices of Deprivation 2025), from ONS and MHCLG under the Open Government Licence — found by testing the centre of its grid square against today's boundaries.</li>
+      <li><b>Links</b>: Wikidata ids for 8,913 places and 168 great landholders (matched by hand), and through them Wikipedia, Vision of Britain and the Manorial Documents Register. Wikipedia text is fetched when you open a page, shown with its link (CC BY-SA), and not stored.</li>
     </ul>
     <p>Who held what is an edge from the entry, by role: <code>LORD_1066</code>, <code>TENANT_IN_CHIEF</code> (held of the king in 1086), <code>TENANT_1086</code> (held of a tenant-in-chief), and a dozen rarer roles — Hull's own coding.</p>
-    <p>The figures were parsed from Hull's coding of the Phillimore text. Measured against Open Domesday's figures on 450 manors, they agree to 99% for villagers and smallholders, 98% for mills, meadow and slaves, 94% and 91% for value in 1066 and 1086, 88% for the men's plough teams, 84% for tax and 81% for the lord's plough teams. Every entry shows its Phillimore reference and links to its page in Open Domesday, so any figure can be checked.</p>
+    <p>The figures were parsed from Hull's coding of the Phillimore text. Measured against Open Domesday's figures on 450 manors, they agree to 99% for villagers and smallholders, 98% for mills, meadow and slaves, 94% and 91% for value in 1066 and 1086, 88% for the men's plough teams, 84% for tax and 81% for the lord's plough teams. Every entry shows its Phillimore reference and links to its folio in Open Domesday, so any figure can be checked.</p>
+    <h3>The rules</h3>
+    <p>Some answers are conclusions the realm draws from the entries by rule, each with its threshold stated:</p>
+    <ul>
+      <li><b>Who succeeded whom</b>: a tenant-in-chief holding at least half a 1066 lord's entries in a county.</li>
+      <li><b>A lord's men</b>: a sub-tenant holding two or more entries of one tenant-in-chief.</li>
+      <li><b>Devastation</b>: a hundred 40% waste, or 15% beside a devastated hundred, traced outward.</li>
+      <li><b>Held on through the Conquest</b>: the same name holding in 1066 and 1086 in the same county.</li>
+    </ul>
     <h3>The questions</h3>
     <p>The page asks the world by view name; each view is named Cypher saved in the realm.</p>
     <ul>
-      <li>On load, together: <code>DomesdayCounties</code> (the county list), <code>DomesdayMapPlaces {county}</code> (every located place with its households, value and waste) and <code>DomesdayCountySummary</code> (the "England in 1086" totals beside the map, summed from the same rows the Counties tab shows).</li>
-      <li>Search: <code>DomesdayPlaceSearch {name, limit}</code> and <code>DomesdayPersonSearch {name, limit}</code>, together, as you type.</li>
-      <li>A place: <code>DomesdayPlaceEntries {placeId}</code>; an entry in full: <code>DomesdayEntryDetail {entryId}</code>; nearby: <code>DomesdayPlacesNear {lat, lng, km}</code>.</li>
-      <li>A person: <code>DomesdayPersonSummary {name}</code> and <code>DomesdayPersonHoldings {name}</code>.</li>
-      <li>A county: <code>DomesdayCountyFigures {county}</code>, <code>DomesdayHundredSummary {county}</code>, <code>DomesdayRichestManors {county, kind, limit}</code>, <code>DomesdayWaste {county, limit}</code>; the table: <code>DomesdayCountySummary</code>.</li>
-      <li>The Conquest: <code>DomesdayGreatestLords1066</code>, <code>DomesdayGreatestLandholders</code>, <code>DomesdayConquestTransfers</code>, <code>DomesdayWomenLandholders</code>.</li>
-      <li>Wealth and waste: <code>DomesdayWaste</code>, <code>DomesdayRichestManors</code>, <code>DomesdayValueChange {direction}</code>, <code>DomesdayFeature {feature}</code>.</li>
-      <li>Ask: <code>gateway.kg.ask({question, explain: true})</code>, with the question prefixed "In Domesday Book (1086): " — this world also holds modern places and census figures, and the box means 1086. The appliance's model writes Cypher over the Domesday schema, runs it, and returns the rows with the query, which this page shows.</li>
+      <li>On load: <code>DomesdayCounties</code>, <code>DomesdayMapPlaces {county}</code>, <code>DomesdayCountySummary</code>. Search: <code>DomesdayPlaceSearch</code>, <code>DomesdayPersonSearch</code>.</li>
+      <li>A place: <code>DomesdayPlaceEntries {placeId}</code>, <code>DomesdayThenAndNow {placeId}</code>, <code>DomesdayPlaceWikipedia {placeId}</code>, and on request <code>DomesdayPlaceToday {placeId}</code> (live district figures from realm-uk-streets, when installed) and <code>DomesdayPlacesNear</code>. An entry: <code>DomesdayEntryDetail {entryId}</code>.</li>
+      <li>A person: <code>DomesdayPersonSummary</code>, <code>DomesdayPersonHoldings</code>, <code>DomesdayPersonWikipedia</code>, <code>DomesdayAntecessors</code>, <code>DomesdayMenOf</code>; on request <code>DomesdayWikipediaMentions</code> and <code>DomesdayWhatItSaysAbout</code>.</li>
+      <li>A county: <code>DomesdayCountyFigures</code>, <code>DomesdayHundredSummary</code>, <code>DomesdayRichestManors {county, kind, limit}</code>, <code>DomesdayWaste</code>.</li>
+      <li>The Conquest and Wealth tabs: <code>DomesdayGreatestLords1066</code>, <code>DomesdayGreatestLandholders</code>, <code>DomesdayConquestTransfers</code>, <code>DomesdayWomenLandholders</code>, <code>DomesdayValueChange</code>, <code>DomesdayFeature</code>.</li>
+      <li>Studies: <code>DomesdayDevastation</code>, <code>DomesdayWhoHeldTheLand</code>, <code>DomesdayAntecessors</code>, <code>DomesdayMenOf</code>, <code>DomesdayConquestSurvivors</code>, <code>DomesdayFateOfEnglishLords</code>, <code>DomesdayValueAnomalies</code> (a least-squares fit of value on resources), <code>DomesdayWomenBeforeAfter</code>, <code>DomesdayPloughStocking</code>, <code>DomesdayGrowth</code>, <code>DomesdayLostVillages</code>, <code>DomesdayRichThenRichNow</code> (a correlation), <code>DomesdayFeeScatter</code>.</li>
+      <li>The text: <code>DomesdayTextMentions</code> and <code>DomesdayTextMentionsByCounty</code> (exact, complete); <code>DomesdaySearchText</code> (a judged search over the chapter documents); <code>DomesdayExtractFromText</code>.</li>
+      <li>Ask: <code>gateway.kg.ask({question, explain: true})</code>, with the question prefixed "In Domesday Book (1086): ". The appliance's model writes Cypher over the Domesday schema, runs it, and returns the rows with the query, which this page shows.</li>
     </ul>
     <p>Money is stored in pence (£1 = 20s = 240d) and shown in pounds, shillings and pence. Households are heads of household, not people.</p>
     <h3>When it looks wrong</h3>
     <ul>
       <li>A place with no figures is usually a dependency named inside another manor's entry: open its "named in" entry.</li>
-      <li>Essex, Norfolk and Suffolk show places but no entries — Little Domesday is not in this edition. That is a gap in the source, not "nothing there".</li>
+      <li>Essex, Norfolk and Suffolk are Little Domesday: their figures are read from the translation by a parser (85–100% agreement with Hull's hand-coded figures on most fields, 76–84% for plough teams), not from Hull's coding. Yorkshire has figures but no text.</li>
       <li>A figure missing from an entry means the entry does not state it; it is not zero.</li>
-      <li>One person across England is several records (one per county); the person page gathers them by name, and says how many it gathered.</li>
+      <li>One person across England is several records (one per county); the person page gathers them by name, and a common name may be several men.</li>
+      <li>"Then and now" tests one point, the centre of a 1 km square: a vill near a parish boundary can land in its neighbour, and "possibly lost" is a candidate, not a finding.</li>
+      <li>An account of a person, a search by meaning and a list pulled out of the text are written by the appliance's model from the entries shown with them. Read the entries.</li>
       <li>An answer to a typed question is a query a model wrote. Read the query under it; if it counts the wrong thing, use the views on the other tabs, which are fixed.</li>
     </ul>
     <h3>What made this possible</h3>
     <ul>
-      <li>The page has no backend of its own: it calls the world's saved views by name at load, and the appliance runs them over the graph.</li>
-      <li>"Who replaced whom" is one traversal — entry to its 1066 lord, entry to its 1086 tenant-in-chief — not a join written for this page.</li>
+      <li>The page has no backend of its own: it calls the world's saved views by name, and the appliance runs them over the graph.</li>
+      <li>"Who succeeded whom" and "how far the devastation reached" are rules the realm declares; the appliance evaluates them to a fixpoint when a view asks, so no table of conclusions was ever computed or stored.</li>
+      <li>A place's figures for today come from another realm, joined on the ONS codes both share — no copy of that data is held here.</li>
       <li>The figures came out of a 2002 database whose text store was undocumented; the realm ships the converter and a test that reconciles its figures against Open Domesday.</li>
     </ul>
   </section>
 
-  <footer class="foot"><a href="#how-it-works" id="how-link">How it works</a> · Data: Hull Domesday Project (CC BY-NC-SA) · Folio images: <a href="https://opendomesday.org" target="_blank" rel="noopener noreferrer">Open Domesday</a></footer>
+  <footer class="foot"><a href="#how-it-works" id="how-link">How it works</a> · Data: Hull Domesday Project (CC BY-NC-SA); ONS and MHCLG (OGL); Wikidata (CC0) · Folio images: <a href="https://opendomesday.org" target="_blank" rel="noopener noreferrer">Open Domesday</a></footer>
 </main>
 
 <aside class="drawer" id="drawer" aria-live="polite">
@@ -375,6 +451,19 @@
   function loading(el, text) { el.innerHTML = '<div class="loading">' + escapeHtml(text || 'Reading the survey…') + '</div>'; }
   function failed(el, e) { el.innerHTML = '<div class="err">The world did not answer: ' + escapeHtml(e && e.message || String(e)) + '. Nothing is shown because nothing came back — not because there is nothing.</div>'; }
   function none(el, text) { el.innerHTML = '<div class="empty">' + escapeHtml(text) + '</div>'; }
+  /* Wikipedia search excerpts arrive as HTML. They are parsed inertly (DOMParser runs no script and
+     loads nothing) and rebuilt from text, keeping only the matched-word highlight. */
+  function excerptHtml(html) {
+    var doc = new DOMParser().parseFromString('<p>' + String(html || '') + '</p>', 'text/html');
+    var out = '';
+    doc.body.firstChild.childNodes.forEach(function (node) {
+      var t = escapeHtml(node.textContent || '');
+      out += node.nodeType === 1 && node.classList && node.classList.contains('searchmatch') ? '<mark>' + t + '</mark>' : t;
+    });
+    return out;
+  }
+  function external(url, label) { return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>'; }
+  function wikiUrl(key) { return 'https://en.wikipedia.org/wiki/' + encodeURIComponent(String(key).replace(/ /g, '_')); }
   async function fill(el, name, args, render, emptyText) {
     loading(el);
     try {
@@ -397,7 +486,7 @@
     var m;
     $('how-it-works').classList.toggle('on', h === '#how-it-works');
     if (h === '#how-it-works') { $('how-it-works').scrollIntoView({ behavior: 'smooth' }); return; }
-    if ((m = /^#\/tab\/(map|counties|conquest|wealth|ask)$/.exec(h))) { currentTab = m[1]; showTab(currentTab); closeDrawer(); return; }
+    if ((m = /^#\/tab\/(map|counties|conquest|wealth|studies|text|ask)$/.exec(h))) { currentTab = m[1]; showTab(currentTab); closeDrawer(); return; }
     if ((m = /^#\/place\/(\d{1,7})$/.exec(h))) return openPlace(m[1]);
     if ((m = /^#\/entry\/(\d{1,7})$/.exec(h))) return openEntry(m[1]);
     if ((m = /^#\/county\/([A-Z]{3})$/.exec(h))) return openCounty(m[1]);
@@ -487,10 +576,67 @@
           figures(e) + tags(e) + '</div>';
       });
       if (meta.lat != null) body += '<button class="btn" id="near-btn">What lay within 8 km</button><div id="near" style="margin-top:12px"></div>';
+      body = '<div id="place-now"></div>' + body + '<div id="place-wiki"></div>';
       $('drawer-body').innerHTML = body;
       var nb = $('near-btn');
       if (nb) nb.addEventListener('click', function () { showNear(meta.lat, meta.lng, $('near')); });
+      placeNow(placeId, seq);
+      placeWikipedia(placeId, seq);
     } catch (e) { if (seq === drawerSeq) failed($('drawer-body'), e); }
+  }
+
+  /* 1086 beside today: the stored crosswalk first (census, deprivation), then realm-uk-streets'
+     live figures for the district, which may not be installed and is asked for only on request. */
+  async function placeNow(placeId, seq) {
+    var el = $('place-now');
+    try {
+      var r = (await view('DomesdayThenAndNow', { placeId: String(placeId) }))[0];
+      if (seq !== drawerSeq || !r) return;
+      if (!r.parish2021) { el.innerHTML = r.likelyLost ? '<div class="card soft"><h3>Today</h3><p>No modern parish and no same-named place survives nearby: a candidate lost village. ' + (r.nearestModernPlace ? 'The nearest place-name now is ' + escapeHtml(r.nearestModernPlace) + ', ' + n(r.nearestModernPlaceKm) + ' km away.' : '') + '</p></div>' : ''; return; }
+      var shared = r.mostPlacesInOneEntry > 1 ? ' <span class="note">(one entry names ' + r.mostPlacesInOneEntry + ' places; its households are shared among them)</span>' : '';
+      el.innerHTML = '<div class="card soft"><h3>Then and now</h3><table>' +
+        '<tr><td>Households, 1086</td><td class="r num">' + n(r.households1086) + shared + '</td></tr>' +
+        '<tr><td>Households, 2021 <span class="note">' + escapeHtml(r.parish2021) + ' parish' + (r.domesdayPlacesInParish > 1 ? ', which holds ' + r.domesdayPlacesInParish + ' Domesday places' : '') + '</span></td><td class="r num">' + n(r.households2021) + '</td></tr>' +
+        '<tr><td>Residents, 2021</td><td class="r num">' + n(r.residents2021) + '</td></tr>' +
+        (r.deprivationDecile2025 ? '<tr><td>Deprivation decile, 2025 <span class="note">1 most deprived, 10 least</span></td><td class="r num">' + r.deprivationDecile2025 + '</td></tr>' : '') +
+        (r.settingToday ? '<tr><td>Setting</td><td class="r note">' + escapeHtml(r.settingToday) + '</td></tr>' : '') +
+        '</table>' + (r.likelyLost ? '<p class="note">No same-named place survives within 2 km: possibly a lost village.</p>' : '') +
+        '<button class="btn" id="today-go" type="button">Today\'s figures for ' + escapeHtml(r.district || 'the district') + '</button><div id="today"></div>' +
+        '<p class="note">Households beside households: Domesday counted heads of household, so did the census. Source: ONS, Census 2021 and MHCLG, Indices of Deprivation 2025, OGL.</p></div>';
+      $('today-go').addEventListener('click', function () { placeToday(placeId); });
+    } catch (e) { if (seq === drawerSeq) failed(el, e); }
+  }
+  async function placeToday(placeId) {
+    var el = $('today');
+    loading(el, 'Asking realm-uk-streets…');
+    try {
+      var r = (await view('DomesdayPlaceToday', { placeId: String(placeId) }))[0];
+      if (!r) return none(el, 'No current figures came back for this district.');
+      var all = (r.population || []).find(function (b) { return b.band === 'All Ages'; });
+      el.innerHTML = '<table>' +
+        (r.medianFullTimePay ? '<tr><td>Median full-time pay, ' + r.payYear + '</td><td class="r num">£' + n(Math.round(r.medianFullTimePay)) + '</td></tr>' : '') +
+        (all ? '<tr><td>People in the district, ' + all.year + '</td><td class="r num">' + n(all.persons) + '</td></tr>' : '') +
+        (r.neighbourhoodPersonsPerKm2 ? '<tr><td>People per km² in the neighbourhood</td><td class="r num">' + n(r.neighbourhoodPersonsPerKm2) + '</td></tr>' : '') +
+        (r.unemploymentClaimants ? '<tr><td>Claiming unemployment benefit, ' + escapeHtml(r.claimantMonth) + '</td><td class="r num">' + n(r.unemploymentClaimants) + '</td></tr>' : '') +
+        (r.crimesPer1000 ? '<tr><td>Recorded crimes per 1,000</td><td class="r num">' + n(r.crimesPer1000) + '</td></tr>' : '<tr><td colspan="2" class="note">Crime is published for a community safety partnership this district shares, so no district figure.</td></tr>') +
+        (r.districtDeprivationRank2025 ? '<tr><td>District deprivation rank, 2025 <span class="note">1 most deprived of 296</span></td><td class="r num">' + n(r.districtDeprivationRank2025) + '</td></tr>' : '') +
+        '</table><p class="note">Live from realm-uk-streets, for the whole district, not the village.</p>';
+    } catch (e) {
+      el.innerHTML = '<div class="empty">Today\'s district figures come from realm-uk-streets, which this world does not have installed — or it did not answer (' + escapeHtml(e.message || String(e)) + ').</div>';
+    }
+  }
+  async function placeWikipedia(placeId, seq) {
+    var el = $('place-wiki');
+    try {
+      var w = (await view('DomesdayPlaceWikipedia', { placeId: String(placeId) }))[0];
+      if (seq !== drawerSeq || !w) return;
+      var links = [w.wikidataId ? external('https://www.wikidata.org/wiki/' + w.wikidataId, 'Wikidata') : '',
+        w.visionOfBritainPlaceId ? external('https://www.visionofbritain.org.uk/place/' + w.visionOfBritainPlaceId, 'Vision of Britain') : '',
+        w.manorialDocumentsRegisterId ? external('https://discovery.nationalarchives.gov.uk/details/m/' + w.manorialDocumentsRegisterId, 'Manorial Documents Register') : '',
+        w.openDomesdayPath ? external('https://opendomesday.org/place/' + w.openDomesdayPath + '/', 'Open Domesday') : ''].filter(Boolean).join(' · ');
+      el.innerHTML = (w.article ? '<div class="card soft wiki">' + (w.thumbnail ? '<img alt="" src="' + escapeHtml(w.thumbnail) + '">' : '') + '<h3>' + escapeHtml(w.article) + '</h3><p>' + escapeHtml(w.extract || '') + '</p><p class="note">' + external(w.pageUrl || wikiUrl(w.article), 'Wikipedia') + '. Text CC BY-SA 4.0.</p></div>' : '') +
+        (links ? '<p class="note">Elsewhere: ' + links + '</p>' : '');
+    } catch (e) { if (seq === drawerSeq) el.innerHTML = ''; }
   }
 
   async function showNear(lat, lng, el) {
@@ -522,7 +668,20 @@
       var roles = Object.keys(byRole).sort(function (a, b) { return order.indexOf(a) - order.indexOf(b); });
       if (roles.length) body += '<h3>People</h3><table>' + roles.map(function (r) { return '<tr><td class="note">' + escapeHtml(ROLE[r] || r) + '</td><td>' + byRole[r].map(personLink).join(', ') + '</td></tr>'; }).join('') + '</table>';
       body += '<h3 style="margin-top:16px">Figures</h3>' + figures(e) + tags(e);
+      if (e.text) {
+        body += '<h3 style="margin-top:18px">What it says</h3><blockquote class="said" id="said">' + escapeHtml(e.text) + '</blockquote>' +
+          '<p class="note"><button class="linkish" id="edition-toggle" type="button">Show Hull\'s edition, with its apparatus</button> · Phillimore translation, transcribed by the University of Hull, CC BY-NC-SA. Square brackets are the editor\'s; *** is a figure the scribe left blank.</p>';
+      } else if (/^Yorkshire/.test(e.ref)) {
+        body += '<p class="note" style="margin-top:16px">Hull\'s transcription of the translation leaves out Yorkshire, so this entry has figures but no text here.</p>';
+      }
       $('drawer-body').innerHTML = body;
+      var tog = $('edition-toggle');
+      if (tog) tog.addEventListener('click', function () {
+        var edition = tog.dataset.on !== '1';
+        $('said').textContent = edition ? e.textEdition : e.text;
+        tog.dataset.on = edition ? '1' : '';
+        tog.textContent = edition ? 'Show the reading text' : 'Show Hull\'s edition, with its apparatus';
+      });
     } catch (err) { if (seq === drawerSeq) failed($('drawer-body'), err); }
   }
 
@@ -545,18 +704,82 @@
           return '<tr class="click" data-entry="' + escapeHtml(h.entryId) + '"><td>' + escapeHtml(h.places || '—') + '</td><td class="note">' + escapeHtml(h.ref) + '</td><td class="r num">' + escapeHtml(lsd(r.indexOf('1066') >= 0 ? h.value1066Pence : h.value1086Pence)) + '</td></tr>';
         }).join('') + '</table>';
       });
+      body = '<div id="person-wiki"><div class="loading">Looking for Wikipedia…</div></div>' +
+        '<div class="card soft"><h3>What Domesday says about ' + escapeHtml(name) + '</h3><div id="person-said"><button class="btn" id="person-said-go" type="button">Read the entries and write an account</button> <span class="note">The appliance\'s model reads every entry naming them and writes only from those, citing each.</span></div></div>' +
+        '<div id="person-links"></div>' + body;
       $('drawer-body').innerHTML = body;
       $('drawer-body').querySelectorAll('tr[data-entry]').forEach(function (tr) { tr.addEventListener('click', function () { location.hash = '#/entry/' + tr.dataset.entry; }); });
+      $('person-said-go').addEventListener('click', function () { personAccount(name, seq); });
+      personWikipedia(name, seq);
+      personLinks(name, seq);
     } catch (e) { if (seq === drawerSeq) failed($('drawer-body'), e); }
+  }
+
+  async function personWikipedia(name, seq) {
+    var el = $('person-wiki');
+    try {
+      var rows = await view('DomesdayPersonWikipedia', { name: name });
+      if (seq !== drawerSeq) return;
+      var w = rows[0] || {};
+      var ids = (w.wikidataId ? external('https://www.wikidata.org/wiki/' + w.wikidataId, 'Wikidata') : '') +
+        (w.odnbId ? ' · ' + external('https://doi.org/10.1093/ref:odnb/' + w.odnbId, 'Oxford DNB') : '');
+      if (w.article) {
+        el.innerHTML = '<div class="card soft wiki">' + (w.thumbnail ? '<img alt="" src="' + escapeHtml(w.thumbnail) + '">' : '') +
+          '<h3>' + escapeHtml(w.article) + '</h3><p class="note">' + escapeHtml(w.articleDescription || '') + '</p><p>' + escapeHtml(w.extract || '') + '</p>' +
+          '<p class="note">' + external(w.pageUrl || wikiUrl(w.article), 'Wikipedia') + (ids ? ' · ' + ids : '') + ' · matched by hand' + (w.linkConfidence === 'medium' ? ', medium confidence' : '') + '. Text CC BY-SA 4.0.</p></div>';
+        return;
+      }
+      var search = w.searchName || name;
+      el.innerHTML = '<div class="card soft"><h3>Wikipedia</h3><p class="note">No article has been matched to ' + escapeHtml(name) + (ids ? ' (' + ids + ')' : '') + '. Most people Domesday names have none.</p>' +
+        '<button class="btn" id="mentions-go" type="button">Find Wikipedia pages that mention “' + escapeHtml(search) + '”</button><div id="mentions"></div></div>';
+      $('mentions-go').addEventListener('click', function () {
+        var m = $('mentions');
+        fill(m, 'DomesdayWikipediaMentions', { name: search }, function (hits) {
+          return '<p class="note">Pages that mention the name — usually a village they held or a family — not an identification.</p><ul class="hits">' + hits.map(function (h) {
+            return '<li>' + external(wikiUrl(h.articleKey || h.title), h.title) + ' <span class="note">' + escapeHtml(h.description || '') + '</span><div class="excerpt">' + excerptHtml(h.excerpt) + '</div></li>';
+          }).join('') + '</ul>';
+        }, 'Wikipedia has no page that mentions "' + search + '" beside Domesday.');
+      });
+    } catch (e) { if (seq === drawerSeq) failed(el, e); }
+  }
+
+  async function personAccount(name, seq) {
+    var el = $('person-said');
+    loading(el, 'Reading the entries…');
+    try {
+      var rows = await view('DomesdayWhatItSaysAbout', { name: name });
+      if (seq !== drawerSeq) return;
+      var r = rows[0];
+      if (!r || !r.entriesRead) return none(el, 'No entry naming ' + name + ' has text in this edition (Yorkshire has none).');
+      el.innerHTML = '<p>' + escapeHtml(r.account || '') + '</p><p class="note">Written by the appliance\'s model from the ' + n(r.entriesRead) + ' entr' + (r.entriesRead === 1 ? 'y' : 'ies') +
+        ' below, and only from them. Check it against them.</p><details><summary>The entries it read</summary>' + (r.entries || []).map(function (e) {
+          return '<div class="said-item"><b>' + escapeHtml(e.ref) + '</b> <span class="note">' + escapeHtml(e.places || '') + ' · ' + escapeHtml(e.role || '') + '</span><blockquote class="said">' + escapeHtml(e.text || '') + '</blockquote></div>';
+        }).join('') + '</details>';
+    } catch (e) { if (seq === drawerSeq) failed(el, e); }
+  }
+
+  async function personLinks(name, seq) {
+    try {
+      var both = await Promise.all([view('DomesdayAntecessors', { name: name, limit: 40 }), view('DomesdayMenOf', { name: name, limit: 40 })]);
+      if (seq !== drawerSeq) return;
+      var lower = name.toLowerCase();
+      var succ = both[0].filter(function (r) { return r.successor1086.toLowerCase() === lower || r.antecessor1066.toLowerCase() === lower; });
+      var men = both[1].filter(function (r) { return r.lord.toLowerCase() === lower || r.man.toLowerCase() === lower; });
+      var html = '';
+      if (succ.length) html += '<h3>Successions</h3><table>' + succ.map(function (r) {
+        return '<tr><td>' + personLink(r.antecessor1066) + '<span class="arrow">→</span>' + personLink(r.successor1086) + '</td><td class="note">' + escapeHtml(r.county) + '</td><td class="r num">' + n(r.entries) + ' <span class="note">entries, ' + n(r.sharePercent) + '%</span></td></tr>';
+      }).join('') + '</table>';
+      if (men.length) html += '<h3 style="margin-top:14px">Lord and men</h3><table>' + men.map(function (r) {
+        return '<tr><td>' + personLink(r.man) + ' <span class="note">held of</span> ' + personLink(r.lord) + '</td><td class="note">' + escapeHtml(r.county) + '</td><td class="r num">' + n(r.entries) + ' <span class="note">entries</span></td></tr>';
+      }).join('') + '</table>';
+      $('person-links').innerHTML = html ? '<div class="card soft">' + html + '<p class="note">Concluded by the realm\'s rules from the entries both name.</p></div>' : '';
+    } catch (e) { /* a missing succession is not worth an error in the drawer */ }
   }
 
   async function openCounty(code) {
     var c = counties[code];
     var seq = openDrawer('<h2>' + escapeHtml(c ? c.county : code) + '</h2><div class="meta">County · circuit ' + escapeHtml(c ? c.circuit : '') + '</div>');
-    if (c && !c.inGreatDomesday) {
-      $('drawer-body').innerHTML = '<div class="empty">' + escapeHtml(c.county) + ' is described in Little Domesday, whose entries this edition does not hold. Its places are on the map, drawn hollow; its people are in the search. Its households, ploughs and values are not here — that is the edition, not the county.</div>';
-      return;
-    }
+    var littleNote = c && !c.inGreatDomesday ? '<p class="note">' + escapeHtml(c.county) + ' is in Little Domesday. Its figures are read from the translation, not from Hull\'s coding, and agree with Hull\'s hand-coded figures at 85–100% on most fields; Little Domesday also counts people and stock in 1066.</p>' : '';
     try {
       var all = await Promise.all([
         view('DomesdayCountyFigures', { county: code }), view('DomesdayHundredSummary', { county: code }),
@@ -564,7 +787,7 @@
       if (seq !== drawerSeq) return;
       var f = all[0][0] || {}, hundreds = all[1], richest = all[2], waste = all[3];
       function tile(k, v) { return '<div class="tile"><div class="v">' + v + '</div><div class="k">' + escapeHtml(k) + '</div></div>'; }
-      var body = '<div class="tiles">' + tile('entries', n(f.entries)) + tile('households', n(f.households)) + tile('villagers', n(f.villagers)) +
+      var body = littleNote + '<div class="tiles">' + tile('entries', n(f.entries)) + tile('households', n(f.households)) + tile('villagers', n(f.villagers)) +
         tile('smallholders', n(f.smallholders)) + tile('slaves', n(f.slaves)) + tile('plough teams', n(f.ploughTeams)) +
         tile('value 1066', pounds(f.value1066Pounds)) + tile('value 1086', pounds(f.value1086Pounds)) + tile('mills', n(f.mills)) +
         tile('churches', n(f.churchEntries)) + tile('castles', n(f.castleEntries)) + tile('waste entries', n(f.wasteEntries)) + '</div>';
@@ -648,10 +871,9 @@
     var shown = 0;
     mapRows.forEach(function (row) {
       var p = proj(row.lat, row.lng), dim = filter && row.county !== filter;
-      var v = Number(row[key]) || 0, little = counties[row.county] && !counties[row.county].inGreatDomesday;
+      var v = Number(row[key]) || 0;
       ctx.globalAlpha = dim ? 0.12 : 1;
-      if (little) { ctx.strokeStyle = css('--muted'); ctx.lineWidth = 0.8; ctx.beginPath(); ctx.arc(p[0], p[1], r, 0, 6.283); ctx.stroke(); }
-      else {
+      {
         ctx.fillStyle = v <= 0 ? css('--none') : ramp[v <= t[0] ? 0 : v <= t[1] ? 1 : v <= t[2] ? 2 : 3];
         ctx.beginPath(); ctx.arc(p[0], p[1], r, 0, 6.283); ctx.fill();
         if (row.waste) { ctx.strokeStyle = css('--rubric'); ctx.lineWidth = 0.9; ctx.beginPath(); ctx.arc(p[0], p[1], r + 1.3, 0, 6.283); ctx.stroke(); }
@@ -727,7 +949,7 @@
             '<td class="r num">' + pounds(r.value1086Pounds) + '</td><td style="width:110px"><div class="bar"><span style="width:' + (100 * (r.value1086Pounds || 0) / max).toFixed(1) + '%"></span></div></td>' +
             '<td class="r num">' + (ch == null ? '—' : (ch > 0 ? '+' : '') + n(ch) + '%') + ' <span class="note">of ' + n(r.comparableEntries) + '</span></td><td style="width:100px"><div class="div">' + (cls ? '<span class="' + cls + '" style="width:' + wpct.toFixed(1) + '%"></span>' : '') + '</div></td>' +
             '<td class="r num">' + n(r.wasteEntries) + '</td><td class="r num">' + n(r.mills) + '</td></tr>';
-        }).join('') + '</table><p class="note">Essex, Norfolk and Suffolk are not listed: Little Domesday is not in this edition. Click a county for its hundreds, richest manors and waste.</p>';
+        }).join('') + '</table><p class="note">Essex, Norfolk and Suffolk are Little Domesday, their figures read from the translation. Click a county for its hundreds, richest manors and waste.</p>';
       }).then(function () {
         $('counties').querySelectorAll('tr[data-county]').forEach(function (tr) { tr.addEventListener('click', function () { if (tr.dataset.county) location.hash = '#/county/' + tr.dataset.county; }); });
       });
@@ -776,6 +998,108 @@
       feature($('castles'), 'castle');
       feature($('markets'), 'market');
     },
+    studies: function () {
+      fill($('devastation'), 'DomesdayDevastation', {}, function (rows) {
+        return ranked(rows.slice(0, 25), 'hundred', 'wasteSharePercent', function (r) {
+          var c = codeOf(r.county); return escapeHtml(r.hundred) + ' <span class="note">' + (c ? countyLink(c, r.county) : escapeHtml(r.county)) + '</span>';
+        }, function (v) { return v + '%'; }, function (r) { return r.wasteEntries + ' of ' + r.entries + ' entries waste'; }) +
+          '<p class="note">' + rows.length + ' hundreds in all. The March of Wales and the north lead; the south-east has none.</p>';
+      });
+      fill($('whoheld'), 'DomesdayWhoHeldTheLand', {}, function (rows) {
+        var parts = [['kingPercent', 'the King', 'var(--rubric)'], ['churchPercent', 'the Church', 'var(--verdigris)'], ['normanBishopsPercent', 'Norman bishops', 'var(--ramp-2)'], ['layPercent', 'lay lords', 'var(--none)']];
+        return '<div class="legend-row">' + parts.map(function (p) { return '<span><i style="background:' + p[2] + '"></i>' + p[1] + '</span>'; }).join('') + '</div>' +
+          '<table>' + rows.map(function (r) {
+            return '<tr><td>' + escapeHtml(r.county) + '</td><td style="width:55%"><div class="stack" title="' + escapeHtml(parts.map(function (p) { return p[1] + ' ' + r[p[0]] + '%'; }).join(', ')) + '">' +
+              parts.map(function (p) { return '<span style="width:' + Math.max(0, r[p[0]]) + '%;background:' + p[2] + '"></span>'; }).join('') + '</div></td>' +
+              '<td class="r num note">' + r.kingPercent + ' · ' + r.churchPercent + ' · ' + r.normanBishopsPercent + ' · ' + r.layPercent + '</td></tr>';
+          }).join('') + '</table><p class="note">Sorted by the Church\'s share. Percentages of the county\'s recorded 1086 value: King · Church · Norman bishops · lay lords.</p>';
+      });
+      fill($('antecessors'), 'DomesdayAntecessors', { limit: 20 }, function (rows) {
+        return '<table>' + rows.map(function (r) {
+          return '<tr><td>' + personLink(r.antecessor1066) + '<span class="arrow">→</span>' + personLink(r.successor1086) + '</td><td class="note">' + escapeHtml(r.county) + '</td><td class="r num">' + n(r.entries) + ' <span class="note">· ' + r.sharePercent + '%</span></td></tr>';
+        }).join('') + '</table>';
+      });
+      fill($('menof'), 'DomesdayMenOf', { name: '', limit: 20 }, function (rows) {
+        return '<table>' + rows.map(function (r) {
+          return '<tr><td>' + personLink(r.man) + ' <span class="note">of</span> ' + personLink(r.lord) + '</td><td class="note">' + escapeHtml(r.county) + '</td><td class="r num">' + n(r.entries) + '</td></tr>';
+        }).join('') + '</table>';
+      });
+      fill($('survivors'), 'DomesdayConquestSurvivors', { limit: 20 }, function (rows) {
+        return '<table><tr><th>Name</th><th>County</th><th class="r">1066</th><th class="r">1086</th></tr>' + rows.map(function (r) {
+          return '<tr><td>' + personLink(r.survivor) + (r.distinctiveName ? '' : ' <span class="note">(bare name)</span>') + '</td><td class="note">' + escapeHtml(r.county) + '</td><td class="r num">' + n(r.entries1066) + ' · ' + pounds(r.value1066Pounds) + '</td><td class="r num">' + n(r.entries1086) + ' · ' + pounds(r.value1086Pounds) + '</td></tr>';
+        }).join('') + '</table><p class="note">Entries · value.</p>';
+      });
+      fill($('fate'), 'DomesdayFateOfEnglishLords', { limit: 15 }, function (rows) {
+        return '<table><tr><th>Lord of 1066</th><th class="r">1066</th><th class="r">Held in 1086</th></tr>' + rows.map(function (r) {
+          return '<tr><td>' + personLink(r.lord1066) + '</td><td class="r num">' + pounds(r.value1066Pounds) + '</td><td class="r num">' + (r.entries1086 ? n(r.entries1086) + ' entries · ' + pounds(r.value1086Pounds) : '<span class="note">nothing</span>') + '</td></tr>';
+        }).join('') + '</table>';
+      });
+      fill($('anomalies'), 'DomesdayValueAnomalies', {}, function (rows) {
+        var m = rows[0] && rows[0].model;
+        if (!m) return '<div class="empty">Too few manors give every figure for a fit.</div>';
+        var label = function (p) { return String(p).replace(/^coalesce\(e\.|, 0\)$/g, '').replace(/^ploughTeams$/, 'plough teams').replace(/^meadowAcres$/, 'meadow'); };
+        function list(items) { return '<table>' + (items || []).slice(0, 6).map(function (x) { return '<tr><td>' + escapeHtml(x.label) + '</td><td class="r num">' + escapeHtml(lsd(x.actual)) + ' <span class="note">vs ' + escapeHtml(lsd(x.predicted)) + '</span></td></tr>'; }).join('') + '</table>'; }
+        return '<p>Over ' + n(m.n) + ' manors, plough teams, households, mills and meadow together account for <b>' + Math.round(100 * m.r2) + '%</b> of the differences in value (r² ' + m.r2 + '). The rest is what the figures do not code: towns, markets, renders, the King\'s farms. Strongest first: ' +
+          (m.coefficients || []).map(function (c) { return escapeHtml(label(c.predictor)) + ' (' + c.beta + ')'; }).join(', ') + '.</p>' +
+          '<h3>Worth far more than their resources</h3>' + list(m.abovePrediction) + '<h3 style="margin-top:14px">Worth far less</h3>' + list(m.belowPrediction) +
+          '<p class="note">An association across manors, not a cause. Standardised betas: larger means that figure moves value more. A manor far below its prediction is often the head of a soke whose land is counted elsewhere.</p>';
+      });
+      fill($('womenshare'), 'DomesdayWomenBeforeAfter', {}, function (rows) {
+        var max = Math.max.apply(null, rows.map(function (r) { return r.sharePercent; }).concat([1]));
+        return '<table>' + rows.map(function (r) {
+          return '<tr><td>' + escapeHtml(r.year) + '</td><td style="width:45%"><div class="bar"><span style="width:' + (100 * r.sharePercent / max).toFixed(1) + '%"></span></div></td><td class="r num">' + r.sharePercent + '% <span class="note">· ' + n(r.women) + ' women · ' + pounds(r.valuePounds) + '</span></td></tr>';
+        }).join('') + '</table><p class="note">Share of all value recorded for that year. 1066 counts lords of 1066; 1086 counts tenants-in-chief and their tenants.</p>';
+      });
+      fill($('stocking'), 'DomesdayPloughStocking', {}, function (rows) {
+        return '<table>' + rows.map(function (r) {
+          var pct = r.stockingPercent, w = Math.min(100, pct / 2);
+          return '<tr><td>' + escapeHtml(r.county) + '</td><td style="width:45%"><div class="bar ref100"><span style="width:' + w.toFixed(1) + '%"></span></div></td><td class="r num">' + pct + '%</td></tr>';
+        }).join('') + '</table><p class="note">The line marks 100%. Lowest first.</p>';
+      });
+      function growth(el, order) {
+        fill(el, 'DomesdayGrowth', { order: order, limit: 15 }, function (rows) {
+          return '<table><tr><th>Parish today</th><th class="r">1086</th><th class="r">2021</th><th class="r">×</th></tr>' + rows.map(function (r) {
+            return '<tr><td>' + escapeHtml(r.parish) + ' <span class="note">' + escapeHtml(r.district) + ' · ' + escapeHtml((r.vills || []).join(', ')) + '</span></td><td class="r num">' + n(r.households1086) + '</td><td class="r num">' + n(r.households2021) + '</td><td class="r num">' + n(r.timesAsMany) + '</td></tr>';
+          }).join('') + '</table><p class="note">Households. Parishes whose vills record fewer than 20 households in 1086 are left out.</p>';
+        });
+      }
+      growth($('growth'), 'desc');
+      growth($('shrunk'), 'asc');
+      fill($('lost'), 'DomesdayLostVillages', { limit: 15 }, function (rows) {
+        return '<table>' + rows.map(function (r) {
+          return '<tr class="click" data-place="' + escapeHtml(r.placeId) + '"><td>' + escapeHtml(r.place) + ' <span class="note">' + escapeHtml(r.county) + (r.parishToday ? ' · now in ' + escapeHtml(r.parishToday) : '') + '</span></td><td class="r num">' + n(r.households1086) + ' <span class="note">households</span></td></tr>';
+        }).join('') + '</table>';
+      }).then(function () { $('lost').querySelectorAll('tr[data-place]').forEach(function (tr) { tr.addEventListener('click', function () { location.hash = '#/place/' + tr.dataset.place; }); }); });
+      fill($('richnow'), 'DomesdayRichThenRichNow', {}, function (rows) {
+        var c = rows[0] && rows[0].value1086VsDecile2025;
+        if (!c) return '<div class="empty">Too few places to tell.</div>';
+        var strength = Math.abs(c.r) < 0.1 ? 'almost no' : Math.abs(c.r) < 0.3 ? 'a weak' : Math.abs(c.r) < 0.5 ? 'a moderate' : 'a strong';
+        return '<p class="big">r = ' + c.r + '</p><p>Across ' + n(c.n) + ' places, a place\'s value in 1086 and its neighbourhood\'s deprivation decile in 2025 show <b>' + strength + ' relationship</b>' +
+          (c.detectable ? '' : ' — not distinguishable from none') + '. r runs from −1 to 1; 0 means the one tells you nothing about the other. ' + (c.ci ? 'With 95% confidence it lies between ' + c.ci[0] + ' and ' + c.ci[1] + '.' : '') + '</p>' +
+          '<p class="note">An association across places, not a claim about any one. Many of 1086\'s richest places were towns whose old centres are among the more deprived neighbourhoods now.</p>';
+      });
+      fill($('scatter'), 'DomesdayFeeScatter', { limit: 25 }, function (rows) {
+        return ranked(rows, 'landholder', 'spreadKm', function (r) { return personLink(r.landholder); }, function (v) { return n(v) + ' km'; }, function (r) { return r.entries + ' entries in ' + r.counties + ' counties'; });
+      });
+    },
+    text: function () {
+      var words = ['eels', 'salt', 'vineyard', 'honey', 'hawk', 'burgesses', 'a market', 'castle', 'fishery', 'iron'];
+      $('text-chips').innerHTML = words.map(function (w) { return '<button type="button">' + escapeHtml(w) + '</button>'; }).join('');
+      $('text-chips').querySelectorAll('button').forEach(function (b) { b.addEventListener('click', function () { $('text-q').value = b.textContent; findWords(b.textContent); }); });
+      var pulls = [['eels', 'each render of eels: the number of eels and the place'], ['salt', 'each salt-pan or salt-house and what it paid, with the place'],
+        ['vineyard', 'each vineyard and its size, with the place'], ['honey', 'each render of honey, with the amount and the place']];
+      $('extract-chips').innerHTML = pulls.map(function (p, i) { return '<button type="button" data-i="' + i + '">' + escapeHtml(p[0]) + '</button>'; }).join('');
+      $('extract-chips').querySelectorAll('button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var p = pulls[Number(b.dataset.i)];
+          loading($('extract'), 'Reading every entry that mentions ' + p[0] + '…');
+          fill($('extract'), 'DomesdayExtractFromText', { word: p[0], what: p[1] }, function (rows) {
+            var r = rows[0];
+            return '<p class="note">From ' + n(r.entriesRead) + ' entries' + (r.entriesRead >= 80 ? ' (the first 80 that mention it)' : '') + '.</p><ul class="hits">' + (r.found || []).map(function (x) { return '<li>' + escapeHtml(x) + '</li>'; }).join('') + '</ul>';
+          });
+        });
+      });
+    },
     ask: function () {
       var chips = ['How many mills were there in Kent?', 'Which county had the most waste?', 'Who held Abberley before 1066?',
         'How many slaves were recorded in Gloucestershire?', 'Who was the richest landholder in 1086?', 'Which women held land in Domesday?'];
@@ -783,6 +1107,39 @@
       $('chips').querySelectorAll('button').forEach(function (b) { b.addEventListener('click', function () { $('ask').value = b.textContent; location.hash = '#/ask/' + encodeURIComponent(b.textContent); }); });
     }
   };
+
+  /* ── the text ───────────────────────────────────────────────────────────────── */
+  var textSeq = 0;
+  function findWords(word) {
+    var seq = ++textSeq;
+    $('text-head').textContent = 'Entries that say “' + word + '”';
+    fill($('text-results'), 'DomesdayTextMentions', { word: word, limit: 200 }, function (rows) {
+      if (seq !== textSeq) return '';
+      var re = new RegExp('(' + word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+      return '<p class="note">' + rows.length + (rows.length >= 200 ? '+' : '') + ' entries.</p>' + rows.map(function (r) {
+        var t = escapeHtml(r.text || '');
+        return '<div class="said-item"><a href="#/entry/' + encodeURIComponent(r.entryId) + '"><b>' + escapeHtml(r.ref) + '</b></a> <span class="note">' + escapeHtml(r.places || '') + '</span><blockquote class="said">' + t.replace(re, '<mark>$1</mark>') + '</blockquote></div>';
+      }).join('');
+    }, 'No entry with text uses “' + word + '”. (Yorkshire has no text in this edition.)');
+    fill($('text-where'), 'DomesdayTextMentionsByCounty', { word: word }, function (rows) {
+      return ranked(rows, 'county', 'entries', function (r) { var c = codeOf(r.county); return c ? countyLink(c, r.county) : escapeHtml(r.county); }, function (v) { return n(v) + ' entries'; });
+    }, 'Nowhere.');
+  }
+  function searchMeaning(query) {
+    var seq = ++textSeq;
+    $('text-head').textContent = 'Chapters that bear on “' + query + '”';
+    loading($('text-results'), 'The model is reading the survey for that — this takes a few seconds…');
+    $('text-where').innerHTML = '<div class="empty">A search by meaning finds chapters, not counts.</div>';
+    fill($('text-results'), 'DomesdaySearchText', { query: query, limit: 8 }, function (rows) {
+      if (seq !== textSeq) return '';
+      return rows.map(function (r) {
+        var c = counties[r.county];
+        return '<div class="said-item"><b>' + escapeHtml(r.chapter) + '</b> <span class="note">fit ' + n(Math.round((r.fit || 0) * 100) / 100) + '</span><blockquote class="said">' + escapeHtml(r.evidence || '') + '</blockquote></div>';
+      }).join('') + '<p class="note">Each chapter is a tenant-in-chief\'s fief in one county. The quotation is what the model read there.</p>';
+    }, 'The search found no chapter that bears on that.');
+  }
+  $('text-form').addEventListener('submit', function (e) { e.preventDefault(); var q = $('text-q').value.trim(); if (q) findWords(q); });
+  $('text-meaning').addEventListener('click', function () { var q = $('text-q').value.trim(); if (q) searchMeaning(q); });
 
   /* ── ask ────────────────────────────────────────────────────────────────────── */
   var askSeq = 0;
@@ -852,7 +1209,7 @@
         '<div class="big">' + n(sum('mills')) + '</div><div class="k">mills</div>' +
         '<h3 style="margin-top:14px">Richest counties</h3><ol>' + top.map(function (r) { var c = codeOf(r.county); return '<li>' + (c ? countyLink(c, r.county) : escapeHtml(r.county)) + ' <span class="note">' + pounds(r.value1086Pounds) + '</span></li>'; }).join('') + '</ol>' +
         '<h3 style="margin-top:14px">Most waste</h3><ol>' + wasted.map(function (r) { var c = codeOf(r.county); return '<li>' + (c ? countyLink(c, r.county) : escapeHtml(r.county)) + ' <span class="note">' + n(r.wasteEntries) + ' entries</span></li>'; }).join('') + '</ol>' +
-        '<p class="note">Great Domesday only — Essex, Norfolk and Suffolk are not counted.</p>';
+        '<p class="note">Great and Little Domesday. Essex, Norfolk and Suffolk\'s figures are read from the translation.</p>';
     } catch (e) { failed(el, e); }
   }
 

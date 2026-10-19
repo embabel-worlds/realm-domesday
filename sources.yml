@@ -1,0 +1,45 @@
+# Domesday as searchable DOCUMENTS, beside the graph (realm spec: sources.yml, `lane: documents`).
+#
+# The graph answers "how many villagers at Abberley"; documents answer "where does Domesday mention
+# eels", "what does it say about the burgesses of Dover" — chunked, embedded, and reachable by
+# document search and RELEVANT_TO. Both come from the same stored entries, so a document's uri
+# (`domesday://phillimore/KEN/5`) is a county and a chapter, and every entry in it keeps its ref.
+#
+# One document per county CHAPTER — a tenant-in-chief's fief, as Domesday itself is arranged: an
+# entry alone is too short to embed well, a county too long to retrieve. Each entry is its own
+# heading, so a hit names the entry it came from. A borough's sections (D1, D2… for Dover) and a
+# county's customs (C) and claims carry no chapter number, so they group by their letter.
+#
+# The text is Hull's transcription of the Phillimore translation, CC BY-NC-SA 2.0 UK. Embeddings are
+# computed on the appliance that installs the realm, never shipped.
+sources:
+  - name: domesday-text
+    lane: documents
+    from:
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE e.text IS NOT NULL
+        WITH e.county AS county, e.countyName AS countyName,
+             CASE WHEN e.phillimore CONTAINS ',' THEN split(e.phillimore, ',')[0] ELSE left(e.phillimore, 1) END AS chapter, e
+        ORDER BY toInteger(e.entryId)
+        WITH county, countyName, chapter, collect(e) AS es,
+             collect({ref: e.ref, places: coalesce(e.places, ''), text: e.text}) AS entries
+        UNWIND es AS x
+        OPTIONAL MATCH (x)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+        RETURN county, countyName, chapter, entries, collect(DISTINCT t.canonicalName) AS holders
+    document:
+      uri: "domesday://phillimore/{{ county }}/{{ chapter }}"
+      title: "Domesday Book, {{ countyName }} {{ chapter }}{% if holders %} — {{ holders | join(', ') }}{% endif %}"
+      content: |
+        # {{ countyName }} {{ chapter }}{% if holders %}: land of {{ holders | join(', ') }}{% endif %}
+
+        {% for e in entries %}## {{ e.ref }}{% if e.places %} — {{ e.places }}{% endif %}
+
+        {{ e.text }}
+
+        {% endfor %}
+        Text: Phillimore translation, transcribed by the University of Hull, CC BY-NC-SA 2.0 UK.
+      sourceKind: domesday
+      tags: [domesday, phillimore]
+    sync:
+      trigger: on-install
+      prune: true

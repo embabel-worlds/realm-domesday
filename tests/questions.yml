@@ -19,7 +19,7 @@ answerable:
     expect: { name: Oswaldslow }
   - question: "How many households were there in Oswaldslow hundred in Worcestershire?"
     category: traps
-    expect: { value: 1148 }
+    expect: { value: 1182 }
   - question: "How many Yorkshire entries were recorded as waste?"
     category: traps
     expect: { value: 520 }
@@ -97,20 +97,60 @@ answerable:
     expect: { matchesView: { name: DomesdayPopulation, column: [households, estimatedPeopleLow, estimatedPeopleHigh] }, columnsLike: [estimat] }
   - question: "which hundred of Worcestershire was worth most in 1086"
     expect: { matchesView: { name: DomesdayHundredSummary, column: hundred, args: { county: WOR } } }
+  # The rules, the measures, the text and today — each answer a view or a fact checked by hand.
+  - question: "Who succeeded Wulfmer at Abberley?"
+    category: rules
+    expect: { name: Ralph of Tosny }
+  - question: "Who were Earl Hugh's men in Cheshire?"
+    category: rules
+    expect: { anyName: [William Malbank, Robert of Rhuddlan, Robert son of Hugh, William son of Nigel] }
+  - question: "Which English lords kept their land after the Conquest?"
+    category: rules
+    expect: { anyName: [Thorkell of Warwick, Gospatric, Kolgrimr, Osbern son of Richard, Alfred of Marlborough] }
+  - question: "Which hundreds were laid waste?"
+    category: rules
+    expect: { minRows: 5 }
+  - question: "What share of Worcestershire did the Church hold in 1086?"
+    category: measures
+    expect: { matchesView: { name: DomesdayWhoHeldTheLand, column: churchPercent, args: { county: WOR } } }
+  - question: "What share of England's land value did women hold in 1066?"
+    category: measures
+    expect: { matchesView: { name: DomesdayWomenBeforeAfter, column: sharePercent } }
+  - question: "Which county was least fully ploughed?"
+    category: measures
+    expect: { matchesView: { name: DomesdayPloughStocking, column: county } }
+  - question: "Which county has the most entries that mention vineyards?"
+    category: text
+    expect: { matchesView: { name: DomesdayTextMentionsByCounty, column: county, args: { word: vineyard } } }
+  - question: "How many entries in Cambridgeshire mention eels?"
+    category: text
+    expect: { value: 42 }
+  - question: "How many households does Abberley parish have today?"
+    category: now
+    expect: { value: 288 }
+  - question: "Which parish has grown the most since Domesday?"
+    category: now
+    expect: { name: Sutton Coldfield }
+
+  # Little Domesday and the text, once refused, now held.
+  - question: "How many villagers were there in Essex?"
+    category: little-domesday
+    expect: { matchesView: { name: DomesdayCountyFigures, column: villagers, args: { county: ESS } } }
+  - question: "Were there more slaves before or after the Conquest?"
+    category: little-domesday
+    expect: { matchesView: { name: DomesdayBeforeAndAfter, column: [slaves1066Comparable, slaves1086Comparable] } }
+  - question: "Did the number of villagers in Norfolk fall after 1066?"
+    category: little-domesday
+    expect: { matchesView: { name: DomesdayBeforeAndAfter, column: [villagers1066Comparable, villagers1086Comparable], args: { county: NFK } } }
+  - question: "What is the modern population of Abberley?"
+    category: now
+    expect: { value: 786 }
+  - question: "Quote the Domesday text for Abberley"
+    category: text
+    expect: { nonEmpty: true }
 
 unanswerable:
-  - question: "How many villagers were there in Essex?"
-    repeat: 3
-    noFigure: true
-  - question: "What was the population of Norfolk in 1086?"
-    repeat: 3
-    noFigure: true
-  - question: "What is the modern population of Abberley?"
-    repeat: 3
-    noFigure: true
   - question: "What was the name of the priest at Abberley?"
-    repeat: 3
-  - question: "Quote the Domesday text for Abberley"
     repeat: 3
   - question: "Who held Abberley in 1200?"
     repeat: 3

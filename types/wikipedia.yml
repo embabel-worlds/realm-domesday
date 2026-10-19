@@ -1,0 +1,51 @@
+# Wikipedia beside Domesday, fetched live (producers/wikipedia.yml), never stored.
+#
+#   DomesdayPerson ─WIKIPEDIA─▶ DomesdayWikipedia ◀─WIKIPEDIA─ DomesdayPlace     (a checked match)
+#   Concept {value: a name} ─RELEVANT_TO {via: keyword}─▶ DomesdayWikipediaMention   (a search)
+#
+# The first is an identification someone checked; the second is only a search. Keep them apart when
+# answering: a mention is "a page that names him", never "his article".
+
+- name: DomesdayWikipedia
+  description: "The opening of the English Wikipedia article for a Domesday person or place whose article was matched and checked — Wikipedia's own summary, fetched live. Text is CC BY-SA 4.0: always give `pageUrl` with it. Reached by WIKIPEDIA from a DomesdayPerson or DomesdayPlace that has a `wikipedia` article key; most minor people have none."
+  properties:
+    key:
+      identity: true
+      description: "The article title it was fetched by, with underscores. Identity."
+    title: "The article's title."
+    description: "Wikipedia's one-line description."
+    extract: "The article's opening paragraphs, plain text."
+    thumbnail: "A thumbnail image URL, when the article has one."
+    pageUrl: "The article's URL — the attribution link."
+  virtualJoins:
+    - anchorLabel: DomesdayPerson
+      relationship: WIKIPEDIA
+      keyField: wikipedia
+      recordKeyField: key
+      producer: domesdayWikipediaSummary
+      description: "The checked Wikipedia article for a person: `(p:DomesdayPerson)-[:WIKIPEDIA]->(w:DomesdayWikipedia)`."
+    - anchorLabel: DomesdayPlace
+      relationship: WIKIPEDIA
+      keyField: wikipedia
+      recordKeyField: key
+      producer: domesdayWikipediaSummary
+      description: "The Wikipedia article for a place, through Wikidata: `(p:DomesdayPlace)-[:WIKIPEDIA]->(w:DomesdayWikipedia)`."
+
+- name: DomesdayWikipediaMention
+  description: "A Wikipedia page that MENTIONS a name, from Wikipedia's own search for the name with `Domesday` — most often a village the person held, their family, or an event, and only sometimes an article about them. Never an identification. Reached from the name as a Concept: `(c:Concept {value: 'Merlesveinn'})-[:RELEVANT_TO {via: 'keyword'}]->(m:DomesdayWikipediaMention)`; up to six, ranked by Wikipedia."
+  properties:
+    key:
+      identity: true
+      description: "The article title with underscores — the key DomesdayWikipedia takes. Identity."
+    title: "The page's title."
+    description: "Wikipedia's one-line description of the page, which says what it is about."
+    excerpt: "The matching snippet; Wikipedia marks the matched words with <span class=\"searchmatch\">."
+    matchedFor: "The search the page was found for."
+  virtualJoins:
+    - anchorLabel: Concept
+      relationship: RELEVANT_TO
+      via: keyword
+      keyField: value
+      recordKeyField: matchedFor
+      producer: domesdayWikipediaMentions
+      description: "Wikipedia pages that mention a name — a live search, nothing stored. Seed (:Concept {value: <a person's wikipediaSearch>}) and pin via:'keyword'. Pages that mention, not articles that identify."

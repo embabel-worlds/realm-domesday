@@ -1,0 +1,24 @@
+# DERIVE rule set: a lord's men. A sub-tenant who holds several entries of one tenant-in-chief
+# was that lord's man — the honour, the household knights and stewards who held of him. One shared
+# entry can be chance; the threshold is what makes it a conclusion rather than a path.
+name: domesday/men-of
+derives: MAN_OF
+description: >-
+  A 1086 sub-tenant is MAN_OF a tenant-in-chief when he holds at least minEntries entries of him
+  in the county. manOfEntries counts them; manOfValue1086 sums their 1086 value in pence.
+params:
+  minEntries: { type: int, default: 2, description: "Fewest entries a sub-tenant must hold of one lord." }
+properties:
+  manOfEntries:
+    type: int
+    description: "Entries the man held of the lord in the county."
+  manOfValue1086:
+    type: number
+    description: "Their 1086 value, in pence."
+rules:
+  - derive: "(u)-[:MAN_OF {manOfEntries: n, manOfValue1086: v}]->(t)"
+    from: |
+      MATCH (u:DomesdayPerson)<-[:TENANT_1086]-(e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+      WHERE u <> t
+      WITH u, t, count(DISTINCT e) AS n, sum(coalesce(e.value1086, 0)) AS v
+      WHERE n >= $minEntries

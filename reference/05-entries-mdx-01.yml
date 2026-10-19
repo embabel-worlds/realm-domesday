@@ -10,6 +10,8 @@
     county: MDX
     countyName: Middlesex
     kind: rubric
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex ****
     folio: MDX 1
   relations:
@@ -25,6 +27,8 @@
     county: MDX
     countyName: Middlesex
     kind: index of landholders
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex ****
     folio: MDX 1
   relations:
@@ -40,6 +44,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 1
     folio: MDX 2
   relations:
@@ -59,9 +65,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '{Nomansland}'
     name: '{Nomansland} (Middlesex 1,1)'
     holding: land
+    textEdition: In `OSSULSTONE' Hundred King William holds 12 1/2 acres of {NOMANSLAND}. The value of this land was and is 5s. King Edward held it similarly. [= ?[1]? [Land of the King. King William holds
+      it. King Edward held it.] =]
+    text: In `OSSULSTONE' Hundred King William holds 12 1/2 acres of NOMANSLAND. The value of this land was and is 5s. King Edward held it similarly.
     geldUnits: 0.1042
     value1066: 60
     value1086: 60
@@ -95,7 +106,11 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 1,2
+    textEdition: In the same Hundred _ the King has 30 cottagers who pay 14s 10 1/2d a year. [= ?[1]? [Land of the King. King William holds it. King Edward held it.] =]
+    text: In the same Hundred _ the King has 30 cottagers who pay 14s 10 1/2d a year.
     households: 30
     cottagers: 30
     value1086: 178.5
@@ -121,9 +136,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Holborn
     name: Holborn (Middlesex 1,3)
     holding: land
+    textEdition: At HOLBORN the King has 2 cottagers who pay 20d a year to the King's sheriff. Before 1066 the sheriff of Middlesex always had charge of them. [= ?[1]? [Land of the King. King William holds
+      it. King Edward held it.] =]
+    text: At HOLBORN the King has 2 cottagers who pay 20d a year to the King's sheriff. Before 1066 the sheriff of Middlesex always had charge of them.
     households: 2
     cottagers: 2
     value1086: 20
@@ -161,7 +181,12 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 1,4
+    textEdition: William the chamberlain pays the King's sheriff 6s a year for the land _ on which his vineyard stands. [= ?[1]? [Land of the King. King William holds it. King Edward held it.] =] ?2? Land
+      of the Archbishop of Canterbury
+    text: William the chamberlain pays the King's sheriff 6s a year for the land _ on which his vineyard stands. Land of the Archbishop of Canterbury
     value1086: 72
     folio: MDX 2
   relations:
@@ -189,6 +214,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 2
     folio: MDX 2
   relations:
@@ -212,9 +239,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hayes
     name: Hayes (Middlesex 2,1)
     holding: manor
+    textEdition: '[In the Hundred of `ELTHORNE''] Archbishop Lanfranc holds HAYES for 59 hides. Land for 40 ploughs. 12 hides belong to the lordship; 2 ploughs there. There are 26 ploughs between the Frenchmen
+      and the villagers; a further 12 possible. A priest has 1 hide; 3 men-at-arms, 6 1/2 hides; 2 villagers, 2 hides; 12 villagers, 1/2 hide each; 20 villagers, 1 virgate of land each; 40 villagers, 1/2
+      virgate each; 16 smallholders with 2 hides; 12 cottagers; 2 slaves. 1 mill, 4s; meadow for 1 plough; pasture for the village livestock; woodland, 400 pigs, and 3s too. Total value £30; when acquired
+      £12; before 1066 £40. Archbishop Stigand held this manor. [= ?2? Land of the Archbishop of Canterbury =]'
+    text: '[In the Hundred of `ELTHORNE''] Archbishop Lanfranc holds HAYES for 59 hides. Land for 40 ploughs. 12 hides belong to the lordship; 2 ploughs there. There are 26 ploughs between the Frenchmen
+      and the villagers; a further 12 possible. A priest has 1 hide; 3 men-at-arms, 6 1/2 hides; 2 villagers, 2 hides; 12 villagers, 1/2 hide each; 20 villagers, 1 virgate of land each; 40 villagers, 1/2
+      virgate each; 16 smallholders with 2 hides; 12 cottagers; 2 slaves. 1 mill, 4s; meadow for 1 plough; pasture for the village livestock; woodland, 400 pigs, and 3s too. Total value £30; when acquired
+      £12; before 1066 £40. Archbishop Stigand held this manor.'
     households: 108
     villagers: 74
     smallholders: 16
@@ -267,9 +304,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Harrow
     name: Harrow (Middlesex 2,2)
     holding: manor
+    textEdition: In the Hundred of GORE Archbishop Lanfranc holds HARROW. It answered for 100 hides before 1066, and does so now. Land for 70 ploughs. 30 hides belong to the lordship; 4 ploughs there; 5
+      [more] possible. 45 ploughs between the Frenchmen and the villagers; 16 more possible. A priest, 1 hide; 3 men-at-arms, 6 hides, and under them dwell 7 men; 13 villagers with 1/2 hide each; 28 villagers
+      with 1 virgate each; 48 villagers with 1/2 virgate each; 13 villagers with 4 hides; 2 cottagers with 13 acres; 2 slaves. Pasture for the village livestock; woodland, 2000 pigs. Total value £56; when
+      acquired £20; before 1066 £60. Earl Leofwin held this manor in 1066. [= ?2? Land of the Archbishop of Canterbury =] <127b>
+    text: In the Hundred of GORE Archbishop Lanfranc holds HARROW. It answered for 100 hides before 1066, and does so now. Land for 70 ploughs. 30 hides belong to the lordship; 4 ploughs there; 5 [more]
+      possible. 45 ploughs between the Frenchmen and the villagers; 16 more possible. A priest, 1 hide; 3 men-at-arms, 6 hides, and under them dwell 7 men; 13 villagers with 1/2 hide each; 28 villagers
+      with 1 virgate each; 48 villagers with 1/2 virgate each; 13 villagers with 4 hides; 2 cottagers with 13 acres; 2 slaves. Pasture for the village livestock; woodland, 2000 pigs. Total value £56; when
+      acquired £20; before 1066 £60. Earl Leofwin held this manor in 1066.
     households: 110
     villagers: 102
     slaves: 2
@@ -316,7 +363,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 2,3
+    textEdition: In the Hundred of `ELTHORNE' Geoffrey de Mandeville holds 2 hides _ from Archbishop Lanfranc. Land for 1 plough. 1 villager with 1 plough, who holds the land; 4 cottagers. Woodland, 20
+      pigs. Value of this land, 12s; when acquired the same; before 1066, 14s. Thorbert, Earl Leofwin's man, held it; he could not put it, or sell it, outside the Archbishop's manor of Harrow. [= ?2? Land
+      of the Archbishop of Canterbury =] ?3? Land of the Bishop of London
+    text: In the Hundred of `ELTHORNE' Geoffrey de Mandeville holds 2 hides _ from Archbishop Lanfranc. Land for 1 plough. 1 villager with 1 plough, who holds the land; 4 cottagers. Woodland, 20 pigs. Value
+      of this land, 12s; when acquired the same; before 1066, 14s. Thorbert, Earl Leofwin's man, held it; he could not put it, or sell it, outside the Archbishop's manor of Harrow. Land of the Bishop of
+      London
     households: 5
     villagers: 1
     cottagers: 4
@@ -374,6 +429,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 3
     folio: MDX 2
   relations:
@@ -393,9 +450,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,1)
     holding: manor
+    textEdition: In `OSSULSTONE' Hundred The Bishop of London holds STEPNEY. 32 hides. Land for 25 ploughs. 14 hides belong to the lordship; 3 ploughs there. 22 villagers' ploughs. 44 villagers with 1 virgate
+      each; 7 villagers with 1/2 hide each; 9 villagers with 1/2 virgate each; 46 cottagers with 1 hide pay 30s a year. 4 mills at £4 16s less 4d; meadow for 25 ploughs; pasture for the village livestock,
+      and 15s too; woodland, 500 pigs and 40s too. Total value £48; when acquired the same; before 1066 £50. This manor was and is the Bishopric's. [= ?3? Land of the Bishop of London =]
+    text: In `OSSULSTONE' Hundred The Bishop of London holds STEPNEY. 32 hides. Land for 25 ploughs. 14 hides belong to the lordship; 3 ploughs there. 22 villagers' ploughs. 44 villagers with 1 virgate
+      each; 7 villagers with 1/2 hide each; 9 villagers with 1/2 virgate each; 46 cottagers with 1 hide pay 30s a year. 4 mills at £4 16s less 4d; meadow for 25 ploughs; pasture for the village livestock,
+      and 15s too; woodland, 500 pigs and 40s too. Total value £48; when acquired the same; before 1066 £50. This manor was and is the Bishopric's.
     households: 106
     villagers: 60
     cottagers: 46
@@ -436,9 +501,20 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,2)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ Hugh of Bernières holds 5 hides and 1 virgate of land under the Bishop ^[of London]^. Land for 4 ploughs. In lordship 1 plough. The villagers, 3 ploughs.
+      1 villager with 1/2 hide; 6 villagers with 3 virgates; 2 smallholders with 1/2 virgate; 3 cottagers with 2 1/2 acres. 1 mill at 66s 8d; meadow for 4 ploughs; woodland, 150 pigs, and 3 1/2s too. Total
+      value £6; when acquired the same; before 1066 £7. Sired held 2 1/2 hides of this manor; he was a Canon of St Paul's; he could grant or sell to whom he would without the Bishop's permission before
+      1066. The Canons of St Paul's held 2 1/2 hides for their household supplies. Doding held 1 virgate and 1 mill of the Bishop's own manor; he could not grant or sell except with his permission. [= ?3?
+      Land of the Bishop of London =]
+    text: In the same village [STEPNEY] Hugh of Bernières holds 5 hides and 1 virgate of land under the Bishop [of London]. Land for 4 ploughs. In lordship 1 plough. The villagers, 3 ploughs. 1 villager
+      with 1/2 hide; 6 villagers with 3 virgates; 2 smallholders with 1/2 virgate; 3 cottagers with 2 1/2 acres. 1 mill at 66s 8d; meadow for 4 ploughs; woodland, 150 pigs, and 3 1/2s too. Total value £6;
+      when acquired the same; before 1066 £7. Sired held 2 1/2 hides of this manor; he was a Canon of St Paul's; he could grant or sell to whom he would without the Bishop's permission before 1066. The
+      Canons of St Paul's held 2 1/2 hides for their household supplies. Doding held 1 virgate and 1 mill of the Bishop's own manor; he could not grant or sell except with his permission.
     households: 12
     villagers: 7
     smallholders: 2
@@ -498,9 +574,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,3)
     holding: dependency
+    textEdition: In the same village ^[STEPNEY]^ Brian's wife holds 5 hides from the Bishop. Land for 2 1/2 ploughs. In lordship 1 plough. 1 plough possible for the villagers. 1 villager with 1/2 hide pays
+      4s a year on his house; another villager with 1/2 hide pays 8s; Roger the sheriff holds 1/2 hide; 15 smallholders with 10 acres pay 9s. Woodland, 60 pigs; pasture for the village livestock, and 5s
+      too. In total, value 60s; when acquired the same; before 1066, 100s. Bishop William held this land in lordship in the manor of Stepney in 1066. [= ?3? Land of the Bishop of London =]
+    text: In the same village [STEPNEY] Brian's wife holds 5 hides from the Bishop. Land for 2 1/2 ploughs. In lordship 1 plough. 1 plough possible for the villagers. 1 villager with 1/2 hide pays 4s a
+      year on his house; another villager with 1/2 hide pays 8s; Roger the sheriff holds 1/2 hide; 15 smallholders with 10 acres pay 9s. Woodland, 60 pigs; pasture for the village livestock, and 5s too.
+      In total, value 60s; when acquired the same; before 1066, 100s. Bishop William held this land in lordship in the manor of Stepney in 1066.
     households: 16
     villagers: 1
     smallholders: 15
@@ -558,9 +642,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,4)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ Ranulf Flambard holds 3 1/2 hides from the Bishop. <127c> Land for 5 ploughs. In lordship 2 ploughs. 3 villagers' ploughs. 14 smallholders with 1 1/2 hides.
+      Meadow for 2 ploughs, and 2s too; no pasture; wood for making fences. In total, value £4; when acquired the same; before 1066, 100s. Godwin [* of Benfield *] held this land under Bishop William; he
+      could not grant or sell it without the Bishop's permission before 1066. [= ?3? Land of the Bishop of London =]
+    text: In the same village [STEPNEY] Ranulf Flambard holds 3 1/2 hides from the Bishop. Land for 5 ploughs. In lordship 2 ploughs. 3 villagers' ploughs. 14 smallholders with 1 1/2 hides. Meadow for 2
+      ploughs, and 2s too; no pasture; wood for making fences. In total, value £4; when acquired the same; before 1066, 100s. Godwin [of Benfield] held this land under Bishop William; he could not grant
+      or sell it without the Bishop's permission before 1066.
     households: 14
     smallholders: 14
     ploughlands: 5
@@ -612,9 +704,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,5)
     holding: dependency
+    textEdition: In the same village ^[STEPNEY]^ William de Vere holds 1 hide from the Bishop. Land for 1 plough; it is there, in lordship. Value of this land, 16s; when acquired the same; before 1066,
+      20s. Bishop William held this land in lordship with his manor of Stepney before 1066. [= ?3? Land of the Bishop of London =]
+    text: In the same village [STEPNEY] William de Vere holds 1 hide from the Bishop. Land for 1 plough; it is there, in lordship. Value of this land, 16s; when acquired the same; before 1066, 20s. Bishop
+      William held this land in lordship with his manor of Stepney before 1066.
     ploughlands: 1
     lordsTeams: 1
     ploughTeams: 1
@@ -664,9 +762,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,6)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ Engelbert the canon holds 1 hide and 1 virgate from the Bishop. Land for 1 plough; it is there, in lordship. 1 villager with 1 virgate; 4 smallholders with
+      7 acres each; 1 cottager. In total, value 40s; when acquired the same; before 1066, 50s. The Canon also held it from Bishop William before 1066; he could not sell. [= ?3? Land of the Bishop of London
+      =]
+    text: In the same village [STEPNEY] Engelbert the canon holds 1 hide and 1 virgate from the Bishop. Land for 1 plough; it is there, in lordship. 1 villager with 1 virgate; 4 smallholders with 7 acres
+      each; 1 cottager. In total, value 40s; when acquired the same; before 1066, 50s. The Canon also held it from Bishop William before 1066; he could not sell.
     households: 6
     villagers: 1
     smallholders: 4
@@ -720,9 +825,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,7)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ the Bishop of Lisieux holds 1 1/2 hides from the Bishop of London. Land for 1 plough; 1/2 plough there; 1/2 possible. 2 smallholders with 5 acres each; 2
+      cottagers with 4 acres; 1 cottager. In total, value 40s; when acquired the same; before 1066, 50s. Bishop William held this land in lordship in 1066. [= ?3? Land of the Bishop of London =]
+    text: In the same village [STEPNEY] the Bishop of Lisieux holds 1 1/2 hides from the Bishop of London. Land for 1 plough; 1/2 plough there; 1/2 possible. 2 smallholders with 5 acres each; 2 cottagers
+      with 4 acres; 1 cottager. In total, value 40s; when acquired the same; before 1066, 50s. Bishop William held this land in lordship in 1066.
     households: 5
     smallholders: 2
     cottagers: 3
@@ -769,9 +880,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,8)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ William the chamberlain holds 1 1/2 hides and 1 virgate from the Bishop. Land for 1 1/2 ploughs. In lordship 1 plough; 1/2 possible. 1 villager with 1 virgate;
+      6 smallholders with 5 acres. In total, value 30s; when acquired the same; before 1066, 40s. Bishop William held this land in lordship in 1066. [= ?3? Land of the Bishop of London =]
+    text: In the same village [STEPNEY] William the chamberlain holds 1 1/2 hides and 1 virgate from the Bishop. Land for 1 1/2 ploughs. In lordship 1 plough; 1/2 possible. 1 villager with 1 virgate; 6
+      smallholders with 5 acres. In total, value 30s; when acquired the same; before 1066, 40s. Bishop William held this land in lordship in 1066.
     households: 7
     villagers: 1
     smallholders: 6
@@ -820,9 +937,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,9)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ Aelfric Catchpoll holds 1 hide from the Bishop. Land for 1 plough; but the plough is not there. Value of this land, 10s; when acquired the same; before 1066,
+      13s 4d. Bishop William held this land in lordship before 1066. [= ?3? Land of the Bishop of London =]
+    text: In the same village [STEPNEY] Aelfric Catchpoll holds 1 hide from the Bishop. Land for 1 plough; but the plough is not there. Value of this land, 10s; when acquired the same; before 1066, 13s
+      4d. Bishop William held this land in lordship before 1066.
     ploughlands: 1
     geldUnits: 1
     value1066: 160
@@ -866,9 +989,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,10)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ Edmund son of Algot holds 1 mill from the Bishop. Value 32s 6d; when acquired the same; but it was not there before 1066. [= ?3? Land of the Bishop of London
+      =]
+    text: In the same village [STEPNEY] Edmund son of Algot holds 1 mill from the Bishop. Value 32s 6d; when acquired the same; but it was not there before 1066.
     value1086: 390
     mills: 1
     folio: MDX 3
@@ -905,9 +1033,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 3,11)
     holding: land
+    textEdition: In the same village ^[STEPNEY]^ Alwin son of Brictmer holds 1 mill. Value 20s; when acquired the same; before 1066 the same. He held it himself from Bishop William. [= ?3? Land of the Bishop
+      of London =]
+    text: In the same village [STEPNEY] Alwin son of Brictmer holds 1 mill. Value 20s; when acquired the same; before 1066 the same. He held it himself from Bishop William.
     value1086: 240
     mills: 1
     folio: MDX 3
@@ -952,9 +1085,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Fulham
     name: Fulham (Middlesex 3,12)
     holding: manor
+    textEdition: ?M? In FULHAM the Bishop of London holds 40 hides. Land for 40 ploughs. 13 hides belong to the lordship; 4 ploughs there. 26 ploughs between the Frenchmen and the villagers; 10 more possible.
+      5 villagers, 1 hide each; 13 villagers with 1 virgate each; 34 villagers, 1/2 virgate each; 22 cottagers with 1/2 hide; 8 cottagers with their gardens. Between the Frenchmen and some London burgesses,
+      23 hides of villagers' land; under them dwell 31 of the villagers and smallholders. Meadow for 40 ploughs; pasture for the village livestock; from half a weir, 10s; woodland, 1000 pigs, and 17d too.
+      Total value £40; when acquired the same; before 1066 £50. This manor is and was the Bishopric's. [= ?3? Land of the Bishop of London =] <127d>
+    text: In FULHAM the Bishop of London holds 40 hides. Land for 40 ploughs. 13 hides belong to the lordship; 4 ploughs there. 26 ploughs between the Frenchmen and the villagers; 10 more possible. 5 villagers,
+      1 hide each; 13 villagers with 1 virgate each; 34 villagers, 1/2 virgate each; 22 cottagers with 1/2 hide; 8 cottagers with their gardens. Between the Frenchmen and some London burgesses, 23 hides
+      of villagers' land; under them dwell 31 of the villagers and smallholders. Meadow for 40 ploughs; pasture for the village livestock; from half a weir, 10s; woodland, 1000 pigs, and 17d too. Total
+      value £40; when acquired the same; before 1066 £50. This manor is and was the Bishopric's.
     households: 82
     villagers: 52
     cottagers: 30
@@ -998,9 +1141,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Fulham
     name: Fulham (Middlesex 3,13)
     holding: land
+    textEdition: In the same village ^[FULHAM]^ Fulcred holds 5 hides from the Bishop of London. Land for 3 ploughs. In lordship 1 plough. 1 villagers' plough; a third possible. 6 villagers with 1/2 hide;
+      4 cottagers with 8 acres; 3 cottagers. Meadow for 1 ox; pasture for the village livestock; woodland, 300 pigs. Total value 60s; when acquired the same; before 1066, 100s. Two Freemen held this land
+      before 1066; they were the Bishop of London's men; they could not grant or sell without the Bishop's permission. [= ?3? Land of the Bishop of London =] [* ?3? Land of the Canons of St Paul's from
+      the Bishop of London *]
+    text: In the same village [FULHAM] Fulcred holds 5 hides from the Bishop of London. Land for 3 ploughs. In lordship 1 plough. 1 villagers' plough; a third possible. 6 villagers with 1/2 hide; 4 cottagers
+      with 8 acres; 3 cottagers. Meadow for 1 ox; pasture for the village livestock; woodland, 300 pigs. Total value 60s; when acquired the same; before 1066, 100s. Two Freemen held this land before 1066;
+      they were the Bishop of London's men; they could not grant or sell without the Bishop's permission. [Land of the Canons of St Paul's from the Bishop of London]
     households: 13
     villagers: 6
     cottagers: 7
@@ -1050,6 +1202,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 3
     folio: MDX 3
   relations:
@@ -1065,9 +1219,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Fulham
     name: Fulham (Middlesex 3,14)
     holding: manor
+    textEdition: '[* In `OSSULSTONE'' Hundred *] ?M? In the same village ^[FULHAM]^ the Canons of St Paul''s hold 5 hides from the King as one manor. Land for 5 ploughs. 3 hides belong to the lordship;
+      2 ploughs there. The villagers, 2 ploughs; a third possible. 8 villagers with 1 virgate each; 7 villagers with 1/2 virgate each; 7 smallholders with 5 acres each; 16 cottagers; 2 slaves. Meadow for
+      5 ploughs; pasture for the village livestock; woodland, 150 pigs. In total, value £8; when acquired the same; before 1066, £10. Before 1066 the Canons of St Paul''s held this manor in lordship; it
+      is for their supplies. [= ?3? Land of the Canons of St Paul''s ^[from the Bishop of London]^ =]'
+    text: '[In `OSSULSTONE'' Hundred] In the same village [FULHAM] the Canons of St Paul''s hold 5 hides from the King as one manor. Land for 5 ploughs. 3 hides belong to the lordship; 2 ploughs there.
+      The villagers, 2 ploughs; a third possible. 8 villagers with 1 virgate each; 7 villagers with 1/2 virgate each; 7 smallholders with 5 acres each; 16 cottagers; 2 slaves. Meadow for 5 ploughs; pasture
+      for the village livestock; woodland, 150 pigs. In total, value £8; when acquired the same; before 1066, £10. Before 1066 the Canons of St Paul''s held this manor in lordship; it is for their supplies.'
     households: 40
     villagers: 15
     smallholders: 7
@@ -1117,9 +1280,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Twyford
     name: Twyford (Middlesex 3,15)
     holding: land
+    textEdition: '[also] in `OSSULSTONE'' Hundred In TWYFORD Durand, a Canon of St Paul''s, holds 2 hides of land from the King. Land for 1 1/2 ploughs. 3 villagers with 1/2 hide and 1/2 virgate. Pasture
+      for the village livestock; woodland, 100 pigs. Value of this land 30s; when acquired the same; before 1066, 20s. ^[This manor lay and lies in [the lands of] St Paul''s Church, in the lordship of the
+      Canons]^ [= ?3? Land of the Canons of St Paul''s ^[from the Bishop of London]^ =]'
+    text: '[also] in `OSSULSTONE'' Hundred In TWYFORD Durand, a Canon of St Paul''s, holds 2 hides of land from the King. Land for 1 1/2 ploughs. 3 villagers with 1/2 hide and 1/2 virgate. Pasture for the
+      village livestock; woodland, 100 pigs. Value of this land 30s; when acquired the same; before 1066, 20s. [This manor lay and lies in [the lands of] St Paul''s Church, in the lordship of the Canons]'
     households: 3
     villagers: 3
     ploughlands: 1.5
@@ -1171,9 +1341,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Twyford
     name: Twyford (Middlesex 3,16)
     holding: land
+    textEdition: In the same village ^[TWYFORD]^ Guerri, a Canon of St Paul's, holds 2 hides of land. Land for 1 1/2 ploughs. In lordship 1 plough; 1/2 possible. 2 villagers with 1 virgate; 1 smallholder
+      with 6 acres; 3 cottagers. Woodland, 50 pigs. Value of this land 30s; when acquired the same; before 1066, 20s. This manor lay and lies in [the lands of] St Paul's Church, in the lordship of the Canons.
+      [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: In the same village [TWYFORD] Guerri, a Canon of St Paul's, holds 2 hides of land. Land for 1 1/2 ploughs. In lordship 1 plough; 1/2 possible. 2 villagers with 1 virgate; 1 smallholder with 6
+      acres; 3 cottagers. Woodland, 50 pigs. Value of this land 30s; when acquired the same; before 1066, 20s. This manor lay and lies in [the lands of] St Paul's Church, in the lordship of the Canons.
     households: 6
     villagers: 2
     smallholders: 1
@@ -1229,9 +1406,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Willesden
     name: Willesden (Middlesex 3,17)
     holding: manor
+    textEdition: The Canons of St Paul's hold WILLESDEN. It always answered for 15 hides. Land for 15 ploughs. The villagers, 8 ploughs; 7 possible. 25 villagers; 5 smallholders. Woodland, 500 pigs. Total
+      value £6 6s 6d; when acquired the same; before 1066 £12. The villagers hold this manor for the Canons' revenue. Nothing is held in lordship; the manor was for their household supplies before 1066.
+      [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: The Canons of St Paul's hold WILLESDEN. It always answered for 15 hides. Land for 15 ploughs. The villagers, 8 ploughs; 7 possible. 25 villagers; 5 smallholders. Woodland, 500 pigs. Total value
+      £6 6s 6d; when acquired the same; before 1066 £12. The villagers hold this manor for the Canons' revenue. Nothing is held in lordship; the manor was for their household supplies before 1066.
     households: 30
     villagers: 25
     smallholders: 5
@@ -1283,9 +1467,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Harlesden
     name: Harlesden (Middlesex 3,18)
     holding: manor
+    textEdition: The Canons hold HARLESDEN as one manor. It answers for 5 hides. Land for 4 ploughs. In lordship 2 ploughs. The villagers, 1/2 plough; 1 1/2 ploughs possible. 12 villagers with 1 virgate
+      each; 10 villagers with 1/2 virgate each. Woodland, 100 pigs. In total, value 35s; when acquired the same; before 1066 £4. This manor was in the lordship of the Canons of St Paul's before 1066 and
+      still is. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: The Canons hold HARLESDEN as one manor. It answers for 5 hides. Land for 4 ploughs. In lordship 2 ploughs. The villagers, 1/2 plough; 1 1/2 ploughs possible. 12 villagers with 1 virgate each;
+      10 villagers with 1/2 virgate each. Woodland, 100 pigs. In total, value 35s; when acquired the same; before 1066 £4. This manor was in the lordship of the Canons of St Paul's before 1066 and still
+      is.
     households: 22
     villagers: 22
     ploughlands: 4
@@ -1334,9 +1526,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '`Rug [Moor]'''
     name: '`Rug [Moor]'' (Middlesex 3,19)'
     holding: manor
+    textEdition: Ralph the canon holds `RUG MOOR'. It answers for 2 hides. Land for 1 1/2 ploughs. In lordship 1 plough; 1/2 plough possible. Wood for fences, and 4s too. Value of this land, 35s; when acquired
+      the same; before 1066, 40s. Before 1066 it was in the Canons' lordship and still is. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =] <128a>
+    text: Ralph the canon holds `RUG MOOR'. It answers for 2 hides. Land for 1 1/2 ploughs. In lordship 1 plough; 1/2 plough possible. Wood for fences, and 4s too. Value of this land, 35s; when acquired
+      the same; before 1066, 40s. Before 1066 it was in the Canons' lordship and still is.
     ploughlands: 1.5
     lordsTeams: 1
     ploughTeams: 1
@@ -1390,9 +1588,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Tottenham [Court]
     name: Tottenham [Court] (Middlesex 3,20)
     holding: manor
+    textEdition: ?M? The Canons of St Paul's hold TOTTENHAM [Court]. It always answered for 5 hides. Land for 4 ploughs. 3 1/2 ploughs there; a further 1/2 possible. 4 villagers; 4 smallholders. Woodland,
+      150 pigs; from grazing, 20s. Total value £4; when acquired the same; before 1066, 100s. This manor lay and lies in the lordship of St Paul's. [= ?3? Land of the Canons of St Paul's ^[from the Bishop
+      of London]^ =]
+    text: The Canons of St Paul's hold TOTTENHAM [Court]. It always answered for 5 hides. Land for 4 ploughs. 3 1/2 ploughs there; a further 1/2 possible. 4 villagers; 4 smallholders. Woodland, 150 pigs;
+      from grazing, 20s. Total value £4; when acquired the same; before 1066, 100s. This manor lay and lies in the lordship of St Paul's.
     households: 8
     villagers: 4
     smallholders: 4
@@ -1440,9 +1645,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: St Pancras
     name: St Pancras (Middlesex 3,21)
     holding: manor
+    textEdition: ?M? At ST PANCRAS the Canons of St Paul's hold 4 hides. Land for 2 ploughs. The villagers have 1 plough; another plough possible. Wood for fences; pasture for the livestock, and 20d too.
+      4 villagers, who hold this land under the Canons; 7 cottagers. Total value 40s; when acquired the same; before 1066, 60s. This manor was and is in the lordship of St Paul's. [= ?3? Land of the Canons
+      of St Paul's ^[from the Bishop of London]^ =]
+    text: At ST PANCRAS the Canons of St Paul's hold 4 hides. Land for 2 ploughs. The villagers have 1 plough; another plough possible. Wood for fences; pasture for the livestock, and 20d too. 4 villagers,
+      who hold this land under the Canons; 7 cottagers. Total value 40s; when acquired the same; before 1066, 60s. This manor was and is in the lordship of St Paul's.
     households: 11
     villagers: 4
     cottagers: 7
@@ -1495,9 +1707,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Islington
     name: Islington (Middlesex 3,22)
     holding: land
+    textEdition: In ISLINGTON the Canons of St Paul's have 2 hides. Land for 1 1/2 ploughs. 1 plough there; 1/2 possible. 3 villagers with 1 virgate. Pasture for the village livestock. The value of this
+      land is and was 40s. It lay and lies in the lordship of St Paul's Church. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: In ISLINGTON the Canons of St Paul's have 2 hides. Land for 1 1/2 ploughs. 1 plough there; 1/2 possible. 3 villagers with 1 virgate. Pasture for the village livestock. The value of this land is
+      and was 40s. It lay and lies in the lordship of St Paul's Church.
     households: 3
     villagers: 3
     ploughlands: 1.5
@@ -1543,9 +1761,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Islington
     name: Islington (Middlesex 3,23)
     holding: land
+    textEdition: In the same village ^[ISLINGTON]^ the Canons themselves have 2 hides of land. The land is for 2 1/2 ploughs; they are there now. 4 villagers, who hold this land under the Canons; 4 smallholders;
+      13 cottagers. Value of this land, 30s; when acquired the same; before 1066, 40s. It lay and lies in the lordship of St Paul's Church. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^
+      =]
+    text: In the same village [ISLINGTON] the Canons themselves have 2 hides of land. The land is for 2 1/2 ploughs; they are there now. 4 villagers, who hold this land under the Canons; 4 smallholders;
+      13 cottagers. Value of this land, 30s; when acquired the same; before 1066, 40s. It lay and lies in the lordship of St Paul's Church.
     households: 21
     villagers: 4
     smallholders: 4
@@ -1597,9 +1822,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Stoke] Newington'
     name: '[Stoke] Newington (Middlesex 3,24)'
     holding: land
+    textEdition: In [Stoke] NEWINGTON the Canons of St Paul's have 2 hides. The land is for 2 1/2 ploughs; they are there now. 4 villagers; 37 cottagers with 10 acres. Value of this land, 41s; when acquired
+      the same; before 1066, 40s. It lay and lies in the lordship of St Paul's Church. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: In [Stoke] NEWINGTON the Canons of St Paul's have 2 hides. The land is for 2 1/2 ploughs; they are there now. 4 villagers; 37 cottagers with 10 acres. Value of this land, 41s; when acquired the
+      same; before 1066, 40s. It lay and lies in the lordship of St Paul's Church.
     households: 41
     villagers: 4
     cottagers: 37
@@ -1646,9 +1877,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hoxton
     name: Hoxton (Middlesex 3,25)
     holding: land
+    textEdition: In HOXTON the Canons of St Paul's have 1 hide. Land for 1 plough; it is there now. 3 villagers hold this land under the Canons. Pasture for the livestock. The value of this land was and
+      is 20s. It lay and lies in the lordship of St Paul's Church. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: In HOXTON the Canons of St Paul's have 1 hide. Land for 1 plough; it is there now. 3 villagers hold this land under the Canons. Pasture for the livestock. The value of this land was and is 20s.
+      It lay and lies in the lordship of St Paul's Church.
     households: 3
     villagers: 3
     ploughlands: 1
@@ -1698,9 +1935,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hoxton
     name: Hoxton (Middlesex 3,26)
     holding: manor
+    textEdition: ?M? The Canons hold HOXTON for 3 hides. The land is for 3 ploughs; they are there. 7 villagers, who hold this land; 16 cottagers. In total, value 55s; when acquired the same; before 1066,
+      60s. This manor lay and lies in [the lands of] St Paul's Church. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: The Canons hold HOXTON for 3 hides. The land is for 3 ploughs; they are there. 7 villagers, who hold this land; 16 cottagers. In total, value 55s; when acquired the same; before 1066, 60s. This
+      manor lay and lies in [the lands of] St Paul's Church.
     households: 23
     villagers: 7
     cottagers: 16
@@ -1751,9 +1994,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Bishopsgate
     name: Bishopsgate (Middlesex 3,27)
     holding: land
+    textEdition: At BISHOPSGATE the Canons of St Paul's have 10 cottagers with 9 acres who pay 18s 6d a year. Before 1066 they held similarly and had as much. [= ?3? Land of the Canons of St Paul's ^[from
+      the Bishop of London]^ =]
+    text: At BISHOPSGATE the Canons of St Paul's have 10 cottagers with 9 acres who pay 18s 6d a year. Before 1066 they held similarly and had as much.
     households: 10
     cottagers: 10
     geldUnits: 0.075
@@ -1796,9 +2044,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '{Stanestaple}'
     name: '{Stanestaple} (Middlesex 3,28)'
     holding: land
+    textEdition: In {STANESTAPLE} the Canons have 4 hides. The land is for 2 ploughs; they are there now. 7 villagers, who hold this land under the Canons; 2 cottagers. Pasture for the village livestock;
+      woodland, 150 pigs, and 10s too. Total value 50s; when acquired the same; before 1066, 60s. This land lay and lies in [the lands of] St Paul's Church. [= ?3? Land of the Canons of St Paul's ^[from
+      the Bishop of London]^ =]
+    text: In STANESTAPLE the Canons have 4 hides. The land is for 2 ploughs; they are there now. 7 villagers, who hold this land under the Canons; 2 cottagers. Pasture for the village livestock; woodland,
+      150 pigs, and 10s too. Total value 50s; when acquired the same; before 1066, 60s. This land lay and lies in [the lands of] St Paul's Church.
     households: 9
     villagers: 7
     cottagers: 2
@@ -1850,9 +2105,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: St Pancras
     name: St Pancras (Middlesex 3,29)
     holding: land
+    textEdition: At ST PANCRAS Walter, a Canon of St Paul's, holds 1 hide. <128b> Land for 1 plough. The plough is there. 24 men, who pay 30s a year. This land lay and lies in the lordship of St Paul's
+      Church. [= ?3? Land of the Canons of St Paul's ^[from the Bishop of London]^ =]
+    text: At ST PANCRAS Walter, a Canon of St Paul's, holds 1 hide. Land for 1 plough. The plough is there. 24 men, who pay 30s a year. This land lay and lies in the lordship of St Paul's Church.
     ploughlands: 1
     geldUnits: 1
     value1086: 360
@@ -1899,9 +2159,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[West] Drayton'
     name: '[West] Drayton (Middlesex 3,30)'
     holding: manor
+    textEdition: '[In `ELTHORNE'' Hundred] ?M? The Canons of St Paul''s hold [West] DRAYTON. It always answered for 10 hides. Land for 6 ploughs. 5 hides belong to the lordship; 1 plough there. The villagers
+      have 5 ploughs. 8 villagers with 2 hides; 6 smallholders with 30 acres; 2 cottagers with 4 acres; 1 smallholder with 5 acres. 1 mill at 13s 5d; meadow for 1 plough; pasture for the village livestock;
+      from 1 weir, 32d. Total value £6; when acquired the same; before 1066 £8. This manor lay and lies in the lordship of St Paul''s Church. [= ?3? Land of the Canons of St Paul''s ^[from the Bishop of
+      London]^ =] ?4? Land of St Peter''s of Westminster'
+    text: '[In `ELTHORNE'' Hundred] The Canons of St Paul''s hold [West] DRAYTON. It always answered for 10 hides. Land for 6 ploughs. 5 hides belong to the lordship; 1 plough there. The villagers have
+      5 ploughs. 8 villagers with 2 hides; 6 smallholders with 30 acres; 2 cottagers with 4 acres; 1 smallholder with 5 acres. 1 mill at 13s 5d; meadow for 1 plough; pasture for the village livestock; from
+      1 weir, 32d. Total value £6; when acquired the same; before 1066 £8. This manor lay and lies in the lordship of St Paul''s Church. Land of St Peter''s of Westminster'
     households: 17
     villagers: 8
     smallholders: 7
@@ -1953,6 +2222,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 4
     folio: MDX 4
   relations:
@@ -1972,9 +2243,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Westminster
     name: Westminster (Middlesex 4,1)
     holding: manor
+    textEdition: In `OSSULSTONE' Hundred ?M? In the village ^[WESTMINSTER]^ where St Peter's Church stands the Abbot of that monastery holds 13 1/2 hides. The land is for 11 ploughs. 9 hides and 1 virgate
+      belong to the lordship; 4 ploughs there. The villagers have 6 ploughs; 1 more plough possible. 9 villagers with 1 virgate each; 1 villager with 1 hide; 9 villagers with 1/2 virgate each; 1 cottager
+      with 5 acres; 41 cottagers, who pay 40s a year for their gardens. Meadow for 11 ploughs; pasture for the village livestock; woodland, 100 pigs; 25 houses of the Abbot's men-at-arms and other men,
+      who pay 8s a year. Total value £10; when acquired the same; before 1066 £12. This manor was and is in the lordship of St Peter's Church, Westminster. [= ?4? Land of St Peter's of Westminster =]
+    text: In `OSSULSTONE' Hundred In the village [WESTMINSTER] where St Peter's Church stands the Abbot of that monastery holds 13 1/2 hides. The land is for 11 ploughs. 9 hides and 1 virgate belong to
+      the lordship; 4 ploughs there. The villagers have 6 ploughs; 1 more plough possible. 9 villagers with 1 virgate each; 1 villager with 1 hide; 9 villagers with 1/2 virgate each; 1 cottager with 5 acres;
+      41 cottagers, who pay 40s a year for their gardens. Meadow for 11 ploughs; pasture for the village livestock; woodland, 100 pigs; 25 houses of the Abbot's men-at-arms and other men, who pay 8s a year.
+      Total value £10; when acquired the same; before 1066 £12. This manor was and is in the lordship of St Peter's Church, Westminster.
     households: 61
     villagers: 19
     cottagers: 42
@@ -2016,9 +2297,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Westminster
     name: Westminster (Middlesex 4,2)
     holding: land
+    textEdition: In the same village ^[WESTMINSTER]^ [* Ralph *] Baynard holds 3 hides from the Abbot. The land is for 2 ploughs; they are there, in lordship. 1 cottager. Woodland, 100 pigs; pasture for
+      the livestock; 4 {arpents} of newly planted vines. Total value 60s; when acquired 20s; before 1066 £6. This land lay and lies in [the lands of] St Peter's Church. [= ?4? Land of St Peter's of Westminster
+      =]
+    text: In the same village [WESTMINSTER] [Ralph] Baynard holds 3 hides from the Abbot. The land is for 2 ploughs; they are there, in lordship. 1 cottager. Woodland, 100 pigs; pasture for the livestock;
+      4 arpents of newly planted vines. Total value 60s; when acquired 20s; before 1066 £6. This land lay and lies in [the lands of] St Peter's Church.
     households: 1
     cottagers: 1
     geldUnits: 3
@@ -2061,9 +2349,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hampstead
     name: Hampstead (Middlesex 4,3)
     holding: manor
+    textEdition: ?M? The Abbot of St Peter's holds HAMPSTEAD. 4 hides. Land for 3 ploughs. 3 1/2 hides belong to the lordship; 1 plough there. The villagers have 1 plough; another possible. 1 villager with
+      1 virgate; 5 smallholders with 1 virgate; 1 slave. Woodland, 100 pigs. In total, value 50s; when acquired the same; before 1066, 100s. ^[The whole of this manor lay and lies in the lordship of St
+      Peter's Church]^ [= ?4? Land of St Peter's of Westminster =]
+    text: The Abbot of St Peter's holds HAMPSTEAD. 4 hides. Land for 3 ploughs. 3 1/2 hides belong to the lordship; 1 plough there. The villagers have 1 plough; another possible. 1 villager with 1 virgate;
+      5 smallholders with 1 virgate; 1 slave. Woodland, 100 pigs. In total, value 50s; when acquired the same; before 1066, 100s. [The whole of this manor lay and lies in the lordship of St Peter's Church]
     households: 7
     villagers: 1
     smallholders: 5
@@ -2107,9 +2402,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hampstead
     name: Hampstead (Middlesex 4,4)
     holding: land
+    textEdition: In the same village ^[HAMPSTEAD]^ Ranulf Peverel holds under the Abbot 1 hide of villagers' land. Land for 1/2 plough; it is there. The value of this land was and is 5s. The whole of this
+      manor lay and lies in the lordship of St Peter's Church. [= ?4? Land of St Peter's of Westminster =]
+    text: In the same village [HAMPSTEAD] Ranulf Peverel holds under the Abbot 1 hide of villagers' land. Land for 1/2 plough; it is there. The value of this land was and is 5s. The whole of this manor
+      lay and lies in the lordship of St Peter's Church.
     ploughlands: 0.5
     geldUnits: 1
     value1066: 60
@@ -2149,9 +2450,21 @@
     county: MDX
     countyName: Middlesex
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Staines
     name: Staines (Middlesex 4,5)
     holding: borough
+    textEdition: In SPELTHORNE Hundred ?M? The Abbot of St Peter's holds STAINES, for 19 hides. Land for 24 ploughs. 11 hides belong to the lordship; 13 ploughs there. The villagers have 11 ploughs. 3 villagers,
+      1/2 hide each; 4 villagers with 1 hide; 8 villagers with 1/2 virgate each; 36 smallholders with 3 hides; 1 villager with 1 virgate; 4 smallholders with 40 acres; 10 smallholders with 5 acres each;
+      5 cottagers with 4 acres each; <128c> 8 smallholders with 1 virgate; 3 cottagers with 9 acres; 12 slaves; 46 burgesses, who pay 40s a year. 6 mills at 64s; 1 weir at 6s 8d; 1 weir which pays nothing;
+      pasture for the village livestock; meadow for 24 ploughs, and 20s over and above; woodland, 30 pigs; 2 {arpents} of vines. 4 outliers belong to this manor; they were there before 1066. Total value
+      £35; when acquired the same; before 1066 £40. This manor lay and lies in the lordship of St Peter's Church. [= ?4? Land of St Peter's of Westminster =]
+    text: In SPELTHORNE Hundred The Abbot of St Peter's holds STAINES, for 19 hides. Land for 24 ploughs. 11 hides belong to the lordship; 13 ploughs there. The villagers have 11 ploughs. 3 villagers, 1/2
+      hide each; 4 villagers with 1 hide; 8 villagers with 1/2 virgate each; 36 smallholders with 3 hides; 1 villager with 1 virgate; 4 smallholders with 40 acres; 10 smallholders with 5 acres each; 5 cottagers
+      with 4 acres each; 8 smallholders with 1 virgate; 3 cottagers with 9 acres; 12 slaves; 46 burgesses, who pay 40s a year. 6 mills at 64s; 1 weir at 6s 8d; 1 weir which pays nothing; pasture for the
+      village livestock; meadow for 24 ploughs, and 20s over and above; woodland, 30 pigs; 2 arpents of vines. 4 outliers belong to this manor; they were there before 1066. Total value £35; when acquired
+      the same; before 1066 £40. This manor lay and lies in the lordship of St Peter's Church.
     households: 140
     villagers: 16
     smallholders: 58
@@ -2198,9 +2511,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sunbury
     name: Sunbury (Middlesex 4,6)
     holding: manor
+    textEdition: ?M? The Abbot of St Peter's holds SUNBURY, for 7 hides. Land for 6 ploughs. 4 hides belong to the lordship; 1 plough there. The villagers have 4 ploughs. A priest has 1/2 virgate; 8 villagers,
+      1 virgate each; 2 villagers with 1 virgate; 5 smallholders with 1 virgate; 5 cottagers; 1 slave. Meadow for 6 ploughs; pasture for the village livestock. Total value £6; when acquired the same; before
+      1066 £7. This manor was and is in the lordship of St Peter's Church. [= ?4? Land of St Peter's of Westminster =]
+    text: The Abbot of St Peter's holds SUNBURY, for 7 hides. Land for 6 ploughs. 4 hides belong to the lordship; 1 plough there. The villagers have 4 ploughs. A priest has 1/2 virgate; 8 villagers, 1 virgate
+      each; 2 villagers with 1 virgate; 5 smallholders with 1 virgate; 5 cottagers; 1 slave. Meadow for 6 ploughs; pasture for the village livestock. Total value £6; when acquired the same; before 1066
+      £7. This manor was and is in the lordship of St Peter's Church.
     households: 22
     villagers: 10
     smallholders: 5
@@ -2245,9 +2566,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Shepperton
     name: Shepperton (Middlesex 4,7)
     holding: manor
+    textEdition: ?M? The Abbot of St Peter's holds SHEPPERTON, for 8 hides. The land is for 7 ploughs. 3 1/2 hides belong to the lordship; 1 plough there. The villagers have 6 ploughs. 17 villagers with
+      1 virgate each; a priest, 15 acres; 3 cottagers with 9 acres; 2 cottagers; 2 slaves. Meadow for 7 ploughs; pasture for the village livestock; 1 weir at 6s 8d. In total, value £6 16s 6d; when acquired
+      the same; before 1066 £7. This manor was and is in the lordship of St Peter's Church. [= ?4? Land of St Peter's of Westminster =]
+    text: The Abbot of St Peter's holds SHEPPERTON, for 8 hides. The land is for 7 ploughs. 3 1/2 hides belong to the lordship; 1 plough there. The villagers have 6 ploughs. 17 villagers with 1 virgate
+      each; a priest, 15 acres; 3 cottagers with 9 acres; 2 cottagers; 2 slaves. Meadow for 7 ploughs; pasture for the village livestock; 1 weir at 6s 8d. In total, value £6 16s 6d; when acquired the same;
+      before 1066 £7. This manor was and is in the lordship of St Peter's Church.
     households: 25
     villagers: 17
     slaves: 2
@@ -2290,9 +2619,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Greenford
     name: Greenford (Middlesex 4,8)
     holding: manor
+    textEdition: In `ELTHORNE' Hundred ?M? The Abbot of St Peter's holds GREENFORD, for 11 1/2 hides. Land for 7 ploughs. 5 hides belong to the lordship; 1 plough there; another possible. The villagers
+      have 5 ploughs. 1 villager has 1 hide and 1 virgate; 4 villagers with 1/2 hide each; 4 villagers with 1 hide; 7 smallholders with 1 hide; a Frenchman, 1 hide and 1 virgate; 3 cottagers; 6 slaves.
+      Woodland, 300 pigs; pasture for the village livestock. Total value £7; when acquired the same; before 1066 £10. This manor lay and lies in the lordship of St Peter's Church. [= ?4? Land of St Peter's
+      of Westminster =]
+    text: In `ELTHORNE' Hundred The Abbot of St Peter's holds GREENFORD, for 11 1/2 hides. Land for 7 ploughs. 5 hides belong to the lordship; 1 plough there; another possible. The villagers have 5 ploughs.
+      1 villager has 1 hide and 1 virgate; 4 villagers with 1/2 hide each; 4 villagers with 1 hide; 7 smallholders with 1 hide; a Frenchman, 1 hide and 1 virgate; 3 cottagers; 6 slaves. Woodland, 300 pigs;
+      pasture for the village livestock. Total value £7; when acquired the same; before 1066 £10. This manor lay and lies in the lordship of St Peter's Church.
     households: 26
     villagers: 9
     smallholders: 7
@@ -2338,9 +2676,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hanwell
     name: Hanwell (Middlesex 4,9)
     holding: manor
+    textEdition: ?M? The Abbot of St Peter's holds HANWELL. It answers for 8 hides. Land for 5 ploughs. 4 hides and 1 virgate belong to the lordship; 1 plough there. The villagers have 4 ploughs. 1 villager
+      with 2 hides; 4 villagers with 1 hide; 6 smallholders with 3 virgates; 4 cottagers; 2 slaves. 1 mill at 2s 2d; meadow for 1 plough; woodland, 50 pigs. Total value 110s; when acquired the same; before
+      1066 £7. This manor was and is in the lordship of St Peter's. [= ?4? Land of St Peter's of Westminster =]
+    text: The Abbot of St Peter's holds HANWELL. It answers for 8 hides. Land for 5 ploughs. 4 hides and 1 virgate belong to the lordship; 1 plough there. The villagers have 4 ploughs. 1 villager with 2
+      hides; 4 villagers with 1 hide; 6 smallholders with 3 virgates; 4 cottagers; 2 slaves. 1 mill at 2s 2d; meadow for 1 plough; woodland, 50 pigs. Total value 110s; when acquired the same; before 1066
+      £7. This manor was and is in the lordship of St Peter's.
     households: 17
     villagers: 5
     smallholders: 6
@@ -2385,9 +2731,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Cowley
     name: Cowley (Middlesex 4,10)
     holding: manor
+    textEdition: ?M? The Abbot of St Peter's holds COWLEY. It answers for 2 hides. Land for 1 plough. 1 1/2 hides belong to the lordship; 1 plough there. 2 villagers with 1/2 hide; 1 cottager. Meadow for
+      1/2 plough; pasture for the village livestock; <128d> woodland, 40 pigs; 1 mill at 5s. Value of this land, 30s; when acquired the same; before 1066, 40s. St Peter's of Westminster held and holds this
+      land in lordship. [= ?4? Land of St Peter's of Westminster =]
+    text: The Abbot of St Peter's holds COWLEY. It answers for 2 hides. Land for 1 plough. 1 1/2 hides belong to the lordship; 1 plough there. 2 villagers with 1/2 hide; 1 cottager. Meadow for 1/2 plough;
+      pasture for the village livestock; woodland, 40 pigs; 1 mill at 5s. Value of this land, 30s; when acquired the same; before 1066, 40s. St Peter's of Westminster held and holds this land in lordship.
     households: 3
     villagers: 2
     cottagers: 1
@@ -2430,9 +2783,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Kingsbury
     name: Kingsbury (Middlesex 4,11)
     holding: land
+    textEdition: In the Hundred of GORE William the chamberlain holds 2 1/2 hides in KINGSBURY under the Abbot of St Peter's. Land for 2 ploughs. In lordship 1 plough. The villagers, 1 plough. 5 villagers
+      with 1 virgate each; 1 cottager. Woodland, 200 pigs. Value of this land, 30s; when acquired the same; before 1066, 60s. Alwin Horne, a thane of King Edward's, held this land in pledge from one of
+      St Peter's men. [= ?4? Land of St Peter's of Westminster =]
+    text: In the Hundred of GORE William the chamberlain holds 2 1/2 hides in KINGSBURY under the Abbot of St Peter's. Land for 2 ploughs. In lordship 1 plough. The villagers, 1 plough. 5 villagers with
+      1 virgate each; 1 cottager. Woodland, 200 pigs. Value of this land, 30s; when acquired the same; before 1066, 60s. Alwin Horne, a thane of King Edward's, held this land in pledge from one of St Peter's
+      men.
     households: 6
     villagers: 5
     cottagers: 1
@@ -2490,9 +2851,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hendon
     name: Hendon (Middlesex 4,12)
     holding: manor
+    textEdition: ?M? The Abbot of St Peter's holds HENDON. It answers for 20 hides. Land for 16 ploughs. 10 hides belong to the lordship; 3 ploughs there. The villagers have 8 ploughs; a further 5 possible.
+      A priest has 1 virgate; 3 villagers, 1/2 hide each; 7 villagers, 1 virgate each; 16 villagers, 1/2 virgate each; 12 smallholders who hold 1/2 hide; 6 cottagers; 1 slave. Meadow for 2 oxen; woodland,
+      1000 pigs, and 10s too. Total value £8; when acquired the same; before 1066 £12. This manor lay and lies in the lordship of St Peter's Church. [= ?4? Land of St Peter's of Westminster =] ?5? Land
+      of La Trinité of the Mount, Rouen
+    text: The Abbot of St Peter's holds HENDON. It answers for 20 hides. Land for 16 ploughs. 10 hides belong to the lordship; 3 ploughs there. The villagers have 8 ploughs; a further 5 possible. A priest
+      has 1 virgate; 3 villagers, 1/2 hide each; 7 villagers, 1 virgate each; 16 villagers, 1/2 virgate each; 12 smallholders who hold 1/2 hide; 6 cottagers; 1 slave. Meadow for 2 oxen; woodland, 1000 pigs,
+      and 10s too. Total value £8; when acquired the same; before 1066 £12. This manor lay and lies in the lordship of St Peter's Church. Land of La Trinité of the Mount, Rouen
     households: 46
     villagers: 26
     smallholders: 12
@@ -2538,6 +2908,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 5
     folio: MDX 5
   relations:
@@ -2557,9 +2929,21 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Harmondsworth
     name: Harmondsworth (Middlesex 5,1)
     holding: manor
+    textEdition: '[In `ELTHORNE'' Hundred] ?M? The Abbot of La Trinité of Rouen holds HARMONDSWORTH from the King. It answers for 30 hides. Land for 20 ploughs. 8 hides belong to the lordship; 3 ploughs
+      there. There are 10 ploughs between the Frenchmen and the villagers; a further 7 possible. A man-at-arms has 2 hides; 2 villagers, 1 hide each; 2 villagers with 1 hide; 14 villagers with 1 virgate
+      each; 6 villagers with 1/2 virgate each; 6 smallholders, 5 acres each; 7 cottagers; 6 slaves. 3 mills at 60s, and 500 eels; from the fishponds, 1000 eels; meadow for 20 ploughs; pasture for the village
+      livestock; woodland, 500 pigs; 1 {arpent} of vines. Total value £20; when acquired £12; before 1066 £25. Earl Harold held this manor. In this manor there was a Freeman who held 2 of these 30 hides;
+      he could not grant or sell them outside Harmondsworth before 1066. [= ?5? Land of La Trinité of the Mount, Rouen =]'
+    text: '[In `ELTHORNE'' Hundred] The Abbot of La Trinité of Rouen holds HARMONDSWORTH from the King. It answers for 30 hides. Land for 20 ploughs. 8 hides belong to the lordship; 3 ploughs there. There
+      are 10 ploughs between the Frenchmen and the villagers; a further 7 possible. A man-at-arms has 2 hides; 2 villagers, 1 hide each; 2 villagers with 1 hide; 14 villagers with 1 virgate each; 6 villagers
+      with 1/2 virgate each; 6 smallholders, 5 acres each; 7 cottagers; 6 slaves. 3 mills at 60s, and 500 eels; from the fishponds, 1000 eels; meadow for 20 ploughs; pasture for the village livestock; woodland,
+      500 pigs; 1 arpent of vines. Total value £20; when acquired £12; before 1066 £25. Earl Harold held this manor. In this manor there was a Freeman who held 2 of these 30 hides; he could not grant or
+      sell them outside Harmondsworth before 1066.'
     households: 44
     villagers: 24
     smallholders: 6
@@ -2611,7 +2995,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 5,2
+    textEdition: In SPELTHORNE Hundred Hertald of Holy Trinity now holds 1 hide _ from the King. Land for 1/2 plough. 1 villager who holds it. Meadow for 1/2 plough. Value of this land, 10s; when acquired
+      the same; before 1066 the same. Golding, Earl Harold's man, held this land; he could not sell or grant without his permission. [= ?5? Land of La Trinité of the Mount, Rouen =] ?6? Land of Barking
+      Church
+    text: In SPELTHORNE Hundred Hertald of Holy Trinity now holds 1 hide _ from the King. Land for 1/2 plough. 1 villager who holds it. Meadow for 1/2 plough. Value of this land, 10s; when acquired the
+      same; before 1066 the same. Golding, Earl Harold's man, held this land; he could not sell or grant without his permission. Land of Barking Church
     households: 1
     villagers: 1
     ploughlands: 0.5
@@ -2650,6 +3041,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 6
     hasChurch: true
     folio: MDX 5
@@ -2670,9 +3063,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Tyburn
     name: Tyburn (Middlesex 6,1)
     holding: manor
+    textEdition: In `OSSULSTONE' Hundred ?M? The Abbess of Barking holds MARYLEBONE from the King. It answers for 5 hides. Land for 3 ploughs. In lordship 2 hides; 1 plough there. The villagers have 2 ploughs.
+      2 villagers with 1/2 hide; 1 villager with 1/2 virgate; 2 smallholders with 10 acres; 3 cottagers. Pasture for the village livestock; woodland, 50 pigs; from grazing, 40d. In total, value 52s; when
+      acquired the same; before 1066, 100s. This manor always lay and lies in [the lands of] Barking Church. [= ?6? Land of Barking Church =] <129a> ?7? Land of Earl Roger
+    text: In `OSSULSTONE' Hundred The Abbess of Barking holds MARYLEBONE from the King. It answers for 5 hides. Land for 3 ploughs. In lordship 2 hides; 1 plough there. The villagers have 2 ploughs. 2 villagers
+      with 1/2 hide; 1 villager with 1/2 virgate; 2 smallholders with 10 acres; 3 cottagers. Pasture for the village livestock; woodland, 50 pigs; from grazing, 40d. In total, value 52s; when acquired the
+      same; before 1066, 100s. This manor always lay and lies in [the lands of] Barking Church. Land of Earl Roger
     households: 8
     villagers: 3
     smallholders: 2
@@ -2717,6 +3118,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 7
     folio: MDX 6
   relations:
@@ -2736,9 +3139,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hatton
     name: Hatton (Middlesex 7,1)
     holding: dependency
+    textEdition: SPELTHORNE Hundred Earl Roger holds 1 1/2 hides in HATTON. Land for 1 plough; it is there. 2 villagers hold this land. Meadow for 1 plough. Value of this land 15s; when acquired the same;
+      before 1066, 20s. 2 Freemen held it; they were Albert of Lorraine's men; they could sell or grant. Now it is placed in Colham, where it was not before 1066. [= ?7? Land of Earl Roger =]
+    text: SPELTHORNE Hundred Earl Roger holds 1 1/2 hides in HATTON. Land for 1 plough; it is there. 2 villagers hold this land. Meadow for 1 plough. Value of this land 15s; when acquired the same; before
+      1066, 20s. 2 Freemen held it; they were Albert of Lorraine's men; they could sell or grant. Now it is placed in Colham, where it was not before 1066.
     households: 2
     villagers: 2
     ploughlands: 1
@@ -2788,9 +3197,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hanworth
     name: Hanworth (Middlesex 7,2)
     holding: manor
+    textEdition: ?M? HANWORTH answers for 5 hides. Robert holds it from Earl Roger. Land for 3 ploughs. In lordship 1 1/2 ploughs. The villagers, 2 1/2 ploughs. 1 villager with 1 hide; 5 villagers with
+      1 virgate each; 2 villagers with 1 virgate; 2 cottagers. Meadow for 1 plough; pasture for the village livestock. In total, value 40s; when acquired the same; before 1066, 60s. Ulf [* son of Manni
+      Swart *], one of King Edward's Guards, held this manor. [= ?7? Land of Earl Roger =]
+    text: HANWORTH answers for 5 hides. Robert holds it from Earl Roger. Land for 3 ploughs. In lordship 1 1/2 ploughs. The villagers, 2 1/2 ploughs. 1 villager with 1 hide; 5 villagers with 1 virgate each;
+      2 villagers with 1 virgate; 2 cottagers. Meadow for 1 plough; pasture for the village livestock. In total, value 40s; when acquired the same; before 1066, 60s. Ulf [son of Manni Swart], one of King
+      Edward's Guards, held this manor.
     households: 10
     villagers: 8
     cottagers: 2
@@ -2839,9 +3256,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Harmondsworth
     name: Harmondsworth (Middlesex 7,3)
     holding: dependency
+    textEdition: '`ELTHORNE'' Hundred In HARMONDSWORTH Earl Roger holds 1 hide. Land for 1 plough; 1/2 plough there; 1/2 possible. 2 villagers hold this land. The value was and is 10s. Alwin, Wigot [* of
+      Wallingford *]''s man, held it; he could do with it as he would. Now it lies in [the lands of] Colham, where it did not lie before 1066. [= ?7? Land of Earl Roger =]'
+    text: '`ELTHORNE'' Hundred In HARMONDSWORTH Earl Roger holds 1 hide. Land for 1 plough; 1/2 plough there; 1/2 possible. 2 villagers hold this land. The value was and is 10s. Alwin, Wigot [of Wallingford]''s
+      man, held it; he could do with it as he would. Now it lies in [the lands of] Colham, where it did not lie before 1066.'
     households: 2
     villagers: 2
     ploughlands: 1
@@ -2890,9 +3313,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Harlington
     name: Harlington (Middlesex 7,4)
     holding: manor
+    textEdition: ?M? HARLINGTON answers for 10 hides. Alfred [* nephew of Wigot *] and Olaf hold it from Earl Roger. Land for 6 ploughs. Now in lordship 2 ploughs. The villagers have 3 ploughs; a fourth
+      possible. A priest, 1/2 hide; 12 villagers, 1 virgate each; 4 villagers, 1/2 virgate each; 2 smallholders with 11 acres; 8 cottagers; 1 slave. Meadow for 2 ploughs. Total value 100s; when acquired
+      the same; before 1066 £8. Wigot [* of Wallingford *] held this manor. 1 Freeman held 2 hides of this land; he could not sell without his permission. [= ?7? Land of Earl Roger =]
+    text: HARLINGTON answers for 10 hides. Alfred [nephew of Wigot] and Olaf hold it from Earl Roger. Land for 6 ploughs. Now in lordship 2 ploughs. The villagers have 3 ploughs; a fourth possible. A priest,
+      1/2 hide; 12 villagers, 1 virgate each; 4 villagers, 1/2 virgate each; 2 smallholders with 11 acres; 8 cottagers; 1 slave. Meadow for 2 ploughs. Total value 100s; when acquired the same; before 1066
+      £8. Wigot [of Wallingford] held this manor. 1 Freeman held 2 hides of this land; he could not sell without his permission.
     households: 28
     villagers: 16
     smallholders: 2
@@ -2949,9 +3380,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Colham
     name: Colham (Middlesex 7,5)
     holding: manor
+    textEdition: ?M? COLHAM answers for 8 hides. Earl Roger holds it. Land for 7 ploughs. In lordship 6 hides; 3 ploughs there. The villagers have 3 ploughs. 6 villagers, 1 virgate each; 4 others with 2
+      virgates; a priest, 1 hide; 10 smallholders with 5 acres each; 4 cottagers; 8 slaves. 2 mills at 41s; 1/2 mill at 5s; meadow for 3 ploughs; pasture for the village livestock; woodland, 400 pigs; 1
+      {arpent} of vines. Total value £8; when acquired £6; before 1066 £10. Wigot [* of Wallingford *] held this manor from King Edward. [= ?7? Land of Earl Roger =]
+    text: COLHAM answers for 8 hides. Earl Roger holds it. Land for 7 ploughs. In lordship 6 hides; 3 ploughs there. The villagers have 3 ploughs. 6 villagers, 1 virgate each; 4 others with 2 virgates;
+      a priest, 1 hide; 10 smallholders with 5 acres each; 4 cottagers; 8 slaves. 2 mills at 41s; 1/2 mill at 5s; meadow for 3 ploughs; pasture for the village livestock; woodland, 400 pigs; 1 arpent of
+      vines. Total value £8; when acquired £6; before 1066 £10. Wigot [of Wallingford] held this manor from King Edward.
     households: 29
     villagers: 6
     smallholders: 10
@@ -3002,9 +3441,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hillingdon
     name: Hillingdon (Middlesex 7,6)
     holding: manor
+    textEdition: ?M? HILLINGDON answers for 4 hides. Earl Roger holds it. Land for 2 ploughs. In lordship 2 hides; 1 plough possible. The villagers have 1 plough. 2 villagers with 1/2 hide; 2 smallholders
+      with 10 acres; 1 cottager; 2 Frenchmen, 1 1/2 hides; 3 men dwell under them. Meadow for 4 oxen; woodland, 1000 pigs; from 1 weir, 5s. Total value £3; when acquired the same; before 1066 £4. Ulf [*
+      son of Manni Swart *], a thane of King Edward's, held this manor and could do with it as he would. [= ?7? Land of Earl Roger =]
+    text: HILLINGDON answers for 4 hides. Earl Roger holds it. Land for 2 ploughs. In lordship 2 hides; 1 plough possible. The villagers have 1 plough. 2 villagers with 1/2 hide; 2 smallholders with 10
+      acres; 1 cottager; 2 Frenchmen, 1 1/2 hides; 3 men dwell under them. Meadow for 4 oxen; woodland, 1000 pigs; from 1 weir, 5s. Total value £3; when acquired the same; before 1066 £4. Ulf [son of Manni
+      Swart], a thane of King Edward's, held this manor and could do with it as he would.
     households: 7
     villagers: 2
     smallholders: 2
@@ -3053,9 +3500,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Dawley
     name: Dawley (Middlesex 7,7)
     holding: dependency
+    textEdition: ?M? Alnoth holds DAWLEY from Earl Roger. It answers for 3 hides. Land for 2 ploughs. In lordship 1 plough. The villagers have 1 plough. 4 villagers with 1 virgate each; 4 smallholders with
+      5 acres. Meadow for 6 oxen; pasture for the village livestock; woodland, 15 pigs. In total, value 30s; when acquired the same; before 1066, 60s. This manor lies in [the lands of] Colham, where it
+      was not before 1066. Godwin [son of] Aelfgyth, Wigot [* of Wallingford *]'s man, held it and could do with it as he would. [= ?7? Land of Earl Roger =] <129b>
+    text: Alnoth holds DAWLEY from Earl Roger. It answers for 3 hides. Land for 2 ploughs. In lordship 1 plough. The villagers have 1 plough. 4 villagers with 1 virgate each; 4 smallholders with 5 acres.
+      Meadow for 6 oxen; pasture for the village livestock; woodland, 15 pigs. In total, value 30s; when acquired the same; before 1066, 60s. This manor lies in [the lands of] Colham, where it was not before
+      1066. Godwin [son of] Aelfgyth, Wigot [of Wallingford]'s man, held it and could do with it as he would.
     households: 8
     villagers: 4
     smallholders: 4
@@ -3110,9 +3565,20 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ickenham
     name: Ickenham (Middlesex 7,8)
     holding: dependency
+    textEdition: ?M? ICKENHAM answers for 9 1/2 hides. 3 men-at-arms and 1 Englishman hold it from Earl Roger. Land for 6 ploughs; 4 ploughs there; a further 2 possible. 6 villagers with 1 hide; 2 others
+      with 1 hide and 1 virgate; 2 others with 2 virgates; 4 smallholders with 20 acres; 3 cottagers. Meadow for 4 ploughs; pasture for the village livestock; woodland, 200 pigs. Total value £4; when acquired
+      the same; before 1066 £6. Toki held 2 hides of this manor; he was one of King Edward's Guards. 2 Freemen held 2 hides and 1 virgate; they were Wulfward [* White *]'s men. Alwin held 1 hide and 3 virgates;
+      he was Wulfsi? son of Manni [* Swart *]'s man; they could sell where they would before 1066. Now the whole of this land lies in [the lands of] Colham, where it was not before 1066. [= ?7? Land of
+      Earl Roger =] ?8? Land of the Count of Mortain
+    text: ICKENHAM answers for 9 1/2 hides. 3 men-at-arms and 1 Englishman hold it from Earl Roger. Land for 6 ploughs; 4 ploughs there; a further 2 possible. 6 villagers with 1 hide; 2 others with 1 hide
+      and 1 virgate; 2 others with 2 virgates; 4 smallholders with 20 acres; 3 cottagers. Meadow for 4 ploughs; pasture for the village livestock; woodland, 200 pigs. Total value £4; when acquired the same;
+      before 1066 £6. Toki held 2 hides of this manor; he was one of King Edward's Guards. 2 Freemen held 2 hides and 1 virgate; they were Wulfward [White]'s men. Alwin held 1 hide and 3 virgates; he was
+      Wulfsi? son of Manni [Swart]'s man; they could sell where they would before 1066. Now the whole of this land lies in [the lands of] Colham, where it was not before 1066. Land of the Count of Mortain
     households: 13
     villagers: 6
     smallholders: 4
@@ -3185,6 +3651,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 8
     folio: MDX 6
   relations:
@@ -3204,9 +3672,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Laleham
     name: Laleham (Middlesex 8,1)
     holding: land
+    textEdition: In SPELTHORNE Hundred The Count of Mortain holds 2 hides in LALEHAM, and the Abbot of Fécamp from him. Land for 1 1/2 ploughs; they are there. 6 villagers with 1/2 hide; 7 cottagers. Meadow
+      for 1 1/2 ploughs; pasture for the village livestock. Value of this land, 40s; when acquired and before 1066, 50s. The reeve of Staines held this land under the Abbot of Westminster; he could not
+      grant or sell it outside Staines except with the Abbot's permission. [= ?8? Land of the Count of Mortain =]
+    text: In SPELTHORNE Hundred The Count of Mortain holds 2 hides in LALEHAM, and the Abbot of Fécamp from him. Land for 1 1/2 ploughs; they are there. 6 villagers with 1/2 hide; 7 cottagers. Meadow for
+      1 1/2 ploughs; pasture for the village livestock. Value of this land, 40s; when acquired and before 1066, 50s. The reeve of Staines held this land under the Abbot of Westminster; he could not grant
+      or sell it outside Staines except with the Abbot's permission.
     households: 13
     villagers: 6
     cottagers: 7
@@ -3257,9 +3733,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ashford
     name: Ashford (Middlesex 8,2)
     holding: dependency
+    textEdition: In ASHFORD the Count also holds 1 hide. Land for 1 plough; it is there. Meadow for 1 plough. Value of this land, 14s; when acquired the same; before 1066, 20s. Aelfric, the Abbot of Chertsey's
+      man, held it, and could do what he would with it. Now it is placed in the Count's manor of Kempton, where it was not before 1066; but the jurisdiction lay in Staines. [= ?8? Land of the Count of Mortain
+      =]
+    text: In ASHFORD the Count also holds 1 hide. Land for 1 plough; it is there. Meadow for 1 plough. Value of this land, 14s; when acquired the same; before 1066, 20s. Aelfric, the Abbot of Chertsey's
+      man, held it, and could do what he would with it. Now it is placed in the Count's manor of Kempton, where it was not before 1066; but the jurisdiction lay in Staines.
     ploughlands: 1
     geldUnits: 1
     value1066: 240
@@ -3307,9 +3790,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[East] Bedfont'
     name: '[East] Bedfont (Middlesex 8,3)'
     holding: dependency
+    textEdition: In [East] BEDFONT the Count also holds 2 hides. Land for 1 plough; 1/2 plough there now; 1/2 possible. 1 villager, 8 acres; a man-at-arms, 1/2 hide. Meadow for 1 ox; pasture for the livestock.
+      Value of this land, 5s; when acquired the same; before 1066, 20s. Goti <of Stambourne>, one of Earl Harold's Guards, held this land, and could do what he would with it. This land lay and lies in [the
+      lands of] Feltham. [= ?8? Land of the Count of Mortain =]
+    text: In [East] BEDFONT the Count also holds 2 hides. Land for 1 plough; 1/2 plough there now; 1/2 possible. 1 villager, 8 acres; a man-at-arms, 1/2 hide. Meadow for 1 ox; pasture for the livestock.
+      Value of this land, 5s; when acquired the same; before 1066, 20s. Goti , one of Earl Harold's Guards, held this land, and could do what he would with it. This land lay and lies in [the lands of] Feltham.
     households: 2
     villagers: 1
     menAtArms: 1
@@ -3356,9 +3846,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Feltham
     name: Feltham (Middlesex 8,4)
     holding: manor
+    textEdition: ?M? The Count also holds FELTHAM. It answers for 12 hides. Land for 10 ploughs. In lordship 6 hides; 1 plough there; a further 3 possible. The villagers have 8 ploughs. 14 villagers with
+      1 virgate each; 5 others with 1/2 virgate each; 2 slaves. Meadow for 10 ploughs; pasture for the village livestock. In total, value £6; when acquired £4; before 1066 £8. Two thanes held this manor;
+      one of them, King Edward's man, had 5 hides as 1 manor; the other, Earl Harold's man, ^[Goti <of Stambourne>]^, had 7 hides as 1 manor; they could do what they would with them. [= ?8? Land of the
+      Count of Mortain =]
+    text: The Count also holds FELTHAM. It answers for 12 hides. Land for 10 ploughs. In lordship 6 hides; 1 plough there; a further 3 possible. The villagers have 8 ploughs. 14 villagers with 1 virgate
+      each; 5 others with 1/2 virgate each; 2 slaves. Meadow for 10 ploughs; pasture for the village livestock. In total, value £6; when acquired £4; before 1066 £8. Two thanes held this manor; one of them,
+      King Edward's man, had 5 hides as 1 manor; the other, Earl Harold's man, [Goti ], had 7 hides as 1 manor; they could do what they would with them.
     households: 16
     villagers: 14
     slaves: 2
@@ -3408,9 +3907,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Kempton
     name: Kempton (Middlesex 8,5)
     holding: manor
+    textEdition: '[* In SPELTHORNE Hundred *] ?M? The Count also holds KEMPTON. It answers for 5 hides. Land for 5 ploughs. In lordship 2 hides and 1/2 virgate; 1 plough there; another possible. The villagers
+      have 3 ploughs. 6 villagers with 1 virgate each; 8 others with 1/2 virgate each; 3 smallholders with 1 virgate; 2 slaves. Meadow for 5 ploughs; pasture for the village livestock; 8 {arpents} of newly
+      planted vines. In total, value £4; when acquired £3; before 1066 £6. Wulfward White, a thane of King Edward''s, held this manor, and could do what he would with it. In GORE Hundred [= ?8? Land of
+      the Count of Mortain =] <129c>'
+    text: '[In SPELTHORNE Hundred] The Count also holds KEMPTON. It answers for 5 hides. Land for 5 ploughs. In lordship 2 hides and 1/2 virgate; 1 plough there; another possible. The villagers have 3 ploughs.
+      6 villagers with 1 virgate each; 8 others with 1/2 virgate each; 3 smallholders with 1 virgate; 2 slaves. Meadow for 5 ploughs; pasture for the village livestock; 8 arpents of newly planted vines.
+      In total, value £4; when acquired £3; before 1066 £6. Wulfward White, a thane of King Edward''s, held this manor, and could do what he would with it. In GORE Hundred'
     households: 11
     villagers: 6
     smallholders: 3
@@ -3457,9 +3965,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stanmore and [Little] Stanmore
     name: Stanmore and [Little] Stanmore (Middlesex 8,6)
     holding: manor
+    textEdition: '[* In GORE Hundred *] ?M? The Count also holds STANMORE. It answers for 9 1/2 hides. Land for 7 ploughs. In lordship 6 1/2 hides; 2 ploughs there; another possible. The villagers have
+      1 1/2 ploughs; 2 1/2 ploughs possible. A priest has 1/2 hide; 4 villagers with 1 virgate each; 2 others with 1 virgate; 3 cottagers with 10 acres; 3 others with 1 acre. Pasture for the village livestock;
+      woodland, 800 pigs; from grazing, 12d. Total value 60s; when acquired 10s; before 1066 £10. Edmer Ator, a thane of King Edward''s, held this manor. [= ?8? Land of the Count of Mortain =] ?9? Land
+      of Geoffrey de Mandeville'
+    text: '[In GORE Hundred] The Count also holds STANMORE. It answers for 9 1/2 hides. Land for 7 ploughs. In lordship 6 1/2 hides; 2 ploughs there; another possible. The villagers have 1 1/2 ploughs;
+      2 1/2 ploughs possible. A priest has 1/2 hide; 4 villagers with 1 virgate each; 2 others with 1 virgate; 3 cottagers with 10 acres; 3 others with 1 acre. Pasture for the village livestock; woodland,
+      800 pigs; from grazing, 12d. Total value 60s; when acquired 10s; before 1066 £10. Edmer Ator, a thane of King Edward''s, held this manor. Land of Geoffrey de Mandeville'
     households: 8
     villagers: 4
     cottagers: 3
@@ -3507,6 +4024,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 9
     folio: MDX 7
   relations:
@@ -3526,9 +4045,21 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ebury
     name: Ebury (Middlesex 9,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred ?M? Geoffrey de Mandeville holds `EBURY''. It answers for 10 hides. Land for 8 ploughs. In lordship 5 hides; 2 ploughs there. The villagers have 5 ploughs; a sixth
+      possible. 1 villager, 1/2 hide; 4 villagers with 1 virgate each; 14 others with 1/2 virgate each; 4 smallholders with 1 virgate; 1 cottager. Meadow for 8 ploughs; from hay 60s; from pasture 7s. Total
+      value £8; when acquired £6; before 1066 £12. Harold son of Earl Ralph held this manor. Queen Edith had charge of him, with the manor, in 1066; afterwards, William the chamberlain held it from the
+      Queen, as a Holding, for £3 a year in revenue; after the Queen''s death he held it in the same way from the King. William lost the manor 4 years ago; since then the King''s revenue, that is £12, has
+      not been paid. [= ?9? Land of Geoffrey de Mandeville =]'
+    text: '`OSSULSTONE'' Hundred Geoffrey de Mandeville holds `EBURY''. It answers for 10 hides. Land for 8 ploughs. In lordship 5 hides; 2 ploughs there. The villagers have 5 ploughs; a sixth possible.
+      1 villager, 1/2 hide; 4 villagers with 1 virgate each; 14 others with 1/2 virgate each; 4 smallholders with 1 virgate; 1 cottager. Meadow for 8 ploughs; from hay 60s; from pasture 7s. Total value
+      £8; when acquired £6; before 1066 £12. Harold son of Earl Ralph held this manor. Queen Edith had charge of him, with the manor, in 1066; afterwards, William the chamberlain held it from the Queen,
+      as a Holding, for £3 a year in revenue; after the Queen''s death he held it in the same way from the King. William lost the manor 4 years ago; since then the King''s revenue, that is £12, has not
+      been paid.'
     households: 10
     villagers: 5
     smallholders: 4
@@ -3583,7 +4114,14 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 9,2
+    textEdition: In the same Hundred _ Ralph [* of Quesnay *] holds 1 1/2 hides from Geoffrey. Land for 1 plough; it is there. 4 smallholders with 14 acres; 1 slave. Meadow for 1 plough; pasture for the
+      livestock, and 13d too; wood for fences. Value of this land, 20s; when acquired and before 1066, 30s. 2 Freemen of King Edward's held this land; they could sell to whom they would. [= ?9? Land of
+      Geoffrey de Mandeville =]
+    text: In the same Hundred _ Ralph [of Quesnay] holds 1 1/2 hides from Geoffrey. Land for 1 plough; it is there. 4 smallholders with 14 acres; 1 slave. Meadow for 1 plough; pasture for the livestock,
+      and 13d too; wood for fences. Value of this land, 20s; when acquired and before 1066, 30s. 2 Freemen of King Edward's held this land; they could sell to whom they would.
     households: 5
     smallholders: 4
     slaves: 1
@@ -3622,9 +4160,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Islington
     name: Islington (Middlesex 9,3)
     holding: land
+    textEdition: In ISLINGTON Wulfbert <of Islington> holds 1/2 hide from Geoffrey. Land for 1/2 plough; it is there. 1 villager; 1 smallholder. Value of this land, 12s; when acquired the same; before 1066,
+      20s. Grim, King Edward's man held it and could sell. [= ?9? Land of Geoffrey de Mandeville =]
+    text: In ISLINGTON Wulfbert holds 1/2 hide from Geoffrey. Land for 1/2 plough; it is there. 1 villager; 1 smallholder. Value of this land, 12s; when acquired the same; before 1066, 20s. Grim, King Edward's
+      man held it and could sell.
     households: 2
     villagers: 1
     smallholders: 1
@@ -3671,9 +4215,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Greenford
     name: Greenford (Middlesex 9,4)
     holding: land
+    textEdition: In `ELTHORNE' Hundred In GREENFORD Arnulf [* of Hesdin *] holds 3 hides from Geoffrey. Land for 1 1/2 ploughs; 1 plough there; 1/2 plough possible. 2 villagers with 1/2 hide; 2 cottagers;
+      1 slave. Woodland, 40 pigs. Value of this land, 20s; when acquired 10s; before 1066, 40s. 2 Freemen held this land; one of them was a Canon of St Paul's; he had 2 hides and could do what he would
+      with them; the other was Esger the constable's man; he could not grant except with his permission. [= ?9? Land of Geoffrey de Mandeville =]
+    text: In `ELTHORNE' Hundred In GREENFORD Arnulf [of Hesdin] holds 3 hides from Geoffrey. Land for 1 1/2 ploughs; 1 plough there; 1/2 plough possible. 2 villagers with 1/2 hide; 2 cottagers; 1 slave.
+      Woodland, 40 pigs. Value of this land, 20s; when acquired 10s; before 1066, 40s. 2 Freemen held this land; one of them was a Canon of St Paul's; he had 2 hides and could do what he would with them;
+      the other was Esger the constable's man; he could not grant except with his permission.
     households: 5
     villagers: 2
     slaves: 1
@@ -3726,9 +4278,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Greenford
     name: Greenford (Middlesex 9,5)
     holding: land
+    textEdition: In the same village ^[GREENFORD]^ Ansgot holds 1/2 hide from Geoffrey. Land for 2 oxen. Value of this land, 3s; when acquired and before 1066 the same. Azur held this land. He was Esger
+      the constable's man; he could not sell without his permission. [= ?9? Land of Geoffrey de Mandeville =]
+    text: In the same village [GREENFORD] Ansgot holds 1/2 hide from Geoffrey. Land for 2 oxen. Value of this land, 3s; when acquired and before 1066 the same. Azur held this land. He was Esger the constable's
+      man; he could not sell without his permission.
     geldUnits: 0.5
     value1086: 36
     folio: MDX 7
@@ -3769,9 +4327,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ickenham
     name: Ickenham (Middlesex 9,6)
     holding: land
+    textEdition: In ICKENHAM 2 Englishmen hold 3 1/2 hides from Geoffrey. Land for 2 ploughs; they are there. 3 villagers with 1/2 virgate each; 5 smallholders. Meadow for 2 ploughs; pasture for the village
+      livestock; woodland, 40 pigs. Value of this land, 30s; when acquired the same; before 1066, 60s. 2 Freemen held this land; one of them was Esger the constable's man; he had 1 hide and could not sell
+      except <129d> with his permission; the other was Earl Leofwin's man; he had 2 1/2 hides and could sell before 1066. [= ?9? Land of Geoffrey de Mandeville =]
+    text: In ICKENHAM 2 Englishmen hold 3 1/2 hides from Geoffrey. Land for 2 ploughs; they are there. 3 villagers with 1/2 virgate each; 5 smallholders. Meadow for 2 ploughs; pasture for the village livestock;
+      woodland, 40 pigs. Value of this land, 30s; when acquired the same; before 1066, 60s. 2 Freemen held this land; one of them was Esger the constable's man; he had 1 hide and could not sell except with
+      his permission; the other was Earl Leofwin's man; he had 2 1/2 hides and could sell before 1066.
     households: 8
     villagers: 3
     smallholders: 5
@@ -3823,9 +4389,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Northolt
     name: Northolt (Middlesex 9,7)
     holding: manor
+    textEdition: ?M? Geoffrey de Mandeville holds NORTHOLT. It answers for 15 hides. Land for 10 ploughs. In lordship 8 hides; 2 ploughs there. The villagers have 6 ploughs; 2 ploughs possible. A priest,
+      1/2 hide; 1 villager, 1 hide; 5 others, 1/2 hide each; 8 others, 1 virgate each; 8 others, 1/2 virgate each; 3 cottagers; 6 slaves. Pasture for the livestock; woodland, 200 pigs. Total value £10;
+      when acquired £5; before 1066 £12. Esger the constable held this manor. [= ?9? Land of Geoffrey de Mandeville =]
+    text: Geoffrey de Mandeville holds NORTHOLT. It answers for 15 hides. Land for 10 ploughs. In lordship 8 hides; 2 ploughs there. The villagers have 6 ploughs; 2 ploughs possible. A priest, 1/2 hide;
+      1 villager, 1 hide; 5 others, 1/2 hide each; 8 others, 1 virgate each; 8 others, 1/2 virgate each; 3 cottagers; 6 slaves. Pasture for the livestock; woodland, 200 pigs. Total value £10; when acquired
+      £5; before 1066 £12. Esger the constable held this manor.
     households: 11
     villagers: 1
     slaves: 6
@@ -3870,9 +4444,21 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Edmonton
     name: Edmonton (Middlesex 9,8)
     holding: manor
+    textEdition: EDMONTON Hundred ?M? Geoffrey de Mandeville holds EDMONTON. It answers for 35 hides. Land for 26 ploughs. In lordship 16 hides; 4 ploughs. The villagers have 22 ploughs. 1 villager with
+      1 hide; 3 others, 1/2 hide each; 20 villagers with 1 virgate each; 24 others, 1/2 virgate each; 9 smallholders with 3 virgates; 4 smallholders, 5 acres each; 4 smallholders, 4 acres each; 4 cottagers
+      with 4 acres; 10 cottagers; 4 villagers with 1 hide and 1 virgate; 4 slaves. 1 mill, 10s; meadow for 26 ploughs, and 25s over and above; pasture for the livestock; woodland, 2000 pigs; from the payments
+      of the woodland and pasture, 12s. Total value £40; when acquired £20; before 1066 £40. Esger, King Edward's constable, held this manor. An outlier called [South] MIMMS lay and lies in [the lands of]
+      this manor; it is valued with the manor. [= ?9? Land of Geoffrey de Mandeville =]
+    text: EDMONTON Hundred Geoffrey de Mandeville holds EDMONTON. It answers for 35 hides. Land for 26 ploughs. In lordship 16 hides; 4 ploughs. The villagers have 22 ploughs. 1 villager with 1 hide; 3
+      others, 1/2 hide each; 20 villagers with 1 virgate each; 24 others, 1/2 virgate each; 9 smallholders with 3 virgates; 4 smallholders, 5 acres each; 4 smallholders, 4 acres each; 4 cottagers with 4
+      acres; 10 cottagers; 4 villagers with 1 hide and 1 virgate; 4 slaves. 1 mill, 10s; meadow for 26 ploughs, and 25s over and above; pasture for the livestock; woodland, 2000 pigs; from the payments
+      of the woodland and pasture, 12s. Total value £40; when acquired £20; before 1066 £40. Esger, King Edward's constable, held this manor. An outlier called [South] MIMMS lay and lies in [the lands of]
+      this manor; it is valued with the manor.
     households: 60
     villagers: 25
     smallholders: 17
@@ -3926,9 +4512,21 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Enfield
     name: Enfield (Middlesex 9,9)
     holding: manor
+    textEdition: ?M? Geoffrey de Mandeville holds ENFIELD. It answers for 30 hides. Land for 24 ploughs. In lordship 14 hides. 4 ploughs there. The villagers have 16 ploughs. 1 villager with 1 hide; 3 villagers
+      with 1/2 hide each; a priest, 1 virgate; 17 villagers, 1 virgate each; 36 villagers, 1/2 virgate each; 20 smallholders with 1 hide and 1 virgate; 7 cottagers with 23 acres; 5 cottagers with 7 acres;
+      18 cottagers; 6 slaves. 1 mill, 10s; from the fishponds, 8s; meadow for 24 ploughs, and 25s over and above; pasture for the village livestock; woodland, 2000 pigs; from woodland and pasture, 43s;
+      a park. Total value £50; when acquired £20; before 1066 £50. Esger, King Edward's constable, held this manor. On this land were 5 Freemen with 6 hides which they could grant or sell without their
+      lords' permission. [= ?9? Land of Geoffrey de Mandeville =] ?10? Land of Arnulf of Hesdin
+    text: Geoffrey de Mandeville holds ENFIELD. It answers for 30 hides. Land for 24 ploughs. In lordship 14 hides. 4 ploughs there. The villagers have 16 ploughs. 1 villager with 1 hide; 3 villagers with
+      1/2 hide each; a priest, 1 virgate; 17 villagers, 1 virgate each; 36 villagers, 1/2 virgate each; 20 smallholders with 1 hide and 1 virgate; 7 cottagers with 23 acres; 5 cottagers with 7 acres; 18
+      cottagers; 6 slaves. 1 mill, 10s; from the fishponds, 8s; meadow for 24 ploughs, and 25s over and above; pasture for the village livestock; woodland, 2000 pigs; from woodland and pasture, 43s; a park.
+      Total value £50; when acquired £20; before 1066 £50. Esger, King Edward's constable, held this manor. On this land were 5 Freemen with 6 hides which they could grant or sell without their lords' permission.
+      Land of Arnulf of Hesdin
     households: 114
     villagers: 57
     smallholders: 20
@@ -3983,6 +4581,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 10
     folio: MDX 7
   relations:
@@ -4002,9 +4602,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ruislip
     name: Ruislip (Middlesex 10,1)
     holding: manor
+    textEdition: '`ELTHORNE'' Hundred ?M? Arnulf of Hesdin holds RUISLIP. It answers for 30 hides. Land for 20 ploughs. In lordship 11 hides; 3 ploughs there. There are 12 ploughs between the Frenchmen
+      and the villagers; a further 5 possible. A priest, 1/2 hide; 2 villagers with 1 hide; 17 villagers, 1 virgate each; 10 villagers, 1/2 virgate each; 7 smallholders, 4 acres each; 8 cottagers; 4 slaves;
+      4 Frenchmen with 3 hides and 1 virgate. Pasture for the village livestock; a park for woodland beasts; woodland, 1500 pigs, and 20d too. Total value £20; when acquired £12; before 1066 £30. Wulfward
+      White, a thane of King Edward''s, held this manor; he could sell to whom he would. [= ?10? Land of Arnulf of Hesdin =]'
+    text: '`ELTHORNE'' Hundred Arnulf of Hesdin holds RUISLIP. It answers for 30 hides. Land for 20 ploughs. In lordship 11 hides; 3 ploughs there. There are 12 ploughs between the Frenchmen and the villagers;
+      a further 5 possible. A priest, 1/2 hide; 2 villagers with 1 hide; 17 villagers, 1 virgate each; 10 villagers, 1/2 virgate each; 7 smallholders, 4 acres each; 8 cottagers; 4 slaves; 4 Frenchmen with
+      3 hides and 1 virgate. Pasture for the village livestock; a park for woodland beasts; woodland, 1500 pigs, and 20d too. Total value £20; when acquired £12; before 1066 £30. Wulfward White, a thane
+      of King Edward''s, held this manor; he could sell to whom he would.'
     households: 53
     villagers: 29
     smallholders: 7
@@ -4054,9 +4664,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Kingsbury
     name: Kingsbury (Middlesex 10,2)
     holding: manor
+    textEdition: '[In GORE Hundred] ?M? In KINGSBURY Albold holds 7 1/2 hides from Arnulf. <130a> Land for 7 ploughs. In lordship 2 ploughs. The villagers, 5 ploughs. 8 villagers with 1 virgate each; 3
+      villagers, 1/2 virgate each; a priest, 1 virgate; 5 smallholders with 5 acres each. 1 mill, 3s; meadow for 1/2 plough; woodland, 1000 pigs, and 20s too. Total value £4; when acquired 20s; before 1066
+      £6. Wulfward White, a thane of King Edward''s, held this manor. [= ?10? Land of Arnulf of Hesdin =] ?11? Land of Walter son of Other'
+    text: '[In GORE Hundred] In KINGSBURY Albold holds 7 1/2 hides from Arnulf. Land for 7 ploughs. In lordship 2 ploughs. The villagers, 5 ploughs. 8 villagers with 1 virgate each; 3 villagers, 1/2 virgate
+      each; a priest, 1 virgate; 5 smallholders with 5 acres each. 1 mill, 3s; meadow for 1/2 plough; woodland, 1000 pigs, and 20s too. Total value £4; when acquired 20s; before 1066 £6. Wulfward White,
+      a thane of King Edward''s, held this manor. Land of Walter son of Other'
     households: 17
     villagers: 11
     smallholders: 5
@@ -4108,6 +4726,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 11
     folio: MDX 8
   relations:
@@ -4127,9 +4747,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stanwell
     name: Stanwell (Middlesex 11,1)
     holding: manor
+    textEdition: SPELTHORNE Hundred Walter son of Other holds STANWELL from the King. It answers for 15 hides. Land for 10 ploughs. In lordship 3 hides and 3 ploughs. 10 ploughs between the Frenchmen and
+      the villagers. 1 villager with 1 hide; 8 villagers, 1/2 hide each; 10 villagers, 1 virgate each; 8 villagers, 1/2 virgate each; 4 smallholders with 28 acres; 2 cottagers; 8 slaves; 2 men-at-arms,
+      2 1/2 hides, and under them dwell 6 smallholders. 4 mills at 70s, and 400 eels, less 25; 1000 eels from 3 weirs; meadow for 12 ploughs; pasture for the village livestock; woodland, 100 pigs. Total
+      value £14; when acquired £6; before 1066 £14. Azur [* son of Toti *], one of King Edward's Guards, held this manor, and could do what he would with it. [= ?11? Land of Walter son of Other =]
+    text: SPELTHORNE Hundred Walter son of Other holds STANWELL from the King. It answers for 15 hides. Land for 10 ploughs. In lordship 3 hides and 3 ploughs. 10 ploughs between the Frenchmen and the villagers.
+      1 villager with 1 hide; 8 villagers, 1/2 hide each; 10 villagers, 1 virgate each; 8 villagers, 1/2 virgate each; 4 smallholders with 28 acres; 2 cottagers; 8 slaves; 2 men-at-arms, 2 1/2 hides, and
+      under them dwell 6 smallholders. 4 mills at 70s, and 400 eels, less 25; 1000 eels from 3 weirs; meadow for 12 ploughs; pasture for the village livestock; woodland, 100 pigs. Total value £14; when
+      acquired £6; before 1066 £14. Azur [son of Toti], one of King Edward's Guards, held this manor, and could do what he would with it.
     households: 49
     villagers: 27
     smallholders: 10
@@ -4179,9 +4809,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[East] Bedfont'
     name: '[East] Bedfont (Middlesex 11,2)'
     holding: manor
+    textEdition: In [East] BEDFONT Richard holds 10 hides as 1 manor from Walter son of Other. Land for 5 ploughs. In lordship 1 plough. 4 ploughs between the Frenchmen and the villagers. 4 villagers with
+      1 hide; 4 others, 1/2 virgate each; 3 smallholders with 13 acres; a man-at-arms, 2 hides. Meadow for 2 oxen; pasture for the village livestock. In total, value £4; when acquired 20s; before 1066 £6.
+      Azur [* son of Toti *] held 8 1/2 hides of this manor; it was an outlier of Stanwell. 3 Freemen had 1 1/2 hides; one of them was King Edward's man; another, [* Earl *] Leofwin's; the third, Azur [*
+      son of Toti *]'s; each had 1/2 hide and could sell or grant. They did not belong to the manor before 1066. [= ?11? Land of Walter son of Other =]
+    text: In [East] BEDFONT Richard holds 10 hides as 1 manor from Walter son of Other. Land for 5 ploughs. In lordship 1 plough. 4 ploughs between the Frenchmen and the villagers. 4 villagers with 1 hide;
+      4 others, 1/2 virgate each; 3 smallholders with 13 acres; a man-at-arms, 2 hides. Meadow for 2 oxen; pasture for the village livestock. In total, value £4; when acquired 20s; before 1066 £6. Azur
+      [son of Toti] held 8 1/2 hides of this manor; it was an outlier of Stanwell. 3 Freemen had 1 1/2 hides; one of them was King Edward's man; another, [Earl] Leofwin's; the third, Azur [son of Toti]'s;
+      each had 1/2 hide and could sell or grant. They did not belong to the manor before 1066.
     households: 8
     villagers: 4
     smallholders: 3
@@ -4247,9 +4887,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[West] Bedfont'
     name: '[West] Bedfont (Middlesex 11,3)'
     holding: manor
+    textEdition: In WEST BEDFONT Walter of {Mucedent} holds 8 hides as 1 manor from Walter son of Other. Land for 4 ploughs. In lordship 1 plough. The villagers have 3 ploughs. 2 villagers with 4 hides;
+      2 villagers with 2 virgates; 2 villagers with 1 virgate; 1 smallholder with 5 acres; a priest, 1 virgate; 1 cottager with 5 acres; 2 slaves. Meadow for 2 oxen; pasture for the village livestock. In
+      total, value £3; when acquired, the same; before 1066 £6. Brictmer [* son of Queneva *] held 4 hides of this manor; he was Earl Harold's man; he could sell to whom he would. 2 Freemen held 4 hides;
+      they were Azur [* son of Toti *]'s men; they could not sell or grant without his permission. [= ?11? Land of Walter son of Other =]
+    text: In WEST BEDFONT Walter of Mucedent holds 8 hides as 1 manor from Walter son of Other. Land for 4 ploughs. In lordship 1 plough. The villagers have 3 ploughs. 2 villagers with 4 hides; 2 villagers
+      with 2 virgates; 2 villagers with 1 virgate; 1 smallholder with 5 acres; a priest, 1 virgate; 1 cottager with 5 acres; 2 slaves. Meadow for 2 oxen; pasture for the village livestock. In total, value
+      £3; when acquired, the same; before 1066 £6. Brictmer [son of Queneva] held 4 hides of this manor; he was Earl Harold's man; he could sell to whom he would. 2 Freemen held 4 hides; they were Azur
+      [son of Toti]'s men; they could not sell or grant without his permission.
     households: 11
     villagers: 6
     smallholders: 1
@@ -4310,9 +4960,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hatton
     name: Hatton (Middlesex 11,4)
     holding: land
+    textEdition: In HATTON Walter of {Mucedent} holds 1 hide, 3 virgates, and the third part of 1 virgate from Walter son of Other. Land for 1 plough; 1/2 plough there; 1/2 plough possible. 1 villager with
+      1 virgate; 2 villagers with 1 virgate; 1 smallholder with 5 acres. Meadow for 1 plough; pasture for the livestock. Value of this land, 20s; when acquired the same; before 1066, 30s. 2 Freemen held
+      this land; they were Azur [* son of Toti *]'s men; they could not sell except with his permission. [= ?11? Land of Walter son of Other =] ?12? Land of Walter of St Valery
+    text: In HATTON Walter of Mucedent holds 1 hide, 3 virgates, and the third part of 1 virgate from Walter son of Other. Land for 1 plough; 1/2 plough there; 1/2 plough possible. 1 villager with 1 virgate;
+      2 villagers with 1 virgate; 1 smallholder with 5 acres. Meadow for 1 plough; pasture for the livestock. Value of this land, 20s; when acquired the same; before 1066, 30s. 2 Freemen held this land;
+      they were Azur [son of Toti]'s men; they could not sell except with his permission. Land of Walter of St Valery
     households: 4
     villagers: 3
     smallholders: 1
@@ -4359,6 +5017,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 12
     folio: MDX 8
   relations:
@@ -4378,9 +5038,20 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Isleworth
     name: Isleworth (Middlesex 12,1)
     holding: manor
+    textEdition: HOUNSLOW Hundred Walter of St Valery holds ISLEWORTH. It always answered for 70 hides. Land for 55 ploughs. In lordship 6 1/2 hides; 6 ploughs there. 28 ploughs between the Frenchmen and
+      the villagers; a further 11 possible. A priest has 3 virgates; 51 villagers with 1 virgate each; 24 villagers with 1/2 virgate each; 18 villagers, 1/2 virgate each; 6 cottagers. A Frenchman and an
+      Englishman, 4 hides; they are proven men-at-arms; under them dwell 12 of the villagers <130b> and smallholders, and 6 of the lord's villagers, who hold 2 hides and 1/2 virgate. 2 mills at 10s; meadow
+      for 20 ploughs; pasture for the village livestock; 1 1/2 weirs at 12s 8d; woodland, 500 pigs; from grazing, 12d. Total value £72; when acquired the same; before 1066 £80. Earl Algar held this manor.
+      [= ?12? Land of Walter of St Valery =]
+    text: HOUNSLOW Hundred Walter of St Valery holds ISLEWORTH. It always answered for 70 hides. Land for 55 ploughs. In lordship 6 1/2 hides; 6 ploughs there. 28 ploughs between the Frenchmen and the villagers;
+      a further 11 possible. A priest has 3 virgates; 51 villagers with 1 virgate each; 24 villagers with 1/2 virgate each; 18 villagers, 1/2 virgate each; 6 cottagers. A Frenchman and an Englishman, 4
+      hides; they are proven men-at-arms; under them dwell 12 of the villagers and smallholders, and 6 of the lord's villagers, who hold 2 hides and 1/2 virgate. 2 mills at 10s; meadow for 20 ploughs; pasture
+      for the village livestock; 1 1/2 weirs at 12s 8d; woodland, 500 pigs; from grazing, 12d. Total value £72; when acquired the same; before 1066 £80. Earl Algar held this manor.
     households: 102
     villagers: 93
     cottagers: 6
@@ -4434,9 +5105,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hampton
     name: Hampton (Middlesex 12,2)
     holding: manor
+    textEdition: ?M? Walter also holds HAMPTON. It answers for 35 hides. Land for 25 ploughs. In lordship 18 hides and 3 ploughs. The villagers have 17 ploughs; a further 5 ploughs possible. 30 villagers
+      with 1 virgate each; 11 villagers with 2 1/2 hides; 4 smallholders with 1/2 virgate each. Meadow for 3 ploughs, and 10s too; pasture for the village livestock; from fishing-nets and drag-nets in the
+      river Thames, 3s. Total value £39; when acquired £20; before 1066 £40. Earl Algar held this manor. [= ?12? Land of Walter of St Valery =] ?13? Land of Richard son of Gilbert
+    text: Walter also holds HAMPTON. It answers for 35 hides. Land for 25 ploughs. In lordship 18 hides and 3 ploughs. The villagers have 17 ploughs; a further 5 ploughs possible. 30 villagers with 1 virgate
+      each; 11 villagers with 2 1/2 hides; 4 smallholders with 1/2 virgate each. Meadow for 3 ploughs, and 10s too; pasture for the village livestock; from fishing-nets and drag-nets in the river Thames,
+      3s. Total value £39; when acquired £20; before 1066 £40. Earl Algar held this manor. Land of Richard son of Gilbert
     households: 45
     villagers: 41
     smallholders: 4
@@ -4478,6 +5157,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 13
     folio: MDX 8
   relations:
@@ -4497,9 +5178,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Harefield and Harefield [South]
     name: Harefield and Harefield [South] (Middlesex 13,1)
     holding: manor
+    textEdition: '`ELTHORNE'' Hundred ?M? Richard son of Count Gilbert holds HAREFIELD. It answers for 5 hides. Land for 5 ploughs. In lordship 2 hides; 2 ploughs there. The villagers have 3 ploughs. A
+      priest has 1 virgate; 5 villagers with 1 virgate each; 5 others, 1/2 virgate each; 7 smallholders with 5 acres each; 1 smallholder with 3 acres; 3 cottagers; 3 slaves. 2 mills at 15s; from 4 fishponds,
+      1000 eels; meadow for 1 plough; pasture for the village livestock; woodland for 1200 pigs. Total value £12; when acquired £8; before 1066 £14. Countess Goda held this manor before 1066. [= ?13? Land
+      of Richard son of Gilbert =] ?14? Land of Robert Gernon'
+    text: '`ELTHORNE'' Hundred Richard son of Count Gilbert holds HAREFIELD. It answers for 5 hides. Land for 5 ploughs. In lordship 2 hides; 2 ploughs there. The villagers have 3 ploughs. A priest has
+      1 virgate; 5 villagers with 1 virgate each; 5 others, 1/2 virgate each; 7 smallholders with 5 acres each; 1 smallholder with 3 acres; 3 cottagers; 3 slaves. 2 mills at 15s; from 4 fishponds, 1000
+      eels; meadow for 1 plough; pasture for the village livestock; woodland for 1200 pigs. Total value £12; when acquired £8; before 1066 £14. Countess Goda held this manor before 1066. Land of Robert
+      Gernon'
     households: 20
     villagers: 5
     smallholders: 8
@@ -4546,6 +5237,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 14
     folio: MDX 8
   relations:
@@ -4565,9 +5258,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Haggerston
     name: Haggerston (Middlesex 14,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred ?M? Robert Gernon holds 2 hides in HAGGERSTON from the King. Land for 2 ploughs. 3 ploughs there. 3 villagers and 7 smallholders who hold this land. Value 45s; when
+      acquired 40s; before 1066, 50s. Alwin [* Stickhare *], King Edward''s man, held this manor, and could sell to whom he would. [= ?14? Land of Robert Gernon =]'
+    text: '`OSSULSTONE'' Hundred Robert Gernon holds 2 hides in HAGGERSTON from the King. Land for 2 ploughs. 3 ploughs there. 3 villagers and 7 smallholders who hold this land. Value 45s; when acquired
+      40s; before 1066, 50s. Alwin [Stickhare], King Edward''s man, held this manor, and could sell to whom he would.'
     households: 10
     villagers: 3
     smallholders: 7
@@ -4618,7 +5317,13 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 14,2
+    textEdition: In `ELTHORNE' Hundred Nigel <of Wivenhoe> holds 2 hides _ from Robert Gernon. Land for 1 plough; 1/2 plough there now; 1/2 possible. 1 cottager. Woodland, 30 pigs. Value of this land, 14s;
+      when acquired the same; before 1066, 20s. Thorbert, Earl Leofwin's man, held this land; he could sell to whom he would. [= ?14? Land of Robert Gernon =] ?15? Land of Robert [son of] Fafiton
+    text: In `ELTHORNE' Hundred Nigel holds 2 hides _ from Robert Gernon. Land for 1 plough; 1/2 plough there now; 1/2 possible. 1 cottager. Woodland, 30 pigs. Value of this land, 14s; when acquired the
+      same; before 1066, 20s. Thorbert, Earl Leofwin's man, held this land; he could sell to whom he would. Land of Robert [son of] Fafiton
     households: 1
     cottagers: 1
     ploughlands: 1
@@ -4657,6 +5362,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 15
     folio: MDX 8
   relations:
@@ -4676,9 +5383,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 15,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred ?M? Robert [son of] Fafiton holds 4 hides from the King in STEPNEY. Land for 3 ploughs; they are there now. 1 villager with 14 acres; another with 12 acres; Roger
+      the sheriff, 1 hide; [***] smallholders with 1/2 hide and 1/2 virgate. Woodland, 60 pigs, and 4s too. Total value 70s; when acquired the same; before 1066 £8. Sired, a Canon of St Paul''s, held this
+      manor before 1066; he could sell to whom he would. The Bishop of London claims that he ought to have it. With these 4 hides there are now 53 acres of land, which were not there before 1066, which
+      Hugh of Bernières appropriated from the Canons of St Paul''s and placed in this manor, as the Hundred testifies. [= ?15? Land of Robert [son of] Fafiton =]'
+    text: '`OSSULSTONE'' Hundred Robert [son of] Fafiton holds 4 hides from the King in STEPNEY. Land for 3 ploughs; they are there now. 1 villager with 14 acres; another with 12 acres; Roger the sheriff,
+      1 hide; smallholders with 1/2 hide and 1/2 virgate. Woodland, 60 pigs, and 4s too. Total value 70s; when acquired the same; before 1066 £8. Sired, a Canon of St Paul''s, held this manor before 1066;
+      he could sell to whom he would. The Bishop of London claims that he ought to have it. With these 4 hides there are now 53 acres of land, which were not there before 1066, which Hugh of Bernières appropriated
+      from the Canons of St Paul''s and placed in this manor, as the Hundred testifies.'
     households: 1
     villagers: 1
     ploughlands: 3
@@ -4733,9 +5450,16 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ickenham
     name: Ickenham (Middlesex 15,2)
     holding: land
+    textEdition: In `ELTHORNE' Hundred Robert [son of] Fafiton holds 2 hides in ICKENHAM from the King. Land for 1 plough, but it is not there now. <130c> Meadow for 1 plough; pasture for the village livestock;
+      woodland, 30 pigs. Value of this land, 5s; when acquired 40s; before 1066, 40s. Almer, Wulfward White's man, held this land and could sell it. [= ?15? Land of Robert [son of] Fafiton =] ?16? Land
+      of Robert son of Roscelin
+    text: In `ELTHORNE' Hundred Robert [son of] Fafiton holds 2 hides in ICKENHAM from the King. Land for 1 plough, but it is not there now. Meadow for 1 plough; pasture for the village livestock; woodland,
+      30 pigs. Value of this land, 5s; when acquired 40s; before 1066, 40s. Almer, Wulfward White's man, held this land and could sell it. Land of Robert son of Roscelin
     ploughlands: 1
     geldUnits: 2
     value1066: 480
@@ -4776,6 +5500,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 16
     folio: MDX 9
   relations:
@@ -4795,9 +5521,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stepney
     name: Stepney (Middlesex 16,1)
     holding: land
+    textEdition: '`OSSULSTONE'' Hundred Robert son of Roscelin holds 3 1/2 hides in STEPNEY from the King. Land for 2 ploughs. In lordship 2 hides; 1 plough there. The villagers, 1 plough. 1 villager with
+      1 virgate; 8 smallholders with 1/2 virgate each; 4 cottagers with 19 acres. Meadow for 2 ploughs; wood for fences. In total, value 53s; when acquired 10s; before 1066 £4. Alwin Stickhare, King Edward''s
+      man, held this land as one manor; he could sell to whom he would. The Bishop of London claims it. [= ?16? Land of Robert son of Roscelin =] ?17? Land of Robert Blunt'
+    text: '`OSSULSTONE'' Hundred Robert son of Roscelin holds 3 1/2 hides in STEPNEY from the King. Land for 2 ploughs. In lordship 2 hides; 1 plough there. The villagers, 1 plough. 1 villager with 1 virgate;
+      8 smallholders with 1/2 virgate each; 4 cottagers with 19 acres. Meadow for 2 ploughs; wood for fences. In total, value 53s; when acquired 10s; before 1066 £4. Alwin Stickhare, King Edward''s man,
+      held this land as one manor; he could sell to whom he would. The Bishop of London claims it. Land of Robert Blunt'
     households: 13
     villagers: 1
     smallholders: 8
@@ -4847,6 +5581,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 17
     folio: MDX 9
   relations:
@@ -4866,9 +5602,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Laleham
     name: Laleham (Middlesex 17,1)
     holding: manor
+    textEdition: SPELTHORNE Hundred ?M? Robert Blunt holds 8 hides in LALEHAM from the King. Estrild, a nun, holds from him. Land for 5 ploughs. In lordship 4 hides; 1 plough there. The villagers have 4
+      ploughs. 1 villager with 1 virgate; 7 villagers, 1/2 hide each; 3 smallholders with 1 virgate; 3 cottagers. Meadow for 5 ploughs; pasture for the village livestock. Total value 60s; when acquired
+      40s; before 1066 £6. Aki [* the Dane *], one of King Edward's Guards, held this manor; he could sell to whom he would; the jurisdiction lay in Staines. [= ?17? Land of Robert Blunt =] ?18? Land of
+      Roger of Rames
+    text: SPELTHORNE Hundred Robert Blunt holds 8 hides in LALEHAM from the King. Estrild, a nun, holds from him. Land for 5 ploughs. In lordship 4 hides; 1 plough there. The villagers have 4 ploughs. 1
+      villager with 1 virgate; 7 villagers, 1/2 hide each; 3 smallholders with 1 virgate; 3 cottagers. Meadow for 5 ploughs; pasture for the village livestock. Total value 60s; when acquired 40s; before
+      1066 £6. Aki [the Dane], one of King Edward's Guards, held this manor; he could sell to whom he would; the jurisdiction lay in Staines. Land of Roger of Rames
     households: 14
     villagers: 8
     smallholders: 3
@@ -4923,6 +5668,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 18
     folio: MDX 9
   relations:
@@ -4942,9 +5689,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Charlton
     name: Charlton (Middlesex 18,1)
     holding: manor
+    textEdition: SPELTHORNE Hundred ?M? Roger of Rames holds CHARLTON from the King. It answers for 5 hides. Land for 4 ploughs. In lordship 4 1/2 hides; 1 plough there. The villagers, 1/2 plough; 2 1/2
+      ploughs possible. 1 villager with 1/2 hide; 1 smallholder with 8 acres; 6 slaves. Meadow for 4 ploughs; pasture for the village livestock. Value of this land, 30s; when acquired 60s; before 1066,
+      100s. Two brothers held this manor; one was Archbishop Stigand's man, the other Earl Leofwin's man; they could sell to whom they would, but the jurisdiction belonged to Staines. [= ?18? Land of Roger
+      of Rames =]
+    text: SPELTHORNE Hundred Roger of Rames holds CHARLTON from the King. It answers for 5 hides. Land for 4 ploughs. In lordship 4 1/2 hides; 1 plough there. The villagers, 1/2 plough; 2 1/2 ploughs possible.
+      1 villager with 1/2 hide; 1 smallholder with 8 acres; 6 slaves. Meadow for 4 ploughs; pasture for the village livestock. Value of this land, 30s; when acquired 60s; before 1066, 100s. Two brothers
+      held this manor; one was Archbishop Stigand's man, the other Earl Leofwin's man; they could sell to whom they would, but the jurisdiction belonged to Staines.
     households: 8
     villagers: 1
     smallholders: 1
@@ -4998,9 +5754,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stanmore and [Little] Stanmore
     name: Stanmore and [Little] Stanmore (Middlesex 18,2)
     holding: manor
+    textEdition: In the Hundred of GORE ?M? Roger also holds 9 1/2 hides in STANMORE. Land for 7 ploughs. In lordship 4 hides; 1 plough there; a further 2 possible. The villagers have 3 ploughs; 1 more
+      possible. 1 villager with 1 virgate; 8 villagers, 1/2 virgate each; 3 smallholders with 5 acres each; 2 slaves. Woodland, 800 pigs; pasture for the village livestock, and 2s too. Total value 60s;
+      when acquired 20s; before 1066 £10. Algar, Earl Harold's man, held this manor and could sell. [= ?18? Land of Roger of Rames =] ?19? Land of William son of Ansculf
+    text: In the Hundred of GORE Roger also holds 9 1/2 hides in STANMORE. Land for 7 ploughs. In lordship 4 hides; 1 plough there; a further 2 possible. The villagers have 3 ploughs; 1 more possible. 1
+      villager with 1 virgate; 8 villagers, 1/2 virgate each; 3 smallholders with 5 acres each; 2 slaves. Woodland, 800 pigs; pasture for the village livestock, and 2s too. Total value 60s; when acquired
+      20s; before 1066 £10. Algar, Earl Harold's man, held this manor and could sell. Land of William son of Ansculf
     households: 14
     villagers: 9
     smallholders: 3
@@ -5048,6 +5812,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 19
     folio: MDX 9
   relations:
@@ -5067,9 +5833,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Cranford
     name: Cranford (Middlesex 19,1)
     holding: manor
+    textEdition: '`ELTHORNE'' Hundred ?M? William son of Ansculf holds CRANFORD from the King, and Hugh from him. It answers for 5 hides. Land for 3 ploughs. In lordship 1 plough. The villagers, 2 ploughs.
+      A priest has 1 virgate; 8 villagers with 1 virgate each; 2 cottagers with 2 acres; 3 slaves. Wood for fences. In total, value 60s; when acquired 40s; before 1066, 100s. Thorsten <of Cranford>, a thane
+      of King Edward''s, held this manor and could sell to whom he would. [= ?19? Land of William son of Ansculf =] ?20? Land of Edward of Salisbury'
+    text: '`ELTHORNE'' Hundred William son of Ansculf holds CRANFORD from the King, and Hugh from him. It answers for 5 hides. Land for 3 ploughs. In lordship 1 plough. The villagers, 2 ploughs. A priest
+      has 1 virgate; 8 villagers with 1 virgate each; 2 cottagers with 2 acres; 3 slaves. Wood for fences. In total, value 60s; when acquired 40s; before 1066, 100s. Thorsten , a thane of King Edward''s,
+      held this manor and could sell to whom he would. Land of Edward of Salisbury'
     households: 14
     villagers: 8
     slaves: 3
@@ -5120,6 +5894,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 20
     folio: MDX 9
   relations:
@@ -5139,9 +5915,18 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Chelsea
     name: Chelsea (Middlesex 20,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred ?M? Edward of Salisbury holds CHELSEA for 2 hides. Land for 5 ploughs. In lordship 1 hide; 2 ploughs there now. The villagers, 1 plough; <130d> a further 2 ploughs
+      possible. 2 villagers with 2 virgates; 4 villagers with 1/2 virgate each; 3 smallholders with 5 acres each; 3 slaves. Meadow for 2 ploughs; pasture for the village livestock; woodland, 60 pigs, and
+      52d too. Total value £9; when acquired and always the same. Wulfwynn [* of Creslow *], King Edward''s man, held this manor; she could sell to whom she would. [= ?20? Land of Edward of Salisbury =]
+      ?21? Land of Aubrey de Vere'
+    text: '`OSSULSTONE'' Hundred Edward of Salisbury holds CHELSEA for 2 hides. Land for 5 ploughs. In lordship 1 hide; 2 ploughs there now. The villagers, 1 plough; a further 2 ploughs possible. 2 villagers
+      with 2 virgates; 4 villagers with 1/2 virgate each; 3 smallholders with 5 acres each; 3 slaves. Meadow for 2 ploughs; pasture for the village livestock; woodland, 60 pigs, and 52d too. Total value
+      £9; when acquired and always the same. Wulfwynn [of Creslow], King Edward''s man, held this manor; she could sell to whom she would. Land of Aubrey de Vere'
     households: 12
     villagers: 6
     smallholders: 3
@@ -5186,6 +5971,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 21
     folio: MDX 9
   relations:
@@ -5205,9 +5992,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Kensington
     name: Kensington (Middlesex 21,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred ?M? Aubrey de Vere holds KENSINGTON from the Bishop of Coutances. It answers for 10 hides. Land for 10 ploughs. In lordship 4 ploughs. The villagers have 5 ploughs;
+      6[th] possible. 12 villagers, 1 virgate each; 6 villagers with 3 virgates; a priest, 1/2 virgate; 7 slaves. Meadow for 2 ploughs; pasture for the village livestock; woodland, 200 pigs; 3 {arpents}
+      of vines. Total value £10; when acquired £6; before 1066 £10. Edwin [* son of Burgred *], a thane of King Edward''s, held this manor and could sell. ?22? Land of Ranulf brother of Ilger'
+    text: '`OSSULSTONE'' Hundred Aubrey de Vere holds KENSINGTON from the Bishop of Coutances. It answers for 10 hides. Land for 10 ploughs. In lordship 4 ploughs. The villagers have 5 ploughs; 6[th] possible.
+      12 villagers, 1 virgate each; 6 villagers with 3 virgates; a priest, 1/2 virgate; 7 slaves. Meadow for 2 ploughs; pasture for the village livestock; woodland, 200 pigs; 3 arpents of vines. Total value
+      £10; when acquired £6; before 1066 £10. Edwin [son of Burgred], a thane of King Edward''s, held this manor and could sell. Land of Ranulf brother of Ilger'
     households: 26
     villagers: 18
     slaves: 7
@@ -5259,6 +6054,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 22
     folio: MDX 9
   relations:
@@ -5278,9 +6075,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Tollington
     name: Tollington (Middlesex 22,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred Ranulf brother of Ilger holds `TOLLINGTON'' from the King for 2 hides. Land for 2 ploughs. In lordship 1 hide; 1 plough there. The villagers have 2 ploughs. 5 villagers
+      with 1/2 virgate each; 2 smallholders with 9 acres; 1 cottager; 1 slave. Pasture for the village livestock; woodland, 60 pigs, and 5s too. Value of this land, 40s; when acquired 60s; before 1066,
+      40s. Edwin [* son of Burgred *], King Edward''s man, held this [land] and could sell. [= ?22? Land of Ranulf brother of Ilger =] ?23? Land of Deormann of London'
+    text: '`OSSULSTONE'' Hundred Ranulf brother of Ilger holds `TOLLINGTON'' from the King for 2 hides. Land for 2 ploughs. In lordship 1 hide; 1 plough there. The villagers have 2 ploughs. 5 villagers
+      with 1/2 virgate each; 2 smallholders with 9 acres; 1 cottager; 1 slave. Pasture for the village livestock; woodland, 60 pigs, and 5s too. Value of this land, 40s; when acquired 60s; before 1066,
+      40s. Edwin [son of Burgred], King Edward''s man, held this [land] and could sell. Land of Deormann of London'
     households: 9
     villagers: 5
     smallholders: 2
@@ -5329,6 +6134,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 23
     folio: MDX 9
   relations:
@@ -5348,9 +6155,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Islington
     name: Islington (Middlesex 23,1)
     holding: land
+    textEdition: '`OSSULSTONE'' Hundred Deormann holds 1/2 hide in ISLINGTON from the King. Land for 1/2 plough. 1 villager. The value of this land is and was 10s. Algar, King Edward''s man, held this land
+      and could sell or grant it. [= ?23? Land of Deormann of London =] ?24? Land of the Countess Judith'
+    text: '`OSSULSTONE'' Hundred Deormann holds 1/2 hide in ISLINGTON from the King. Land for 1/2 plough. 1 villager. The value of this land is and was 10s. Algar, King Edward''s man, held this land and
+      could sell or grant it. Land of the Countess Judith'
     households: 1
     villagers: 1
     ploughlands: 0.5
@@ -5391,6 +6204,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 24
     folio: MDX 9
   relations:
@@ -5410,9 +6225,19 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Tottenham
     name: Tottenham (Middlesex 24,1)
     holding: manor
+    textEdition: EDMONTON Hundred ?M? The Countess Judith holds TOTTENHAM from the King. It answers for 5 hides. Land for 10 ploughs. In lordship 2 carucates of land, besides these 5 hides; 2 ploughs there.
+      The villagers have 12 ploughs. A priest has 1/2 hide; 6 villagers with 6 virgates; 24 villagers with 1/2 virgate each; 12 smallholders with 5 acres each; 17 cottagers; 2 Frenchmen with 1 hide and
+      3 virgates; 4 slaves. Meadow for 10 ploughs, and 20s over and above; pasture for the village livestock; woodland, 500 pigs; from 1 weir, 3s. Total value £25 15s, and 3 ounces of gold; when acquired
+      £10; before 1066 £26. Earl Waltheof held this manor. [= ?24? Land of the Countess Judith =] ?25? Land given in alms
+    text: EDMONTON Hundred The Countess Judith holds TOTTENHAM from the King. It answers for 5 hides. Land for 10 ploughs. In lordship 2 carucates of land, besides these 5 hides; 2 ploughs there. The villagers
+      have 12 ploughs. A priest has 1/2 hide; 6 villagers with 6 virgates; 24 villagers with 1/2 virgate each; 12 smallholders with 5 acres each; 17 cottagers; 2 Frenchmen with 1 hide and 3 virgates; 4
+      slaves. Meadow for 10 ploughs, and 20s over and above; pasture for the village livestock; woodland, 500 pigs; from 1 weir, 3s. Total value £25 15s, and 3 ounces of gold; when acquired £10; before
+      1066 £26. Earl Waltheof held this manor. Land given in alms
     households: 66
     villagers: 30
     smallholders: 12
@@ -5459,6 +6284,8 @@
     county: MDX
     countyName: Middlesex
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 25
     folio: MDX 9
   relations:
@@ -5474,9 +6301,17 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Lisson
     name: Lisson (Middlesex 25,1)
     holding: manor
+    textEdition: '`OSSULSTONE'' Hundred ?M? `LISSON'' answers for 5 hides. Edeva [* wife of Edward son of Swein *] holds it from the King. Land for 3 ploughs. In lordship 4 1/2 hides; 2 ploughs there. The
+      villagers have 1 plough. 4 villagers with 1/2 virgate each; 3 cottagers with 2 acres; 1 slave. Meadow for 1 plough; pasture for the village livestock; woodland, 100 pigs; from grazing, 3d. Total value
+      60s; when acquired the same; before 1066, 40s. Edward son of Swein, King Edward''s man, held this manor and could sell.'
+    text: '`OSSULSTONE'' Hundred `LISSON'' answers for 5 hides. Edeva [wife of Edward son of Swein] holds it from the King. Land for 3 ploughs. In lordship 4 1/2 hides; 2 ploughs there. The villagers have
+      1 plough. 4 villagers with 1/2 virgate each; 3 cottagers with 2 acres; 1 slave. Meadow for 1 plough; pasture for the village livestock; woodland, 100 pigs; from grazing, 3d. Total value 60s; when
+      acquired the same; before 1066, 40s. Edward son of Swein, King Edward''s man, held this manor and could sell.'
     households: 8
     villagers: 4
     slaves: 1
@@ -5524,7 +6359,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Middlesex 25,2
+    textEdition: In the Hundred of SPELTHORNE Aelfeva, the wife of Hwaetmann of London, holds 1/2 hide and the third part of 1/2 hide _ from the King. Land for 4 oxen, but they are not there. Meadow for
+      4 oxen; pasture for the village livestock. In total, the value is and was 4s. Alwin White, Earl Leofwin's man, held this land and could sell. Geoffrey de Mandeville was put in possession of this land
+      when he went across the sea in the King's service; as his men and the whole Hundred state.
+    text: In the Hundred of SPELTHORNE Aelfeva, the wife of Hwaetmann of London, holds 1/2 hide and the third part of 1/2 hide _ from the King. Land for 4 oxen, but they are not there. Meadow for 4 oxen;
+      pasture for the village livestock. In total, the value is and was 4s. Alwin White, Earl Leofwin's man, held this land and could sell. Geoffrey de Mandeville was put in possession of this land when
+      he went across the sea in the King's service; as his men and the whole Hundred state.
     geldUnits: 1.0
     value1066: 48
     value1086: 48
@@ -5558,9 +6401,15 @@
     county: MDX
     countyName: Middlesex
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Greenford
     name: Greenford (Middlesex 25,3)
     holding: land
+    textEdition: In the Hundred of `ELTHORNE' Aelfeva [* wife of Hwaetmann *] holds 1/2 hide in GREENFORD from the King. Land for 1/2 plough, but it is not there now. Value of this land, 10s; when acquired
+      the same; before 1066, 20s. Leofric, Earl Leofwin's man, held this land and could sell to whom he would. <131a> <131b> <131c> <131d> <132a> HERTFORDSHIRE
+    text: In the Hundred of `ELTHORNE' Aelfeva [wife of Hwaetmann] holds 1/2 hide in GREENFORD from the King. Land for 1/2 plough, but it is not there now. Value of this land, 10s; when acquired the same;
+      before 1066, 20s. Leofric, Earl Leofwin's man, held this land and could sell to whom he would. HERTFORDSHIRE
     ploughlands: 0.5
     geldUnits: 0.5
     value1066: 240

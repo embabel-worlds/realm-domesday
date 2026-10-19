@@ -1,0 +1,106 @@
+# Views that measure across the whole survey rather than look one thing up — the questions a
+# historian brings to Domesday. Each states its denominator, because a share without one misleads.
+
+- name: DomesdayValueAnomalies
+  description: Which manors were valued far above or below what their resources predict — a least-squares fit of the 1086 value on plough teams, households, mills and meadow, returning how well resources explain value (r2), which resource matters most, and the manors furthest above and below the fit. THE answer for "which manors were over-valued", "which estates were worth more than their land", "what determined a manor's value". Association, not cause; a manor far above the line usually had a render, a market or a town the figures do not code.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code or name. Empty for all England."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.kind = 'manor' AND e.value1086 IS NOT NULL AND e.ploughTeams IS NOT NULL AND e.households IS NOT NULL
+      AND ($county = '' OR e.county = $county OR toLower(e.countyName) = toLower($county))
+    RETURN regress([e.ploughTeams, e.households, coalesce(e.mills, 0), coalesce(e.meadowAcres, 0)], e.value1086,
+                   e.ref + ' ' + coalesce(e.places, '')) AS model
+
+- name: DomesdayFeeScatter
+  description: How scattered each great landholder's estate was — tenants-in-chief with their entries, counties and the spread of their places in kilometres (the standard distance of their manors from the estate's centre). THE answer for "did William scatter his barons' lands", "whose estate was most compact", "which lords held a compact block". The Chester and Shrewsbury earldoms are compact; most baronies are scattered across many shires.
+  params:
+    minEntries:
+      type: int
+      default: 40
+      description: "Fewest entries for a landholder to be ranked."
+    limit:
+      type: int
+      default: 40
+      description: "Most rows."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+    MATCH (e)-[:DESCRIBES]->(p:DomesdayPlace) WHERE p.lat IS NOT NULL
+    WITH t.canonicalName AS landholder, count(DISTINCT e) AS entries, count(DISTINCT e.county) AS counties,
+         stDev(p.lat) AS sLat, stDev(p.lng) AS sLng, avg(p.lat) AS mLat
+    WHERE entries >= $minEntries
+    RETURN landholder, entries, counties,
+           toInteger(round(sqrt((sLat * 111.0) ^ 2 + (sLng * 111.0 * cos(radians(mLat))) ^ 2))) AS spreadKm
+    ORDER BY spreadKm DESC
+    LIMIT $limit
+
+- name: DomesdayWomenBeforeAfter
+  description: How much land women held in 1066 against 1086 — entries, distinct women, value, and their share of all value recorded for that year. THE answer for "did women lose land at the Conquest", "how much land did women hold before and after 1066". 1066 counts lords of 1066; 1086 counts tenants-in-chief and their tenants.
+  cypher: |
+    MATCH (x:DomesdayEntry)
+    WITH sum(x.value1066) AS total1066, sum(x.value1086) AS total1086
+    MATCH (e:DomesdayEntry)-[r:LORD_1066|TENANT_IN_CHIEF|TENANT_1086]->(p:DomesdayPerson)
+    WHERE p.gender = 'female'
+    WITH total1066, total1086, CASE type(r) WHEN 'LORD_1066' THEN '1066' ELSE '1086' END AS year, e, p
+    WITH year, total1066, total1086, count(DISTINCT e) AS entries, count(DISTINCT p.canonicalName) AS women,
+         collect(DISTINCT e) AS es
+    UNWIND es AS e
+    WITH year, total1066, total1086, entries, women,
+         sum(CASE WHEN year = '1066' THEN e.value1066 ELSE e.value1086 END) AS value
+    RETURN year, entries, women, round(value / 2.4) / 100 AS valuePounds,
+           round(1000.0 * value / CASE WHEN year = '1066' THEN total1066 ELSE total1086 END) / 10 AS sharePercent
+    ORDER BY year
+
+- name: DomesdayWhoHeldTheLand
+  description: Per county, who held the land in 1086 by value — the King, the Church (sees, abbeys, churches), the bishops of Norman sees, and lay lords — as pounds and as percentages of the county's recorded value. THE answer for "how much land did the Church hold", "where was the King strongest", "what share of England did the Church own". Odo of Bayeux, Geoffrey of Coutances and Gilbert of Lisieux held their English land as barons, not for their churches, so they are counted apart — Odo's Kent was the earldom of the King's half-brother, not church land.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code or name. Empty for every county."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+    WHERE e.value1086 IS NOT NULL AND ($county = '' OR e.county = $county OR toLower(e.countyName) = toLower($county))
+    WITH e, max(CASE WHEN t.canonicalName STARTS WITH 'King ' THEN 3
+                     WHEN t.canonicalName =~ '.*(Bayeux|Coutances|Lisieux).*' THEN 2
+                     WHEN t.isInstitution THEN 1 ELSE 0 END) AS holder
+    WITH e.countyName AS county, sum(e.value1086) AS total,
+         sum(CASE WHEN holder = 3 THEN e.value1086 ELSE 0 END) AS king,
+         sum(CASE WHEN holder = 2 THEN e.value1086 ELSE 0 END) AS normanBishops,
+         sum(CASE WHEN holder = 1 THEN e.value1086 ELSE 0 END) AS church
+    RETURN county, round(total / 2.4) / 100 AS value1086Pounds,
+           toInteger(round(100.0 * king / total)) AS kingPercent,
+           toInteger(round(100.0 * church / total)) AS churchPercent,
+           toInteger(round(100.0 * normanBishops / total)) AS normanBishopsPercent,
+           toInteger(round(100.0 * (total - king - church - normanBishops) / total)) AS layPercent
+    ORDER BY churchPercent DESC
+
+- name: DomesdayPloughStocking
+  description: Per county, plough teams at work against ploughlands — land for so many ploughs — over the entries that give both; under 100 means land lay unploughed (understocked), over 100 more teams than land. THE answer for "was the land fully farmed", "where were there too few ploughs". Ploughlands are a fiscal or agrarian estimate whose meaning historians debate; read the ratio as Domesday's own comparison, not a measured yield.
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.ploughTeams IS NOT NULL AND e.ploughlands IS NOT NULL AND e.ploughlands > 0
+    WITH e.countyName AS county, sum(e.ploughTeams) AS teams, sum(e.ploughlands) AS lands, count(e) AS entries
+    RETURN county, entries, teams, lands, toInteger(round(100.0 * teams / lands)) AS stockingPercent
+    ORDER BY stockingPercent
+
+- name: DomesdayFateOfEnglishLords
+  description: What became of the great English lords of 1066 — each lay lord's entries and value in 1066 beside what the same name held anywhere in 1086. THE answer for "what happened to the English aristocracy", "who lost most at the Conquest", "did Harold's family keep anything". A bare name in 1086 may be a different man.
+  params:
+    limit:
+      type: int
+      default: 30
+      description: "Most rows."
+  cypher: |
+    MATCH (l:DomesdayPerson)<-[:LORD_1066]-(e:DomesdayEntry)
+    WHERE NOT coalesce(l.isInstitution, false) AND NOT l.canonicalName STARTS WITH 'King '
+    WITH l.canonicalName AS lord1066, count(DISTINCT e) AS entries1066, sum(e.value1066) AS v1066
+    ORDER BY v1066 DESC
+    LIMIT $limit
+    OPTIONAL MATCH (p:DomesdayPerson {canonicalName: lord1066})<-[:TENANT_IN_CHIEF|TENANT_1086]-(a:DomesdayEntry)
+    RETURN lord1066, entries1066, round(v1066 / 2.4) / 100 AS value1066Pounds,
+           count(DISTINCT a) AS entries1086, round(coalesce(sum(a.value1086), 0) / 2.4) / 100 AS value1086Pounds
+    ORDER BY value1066Pounds DESC

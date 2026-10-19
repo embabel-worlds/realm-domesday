@@ -33,9 +33,10 @@ CASES = [
      and any(p['role'] == 'LORD_1066' for p in r[0]['people']) else f'entry 8146 wrong: {r[:1]}'),
     ('DomesdayPersonHoldings', {}, None),
     ('DomesdayPersonHoldings', {'name': 'Earl Harold'}, lambda r: None if len(r) > 50 else f'Harold holds {len(r)}'),
-    # Hull's brackets mark supplied words: `(Earl) Harold` is Earl Harold, 248 entries as lord in 1066 (236 under one spelling).
+    # Hull's brackets mark supplied words: `(Earl) Harold` is Earl Harold — 248 Great Domesday entries as lord in 1066
+    # under all three spellings (236 under one), more with Little Domesday's East Anglia.
     ('DomesdayPersonSummary', {'name': '(Earl) Harold'}, lambda r: None if any(
-        x['role'] == 'LORD_1066' and x['entries'] == 248 for x in r) else f'Harold variants not folded {r[:1]}'),
+        x['role'] == 'LORD_1066' and x['entries'] >= 248 and x['countyRecords'] > 31 for x in r) else f'Harold variants not folded {r[:1]}'),
     ('DomesdayPersonSummary', {}, None),
     ('DomesdayGreatestLandholders', {}, lambda r: None if r and r[0]['tenantInChief'] == 'King William'
      else f'first is {r[0]["tenantInChief"] if r else None}'),
@@ -46,23 +47,26 @@ CASES = [
     ('DomesdayLordsByPeasants', {}, lambda r: None if r and r[0]['holder'] == 'King William' else f'first is {r[:1]}'),
     ('DomesdayLordsByPeasants', {'role': 'LORD_1066', 'limit': 5}, None),
     ('DomesdayCounties', {}, lambda r: None if len(r) == 34 else f'{len(r)} counties'),
-    ('DomesdayCountySummary', {}, lambda r: None if len(r) >= 31 else f'{len(r)} counties summarised'),
-    ('DomesdayCountyFigures', {}, lambda r: None if len(r) == 1 and r[0]['county'].startswith('All England') and r[0]['villagers'] > 90000 else f'England figures: {r[:1]}'),
+    ('DomesdayCountySummary', {}, lambda r: None if len(r) >= 34 else f'{len(r)} counties summarised'),
+    ('DomesdayCountyFigures', {}, lambda r: None if len(r) == 1 and r[0]['county'].startswith('All England') and r[0]['villagers'] > 100000 else f'England figures: {r[:1]}'),
+    # Little Domesday, parsed from the translation: Essex has entries and villagers now.
+    ('DomesdayCountyFigures', {'county': 'ESS'}, lambda r: None if r and r[0]['entries'] >= 900 and r[0]['villagers'] > 3000 else f'Essex {r[:1]}'),
+    ('DomesdayBeforeAndAfter', {'county': 'NFK'}, lambda r: None if r and r[0]['peopleComparableEntries'] > 100 and r[0]['slaves1066Comparable'] is not None else f'Norfolk before/after {r[:1]}'),
     ('DomesdayCountyFigures', {'county': 'WOR'}, lambda r: None if r and r[0]['villagers'] == 1540 else f'WOR figures: {r[:1]}'),
     ('DomesdayCountyFigures', {'county': 'YKS'}, lambda r: None if r and r[0]['wasteEntries'] > 300 else f'YKS waste {r[:1]}'),
-    ('DomesdayCountyRanking', {}, lambda r: None if len(r) == 31 and r[0]['value'] >= r[-1]['value'] else f'ranking {r[:2]}'),
+    ('DomesdayCountyRanking', {}, lambda r: None if len(r) == 34 and r[0]['value'] >= r[-1]['value'] else f'ranking {r[:2]}'),
     ('DomesdayCountyRanking', {'measure': 'waste'}, lambda r: None if r and r[0]['county'] == 'Yorkshire' else f'waste ranking {r[:1]}'),
     ('DomesdayCountyRanking', {'measure': 'slaves', 'order': 'asc', 'limit': 3}, lambda r: None if len(r) == 3 and r[0]['value'] <= r[2]['value'] else f'asc {r}'),
     ('DomesdayCountyFigures', {}, None),
     ('DomesdayPopulation', {}, lambda r: None if r and r[0]['households'] == round(r[0]['households']) and abs(r[0]['estimatedPeopleLow'] - 4 * r[0]['households']) <= 4 and 'not people' in r[0]['note'] else f'population {r[:1]}'),
     ('DomesdayPopulation', {'county': 'KEN'}, lambda r: None if r and r[0]['area'] == 'Kent' else f'Kent population {r[:1]}'),
-    ('DomesdayBeforeAndAfter', {}, lambda r: None if r and r[0]['comparableEntries'] > 10000 and r[0]['rose'] + r[0]['fell'] + r[0]['heldSteady'] == r[0]['comparableEntries'] and '1086 only' in r[0]['note'] else f'before/after {r[:1]}'),
+    ('DomesdayBeforeAndAfter', {}, lambda r: None if r and r[0]['comparableEntries'] > 10000 and r[0]['rose'] + r[0]['fell'] + r[0]['heldSteady'] == r[0]['comparableEntries'] and 'Little Domesday' in r[0]['note'] and r[0]['slaves1066Comparable'] > r[0]['slaves1086Comparable'] else f'before/after {r[:1]}'),
     ('DomesdayBeforeAndAfter', {'county': 'YKS'}, lambda r: None if r and r[0]['valueChangePercent'] < -40 else f'Yorkshire should have fallen hard: {r[:1]}'),
     ('DomesdayHundredSummary', {}, None),
     ('DomesdayHundredSummary', {'county': 'YKS'}, None),
     # Oswaldslow's detached parts lie in Gloucestershire and Warwickshire places; counted from the county's entries it leads.
     ('DomesdayHundredSummary', {'county': 'Worcestershire'}, lambda r: None if any(
-        x['hundred'] == 'Oswaldslow' and x['households'] == 1148 for x in r)
+        x['hundred'] == 'Oswaldslow' and x['households'] == 1182 for x in r)
         and max(r, key=lambda x: x['households'])['hundred'] == 'Oswaldslow' else f'Oswaldslow {r[:3]}'),
     ('DomesdayRichestManors', {}, lambda r: None if all(x['kind'] == 'manor' for x in r)
      and r[0]['places'] == 'Neatham' else f'richest manors {r[:2]}'),
@@ -82,6 +86,31 @@ CASES = [
     ('DomesdayMapPlaces', {}, lambda r: None if len(r) > 13000 else f'{len(r)} places on the map'),
     ('DomesdayPlacesNear', {}, lambda r: None if r and r[0]['place'] == 'Abberley' else f'nearest is {r[:1]}'),
     ('DomesdayPlacesNear', {'lat': 51.5074, 'lng': -0.1278, 'km': 5}, None),
+    # Rules (rules/): conclusions the entries support, checked against cases historians name.
+    ('DomesdayAntecessors', {'name': 'tosny'}, lambda r: None if any(x['successor1086'] == 'Ralph of Tosny' and x['antecessor1066'] == 'Wulfmer' for x in r) else f'Tosny successions {r[:2]}'),
+    ('DomesdayMenOf', {}, lambda r: None if any(x['lord'] == 'Earl Hugh of Chester' and x['man'] == 'William Malbank' for x in r) else f'Earl Hugh\'s men {r[:2]}'),
+    ('DomesdayDevastation', {}, lambda r: None if len(r) >= 40 and any(x['county'] == 'Yorkshire' for x in r) and not any(x['hundred'] == '-' for x in r) else f'{len(r)} devastated'),
+    ('DomesdayConquestSurvivors', {}, lambda r: None if any(x['survivor'].startswith('Thorkell of Warwick') for x in r) else 'no Thorkell'),
+    # Measures across the survey.
+    ('DomesdayValueAnomalies', {}, lambda r: None if r and 0.4 < r[0]['model']['r2'] < 0.8 and r[0]['model']['coefficients'][0]['predictor'] == 'households' else f'fit {r[:1]}'),
+    ('DomesdayFeeScatter', {}, lambda r: None if len(r) >= 20 else f'{len(r)} landholders'),
+    ('DomesdayWomenBeforeAfter', {}, lambda r: None if len(r) == 2 and r[0]['year'] == '1066' and r[0]['sharePercent'] > r[1]['sharePercent'] else f'women {r}'),
+    ('DomesdayWhoHeldTheLand', {'county': 'WOR'}, lambda r: None if r and r[0]['churchPercent'] > 50 else f'Worcestershire {r[:1]}'),
+    ('DomesdayWhoHeldTheLand', {'county': 'KEN'}, lambda r: None if r and r[0]['normanBishopsPercent'] > 25 else f'Kent {r[:1]}'),
+    ('DomesdayPloughStocking', {}, lambda r: None if len(r) >= 25 and r[0]['stockingPercent'] <= r[-1]['stockingPercent'] else f'stocking {r[:1]}'),
+    ('DomesdayFateOfEnglishLords', {}, lambda r: None if r and r[0]['lord1066'] == 'Earl Harold' and r[0]['entries1086'] == 0 else f'fate {r[:1]}'),
+    # What Domesday says (exact; the model-backed views are exercised by the battery and the app).
+    ('DomesdayTextMentions', {'word': 'eels', 'county': 'CAM'}, lambda r: None if len(r) >= 30 and all('eel' in x['text'].lower() for x in r) else f'{len(r)} eel entries'),
+    ('DomesdayTextMentionsByCounty', {'word': 'vineyard'}, lambda r: None if r and r[0]['county'] == 'Wiltshire' else f'vineyards {r[:1]}'),
+    ('DomesdayEntryDetail', {'entryId': '8146'}, lambda r: None if r and 'ABBERLEY' in (r[0]['text'] or '') and '[=' not in r[0]['text'] and '[=' in r[0]['textEdition'] else 'Abberley text'),
+    ('DomesdayPersonWikipedia', {'name': 'Bishop Odo/of Bayeux'}, lambda r: None if r and r[0]['article'] == 'Odo of Bayeux' and r[0]['wikidataId'] == 'Q49961' else f'Odo {r[:1]}'),
+    ('DomesdayPlaceWikipedia', {}, lambda r: None if r and r[0]['article'] == 'Abberley' else f'Abberley article {r[:1]}'),
+    # Then and now.
+    ('DomesdayThenAndNow', {}, lambda r: None if r and r[0]['households1086'] == 32 and r[0]['households2021'] == 288 and r[0]['parish2021'] == 'Abberley' else f'Abberley now {r[:1]}'),
+    ('DomesdayGrowth', {}, lambda r: None if len(r) >= 20 and r[0]['timesAsMany'] > 100 else f'growth {r[:1]}'),
+    ('DomesdayGrowth', {'order': 'asc'}, lambda r: None if r and r[0]['timesAsMany'] < 1 and r[0]['households1086'] < 200 else f'least growth {r[:1]}'),
+    ('DomesdayRichThenRichNow', {}, lambda r: None if r and abs(r[0]['value1086VsDecile2025']['r']) < 0.2 and r[0]['value1086VsDecile2025']['n'] > 5000 else f'rich then {r[:1]}'),
+    ('DomesdayLostVillages', {}, lambda r: None if r and not any((x['parishToday'] or '').endswith('unparished area') for x in r) else f'lost {r[:2]}'),
 ]
 
 BUDGET_MS = 2000

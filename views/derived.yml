@@ -1,0 +1,78 @@
+# Views over the DERIVE rule sets in rules/. Naming a derived label or relationship is what
+# evaluates its rules, so these are how the conclusions reach the app, the console and kg_ask.
+# Distances and shares are measured here, never inside a fixpoint (realm spec §13.5).
+
+- name: DomesdayAntecessors
+  description: Who succeeded whom — each Norman tenant-in-chief and the English lord of 1066 whose land he was given, where he holds at least half of that lord's entries in a county. THE answer for "who was <person>'s antecessor", "who took over <English lord>'s land", "which estates passed whole".
+  params:
+    name:
+      type: string
+      default: ""
+      description: "Part of either name, any case, e.g. `tosny`, `harold`. Empty for every succession."
+    limit:
+      type: int
+      default: 50
+      description: "Most rows."
+  cypher: |
+    MATCH (t:DomesdayPerson)-[s:SUCCEEDED]->(l:DomesdayPerson)
+    WHERE $name = '' OR toLower(t.canonicalName) CONTAINS toLower($name) OR toLower(l.canonicalName) CONTAINS toLower($name)
+    RETURN t.canonicalName AS successor1086, l.canonicalName AS antecessor1066, l.countyName AS county,
+           s.succeededEntries AS entries, s.succeededShare AS sharePercent
+    ORDER BY entries DESC, successor1086
+    LIMIT $limit
+
+- name: DomesdayMenOf
+  description: A lord's men — the sub-tenants of 1086 who held two or more entries of the same tenant-in-chief in a county, with how many and their value. THE answer for "who were <lord>'s men", "who held of Earl Hugh", "whose man was <person>".
+  params:
+    name:
+      type: string
+      default: "Earl Hugh"
+      description: "Part of the lord's or the man's name, any case. Empty for every pair."
+    limit:
+      type: int
+      default: 50
+      description: "Most rows."
+  cypher: |
+    MATCH (u:DomesdayPerson)-[m:MAN_OF]->(t:DomesdayPerson)
+    WHERE $name = '' OR toLower(t.canonicalName) CONTAINS toLower($name) OR toLower(u.canonicalName) CONTAINS toLower($name)
+    RETURN t.canonicalName AS lord, u.canonicalName AS man, t.countyName AS county,
+           m.manOfEntries AS entries, round(m.manOfValue1086 / 2.4) / 100 AS value1086Pounds
+    ORDER BY entries DESC, lord
+    LIMIT $limit
+
+- name: DomesdayDevastation
+  description: The devastated hundreds — where much of the land lay waste, and the hundreds beside them the waste spread into — with each one's entries, waste entries and waste share, and its centre for a map. THE answer for "where was the Harrying of the North", "how far did the devastation reach", "which hundreds were laid waste".
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code or name, e.g. `YKS`. Empty for all England."
+  cypher: |
+    MATCH (h:DevastatedHundred)
+    WHERE $county = '' OR h.county = $county OR toLower(h.countyName) = toLower($county)
+    MATCH (e:DomesdayEntry)-[:IN_HUNDRED]->(h)
+    WITH h, count(e) AS entries, sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS wasteEntries
+    OPTIONAL MATCH (p:DomesdayPlace)-[:IN]->(h) WHERE p.lat IS NOT NULL
+    RETURN h.hundredId AS hundredId, h.name AS hundred, h.countyName AS county, entries, wasteEntries,
+           toInteger(round(100.0 * wasteEntries / entries)) AS wasteSharePercent,
+           avg(p.lat) AS lat, avg(p.lng) AS lng
+    ORDER BY wasteSharePercent DESC, hundred
+
+- name: DomesdayConquestSurvivors
+  description: Who held land on both sides of the Conquest — lay lords of 1066 who still held in 1086, as tenant-in-chief or as someone's tenant, under the same name in the same county, with what they held before and after. THE answer for "which English lords survived the Conquest", "did any Englishmen keep their land". Mostly English (Thorkell of Warwick, Gospatric), but Domesday records no nationality, and Edward the Confessor's Normans (Osbern son of Richard, Alfred of Marlborough) qualify too. `distinctiveName` is false for a bare name (`Ralph`, `Aelfric`), where one record may join two men.
+  params:
+    limit:
+      type: int
+      default: 50
+      description: "Most rows."
+  cypher: |
+    MATCH (p:ConquestSurvivor)
+    OPTIONAL MATCH (p)<-[:LORD_1066]-(b:DomesdayEntry)
+    WITH p, count(DISTINCT b) AS entries1066, sum(b.value1066) AS value1066
+    OPTIONAL MATCH (p)<-[r:TENANT_IN_CHIEF|TENANT_1086]-(a:DomesdayEntry)
+    WITH p, entries1066, value1066, count(DISTINCT a) AS entries1086, sum(a.value1086) AS value1086,
+         collect(DISTINCT type(r)) AS heldAs
+    RETURN p.canonicalName AS survivor, p.countyName AS county, size(split(p.canonicalName, ' ')) > 1 AS distinctiveName, entries1066, round(value1066 / 2.4) / 100 AS value1066Pounds,
+           entries1086, round(value1086 / 2.4) / 100 AS value1086Pounds, heldAs
+    ORDER BY distinctiveName DESC, entries1086 DESC, survivor
+    LIMIT $limit

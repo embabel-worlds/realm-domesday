@@ -1,0 +1,31 @@
+# DERIVE rule set: who succeeded whom. Domesday's own word is ANTECESSOR — the Englishman whose
+# land a Norman was given, often whole: "Ralph holds it; Wulfmer held it". A pair is concluded,
+# not traversed: it needs a share of the English lord's entries, which no path states.
+name: domesday/antecessors
+derives: SUCCEEDED
+description: >-
+  A tenant-in-chief of 1086 SUCCEEDED a lord of 1066 when he holds at least half of that lord's
+  entries in the county (person records are per county, so the succession is too). succeededEntries
+  counts the entries that passed; succeededShare is their percentage of the lord's entries there.
+  Concluded from the LORD_1066 and TENANT_IN_CHIEF edges of the same entries.
+params:
+  minEntries: { type: int, default: 2, description: "Fewest entries a 1066 lord must have held in the county for a succession to be read from them." }
+  minShare: { type: int, default: 50, description: "Percentage of the lord's entries the successor must hold." }
+properties:
+  succeededEntries:
+    type: int
+    description: "Entries of the 1066 lord's that the successor held in 1086."
+  succeededShare:
+    type: int
+    description: "Those entries as a percentage of all the 1066 lord's entries in the county."
+rules:
+  - derive: "(t)-[:SUCCEEDED {succeededEntries: n, succeededShare: share}]->(l)"
+    from: |
+      MATCH (l:DomesdayPerson)<-[:LORD_1066]-(e0:DomesdayEntry)
+      WITH l, count(DISTINCT e0) AS total
+      WHERE total >= $minEntries
+      MATCH (l)<-[:LORD_1066]-(e:DomesdayEntry)-[:TENANT_IN_CHIEF]->(t:DomesdayPerson)
+      WHERE t <> l
+      WITH l, t, total, count(DISTINCT e) AS n
+      WHERE 100 * n >= $minShare * total
+      WITH l, t, n, toInteger(round(100.0 * n / total)) AS share

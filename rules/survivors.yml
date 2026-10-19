@@ -1,0 +1,25 @@
+# DERIVE rule set: who held land on both sides of the Conquest. A lay lord of 1066 who still holds
+# in 1086 — as tenant-in-chief or as someone's tenant — under the same name in the same county.
+# Mostly the English who kept land (Thorkell of Warwick, Gospatric), but also the Normans and
+# Bretons Edward the Confessor had already settled (Osbern son of Richard, Alfred of Marlborough):
+# Domesday does not record nationality, so the label does not claim it. A label rather than a view
+# so other rules and queries can build on it.
+name: domesday/survivors
+derives: ConquestSurvivor
+description: >-
+  A person record that is LORD_1066 of some entry and TENANT_IN_CHIEF or TENANT_1086 of some entry
+  in 1086, not an institution and not a king. Hull's records are one per name per county, so a
+  common name (Alwin, Godric) may join two men: survivorship is likeliest where survivorEntries1086
+  is several and the name is distinctive — say so when answering.
+properties:
+  survivorEntries1086:
+    type: int
+    description: "Entries the survivor still held in 1086."
+rules:
+  - derive: "(p:ConquestSurvivor {survivorEntries1086: n})"
+    from: |
+      MATCH (p:DomesdayPerson)<-[:LORD_1066]-(:DomesdayEntry)
+      WHERE NOT coalesce(p.isInstitution, false) AND NOT p.canonicalName STARTS WITH 'King '
+      WITH DISTINCT p
+      MATCH (p)<-[:TENANT_IN_CHIEF|TENANT_1086]-(e:DomesdayEntry)
+      WITH p, count(DISTINCT e) AS n

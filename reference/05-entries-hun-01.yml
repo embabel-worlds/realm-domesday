@@ -10,9 +10,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B1)
     holding: borough
+    textEdition: '[* `HURSTINGSTONE'' Hundred *] In the Borough of HUNTINGDON there are four quarters. In two quarters there were 116 burgesses before 1066, and still are. They pay all customary dues and
+      the King''s tax. Under them are 100 smallholders who aid them in discharging the tax. St Benedict''s of Ramsey had 10 of these burgesses with full jurisdiction and every customary due, but they only
+      paid tax before 1066. Eustace [* the sheriff *] took them from the Abbey by force, and they are now in the King''s hands, with the others.'
+    text: '[`HURSTINGSTONE'' Hundred] In the Borough of HUNTINGDON there are four quarters. In two quarters there were 116 burgesses before 1066, and still are. They pay all customary dues and the King''s
+      tax. Under them are 100 smallholders who aid them in discharging the tax. St Benedict''s of Ramsey had 10 of these burgesses with full jurisdiction and every customary due, but they only paid tax
+      before 1066. Eustace [the sheriff] took them from the Abbey by force, and they are now in the King''s hands, with the others.'
     households: 216
     smallholders: 100
     burgesses: 116
@@ -50,9 +58,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B2)
     holding: borough
+    textEdition: Ulf Fenman had 18 burgesses. Now Gilbert of Ghent has them, with full jurisdiction, apart from the King's tax. ^[Huntingdon]^
+    text: Ulf Fenman had 18 burgesses. Now Gilbert of Ghent has them, with full jurisdiction, apart from the King's tax. [Huntingdon]
     households: 18
     burgesses: 18
     folio: HUN 1
@@ -85,9 +97,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B3)
     holding: borough
+    textEdition: The Abbot of Ely has one plot, with full jurisdiction, apart from the King's tax. ^[Huntingdon]^
+    text: The Abbot of Ely has one plot, with full jurisdiction, apart from the King's tax. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -114,9 +130,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B4)
     holding: borough
+    textEdition: The Bishop of Lincoln had one messuage, on the castle site, with full jurisdiction. It is not there now. ^[Huntingdon]^
+    text: The Bishop of Lincoln had one messuage, on the castle site, with full jurisdiction. It is not there now. [Huntingdon]
     hasCastle: true
     folio: HUN 1
   relations:
@@ -144,9 +164,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B5)
     holding: borough
+    textEdition: Earl Siward had one messuage with a house, with full jurisdiction, exempt from every customary due. Now Countess Judith has it. ^[Huntingdon]^
+    text: Earl Siward had one messuage with a house, with full jurisdiction, exempt from every customary due. Now Countess Judith has it. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -177,9 +201,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B6)
     holding: borough
+    textEdition: On the castle site there were 20 messuages [liable] for all customary dues, which paid 16s 8d a year to the King's revenue. They are not there now. ^[Huntingdon]^
+    text: On the castle site there were 20 messuages [liable] for all customary dues, which paid 16s 8d a year to the King's revenue. They are not there now. [Huntingdon]
     value1086: 200
     hasCastle: true
     folio: HUN 1
@@ -204,9 +232,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B7)
     holding: borough
+    textEdition: Besides these there were and are 60 unoccupied messuages within these quarters which gave and give their customary dues. ^[Huntingdon]^
+    text: Besides these there were and are 60 unoccupied messuages within these quarters which gave and give their customary dues. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -229,9 +261,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B8)
     holding: borough
+    textEdition: Besides these there are also 8 unoccupied messuages which before 1066 were fully occupied and gave all customary dues. ^[Huntingdon]^
+    text: Besides these there are also 8 unoccupied messuages which before 1066 were fully occupied and gave all customary dues. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -254,9 +290,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B9)
     holding: borough
+    textEdition: In the other two quarters there were and are 140 burgesses [with as many houses], less 1/2 house, [liable] for all customary dues and for the King's tax. They had 80 closes, for which they
+      gave and give all customary dues. Of these St Benedict's of Ramsey had 22 burgesses before 1066. Two of them were exempt from all customary dues; 30 paid 10d a year each. All other customary dues
+      were the Abbot's, apart from the King's tax. ^[Huntingdon]^
+    text: In the other two quarters there were and are 140 burgesses [with as many houses], less 1/2 house, [liable] for all customary dues and for the King's tax. They had 80 closes, for which they gave
+      and give all customary dues. Of these St Benedict's of Ramsey had 22 burgesses before 1066. Two of them were exempt from all customary dues; 30 paid 10d a year each. All other customary dues were
+      the Abbot's, apart from the King's tax. [Huntingdon]
     households: 172
     burgesses: 172
     folio: HUN 1
@@ -285,9 +329,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B10)
     holding: borough
+    textEdition: In these quarters before 1066 Aelfric the sheriff had a messuage, which King William afterwards granted to his wife and sons. Eustace [* the sheriff *] now has it; an impoverished man,
+      together with the mother, claims it. ^[Huntingdon]^
+    text: In these quarters before 1066 Aelfric the sheriff had a messuage, which King William afterwards granted to his wife and sons. Eustace [the sheriff] now has it; an impoverished man, together with
+      the mother, claims it. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -330,9 +380,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B11)
     holding: borough
+    textEdition: In these two quarters there were and are 44 unoccupied messuages which gave and give their customary dues. ^[Huntingdon]^
+    text: In these two quarters there were and are 44 unoccupied messuages which gave and give their customary dues. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -355,9 +409,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B12)
     holding: borough
+    textEdition: And besides these, also in these two quarters, Burgred ^[the priest]^ and Thorkil ^[the priest]^ had one church before 1066, with 2 hides of land and 22 burgesses, with [their] houses,
+      who belong to this church, with full jurisdiction. Eustace ^[the sheriff]^ now has them all; because of this these men claim the King's mercy. Nevertheless these 22 burgesses give the King every customary
+      due. ^[Huntingdon]^
+    text: And besides these, also in these two quarters, Burgred [the priest] and Thorkil [the priest] had one church before 1066, with 2 hides of land and 22 burgesses, with [their] houses, who belong
+      to this church, with full jurisdiction. Eustace [the sheriff] now has them all; because of this these men claim the King's mercy. Nevertheless these 22 burgesses give the King every customary due.
+      [Huntingdon]
     households: 22
     burgesses: 22
     geldUnits: 2
@@ -396,9 +458,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B13)
     holding: borough
+    textEdition: Bishop Geoffrey [* of Coutances *] has 1 church and 1 house of the above, which Eustace [* the sheriff *] took away from St Benedict's ^[of Ramsey]^ and the same St [Benedict's] still claims
+      them. ^[Huntingdon]^
+    text: Bishop Geoffrey [of Coutances] has 1 church and 1 house of the above, which Eustace [the sheriff] took away from St Benedict's [of Ramsey] and the same St [Benedict's] still claims them. [Huntingdon]
     hasChurch: true
     folio: HUN 1
   relations:
@@ -434,9 +501,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B14)
     holding: borough
+    textEdition: In this Borough {Gos} and Hunef <of Stukeley> had 16 houses before 1066, with full jurisdiction and market rights. Countess Judith now has these. ^[Huntingdon]^ <203b>
+    text: In this Borough Gos and Hunef had 16 houses before 1066, with full jurisdiction and market rights. Countess Judith now has these. [Huntingdon]
     hasMarket: true
     folio: HUN 1
   relations:
@@ -472,9 +543,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B15)
     holding: borough
+    textEdition: The Borough of Huntingdon answered for 50 hides for the King's tax as a fourth part of `Hurstingstone' Hundred,. But it does not now pay such a tax in that Hundred, since King William placed
+      a tax on the mint in the Borough.
+    text: The Borough of Huntingdon answered for 50 hides for the King's tax as a fourth part of `Hurstingstone' Hundred,. But it does not now pay such a tax in that Hundred, since King William placed a
+      tax on the mint in the Borough.
     geldUnits: 50
     folio: HUN 1
   relations:
@@ -502,9 +579,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B16)
     holding: borough
+    textEdition: From the whole of this Borough before 1066 £10 came from land tribute of which the Earl had the third part and the King two [parts]. Of this due 16s 8d, [shared] between the Earl and the
+      King, now remain on the 20 messuages where the castle is. ^[Huntingdon]^
+    text: From the whole of this Borough before 1066 £10 came from land tribute of which the Earl had the third part and the King two [parts]. Of this due 16s 8d, [shared] between the Earl and the King,
+      now remain on the 20 messuages where the castle is. [Huntingdon]
     value1066: 2400
     value1086: 200
     hasCastle: true
@@ -530,9 +613,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B17)
     holding: borough
+    textEdition: Besides these, from the Borough revenue the King had £20, and the Earl £10, more or less, according to how he could arrange his part. One mill pays 40s to the King, 20s to the Earl. ^[Huntingdon]^
+    text: Besides these, from the Borough revenue the King had £20, and the Earl £10, more or less, according to how he could arrange his part. One mill pays 40s to the King, 20s to the Earl. [Huntingdon]
     value1086: 4800
     mills: 1
     folio: HUN 1
@@ -557,9 +644,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B18)
     holding: borough
+    textEdition: In this Borough lie 2 {{hides}} carucates and 40 acres of land, and 10 acres of meadow. They divide the revenue from these, the King [having] 2 parts and the Earl the third [part]. The
+      burgesses cultivate this land and lease it through the officers of the King and the Earl. Within the said revenue are 3 fishermen who pay 3s. ^[Huntingdon]^
+    text: In this Borough lie 2 carucates and 40 acres of land, and 10 acres of meadow. They divide the revenue from these, the King [having] 2 parts and the Earl the third [part]. The burgesses cultivate
+      this land and lease it through the officers of the King and the Earl. Within the said revenue are 3 fishermen who pay 3s. [Huntingdon]
     households: 3
     fishermen: 3
     geldUnits: 2.4167
@@ -585,9 +678,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B19)
     holding: borough
+    textEdition: In this Borough were 3 moneyers who paid 40s, [shared] between the King and the Earl; but they are not there now. ^[Huntingdon]^
+    text: In this Borough were 3 moneyers who paid 40s, [shared] between the King and the Earl; but they are not there now. [Huntingdon]
     folio: HUN 1
   relations:
   - predicate: IN
@@ -610,9 +707,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B20)
     holding: borough
+    textEdition: Before 1066 it paid £30; now the same. ^[Huntingdon]^
+    text: Before 1066 it paid £30; now the same. [Huntingdon]
     value1066: 7200
     folio: HUN 1
   relations:
@@ -636,9 +737,21 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Huntingdon
     name: Huntingdon (Huntingdonshire B21)
     holding: borough
+    textEdition: In `Hurstingstone' Hundred there are lordship ploughs exempt from the King's tax. The villagers and Freemen pay tax according to the hides entered in the record, apart from [in] Broughton,
+      where the Abbot ^[of Ramsey]^ pays tax with the others for 1 hide. ^[Huntingdon]^ List 1 List of landholders in Huntingdonshire 1 King William 2 The Bishop of Lincoln 3 The Bishop of Coutances 4 Ely
+      Abbey 5 Crowland Abbey 6 Ramsey Abbey 7 Thorney Abbey 8 Peterborough Abbey 9 Count Eustace 10 The Count of Eu 11 Earl Hugh 12 Walter Giffard 13 William of Warenne 14 Hugh of Bolbec 15 Eudo son of
+      Hubert 16 Swein of Essex 17 Roger of Ivry 18 Arnulf of Hesdin 19 Eustace the sheriff 20 Countess Judith 21 Gilbert of Ghent 22 Aubrey de Vere 23 William son of Ansculf 24 Ranulf brother of Ilger 25
+      Robert [son of] Fafiton 26 William the artificer 27 Ralph son of Osmund 28 Rohais wife of Richard 29 The King's thanes <203c> ?1? Land of the King
+    text: In `Hurstingstone' Hundred there are lordship ploughs exempt from the King's tax. The villagers and Freemen pay tax according to the hides entered in the record, apart from [in] Broughton, where
+      the Abbot [of Ramsey] pays tax with the others for 1 hide. [Huntingdon] List 1 List of landholders in Huntingdonshire 1 King William 2 The Bishop of Lincoln 3 The Bishop of Coutances 4 Ely Abbey 5
+      Crowland Abbey 6 Ramsey Abbey 7 Thorney Abbey 8 Peterborough Abbey 9 Count Eustace 10 The Count of Eu 11 Earl Hugh 12 Walter Giffard 13 William of Warenne 14 Hugh of Bolbec 15 Eudo son of Hubert 16
+      Swein of Essex 17 Roger of Ivry 18 Arnulf of Hesdin 19 Eustace the sheriff 20 Countess Judith 21 Gilbert of Ghent 22 Aubrey de Vere 23 William son of Ansculf 24 Ranulf brother of Ilger 25 Robert [son
+      of] Fafiton 26 William the artificer 27 Ralph son of Osmund 28 Rohais wife of Richard 29 The King's thanes Land of the King
     geldUnits: 1
     folio: HUN 1
   relations:
@@ -670,6 +783,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: rubric
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire ****
     folio: HUN 1
   relations:
@@ -685,6 +800,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: index of landholders
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire ****
     folio: HUN 1
   relations:
@@ -700,6 +817,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 1
     folio: HUN 2
   relations:
@@ -719,9 +838,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hartford
     name: Hartford (Huntingdonshire 1,1)
     holding: manor
+    textEdition: '`HURSTINGSTONE'' Hundred ?M? In HARTFORD King Edward had 15 hides of land taxable. Land for 17 ploughs. Ranulf brother of Ilger now has custody of it. Now in lordship 4 ploughs. 30 villagers
+      and 3 smallholders have 8 ploughs. A priest and 2 churches. 2 mills, £4; meadow, 40 acres; pasturable woodland 1 league long and 1/2 league wide. Value before 1066 £24; now £15. [= ?1? Land of the
+      King. King William holds it. King Edward held it =]'
+    text: '`HURSTINGSTONE'' Hundred In HARTFORD King Edward had 15 hides of land taxable. Land for 17 ploughs. Ranulf brother of Ilger now has custody of it. Now in lordship 4 ploughs. 30 villagers and
+      3 smallholders have 8 ploughs. A priest and 2 churches. 2 mills, £4; meadow, 40 acres; pasturable woodland 1 league long and 1/2 league wide. Value before 1066 £24; now £15.'
     households: 34
     villagers: 30
     smallholders: 3
@@ -770,9 +896,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Botolph Bridge
     name: Botolph Bridge (Huntingdonshire 1,2)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In BOTOLPH BRIDGE King Edward had 5 hides taxable. Land for 8 ploughs. Now in lordship the King has 1 plough; 15 villagers who have 5 ploughs. A priest and a church.
+      Meadow, 60 acres; pasturable woodland in Northamptonshire, 12 acres. Value before 1066, 100s; now £8. Ranulf ^[brother of Ilger]^ has custody of it. In this manor of the King's and in other manors,
+      a dam of the Abbot of Thorney continues to drown 300 acres of meadow. [= ?1? Land of the King. King William holds it. King Edward held it =]
+    text: NORMANCROSS Hundred In BOTOLPH BRIDGE King Edward had 5 hides taxable. Land for 8 ploughs. Now in lordship the King has 1 plough; 15 villagers who have 5 ploughs. A priest and a church. Meadow,
+      60 acres; pasturable woodland in Northamptonshire, 12 acres. Value before 1066, 100s; now £8. Ranulf [brother of Ilger] has custody of it. In this manor of the King's and in other manors, a dam of
+      the Abbot of Thorney continues to drown 300 acres of meadow.
     households: 16
     villagers: 15
     priests: 1
@@ -823,9 +957,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stilton
     name: Stilton (Huntingdonshire 1,3)
     holding: dependency
+    textEdition: In STILTON the King's Freemen of Normancross [Hundred] have 3 virgates of land taxable. Land for 2 ploughs; 5 oxen ploughing. ^[King Edward held it]^ [= ?1? Land of the King. King William
+      holds it =]
+    text: In STILTON the King's Freemen of Normancross [Hundred] have 3 virgates of land taxable. Land for 2 ploughs; 5 oxen ploughing. [King Edward held it]
     ploughlands: 2
     geldUnits: 0.75
     folio: HUN 2
@@ -862,9 +1001,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Waterville]
     name: Orton [Waterville] (Huntingdonshire 1,4)
     holding: jurisdiction
+    textEdition: In ORTON [Waterville] the King has the jurisdiction over 3 1/2 hides of land in the Abbot of Peterborough's land ^[in ORTON [Waterville]]^ which was Godwin's. [= ?1? Land of the King. King
+      William holds it. King Edward held it =]
+    text: In ORTON [Waterville] the King has the jurisdiction over 3 1/2 hides of land in the Abbot of Peterborough's land [in ORTON [Waterville]] which was Godwin's.
     geldUnits: 3.5
     folio: HUN 2
   relations:
@@ -908,9 +1052,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Gransden
     name: Gransden (Huntingdonshire 1,5)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In [Great] GRANSDEN Earl Algar had 8 hides of land taxable. Land for 15 ploughs. Now in lordship 7 ploughs; 24 villagers and 8 smallholders who have 8 ploughs. A priest
+      and a church. Meadow, 50 acres; underwood, 12 acres; from pasture come 5s 4d. Value before 1066 £40; now £30. Ranulf ^[brother of Ilger]^ has custody of it. [= ?1? Land of the King. King William holds
+      it =]
+    text: TOSELAND Hundred In [Great] GRANSDEN Earl Algar had 8 hides of land taxable. Land for 15 ploughs. Now in lordship 7 ploughs; 24 villagers and 8 smallholders who have 8 ploughs. A priest and a
+      church. Meadow, 50 acres; underwood, 12 acres; from pasture come 5s 4d. Value before 1066 £40; now £30. Ranulf [brother of Ilger] has custody of it.
     households: 33
     villagers: 24
     smallholders: 8
@@ -958,9 +1109,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Alconbury
     name: Alconbury (Huntingdonshire 1,6)
     holding: manor
+    textEdition: '`LEIGHTONSTONE'' Hundred ?M? In ALCONBURY and [its] outlier, [Great] GIDDING, were 10 hides taxable. Land for 20 ploughs. Now 5 ploughs belonging to the hall on 2 hides of this land. 35
+      villagers have 13 ploughs; and meadow, 80 acres. Value before 1066 £12; now the same. Ranulf brother of Ilger has custody of it. ^[King Edward held it]^ [= ?1? Land of the King. King William holds
+      it =]'
+    text: '`LEIGHTONSTONE'' Hundred In ALCONBURY and [its] outlier, [Great] GIDDING, were 10 hides taxable. Land for 20 ploughs. Now 5 ploughs belonging to the hall on 2 hides of this land. 35 villagers
+      have 13 ploughs; and meadow, 80 acres. Value before 1066 £12; now the same. Ranulf brother of Ilger has custody of it. [King Edward held it]'
     households: 35
     villagers: 35
     ploughlands: 20
@@ -1007,9 +1165,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Keyston
     name: Keyston (Huntingdonshire 1,7)
     holding: manor
+    textEdition: ?M? In KEYSTON King Edward had 4 hides of land taxable. Land for 12 ploughs. Now in lordship 2 ploughs. 24 villagers and 8 smallholders have 10 ploughs. Meadow, 86 acres; pasturable woodland
+      in [various] places, 5 furlongs long and 1 1/2 furlongs wide. Value before 1066 and now £10. Ranulf brother of Ilger has custody of it. [= ?1? Land of the King. King William holds it. King Edward
+      held it =]
+    text: In KEYSTON King Edward had 4 hides of land taxable. Land for 12 ploughs. Now in lordship 2 ploughs. 24 villagers and 8 smallholders have 10 ploughs. Meadow, 86 acres; pasturable woodland in [various]
+      places, 5 furlongs long and 1 1/2 furlongs wide. Value before 1066 and now £10. Ranulf brother of Ilger has custody of it.
     households: 32
     villagers: 24
     smallholders: 8
@@ -1055,9 +1220,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Brampton
     name: Brampton (Huntingdonshire 1,8)
     holding: manor
+    textEdition: ?M? In BRAMPTON King Edward had 15 hides taxable. Land for 15 ploughs. Now 3 ploughs there. 36 villagers and 2 smallholders have 14 ploughs. A church and a priest. Meadow, 100 acres; pasturable
+      woodland 1/2 league long and 2 furlongs wide; 2 mills which pay 100s. Value before 1066 and now £20. Ranulf brother of Ilger has custody of it. [= ?1? Land of the King. King William holds it. King
+      Edward held it =]
+    text: In BRAMPTON King Edward had 15 hides taxable. Land for 15 ploughs. Now 3 ploughs there. 36 villagers and 2 smallholders have 14 ploughs. A church and a priest. Meadow, 100 acres; pasturable woodland
+      1/2 league long and 2 furlongs wide; 2 mills which pay 100s. Value before 1066 and now £20. Ranulf brother of Ilger has custody of it.
     households: 39
     villagers: 36
     smallholders: 2
@@ -1105,9 +1277,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Grafham
     name: Grafham (Huntingdonshire 1,9)
     holding: jurisdiction
+    textEdition: ?S? In GRAFHAM are 5 hides taxable. Land for 8 ploughs. Jurisdiction in `Leightonstone' Hundred. Now 7 Freemen and 17 villagers have 6 ploughs; and meadow, 6 acres. Pasturable woodland
+      1 league long and 1 wide. Value before 1066 £5; now 10s less. ^[King Edward held it]^ [= ?1? Land of the King. King William holds it =]
+    text: In GRAFHAM are 5 hides taxable. Land for 8 ploughs. Jurisdiction in `Leightonstone' Hundred. Now 7 Freemen and 17 villagers have 6 ploughs; and meadow, 6 acres. Pasturable woodland 1 league long
+      and 1 wide. Value before 1066 £5; now 10s less. [King Edward held it]
     households: 24
     villagers: 17
     freemen: 7
@@ -1148,9 +1326,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Godmanchester
     name: Godmanchester (Huntingdonshire 1,10)
     holding: manor
+    textEdition: '[TOSELAND? Hundred] ?M? In GODMANCHESTER King Edward had 14 hides taxable. Land for 57 ploughs. Now 2 ploughs in the King''s lordship, on 2 hides of this land. 80 villagers and 16 smallholders
+      have 24 ploughs. A priest and a church. 3 mills, 100s; meadow, 160 acres; pasturable woodland, 50 acres; from pasture 20s; from the meadows 70s. Value before 1066 £40; now the same, [in coin] at face
+      value. [= ?1? Land of the King. King William holds it. King Edward held it =] <203d> ?2? Land of the Bishop of Lincoln'
+    text: '[TOSELAND? Hundred] In GODMANCHESTER King Edward had 14 hides taxable. Land for 57 ploughs. Now 2 ploughs in the King''s lordship, on 2 hides of this land. 80 villagers and 16 smallholders have
+      24 ploughs. A priest and a church. 3 mills, 100s; meadow, 160 acres; pasturable woodland, 50 acres; from pasture 20s; from the meadows 70s. Value before 1066 £40; now the same, [in coin] at face value.
+      Land of the Bishop of Lincoln'
     households: 97
     villagers: 80
     smallholders: 16
@@ -1193,6 +1379,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 2
     folio: HUN 2
   relations:
@@ -1212,9 +1400,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Cotton
     name: Cotton (Huntingdonshire 2,1)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In WEALD the Bishop of Lincoln had 2 hides taxable. Land for 3 ploughs. Now in lordship 2 ploughs; 3 villagers who have 2 oxen. Meadow, 20 acres. Value before 1066
+      and now 40s. {Turstin} holds from the Bishop. [= ?2? Land of the Bishop of Lincoln =]
+    text: TOSELAND Hundred In WEALD the Bishop of Lincoln had 2 hides taxable. Land for 3 ploughs. Now in lordship 2 ploughs; 3 villagers who have 2 oxen. Meadow, 20 acres. Value before 1066 and now 40s.
+      Turstin holds from the Bishop.
     households: 3
     villagers: 3
     ploughlands: 3
@@ -1258,9 +1452,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Staughton
     name: Staughton (Huntingdonshire 2,2)
     holding: manor
+    textEdition: ?M? In [Great] STAUGHTON the Bishop of Lincoln had 6 hides taxable. Land for 15 ploughs. Now in lordship 2 1/2 ploughs; 16 villagers and {{5}} 4 smallholders who have 8 ploughs. A priest
+      and a church. Meadow, 24 acres; pasturable woodland, 100 acres. Value before 1066 and now £10. Eustace [* the sheriff *] holds from the Bishop. The Abbot of Ramsey claims this manor against the Bishop.
+      [= ?2? Land of the Bishop of Lincoln =]
+    text: In [Great] STAUGHTON the Bishop of Lincoln had 6 hides taxable. Land for 15 ploughs. Now in lordship 2 1/2 ploughs; 16 villagers and 4 smallholders who have 8 ploughs. A priest and a church. Meadow,
+      24 acres; pasturable woodland, 100 acres. Value before 1066 and now £10. Eustace [the sheriff] holds from the Bishop. The Abbot of Ramsey claims this manor against the Bishop.
     households: 21
     villagers: 16
     smallholders: 4
@@ -1312,9 +1513,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Diddington
     name: Diddington (Huntingdonshire 2,3)
     holding: manor
+    textEdition: ?M? In DIDDINGTON the Bishop of Lincoln had 2 1/2 hides taxable. Land for 2 ploughs. Now in lordship 2 ploughs; 5 villagers who have 2 ploughs. A church. Meadow, 18 acres; pasturable woodland
+      1/2 league long and 1/2 wide. Value before 1066, 60s; now 70s. William holds from the Bishop. [= ?2? Land of the Bishop of Lincoln =]
+    text: In DIDDINGTON the Bishop of Lincoln had 2 1/2 hides taxable. Land for 2 ploughs. Now in lordship 2 ploughs; 5 villagers who have 2 ploughs. A church. Meadow, 18 acres; pasturable woodland 1/2
+      league long and 1/2 wide. Value before 1066, 60s; now 70s. William holds from the Bishop.
     households: 5
     villagers: 5
     ploughlands: 2
@@ -1360,9 +1567,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Buckden
     name: Buckden (Huntingdonshire 2,4)
     holding: manor
+    textEdition: ?M? In BUCKDEN the Bishop of Lincoln had 20 hides taxable. Land for 20 ploughs. Now in lordship 5 ploughs; 37 villagers and 20 smallholders who have 14 ploughs. A church and a priest. 1
+      mill, 30s; meadow, 84 acres; pasturable woodland 1 league long and 1 league wide. Value before 1066 £20; now £16 10s. [= ?2? Land of the Bishop of Lincoln =]
+    text: In BUCKDEN the Bishop of Lincoln had 20 hides taxable. Land for 20 ploughs. Now in lordship 5 ploughs; 37 villagers and 20 smallholders who have 14 ploughs. A church and a priest. 1 mill, 30s;
+      meadow, 84 acres; pasturable woodland 1 league long and 1 league wide. Value before 1066 £20; now £16 10s.
     households: 58
     villagers: 37
     smallholders: 20
@@ -1407,9 +1620,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Denton
     name: Denton (Huntingdonshire 2,5)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In DENTON Godric [* the sheriff *] had 5 hides taxable. Land for 2 ploughs. Now 1 plough in lordship. 10 villagers and 2 smallholders have 5 ploughs. A church and
+      a priest. Meadow, 24 acres; underwood, 24 acres. Value before 1066, 100s; now £4. {Turstin} holds from the Bishop. [= ?2? Land of the Bishop of Lincoln =]
+    text: NORMANCROSS Hundred In DENTON Godric [the sheriff] had 5 hides taxable. Land for 2 ploughs. Now 1 plough in lordship. 10 villagers and 2 smallholders have 5 ploughs. A church and a priest. Meadow,
+      24 acres; underwood, 24 acres. Value before 1066, 100s; now £4. Turstin holds from the Bishop.
     households: 13
     villagers: 10
     smallholders: 2
@@ -1457,9 +1676,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Longueville]
     name: Orton [Longueville] (Huntingdonshire 2,6)
     holding: manor
+    textEdition: ?M? In ORTON [Waterville] Leofric had 3 hides and 1 virgate of land taxable. Land for 2 ploughs and 1 ox. Now in lordship 1 plough; 2 villagers. Meadow, 9 acres. Value before 1066, 20s;
+      now 10s. ?K? John <of Orton> holds from the Bishop. The King claims the jurisdiction of this land. [= ?2? Land of the Bishop of Lincoln =]
+    text: In ORTON [Waterville] Leofric had 3 hides and 1 virgate of land taxable. Land for 2 ploughs and 1 ox. Now in lordship 1 plough; 2 villagers. Meadow, 9 acres. Value before 1066, 20s; now 10s. John
+      holds from the Bishop. The King claims the jurisdiction of this land.
     households: 2
     villagers: 2
     ploughlands: 2
@@ -1507,9 +1732,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stilton
     name: Stilton (Huntingdonshire 2,7)
     holding: manor
+    textEdition: ?M? In STILTON Tovi had 2 hides taxable. Land for 2 ploughs and 7 oxen. Now in lordship 1 plough; 6 villagers with 3 ploughs. Meadow, 16 acres; underwood, 5 acres. Value before 1066 and
+      now 40s. John <of Orton> holds from the Bishop. This land was given to Bishop Wulfwin? before 1066. [= ?2? Land of the Bishop of Lincoln =]
+    text: In STILTON Tovi had 2 hides taxable. Land for 2 ploughs and 7 oxen. Now in lordship 1 plough; 6 villagers with 3 ploughs. Meadow, 16 acres; underwood, 5 acres. Value before 1066 and now 40s. John
+      holds from the Bishop. This land was given to Bishop Wulfwin? before 1066.
     households: 6
     villagers: 6
     ploughlands: 2
@@ -1566,9 +1797,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Leighton [Bromswold]
     name: Leighton [Bromswold] (Huntingdonshire 2,8)
     holding: manor
+    textEdition: '`LEIGHTONSTONE'' Hundred ?M? In LEIGHTON [Bromswold] Thorkil the Dane had 15 hides taxable. Land for 17 ploughs. Now in lordship 6 ploughs; 33 villagers and 3 smallholders who have 10
+      ploughs. 1 mill, 3s. Of this land 3 men-at-arms hold 3 hides less 1 virgate. They have 3 ploughs and 3 villagers with 1/2 plough. Meadow, 30 acres; underwood, 10 acres. Value of the Bishop''s lordship
+      before 1066 and now £20; of the men-at-arms'' land 60s. Earl Waltheof gave this manor in alms to St Mary''s of Lincoln. [= ?2? Land of the Bishop of Lincoln =]'
+    text: '`LEIGHTONSTONE'' Hundred In LEIGHTON [Bromswold] Thorkil the Dane had 15 hides taxable. Land for 17 ploughs. Now in lordship 6 ploughs; 33 villagers and 3 smallholders who have 10 ploughs. 1
+      mill, 3s. Of this land 3 men-at-arms hold 3 hides less 1 virgate. They have 3 ploughs and 3 villagers with 1/2 plough. Meadow, 30 acres; underwood, 10 acres. Value of the Bishop''s lordship before
+      1066 and now £20; of the men-at-arms'' land 60s. Earl Waltheof gave this manor in alms to St Mary''s of Lincoln.'
     households: 39
     villagers: 36
     smallholders: 3
@@ -1619,9 +1858,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Pertenhall
     name: Pertenhall (Huntingdonshire 2,9)
     holding: land
+    textEdition: In PERTENHALL Alwin ^[Devil]^ had 1 virgate of land taxable. Land for 1/2 plough. This land is situated in Bedfordshire, but it pays tax and ?K? service in Huntingdonshire. The King's officers
+      claim it for his use. Value before 1066 and now 5s. William holds it from Bishop R[emigius] and ploughs there, together with his lordship [land]. [= ?2? Land of the Bishop of Lincoln =] <204a> ?3?
+      Land of the Bishop of Coutances
+    text: In PERTENHALL Alwin [Devil] had 1 virgate of land taxable. Land for 1/2 plough. This land is situated in Bedfordshire, but it pays tax and service in Huntingdonshire. The King's officers claim
+      it for his use. Value before 1066 and now 5s. William holds it from Bishop R[emigius] and ploughs there, together with his lordship [land]. Land of the Bishop of Coutances
     ploughlands: 0.5
     geldUnits: 0.25
     value1066: 60
@@ -1639,7 +1885,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Leightonstone
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -1668,6 +1914,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 3
     folio: HUN 3
   relations:
@@ -1687,9 +1935,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hargrave
     name: Hargrave (Huntingdonshire 3,1)
     holding: jurisdiction
+    textEdition: '[`LEIGHTONSTONE'' Hundred] In HARGRAVE Saemer had 1 virgate of land taxable. Land for 2 oxen. Jurisdiction in `Leightonstone'' [Hundred]. The same man now holds it from the Bishop of Coutances.
+      He ploughs there with 2 oxen and has 2 acres of meadow. Value before 1066, 5s; now the same. ^[King Edward held it]^ [= ?3? Land of the Bishop of Coutances =] ?4? Land of Ely Abbey'
+    text: '[`LEIGHTONSTONE'' Hundred] In HARGRAVE Saemer had 1 virgate of land taxable. Land for 2 oxen. Jurisdiction in `Leightonstone'' [Hundred]. The same man now holds it from the Bishop of Coutances.
+      He ploughs there with 2 oxen and has 2 acres of meadow. Value before 1066, 5s; now the same. [King Edward held it] Land of Ely Abbey'
     geldUnits: 0.25
     value1066: 60
     folio: HUN 3
@@ -1730,6 +1984,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 4
     folio: HUN 3
   relations:
@@ -1749,9 +2005,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Colne
     name: Colne (Huntingdonshire 4,1)
     holding: manor
+    textEdition: '`HURSTINGSTONE'' Hundred ?M? In COLNE the Abbot of Ely had 6 hides taxable. Land for 6 ploughs. Apart from the 6 hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs; 13 villagers
+      and 5 smallholders who have 5 ploughs. Meadow, 10 acres; pasturable woodland 1 league long and 1/2 wide; marsh, as much. Value before 1066 £6; now 100s. [= ?4? Land of Ely Abbey =]'
+    text: '`HURSTINGSTONE'' Hundred In COLNE the Abbot of Ely had 6 hides taxable. Land for 6 ploughs. Apart from the 6 hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs; 13 villagers and
+      5 smallholders who have 5 ploughs. Meadow, 10 acres; pasturable woodland 1 league long and 1/2 wide; marsh, as much. Value before 1066 £6; now 100s.'
     households: 18
     villagers: 13
     smallholders: 5
@@ -1793,9 +2055,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Bluntisham
     name: Bluntisham (Huntingdonshire 4,2)
     holding: manor
+    textEdition: ?M? In BLUNTISHAM the Abbot of Ely had 6 1/2 hides taxable. Land for 8 ploughs. Apart from these hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs; 10 villagers and 3 smallholders
+      with 3 ploughs. A priest and a church. Meadow, 20 acres; pasturable woodland 1 league long and 4 furlongs wide. Value before 1066 and now 100s. [= ?4? Land of Ely Abbey =]
+    text: In BLUNTISHAM the Abbot of Ely had 6 1/2 hides taxable. Land for 8 ploughs. Apart from these hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs; 10 villagers and 3 smallholders with
+      3 ploughs. A priest and a church. Meadow, 20 acres; pasturable woodland 1 league long and 4 furlongs wide. Value before 1066 and now 100s.
     households: 14
     villagers: 10
     smallholders: 3
@@ -1839,9 +2107,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Somersham
     name: Somersham (Huntingdonshire 4,3)
     holding: manor
+    textEdition: ?M? In SOMERSHAM the Abbot of Ely had 8 hides taxable. Land for 12 ploughs. Apart from these hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs; 32 villagers and 9 smallholders
+      who have 9 ploughs. 3 fisheries, 8s; meadow, 20 acres; pasturable woodland 1 league long and 7 furlongs wide. Value before 1066 £7; now £8. [= ?4? Land of Ely Abbey =]
+    text: In SOMERSHAM the Abbot of Ely had 8 hides taxable. Land for 12 ploughs. Apart from these hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs; 32 villagers and 9 smallholders who have
+      9 ploughs. 3 fisheries, 8s; meadow, 20 acres; pasturable woodland 1 league long and 7 furlongs wide. Value before 1066 £7; now £8.
     households: 41
     villagers: 32
     smallholders: 9
@@ -1883,9 +2157,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Spaldwick
     name: Spaldwick (Huntingdonshire 4,4)
     holding: manor
+    textEdition: '[`LEIGHTONSTONE'' Hundred] ?M? In SPALDWICK the Abbot of Ely had 15 hides taxable. Land for 15 ploughs. Now in lordship 4 ploughs on 5 hides of this land; 50 villagers and 10 smallholders
+      who have 25 ploughs. 1 mill, 2s; meadow, 160 acres; pasturable woodland, 60 acres. Value before 1066 £16; now £22. [= ?4? Land of Ely Abbey =]'
+    text: '[`LEIGHTONSTONE'' Hundred] In SPALDWICK the Abbot of Ely had 15 hides taxable. Land for 15 ploughs. Now in lordship 4 ploughs on 5 hides of this land; 50 villagers and 10 smallholders who have
+      25 ploughs. 1 mill, 2s; meadow, 160 acres; pasturable woodland, 60 acres. Value before 1066 £16; now £22.'
     households: 60
     villagers: 50
     smallholders: 10
@@ -1928,9 +2208,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Little Catworth
     name: Little Catworth (Huntingdonshire 4,5)
     holding: outlier
+    textEdition: ?M? In LITTLE CATWORTH, an outlier of Spaldwick, 4 hides taxable. Land for 4 ploughs. Now 7 villagers have 2 ploughs. [= ?4? Land of Ely Abbey =] ?5? Land of Crowland Abbey
+    text: In LITTLE CATWORTH, an outlier of Spaldwick, 4 hides taxable. Land for 4 ploughs. Now 7 villagers have 2 ploughs. Land of Crowland Abbey
     households: 7
     villagers: 7
     ploughlands: 4
@@ -1971,6 +2255,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 5
     folio: HUN 3
   relations:
@@ -1990,9 +2276,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Morborne
     name: Morborne (Huntingdonshire 5,1)
     holding: manor
+    textEdition: '[NORMANCROSS Hundred] ?M? In MORBORNE the Abbot of Crowland had 5 hides taxable. Land for 9 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 16 villagers and 3 smallholders who
+      have 7 ploughs. A church and a priest. Meadow, 40 acres; underwood, 1 acre. Value before 1066 and now 100s. [= ?5? Land of Crowland Abbey =]'
+    text: '[NORMANCROSS Hundred] In MORBORNE the Abbot of Crowland had 5 hides taxable. Land for 9 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 16 villagers and 3 smallholders who have 7 ploughs.
+      A church and a priest. Meadow, 40 acres; underwood, 1 acre. Value before 1066 and now 100s.'
     households: 20
     villagers: 16
     smallholders: 3
@@ -2036,9 +2328,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Thurning
     name: Thurning (Huntingdonshire 5,2)
     holding: jurisdiction
+    textEdition: '[`LEIGHTONSTONE'' Hundred] In THURNING 1 1/2 hides of land taxable. Land for 1 1/2 ploughs. Jurisdiction in the King''s manor of Alconbury. Eustace [* the sheriff *] now holds from the
+      Abbot of Crowland. He has 1 plough; and 1 villager with 1/2 plough; and meadow, 6 acres. Value before 1066 and now 20s. [= ?5? Land of Crowland Abbey =] <204b> ?6? Land of St Benedict''s of Ramsey'
+    text: '[`LEIGHTONSTONE'' Hundred] In THURNING 1 1/2 hides of land taxable. Land for 1 1/2 ploughs. Jurisdiction in the King''s manor of Alconbury. Eustace [the sheriff] now holds from the Abbot of Crowland.
+      He has 1 plough; and 1 villager with 1/2 plough; and meadow, 6 acres. Value before 1066 and now 20s. Land of St Benedict''s of Ramsey'
     households: 1
     villagers: 1
     ploughlands: 1.5
@@ -2087,6 +2385,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 6
     folio: HUN 3
   relations:
@@ -2106,9 +2406,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great and Little] Stukeley'
     name: '[Great and Little] Stukeley (Huntingdonshire 6,1)'
     holding: manor
+    textEdition: '`HURSTINGSTONE'' Hundred ?M? In [Little] STUKELEY the Abbot of Ramsey had 7 hides taxable. Land for 11 ploughs. Apart from these hides, land for 2 ploughs in lordship. Now in lordship
+      2 ploughs; 16 villagers and 2 smallholders who have 6 ploughs. A church and a priest. Meadow, 24 acres; pasturable woodland 4 furlongs long and 3 wide. Value before 1066 £6; now £4 10s. Of this land
+      two of the Abbot''s men-at-arms, Richard and Hugh, have 3 hides. They have 3 ploughs in lordship. Value 30s. [= ?6? Land of St Benedict''s of Ramsey =]'
+    text: '`HURSTINGSTONE'' Hundred In [Little] STUKELEY the Abbot of Ramsey had 7 hides taxable. Land for 11 ploughs. Apart from these hides, land for 2 ploughs in lordship. Now in lordship 2 ploughs;
+      16 villagers and 2 smallholders who have 6 ploughs. A church and a priest. Meadow, 24 acres; pasturable woodland 4 furlongs long and 3 wide. Value before 1066 £6; now £4 10s. Of this land two of the
+      Abbot''s men-at-arms, Richard and Hugh, have 3 hides. They have 3 ploughs in lordship. Value 30s.'
     households: 19
     villagers: 16
     smallholders: 2
@@ -2160,9 +2468,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Abbots] Ripton'
     name: '[Abbots] Ripton (Huntingdonshire 6,2)'
     holding: manor
+    textEdition: ?M? In [Abbots] RIPTON the Abbot of Ramsey had 10 hides taxable. Land for 16 ploughs. Land for 2 ploughs in lordship, as well as the said hides. Now in lordship 2 ploughs; 27 villagers
+      and 6 smallholders who have 12 ploughs. A church and a priest. Meadow, 16 acres; pasturable woodland 1 league long and 1 league wide. Value before 1066 and now £8. [= ?6? Land of St Benedict's of
+      Ramsey =]
+    text: In [Abbots] RIPTON the Abbot of Ramsey had 10 hides taxable. Land for 16 ploughs. Land for 2 ploughs in lordship, as well as the said hides. Now in lordship 2 ploughs; 27 villagers and 6 smallholders
+      who have 12 ploughs. A church and a priest. Meadow, 16 acres; pasturable woodland 1 league long and 1 league wide. Value before 1066 and now £8.
     households: 34
     villagers: 27
     smallholders: 6
@@ -2206,9 +2521,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Broughton
     name: Broughton (Huntingdonshire 6,3)
     holding: manor
+    textEdition: ?M? In BROUGHTON the Abbot of Ramsey had 4 hides taxable. Land for 7 ploughs and 2 oxen. The Freemen's land is 5 hides taxable. Land for 8 ploughs and 6 oxen. These Freemen state that they
+      had [the fines from] adultery and bloodshed, and from their [fine from] robbery up to 4d; over 4d the Abbot had the fine from robbery. Now the Abbot has 4 ploughs in lordship; 10 Freemen and 20 villagers
+      who have 10 ploughs. A priest and a church. 1 mill, 3s; meadow, 10 acres; pasturable woodland 3 furlongs long and 2 wide. Value before 1066 £9; now £10. ?K? Eustace [* the sheriff *] claims 5 hides.
+      [= ?6? Land of St Benedict's of Ramsey =]
+    text: In BROUGHTON the Abbot of Ramsey had 4 hides taxable. Land for 7 ploughs and 2 oxen. The Freemen's land is 5 hides taxable. Land for 8 ploughs and 6 oxen. These Freemen state that they had [the
+      fines from] adultery and bloodshed, and from their [fine from] robbery up to 4d; over 4d the Abbot had the fine from robbery. Now the Abbot has 4 ploughs in lordship; 10 Freemen and 20 villagers who
+      have 10 ploughs. A priest and a church. 1 mill, 3s; meadow, 10 acres; pasturable woodland 3 furlongs long and 2 wide. Value before 1066 £9; now £10. Eustace [the sheriff] claims 5 hides.
     households: 31
     villagers: 20
     freemen: 10
@@ -2257,9 +2581,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Wistow
     name: Wistow (Huntingdonshire 6,4)
     holding: manor
+    textEdition: ?M? In WISTOW the Abbot of Ramsey had 9 hides taxable. Land for 16 ploughs. Land for 3 ploughs in lordship, besides these hides. Now in lordship 2 ploughs; 32 villagers who have 11 ploughs.
+      A priest and a church. 1 mill, 2s; meadow, 24 acres; pasturable woodland 1 league long and 1/2 wide. Value before 1066 £9; now £8. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In WISTOW the Abbot of Ramsey had 9 hides taxable. Land for 16 ploughs. Land for 3 ploughs in lordship, besides these hides. Now in lordship 2 ploughs; 32 villagers who have 11 ploughs. A priest
+      and a church. 1 mill, 2s; meadow, 24 acres; pasturable woodland 1 league long and 1/2 wide. Value before 1066 £9; now £8.
     households: 33
     villagers: 32
     priests: 1
@@ -2303,9 +2633,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Upwood
     name: Upwood (Huntingdonshire 6,5)
     holding: manor
+    textEdition: ?M? In UPWOOD the Abbot of Ramsey had 10 hides taxable. Land for 16 ploughs. Land for 3 ploughs in lordship, besides the said hides. Now in lordship 2 ploughs; 32 villagers and 2 smallholders
+      with 14 ploughs. A priest and a church. Meadow, 6 acres; pasturable woodland 1 1/2 leagues long and 1 wide. Value before 1066 £10; now £9. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In UPWOOD the Abbot of Ramsey had 10 hides taxable. Land for 16 ploughs. Land for 3 ploughs in lordship, besides the said hides. Now in lordship 2 ploughs; 32 villagers and 2 smallholders with
+      14 ploughs. A priest and a church. Meadow, 6 acres; pasturable woodland 1 1/2 leagues long and 1 wide. Value before 1066 £10; now £9.
     households: 35
     villagers: 32
     smallholders: 2
@@ -2349,9 +2685,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Holywell
     name: Holywell (Huntingdonshire 6,6)
     holding: manor
+    textEdition: ?M? In HOLYWELL the Abbot of Ramsey had 9 hides taxable. Land for 9 ploughs. Land for 2 ploughs in lordship, besides the said hides. Now in lordship 2 ploughs; 26 villagers and 3 smallholders
+      with 6 ploughs. A church and a priest. Meadow, 30 acres; pasturable woodland 1 league and 4 furlongs long and 1 league wide; marsh 1 league long and 1 wide. Value before 1066 and now £8. Of this land
+      Alwold has 1 hide from the Abbot. He has 1 plough and 3 smallholders. Value 10s. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In HOLYWELL the Abbot of Ramsey had 9 hides taxable. Land for 9 ploughs. Land for 2 ploughs in lordship, besides the said hides. Now in lordship 2 ploughs; 26 villagers and 3 smallholders with
+      6 ploughs. A church and a priest. Meadow, 30 acres; pasturable woodland 1 league and 4 furlongs long and 1 league wide; marsh 1 league long and 1 wide. Value before 1066 and now £8. Of this land Alwold
+      has 1 hide from the Abbot. He has 1 plough and 3 smallholders. Value 10s.
     households: 33
     villagers: 26
     smallholders: 6
@@ -2399,9 +2743,19 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: St Ives
     name: St Ives (Huntingdonshire 6,7)
     holding: manor
+    textEdition: ?M? In ST IVES the Abbot of Ramsey had 20 hides taxable. Land for 24 ploughs. Land for 3 ploughs in lordship, as well as the said hides. Now in lordship 3 ploughs; 39 villagers and 12 smallholders
+      who have 20 ploughs. A priest and a church. Meadow, 60 acres; pasturable woodland 1 league long and 1/2 wide. Value before 1066 £20; now £16. <204c> Of this land three of the Abbot's men, Everard
+      <of St Ives>, Ingelrann [* of Eu *] and {Pleines} [* of {Slepe} *], have 4 hides. They have 3 1/2 ploughs. 5 villagers and 6 smallholders with 3 ploughs. [They have] a church and a priest. ?K? Value
+      45s. Eustace [* the sheriff *] claims 2 1/2 hides. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In ST IVES the Abbot of Ramsey had 20 hides taxable. Land for 24 ploughs. Land for 3 ploughs in lordship, as well as the said hides. Now in lordship 3 ploughs; 39 villagers and 12 smallholders
+      who have 20 ploughs. A priest and a church. Meadow, 60 acres; pasturable woodland 1 league long and 1/2 wide. Value before 1066 £20; now £16. Of this land three of the Abbot's men, Everard , Ingelrann
+      [of Eu] and Pleines [of Slepe], have 4 hides. They have 3 1/2 ploughs. 5 villagers and 6 smallholders with 3 ploughs. [They have] a church and a priest. Value 45s. Eustace [the sheriff] claims 2 1/2
+      hides.
     households: 63
     villagers: 44
     smallholders: 18
@@ -2461,9 +2815,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Houghton
     name: Houghton (Huntingdonshire 6,8)
     holding: manor
+    textEdition: ?M? In HOUGHTON the Abbot of Ramsey had 7 hides taxable. Land for 10 ploughs. Land for 2 ploughs in lordship, as well as the said hides. Now in lordship 2 ploughs; 31 villagers and 5 smallholders
+      with 10 ploughs. A church, [but] no priest. 1 mill, 20s; meadow, 60 acres; pasturable woodland 1 league long and 1/2 league wide. Value before 1066 and now £8. ?K? Eustace [* the sheriff *] claims
+      1 hide. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In HOUGHTON the Abbot of Ramsey had 7 hides taxable. Land for 10 ploughs. Land for 2 ploughs in lordship, as well as the said hides. Now in lordship 2 ploughs; 31 villagers and 5 smallholders
+      with 10 ploughs. A church, [but] no priest. 1 mill, 20s; meadow, 60 acres; pasturable woodland 1 league long and 1/2 league wide. Value before 1066 and now £8. Eustace [the sheriff] claims 1 hide.
     households: 36
     villagers: 31
     smallholders: 5
@@ -2511,9 +2872,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Wyton
     name: Wyton (Huntingdonshire 6,9)
     holding: manor
+    textEdition: ?M? In WYTON the Abbot of Ramsey had 7 hides taxable. Land for 10 ploughs. Land for 2 ploughs in lordship, as well as the said hides. Now in lordship 2 ploughs; 24 villagers and 5 smallholders
+      who have 8 ploughs. A priest and a church. 1 mill, 12s; meadow, 40 acres. Value before 1066 and now £7. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In WYTON the Abbot of Ramsey had 7 hides taxable. Land for 10 ploughs. Land for 2 ploughs in lordship, as well as the said hides. Now in lordship 2 ploughs; 24 villagers and 5 smallholders who
+      have 8 ploughs. A priest and a church. 1 mill, 12s; meadow, 40 acres. Value before 1066 and now £7.
     households: 30
     villagers: 24
     smallholders: 5
@@ -2558,9 +2925,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Bluntisham
     name: Bluntisham (Huntingdonshire 6,10)
     holding: dependency
+    textEdition: In BLUNTISHAM is 1/2 hide taxable. Land for 5 oxen belonging to Ramsey. 2 villagers have 1 plough. Value 5s. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In BLUNTISHAM is 1/2 hide taxable. Land for 5 oxen belonging to Ramsey. 2 villagers have 1 plough. Value 5s.
     households: 2
     villagers: 2
     mensTeams: 1
@@ -2601,9 +2972,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Warboys
     name: Warboys (Huntingdonshire 6,11)
     holding: manor
+    textEdition: ?M? In WARBOYS the Abbot of Ramsey had 10 hides taxable. Land for 20 ploughs. Land for 3 ploughs in lordship, as well as the said hides. Now in lordship 3 ploughs; 34 villagers and 13 smallholders
+      who have 16 ploughs. A priest and a church. Meadow, 3 acres; pasturable woodland 1 league long and 1 league wide; marsh 1 league long and 1/2 league wide. Value before 1066 and now £12. [= ?6? Land
+      of St Benedict's of Ramsey =]
+    text: In WARBOYS the Abbot of Ramsey had 10 hides taxable. Land for 20 ploughs. Land for 3 ploughs in lordship, as well as the said hides. Now in lordship 3 ploughs; 34 villagers and 13 smallholders
+      who have 16 ploughs. A priest and a church. Meadow, 3 acres; pasturable woodland 1 league long and 1 league wide; marsh 1 league long and 1/2 league wide. Value before 1066 and now £12.
     households: 48
     villagers: 34
     smallholders: 13
@@ -2647,9 +3025,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sawtry
     name: Sawtry (Huntingdonshire 6,12)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In SAWTRY the Abbot of Ramsey had 7 1/2 hides and 1/2 virgate of land taxable. Land for 12 ploughs. [***]. Now in lordship 2 ploughs on 2 hides of this land; 12
+      villagers and 3 smallholders who have 5 ploughs. A church and a priest. Meadow, 12 acres; pasturable woodland 2 furlongs long and 1 furlong wide. Value before 1066 and now 100s. [= ?6? Land of St
+      Benedict's of Ramsey =]
+    text: NORMANCROSS Hundred In SAWTRY the Abbot of Ramsey had 7 1/2 hides and 1/2 virgate of land taxable. Land for 12 ploughs. . Now in lordship 2 ploughs on 2 hides of this land; 12 villagers and 3
+      smallholders who have 5 ploughs. A church and a priest. Meadow, 12 acres; pasturable woodland 2 furlongs long and 1 furlong wide. Value before 1066 and now 100s.
     households: 16
     villagers: 12
     smallholders: 3
@@ -2693,9 +3078,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Elton
     name: Elton (Huntingdonshire 6,13)
     holding: manor
+    textEdition: ?M? In ELTON the Abbot of Ramsey had 10 hides taxable. Land for 24 ploughs. Land for 4 ploughs in lordship, as well as the said hides. Now in lordship 4 ploughs; 28 villagers who have 20
+      ploughs. A church and a priest. 2 mills, 40s; meadow, 170 acres. Value before 1066 £14; now £16. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In ELTON the Abbot of Ramsey had 10 hides taxable. Land for 24 ploughs. Land for 4 ploughs in lordship, as well as the said hides. Now in lordship 4 ploughs; 28 villagers who have 20 ploughs.
+      A church and a priest. 2 mills, 40s; meadow, 170 acres. Value before 1066 £14; now £16.
     households: 29
     villagers: 28
     priests: 1
@@ -2739,9 +3130,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Lutton
     name: Lutton (Huntingdonshire 6,14)
     holding: manor
+    textEdition: ?M? In LUTTON the Abbot of Ramsey had 2 1/2 hides taxable. Land for 2 ploughs. Now in lordship 1/2 plough. Edric holds from the Abbot. Meadow, 12 acres. Value before 1066, 40s; now 20s.
+      [= ?6? Land of St Benedict's of Ramsey =]
+    text: In LUTTON the Abbot of Ramsey had 2 1/2 hides taxable. Land for 2 ploughs. Now in lordship 1/2 plough. Edric holds from the Abbot. Meadow, 12 acres. Value before 1066, 40s; now 20s.
     ploughlands: 2
     lordsTeams: 1
     ploughTeams: 1
@@ -2783,9 +3179,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Yelling
     name: Yelling (Huntingdonshire 6,15)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In YELLING the Abbot of Ramsey had 5 hides taxable. Land for 7 ploughs. Now in lordship 2 ploughs. 10 villagers and 2 smallholders have 3 ploughs. Meadow, 5 acres.
+      Value before 1066 and now £4. Swein [* of Essex *] holds from the Abbot. [= ?6? Land of St Benedict's of Ramsey =]
+    text: TOSELAND Hundred In YELLING the Abbot of Ramsey had 5 hides taxable. Land for 7 ploughs. Now in lordship 2 ploughs. 10 villagers and 2 smallholders have 3 ploughs. Meadow, 5 acres. Value before
+      1066 and now £4. Swein [of Essex] holds from the Abbot.
     households: 12
     villagers: 10
     smallholders: 2
@@ -2831,9 +3233,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hemingford [Abbots]
     name: Hemingford [Abbots] (Huntingdonshire 6,16)
     holding: manor
+    textEdition: ?M? In HEMINGFORD [Abbots] the Abbot of Ramsey had 18 hides taxable. Land for 16 ploughs. Now in lordship 2 ploughs; <204d> 26 villagers and 5 smallholders with 8 ploughs. A church and
+      a priest. 1 mill, 10s 8d; meadow, 80 acres. Value before 1066 £11; now £10. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In HEMINGFORD [Abbots] the Abbot of Ramsey had 18 hides taxable. Land for 16 ploughs. Now in lordship 2 ploughs; 26 villagers and 5 smallholders with 8 ploughs. A church and a priest. 1 mill,
+      10s 8d; meadow, 80 acres. Value before 1066 £11; now £10.
     households: 32
     villagers: 26
     smallholders: 5
@@ -2878,9 +3286,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hemingford [Abbots]
     name: Hemingford [Abbots] (Huntingdonshire 6,17)
     holding: manor
+    textEdition: ?M? There also ^[HEMINGFORD [Abbots]]^ Godric [* the sheriff *] had 1 hide taxable. He held from the Abbot. Land for 1 plough. Now Ralph son of Osmund has it, but the men of the Hundred
+      do not know through whom. Value before 1066, 10s; now 3s. [= ?6? Land of St Benedict's of Ramsey =]
+    text: There also [HEMINGFORD [Abbots]] Godric [the sheriff] had 1 hide taxable. He held from the Abbot. Land for 1 plough. Now Ralph son of Osmund has it, but the men of the Hundred do not know through
+      whom. Value before 1066, 10s; now 3s.
     ploughlands: 1
     geldUnits: 1
     value1066: 120
@@ -2923,9 +3337,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hemingford [Grey]
     name: Hemingford [Grey] (Huntingdonshire 6,18)
     holding: jurisdiction
+    textEdition: ?S? In another [estate called] HEMINGFORD are 5 hides taxable. Land for 5 ploughs. Jurisdiction in Hemingford [Abbots]. Now Aubrey de Vere has it from the Abbot and a man-at-arms has 2
+      hides of this land under him. In lordship 1 plough; 8 villagers with 3 ploughs. Meadow, 20 acres. Value before 1066 and now 60s. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In another [estate called] HEMINGFORD are 5 hides taxable. Land for 5 ploughs. Jurisdiction in Hemingford [Abbots]. Now Aubrey de Vere has it from the Abbot and a man-at-arms has 2 hides of this
+      land under him. In lordship 1 plough; 8 villagers with 3 ploughs. Meadow, 20 acres. Value before 1066 and now 60s.
     households: 8
     villagers: 8
     ploughlands: 5
@@ -2978,9 +3398,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Offord [d'Arcy]
     name: Offord [d'Arcy] (Huntingdonshire 6,19)
     holding: manor
+    textEdition: ?M? In OFFORD [D'Arcy] the Abbot of Ramsey had 4 hides taxable. Of these 1 hide was {inland} and in addition to this [there were] 2 ploughs in lordship. Land for 4 ploughs. Now in lordship
+      2 ploughs; 4 villagers and 2 smallholders with 1 plough. Meadow, 16 acres; pasturable woodland, 16 acres. Value before 1066 and now £4. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In OFFORD [D'Arcy] the Abbot of Ramsey had 4 hides taxable. Of these 1 hide was inland and in addition to this [there were] 2 ploughs in lordship. Land for 4 ploughs. Now in lordship 2 ploughs;
+      4 villagers and 2 smallholders with 1 plough. Meadow, 16 acres; pasturable woodland, 16 acres. Value before 1066 and now £4.
     households: 6
     villagers: 4
     smallholders: 2
@@ -3022,9 +3448,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Dillington
     name: Dillington (Huntingdonshire 6,20)
     holding: manor
+    textEdition: ?M? In DILLINGTON the Abbot of Ramsey had 6 hides taxable. Land for 12 ploughs. Now in lordship 2 ploughs; 16 villagers who have 10 ploughs. Meadow, 8 acres; pasturable woodland 1 league
+      and 2 furlongs long and 1 league wide. Value before 1066 £6; now £4. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In DILLINGTON the Abbot of Ramsey had 6 hides taxable. Land for 12 ploughs. Now in lordship 2 ploughs; 16 villagers who have 10 ploughs. Meadow, 8 acres; pasturable woodland 1 league and 2 furlongs
+      long and 1 league wide. Value before 1066 £6; now £4.
     households: 16
     villagers: 16
     ploughlands: 12
@@ -3065,9 +3497,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great, Little and Steeple] Gidding'
     name: '[Great, Little and Steeple] Gidding (Huntingdonshire 6,21)'
     holding: manor
+    textEdition: '`LEIGHTONSTONE'' Hundred ?M? In [Great] GIDDING the Abbot of Ramsey had 1 hide taxable. Land for 1 plough. This land was in lordship. Now {Lunen} <of Glatton> holds from the Abbot. He
+      has 1 plough; and 2 villagers and 1 smallholder with 1 plough; and meadow, 6 acres. Value before 1066 and now 30s. [= ?6? Land of St Benedict''s of Ramsey =]'
+    text: '`LEIGHTONSTONE'' Hundred In [Great] GIDDING the Abbot of Ramsey had 1 hide taxable. Land for 1 plough. This land was in lordship. Now Lunen holds from the Abbot. He has 1 plough; and 2 villagers
+      and 1 smallholder with 1 plough; and meadow, 6 acres. Value before 1066 and now 30s.'
     households: 3
     villagers: 2
     smallholders: 1
@@ -3113,9 +3551,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Bythorn
     name: Bythorn (Huntingdonshire 6,22)
     holding: manor
+    textEdition: ?M? In BYTHORN the Abbot of Ramsey had 4 hides taxable. Land for 4 ploughs. Now in lordship 1 plough on 1 hide of this land; 11 villagers and 4 smallholders with 7 ploughs. Meadow, 30 acres.
+      Value before 1066, 100s; now £4. Of this land 2 men-at-arms hold 3 1/2 virgates of land from the Abbot. They have 1 villager and 3 smallholders with 2 ploughs. Value 30s. [= ?6? Land of St Benedict's
+      of Ramsey =]
+    text: In BYTHORN the Abbot of Ramsey had 4 hides taxable. Land for 4 ploughs. Now in lordship 1 plough on 1 hide of this land; 11 villagers and 4 smallholders with 7 ploughs. Meadow, 30 acres. Value
+      before 1066, 100s; now £4. Of this land 2 men-at-arms hold 3 1/2 virgates of land from the Abbot. They have 1 villager and 3 smallholders with 2 ploughs. Value 30s.
     households: 19
     villagers: 12
     smallholders: 7
@@ -3161,9 +3606,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Brington
     name: Brington (Huntingdonshire 6,23)
     holding: manor
+    textEdition: ?M? In BRINGTON the Abbot of Ramsey had 4 hides taxable. Land for 7 ploughs. Now in lordship 1 plough on 1 hide of this land. 11 villagers and 3 smallholders have 6 ploughs. Meadow, 40
+      acres. Value before 1066 and now £4. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In BRINGTON the Abbot of Ramsey had 4 hides taxable. Land for 7 ploughs. Now in lordship 1 plough on 1 hide of this land. 11 villagers and 3 smallholders have 6 ploughs. Meadow, 40 acres. Value
+      before 1066 and now £4.
     households: 14
     villagers: 11
     smallholders: 3
@@ -3205,9 +3656,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Old] Weston'
     name: '[Old] Weston (Huntingdonshire 6,24)'
     holding: manor
+    textEdition: ?M? In [Old] WESTON the Abbot of Ramsey had 10 hides taxable. Land for 13 ploughs. Now in lordship 2 ploughs on 2 hides of this land. 20 villagers and 1 smallholder have 7 ploughs. A priest
+      and a church. Meadow, 60 acres. Value before 1066 and now £10. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In [Old] WESTON the Abbot of Ramsey had 10 hides taxable. Land for 13 ploughs. Now in lordship 2 ploughs on 2 hides of this land. 20 villagers and 1 smallholder have 7 ploughs. A priest and a
+      church. Meadow, 60 acres. Value before 1066 and now £10.
     households: 22
     villagers: 20
     smallholders: 1
@@ -3251,9 +3708,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great, Little and Steeple] Gidding'
     name: '[Great, Little and Steeple] Gidding (Huntingdonshire 6,25)'
     holding: manor
+    textEdition: ?M? In [Steeple] GIDDING the Abbot of Ramsey had 7 hides taxable. Land for 8 ploughs. Now in lordship 1 plough on 1 hide of this land. 18 villagers have 7 ploughs. Meadow, 20 acres; underwood,
+      2 furlongs. Value before 1066 and now 100s. [= ?6? Land of St Benedict's of Ramsey =]
+    text: In [Steeple] GIDDING the Abbot of Ramsey had 7 hides taxable. Land for 8 ploughs. Now in lordship 1 plough on 1 hide of this land. 18 villagers have 7 ploughs. Meadow, 20 acres; underwood, 2 furlongs.
+      Value before 1066 and now 100s.
     households: 18
     villagers: 18
     ploughlands: 8
@@ -3294,9 +3757,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ellington
     name: Ellington (Huntingdonshire 6,26)
     holding: manor
+    textEdition: ?M? In ELLINGTON the Abbot of Ramsey had 10 hides taxable. Land for 16 ploughs. Of these 10 hides one is waste, on account of the King's woodland. <205a> Now in lordship 2 ploughs on 2
+      hides of this land. 26 villagers and 4 smallholders have 12 ploughs. Meadow, 60 acres. A church and a priest. Value before 1066 £10; now £9. Of this land 2 men-at-arms hold 1 hide; they have 2 ploughs.
+      Value 20s. [= ?6? Land of St Benedict's of Ramsey =] ?7? Land of St Mary's, Thorney
+    text: In ELLINGTON the Abbot of Ramsey had 10 hides taxable. Land for 16 ploughs. Of these 10 hides one is waste, on account of the King's woodland. Now in lordship 2 ploughs on 2 hides of this land.
+      26 villagers and 4 smallholders have 12 ploughs. Meadow, 60 acres. A church and a priest. Value before 1066 £10; now £9. Of this land 2 men-at-arms hold 1 hide; they have 2 ploughs. Value 20s. Land
+      of St Mary's, Thorney
     households: 31
     villagers: 26
     smallholders: 4
@@ -3345,6 +3816,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 7
     folio: HUN 5
   relations:
@@ -3364,9 +3837,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Yaxley
     name: Yaxley (Huntingdonshire 7,1)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In YAXLEY the Abbot of Thorney had 15 hides taxable. Land for 20 ploughs. Now in lordship 3 ploughs. 38 villagers who have 18 ploughs. A church and a priest. Meadow,
+      24 acres; underwood, 20 acres. Value before 1066 £15; now £12. [= ?7? Land of St Mary's, Thorney =]
+    text: NORMANCROSS Hundred In YAXLEY the Abbot of Thorney had 15 hides taxable. Land for 20 ploughs. Now in lordship 3 ploughs. 38 villagers who have 18 ploughs. A church and a priest. Meadow, 24 acres;
+      underwood, 20 acres. Value before 1066 £15; now £12.
     households: 39
     villagers: 38
     priests: 1
@@ -3409,9 +3888,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stanground
     name: Stanground (Huntingdonshire 7,2)
     holding: manor
+    textEdition: ?M? In STANGROUND the Abbot of Thorney had 8 hides taxable. Land for 10 ploughs. Now in lordship 2 ploughs on 3 hides of this land; 16 villagers and 6 smallholders [***]. A church and a
+      priest. Meadow, 24 acres; underwood, 6 acres. Value before 1066 and now £8. [= ?7? Land of St Mary's, Thorney =]
+    text: In STANGROUND the Abbot of Thorney had 8 hides taxable. Land for 10 ploughs. Now in lordship 2 ploughs on 3 hides of this land; 16 villagers and 6 smallholders . A church and a priest. Meadow,
+      24 acres; underwood, 6 acres. Value before 1066 and now £8.
     households: 23
     villagers: 16
     smallholders: 6
@@ -3454,9 +3939,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Woodstone
     name: Woodstone (Huntingdonshire 7,3)
     holding: manor
+    textEdition: ?M? In WOODSTON the Abbot of Thorney had 5 hides taxable. Land for 9 ploughs. Now in lordship 2 ploughs on 1 1/2 hides of this land. 16 villagers with 4 ploughs. A church and a priest.
+      Meadow, 16 acres; underwood, 4 acres. Value before 1066, 100s; now £4. [= ?7? Land of St Mary's, Thorney =]
+    text: In WOODSTON the Abbot of Thorney had 5 hides taxable. Land for 9 ploughs. Now in lordship 2 ploughs on 1 1/2 hides of this land. 16 villagers with 4 ploughs. A church and a priest. Meadow, 16
+      acres; underwood, 4 acres. Value before 1066, 100s; now £4.
     households: 17
     villagers: 16
     priests: 1
@@ -3499,9 +3990,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Haddon
     name: Haddon (Huntingdonshire 7,4)
     holding: manor
+    textEdition: ?M? In HADDON the Abbot of Thorney had 5 hides taxable. Land for 12 ploughs. Now in lordship 2 ploughs on 1 1/2 hides of this land; 18 villagers with 6 ploughs. A church and a priest. Meadow,
+      24 acres; underwood, 1 acre. Value before 1066 and now 100s. [= ?7? Land of St Mary's, Thorney =]
+    text: In HADDON the Abbot of Thorney had 5 hides taxable. Land for 12 ploughs. Now in lordship 2 ploughs on 1 1/2 hides of this land; 18 villagers with 6 ploughs. A church and a priest. Meadow, 24 acres;
+      underwood, 1 acre. Value before 1066 and now 100s.
     households: 19
     villagers: 18
     priests: 1
@@ -3544,9 +4041,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Water] Newton'
     name: '[Water] Newton (Huntingdonshire 7,5)'
     holding: manor
+    textEdition: ?M? In [Water] NEWTON the Abbot of Thorney had 5 hides taxable. Land for 8 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 16 villagers and 5 smallholders who have 5 ploughs.
+      A church and a priest. 2 mills, 32s; meadow, 60 acres; one customary due in the Abbot of Peterborough's woodland, 2s. Value before 1066 £5; now £7. [= ?7? Land of St Mary's, Thorney =]
+    text: In [Water] NEWTON the Abbot of Thorney had 5 hides taxable. Land for 8 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 16 villagers and 5 smallholders who have 5 ploughs. A church and
+      a priest. 2 mills, 32s; meadow, 60 acres; one customary due in the Abbot of Peterborough's woodland, 2s. Value before 1066 £5; now £7.
     households: 22
     villagers: 16
     smallholders: 5
@@ -3595,9 +4098,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sibson
     name: Sibson (Huntingdonshire 7,6)
     holding: manor
+    textEdition: ?M? In SIBSON the Abbot of Thorney had 2 1/2 hides taxable. Land for 4 ploughs. Now in lordship 1 plough on 1 hide of this land; 4 villagers with 1 plough. A priest and half a church. 1/2
+      mill, 10s; meadow, 20 acres. Value before 1066 and now 50s. [= ?7? Land of St Mary's, Thorney =]
+    text: In SIBSON the Abbot of Thorney had 2 1/2 hides taxable. Land for 4 ploughs. Now in lordship 1 plough on 1 hide of this land; 4 villagers with 1 plough. A priest and half a church. 1/2 mill, 10s;
+      meadow, 20 acres. Value before 1066 and now 50s.
     households: 5
     villagers: 4
     priests: 1
@@ -3641,9 +4150,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stibbington
     name: Stibbington (Huntingdonshire 7,7)
     holding: dependency
+    textEdition: In STIBBINGTON are 5 virgates of land taxable, which belong to Sibson. Land for 1 plough. A church. 5 villagers with 1 1/2 ploughs. Meadow, 5 acres. [= ?7? Land of St Mary's, Thorney =]
+    text: In STIBBINGTON are 5 virgates of land taxable, which belong to Sibson. Land for 1 plough. A church. 5 villagers with 1 1/2 ploughs. Meadow, 5 acres.
     households: 5
     villagers: 5
     ploughlands: 1
@@ -3686,9 +4199,20 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Whittlesey
     name: Whittlesey (Huntingdonshire 7,8)
     holding: land
+    textEdition: In WHITTLESEY MERE the Abbot of Ramsey has 1 boat; the Abbot of Peterborough 1 boat; and the Abbot of Thorney 2 boats. Of these two [boats], the Abbot of Peterborough holds one from the
+      Abbot of Thorney, and [also] 2 fisheries and 2 fishermen, and 1 virgate of land. For these he gives pasture sufficient for 120 pigs, and, if the pasture is inadequate he feeds and fattens 60 pigs
+      with corn. But he also finds materials for one house of 60 feet, and stakes for the enclosure around the house; he also repairs the house and court if they fall into disrepair. This agreement was
+      made between them before 1066. The Abbot of Ramsey's fisheries and meres in Huntingdonshire are valued at £10; the Abbot of Thorney's at 60s; the Abbot of Peterborough's at £4. [= ?7? Land of St Mary's,
+      Thorney =] <205b> ?8? Land of St Peter's of Peterborough
+    text: In WHITTLESEY MERE the Abbot of Ramsey has 1 boat; the Abbot of Peterborough 1 boat; and the Abbot of Thorney 2 boats. Of these two [boats], the Abbot of Peterborough holds one from the Abbot
+      of Thorney, and [also] 2 fisheries and 2 fishermen, and 1 virgate of land. For these he gives pasture sufficient for 120 pigs, and, if the pasture is inadequate he feeds and fattens 60 pigs with corn.
+      But he also finds materials for one house of 60 feet, and stakes for the enclosure around the house; he also repairs the house and court if they fall into disrepair. This agreement was made between
+      them before 1066. The Abbot of Ramsey's fisheries and meres in Huntingdonshire are valued at £10; the Abbot of Thorney's at 60s; the Abbot of Peterborough's at £4. Land of St Peter's of Peterborough
     households: 2
     fishermen: 2
     geldUnits: 0.25
@@ -3732,6 +4256,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 8
     folio: HUN 5
   relations:
@@ -3751,9 +4277,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Fletton
     name: Fletton (Huntingdonshire 8,1)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In [Old] FLETTON the Abbot of Peterborough had 5 hides taxable. Land for 8 ploughs. Now in lordship 2 ploughs on 1 1/2 hides of this land. 14 villagers and 3 smallholders
+      who have 6 ploughs. A church. Meadow, 40 acres. Value before 1066 and now 100s. [= ?8? Land of St Peter's of Peterborough =]
+    text: NORMANCROSS Hundred In [Old] FLETTON the Abbot of Peterborough had 5 hides taxable. Land for 8 ploughs. Now in lordship 2 ploughs on 1 1/2 hides of this land. 14 villagers and 3 smallholders who
+      have 6 ploughs. A church. Meadow, 40 acres. Value before 1066 and now 100s.
     households: 17
     villagers: 14
     smallholders: 3
@@ -3796,9 +4328,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Alwalton
     name: Alwalton (Huntingdonshire 8,2)
     holding: manor
+    textEdition: ?M? In ALWALTON the Abbot of Peterborough had 5 hides taxable. Land for 9 ploughs. Land for 2 ploughs in lordship, besides these 5 hides. Now in lordship 2 ploughs; 20 villagers who have
+      7 ploughs. 2 mills, 40s; 1 fishery, 500 eels [and] 5s; meadow, 10 acres. Value before 1066 and now £7. [= ?8? Land of St Peter's of Peterborough =]
+    text: In ALWALTON the Abbot of Peterborough had 5 hides taxable. Land for 9 ploughs. Land for 2 ploughs in lordship, besides these 5 hides. Now in lordship 2 ploughs; 20 villagers who have 7 ploughs.
+      2 mills, 40s; 1 fishery, 500 eels [and] 5s; meadow, 10 acres. Value before 1066 and now £7.
     households: 20
     villagers: 20
     ploughlands: 11
@@ -3841,9 +4379,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Waterville]
     name: Orton [Waterville] (Huntingdonshire 8,3)
     holding: outlier
+    textEdition: In ORTON [Waterville] an outlier of this manor, are 5 hides taxable. Land for 3 ploughs and 2 oxen. It is for the supplies of the monks. Now {Ansgered} [* of Waterville *] holds from the
+      Abbot. He has 3 villagers with 1 plough; and meadow, 15 acres. ^[Outlier of Alwalton]^ [= ?8? Land of St Peter's of Peterborough =]
+    text: In ORTON [Waterville] an outlier of this manor, are 5 hides taxable. Land for 3 ploughs and 2 oxen. It is for the supplies of the monks. Now Ansgered [of Waterville] holds from the Abbot. He has
+      3 villagers with 1 plough; and meadow, 15 acres. [Outlier of Alwalton]
     households: 3
     villagers: 3
     ploughlands: 3
@@ -3889,9 +4433,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Waterville]
     name: Orton [Waterville] (Huntingdonshire 8,4)
     holding: manor
+    textEdition: ?M? Also in ORTON [Waterville] Godwin had 3 1/2 hides taxable. Land for 2 ploughs and 2 oxen. The King had the jurisdiction over this land. It did not belong to the Abbey before 1066, but
+      in the days of King William it was given to St Peter's Church. Now {Ansgered} [* of Waterville *] holds from the Abbot. He has 1 plough; 3 villagers and 1 smallholder with 1 plough; and meadow, 9
+      acres. Value before 1066, 40s; now 20s. [= ?8? Land of St Peter's of Peterborough =] ?9? Land of Count Eustace
+    text: Also in ORTON [Waterville] Godwin had 3 1/2 hides taxable. Land for 2 ploughs and 2 oxen. The King had the jurisdiction over this land. It did not belong to the Abbey before 1066, but in the days
+      of King William it was given to St Peter's Church. Now Ansgered [of Waterville] holds from the Abbot. He has 1 plough; 3 villagers and 1 smallholder with 1 plough; and meadow, 9 acres. Value before
+      1066, 40s; now 20s. Land of Count Eustace
     households: 4
     villagers: 3
     smallholders: 1
@@ -3946,6 +4498,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 9
     folio: HUN 5
   relations:
@@ -3965,9 +4519,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Glatton
     name: Glatton (Huntingdonshire 9,1)
     holding: manor
+    textEdition: '[NORMANCROSS Hundred] ?M? In GLATTON Ulf [* of Glatton *] had 8 hides taxable. Land for 24 ploughs. Now in lordship 2 ploughs; 24 villagers and 10 smallholders who have 14 ploughs. A church
+      and a priest. Meadow, 60 acres; pasturable woodland, 2 acres; underwood, 20 acres. Value before 1066 and now £10. ^[{Lunen} <of Glatton> holds it from Count Eustace]^ [= ?9? Land of Count Eustace
+      =]'
+    text: '[NORMANCROSS Hundred] In GLATTON Ulf [of Glatton] had 8 hides taxable. Land for 24 ploughs. Now in lordship 2 ploughs; 24 villagers and 10 smallholders who have 14 ploughs. A church and a priest.
+      Meadow, 60 acres; pasturable woodland, 2 acres; underwood, 20 acres. Value before 1066 and now £10. [Lunen holds it from Count Eustace]'
     households: 35
     villagers: 24
     smallholders: 10
@@ -4015,9 +4576,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Chesterton
     name: Chesterton (Huntingdonshire 9,2)
     holding: manor
+    textEdition: ?M? In CHESTERTON Ulf [* of Glatton *] had 4 1/2 hides taxable. Land for 7 ploughs. Now in lordship 1 plough; 7 villagers and 1 smallholder with 3 ploughs. Meadow, 20 acres; a customary
+      due of 2s in the Abbot of Peterborough's woodland. Value before 1066 £4; now 40s. ^[{Lunen} <of Glatton> holds it from Count Eustace]^ [= ?9? Land of Count Eustace =]
+    text: In CHESTERTON Ulf [of Glatton] had 4 1/2 hides taxable. Land for 7 ploughs. Now in lordship 1 plough; 7 villagers and 1 smallholder with 3 ploughs. Meadow, 20 acres; a customary due of 2s in the
+      Abbot of Peterborough's woodland. Value before 1066 £4; now 40s. [Lunen holds it from Count Eustace]
     households: 8
     villagers: 7
     smallholders: 1
@@ -4067,9 +4634,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sibson
     name: Sibson (Huntingdonshire 9,3)
     holding: manor
+    textEdition: ?M? In SIBSON Ulf [* of Glatton *] had 2 1/2 hides taxable. Land for 4 ploughs. Now in lordship 1 plough; 3 villagers and 1 smallholder with 2 ploughs. Half a church. 1/2 mill, 10s; meadow,
+      20 acres. Value before 1066 and now 50s. ^[{Lunen} <of Glatton> holds it from Count Eustace]^ [= ?9? Land of Count Eustace =]
+    text: In SIBSON Ulf [of Glatton] had 2 1/2 hides taxable. Land for 4 ploughs. Now in lordship 1 plough; 3 villagers and 1 smallholder with 2 ploughs. Half a church. 1/2 mill, 10s; meadow, 20 acres.
+      Value before 1066 and now 50s. [Lunen holds it from Count Eustace]
     households: 4
     villagers: 3
     smallholders: 1
@@ -4117,9 +4690,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stibbington
     name: Stibbington (Huntingdonshire 9,4)
     holding: dependency
+    textEdition: In STIBBINGTON 5 virgates of land taxable, which belong to Sibson. Land for 1 plough. Now 5 villagers have 1 1/2 ploughs. Meadow, 5 acres. ^[Ulf [* of Glatton *] held it]^ {Lunen} <of Glatton>
+      holds all these lands from Count Eustace. [= ?9? Land of Count Eustace =] <205c> ?10? Land of the Count of Eu
+    text: In STIBBINGTON 5 virgates of land taxable, which belong to Sibson. Land for 1 plough. Now 5 villagers have 1 1/2 ploughs. Meadow, 5 acres. [Ulf [of Glatton] held it] Lunen holds all these lands
+      from Count Eustace. Land of the Count of Eu
     households: 5
     villagers: 5
     ploughlands: 1
@@ -4165,6 +4744,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 10
     folio: HUN 6
   relations:
@@ -4184,9 +4765,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Buckworth
     name: Buckworth (Huntingdonshire 10,1)
     holding: manor
+    textEdition: '[`LEIGHTONSTONE'' Hundred] ?M? In BUCKWORTH [* Earl *] Tosti had 10 hides taxable. Land for 18 ploughs. This was an outlier of [Great] Paxton. Now the Count of Eu holds it and has 2 ploughs
+      in lordship on 2 hides of this land. 16 villagers who have 10 ploughs; a smith who has 5 acres of this land. A priest and a church, to which belongs 1/2 hide of this land, with 2 villagers and 1 plough.
+      Meadow, 80 acres; underwood, 30 acres. Value before 1066 and now £10. Of this land a man-at-arms holds 2 1/2 hides. He has 4 villagers and 1 smallholder with 5 ploughs. Value £3. [= ?10? Land of the
+      Count of Eu =] ?11? Land of Earl Hugh'
+    text: '[`LEIGHTONSTONE'' Hundred] In BUCKWORTH [Earl] Tosti had 10 hides taxable. Land for 18 ploughs. This was an outlier of [Great] Paxton. Now the Count of Eu holds it and has 2 ploughs in lordship
+      on 2 hides of this land. 16 villagers who have 10 ploughs; a smith who has 5 acres of this land. A priest and a church, to which belongs 1/2 hide of this land, with 2 villagers and 1 plough. Meadow,
+      80 acres; underwood, 30 acres. Value before 1066 and now £10. Of this land a man-at-arms holds 2 1/2 hides. He has 4 villagers and 1 smallholder with 5 ploughs. Value £3. Land of Earl Hugh'
     households: 23
     villagers: 22
     smallholders: 1
@@ -4245,6 +4835,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 11
     folio: HUN 6
   relations:
@@ -4264,9 +4856,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Upton
     name: Upton (Huntingdonshire 11,1)
     holding: manor
+    textEdition: '[`LEIGHTONSTONE'' Hundred] ?M? In UPTON [* Prince *] Edgar had 4 hides taxable, with full jurisdiction. Land for 6 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 14 villagers
+      and 5 smallholders who have 8 ploughs. A church and a priest. 1 mill, 3s; meadow, 50 acres. Value before 1066 £4; now £5. Fulcwy? [* of Bainville *] holds from Earl Hugh. [= ?11? Land of Earl Hugh
+      =]'
+    text: '[`LEIGHTONSTONE'' Hundred] In UPTON [Prince] Edgar had 4 hides taxable, with full jurisdiction. Land for 6 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 14 villagers and 5 smallholders
+      who have 8 ploughs. A church and a priest. 1 mill, 3s; meadow, 50 acres. Value before 1066 £4; now £5. Fulcwy? [of Bainville] holds from Earl Hugh.'
     households: 20
     villagers: 14
     smallholders: 5
@@ -4315,9 +4914,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Coppingford
     name: Coppingford (Huntingdonshire 11,2)
     holding: manor
+    textEdition: ?M? In COPPINGFORD [* Prince *] Edgar had 4 hides taxable, with full jurisdiction. Land for 5 ploughs. Now in lordship 1 plough on 1/2 hide of this land. 14 villagers and 2 smallholders
+      have 3 ploughs. A church and a priest. Value before 1066 and now £4. Humphrey [* of the Cotentin *] holds from Earl Hugh. [= ?11? Land of Earl Hugh =] ?12? Land of Walter Giffard
+    text: In COPPINGFORD [Prince] Edgar had 4 hides taxable, with full jurisdiction. Land for 5 ploughs. Now in lordship 1 plough on 1/2 hide of this land. 14 villagers and 2 smallholders have 3 ploughs.
+      A church and a priest. Value before 1066 and now £4. Humphrey [of the Cotentin] holds from Earl Hugh. Land of Walter Giffard
     households: 17
     villagers: 14
     smallholders: 2
@@ -4364,6 +4969,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 12
     folio: HUN 6
   relations:
@@ -4383,9 +4990,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Folkesworth
     name: Folkesworth (Huntingdonshire 12,1)
     holding: manor
+    textEdition: '[NORMANCROSS Hundred] ?M? In FOLKSWORTH Ketilbert <of Folksworth> had 5 hides taxable. Land for 5 ploughs. Now in lordship 1 plough; 17 villagers and 5 smallholders with 7 ploughs. Meadow,
+      20 acres; pasturable woodland 6 furlongs long and 2 furlongs and 6 perches wide. Value before 1066, 100s; now £4. Hugh [* of Bolbec *] holds from Walter Giffard. [= ?12? Land of Walter Giffard =]
+      ?13? Land of William of Warenne'
+    text: '[NORMANCROSS Hundred] In FOLKSWORTH Ketilbert had 5 hides taxable. Land for 5 ploughs. Now in lordship 1 plough; 17 villagers and 5 smallholders with 7 ploughs. Meadow, 20 acres; pasturable woodland
+      6 furlongs long and 2 furlongs and 6 perches wide. Value before 1066, 100s; now £4. Hugh [of Bolbec] holds from Walter Giffard. Land of William of Warenne'
     households: 22
     villagers: 17
     smallholders: 5
@@ -4431,6 +5045,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 13
     folio: HUN 6
   relations:
@@ -4450,9 +5066,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Kimbolton
     name: Kimbolton (Huntingdonshire 13,1)
     holding: manor
+    textEdition: '[* `LEIGHTONSTONE'' Hundred *] ?M? In KIMBOLTON Earl Harold had 10 hides taxable. Land for 20 ploughs. Now William of Warenne holds it. He has 5 ploughs in lordship on 5 hides; 84 villagers
+      and 36 smallholders with 25 ploughs. A priest and a church. Meadow, 70 acres; pasturable woodland 1 league long and 1 league wide; 1 mill, 5s. Value before 1066 £7; now £16 4s. Of this land 2 men-at-arms
+      have 1 hide. They have 1 plough and 5 oxen. Value 20s. [= ?13? Land of William of Warenne =]'
+    text: '[`LEIGHTONSTONE'' Hundred] In KIMBOLTON Earl Harold had 10 hides taxable. Land for 20 ploughs. Now William of Warenne holds it. He has 5 ploughs in lordship on 5 hides; 84 villagers and 36 smallholders
+      with 25 ploughs. A priest and a church. Meadow, 70 acres; pasturable woodland 1 league long and 1 league wide; 1 mill, 5s. Value before 1066 £7; now £16 4s. Of this land 2 men-at-arms have 1 hide.
+      They have 1 plough and 5 oxen. Value 20s.'
     households: 121
     villagers: 84
     smallholders: 36
@@ -4501,9 +5125,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Keysoe
     name: Keysoe (Huntingdonshire 13,2)
     holding: jurisdiction
+    textEdition: ?S? In KEYSOE Aellic <of Keysoe> [had] 3 virgates of land taxable. Land for 6 oxen. A Jurisdiction. 1 Freeman and 7 smallholders. Meadow, 4 acres; pasturable woodland 50 acres. [* Earl
+      Harold held it *] ^[Jurisdiction belongs to Kimbolton]^ [= ?13? Land of William of Warenne =]
+    text: In KEYSOE Aellic [had] 3 virgates of land taxable. Land for 6 oxen. A Jurisdiction. 1 Freeman and 7 smallholders. Meadow, 4 acres; pasturable woodland 50 acres. [Earl Harold held it] [Jurisdiction
+      belongs to Kimbolton]
     households: 8
     smallholders: 7
     freemen: 1
@@ -4526,7 +5156,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Stodden
+      hundredId: HUN:Stodden
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4547,9 +5177,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Swineshead
     name: Swineshead (Huntingdonshire 13,3)
     holding: jurisdiction
+    textEdition: ?S? In SWINESHEAD 3 1/2 hides taxable. Land for 4 ploughs. A Jurisdiction. Now 1 Freeman, 7 villagers and 5 smallholders. Meadow, 16 acres; pasturable woodland, 1 league long and 4 furlongs
+      wide. Value 40s. Eustace [* the sheriff *] holds from William. ^[Jurisdiction belongs to Kimbolton]^ [* Earl Harold held it *] [= ?13? Land of William of Warenne =]
+    text: In SWINESHEAD 3 1/2 hides taxable. Land for 4 ploughs. A Jurisdiction. Now 1 Freeman, 7 villagers and 5 smallholders. Meadow, 16 acres; pasturable woodland, 1 league long and 4 furlongs wide.
+      Value 40s. Eustace [the sheriff] holds from William. [Jurisdiction belongs to Kimbolton] [Earl Harold held it]
     households: 13
     villagers: 7
     smallholders: 5
@@ -4575,7 +5211,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Leightonstone
+      hundredId: HUN:Leightonstone
   - predicate: TENANT_1086
     to:
       type: DomesdayPerson
@@ -4596,9 +5232,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Catworth
     name: Catworth (Huntingdonshire 13,4)
     holding: jurisdiction
+    textEdition: ?S? In CATWORTH 1 hide taxable. Land for 1 plough. A Jurisdiction. Eustace [* the sheriff *] holds from William. He has 1/2 plough; 1 smallholder with 1 ox. Meadow, 1 acre; <205d> underwood,
+      6 acres. Value 20s. ^[Wulfwin {Chit}, a man of King Edward, held it]^ ^[Jurisdiction belongs to Kimbolton]^ [= ?13? Land of William of Warenne =]
+    text: In CATWORTH 1 hide taxable. Land for 1 plough. A Jurisdiction. Eustace [the sheriff] holds from William. He has 1/2 plough; 1 smallholder with 1 ox. Meadow, 1 acre; underwood, 6 acres. Value 20s.
+      [Wulfwin Chit, a man of King Edward, held it] [Jurisdiction belongs to Kimbolton]
     households: 1
     smallholders: 1
     ploughlands: 1
@@ -4645,9 +5287,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Little Catworth
     name: Little Catworth (Huntingdonshire 13,5)
     holding: jurisdiction
+    textEdition: ?S? In another [estate called] CATWORTH 1 hide taxable. Land for 1 plough. A Jurisdiction. Now Thorth holds from William. He has 1 plough; 1 smallholder. Meadow, 12 acres. Value 30s. ^[Wulfwin
+      {Chit}, a man of King Edward, held it]^ All this Jurisdiction belongs to Kimbolton. [= ?13? Land of William of Warenne =] ?14? Land of Hugh of Bolbec
+    text: In another [estate called] CATWORTH 1 hide taxable. Land for 1 plough. A Jurisdiction. Now Thorth holds from William. He has 1 plough; 1 smallholder. Meadow, 12 acres. Value 30s. [Wulfwin Chit,
+      a man of King Edward, held it] All this Jurisdiction belongs to Kimbolton. Land of Hugh of Bolbec
     households: 1
     smallholders: 1
     ploughlands: 1
@@ -4694,6 +5342,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 14
     folio: HUN 6
   relations:
@@ -4713,9 +5363,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Wood] Walton'
     name: '[Wood] Walton (Huntingdonshire 14,1)'
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In [WOODWALTON Saxi had 5 hides taxable. Land for 7 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 19 villagers who have 4 ploughs. A church. Meadow,
+      16 acres; pasturable woodland 16 furlongs long and 6 furlongs and 2 virgates wide. Value before 1066 and now 100s. Hugh of Bolbec holds from Earl William. [= ?14? Land of Hugh of Bolbec =] ?15? Land
+      of Eudo son of Hubert
+    text: NORMANCROSS Hundred In [WOODWALTON Saxi had 5 hides taxable. Land for 7 ploughs. Now in lordship 2 ploughs on 1 hide of this land; 19 villagers who have 4 ploughs. A church. Meadow, 16 acres;
+      pasturable woodland 16 furlongs long and 6 furlongs and 2 virgates wide. Value before 1066 and now 100s. Hugh of Bolbec holds from Earl William. Land of Eudo son of Hubert
     households: 19
     villagers: 19
     ploughlands: 7
@@ -4761,6 +5418,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 15
     folio: HUN 6
   relations:
@@ -4780,9 +5439,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hamerton
     name: Hamerton (Huntingdonshire 15,1)
     holding: manor
+    textEdition: '[`LEIGHTONSTONE'' Hundred] ?M? In HAMERTON Wulfheah had 15 {{carucates}} hides of land taxable. Eudo the steward now has them from the King. {{Aellic <of Keysoe> and Leofwin, 3 hides.
+      Jurisdiction in `Leightonstone'' Hundred. Eudo has this land and the King has the jurisdiction}}. Now on the manor are 4 ploughs in lordship on 3 hides of this land. 26 villagers who have 6 ploughs.
+      Meadow, 60 acres; underwood, 10 acres. Of this land 2 men-at-arms hold 2 hides. They have 2 ploughs. Value of the whole of this manor before 1066 £12; now the same. [= ?15? Land of Eudo son of Hubert
+      =] ?16? Land of Swein of Essex'
+    text: '[`LEIGHTONSTONE'' Hundred] In HAMERTON Wulfheah had 15 hides of land taxable. Eudo the steward now has them from the King. . Now on the manor are 4 ploughs in lordship on 3 hides of this land.
+      26 villagers who have 6 ploughs. Meadow, 60 acres; underwood, 10 acres. Of this land 2 men-at-arms hold 2 hides. They have 2 ploughs. Value of the whole of this manor before 1066 £12; now the same.
+      Land of Swein of Essex'
     households: 26
     villagers: 26
     mensTeams: 8
@@ -4836,6 +5504,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 16
     folio: HUN 6
   relations:
@@ -4855,9 +5525,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Waresley
     name: Waresley (Huntingdonshire 16,1)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In WARESLEY Robert son of Wiuhomarch had 7 hides taxable. Land for 9 ploughs. Now in lordship 2 ploughs; 17 villagers and 4 smallholders with 2 ploughs. Meadow, 25
+      acres; underwood, 16 acres. Value before 1066 £8; now £6. Turold [* son of Odo *] holds from Swein of Essex. [= ?16? Land of Swein of Essex =] ?17? Land of Roger of Ivry
+    text: TOSELAND Hundred In WARESLEY Robert son of Wiuhomarch had 7 hides taxable. Land for 9 ploughs. Now in lordship 2 ploughs; 17 villagers and 4 smallholders with 2 ploughs. Meadow, 25 acres; underwood,
+      16 acres. Value before 1066 £8; now £6. Turold [son of Odo] holds from Swein of Essex. Land of Roger of Ivry
     households: 21
     villagers: 17
     smallholders: 4
@@ -4903,6 +5579,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 17
     folio: HUN 6
   relations:
@@ -4922,9 +5600,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Covington
     name: Covington (Huntingdonshire 17,1)
     holding: manor
+    textEdition: '`LEIGHTONSTONE'' Hundred ?M? In COVINGTON Eskil had 8 1/2 hides taxable. Land for 13 ploughs. Now in lordship 3 ploughs on 1/2 {{carucate}} hide of this land. 18 villagers who have 8 ploughs.
+      Meadow, 48 acres. Of this land 2 men-at-arms hold 2 hides. They have 2 ploughs. Value before 1066 £8; now £10. Roger of Ivry has it from the King. [= ?17? Land of Roger of Ivry =] ?18? Land of Arnulf
+      of Hesdin'
+    text: '`LEIGHTONSTONE'' Hundred In COVINGTON Eskil had 8 1/2 hides taxable. Land for 13 ploughs. Now in lordship 3 ploughs on 1/2 hide of this land. 18 villagers who have 8 ploughs. Meadow, 48 acres.
+      Of this land 2 men-at-arms hold 2 hides. They have 2 ploughs. Value before 1066 £8; now £10. Roger of Ivry has it from the King. Land of Arnulf of Hesdin'
     households: 18
     villagers: 18
     ploughlands: 13
@@ -4969,6 +5654,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 18
     folio: HUN 6
   relations:
@@ -4988,9 +5675,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Offord [Cluny]
     name: Offord [Cluny] (Huntingdonshire 18,1)
     holding: manor
+    textEdition: '[TOSELAND Hundred] ?M? In OFFORD [Cluny] {Bului} had 10 hides taxable. Land for 10 ploughs. Now Arnulf of Hesdin holds from the King, and the monks of Cluny from him. Now in lordship 5
+      ploughs; 20 villagers and 8 smallholders who have 5 ploughs. A church and a priest. 2 mills, 50s; meadow, 24 acres. Value before 1066 and now £10. [= ?18? Land of Arnulf of Hesdin =] <206a> ?19? Land
+      of Eustace the sheriff'
+    text: '[TOSELAND Hundred] In OFFORD [Cluny] Bului had 10 hides taxable. Land for 10 ploughs. Now Arnulf of Hesdin holds from the King, and the monks of Cluny from him. Now in lordship 5 ploughs; 20
+      villagers and 8 smallholders who have 5 ploughs. A church and a priest. 2 mills, 50s; meadow, 24 acres. Value before 1066 and now £10. Land of Eustace the sheriff'
     households: 29
     villagers: 20
     smallholders: 8
@@ -5039,6 +5733,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 19
     folio: HUN 7
   relations:
@@ -5058,9 +5754,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sawtry
     name: Sawtry (Huntingdonshire 19,1)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In SAWTRY Tosti [* brother of Erik *] had 3 hides and 3 1/2 virgates taxable. Land for 8 ploughs. Now in lordship 2 ploughs; 10 villagers and 2 smallholders with
+      4 ploughs. A church. Meadow, 14 acres; pasturable woodland, 30 acres. Value before 1066, 100s; now £4. Walter [* of Beaumais *] holds from Eustace the sheriff. [= ?19? Land of Eustace the sheriff
+      =]
+    text: NORMANCROSS Hundred In SAWTRY Tosti [brother of Erik] had 3 hides and 3 1/2 virgates taxable. Land for 8 ploughs. Now in lordship 2 ploughs; 10 villagers and 2 smallholders with 4 ploughs. A church.
+      Meadow, 14 acres; pasturable woodland, 30 acres. Value before 1066, 100s; now £4. Walter [of Beaumais] holds from Eustace the sheriff.
     households: 12
     villagers: 10
     smallholders: 2
@@ -5107,9 +5810,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Caldecote
     name: Caldecote (Huntingdonshire 19,2)
     holding: manor
+    textEdition: ?M? In CALDECOTE {Stric} had 5 hides taxable. Land for 6 ploughs. Now in lordship 1 plough; 10 villagers and 2 smallholders who have 4 ploughs. Underwood, 15 acres. Value before 1066 £4;
+      now £3. A man-at-arms of Eustace holds it. [= ?19? Land of Eustace the sheriff =]
+    text: In CALDECOTE Stric had 5 hides taxable. Land for 6 ploughs. Now in lordship 1 plough; 10 villagers and 2 smallholders who have 4 ploughs. Underwood, 15 acres. Value before 1066 £4; now £3. A man-at-arms
+      of Eustace holds it.
     households: 12
     villagers: 10
     smallholders: 2
@@ -5154,9 +5863,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Washingley
     name: Washingley (Huntingdonshire 19,3)
     holding: manor
+    textEdition: ?M? In `WASHINGLEY' Thori had 2 1/2 hides taxable. Land for 4 ploughs. Now in lordship 1 plough. 10 villagers and 1 smallholder have 1 1/2 ploughs. Meadow, 12 acres; pasturable woodland
+      7 furlongs and 24 perches long and 3 furlongs wide. Value before 1066 and now 50s. [= ?19? Land of Eustace the sheriff =]
+    text: In `WASHINGLEY' Thori had 2 1/2 hides taxable. Land for 4 ploughs. Now in lordship 1 plough. 10 villagers and 1 smallholder have 1 1/2 ploughs. Meadow, 12 acres; pasturable woodland 7 furlongs
+      and 24 perches long and 3 furlongs wide. Value before 1066 and now 50s.
     households: 11
     villagers: 10
     smallholders: 1
@@ -5198,9 +5913,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Longueville]
     name: Orton [Longueville] (Huntingdonshire 19,4)
     holding: jurisdiction
+    textEdition: ?S? In ORTON [Waterville?] 8 hides and 1 virgate of land taxable. Land for 5 ploughs and 3 oxen. A Jurisdiction of the King's in Normancross [Hundred]. There were 7 Freemen. John <of Orton>
+      has 3 oxen in a plough and 9 acres of meadow from Eustace. Value before 1066, 40s; now 20s. ^[King Edward held it]^ [= ?19? Land of Eustace the sheriff of King William's jurisdiction =]
+    text: In ORTON [Waterville?] 8 hides and 1 virgate of land taxable. Land for 5 ploughs and 3 oxen. A Jurisdiction of the King's in Normancross [Hundred]. There were 7 Freemen. John has 3 oxen in a plough
+      and 9 acres of meadow from Eustace. Value before 1066, 40s; now 20s. [King Edward held it]
     ploughlands: 5
     geldUnits: 8.25
     value1066: 480
@@ -5251,9 +5972,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Stilton
     name: Stilton (Huntingdonshire 19,5)
     holding: jurisdiction
+    textEdition: Another Jurisdiction. ?S? In STILTON 2 hides and 1 virgate of land taxable. Land for 3 ploughs and 1 ox. John <of Orton>, Eustace's man, has 6 oxen ploughing; 2 Freemen; 2 villagers with
+      1 plough. Meadow, 16 acres; underwood, 5 acres. Value before 1066 and now 40s. ^[Jurisdiction in Normancross [Hundred]. King Edward held it]^ [= ?19? Land of Eustace the sheriff of King William's
+      jurisdiction =]
+    text: Another Jurisdiction. In STILTON 2 hides and 1 virgate of land taxable. Land for 3 ploughs and 1 ox. John , Eustace's man, has 6 oxen ploughing; 2 Freemen; 2 villagers with 1 plough. Meadow, 16
+      acres; underwood, 5 acres. Value before 1066 and now 40s. [Jurisdiction in Normancross [Hundred]. King Edward held it]
     households: 4
     villagers: 2
     freemen: 2
@@ -5306,9 +6034,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Longueville]
     name: Orton [Longueville] (Huntingdonshire 19,6)
     holding: manor
+    textEdition: ?M? In ORTON [Longueville] Alsi had 7 1/2 hides taxable. Land for 5 ploughs. Now in lordship 1 plough; 12 villagers and 2 smallholders with 1 1/2 ploughs. A church. Meadow, 57 acres. Value
+      before 1066 £4; now 40s. [= ?19? Land of Eustace the sheriff =]
+    text: In ORTON [Longueville] Alsi had 7 1/2 hides taxable. Land for 5 ploughs. Now in lordship 1 plough; 12 villagers and 2 smallholders with 1 1/2 ploughs. A church. Meadow, 57 acres. Value before
+      1066 £4; now 40s.
     households: 14
     villagers: 12
     smallholders: 2
@@ -5351,9 +6085,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Orton [Longueville]
     name: Orton [Longueville] (Huntingdonshire 19,7)
     holding: jurisdiction
+    textEdition: ?S? There also ^[ORTON [Longueville]]^ Aelfric [* the sheriff *] had 2 1/2 hides taxable. Land for 2 ploughs. Jurisdiction in Normancross [Hundred]. Now Roger, Eustace's man, has 4 smallholders
+      and 5 oxen in a plough. Value before 1066, 20s; now 5s. ^[King Edward held it]^ [= ?19? Land of Eustace the sheriff of King William's jurisdiction =]
+    text: There also [ORTON [Longueville]] Aelfric [the sheriff] had 2 1/2 hides taxable. Land for 2 ploughs. Jurisdiction in Normancross [Hundred]. Now Roger, Eustace's man, has 4 smallholders and 5 oxen
+      in a plough. Value before 1066, 20s; now 5s. [King Edward held it]
     households: 4
     smallholders: 4
     ploughlands: 2
@@ -5406,9 +6146,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Chesterton
     name: Chesterton (Huntingdonshire 19,8)
     holding: manor
+    textEdition: ?2M? In CHESTERTON two brothers had 4 hides and 2 virgates of land taxable. Land for 7 ploughs. Now in lordship 2 ploughs; 10 villagers and 2 smallholders who have 3 ploughs. A church and
+      a priest. Meadow, 20 acres; 1 customary due in the Abbot of Peterborough's woodland, which pays 2s. Value before 1066 £4; now the same. Two men-at-arms hold from Eustace. [= ?19? Land of Eustace the
+      sheriff =]
+    text: In CHESTERTON two brothers had 4 hides and 2 virgates of land taxable. Land for 7 ploughs. Now in lordship 2 ploughs; 10 villagers and 2 smallholders who have 3 ploughs. A church and a priest.
+      Meadow, 20 acres; 1 customary due in the Abbot of Peterborough's woodland, which pays 2s. Value before 1066 £4; now the same. Two men-at-arms hold from Eustace.
     households: 13
     villagers: 10
     smallholders: 2
@@ -5459,9 +6206,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Botolph Bridge
     name: Botolph Bridge (Huntingdonshire 19,9)
     holding: land
+    textEdition: ?T? In {BOTULUESBRIGE} the priests Burgred and Thorkil had a church, St Mary's, with 2 hides of land taxable. Land for 2 ploughs. The same men now hold it from Eustace. They have 2 ploughs
+      and 3 acres of meadow. Value before 1066 and now 40s. [= ?19? Land of Eustace the sheriff =]
+    text: In BOTULUESBRIGE the priests Burgred and Thorkil had a church, St Mary's, with 2 hides of land taxable. Land for 2 ploughs. The same men now hold it from Eustace. They have 2 ploughs and 3 acres
+      of meadow. Value before 1066 and now 40s.
     ploughlands: 2
     lordsTeams: 2
     ploughTeams: 2
@@ -5515,9 +6268,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great and Little] Stukeley'
     name: '[Great and Little] Stukeley (Huntingdonshire 19,10)'
     holding: land
+    textEdition: '[`HURSTINGSTONE'' Hundred] In [Great?] STUKELEY [***] Eustace has 1 virgate of land taxable. It is waste. Herbert <of Hargrave> holds from him. [= ?19? Land of Eustace the sheriff =]'
+    text: '[`HURSTINGSTONE'' Hundred] In [Great?] STUKELEY Eustace has 1 virgate of land taxable. It is waste. Herbert holds from him.'
     geldUnits: 0.25
     isWaste: true
     folio: HUN 7
@@ -5550,9 +6307,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Swineshead
     name: Swineshead (Huntingdonshire 19,11)
     holding: manor
+    textEdition: KIMBOLTON Hundred [* `LEIGHTONSTONE' Hundred *] ?M? In SWINESHEAD {Fursa} had 1/2 hide taxable. Land for 1/2 plough, with full jurisdiction. Now 1 villager. Meadow, 3 acres; pasturable
+      woodland 1 league long and 1 furlong wide. Value before 1066, 15s; now 6s. Ralph holds from Eustace. [= ?19? Land of Eustace the sheriff =] <206b>
+    text: KIMBOLTON Hundred [`LEIGHTONSTONE' Hundred] In SWINESHEAD Fursa had 1/2 hide taxable. Land for 1/2 plough, with full jurisdiction. Now 1 villager. Meadow, 3 acres; pasturable woodland 1 league
+      long and 1 furlong wide. Value before 1066, 15s; now 6s. Ralph holds from Eustace.
     households: 1
     villagers: 1
     ploughlands: 0.5
@@ -5573,7 +6336,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Leightonstone
+      hundredId: HUN:Leightonstone
   - predicate: LORD_1066
     to:
       type: DomesdayPerson
@@ -5594,9 +6357,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Catworth
     name: Catworth (Huntingdonshire 19,12)
     holding: manor
+    textEdition: ?M? In CATWORTH Aefic <of Catworth> had 3 hides taxable. Land for 4 ploughs. Now Eustace has 2 ploughs there; 8 villagers and 4 smallholders who have 4 ploughs. 1 mill, 2s. Value before
+      1066 and now 60s. The King has the full jurisdiction of this land. [= ?19? Land of Eustace the sheriff =]
+    text: In CATWORTH Aefic had 3 hides taxable. Land for 4 ploughs. Now Eustace has 2 ploughs there; 8 villagers and 4 smallholders who have 4 ploughs. 1 mill, 2s. Value before 1066 and now 60s. The King
+      has the full jurisdiction of this land.
     households: 12
     villagers: 8
     smallholders: 4
@@ -5642,9 +6411,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hargrave
     name: Hargrave (Huntingdonshire 19,13)
     holding: manor
+    textEdition: ?M? In HARGRAVE {Langfer} <of Hargrave> had 1 virgate of land taxable. Land for 2 oxen. Now Herbert <of Hargrave>, Eustace's man, ploughs it with 1/2 plough. He has 1 villager; and meadow,
+      6 acres. Value before 1066 and now 5s. Tovi claims that this land was unjustly taken away from him by Eustace. [= ?19? Land of Eustace the sheriff =]
+    text: In HARGRAVE Langfer had 1 virgate of land taxable. Land for 2 oxen. Now Herbert , Eustace's man, ploughs it with 1/2 plough. He has 1 villager; and meadow, 6 acres. Value before 1066 and now 5s.
+      Tovi claims that this land was unjustly taken away from him by Eustace.
     households: 1
     villagers: 1
     mensTeams: 0.5
@@ -5695,9 +6470,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hargrave
     name: Hargrave (Huntingdonshire 19,14)
     holding: manor
+    textEdition: ?M? There also ^[HARGRAVE]^ Alwin the noble had 1 hide of land. Land for 1 1/2 ploughs. Now in lordship 1 plough. Meadow, 7 acres; underwood, 2 acres. Value before 1066 and now 20s. Herbert
+      <of Hargrave> and Edmer hold from Eustace. [= ?19? Land of Eustace the sheriff =]
+    text: There also [HARGRAVE] Alwin the noble had 1 hide of land. Land for 1 1/2 ploughs. Now in lordship 1 plough. Meadow, 7 acres; underwood, 2 acres. Value before 1066 and now 20s. Herbert and Edmer
+      hold from Eustace.
     ploughlands: 1.5
     lordsTeams: 1
     ploughTeams: 1
@@ -5743,9 +6524,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great, Little and Steeple] Gidding'
     name: '[Great, Little and Steeple] Gidding (Huntingdonshire 19,15)'
     holding: jurisdiction
+    textEdition: ?S? In [Great] GIDDING 6 Freemen, that is Alwold and his five brothers, had 4 1/2 hides taxable ^[from King Edward]^. Land for 6 ploughs. Jurisdiction in the King's manor of Alconbury.
+      Now Eustace has it, and Ingelrann [* of Eu *] from him. Now 2 ploughs in lordship; 16 villagers and 4 smallholders with 6 ploughs. Meadow, 22 acres. Value before 1066 and now £4. Alwold and his brothers
+      claim that Eustace took this land away from them unjustly. Of this land William the artificer claims 1/2 virgate and 18 acres of land. [This is] the witness of the whole Hundred. [= ?19? Land of Eustace
+      the sheriff of King William's jurisdiction =]
+    text: In [Great] GIDDING 6 Freemen, that is Alwold and his five brothers, had 4 1/2 hides taxable [from King Edward]. Land for 6 ploughs. Jurisdiction in the King's manor of Alconbury. Now Eustace has
+      it, and Ingelrann [of Eu] from him. Now 2 ploughs in lordship; 16 villagers and 4 smallholders with 6 ploughs. Meadow, 22 acres. Value before 1066 and now £4. Alwold and his brothers claim that Eustace
+      took this land away from them unjustly. Of this land William the artificer claims 1/2 virgate and 18 acres of land. [This is] the witness of the whole Hundred.
     households: 20
     villagers: 16
     smallholders: 4
@@ -5823,9 +6613,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Winwick
     name: Winwick (Huntingdonshire 19,16)
     holding: land
+    textEdition: ?T? In WINWICK Eskil had 2 1/2 hides taxable, with full jurisdiction. Eustace has it now, and Oidelard [* the larderer *] from him. [= ?19? Land of Eustace the sheriff =]
+    text: In WINWICK Eskil had 2 1/2 hides taxable, with full jurisdiction. Eustace has it now, and Oidelard [the larderer] from him.
     geldUnits: 2.5
     folio: HUN 7
   relations:
@@ -5861,9 +6655,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Winwick
     name: Winwick (Huntingdonshire 19,17)
     holding: jurisdiction
+    textEdition: ?S? There also ^[WINWICK]^ Alwold, Leofwin and Elaf <of Driffield> had 2 1/2 hides taxable ^[from King Edward]^. Land for 2 1/2 ploughs. Jurisdiction in the King's manor of Alconbury. Now
+      Eustace has it, and Oidelard [* the larderer *] from him. Now in lordship 3 ploughs; 15 villagers who have 6 ploughs. Meadow, 20 acres. Value before 1066 and now £4. [= ?19? Land of Eustace the sheriff
+      of King William's jurisdiction =]
+    text: There also [WINWICK] Alwold, Leofwin and Elaf had 2 1/2 hides taxable [from King Edward]. Land for 2 1/2 ploughs. Jurisdiction in the King's manor of Alconbury. Now Eustace has it, and Oidelard
+      [the larderer] from him. Now in lordship 3 ploughs; 15 villagers who have 6 ploughs. Meadow, 20 acres. Value before 1066 and now £4.
     households: 15
     villagers: 15
     ploughlands: 2.5
@@ -5928,9 +6729,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Thurning
     name: Thurning (Huntingdonshire 19,18)
     holding: jurisdiction
+    textEdition: ?S? In THURNING 5 hides taxable. Land for 5 ploughs. Jurisdiction in Alconbury. Now in lordship 1 1/2 ploughs. 6 villagers and 1 smallholder have 2 1/2 ploughs. Meadow, 24 acres. Value
+      before 1066 and now 60s. Alfred [* of Grandcourt *] and Jocelyn hold from Eustace. Robert the bursar claims 1 virgate and 1 hide. ^[King Edward held it]^ [= ?19? Land of Eustace the sheriff of King
+      William's jurisdiction =]
+    text: In THURNING 5 hides taxable. Land for 5 ploughs. Jurisdiction in Alconbury. Now in lordship 1 1/2 ploughs. 6 villagers and 1 smallholder have 2 1/2 ploughs. Meadow, 24 acres. Value before 1066
+      and now 60s. Alfred [of Grandcourt] and Jocelyn hold from Eustace. Robert the bursar claims 1 virgate and 1 hide. [King Edward held it]
     households: 7
     villagers: 6
     smallholders: 1
@@ -5992,9 +6800,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Luddington [in the Brook]
     name: Luddington [in the Brook] (Huntingdonshire 19,19)
     holding: jurisdiction
+    textEdition: ?S? In LUDDINGTON[-in-the-Brook] 2 1/2 hides taxable. Land for 3 ploughs. Jurisdiction in the King's manor of Alconbury. Now in lordship 1 plough; 1 villager and 6 smallholders with 1 plough.
+      Meadow, 4 acres. Value before 1066, 60s; now 40s. Ingelrann [* of Eu *] and Herlewin <of Luddington> hold from Eustace. ^[King Edward held it]^ [= ?19? Land of Eustace the sheriff of King William's
+      jurisdiction =]
+    text: In LUDDINGTON[-in-the-Brook] 2 1/2 hides taxable. Land for 3 ploughs. Jurisdiction in the King's manor of Alconbury. Now in lordship 1 plough; 1 villager and 6 smallholders with 1 plough. Meadow,
+      4 acres. Value before 1066, 60s; now 40s. Ingelrann [of Eu] and Herlewin hold from Eustace. [King Edward held it]
     households: 7
     villagers: 1
     smallholders: 6
@@ -6052,9 +6867,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Old] Weston'
     name: '[Old] Weston (Huntingdonshire 19,20)'
     holding: jurisdiction
+    textEdition: ?S? In [Alconbury] WESTON 1 hide taxable. Land for 2 ploughs. Jurisdiction in Alconbury. Now in lordship 1/2 plough; 4 villagers with 1/2 plough. Value before 1066 and now 20s. Wulfbert
+      <of Weston> holds from Eustace. ^[King Edward held it]^ [= ?19? Land of Eustace the sheriff of King William's jurisdiction =]
+    text: In [Alconbury] WESTON 1 hide taxable. Land for 2 ploughs. Jurisdiction in Alconbury. Now in lordship 1/2 plough; 4 villagers with 1/2 plough. Value before 1066 and now 20s. Wulfbert holds from
+      Eustace. [King Edward held it]
     households: 4
     villagers: 4
     ploughlands: 2
@@ -6106,9 +6927,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Woolley
     name: Woolley (Huntingdonshire 19,21)
     holding: land
+    textEdition: In WOOLLEY Gode [* mother of Wulfric *] and Wulfric [* son of Gode *] had 1/2 hide of land taxable. Land for 1 plough. Now Eustace has it. [= ?19? Land of Eustace the sheriff =]
+    text: In WOOLLEY Gode [mother of Wulfric] and Wulfric [son of Gode] had 1/2 hide of land taxable. Land for 1 plough. Now Eustace has it.
     ploughlands: 1
     geldUnits: 0.5
     folio: HUN 7
@@ -6145,9 +6970,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Grafham
     name: Grafham (Huntingdonshire 19,22)
     holding: land
+    textEdition: In GRAFHAM Eustace has 1/2 hide; Oidelard the larderer [holds] from him. He ploughs there with 6 oxen. Value 10s. [= ?19? Land of Eustace the sheriff =]
+    text: In GRAFHAM Eustace has 1/2 hide; Oidelard the larderer [holds] from him. He ploughs there with 6 oxen. Value 10s.
     geldUnits: 0.5
     value1086: 120
     folio: HUN 7
@@ -6180,9 +7009,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hemingford [Grey]
     name: Hemingford [Grey] (Huntingdonshire 19,23)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In HEMINGFORD [Grey] Ordwy <of Hemingford> had 4 hides taxable. Land for 3 ploughs. <206c> Now in lordship 1 plough; 2 villagers and 2 smallholders who have 2 oxen
+      in a plough. Meadow, 20 acres. Value before 1066, 40s; now 20s. [= ?19? Land of Eustace the sheriff =]
+    text: TOSELAND Hundred In HEMINGFORD [Grey] Ordwy had 4 hides taxable. Land for 3 ploughs. Now in lordship 1 plough; 2 villagers and 2 smallholders who have 2 oxen in a plough. Meadow, 20 acres. Value
+      before 1066, 40s; now 20s.
     households: 4
     villagers: 2
     smallholders: 2
@@ -6223,9 +7058,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Papworth [Everard and St Agnes]
     name: Papworth [Everard and St Agnes] (Huntingdonshire 19,24)
     holding: land
+    textEdition: In PAPWORTH [St Agnes] 1 hide taxable. Land for 1 plough. Eustace has 1 plough in lordship; and meadow, 10 acres. Value before 1066, 60s; now 20s. [= ?19? Land of Eustace the sheriff =]
+    text: In PAPWORTH [St Agnes] 1 hide taxable. Land for 1 plough. Eustace has 1 plough in lordship; and meadow, 10 acres. Value before 1066, 60s; now 20s.
     ploughlands: 1
     lordsTeams: 1
     ploughTeams: 1
@@ -6259,9 +7098,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Offord [d'Arcy]
     name: Offord [d'Arcy] (Huntingdonshire 19,25)
     holding: manor
+    textEdition: ?M? In OFFORD [D'Arcy] Alwin the sheriff had 3 hides taxable. Land for 3 ploughs. Now 4 smallholders with 2 oxen. Meadow, 4 acres. Value before 1066, 40s; now 12s. Odo holds from Eustace.
+      [= ?19? Land of Eustace the sheriff =]
+    text: In OFFORD [D'Arcy] Alwin the sheriff had 3 hides taxable. Land for 3 ploughs. Now 4 smallholders with 2 oxen. Meadow, 4 acres. Value before 1066, 40s; now 12s. Odo holds from Eustace.
     households: 4
     smallholders: 4
     ploughlands: 3
@@ -6303,9 +7147,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Waresley
     name: Waresley (Huntingdonshire 19,26)
     holding: land
+    textEdition: In WARESLEY Sumarlithi <of Waresley> had 1/2 hide taxable. Land for 1/2 plough. It is waste. Roger holds from Eustace. Value before 1066, 10s; now 2s. [= ?19? Land of Eustace the sheriff
+      =]
+    text: In WARESLEY Sumarlithi had 1/2 hide taxable. Land for 1/2 plough. It is waste. Roger holds from Eustace. Value before 1066, 10s; now 2s.
     ploughlands: 0.5
     geldUnits: 0.5
     value1066: 120
@@ -6345,9 +7194,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire 19,27)'
     holding: manor
+    textEdition: ?M? In [Hail] WESTON Algeat <of Weston> had 1 1/2 hides taxable. Land for 1 1/2 ploughs. In lordship 1/2 hide of this land. Now 4 villagers have 1 plough. Pasturable woodland, 20 acres.
+      Value before 1066, 40s; now 20s. Countess Judith claims this land against Eustace. ^[Earl Tosti had it and afterwards [* Earl *] Waltheof]^ [= ?19? Land of Eustace the sheriff =]
+    text: In [Hail] WESTON Algeat had 1 1/2 hides taxable. Land for 1 1/2 ploughs. In lordship 1/2 hide of this land. Now 4 villagers have 1 plough. Pasturable woodland, 20 acres. Value before 1066, 40s;
+      now 20s. Countess Judith claims this land against Eustace. [Earl Tosti had it and afterwards [Earl] Waltheof]
     households: 4
     villagers: 4
     ploughlands: 1.5
@@ -6395,9 +7250,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire 19,28)'
     holding: manor
+    textEdition: ?M? There also ^[[Hail] WESTON]^ Godwin had 1/2 hide taxable. Land for 1/2 plough. Eustace has 1/2 plough there; and meadow, 10 acres; pasturable woodland, 10 acres. Value before 1066,
+      10s; now 5s. [= ?19? Land of Eustace the sheriff =]
+    text: There also [[Hail] WESTON] Godwin had 1/2 hide taxable. Land for 1/2 plough. Eustace has 1/2 plough there; and meadow, 10 acres; pasturable woodland, 10 acres. Value before 1066, 10s; now 5s.
     ploughlands: 0.5
     lordsTeams: 0.5
     ploughTeams: 0.5
@@ -6435,9 +7295,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Southoe
     name: Southoe (Huntingdonshire 19,29)
     holding: manor
+    textEdition: ?M? In SOUTHOE Dunning had 4 1/2 hides taxable. Land for 8 ploughs. Now in lordship 1 plough on 1 1/2 hides of this land; 12 villagers who have 5 ploughs. 1 fishery, 1000 eels; 3 presentations
+      a year, value 49d; meadow, 20 acres; pasturable woodland, 48 acres. Value before 1066, 100s; now 70s. [= ?19? Land of Eustace the sheriff =]
+    text: In SOUTHOE Dunning had 4 1/2 hides taxable. Land for 8 ploughs. Now in lordship 1 plough on 1 1/2 hides of this land; 12 villagers who have 5 ploughs. 1 fishery, 1000 eels; 3 presentations a year,
+      value 49d; meadow, 20 acres; pasturable woodland, 48 acres. Value before 1066, 100s; now 70s.
     households: 12
     villagers: 12
     ploughlands: 8
@@ -6478,9 +7344,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[West] Perry'
     name: '[West] Perry (Huntingdonshire 19,30)'
     holding: manor
+    textEdition: ?M? In [West] PERRY Alwin Devil had 1 hide taxable. Land for 2 ploughs. Now in lordship 1 1/2 ploughs; 6 villagers with 1 plough. A church. Meadow, 4 acres; pasturable woodland 1 league
+      long and 4 furlongs wide. Value before 1066 and now 40s. [= ?19? Land of Eustace the sheriff =]
+    text: In [West] PERRY Alwin Devil had 1 hide taxable. Land for 2 ploughs. Now in lordship 1 1/2 ploughs; 6 villagers with 1 plough. A church. Meadow, 4 acres; pasturable woodland 1 league long and 4
+      furlongs wide. Value before 1066 and now 40s.
     households: 6
     villagers: 6
     ploughlands: 2
@@ -6522,9 +7394,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Boughton
     name: Boughton (Huntingdonshire 19,31)
     holding: land
+    textEdition: In BOUGHTON Godric the priest had 1 hide taxable ^[from Earl Waltheof]^. Land for 2 ploughs. Now 1 plough there. 5 villagers have 1/2 plough. Meadow, 7 acres. Value before 1066, 20s; now
+      10s. [= ?19? Land of Eustace the sheriff =]
+    text: In BOUGHTON Godric the priest had 1 hide taxable [from Earl Waltheof]. Land for 2 ploughs. Now 1 plough there. 5 villagers have 1/2 plough. Meadow, 7 acres. Value before 1066, 20s; now 10s.
     households: 5
     villagers: 5
     ploughlands: 2
@@ -6564,9 +7441,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Catworth
     name: Catworth (Huntingdonshire 19,32)
     holding: manor
+    textEdition: '[`LEIGHTONSTONE'' Hundred] In CATWORTH King Edward had 2 hides taxable. Land for 3 ploughs. There were 8 thanes who had full jurisdiction under the King. Eustace held this land; now it
+      is in the King''s hands. 8 men there, and under them 7 smallholders with 3 ploughs. Meadow, 3 acres. Value before 1066, 40s; now 30s. [= ?19? Land of Eustace the sheriff =] <206d> ?20? Land of Countess
+      Judith'
+    text: '[`LEIGHTONSTONE'' Hundred] In CATWORTH King Edward had 2 hides taxable. Land for 3 ploughs. There were 8 thanes who had full jurisdiction under the King. Eustace held this land; now it is in
+      the King''s hands. 8 men there, and under them 7 smallholders with 3 ploughs. Meadow, 3 acres. Value before 1066, 40s; now 30s. Land of Countess Judith'
     households: 7
     smallholders: 7
     ploughlands: 3
@@ -6614,6 +7498,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 20
     folio: HUN 8
   relations:
@@ -6633,9 +7519,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Conington
     name: Conington (Huntingdonshire 20,1)
     holding: manor
+    textEdition: NORMANCROSS Hundred ?M? In CONINGTON Thorkil [* the Dane *] had 9 hides taxable. Land for 15 ploughs. In lordship 2 1/2 hides of this land. Now 2 ploughs there; 26 villagers who have 13
+      ploughs. A church and a priest. Meadow, 40 acres. Value before 1066 and now £9. Of this land 6 hides belonged to the Church of St Mary of Thorney. Thorkil [* the Dane *] held from the Abbot and made
+      a voluntary payment for them, but the men of the Hundred do not know how much. Countess Judith holds it. [= ?20? Land of Countess Judith =]
+    text: NORMANCROSS Hundred In CONINGTON Thorkil [the Dane] had 9 hides taxable. Land for 15 ploughs. In lordship 2 1/2 hides of this land. Now 2 ploughs there; 26 villagers who have 13 ploughs. A church
+      and a priest. Meadow, 40 acres. Value before 1066 and now £9. Of this land 6 hides belonged to the Church of St Mary of Thorney. Thorkil [the Dane] held from the Abbot and made a voluntary payment
+      for them, but the men of the Hundred do not know how much. Countess Judith holds it.
     households: 27
     villagers: 26
     priests: 1
@@ -6686,9 +7580,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sawtry
     name: Sawtry (Huntingdonshire 20,2)
     holding: manor
+    textEdition: ?M? In SAWTRY Thorkil [* the Dane *] had 10 hides taxable. Land for 15 ploughs. In lordship 2 1/2 hides of this land. Now Countess Judith [has] 2 ploughs there; 27 villagers who have 10
+      ploughs. A priest and a church. Meadow, 40 acres; pasturable woodland 18 furlongs long and 4 furlongs wide. Value before 1066 and now £10. [= ?20? Land of Countess Judith =]
+    text: In SAWTRY Thorkil [the Dane] had 10 hides taxable. Land for 15 ploughs. In lordship 2 1/2 hides of this land. Now Countess Judith [has] 2 ploughs there; 27 villagers who have 10 ploughs. A priest
+      and a church. Meadow, 40 acres; pasturable woodland 18 furlongs long and 4 furlongs wide. Value before 1066 and now £10.
     households: 28
     villagers: 27
     priests: 1
@@ -6731,9 +7631,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great and Little] Stukeley'
     name: '[Great and Little] Stukeley (Huntingdonshire 20,3)'
     holding: manor
+    textEdition: '`HURSTINGSTONE'' Hundred ?M? In [Great] STUKELEY Huneva? <of Stukeley> had 3 hides taxable. Land for 16 ploughs. Land for 2 ploughs in lordship, apart from the said hides. Now Countess
+      Judith [has] 3 ploughs there; 18 villagers and 8 smallholders with 5 ploughs. A church and a priest. Meadow, 26 acres; pasturable woodland 9 furlongs long and 8 furlongs wide. Value before 1066 and
+      now £12. ?D? Eustace ^[the sheriff]^ claims it. [= ?20? Land of Countess Judith =]'
+    text: '`HURSTINGSTONE'' Hundred In [Great] STUKELEY Huneva? had 3 hides taxable. Land for 16 ploughs. Land for 2 ploughs in lordship, apart from the said hides. Now Countess Judith [has] 3 ploughs there;
+      18 villagers and 8 smallholders with 5 ploughs. A church and a priest. Meadow, 26 acres; pasturable woodland 9 furlongs long and 8 furlongs wide. Value before 1066 and now £12. Eustace [the sheriff]
+      claims it.'
     households: 27
     villagers: 18
     smallholders: 8
@@ -6781,9 +7689,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Molesworth
     name: Molesworth (Huntingdonshire 20,4)
     holding: manor
+    textEdition: KIMBOLTON Hundred [* `LEIGHTONSTONE' Hundred *] ?M? In MOLESWORTH Northmann had 4 hides taxable. Land for 4 ploughs. In lordship 1 hide of this land. Now 1 plough there; 15 villagers and
+      2 smallholders who have 5 ploughs. Meadow, 60 acres. Value before 1066 and now £4. Eustace [* the sheriff *] holds from the Countess. [= ?20? Land of Countess Judith =]
+    text: KIMBOLTON Hundred [`LEIGHTONSTONE' Hundred] In MOLESWORTH Northmann had 4 hides taxable. Land for 4 ploughs. In lordship 1 hide of this land. Now 1 plough there; 15 villagers and 2 smallholders
+      who have 5 ploughs. Meadow, 60 acres. Value before 1066 and now £4. Eustace [the sheriff] holds from the Countess.
     households: 17
     villagers: 15
     smallholders: 2
@@ -6829,9 +7743,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Cotton
     name: Cotton (Huntingdonshire 20,5)
     holding: jurisdiction
+    textEdition: TOSELAND Hundred In CALDECOTE Earl Tosti had 4 hides taxable. Land for 8 ploughs. The Jurisdiction belongs to Eynesbury with all customary dues. Now Countess Judith has 12 villagers who
+      have 2 ploughs; and meadow, 20 acres. Its valuation [is included] in Eynesbury. Of this land Gilbert the priest has 2 hides from the Countess. He has 1 plough and 6 villagers with 1 plough; and meadow,
+      20 acres. Value 40s. [= ?20? Land of Countess Judith =]
+    text: TOSELAND Hundred In CALDECOTE Earl Tosti had 4 hides taxable. Land for 8 ploughs. The Jurisdiction belongs to Eynesbury with all customary dues. Now Countess Judith has 12 villagers who have 2
+      ploughs; and meadow, 20 acres. Its valuation [is included] in Eynesbury. Of this land Gilbert the priest has 2 hides from the Countess. He has 1 plough and 6 villagers with 1 plough; and meadow, 20
+      acres. Value 40s.
     households: 18
     villagers: 18
     ploughlands: 8
@@ -6878,9 +7800,19 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Eynesbury
     name: Eynesbury (Huntingdonshire 20,6)
     holding: manor
+    textEdition: ?M? In EYNESBURY King Edward had 9 hides taxable. Land for 28 ploughs. Now the Countess has 4 ploughs in lordship; 34 villagers and 8 smallholders who have 28 ploughs. A church and a priest.
+      2 mills, 32s; pasturable woodland, 60 acres. In the same village is a sheepfold with 662 sheep; 60 acres of meadow; which the Countess gave to St Helen's [* of Elstow *]. Value 70s. Of the above 9
+      hides Gilbert the priest holds 2 hides from the Countess. He has 2 ploughs in lordship. Meadow, 8 acres. Value 40s. Of the same land her steward Alan has 2 hides from her. 2 smallholders. Value 10s.
+      Value of the manor before 1066 £20; now, the value of the Countess' lordship, £14 12s. [= ?20? Land of Countess Judith =]
+    text: In EYNESBURY King Edward had 9 hides taxable. Land for 28 ploughs. Now the Countess has 4 ploughs in lordship; 34 villagers and 8 smallholders who have 28 ploughs. A church and a priest. 2 mills,
+      32s; pasturable woodland, 60 acres. In the same village is a sheepfold with 662 sheep; 60 acres of meadow; which the Countess gave to St Helen's [of Elstow]. Value 70s. Of the above 9 hides Gilbert
+      the priest holds 2 hides from the Countess. He has 2 ploughs in lordship. Meadow, 8 acres. Value 40s. Of the same land her steward Alan has 2 hides from her. 2 smallholders. Value 10s. Value of the
+      manor before 1066 £20; now, the value of the Countess' lordship, £14 12s.
     households: 45
     villagers: 34
     smallholders: 10
@@ -6938,9 +7870,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Offord [d'Arcy]
     name: Offord [d'Arcy] (Huntingdonshire 20,7)
     holding: manor
+    textEdition: ?M? In OFFORD [D'Arcy] Northmann had 3 hides taxable. <207a> Land for 8 ploughs. Hugh [* of Hotot *] holds from the Countess. Now in lordship 1 plough; 11 villagers and 4 smallholders who
+      have 6 ploughs. Meadow, 16 acres. Value before 1066 £6; now 100s. [= ?20? Land of Countess Judith =]
+    text: In OFFORD [D'Arcy] Northmann had 3 hides taxable. Land for 8 ploughs. Hugh [of Hotot] holds from the Countess. Now in lordship 1 plough; 11 villagers and 4 smallholders who have 6 ploughs. Meadow,
+      16 acres. Value before 1066 £6; now 100s.
     households: 15
     villagers: 11
     smallholders: 4
@@ -6986,9 +7924,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Paxton
     name: Paxton (Huntingdonshire 20,8)
     holding: manor
+    textEdition: ?M? In [Great] PAXTON, with 3 outliers, King Edward had 25 hides taxable. Land for 41 ploughs. Now the Countess has 5 ploughs in lordship; 60 villagers and 8 smallholders who have 34 ploughs.
+      A church and a priest. 3 mills, 64s; meadow, 80 acres; pasturable woodland 1/2 league long and 1/2 league and 1 furlong wide; other woodland 1/2 league long and 3 furlongs wide. Of this land 1 hide
+      belongs to the church. Value before 1066 £29 4s; now £33 10s. [= ?20? Land of Countess Judith =]
+    text: In [Great] PAXTON, with 3 outliers, King Edward had 25 hides taxable. Land for 41 ploughs. Now the Countess has 5 ploughs in lordship; 60 villagers and 8 smallholders who have 34 ploughs. A church
+      and a priest. 3 mills, 64s; meadow, 80 acres; pasturable woodland 1/2 league long and 1/2 league and 1 furlong wide; other woodland 1/2 league long and 3 furlongs wide. Of this land 1 hide belongs
+      to the church. Value before 1066 £29 4s; now £33 10s.
     households: 69
     villagers: 60
     smallholders: 8
@@ -7037,9 +7983,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Diddington
     name: Diddington (Huntingdonshire 20,9)
     holding: manor
+    textEdition: ?M? In DIDDINGTON Earl Waltheof had 3 hides taxable. Land for 3 ploughs and 6 oxen. Now in lordship 1 plough; 8 villagers and 1 smallholder with 1 plough. Meadow, 22 acres; pasturable woodland
+      5 furlongs long and 4 furlongs wide. Value before 1066, 40s; now 60s. Alan [* the steward *] holds from the Countess. [= ?20? Land of Countess Judith =] ?21? Land of Gilbert of Ghent
+    text: In DIDDINGTON Earl Waltheof had 3 hides taxable. Land for 3 ploughs and 6 oxen. Now in lordship 1 plough; 8 villagers and 1 smallholder with 1 plough. Meadow, 22 acres; pasturable woodland 5 furlongs
+      long and 4 furlongs wide. Value before 1066, 40s; now 60s. Alan [the steward] holds from the Countess. Land of Gilbert of Ghent
     households: 9
     villagers: 8
     smallholders: 1
@@ -7085,6 +8037,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 21
     folio: HUN 9
   relations:
@@ -7104,9 +8058,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Fen] Stanton'
     name: '[Fen] Stanton (Huntingdonshire 21,1)'
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In FENSTANTON Ulf [* Fenman *] had 13 hides taxable. Land for 18 ploughs. Now Gilbert of Ghent [has] 2 ploughs in lordship; 24 villagers and 8 smallholders who have
+      11 ploughs. A church and a priest. Meadow, 80 acres. Value before 1066 £17; now £16. [= ?21? Land of Gilbert of Ghent =] ?22? Land of Aubrey de Vere
+    text: TOSELAND Hundred In FENSTANTON Ulf [Fenman] had 13 hides taxable. Land for 18 ploughs. Now Gilbert of Ghent [has] 2 ploughs in lordship; 24 villagers and 8 smallholders who have 11 ploughs. A
+      church and a priest. Meadow, 80 acres. Value before 1066 £17; now £16. Land of Aubrey de Vere
     households: 33
     villagers: 24
     smallholders: 8
@@ -7150,6 +8110,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 22
     folio: HUN 9
   relations:
@@ -7169,9 +8131,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Yelling
     name: Yelling (Huntingdonshire 22,1)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In YELLING Aelfric [* the sheriff *] had 5 hides taxable. Land for 8 ploughs. Now in lordship 2 ploughs; 10 villagers and 2 smallholders with 3 ploughs. A church and
+      a priest. Meadow, 40 acres; underwood, 5 acres. Value before 1066 and now £4. ^[Aelfric held it from the Abbot of Ramsey before 1066. Aubrey de Vere holds from the King, and Ralph son of Osmund from
+      him]^ [= ?22? Land of Aubrey de Vere =]
+    text: TOSELAND Hundred In YELLING Aelfric [the sheriff] had 5 hides taxable. Land for 8 ploughs. Now in lordship 2 ploughs; 10 villagers and 2 smallholders with 3 ploughs. A church and a priest. Meadow,
+      40 acres; underwood, 5 acres. Value before 1066 and now £4. [Aelfric held it from the Abbot of Ramsey before 1066. Aubrey de Vere holds from the King, and Ralph son of Osmund from him]
     households: 13
     villagers: 10
     smallholders: 2
@@ -7223,9 +8192,17 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hemingford [Abbots]
     name: Hemingford [Abbots] (Huntingdonshire 22,2)
     holding: manor
+    textEdition: ?M? In HEMINGFORD [Grey] Aelfric [* the sheriff *] had 11 hides taxable. Land for 7 ploughs. Now in lordship 2 ploughs; 13 villagers and 4 smallholders who have 5 ploughs. 2 mills, £6;
+      a fishery, 6s; meadow, 50 acres. Value before 1066 and now £12. Aelfric held these two manors from the Abbot of Ramsey before 1066. Now Aubrey de Vere holds from the King, and Ralph son of Osmund
+      from him. [= ?22? Land of Aubrey de Vere =] ?23? Land of William son of Ansculf
+    text: In HEMINGFORD [Grey] Aelfric [the sheriff] had 11 hides taxable. Land for 7 ploughs. Now in lordship 2 ploughs; 13 villagers and 4 smallholders who have 5 ploughs. 2 mills, £6; a fishery, 6s;
+      meadow, 50 acres. Value before 1066 and now £12. Aelfric held these two manors from the Abbot of Ramsey before 1066. Now Aubrey de Vere holds from the King, and Ralph son of Osmund from him. Land
+      of William son of Ansculf
     households: 17
     villagers: 13
     smallholders: 4
@@ -7276,6 +8253,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 23
     folio: HUN 9
   relations:
@@ -7295,9 +8274,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Waresley
     name: Waresley (Huntingdonshire 23,1)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In WARESLEY Magni <of Waresley> and Leofa <of Waresley> had 2 1/2 hides taxable. Land for 5 ploughs. Now in lordship 2 ploughs; 5 villagers and 1 smallholder who have
+      2 1/2 ploughs. A church and a priest. Meadow, 20 acres; underwood, 5 acres. Value before 1066, 40s; now 50s. Ranulf brother of Ilger holds this manor from William son of Ansculf. [= ?23? Land of William
+      son of Ansculf =] <207b> ?24? Land of Ranulf brother of Ilger
+    text: TOSELAND Hundred In WARESLEY Magni and Leofa had 2 1/2 hides taxable. Land for 5 ploughs. Now in lordship 2 ploughs; 5 villagers and 1 smallholder who have 2 1/2 ploughs. A church and a priest.
+      Meadow, 20 acres; underwood, 5 acres. Value before 1066, 40s; now 50s. Ranulf brother of Ilger holds this manor from William son of Ansculf. Land of Ranulf brother of Ilger
     households: 7
     villagers: 5
     smallholders: 1
@@ -7349,6 +8335,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 24
     folio: HUN 9
   relations:
@@ -7368,9 +8356,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Everton
     name: Everton (Huntingdonshire 24,1)
     holding: manor
+    textEdition: TOSELAND Hundred ?M? In EVERTON Ingvar <of Burstead> had 7 hides taxable. Land for 18 ploughs. Now in lordship 2 ploughs; 19 villagers and 2 smallholders who have 9 ploughs. A priest and
+      a church. Meadow, 15 acres; underwood, 40 acres. Value before 1066 £10; now £7. Ranulf brother of Ilger holds from the King. [= ?24? Land of Ranulf brother of Ilger =] ?25? Land of Robert [son of]
+      Fafiton
+    text: TOSELAND Hundred In EVERTON Ingvar had 7 hides taxable. Land for 18 ploughs. Now in lordship 2 ploughs; 19 villagers and 2 smallholders who have 9 ploughs. A priest and a church. Meadow, 15 acres;
+      underwood, 40 acres. Value before 1066 £10; now £7. Ranulf brother of Ilger holds from the King. Land of Robert [son of] Fafiton
     households: 22
     villagers: 19
     smallholders: 2
@@ -7414,6 +8409,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 25
     folio: HUN 9
   relations:
@@ -7433,9 +8430,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire 25,1)'
     holding: manor
+    textEdition: TOSELAND Hundred ?2M? In [Hail] WESTON Saxi and Wulfwin ^[{Chit}]^ had 2 hides taxable. Land for 6 ploughs. Now in lordship Robert son of Fafiton has 2 ploughs; and 8 villagers with 3 ploughs;
+      and pasturable woodland, 40 acres. Value before 1066 £6; now £4. [= ?25? Land of Robert [son of] Fafiton =]
+    text: TOSELAND Hundred In [Hail] WESTON Saxi and Wulfwin [Chit] had 2 hides taxable. Land for 6 ploughs. Now in lordship Robert son of Fafiton has 2 ploughs; and 8 villagers with 3 ploughs; and pasturable
+      woodland, 40 acres. Value before 1066 £6; now £4.
     households: 8
     villagers: 8
     ploughlands: 6
@@ -7479,9 +8482,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Southoe
     name: Southoe (Huntingdonshire 25,2)
     holding: manor
+    textEdition: ?M? In SOUTHOE Saxi had 2 hides taxable. Land for 3 ploughs. Now Robert [has] 1 plough in lordship; and 4 villagers with 1 plough; and meadow, 10 acres; pasturable woodland, 10 acres; underwood,
+      5 acres. Value before 1066, 40s; now 20s. [= ?25? Land of Robert [son of] Fafiton =] ?26? Land of William the artificer
+    text: In SOUTHOE Saxi had 2 hides taxable. Land for 3 ploughs. Now Robert [has] 1 plough in lordship; and 4 villagers with 1 plough; and meadow, 10 acres; pasturable woodland, 10 acres; underwood, 5
+      acres. Value before 1066, 40s; now 20s. Land of William the artificer
     households: 4
     villagers: 4
     ploughlands: 3
@@ -7522,6 +8531,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 26
     folio: HUN 9
   relations:
@@ -7541,9 +8552,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Great, Little and Steeple] Gidding'
     name: '[Great, Little and Steeple] Gidding (Huntingdonshire 26,1)'
     holding: manor
+    textEdition: '`LEIGHTONSTONE'' Hundred ?M? In GIDDING Bricteva <of Gidding> had 4 1/2 hides taxable. The Jurisdiction was in the Hundred of {Cressuuelle}. Now William the artificer has 2 ploughs in
+      lordship; and 15 villagers and 3 smallholders who have 5 ploughs; and meadow, 22 acres. Value before 1066, 40s; now £4. [= ?26? Land of William the artificer =] ?27? Land of Ralph son of Osmund'
+    text: '`LEIGHTONSTONE'' Hundred In GIDDING Bricteva had 4 1/2 hides taxable. The Jurisdiction was in the Hundred of Cressuuelle. Now William the artificer has 2 ploughs in lordship; and 15 villagers
+      and 3 smallholders who have 5 ploughs; and meadow, 22 acres. Value before 1066, 40s; now £4. Land of Ralph son of Osmund'
     households: 18
     villagers: 15
     smallholders: 3
@@ -7588,6 +8605,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 27
     folio: HUN 9
   relations:
@@ -7607,9 +8626,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Hemingford [Grey]
     name: Hemingford [Grey] (Huntingdonshire 27,1)
     holding: land
+    textEdition: TOSELAND Hundred In HEMINGFORD [Abbots] Alwin Blaec had 1 hide taxable. Land for 1 plough. It is waste. Ralph son of Osmund has it. [= ?27? Land of Ralph son of Osmund =] ?28? Land of Rohais
+      wife of Richard son of Gilbert
+    text: TOSELAND Hundred In HEMINGFORD [Abbots] Alwin Blaec had 1 hide taxable. Land for 1 plough. It is waste. Ralph son of Osmund has it. Land of Rohais wife of Richard son of Gilbert
     ploughlands: 1
     geldUnits: 1
     isWaste: true
@@ -7643,6 +8667,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 28
     folio: HUN 9
   relations:
@@ -7662,9 +8688,19 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: St Neot's, Eynesbury
     name: St Neot's, Eynesbury (Huntingdonshire 28,1)
     holding: unclassified
+    textEdition: TOSELAND Hundred ?M? In EYNESBURY Robert son of Wiuhomarch had 15 hides taxable. Land for 27 ploughs. Now Rohais wife of Richard has 7 ploughs in lordship. There also St Neot's has 3 ploughs
+      from her in lordship; and in the village itself 19 villagers and 5 smallholders who have 7 ploughs. 1 mill, 23s; 1 fishery, which is valued with the manor; meadow, 65 1/2 acres. Value before 1066
+      £24; now £21, besides the supplies for the monks, which are valued at £4. Of the same land William the Breton holds 2 hides and 1 virgate from her. He has 1/2 plough in lordship; 3 villagers and 4
+      smallholders with 1 plough. Value 30s. [= ?28? Land of Rohais, wife of Richard son of Gilbert =] <207c> ?29? Land of the King's thanes
+    text: TOSELAND Hundred In EYNESBURY Robert son of Wiuhomarch had 15 hides taxable. Land for 27 ploughs. Now Rohais wife of Richard has 7 ploughs in lordship. There also St Neot's has 3 ploughs from
+      her in lordship; and in the village itself 19 villagers and 5 smallholders who have 7 ploughs. 1 mill, 23s; 1 fishery, which is valued with the manor; meadow, 65 1/2 acres. Value before 1066 £24;
+      now £21, besides the supplies for the monks, which are valued at £4. Of the same land William the Breton holds 2 hides and 1 virgate from her. He has 1/2 plough in lordship; 3 villagers and 4 smallholders
+      with 1 plough. Value 30s. Land of the King's thanes
     households: 31
     villagers: 22
     smallholders: 9
@@ -7720,6 +8756,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Huntingdonshire 29
     folio: HUN 10
   relations:
@@ -7735,9 +8773,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Washingley
     name: Washingley (Huntingdonshire 29,1)
     holding: manor
+    textEdition: '[NORMANCROSS Hundred] ?M? In `WASHINGLEY'' Ketilbert <of Folksworth> had 2 1/2 hides taxable. Land for 4 ploughs. The same man holds from the King and has 1 plough; 10 villagers with 4
+      ploughs. A church and a priest. Meadow, 12 acres; pasturable woodland 7 furlongs long and 10 1/2 furlongs wide. Value before 1066 and now 10s.'
+    text: '[NORMANCROSS Hundred] In `WASHINGLEY'' Ketilbert had 2 1/2 hides taxable. Land for 4 ploughs. The same man holds from the King and has 1 plough; 10 villagers with 4 ploughs. A church and a priest.
+      Meadow, 12 acres; pasturable woodland 7 furlongs long and 10 1/2 furlongs wide. Value before 1066 and now 10s.'
     households: 11
     villagers: 10
     priests: 1
@@ -7780,9 +8824,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Keysoe
     name: Keysoe (Huntingdonshire 29,2)
     holding: land
+    textEdition: '`LEIGHTONSTONE'' Hundred In KEYSOE Alwin [* Devil *] had 1 virgate of land taxable, with full jurisdiction. Land for 2 oxen. It lies in Bedfordshire but it pays tax in Huntingdonshire.
+      The same man holds now from the King, and has 1 villager with 2 oxen in a plough. Value before 1066, 16d; now the same.'
+    text: '`LEIGHTONSTONE'' Hundred In KEYSOE Alwin [Devil] had 1 virgate of land taxable, with full jurisdiction. Land for 2 oxen. It lies in Bedfordshire but it pays tax in Huntingdonshire. The same man
+      holds now from the King, and has 1 villager with 2 oxen in a plough. Value before 1066, 16d; now the same.'
     households: 1
     villagers: 1
     geldUnits: 0.25
@@ -7800,7 +8850,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Stodden
+      hundredId: HUN:Stodden
   - predicate: TENANT_IN_CHIEF
     to:
       type: DomesdayPerson
@@ -7817,9 +8867,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Catworth
     name: Catworth (Huntingdonshire 29,3)
     holding: manor
+    textEdition: ?M? In CATWORTH Aefic <of Catworth> had 3 hides taxable. Land for 4 ploughs. Erik [* brother of Tosti *] now holds from the King. He also has 1 hide taxable, under the King. Land for 1
+      plough. He has 2 villagers; and meadow, 6 acres. Value before 1066, 40s; now 20s.
+    text: In CATWORTH Aefic had 3 hides taxable. Land for 4 ploughs. Erik [brother of Tosti] now holds from the King. He also has 1 hide taxable, under the King. Land for 1 plough. He has 2 villagers; and
+      meadow, 6 acres. Value before 1066, 40s; now 20s.
     households: 2
     villagers: 2
     ploughlands: 5
@@ -7857,9 +8913,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Brampton
     name: Brampton (Huntingdonshire 29,4)
     holding: land
+    textEdition: In BRAMPTON Alric, 1 hide and 1 virgate of land taxable. Land for 10 oxen. 3 smallholders; 1 plough. Value 30s.
+    text: In BRAMPTON Alric, 1 hide and 1 virgate of land taxable. Land for 10 oxen. 3 smallholders; 1 plough. Value 30s.
     households: 3
     smallholders: 3
     geldUnits: 1.25
@@ -7890,9 +8950,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Woolley
     name: Woolley (Huntingdonshire 29,5)
     holding: manor
+    textEdition: ?M? In WOOLLEY Golda? [* mother of Wulfric *] and her son Wulfric had 3 hides taxable. Land for 6 ploughs. The same people have it from the King. 1 plough in lordship. 14 villagers who
+      have 5 ploughs. Meadow, 20 acres. Value before 1066 and now 60s.
+    text: In WOOLLEY Golda? [mother of Wulfric] and her son Wulfric had 3 hides taxable. Land for 6 ploughs. The same people have it from the King. 1 plough in lordship. 14 villagers who have 5 ploughs.
+      Meadow, 20 acres. Value before 1066 and now 60s.
     households: 14
     villagers: 14
     ploughlands: 6
@@ -7941,9 +9007,15 @@
     county: HUN
     countyName: Huntingdonshire
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Sawtry
     name: Sawtry (Huntingdonshire 29,6)
     holding: land
+    textEdition: '[NORMANCROSS Hundred] In SAWTRY Alwin [* the reeve *] [had] 1/2 carucate taxable. Land for 6 oxen. Now his wife holds from the King. She has 1 plough; and meadow, 2 acres. Value before
+      1066 and now 10s. <207d> List 2 [Declarations of the jurors] <208a>'
+    text: '[NORMANCROSS Hundred] In SAWTRY Alwin [the reeve] [had] 1/2 carucate taxable. Land for 6 oxen. Now his wife holds from the King. She has 1 plough; and meadow, 2 acres. Value before 1066 and now
+      10s. List 2 [Declarations of the jurors]'
     lordsTeams: 1
     ploughTeams: 1
     geldUnits: 0.5
@@ -7980,6 +9052,8 @@
     county: HUN
     countyName: Huntingdonshire
     kind: rubric
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire ****
   relations:
@@ -7995,10 +9069,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: urban
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Huntingdon
     name: Huntingdon (Huntingdonshire D1)
     holding: borough
+    textEdition: '[`HURSTINGSTONE'' Hundred] The men who have sworn in HUNTINGDON say that the Church of St Mary in the Borough and the land that belongs to it was the Church of Thorney''s; but the Abbot
+      gave it in pledge to the burgesses. However, King Edward gave it to Vitalis and Bernard, his priests; they sold it to Hugh, King Edward''s chamberlain. But Hugh sold it to two priests of Huntingdon,
+      for which they have King Edward''s seal. Eustace ^[the sheriff]^ now has it without deliverer, without writ and without installer.'
+    text: '[`HURSTINGSTONE'' Hundred] The men who have sworn in HUNTINGDON say that the Church of St Mary in the Borough and the land that belongs to it was the Church of Thorney''s; but the Abbot gave
+      it in pledge to the burgesses. However, King Edward gave it to Vitalis and Bernard, his priests; they sold it to Hugh, King Edward''s chamberlain. But Hugh sold it to two priests of Huntingdon, for
+      which they have King Edward''s seal. Eustace [the sheriff] now has it without deliverer, without writ and without installer.'
     hasChurch: true
   relations:
   - predicate: IN
@@ -8053,8 +9135,12 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D2
+    textEdition: Eustace [* the sheriff *] took Leofeva's house by force and gave it to Oger of London.
+    text: Eustace [the sheriff] took Leofeva's house by force and gave it to Oger of London.
   relations:
   - predicate: IN
     to:
@@ -8080,8 +9166,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D3
+    textEdition: They testify that the land of Hunef <of Stukeley> and {Gos} was in King Edward's hands on the day of his death, and that they held from him, not from the Earl [* Waltheof *]. But they say
+      that they heard that King William should have given it to [* Earl *] Waltheof.
+    text: They testify that the land of Hunef and Gos was in King Edward's hands on the day of his death, and that they held from him, not from the Earl [Waltheof]. But they say that they heard that King
+      William should have given it to [Earl] Waltheof.
   relations:
   - predicate: IN
     to:
@@ -8115,10 +9207,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Broughton
     name: Broughton (Huntingdonshire D4)
     holding: unclassified
+    textEdition: Concerning the 5 hides at BROUGHTON, they say that it was Freemen's land in King Edward's time, but that the same king gave the land and the jurisdiction over them to St Benedict's of Ramsey,
+      because of a service which Abbot Alwin did for him in Saxony; and that since then [the Abbey] has always had it.
+    text: Concerning the 5 hides at BROUGHTON, they say that it was Freemen's land in King Edward's time, but that the same king gave the land and the jurisdiction over them to St Benedict's of Ramsey,
+      because of a service which Abbot Alwin did for him in Saxony; and that since then [the Abbey] has always had it.
   relations:
   - predicate: IN
     to:
@@ -8152,8 +9250,12 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D5
+    textEdition: The County testifies that the land of Brictmer Balehorn was reeveland before 1066 and belonged to the [Borough] revenue.
+    text: The County testifies that the land of Brictmer Balehorn was reeveland before 1066 and belonged to the [Borough] revenue.
   relations:
   - predicate: IN
     to:
@@ -8171,8 +9273,12 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D6
+    textEdition: They testify that the land of Alwin the priest was the Abbot's; and that each was the priest's and the reeve's land [respectively].
+    text: They testify that the land of Alwin the priest was the Abbot's; and that each was the priest's and the reeve's land [respectively].
   relations:
   - predicate: IN
     to:
@@ -8190,8 +9296,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D7
+    textEdition: '[TOSELAND Hundred] They testify that the lands of Aelfric [* the sheriff *] in YELLING and HEMINGFORD [Grey] were St Benedict''s ^[of Ramsey]^; and that they were granted to Aelfric for
+      his lifetime on this condition that after his death they should have returned to the church, and Boxted with them. However Aelfric himself was killed in the battle at Hastings, and the Abbot recovered
+      his lands, until Aubrey de Vere dispossessed him.'
+    text: '[TOSELAND Hundred] They testify that the lands of Aelfric [the sheriff] in YELLING and HEMINGFORD [Grey] were St Benedict''s [of Ramsey]; and that they were granted to Aelfric for his lifetime
+      on this condition that after his death they should have returned to the church, and Boxted with them. However Aelfric himself was killed in the battle at Hastings, and the Abbot recovered his lands,
+      until Aubrey de Vere dispossessed him.'
     hasChurch: true
   relations:
   - predicate: IN
@@ -8234,10 +9348,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Hemingford [Grey]
     name: Hemingford [Grey] (Huntingdonshire D8)
     holding: unclassified
+    textEdition: Concerning the 2 hides which Ralph son of Osmund holds in HEMINGFORD [Abbots], they say that one of them was [part] of the lordship of the Church of Ramsey in King Edward's day and that
+      he holds it against the Abbot's will. Concerning the other hide, they say that Godric [* the sheriff *] held it from the Abbot, but when the Abbot was in Denmark, Ralph's father, Osmund, seized it
+      from Saewin the falconer, to whom the Abbot had given it out of [his] love for the King.
+    text: Concerning the 2 hides which Ralph son of Osmund holds in HEMINGFORD [Abbots], they say that one of them was [part] of the lordship of the Church of Ramsey in King Edward's day and that he holds
+      it against the Abbot's will. Concerning the other hide, they say that Godric [the sheriff] held it from the Abbot, but when the Abbot was in Denmark, Ralph's father, Osmund, seized it from Saewin
+      the falconer, to whom the Abbot had given it out of [his] love for the King.
     hasChurch: true
   relations:
   - predicate: IN
@@ -8284,8 +9406,13 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D9
+    textEdition: Concerning Sumarlithi <of Waresley>, they say that he held his land ^[in Waresley]^ from Thorulf, who gave it to him, and afterwards from his sons, and that they had full jurisdiction over
+      him.
+    text: Concerning Sumarlithi , they say that he held his land [in Waresley] from Thorulf, who gave it to him, and afterwards from his sons, and that they had full jurisdiction over him.
   relations:
   - predicate: IN
     to:
@@ -8311,10 +9438,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire D10)'
     holding: unclassified
+    textEdition: They say that the land of Wulfwin {Chit} in [Hail] WESTON was a manor in its own right, and did not belong to Kimbolton; but that nevertheless he was Earl Harold's man. <208b>
+    text: They say that the land of Wulfwin Chit in [Hail] WESTON was a manor in its own right, and did not belong to Kimbolton; but that nevertheless he was Earl Harold's man.
   relations:
   - predicate: IN
     to:
@@ -8348,8 +9479,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D11
+    textEdition: Concerning the 1 1/2 hides of land ^[in [Hail] WESTON]^ which were Algeat <of Weston>'s, the men who have sworn say that Algeat held them himself from Earl Tosti, with full jurisdiction,
+      and afterwards from [* Earl *] Waltheof.
+    text: Concerning the 1 1/2 hides of land [in [Hail] WESTON] which were Algeat 's, the men who have sworn say that Algeat held them himself from Earl Tosti, with full jurisdiction, and afterwards from
+      [Earl] Waltheof.
   relations:
   - predicate: IN
     to:
@@ -8375,8 +9512,12 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D12
+    textEdition: Godric the priest likewise held 1 hide of land ^[in Boughton]^ from Earl Waltheof before 1066. Now Eustace ^[the sheriff]^ holds it.
+    text: Godric the priest likewise held 1 hide of land [in Boughton] from Earl Waltheof before 1066. Now Eustace [the sheriff] holds it.
   relations:
   - predicate: IN
     to:
@@ -8402,10 +9543,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: '[Hail] Weston'
     name: '[Hail] Weston (Huntingdonshire D13)'
     holding: unclassified
+    textEdition: They say that the land of Godwin in [Hail] WESTON in no way belonged to Saxi, the predecessor of ^[Robert son of]^ Fafiton.
+    text: They say that the land of Godwin in [Hail] WESTON in no way belonged to Saxi, the predecessor of [Robert son of] Fafiton.
   relations:
   - predicate: IN
     to:
@@ -8439,10 +9584,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Swineshead
     name: Swineshead (Huntingdonshire D14)
     holding: unclassified
+    textEdition: '[`LEIGHTONSTONE'' Hundred] The men of the County testify that King Edward gave SWINESHEAD to Earl Siward [and] full jurisdiction, and so Earl Harold had it in the same way except that
+      [its men] paid tax in the Hundred, and went with them against the enemy.'
+    text: '[`LEIGHTONSTONE'' Hundred] The men of the County testify that King Edward gave SWINESHEAD to Earl Siward [and] full jurisdiction, and so Earl Harold had it in the same way except that [its men]
+      paid tax in the Hundred, and went with them against the enemy.'
   relations:
   - predicate: IN
     to:
@@ -8455,7 +9606,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Leightonstone
+      hundredId: HUN:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -8476,8 +9627,12 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D15
+    textEdition: Concerning {Fursa}'s land ^[in Swineshead]^, it was a jurisdiction of the King.
+    text: Concerning Fursa's land [in Swineshead], it was a jurisdiction of the King.
   relations:
   - predicate: IN
     to:
@@ -8495,10 +9650,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Pertenhall
     name: Pertenhall (Huntingdonshire D16)
     holding: unclassified
+    textEdition: Concerning Alwin Devil's 1 virgate of land in PERTENHALL, King Edward had the jurisdiction.
+    text: Concerning Alwin Devil's 1 virgate of land in PERTENHALL, King Edward had the jurisdiction.
   relations:
   - predicate: IN
     to:
@@ -8511,7 +9670,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Leightonstone
+      hundredId: HUN:Leightonstone
   - predicate: NAMES
     to:
       type: DomesdayPerson
@@ -8528,10 +9687,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Catworth
     name: Catworth (Huntingdonshire D17)
     holding: unclassified
+    textEdition: They say that the hide of land which Wulfwin {Chit} had in CATWORTH was in the King's jurisdiction and that Earl Harold did not have it.
+    text: They say that the hide of land which Wulfwin Chit had in CATWORTH was in the King's jurisdiction and that Earl Harold did not have it.
   relations:
   - predicate: IN
     to:
@@ -8561,10 +9724,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Little Catworth
     name: Little Catworth (Huntingdonshire D18)
     holding: unclassified
+    textEdition: In LITTLE CATWORTH the same Wulfwin ^[{Chit}]^ had 1 hide over which King Edward always had full jurisdiction; but he could give and sell the land to whom he would. But the Countess [*
+      Judith *]'s men say that the King gave the land to Earl Waltheof.
+    text: In LITTLE CATWORTH the same Wulfwin [Chit] had 1 hide over which King Edward always had full jurisdiction; but he could give and sell the land to whom he would. But the Countess [Judith]'s men
+      say that the King gave the land to Earl Waltheof.
   relations:
   - predicate: IN
     to:
@@ -8602,10 +9771,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Easton
     name: Easton (Huntingdonshire D19)
     holding: unclassified
+    textEdition: The County testifies that the third part of 1/2 hide which lies in EASTON and pays tax in Bedfordshire belongs to the Abbot of Ely's manor of Spaldwick. The Abbot had it in the same way
+      before 1066 and for 5 years after the arrival of King William. Eustace [* the sheriff *] seized this [land] by force from the church and kept it.
+    text: The County testifies that the third part of 1/2 hide which lies in EASTON and pays tax in Bedfordshire belongs to the Abbot of Ely's manor of Spaldwick. The Abbot had it in the same way before
+      1066 and for 5 years after the arrival of King William. Eustace [the sheriff] seized this [land] by force from the church and kept it.
     hasChurch: true
   relations:
   - predicate: IN
@@ -8623,7 +9798,7 @@
   - predicate: IN_HUNDRED
     to:
       type: DomesdayHundred
-      hundredId: BDF:Stodden
+      hundredId: HUN:Stodden
   - predicate: CLAIMANT
     to:
       type: DomesdayPerson
@@ -8640,10 +9815,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Keyston
     name: Keyston (Huntingdonshire D20)
     holding: unclassified
+    textEdition: They say that KEYSTON was and is [part] of King Edward's revenue; and although Aelfric the sheriff resided in that village, yet he always paid the King's revenue from it, and his sons after
+      him, until Eustace ^[the sheriff]^ received the sheriffdom; they have never seen or heard of the sealed [writ] of ?r? King Edward which had put it outside his revenue.
+    text: They say that KEYSTON was and is [part] of King Edward's revenue; and although Aelfric the sheriff resided in that village, yet he always paid the King's revenue from it, and his sons after him,
+      until Eustace [the sheriff] received the sheriffdom; they have never seen or heard of the sealed [writ] of King Edward which had put it outside his revenue.
   relations:
   - predicate: IN
     to:
@@ -8681,8 +9862,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D21
+    textEdition: Alwold and his brothers claim that Eustace ^[the sheriff]^ unjustly took away from them their land ^[in [Great] GIDDING]^. The County denies that they have seen the seal, or an installer
+      who had put him in possession of it.
+    text: Alwold and his brothers claim that Eustace [the sheriff] unjustly took away from them their land [in [Great] GIDDING]. The County denies that they have seen the seal, or an installer who had put
+      him in possession of it.
   relations:
   - predicate: IN
     to:
@@ -8708,10 +9895,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: '[Great, Little and Steeple] Gidding'
     name: '[Great, Little and Steeple] Gidding (Huntingdonshire D22)'
     holding: outlier
+    textEdition: In 1066 [Great] GIDDING was an outlier of Alconbury, in the King's revenue.
+    text: In 1066 [Great] GIDDING was an outlier of Alconbury, in the King's revenue.
   relations:
   - predicate: IN
     to:
@@ -8737,10 +9928,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Buckworth
     name: Buckworth (Huntingdonshire D23)
     holding: outlier
+    textEdition: The County testifies that BUCKWORTH was an outlier of [Great] Paxton before 1066.
+    text: The County testifies that BUCKWORTH was an outlier of [Great] Paxton before 1066.
   relations:
   - predicate: IN
     to:
@@ -8766,10 +9961,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Brampton
     name: Brampton (Huntingdonshire D24)
     holding: unclassified
+    textEdition: They say that the 36 hides of land in BRAMPTON, which Richard the artificer claims belong to the Forest, were [part] of the King's lordship revenue, and did not belong to the Forest.
+    text: They say that the 36 hides of land in BRAMPTON, which Richard the artificer claims belong to the Forest, were [part] of the King's lordship revenue, and did not belong to the Forest.
   relations:
   - predicate: IN
     to:
@@ -8795,10 +9994,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Grafham
     name: Grafham (Huntingdonshire D25)
     holding: unclassified
+    textEdition: They say that GRAFHAM was and is a jurisdiction of the King's and that they have seen neither writ nor installer who had delivered it to Eustace [* the sheriff *].
+    text: They say that GRAFHAM was and is a jurisdiction of the King's and that they have seen neither writ nor installer who had delivered it to Eustace [the sheriff].
   relations:
   - predicate: IN
     to:
@@ -8824,10 +10027,18 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Conington
     name: Conington (Huntingdonshire D26)
     holding: unclassified
+    textEdition: '[NORMANCROSS Hundred] Concerning the 6 hides in CONINGTON, they said that they had heard <208c> that they formerly lay in [the lands] of the Church of Thorney and that they had been granted
+      to Thorkil [* the Dane *] on this condition that after his death they should return to the church with the other 3 hides of the same village. They said that they had heard but had not seen this, nor
+      had they been involved in it.'
+    text: '[NORMANCROSS Hundred] Concerning the 6 hides in CONINGTON, they said that they had heard that they formerly lay in [the lands] of the Church of Thorney and that they had been granted to Thorkil
+      [the Dane] on this condition that after his death they should return to the church with the other 3 hides of the same village. They said that they had heard but had not seen this, nor had they been
+      involved in it.'
     hasChurch: true
   relations:
   - predicate: IN
@@ -8858,10 +10069,16 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Sawtry
     name: Sawtry (Huntingdonshire D27)
     holding: unclassified
+    textEdition: Concerning the land of Tosti [* brother of Erik *] in SAWTRY, they say that his brother Erik [* brother of Tosti *] bequeathed it by name to the Church of Ramsey after the death of himself,
+      his brother and his sister.
+    text: Concerning the land of Tosti [brother of Erik] in SAWTRY, they say that his brother Erik [brother of Tosti] bequeathed it by name to the Church of Ramsey after the death of himself, his brother
+      and his sister.
     hasChurch: true
   relations:
   - predicate: IN
@@ -8900,10 +10117,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     places: Fletton
     name: Fletton (Huntingdonshire D28)
     holding: unclassified
+    textEdition: Concerning [Old] FLETTON, they say that in King Edward's day it all lay in [the lands of] the Church of Peterborough, and ought to lie [there].
+    text: Concerning [Old] FLETTON, they say that in King Edward's day it all lay in [the lands of] the Church of Peterborough, and ought to lie [there].
     hasChurch: true
   relations:
   - predicate: IN
@@ -8934,8 +10155,14 @@
     county: HUN
     countyName: Huntingdonshire
     kind: claim
+    edition: Great Domesday
+    figuresSource: Hull coding
     section: Huntingdonshire claims
     name: Huntingdonshire D29
+    textEdition: Concerning Leofric's land ^[in ORTON [Waterville]]^, they say that it was in the King's jurisdiction, but Bishop Remigius has shown the writ of King Edward by which he gave Leofric, with
+      all [his] land, to the Bishopric of Lincoln, with full jurisdiction. <208d> <209a> BEDFORDSHIRE
+    text: Concerning Leofric's land [in ORTON [Waterville]], they say that it was in the King's jurisdiction, but Bishop Remigius has shown the writ of King Edward by which he gave Leofric, with all [his]
+      land, to the Bishopric of Lincoln, with full jurisdiction. BEDFORDSHIRE
   relations:
   - predicate: IN
     to:

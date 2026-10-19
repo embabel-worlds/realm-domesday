@@ -31,6 +31,13 @@ if [ ! -d "$CACHE/explorer/Databases" ]; then
   unzip -q -o "$CACHE/DomesdayExplorer1.1.zip" -d "$CACHE/explorer"
 fi
 
+# Hull's transcription of the Phillimore translation, CC BY-NC-SA 2.0 UK (dataset h989r385x). The
+# repository sits behind Cloudflare, which answers a bare client with a challenge page.
+if [ ! -f "$CACHE/hull_translation.txt" ]; then
+  curl -fsSL -A "Mozilla/5.0 (realm-domesday build)" -o "$CACHE/hull_translation.txt" \
+    "https://digitalcollections.hull.ac.uk/downloads/h989r387g"
+fi
+
 if [ ! -f "$CACHE/pdxreader.jar" ]; then
   rm -rf "$CACHE/paradoxReader"
   git clone -q "$PDXREADER_REPO" "$CACHE/paradoxReader"
@@ -50,4 +57,6 @@ if [ ! -d "$CACHE/venv" ]; then
   "$CACHE/venv/bin/pip" -q install -r scripts/requirements.txt
 fi
 "$CACHE/venv/bin/python" scripts/decode_textbase.py "$CACHE"
+# The crosswalk to today (ONS, OS, MHCLG open data, Wikidata) — downloaded once into $CACHE/crosswalk.
+"$CACHE/venv/bin/python" scripts/build_crosswalk.py
 "$CACHE/venv/bin/python" scripts/build_reference.py "$CACHE"

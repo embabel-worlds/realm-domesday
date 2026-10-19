@@ -1,3 +1,4 @@
 pyyaml==6.0.3
 pyproj==3.7.2
 beautifulsoup4==4.14.2
+shapely==2.2.0

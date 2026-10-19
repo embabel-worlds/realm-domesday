@@ -1,0 +1,30 @@
+# DERIVE rule set: where the land lay waste, and how far the devastation reached. A hundred is
+# DEVASTATED when much of it is waste, OR when a fair part of it is and it borders a devastated
+# hundred. The second clause is the point: it follows the waste outward, hundred by hundred, from
+# its worst core — the Harrying of the North, the Welsh March — to wherever it thins out. No
+# fixed-depth query can draw that line; the fixpoint does.
+name: domesday/devastation
+derives: DevastatedHundred
+description: >-
+  A hundred with at least minEntries entries is devastated when coreShare per cent or more of them
+  are waste, or when spreadShare per cent or more are and it NEIGHBOURS a devastated hundred.
+  Entries are counted once per hundred by IN_HUNDRED. Hull's `-` (no hundred) and the Yorkshire `Land of …` groupings are fiefs, not hundreds, and are left out. Measure the share and the distance from the
+  core in a view, never in the fixpoint.
+params:
+  coreShare: { type: int, default: 40, description: "Percentage of a hundred's entries that are waste, to be devastated on its own." }
+  spreadShare: { type: int, default: 15, description: "Percentage that suffices beside a devastated hundred." }
+  minEntries: { type: int, default: 3, description: "Fewest entries for a hundred's share to mean anything." }
+rules:
+  - derive: "(h:DevastatedHundred)"
+    from: |
+      MATCH (e:DomesdayEntry)-[:IN_HUNDRED]->(h:DomesdayHundred)
+      WHERE h.name <> '-' AND NOT h.name STARTS WITH 'Land of '
+      WITH h, count(e) AS n, sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS w
+      WHERE n >= $minEntries AND 100 * w >= $coreShare * n
+  - derive: "(h:DevastatedHundred)"
+    from: |
+      MATCH (e:DomesdayEntry)-[:IN_HUNDRED]->(h:DomesdayHundred)
+      WHERE h.name <> '-' AND NOT h.name STARTS WITH 'Land of '
+      WITH h, count(e) AS n, sum(CASE WHEN e.isWaste THEN 1 ELSE 0 END) AS w
+      WHERE n >= $minEntries AND 100 * w >= $spreadShare * n
+        AND EXISTS { (h)-[:NEIGHBOURS]-(:DevastatedHundred) }

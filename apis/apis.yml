@@ -1,0 +1,21 @@
+# Wikipedia, keyless, for the people and places Domesday names. Article text is CC BY-SA 4.0 — it is
+# fetched live, shown with its link, and never stored. Named for this realm because a world holds one
+# API per name, and other realms ship their own Wikipedia APIs.
+- url: wikipedia-summary.json
+  name: domesday_wikipedia_summary
+  type: openapi
+  auth: none
+  # Wikimedia refuses a request without a descriptive User-Agent (HTTP 403, https://w.wiki/4wJS).
+  headers:
+    User-Agent: "EmbabelRealmDomesday/0.1 (https://github.com/embabel-worlds/realm-domesday)"
+  operation-ids:
+    - pageSummary
+
+- url: wikipedia-search.json
+  name: domesday_wikipedia_search
+  type: openapi
+  auth: none
+  headers:
+    User-Agent: "EmbabelRealmDomesday/0.1 (https://github.com/embabel-worlds/realm-domesday)"
+  operation-ids:
+    - searchPages

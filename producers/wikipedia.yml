@@ -1,0 +1,35 @@
+# Wikipedia for the people and places Domesday names, fetched live and never stored: article text
+# is CC BY-SA 4.0, so it is shown with its link and left with Wikipedia.
+#
+# Two producers, because there are two honest states. A person or place whose article was matched
+# and checked (data/people-wikidata.csv; the place crosswalk through Wikidata) is joined by the
+# article TITLE to its summary. Anyone else gets a SEARCH — Wikipedia's own, the name as a phrase
+# with "Domesday" beside it to steer toward the period — and its hits are pages that MENTION the
+# name, never an identification: Leofwin the forester is far likelier to have no article than to be
+# the Leofwin a search finds first.
+
+- name: domesdayWikipediaSummary
+  kind: remote
+  operation: pageSummary
+  records: "$"
+  keyArgs: [title]
+  echoKeyAs: key
+  maxKeysPerCall: 1
+  project:
+    title: title
+    description: description
+    extract: extract
+    thumbnail: thumbnail.source
+    pageUrl: content_urls.desktop.page
+  # Articles change slowly; a week keeps repeat lookups off Wikipedia, a day for a missing page.
+  cache: { kind: ttl, seconds: 604800, negativeTtlSeconds: 86400 }
+
+- name: domesdayWikipediaMentions
+  # Wikipedia's own full-text search, for a name: the pages that MENTION it, ranked by Wikipedia —
+  # mostly the villages a man held, his family, the campaign he died in, and only sometimes an
+  # article about him. A relevance join (top k), so a short list is the answer, not a truncation.
+  kind: remote-search
+  operation: searchPages
+  args: { q: '"{query}" Domesday', limit: 10 }
+  records: "$.pages[*]"
+  k: 6

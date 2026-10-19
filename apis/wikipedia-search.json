@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "domesday-wikipedia-search",
+    "version": "1.0",
+    "description": "English Wikipedia's page search (REST v1). Returns candidate articles for a name — candidates, not identifications: a namesake is as likely as the man himself."
+  },
+  "servers": [{ "url": "https://en.wikipedia.org/w/rest.php/v1" }],
+  "paths": {
+    "/search/page": {
+      "get": {
+        "operationId": "searchPages",
+        "summary": "Articles matching a search",
+        "parameters": [
+          { "name": "q", "in": "query", "required": true, "schema": { "type": "string" },
+            "description": "What to search for, e.g. `Leofwin forester Domesday`." },
+          { "name": "limit", "in": "query", "required": false, "schema": { "type": "integer" },
+            "description": "How many results, 1–100." }
+        ],
+        "responses": { "200": { "description": "the matching pages" } }
+      }
+    }
+  }
+}

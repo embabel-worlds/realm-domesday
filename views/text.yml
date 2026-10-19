@@ -1,0 +1,195 @@
+# Views over what Domesday SAYS — the translation text on each entry (Hull's transcription of the
+# Phillimore edition) and the chapter documents built from it (sources.yml). The figures count what
+# the commissioners coded; the text keeps everything else: eels and salt-pans, renders of honey,
+# hawks' nests, a borough's customs, who seized whose land. Every view returns the entry refs it
+# read, so an answer can be checked against the page.
+#
+# Cost, stated: DomesdayTextMentions is a plain scan, exact and complete. The others make model
+# calls — a judged search, or one reduction over the entries a figure or a word has first narrowed
+# to — and say so in their descriptions.
+
+- name: DomesdayTextMentions
+  description: Every entry whose text mentions a word or phrase, exactly — with the place, county and the text itself. Complete, not a top-ten. THE answer for "where does Domesday mention eels / vineyards / salt / a market / a castle", "which entries say 'waste'", and for counting them. Yorkshire has no text in this edition.
+  params:
+    word:
+      type: string
+      default: "eels"
+      description: "A word or phrase, any case, e.g. `eels`, `vineyard`, `salt-pan`, `hawk`, `burgesses`."
+    county:
+      type: string
+      default: ""
+      description: "County code or name. Empty for all England."
+    limit:
+      type: int
+      default: 200
+      description: "Most rows."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.text IS NOT NULL AND toLower(e.text) CONTAINS toLower($word)
+      AND ($county = '' OR e.county = $county OR toLower(e.countyName) = toLower($county))
+    RETURN e.entryId AS entryId, e.ref AS ref, e.places AS places, e.countyName AS county, e.text AS text
+    ORDER BY county, toInteger(entryId)
+    LIMIT $limit
+
+- name: DomesdayTextMentionsByCounty
+  description: How many entries in each county mention a word or phrase in their text — the map of where a thing was. THE answer for "which county had most vineyards / salt-pans / fisheries mentioned", "where were eels rendered". Counts entries that mention it, not the things themselves.
+  params:
+    word:
+      type: string
+      default: "salt"
+      description: "A word or phrase, any case."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.text IS NOT NULL AND toLower(e.text) CONTAINS toLower($word)
+    RETURN e.countyName AS county, count(e) AS entries
+    ORDER BY entries DESC, county
+
+- name: DomesdaySearchText
+  description: Search what Domesday says by MEANING — a judged search over the translation, chapter by chapter, that reformulates the question, reads the candidates and returns the chapters that bear on it, with the evidence it read. THE answer for "where does Domesday talk about…", "find the entries about a dispute over a mill", "which entries describe the town being burnt". Makes model calls; for an exact word use DomesdayTextMentions.
+  params:
+    query:
+      type: string
+      default: "a town burnt after the King came to England"
+      description: "What to look for, in your own words."
+    limit:
+      type: int
+      default: 8
+      description: "Most chapters."
+  cypher: |
+    MATCH (c:Concept {value: $query})-[r:RELEVANT_TO {via: 'agentic-rag', intent: 'find the Domesday Book chapters whose entries say what the reader describes; quote the entry that says it'}]->(d:Document)
+    WHERE 'domesday' IN d.tags
+    WITH r, d, split(d.uri, '/') AS parts
+    RETURN r.rank AS rank, r.score AS fit, d.title AS chapter, parts[3] AS county, parts[4] AS chapterNumber,
+           r.snippet AS evidence
+    ORDER BY rank
+    LIMIT $limit
+
+- name: DomesdayWhatItSaysAbout
+  description: What Domesday says about one person — every entry naming them (any role, any county), the text of each, and an account written ONLY from those entries, citing each by ref, beside the texts it was written from. THE answer for "tell me about Leofwin the forester", "what does Domesday say about Countess Judith", "who was <name>". Makes one model call; for a magnate with hundreds of entries it reads the most valuable sixty.
+  params:
+    name:
+      type: string
+      default: "Leofwin the forester"
+      description: "The person's name as DomesdayPersonSearch gives it; Hull's brackets are ignored."
+  cypher: |
+    MATCH (p:DomesdayPerson)
+    WHERE toLower(p.canonicalName) = toLower(trim(replace(replace(replace(replace($name, '(', ''), ')', ''), '{', ''), '}', '')))
+    MATCH (e:DomesdayEntry)-[r]->(p)
+    WHERE e.text IS NOT NULL
+    WITH e, CASE type(r)
+              WHEN 'LORD_1066' THEN 'held it before 1066'
+              WHEN 'TENANT_IN_CHIEF' THEN 'held it of the King in 1086'
+              WHEN 'TENANT_1086' THEN 'held it of the tenant-in-chief in 1086'
+              WHEN 'SUBTENANT_1086' THEN 'held it as a sub-tenant in 1086'
+              WHEN 'HELD_PART_1066' THEN 'held part of it before 1066'
+              WHEN 'HELD_PART_1086' THEN 'held part of it in 1086'
+              WHEN 'OVERLORD_1066' THEN 'was overlord before 1066'
+              WHEN 'CLAIMANT' THEN 'claimed it'
+              WHEN 'DEFENDANT' THEN 'defended a claim to it'
+              WHEN 'OFFICIAL' THEN 'acted as an official'
+              ELSE 'is named in it' END AS role
+    ORDER BY coalesce(e.value1086, 0) DESC
+    LIMIT 60
+    RETURN count(e) AS entriesRead,
+           collect({ref: e.ref, places: e.places, role: role, text: e.text}) AS entries,
+           summarize(e.ref + ' (where ' + $name + ' ' + role + '): ' + e.text,
+                     'What these Domesday entries say about ' + $name + ': what they held or lost, where, of whom and when, and anything said about them. Use only these entries and cite the ref in brackets after every statement. Keep apart who did a thing and who testified to it (the Hundred, the jurors, the shire). Say plainly what the entries do not tell.') AS account
+
+- name: DomesdayExtractFromText
+  description: Pull out of the text what the figures do not code — renders of eels, salt-pans, vineyards, honey, iron, hawks — from the entries that mention a word, one list item per thing found, each with its entry. THE answer for "how many eels did Wisbech render", "what did the salt-pans of Droitwich pay", "list the vineyards". Narrows by the word first, then makes one model call over at most eighty entries.
+  params:
+    word:
+      type: string
+      default: "eels"
+      description: "The word that narrows the entries read, e.g. `eels`, `salt`, `vineyard`, `honey`."
+    what:
+      type: string
+      default: "each render of eels, with the number of eels and the place"
+      description: "What to pull out of those entries, in plain words."
+    county:
+      type: string
+      default: ""
+      description: "County code or name. Empty for all England."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.text IS NOT NULL AND toLower(e.text) CONTAINS toLower($word)
+      AND ($county = '' OR e.county = $county OR toLower(e.countyName) = toLower($county))
+    WITH e ORDER BY toInteger(e.entryId)
+    LIMIT 80
+    RETURN count(e) AS entriesRead, extract(e.ref + ' ' + coalesce(e.places, '') + ': ' + e.text, $what) AS found
+
+- name: DomesdayWhyWaste
+  description: Why the land lay waste, in Domesday's words — the recurring reasons and circumstances the text gives for waste entries in a county (burnt, laid waste by the King, by the Welsh, taken into a castle or the forest), grouped into themes with their entries. THE answer for "why was the land waste", "what does Domesday say caused the devastation". One model call over at most a hundred waste entries; Yorkshire has no text.
+  params:
+    county:
+      type: string
+      default: "CHS"
+      description: "County code or name, e.g. `CHS`, `SHR`, `HEF`."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.isWaste AND e.text IS NOT NULL AND (e.county = $county OR toLower(e.countyName) = toLower($county))
+    WITH e LIMIT 100
+    RETURN count(e) AS entriesRead, themes(e.ref + ': ' + e.text, 'why the land is waste or what happened to it') AS reasons
+
+- name: DomesdayDisputes
+  description: The disputed land — entries whose text records a claim, a seizure or a judgement (the claims sections of Lincolnshire, Huntingdonshire and Yorkshire, and the invasiones elsewhere), each labelled by kind of dispute. THE answer for "who was accused of seizing land", "which holdings were disputed", "what did the jurors say". Narrows by the words of dispute first, then labels each entry with a model call.
+  params:
+    county:
+      type: string
+      default: "HUN"
+      description: "County code or name. Empty for all England."
+    limit:
+      type: int
+      default: 40
+      description: "Most entries."
+  cypher: |
+    MATCH (e:DomesdayEntry)
+    WHERE e.text IS NOT NULL AND ($county = '' OR e.county = $county OR toLower(e.countyName) = toLower($county))
+      AND (e.kind = 'claim' OR toLower(e.text) =~ '.*(claim|seized|unjust|wrongful|dispute|the jurors|the men of the hundred|testify|testified|appropriated|annexed|without the king).*')
+    WITH e ORDER BY toInteger(e.entryId)
+    LIMIT $limit
+    RETURN e.ref AS ref, e.places AS places, e.countyName AS county,
+           classify(e.text, 'land seized unjustly,title disputed between claimants,judgement or testimony given,customary due withheld,other') AS dispute,
+           e.text AS text
+
+- name: DomesdayPersonWikipedia
+  description: The checked Wikipedia article for a Domesday person, when there is one — with its Wikidata and ODNB ids and how sure the match is. THE answer for "is there a Wikipedia article about <person>", "who was Odo of Bayeux". 168 of the greatest landholders are linked; for anyone else use DomesdayWikipediaMentions. Fetched live; text is CC BY-SA 4.0, given with its link.
+  params:
+    name:
+      type: string
+      default: "Bishop Odo/of Bayeux"
+      description: "The person's name as DomesdayPersonSearch gives it; Hull's brackets are ignored."
+  cypher: |
+    MATCH (p:DomesdayPerson)
+    WHERE toLower(p.canonicalName) = toLower(trim(replace(replace(replace(replace($name, '(', ''), ')', ''), '{', ''), '}', '')))
+    WITH p ORDER BY p.entryCount DESC LIMIT 1
+    OPTIONAL MATCH (p)-[:WIKIPEDIA]->(w:DomesdayWikipedia)
+    RETURN p.canonicalName AS person, p.wikipediaSearch AS searchName, p.wikidataId AS wikidataId, p.odnbId AS odnbId,
+           p.linkConfidence AS linkConfidence, w.title AS article, w.description AS articleDescription,
+           w.extract AS extract, w.pageUrl AS pageUrl, w.thumbnail AS thumbnail
+
+- name: DomesdayWikipediaMentions
+  description: Wikipedia pages that MENTION a name, from Wikipedia's own search for it beside "Domesday" — usually the villages a person held, their family or an event, sometimes an article about them. Pages that name them, never an identification. THE answer for "what does Wikipedia say about Leofwin the forester", "where else is Merleswein mentioned", for anyone without a checked article. Live search.
+  params:
+    name:
+      type: string
+      default: "Merlesveinn"
+      description: "The name to search for — a person's searchName from DomesdayPersonWikipedia (the first of Hull's alternatives)."
+  cypher: |
+    MATCH (c:Concept {value: $name})-[r:RELEVANT_TO {via: 'keyword'}]->(m:DomesdayWikipediaMention)
+    RETURN r.rank AS rank, m.title AS title, m.key AS articleKey, m.description AS description, m.excerpt AS excerpt
+    ORDER BY rank
+
+- name: DomesdayPlaceWikipedia
+  description: The English Wikipedia article for a Domesday place, reached through its Wikidata item (6 places in 10 have one) — Wikipedia's own summary, fetched live, with the links to Wikidata, Vision of Britain and the Manorial Documents Register. THE answer for "tell me about <place> today", "what does Wikipedia say about Abberley". Text is CC BY-SA 4.0, given with its link.
+  params:
+    placeId:
+      type: string
+      default: "1"
+      description: "The place's id. `1` is Abberley."
+  cypher: |
+    MATCH (p:DomesdayPlace {placeId: $placeId})
+    OPTIONAL MATCH (p)-[:WIKIPEDIA]->(w:DomesdayWikipedia)
+    RETURN p.name AS place, p.wikidataId AS wikidataId, p.visionOfBritainPlaceId AS visionOfBritainPlaceId,
+           p.manorialDocumentsRegisterId AS manorialDocumentsRegisterId, p.openDomesdayPath AS openDomesdayPath,
+           w.title AS article, w.description AS articleDescription, w.extract AS extract, w.pageUrl AS pageUrl, w.thumbnail AS thumbnail

@@ -27,9 +27,10 @@ DomesdayEntry -[LORD_1066 | OVERLORD_1066 | TENANT_IN_CHIEF | TENANT_1086 | SUBT
   `name` keeps Hull's brackets for words it supplied, so one man is `Earl Harold`, `(Earl) Harold` and
   `{Earl} Harold`; grouping by `name` splits him three ways. Find the name with `DomesdayPersonSearch`
   first: `Bishop Odo/of Bayeux`, `Count Robert/of Mortain`, `Earl Roger of Shrewsbury`, `King William`.
-- **A hundred's figures are the county's entries**, DISTINCT per hundred, filtered on the entry's
-  county: detached parts put a county's entries on another county's places (Oswaldslow,
-  Worcestershire, reaches into Gloucestershire and Warwickshire). `DomesdayHundredSummary` does this.
+- **A hundred's figures are its entries by `IN_HUNDRED`** (one edge per entry per hundred), filtered
+  on the hundred's county. An entry points at its own county's hundred, so detached parts count with
+  the hundred they belonged to (Oswaldslow, Worcestershire, reaches into Gloucestershire and
+  Warwickshire). `DomesdayHundredSummary` does this.
 - **Boroughs are not manors.** Shrewsbury, Oxford and the other towns are kind `urban`; "manor"
   questions filter `e.kind = 'manor'`.
 - **Places recur.** There are several Abbertons and dozens of Nortons; always show the county.
@@ -48,13 +49,19 @@ DomesdayEntry -[LORD_1066 | OVERLORD_1066 | TENANT_IN_CHIEF | TENANT_1086 | SUBT
 
 ## What is NOT here — refuse, do not invent
 
-- **Little Domesday: Essex, Norfolk, Suffolk.** Their places and people are listed; their entries,
-  and so every figure, are not. A question about population or value there is unanswerable from
-  this realm — say so.
-- **The text.** No running text of Domesday is stored, only the figures and names coded from it.
-  Quotations are not available.
+- **Little Domesday: Essex, Norfolk, Suffolk** IS here, but its figures are read from the
+  translation by a parser (`figuresSource`), agreeing with Hull's hand-coded figures at 85–100% on
+  most fields and 76–84% for plough teams — say so when a number turns on it. It alone counts people
+  and stock in 1066 (`villagers1066`, `slaves1066` …), so a people comparison across the Conquest
+  speaks for East Anglia, never for England.
+- **The text** is stored for every county but Yorkshire (Hull's transcription omits it): an entry's
+  `text` is the reading text, `textEdition` Hull's edition with its apparatus. Quote the text for
+  what Domesday SAYS and the figures for what it COUNTS, and give the entry's ref with every quote.
 - **Individuals below the landholders.** Villagers and slaves are counts; none is named.
-- **Anything after 1086, or modern population.** Domesday is a survey of 1066 and 1086.
+- **Anything after 1086** is not in Domesday — but today IS in this realm, deliberately and apart:
+  each place's parish and neighbourhood with the 2021 census and the 2025 deprivation indices
+  (`ModernParish`, `ModernNeighbourhood`). Compare households with households, never Domesday
+  households with modern residents.
 - The figures are parsed from Hull's coding of the text and agree with Open Domesday's to 81–99% by
   field (lowest: the lord's plough teams). For one manor, show its figures and its reference
   (`Worcestershire 15,8`) so a reader can check it.
@@ -79,6 +86,29 @@ DomesdayEntry -[LORD_1066 | OVERLORD_1066 | TENANT_IN_CHIEF | TENANT_1086 | SUBT
 | the Harrying of the North / waste | `DomesdayWaste {county}` |
 | castles, markets, churches | `DomesdayFeature {feature, county}` |
 | what was near here | `DomesdayPlacesNear {lat, lng, km}` |
+| who succeeded whom / P's antecessor | `DomesdayAntecessors {name}` |
+| a lord's men / whose man was P | `DomesdayMenOf {name}` |
+| English who kept their land | `DomesdayConquestSurvivors` |
+| what became of the English lords | `DomesdayFateOfEnglishLords` |
+| how far the devastation reached | `DomesdayDevastation {county}` |
+| who held the land: King, Church, lay | `DomesdayWhoHeldTheLand {county}` |
+| women's land 1066 vs 1086 | `DomesdayWomenBeforeAfter` |
+| over- or under-valued manors / what drove value | `DomesdayValueAnomalies {county}` |
+| understocked land / ploughs vs ploughlands | `DomesdayPloughStocking` |
+| how scattered an estate was | `DomesdayFeeScatter` |
+| where Domesday mentions a word (eels, salt, vineyard) | `DomesdayTextMentions {word, county}`, `DomesdayTextMentionsByCounty {word}` |
+| find passages by meaning | `DomesdaySearchText {query}` (model calls) |
+| what Domesday says about a person | `DomesdayWhatItSaysAbout {name}` (one model call) |
+| renders the figures do not code | `DomesdayExtractFromText {word, what, county}` (one model call) |
+| why land was waste | `DomesdayWhyWaste {county}` (one model call) |
+| disputes, claims, seizures | `DomesdayDisputes {county}` |
+| a person's Wikipedia article | `DomesdayPersonWikipedia {name}`; else `DomesdayWikipediaMentions {name}` (pages that only mention them) |
+| a place's Wikipedia article | `DomesdayPlaceWikipedia {placeId}` |
+| a place then and now | `DomesdayThenAndNow {placeId}` |
+| a place today (pay, population, crime) | `DomesdayPlaceToday {placeId}` (needs realm-uk-streets) |
+| grown most / shrunk since 1086 | `DomesdayGrowth {order}` |
+| lost villages | `DomesdayLostVillages {county}` |
+| were the rich places of 1086 rich now | `DomesdayRichThenRichNow {county}` |
 
 County codes: BDF BRK BUK CAM CHS CON DBY DEV DOR ESS GLS HAM HEF HRT HUN KEN LEC LIN MDX NFK NTH
 NTT OXF RUT SHR SOM STS SUF SUR SUS WAR WIL WOR YKS.

@@ -90,21 +90,13 @@ RANKINGS = [
     ('entries', 'Which county has the most Domesday entries?', 'Which county has the fewest entries?'),
 ]
 
+# Questions this realm cannot answer. Little Domesday, the text and a place's parish today were once
+# here; they are answerable now and asked among the answerable questions instead.
 ADVERSARIAL = [
-    ('Were there more slaves before or after the Conquest?', 'note'),
-    ('Did the number of villagers fall after 1066?', 'note'),
     ('Was the population of England bigger in 1066 or in 1086?', 'note'),
-    ('How many slaves were there in 1066?', True),
-    ('How many villagers were there in Essex?', True),
-    ('What was the population of Norfolk in 1086?', True),
-    ('How many mills were there in Suffolk?', True),
-    ('What was Essex worth in 1086?', True),
-    ('How many churches were there in Norfolk?', True),
-    ('What is the modern population of Abberley?', True),
     ('How many people live in Worcestershire today?', True),
     ('What was the name of the priest at Abberley?', False),
     ('Name the villagers who lived at Abberley', False),
-    ('Quote the Domesday text for Abberley', False),
     ('Who held Abberley in 1200?', False),
     ('What was Kent worth in 1100?', True),
     ('How many acres of arable land were there in Kent?', True),
@@ -119,12 +111,11 @@ ADVERSARIAL = [
     ('Which villager in Kent was the richest?', False),
     ('How many people were killed in the Harrying of the North?', True),
     ('What was the weather in 1086?', False),
-    ('How many sheep were there in Essex?', True),
 ]
 
 
 def main():
-    counties = [r['data'] for r in load('01-counties-*.yml') if r['data']['inGreatDomesday']]
+    counties = [r['data'] for r in load('01-counties-*.yml')]
     entries = [r for r in load('05-entries-*.yml')]
     places = {r['data']['placeId']: r['data'] for r in load('03-places-*.yml')}
     people = {r['data']['personId']: r['data'] for r in load('04-people-*.yml')}

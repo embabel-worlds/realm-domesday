@@ -130,6 +130,26 @@ await page.waitForSelector('#drawer.open');
 await page.waitForTimeout(1500);
 check(!(await page.$('#drawer img')), 'a name from the route is escaped, never rendered as markup');
 
+// 7 — a Wikipedia search excerpt is HTML from outside: only its highlight survives, nothing runs or loads
+const rowsEnvelope = (op, data) => ({ ...emptyEnvelope(op), outcome: 'OK', data });
+const person = [{ role: 'LORD_1066', entries: 3, countyCount: 1, countyRecords: 1, value1066Pence: 480, value1086Pence: 240 }];
+override = (path) => {
+  const op = (/\/views\/([^/]+)\/invoke$/.exec(path) || [])[1];
+  if (!op) return undefined;
+  if (op === 'DomesdayPersonSummary') return { status: 200, body: rowsEnvelope(op, person) };
+  if (op === 'DomesdayPersonWikipedia') return { status: 200, body: rowsEnvelope(op, [{ person: 'Merlesveinn', searchName: 'Merlesveinn' }]) };
+  if (op === 'DomesdayWikipediaMentions') return { status: 200, body: rowsEnvelope(op, [{ rank: 1, title: 'Exelby', articleKey: 'Exelby', description: 'Village',
+    excerpt: 'held by <span class="searchmatch">Merleswein</span><img src=x onerror="window.__pwned=1"><script>window.__pwned=2</script>' }]) };
+  return { status: 200, body: emptyEnvelope(op) };
+};
+await fresh(`#/person/${encodeURIComponent('Merlesveinn')}`);
+await page.waitForSelector('#mentions-go', { timeout: 15000 });
+await page.click('#mentions-go');
+await page.waitForSelector('#mentions .excerpt', { timeout: 15000 });
+await page.waitForTimeout(500);
+check(!(await page.$('#mentions img')) && !(await page.evaluate(() => window.__pwned)) && (await page.$('#mentions mark')) !== null,
+  'a Wikipedia excerpt keeps its highlight and runs nothing');
+
 check(errors.length === 0, `no console errors${errors.length ? ': ' + errors.slice(0, 3).join(' | ') : ''}`);
 await browser.close();
 console.log(failures.length ? `${failures.length} FAILED` : 'all passed');

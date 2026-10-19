@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "domesday-wikipedia-summary",
+    "version": "1.0",
+    "description": "The opening of an English Wikipedia article (the REST page-summary endpoint). Text is CC BY-SA 4.0; always show the page URL with it."
+  },
+  "servers": [{ "url": "https://en.wikipedia.org/api/rest_v1" }],
+  "paths": {
+    "/page/summary/{title}": {
+      "get": {
+        "operationId": "pageSummary",
+        "summary": "The summary of one article",
+        "parameters": [
+          { "name": "title", "in": "path", "required": true, "schema": { "type": "string" },
+            "description": "The article title with spaces as underscores, e.g. `Odo_of_Bayeux`." }
+        ],
+        "responses": { "200": { "description": "the summary" }, "404": { "description": "no such article" } }
+      }
+    }
+  }
+}

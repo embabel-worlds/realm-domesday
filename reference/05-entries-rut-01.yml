@@ -10,7 +10,13 @@
     county: RUT
     countyName: Rutland
     kind: customs
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland R1
+    textEdition: In ALSTOE Wapentake there are 2 Hundreds [* `Northern' Hundred and `Southern' Hundred *]; in each 12 carucates taxable, and in each 24 ploughs possible. Half of this Wapentake is in Thurgarton
+      Wapentake, and half [is] in Broxtowe Wapentake.
+    text: In ALSTOE Wapentake there are 2 Hundreds [`Northern' Hundred and `Southern' Hundred]; in each 12 carucates taxable, and in each 24 ploughs possible. Half of this Wapentake is in Thurgarton Wapentake,
+      and half [is] in Broxtowe Wapentake.
     geldUnits: 12
     folio: RUT 1
   relations:
@@ -26,7 +32,12 @@
     county: RUT
     countyName: Rutland
     kind: customs
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland R2
+    textEdition: In `MARTINSLEY' Wapentake there is one Hundred, in which [are] 12 carucates of land taxable, and 48 ploughs possible, apart from the King's three lordship manors, in which 14 ploughs can
+      plough.
+    text: In `MARTINSLEY' Wapentake there is one Hundred, in which [are] 12 carucates of land taxable, and 48 ploughs possible, apart from the King's three lordship manors, in which 14 ploughs can plough.
     geldUnits: 12
     folio: RUT 1
   relations:
@@ -42,7 +53,11 @@
     county: RUT
     countyName: Rutland
     kind: customs
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland R3
+    textEdition: These two Wapentakes ^[Alstoe and `Martinsley']^ are attached to the sheriffdom of Nottingham for the King's tax.
+    text: These two Wapentakes [Alstoe and `Martinsley'] are attached to the sheriffdom of Nottingham for the King's tax.
     folio: RUT 1
   relations:
   - predicate: IN
@@ -61,7 +76,11 @@
     county: RUT
     countyName: Rutland
     kind: customs
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland R4
+    textEdition: '`ROTELAND'' pays to the King £150, blanched. ?1? [Land of the King]'
+    text: '`ROTELAND'' pays to the King £150, blanched. [Land of the King]'
     value1086: 36000
     folio: RUT 1
   relations:
@@ -77,6 +96,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 1
     folio: RUT 1
   relations:
@@ -92,9 +113,16 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Greetham
     name: Greetham (Rutland 1,5)
     holding: manor
+    textEdition: ALSTOE Wapentake [* `Northern' Hundred *] ?M? In GREETHAM [* Countess *] Goda? had 3 carucates of land taxable. Land for 8 ploughs. The King has 2 ploughs in lordship; 33 villagers and
+      4 smallholders who have 8 ploughs; 1 mill; meadow, 7 acres. Pasturable woodland in [various] places 16 furlongs long and 7 furlongs wide. Value before 1066 £7; now £10. [= ?1? [Land of the King. King
+      William holds it.] =]
+    text: ALSTOE Wapentake [`Northern' Hundred] In GREETHAM [Countess] Goda? had 3 carucates of land taxable. Land for 8 ploughs. The King has 2 ploughs in lordship; 33 villagers and 4 smallholders who
+      have 8 ploughs; 1 mill; meadow, 7 acres. Pasturable woodland in [various] places 16 furlongs long and 7 furlongs wide. Value before 1066 £7; now £10.
     households: 37
     villagers: 33
     smallholders: 4
@@ -137,9 +165,17 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Cottesmore
     name: Cottesmore (Rutland 1,6)
     holding: manor
+    textEdition: ?M? In COTTESMORE [* Countess *] Goda? had 3 carucates of land taxable. Land for 12 ploughs. The King has 3 ploughs in lordship; 3 Freemen with 1/2 carucate of this land; 40 villagers and
+      6 smallholders who have 20 ploughs. Meadow, 40 acres; woodland 1 league long and 7 furlongs wide. Value before 1066 £7; now £10. Of the land of this manor a certain Geoffrey has 1/2 carucate; he has
+      1 plough; 8 villagers. Value 20s. [= ?1? [Land of the King. King William holds it.] =] ?2? [Land of Countess Judith]
+    text: In COTTESMORE [Countess] Goda? had 3 carucates of land taxable. Land for 12 ploughs. The King has 3 ploughs in lordship; 3 Freemen with 1/2 carucate of this land; 40 villagers and 6 smallholders
+      who have 20 ploughs. Meadow, 40 acres; woodland 1 league long and 7 furlongs wide. Value before 1066 £7; now £10. Of the land of this manor a certain Geoffrey has 1/2 carucate; he has 1 plough; 8
+      villagers. Value 20s. [Land of Countess Judith]
     households: 57
     villagers: 48
     smallholders: 6
@@ -186,6 +222,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 2
     folio: RUT 1
   relations:
@@ -205,9 +243,17 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Market] Overton'
     name: '[Market] Overton (Rutland 2,7)'
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Northern'' Hundred *] ?M? In [Market] OVERTON and [its] outlier, STRETTON, Earl Waltheof had 3 1/2 carucates of land taxable. Land for 12 ploughs. Countess Judith
+      has 3 ploughs; 35 villagers and 8 smallholders who have 9 ploughs. Meadow, 40 acres; pasturable woodland in [various] places 1 league long and 1/2 league wide. Value before 1066 £12; now £20. Alfred
+      of Lincoln claims a fourth part, in Stretton. [= ?2? [Land of Countess Judith] =]'
+    text: '[ALSTOE Wapentake `Northern'' Hundred] In [Market] OVERTON and [its] outlier, STRETTON, Earl Waltheof had 3 1/2 carucates of land taxable. Land for 12 ploughs. Countess Judith has 3 ploughs;
+      35 villagers and 8 smallholders who have 9 ploughs. Meadow, 40 acres; pasturable woodland in [various] places 1 league long and 1/2 league wide. Value before 1066 £12; now £20. Alfred of Lincoln claims
+      a fourth part, in Stretton.'
     households: 43
     villagers: 35
     smallholders: 8
@@ -258,9 +304,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Thistleton
     name: Thistleton (Rutland 2,8)
     holding: manor
+    textEdition: ?M? In THISTLETON Erik [* brother of Tosti *] had 1/2 carucate of land taxable. Land for 1 plough. Hugh [* of Hotot *] has from Countess Judith 1 plough; 6 villagers with 1 plough. Value
+      before 1066, 20s; now 40s. [= ?2? [Land of Countess Judith] =] ?[2a]? [Land of Alfred of Lincoln]
+    text: In THISTLETON Erik [brother of Tosti] had 1/2 carucate of land taxable. Land for 1 plough. Hugh [of Hotot] has from Countess Judith 1 plough; 6 villagers with 1 plough. Value before 1066, 20s;
+      now 40s. [Land of Alfred of Lincoln]
     households: 6
     villagers: 6
     ploughlands: 1
@@ -303,6 +355,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 2a
     folio: RUT 1
   relations:
@@ -322,9 +376,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Thistleton
     name: Thistleton (Rutland 2a,9)
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Northern'' Hundred *] ?M? There also ^[THISTLETON]^ Siward <of Thistleton> had 1/2 carucate of land taxable. Land for 1 plough. Alfred of Lincoln has 1 plough; 3 villagers
+      and 2 smallholders with 1/2 plough. Value before 1066, 20s; now 60s. [= ?[2a]? [Land of Alfred of Lincoln] =] ?[3]? [Land of Robert Malet]'
+    text: '[ALSTOE Wapentake `Northern'' Hundred] There also [THISTLETON] Siward had 1/2 carucate of land taxable. Land for 1 plough. Alfred of Lincoln has 1 plough; 3 villagers and 2 smallholders with
+      1/2 plough. Value before 1066, 20s; now 60s. [Land of Robert Malet]'
     households: 5
     villagers: 3
     smallholders: 2
@@ -365,6 +425,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 3
     folio: RUT 1
   relations:
@@ -384,9 +446,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Teigh
     name: Teigh (Rutland 3,10)
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Northern'' Hundred *] ?M? In the same Hundred in TEIGH Godwin <of Barrowby> had 1 1/2 carucates of land taxable. Land for 5 ploughs. Robert Malet has 2 ploughs; 15
+      villagers with 4 ploughs. Meadow 4 furlongs in length and 3 furlongs wide. 1 mill, 2s. Value before 1066 £4; now the same. [= ?[3]? [Land of Robert Malet] =] ?[2]? [Land of Countess Judith]'
+    text: '[ALSTOE Wapentake `Northern'' Hundred] In the same Hundred in TEIGH Godwin had 1 1/2 carucates of land taxable. Land for 5 ploughs. Robert Malet has 2 ploughs; 15 villagers with 4 ploughs. Meadow
+      4 furlongs in length and 3 furlongs wide. 1 mill, 2s. Value before 1066 £4; now the same. [Land of Countess Judith]'
     households: 15
     villagers: 15
     ploughlands: 5
@@ -426,6 +494,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 2
     folio: RUT 1
   relations:
@@ -441,9 +511,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Whissendine
     name: Whissendine (Rutland 2,11)
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Southern'' Hundred *] ?2M? In WHISSENDINE Earl Waltheof had 4 carucates of land taxable. Land for 12 ploughs. Hugh of Hotot has from the Countess 5 ploughs; 27 villagers
+      and 6 smallholders who have 8 ploughs. Value before 1066 £8; now £13. [= ?[2]? [Land of Countess Judith] =]'
+    text: '[ALSTOE Wapentake `Southern'' Hundred] In WHISSENDINE Earl Waltheof had 4 carucates of land taxable. Land for 12 ploughs. Hugh of Hotot has from the Countess 5 ploughs; 27 villagers and 6 smallholders
+      who have 8 ploughs. Value before 1066 £8; now £13.'
     households: 33
     villagers: 27
     smallholders: 6
@@ -487,9 +563,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Exton
     name: Exton (Rutland 2,12)
     holding: manor
+    textEdition: ?M? In EXTON Earl Waltheof had 2 carucates of land taxable. Land for 12 ploughs. Countess Judith has 3 ploughs; 37 villagers with 8 ploughs. 2 mills, 13s; meadow 6 furlongs in length; <293d>
+      pasturable woodland in [various] places 5 furlongs long and 5 wide. Value before 1066 £8; now £10. [= ?[2]? [Land of Countess Judith] =]
+    text: In EXTON Earl Waltheof had 2 carucates of land taxable. Land for 12 ploughs. Countess Judith has 3 ploughs; 37 villagers with 8 ploughs. 2 mills, 13s; meadow 6 furlongs in length; pasturable woodland
+      in [various] places 5 furlongs long and 5 wide. Value before 1066 £8; now £10.
     households: 37
     villagers: 37
     ploughlands: 12
@@ -530,9 +612,16 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Whitwell
     name: Whitwell (Rutland 2,13)
     holding: manor
+    textEdition: ?M? In WHITWELL {Besi} <of Calverton> had 1 carucate of land taxable. Land for 3 ploughs. Herbert has from Countess Judith 1 plough; 6 villagers and 4 smallholders who have 2 ploughs. A
+      church and a priest; meadow, 20 acres; 1 mill, 12d; pasturable woodland in [various] places 6 furlongs and 6 perches in length and 3 furlongs and 13 perches in width. Value before 1066, 40s; now 40[s].
+      [= ?[2]? [Land of Countess Judith] =] ?[4]? [Land of Oger ^[son of {Ungemar}]^]
+    text: In WHITWELL Besi had 1 carucate of land taxable. Land for 3 ploughs. Herbert has from Countess Judith 1 plough; 6 villagers and 4 smallholders who have 2 ploughs. A church and a priest; meadow,
+      20 acres; 1 mill, 12d; pasturable woodland in [various] places 6 furlongs and 6 perches in length and 3 furlongs and 13 perches in width. Value before 1066, 40s; now 40[s]. [Land of Oger [son of Ungemar]]
     households: 11
     villagers: 6
     smallholders: 4
@@ -580,6 +669,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 4
     folio: RUT 1
   relations:
@@ -599,9 +690,16 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '`Awsthorp'''
     name: '`Awsthorp'' (Rutland 4,14)'
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Southern'' Hundred *] ?M? In `AUSTHORP'' Leofric had 1 carucate of land taxable. Land for 5 ploughs. Oger son of {Ungemar} has from the King 2 ploughs; 11 villagers
+      and 4 smallholders with 4 ploughs; meadow, 16 acres. Pasturable woodland 3 furlongs long and 2 wide. Value before 1066 and now 40s. [= ?[4]? [Land of Oger ^[son of {Ungemar}]^] =] ?[5]? [Land of Gilbert
+      of Ghent]'
+    text: '[ALSTOE Wapentake `Southern'' Hundred] In `AUSTHORP'' Leofric had 1 carucate of land taxable. Land for 5 ploughs. Oger son of Ungemar has from the King 2 ploughs; 11 villagers and 4 smallholders
+      with 4 ploughs; meadow, 16 acres. Pasturable woodland 3 furlongs long and 2 wide. Value before 1066 and now 40s. [Land of Gilbert of Ghent]'
     households: 15
     villagers: 11
     smallholders: 4
@@ -642,6 +740,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 5
     folio: RUT 1
   relations:
@@ -661,9 +761,16 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Burley
     name: Burley (Rutland 5,15)
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Southern'' Hundred *] ?M? In BURLEY Ulf [* Fenman *] had 2 carucates of land taxable. Land for 7 ploughs. Geoffrey [* of Armentières *], Gilbert of Ghent''s man, has
+      2 ploughs; 30 villagers and 8 smallholders who have 4 ploughs; meadow, 30 acres. Pasturable woodland in [various] places 1 league long and 3 furlongs wide. Value before 1066 £4; now 100s. [= ?[5]?
+      [Land of Gilbert of Ghent] =] ?[6]? [Land of Earl Hugh]'
+    text: '[ALSTOE Wapentake `Southern'' Hundred] In BURLEY Ulf [Fenman] had 2 carucates of land taxable. Land for 7 ploughs. Geoffrey [of Armentières], Gilbert of Ghent''s man, has 2 ploughs; 30 villagers
+      and 8 smallholders who have 4 ploughs; meadow, 30 acres. Pasturable woodland in [various] places 1 league long and 3 furlongs wide. Value before 1066 £4; now 100s. [Land of Earl Hugh]'
     households: 38
     villagers: 30
     smallholders: 8
@@ -709,6 +816,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 6
     folio: RUT 1
   relations:
@@ -728,9 +837,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ashwell
     name: Ashwell (Rutland 6,16)
     holding: manor
+    textEdition: '[* ALSTOE Wapentake `Southern'' Hundred *] ?M? In ASHWELL Earl Harold had 2 carucates of land taxable. Land for 6 ploughs. Jocelyn [* of Tuschet *], Earl Hugh''s man, has 2 ploughs; 13
+      villagers and 3 smallholders who have 5 ploughs; meadow, 16 acres. Value before 1066, 100s; now £6. [= ?[6]? [Land of Earl Hugh] =] ?[1]? [Land of the King]'
+    text: '[ALSTOE Wapentake `Southern'' Hundred] In ASHWELL Earl Harold had 2 carucates of land taxable. Land for 6 ploughs. Jocelyn [of Tuschet], Earl Hugh''s man, has 2 ploughs; 13 villagers and 3 smallholders
+      who have 5 ploughs; meadow, 16 acres. Value before 1066, 100s; now £6. [Land of the King]'
     households: 16
     villagers: 13
     smallholders: 3
@@ -776,6 +891,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 1
     folio: RUT 1
   relations:
@@ -791,9 +908,17 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Oakham
     name: Oakham (Rutland 1,17)
     holding: manor
+    textEdition: '`MARTINSLEY'' Wapentake ?M? In OAKHAM, with 5 outliers, Church jurisdiction, Queen Edith had 4 carucates of land taxable. Land for 16 ploughs. The King has 2 ploughs at the hall; however,
+      another 4 ploughs possible. 138 villagers and 19 smallholders who have 37 ploughs. Meadow, 80 acres. A priest and a church ^[of Oakham]^ to which 4 bovates of this land belong; pasturable woodland
+      1 league long and 1/2 league wide. Value before 1066 £40. [= ?[1]? [Land of the King. King William holds it.] =]'
+    text: '`MARTINSLEY'' Wapentake In OAKHAM, with 5 outliers, Church jurisdiction, Queen Edith had 4 carucates of land taxable. Land for 16 ploughs. The King has 2 ploughs at the hall; however, another
+      4 ploughs possible. 138 villagers and 19 smallholders who have 37 ploughs. Meadow, 80 acres. A priest and a church [of Oakham] to which 4 bovates of this land belong; pasturable woodland 1 league
+      long and 1/2 league wide. Value before 1066 £40.'
     households: 157
     villagers: 138
     smallholders: 19
@@ -843,9 +968,15 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Oakham
     name: Oakham (Rutland 1,18)
     holding: manor
+    textEdition: ?M? There also ^[OAKHAM]^ Leofnoth had 1 carucate of land taxable. [***]. Fulcher Malsor has 5 oxen in a plough and meadow, 6 acres. [Value] before 1066 and now, 20s. The whole manor, with
+      the outliers, 3 leagues long and 1 league and 8 furlongs wide. [= ?[1]? [Land of the King. King William holds it.] =]
+    text: There also [OAKHAM] Leofnoth had 1 carucate of land taxable. . Fulcher Malsor has 5 oxen in a plough and meadow, 6 acres. [Value] before 1066 and now, 20s. The whole manor, with the outliers,
+      3 leagues long and 1 league and 8 furlongs wide.
     geldUnits: 1
     value1066: 240
     value1086: 240
@@ -884,9 +1015,17 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: '[Middle, Nether and Upper] Hambleton'
     name: '[Middle, Nether and Upper] Hambleton (Rutland 1,19)'
     holding: manor
+    textEdition: ?M? In HAMBLETON, with 7 outliers, Church jurisdiction, Queen Edith had 4 carucates of land taxable. Land for 16 ploughs. The King has 5 ploughs in lordship, and 140 villagers and 13 smallholders
+      who have 40 ploughs. 3 priests and 3 churches, where 1 bovate and 8 acres of land belong. 1 mill, 21s 4d; meadow, 40 acres; fertile underwood in [various] places, 3 leagues long and 1 1/2 leagues
+      wide. Value before 1066 £52. The whole manor, with the outliers, 3 leagues and 8 furlongs long and 2 leagues and 8 furlongs wide. [= ?[1]? [Land of the King. King William holds it.] =]
+    text: In HAMBLETON, with 7 outliers, Church jurisdiction, Queen Edith had 4 carucates of land taxable. Land for 16 ploughs. The King has 5 ploughs in lordship, and 140 villagers and 13 smallholders
+      who have 40 ploughs. 3 priests and 3 churches, where 1 bovate and 8 acres of land belong. 1 mill, 21s 4d; meadow, 40 acres; fertile underwood in [various] places, 3 leagues long and 1 1/2 leagues
+      wide. Value before 1066 £52. The whole manor, with the outliers, 3 leagues and 8 furlongs long and 2 leagues and 8 furlongs wide.
     households: 156
     villagers: 140
     smallholders: 13
@@ -930,9 +1069,17 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ridlington
     name: Ridlington (Rutland 1,20)
     holding: manor
+    textEdition: ?M? In RIDLINGTON, with 7 outliers, Church jurisdiction, Queen Edith had 4 carucates of land taxable. Land for 16 ploughs. The King has 4 ploughs in lordship, and 170 villagers and 26 smallholders
+      who have 30 ploughs; 2 Freemen with 2 ploughs. 2 priests and 3 churches; 2 mill-sites; meadow, 40 acres; pasturable woodland in [various] places 2 leagues long and 8 furlongs wide. Value before 1066
+      £40. The whole manor, with the outliers, 3 leagues and 7 furlongs long and 2 leagues and 2 furlongs wide. [= ?[1]? [Land of the King. King William holds it.] =] <294a> ?[7]? [Land of Albert the cleric]
+    text: In RIDLINGTON, with 7 outliers, Church jurisdiction, Queen Edith had 4 carucates of land taxable. Land for 16 ploughs. The King has 4 ploughs in lordship, and 170 villagers and 26 smallholders
+      who have 30 ploughs; 2 Freemen with 2 ploughs. 2 priests and 3 churches; 2 mill-sites; meadow, 40 acres; pasturable woodland in [various] places 2 leagues long and 8 furlongs wide. Value before 1066
+      £40. The whole manor, with the outliers, 3 leagues and 7 furlongs long and 2 leagues and 2 furlongs wide. [Land of Albert the cleric]
     households: 200
     villagers: 170
     smallholders: 26
@@ -977,6 +1124,8 @@
     county: RUT
     countyName: Rutland
     kind: fief heading
+    edition: Great Domesday
+    figuresSource: Hull coding
     name: Rutland 7
     folio: RUT 2
   relations:
@@ -996,9 +1145,20 @@
     county: RUT
     countyName: Rutland
     kind: manor
+    edition: Great Domesday
+    figuresSource: Hull coding
     places: Ridlington
     name: Ridlington (Rutland 7,21)
     holding: manor
+    textEdition: '[* `MARTINSLEY'' Wapentake *] In the aforesaid land ^[RIDLINGTON]^ Albert the cleric has 1 bovate of land; he has 1 mill, 16d. Albert also has from the King the church of Oakham, the [church
+      of] Hambleton, and the [church of] St Peter of Stamford, which belongs to Hambleton, with the lands attached to these churches, that is 7 bovates. In this same land of his, 8 ploughs possible; however,
+      16 ploughs plough there. He himself has in lordship 4 ploughs; 18 villagers and 6 smallholders who have 5 ploughs. Value before 1066 £8; now £10. ^[In Oakham]^ [= ?[7]? [Land of Albert the cleric]
+      =] <294b> <294c> <294d> <295a> <295b> <295c> <295d> YORKSHIRE: [For copyright reasons, the text for Yorkshire cannot be included] <297a> <297b> <297c> <297d> <298a> YORKSHIRE CLAIMS: [For copyright
+      reasons, the text for the Yorkshire Claims cannot be included] <333b> <333c> <333d> <334a> <334b> <334c> <334d> <335a> <335b> <335c> <335d> <336a> LINCOLNSHIRE List 1 [City of Lincoln]'
+    text: '[`MARTINSLEY'' Wapentake] In the aforesaid land [RIDLINGTON] Albert the cleric has 1 bovate of land; he has 1 mill, 16d. Albert also has from the King the church of Oakham, the [church of] Hambleton,
+      and the [church of] St Peter of Stamford, which belongs to Hambleton, with the lands attached to these churches, that is 7 bovates. In this same land of his, 8 ploughs possible; however, 16 ploughs
+      plough there. He himself has in lordship 4 ploughs; 18 villagers and 6 smallholders who have 5 ploughs. Value before 1066 £8; now £10. [In Oakham] YORKSHIRE: [For copyright reasons, the text for Yorkshire
+      cannot be included] YORKSHIRE CLAIMS: [For copyright reasons, the text for the Yorkshire Claims cannot be included] LINCOLNSHIRE List 1 [City of Lincoln]'
     households: 24
     villagers: 18
     smallholders: 6

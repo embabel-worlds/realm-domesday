@@ -1,0 +1,136 @@
+# 1086 beside today. A Domesday place reaches its parish and neighbourhood today by a point test on
+# its grid square's centre (types/modern.yml), so every comparison here is between the households
+# Domesday counted and the households the 2021 census counted — heads of household both times.
+# A parish can hold several vills, so parish views sum the vills first. And one ENTRY can describe
+# several vills — a Lincolnshire soke names a dozen — so an entry's households are shared equally
+# among the places it describes. Without that, the soke's 900 households land whole in every parish
+# it touches. The share is an approximation, and the views say so.
+
+- name: DomesdayThenAndNow
+  description: One Domesday place in 1086 beside the same place today — its households, plough teams and value in 1086 (summed over the entries about it, an entry that describes several places shared equally among them; mostPlacesInOneEntry says when that happened), the civil parish it lies in now with its 2021 households and residents, its neighbourhood's 2025 deprivation decile and rural-urban class, the nearest modern place-name, and whether it looks lost. THE answer for "what is Abberley like now", "how has <place> changed since Domesday", "is <place> still there".
+  params:
+    placeId:
+      type: string
+      default: "1"
+      description: "The place's id (DomesdayPlaceSearch gives it). `1` is Abberley."
+  cypher: |
+    MATCH (p:DomesdayPlace {placeId: $placeId})
+    OPTIONAL MATCH (e:DomesdayEntry)-[:DESCRIBES]->(p)
+    OPTIONAL MATCH (e)-[:DESCRIBES]->(shared:DomesdayPlace)
+    WITH p, e, count(shared) AS k
+    WITH p, count(e) AS entries, sum(CASE WHEN k > 0 THEN e.households / k END) AS households1086,
+         sum(CASE WHEN k > 0 THEN e.ploughTeams / k END) AS ploughTeams1086,
+         sum(CASE WHEN k > 0 THEN e.value1086 / k END) AS value1086Pence, max(k) AS mostPlacesInOneEntry
+    OPTIONAL MATCH (p)-[:NOW_IN]->(par:ModernParish)
+    OPTIONAL MATCH (p)-[:NOW_IN_NEIGHBOURHOOD]->(n:ModernNeighbourhood)
+    RETURN p.placeId AS placeId, p.name AS place, p.countyName AS county, entries,
+           round(households1086 * 10) / 10 AS households1086, round(ploughTeams1086 * 10) / 10 AS ploughTeams1086, mostPlacesInOneEntry,
+           round(value1086Pence / 2.4) / 100 AS value1086Pounds,
+           par.parishName AS parish2021, par.ladName AS district, par.households2021 AS households2021,
+           par.usualResidents2021 AS residents2021, par.domesdayPlaces AS domesdayPlacesInParish,
+           n.imd2025Decile AS deprivationDecile2025, n.urbanRural AS urbanRural, n.ruc21Name AS settingToday,
+           p.modernPlaceName AS nearestModernPlace, p.modernPlaceDistanceKm AS nearestModernPlaceKm, p.likelyLost AS likelyLost,
+           p.wikipedia AS wikipedia, p.wikidataId AS wikidataId
+
+- name: DomesdayGrowth
+  description: How much each parish has grown since Domesday — the households Domesday counted in the vills that lie in it, beside the households of 2021, and how many times more there are now. THE answer for "which places have grown most since 1086", "which villages are hardly bigger than in Domesday", "where are there fewer households than in 1086". Parishes whose vills record fewer than minHouseholds households in 1086 are left out, because a ratio over a handful means little. An entry describing several vills is shared equally among them, so a parish holding part of a great soke gets its share, not the whole.
+  params:
+    order:
+      type: string
+      default: "desc"
+      description: "`desc` for the most growth first, `asc` for the least (including any that shrank)."
+    minHouseholds:
+      type: int
+      default: 20
+      description: "Fewest 1086 households for a parish to be ranked."
+    limit:
+      type: int
+      default: 30
+      description: "Most rows."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[:DESCRIBES]->(x:DomesdayPlace)
+    WHERE e.households IS NOT NULL
+    WITH e, count(x) AS k
+    MATCH (e)-[:DESCRIBES]->(p:DomesdayPlace)-[:NOW_IN]->(par:ModernParish)
+    WHERE par.households2021 IS NOT NULL
+    WITH par, collect(DISTINCT p.name) AS vills, sum(1.0 * e.households / k) AS households1086
+    WHERE households1086 >= $minHouseholds
+    WITH par, vills, households1086, toFloat(par.households2021) / households1086 AS times
+    RETURN par.parishName AS parish, par.ladName AS district, vills, par.households2021 AS households2021,
+           round(households1086) AS households1086, round(times * 100) / 100 AS timesAsMany
+    ORDER BY CASE WHEN $order = 'asc' THEN times ELSE -times END
+    LIMIT $limit
+
+- name: DomesdayRichThenRichNow
+  description: Were the rich places of 1086 the comfortable places of 2025? The correlation, across Domesday places, between a place's 1086 value and its neighbourhood's 2025 deprivation decile (10 = least deprived), with how much the sample can tell. Measured over 8,479 places it is r = 0.03 — detectable with that many places, and practically nothing — so the honest answer is that 1086 wealth does not predict wealth today. THE answer for "were the richest Domesday manors still affluent", "does Domesday wealth predict wealth today". A correlation across places, not a claim about any one; a town of 1086 is often a deprived inner-city neighbourhood now.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code or name. Empty for all England."
+  cypher: |
+    MATCH (e:DomesdayEntry)-[:DESCRIBES]->(p:DomesdayPlace)-[:NOW_IN_NEIGHBOURHOOD]->(n:ModernNeighbourhood)
+    WHERE e.value1086 IS NOT NULL AND n.imd2025Decile IS NOT NULL
+      AND ($county = '' OR p.county = $county OR toLower(p.countyName) = toLower($county))
+    WITH p, n, sum(e.value1086) AS value
+    RETURN correlate(toFloat(value), toFloat(n.imd2025Decile)) AS value1086VsDecile2025
+
+- name: DomesdayLostVillages
+  description: Places Domesday names that may be lost — with no Wikidata settlement and no same-named modern place within 2 km — with what Domesday recorded there, the nearest modern place-name and its distance. THE answer for "which Domesday villages have disappeared", "lost villages in <county>". CANDIDATES, not findings — a grid error, a renamed place or a surviving farm can look lost; the ones with many households in 1086 are the interesting ones. A name that survives in its parish's (Hardwicke in Elmstone Hardwicke) and a quarter of a town (Westgate, Canterbury) are left out.
+  params:
+    county:
+      type: string
+      default: ""
+      description: "County code or name. Empty for all England."
+    limit:
+      type: int
+      default: 50
+      description: "Most rows."
+  cypher: |
+    MATCH (p:DomesdayPlace)
+    WHERE p.likelyLost = true AND ($county = '' OR p.county = $county OR toLower(p.countyName) = toLower($county))
+      AND NOT coalesce(p.parishName, '') ENDS WITH 'unparished area'
+      AND NOT toLower(coalesce(p.parishName, '')) CONTAINS toLower(trim(replace(replace(p.name, '[', ''), ']', '')))
+    OPTIONAL MATCH (e:DomesdayEntry)-[:DESCRIBES]->(p)
+    WITH p, count(e) AS entries, sum(e.households) AS households1086, sum(e.value1086) AS v
+    RETURN p.placeId AS placeId, p.name AS place, p.countyName AS county, p.gridRef AS gridRef, entries, households1086,
+           round(v / 2.4) / 100 AS value1086Pounds, p.modernPlaceName AS nearestModernPlace,
+           p.modernPlaceDistanceKm AS nearestModernPlaceKm, p.parishName AS parishToday, p.lat AS lat, p.lng AS lng
+    ORDER BY households1086 DESC, place
+    LIMIT $limit
+
+# ── Today, from realm-uk-streets ────────────────────────────────────────────────────────────────
+# A Domesday place carries today's ONS district and neighbourhood codes, and realm-uk-streets joins
+# its live public data on exactly those codes — so the place opens a UkPlace by them and reaches it.
+# Nothing is stored: each figure is fetched live by realm-uk-streets and carries its own date. Needs
+# realm-uk-streets installed in the world; without it these labels do not exist and the view fails,
+# which the app reports as "today's figures need realm-uk-streets".
+
+- name: DomesdayPlaceToday
+  description: A Domesday place today, from realm-uk-streets' live public data on its district and neighbourhood — median full-time pay in the district, population by age, recorded crime per 1,000, people claiming unemployment benefit, the district's 2025 deprivation rank and the neighbourhood's population density. THE answer for "what is <Domesday place> like today", "how prosperous is Abberley now". District figures describe the whole local authority, not the village. Crime is published by community safety partnership, so where several districts share one (South Worcestershire, East Devon) the crime figures are empty — not zero. Needs realm-uk-streets.
+  params:
+    placeId:
+      type: string
+      default: "1"
+      description: "The place's id. `1` is Abberley."
+  cypher: |
+    MATCH (p:DomesdayPlace {placeId: $placeId})
+    WHERE p.ladCode IS NOT NULL
+    MATCH (u:UkPlace {districtCode: p.ladCode, lsoa: p.lsoa21Code})
+    OPTIONAL MATCH (u)-[:HAS_INCOME]->(i:AreaIncome)
+    OPTIONAL MATCH (u)-[:HAS_DENSITY]->(d:AreaDensity)
+    OPTIONAL MATCH (u)-[:HAS_DEPRIVATION_2025]->(x:DistrictDeprivation2025)
+    OPTIONAL MATCH (u)-[:HAS_DISTRICT_CRIME]->(c:DistrictCrime)
+    WITH p, i, d, x, c, u
+    OPTIONAL MATCH (u)-[:HAS_POPULATION]->(b:PopulationBand)
+    WITH p, i, d, x, c, u, collect(DISTINCT {band: b.band, persons: b.persons, year: b.year}) AS population
+    OPTIONAL MATCH (u)-[:HAS_CLAIMANTS]->(k:ClaimantCount)
+    WITH p, i, d, x, c, population, k ORDER BY k.month DESC
+    WITH p, i, d, x, c, population, collect(k)[0] AS claimants
+    RETURN p.placeId AS placeId, p.name AS place, p.ladName AS district,
+           i.annualPay AS medianFullTimePay, i.year AS payYear,
+           d.density AS neighbourhoodPersonsPerKm2,
+           x.rankOfAverageScore AS districtDeprivationRank2025,
+           c.totalRate AS crimesPer1000, c.violenceRate AS violencePer1000,
+           claimants.claimants AS unemploymentClaimants, claimants.month AS claimantMonth,
+           population
