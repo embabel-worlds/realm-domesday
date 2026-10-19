@@ -276,13 +276,14 @@
     - q: "how many acres of arable land were there in Exampleshire"
       cypher: |
         MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS arableIsRecordedAsPloughlandsNotAcres LIMIT 1
-    # STEERING — before vs after the Conquest: VALUES compare, over entries stating both years; PEOPLE do
-    # not — population is recorded for 1086 only, so give the 1086 figure and say 1066 was not counted:
+    # STEERING — before vs after the Conquest: VALUES compare over entries stating both years; PEOPLE only
+    # in Little Domesday, whose 1066 counts are DomesdayFigures by FIGURES_1066 — East Anglia, not England:
     - q: "were there more villagers before or after the Conquest"
       cypher: |
-        MATCH (e:DomesdayEntry)
-        RETURN round(sum(e.villagers)) AS villagers1086,
-               'Domesday counts people in 1086 only; no 1066 figure was recorded, so it cannot say whether there were more before or after the Conquest.' AS note
+        MATCH (e:DomesdayEntry)-[:FIGURES_1066]->(f:DomesdayFigures)
+        WHERE f.villagers IS NOT NULL AND e.villagers IS NOT NULL
+        RETURN sum(f.villagers) AS villagers1066, sum(e.villagers) AS villagers1086, count(e) AS entries,
+               'Essex, Norfolk and Suffolk only: Great Domesday did not count people in 1066' AS note
     - q: "was Exampleshire worth more before or after the Conquest"
       cypher: |
         MATCH (e:DomesdayEntry) WHERE e.countyName = 'Exampleshire' AND e.value1066 IS NOT NULL AND e.value1086 IS NOT NULL

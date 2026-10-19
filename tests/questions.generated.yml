@@ -1304,6 +1304,294 @@ answerable:
       column: villagers
       args:
         placeId: '44796'
+- question: Who held Folkestone before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '25301'
+- question: How many villagers lived at Folkestone?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '25301'
+- question: Who was the tenant-in-chief of Folkestone in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '25301'
+- question: How many villagers lived at Singleton?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '56226'
+- question: Who was the tenant-in-chief of Singleton in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '56226'
+- question: What was Singleton worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '56226'
+- question: Who was the tenant-in-chief of Battersea in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '5171'
+- question: What was Battersea worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '5171'
+- question: who owned Battersea in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '5171'
+- question: What was Isleworth worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '35121'
+- question: who owned Isleworth in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '35121'
+- question: What was Isleworth worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '35121'
+- question: who owned Bloxham in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '7701'
+- question: What was Bloxham worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '7701'
+- question: Who held Bloxham before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '7701'
+- question: What was Aylesbury worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '3541'
+- question: Who held Aylesbury before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '3541'
+- question: How many villagers lived at Aylesbury?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '3541'
+- question: Who held Thaxted before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '62071'
+- question: How many villagers lived at Thaxted?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '62071'
+- question: Who was the tenant-in-chief of Thaxted in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '62071'
+- question: How many villagers lived at Frieston?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '25901'
+- question: Who was the tenant-in-chief of Frieston in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '25901'
+- question: What was Frieston worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '25901'
+- question: Who was the tenant-in-chief of Cholsey in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '15381'
+- question: What was Cholsey worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '15381'
+- question: who owned Cholsey in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '15381'
+- question: What was Marshfield worth before the Conquest?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1066Pence
+      args:
+        placeId: '41686'
+- question: who owned Marshfield in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '41686'
+- question: What was Marshfield worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '41686'
+- question: who owned Bromyard in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '10566'
+- question: What was Bromyard worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '10566'
+- question: Who held Bromyard before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '10566'
+- question: What was Bawburgh worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '5241'
+- question: Who held Bawburgh before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '5241'
+- question: How many villagers lived at Bawburgh?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: villagers
+      args:
+        placeId: '5241'
 - question: Who held Desning before 1066?
   category: place
   expect:
@@ -1328,294 +1616,6 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '20161'
-- question: How many villagers lived at Folkestone?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '25301'
-- question: Who was the tenant-in-chief of Folkestone in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '25301'
-- question: What was Folkestone worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '25301'
-- question: Who was the tenant-in-chief of Singleton in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '56226'
-- question: What was Singleton worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '56226'
-- question: who owned Singleton in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '56226'
-- question: What was Battersea worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '5171'
-- question: who owned Battersea in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '5171'
-- question: What was Battersea worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '5171'
-- question: who owned Isleworth in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '35121'
-- question: What was Isleworth worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '35121'
-- question: Who held Isleworth before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '35121'
-- question: What was Bloxham worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '7701'
-- question: Who held Bloxham before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '7701'
-- question: How many villagers lived at Bloxham?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '7701'
-- question: Who held Aylesbury before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '3541'
-- question: How many villagers lived at Aylesbury?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '3541'
-- question: Who was the tenant-in-chief of Aylesbury in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '3541'
-- question: How many villagers lived at Thaxted?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '62071'
-- question: Who was the tenant-in-chief of Thaxted in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '62071'
-- question: What was Thaxted worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '62071'
-- question: Who was the tenant-in-chief of Frieston in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '25901'
-- question: What was Frieston worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '25901'
-- question: who owned Frieston in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '25901'
-- question: What was Cholsey worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '15381'
-- question: who owned Cholsey in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '15381'
-- question: What was Cholsey worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '15381'
-- question: who owned Marshfield in 1086
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '41686'
-- question: What was Marshfield worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '41686'
-- question: Who held Marshfield before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '41686'
-- question: What was Bromyard worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '10566'
-- question: Who held Bromyard before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '10566'
-- question: How many villagers lived at Bromyard?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '10566'
-- question: Who held Bawburgh before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '5241'
-- question: How many villagers lived at Bawburgh?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: villagers
-      args:
-        placeId: '5241'
-- question: Who was the tenant-in-chief of Bawburgh in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '5241'
 - question: How many villagers lived at Kegworth?
   category: place
   expect:
@@ -1940,7 +1940,7 @@ answerable:
       column: value1086Pence
       args:
         name: Count Eustace (of Boulogne)
-- question: How many manors did Richard son of Count Gilbert of Clare of Tonbridge hold in 1086?
+- question: How many manors did Geoffrey de Mandeville hold in 1086?
   category: person
   expect:
     matchesView:
@@ -1949,23 +1949,23 @@ answerable:
       - entries
       - manors
       args:
-        name: Richard son of (Count) Gilbert/of Clare/of Tonbridge
-- question: In how many counties did Geoffrey de Mandeville hold land as a tenant-in-chief?
+        name: Geoffrey de Mandeville
+- question: In how many counties did Bishop Geoffrey of Coutances of St Lô hold land as a tenant-in-chief?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: countyCount
       args:
-        name: Geoffrey de Mandeville
-- question: How much was Bishop Geoffrey of Coutances of St Lô's land worth in 1086?
+        name: Bishop Geoffrey/of Coutances/of St Lô
+- question: How much was Richard son of Count Gilbert of Clare of Tonbridge's land worth in 1086?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: value1086Pence
       args:
-        name: Bishop Geoffrey/of Coutances/of St Lô
+        name: Richard son of (Count) Gilbert/of Clare/of Tonbridge
 - question: Who took over the lands of Earl Harold after the Conquest?
   category: conquest
   expect:
@@ -1994,7 +1994,7 @@ answerable:
   category: conquest
   expect:
     minRows: 2
-- question: Who took over the lands of Aelfric after the Conquest?
+- question: Who took over the lands of Godric after the Conquest?
   category: conquest
   expect:
     minRows: 2
@@ -2153,9 +2153,6 @@ answerable:
   expect:
     minRows: 3
 unanswerable:
-- question: Was the population of England bigger in 1066 or in 1086?
-  repeat: 3
-  noFigure: note
 - question: How many people live in Worcestershire today?
   repeat: 3
   noFigure: true
@@ -2172,9 +2169,6 @@ unanswerable:
   repeat: 3
   noFigure: true
 - question: How many acres of arable land were there in Kent?
-  repeat: 3
-  noFigure: true
-- question: How many horses were there in England in 1086?
   repeat: 3
   noFigure: true
 - question: How many children lived in Kent in 1086?

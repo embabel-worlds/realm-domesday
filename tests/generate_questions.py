@@ -93,14 +93,12 @@ RANKINGS = [
 # Questions this realm cannot answer. Little Domesday, the text and a place's parish today were once
 # here; they are answerable now and asked among the answerable questions instead.
 ADVERSARIAL = [
-    ('Was the population of England bigger in 1066 or in 1086?', 'note'),
     ('How many people live in Worcestershire today?', True),
     ('What was the name of the priest at Abberley?', False),
     ('Name the villagers who lived at Abberley', False),
     ('Who held Abberley in 1200?', False),
     ('What was Kent worth in 1100?', True),
     ('How many acres of arable land were there in Kent?', True),
-    ('How many horses were there in England in 1086?', True),
     ('How many children lived in Kent in 1086?', True),
     ('What was the average age of villagers in 1086?', True),
     ('How many women lived in Yorkshire in 1086?', True),

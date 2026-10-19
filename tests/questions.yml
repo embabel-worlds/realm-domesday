@@ -149,6 +149,13 @@ answerable:
     category: text
     expect: { nonEmpty: true }
 
+  - question: "Was the population bigger in 1066 or in 1086?"
+    category: little-domesday
+    expect: { matchesView: { name: DomesdayBeforeAndAfter, column: [households1066Comparable, households1086Comparable] } }
+  - question: "How many horses does Domesday record?"
+    category: little-domesday
+    expect: { nonEmpty: true }
+
 unanswerable:
   - question: "What was the name of the priest at Abberley?"
     repeat: 3
