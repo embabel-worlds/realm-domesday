@@ -53,140 +53,181 @@ answerable:
       placeId: '35121'
     column: villagers
   source: Open Domesday Middlesex 12,1
-- question: What was Longner in Shropshire worth in 1086?
+- question: What was Walsoken in Norfolk worth in 1086?
   category: opendomesday
   expect:
-    value: 96.0
+    value: 240.0
     money: true
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '66971'
+    column: value1086Pence
+  source: Open Domesday Norfolk 16,3
+- question: Who held Longner in Shropshire before the Conquest?
+  category: opendomesday
+  expect:
+    name: Chester
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '40021'
-    column: value1086Pence
+    column: lords1066
   source: Open Domesday Shropshire 1,5
-- question: Who held Blymhill in Staffordshire before the Conquest?
+- question: Who was the tenant-in-chief of Blymhill in Staffordshire in 1086?
   category: opendomesday
   expect:
-    name: brothers
+    name: Robert of Stafford
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '7756'
-    column: lords1066
+    column: tenantsInChief
   source: Open Domesday Staffordshire 11,56
-- question: Who was the tenant-in-chief of Gomshall in Surrey in 1086?
+- question: How many villagers lived at Gomshall in Surrey?
   category: opendomesday
   expect:
-    name: King William
+    value: 30.0
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '27156'
-    column: tenantsInChief
+    column: villagers
   source: Open Domesday Surrey 1,11
-- question: How many villagers lived at Yeaveley in Derbyshire?
+- question: What was Soughton in Cheshire worth in 1086?
   category: opendomesday
   expect:
-    value: 7.0
+    value: 60.0
+    money: true
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '57176'
+    column: value1086Pence
+  source: Open Domesday Cheshire FD8,2
+- question: Who held Yeaveley in Derbyshire before the Conquest?
+  category: opendomesday
+  expect:
+    name: Ligulf
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '73731'
-    column: villagers
+    column: lords1066
   source: Open Domesday Derbyshire 6,61
-- question: What was Up Cerne in Dorset worth in 1086?
+- question: Who was the tenant-in-chief of Up Cerne in Dorset in 1086?
   category: opendomesday
   expect:
-    value: 2400.0
-    money: true
+    name: Salisbury
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '13766'
-    column: value1086Pence
+    column: tenantsInChief
   source: Open Domesday Dorset 2,3
-- question: Who held Wheatenhurst in Gloucestershire before the Conquest?
+- question: How many villagers lived at Wheatenhurst in Gloucestershire?
   category: opendomesday
   expect:
-    name: Brictric <of Newton>
+    value: 2.0
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '69366'
-    column: lords1066
+    column: villagers
   source: Open Domesday Gloucestershire 78,15
-- question: Who was the tenant-in-chief of Nashenden in Kent in 1086?
+- question: What was Nashenden in Kent worth in 1086?
   category: opendomesday
   expect:
-    name: Bishop Odo of Bayeux
+    value: 1200.0
+    money: true
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '44701'
-    column: tenantsInChief
+    column: value1086Pence
   source: Open Domesday Kent 5,48
-- question: How many villagers lived at Loughborough in Leicestershire?
+- question: Who held Loughborough in Leicestershire before the Conquest?
   category: opendomesday
   expect:
-    value: 8.0
+    name: thanes
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '40176'
-    column: villagers
+    column: lords1066
   source: Open Domesday Leicestershire 43,2
-- question: What was Asthall in Oxfordshire worth in 1086?
+- question: Who was the tenant-in-chief of Asthall in Oxfordshire in 1086?
   category: opendomesday
   expect:
-    value: 2880.0
-    money: true
+    name: Roger of Ivry
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '2981'
-    column: value1086Pence
+    column: tenantsInChief
   source: Open Domesday Oxfordshire 29,3
-- question: Who held Knutton in Staffordshire before the Conquest?
+- question: How many villagers lived at Knutton in Staffordshire?
   category: opendomesday
   expect:
-    name: Godwin
+    value: 4.0
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '37161'
-    column: lords1066
-  source: Open Domesday Staffordshire 13,8
-- question: Who was the tenant-in-chief of Carton in Worcestershire in 1086?
-  category: opendomesday
-  expect:
-    name: Osbern son of Richard
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '13306'
-    column: tenantsInChief
-  source: Open Domesday Worcestershire 19,10
-- question: How many villagers lived at Youlgrave in Derbyshire?
-  category: opendomesday
-  expect:
-    value: 1.0
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '73841'
     column: villagers
-  source: Open Domesday Derbyshire 6,76
-- question: What was Longney in Gloucestershire worth in 1086?
+  source: Open Domesday Staffordshire 13,8
+- question: What was Freckenham in Suffolk worth in 1086?
   category: opendomesday
   expect:
-    value: 720.0
+    value: 3367.0
     money: true
   realm:
     view: DomesdayPlaceEntries
     args:
-      placeId: '40026'
+      placeId: '25801'
     column: value1086Pence
+  source: Open Domesday Suffolk 20,1
+- question: Who held Carton in Worcestershire before the Conquest?
+  category: opendomesday
+  expect:
+    name: Richard Scrope
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '13306'
+    column: lords1066
+  source: Open Domesday Worcestershire 19,10
+- question: Who was the tenant-in-chief of Youlgrave in Derbyshire in 1086?
+  category: opendomesday
+  expect:
+    name: Henry of Ferrers
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '73841'
+    column: tenantsInChief
+  source: Open Domesday Derbyshire 6,76
+- question: How many villagers lived at Longney in Gloucestershire?
+  category: opendomesday
+  expect:
+    value: 6.0
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '40026'
+    column: villagers
   source: Open Domesday Gloucestershire 78,12
+- question: What was Yelford in Oxfordshire worth in 1086?
+  category: opendomesday
+  expect:
+    value: 600.0
+    money: true
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '73751'
+    column: value1086Pence
+  source: Open Domesday Oxfordshire 45,1
 - question: Who held Chubworthy in Somerset before the Conquest?
   category: opendomesday
   expect:
@@ -289,6 +330,47 @@ answerable:
       placeId: '71946'
     column: tenantsInChief
   source: Open Domesday Staffordshire 1,15
+- question: How many villagers lived at Badmondisfield in Suffolk?
+  category: opendomesday
+  expect:
+    value: 14.0
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '3816'
+    column: villagers
+  source: Open Domesday Suffolk 1,121
+- question: What was Battersea in Surrey worth in 1086?
+  category: opendomesday
+  expect:
+    value: 18115.0
+    money: true
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '5171'
+    column: value1086Pence
+  source: Open Domesday Surrey 6,1
+- question: Who held Chichester in Sussex before the Conquest?
+  category: opendomesday
+  expect:
+    name: King Edward
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '14851'
+    column: lords1066
+  source: Open Domesday Sussex 11,1
+- question: Who was the tenant-in-chief of Eastbury in Worcestershire in 1086?
+  category: opendomesday
+  expect:
+    name: Worcester
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '21936'
+    column: tenantsInChief
+  source: Open Domesday Worcestershire 2,69
 - question: How many villagers lived at St Buryan in Cornwall?
   category: opendomesday
   expect:
@@ -310,36 +392,36 @@ answerable:
       placeId: '44886'
     column: value1086Pence
   source: Open Domesday Dorset 3,11
-- question: Who held Litchfield in Hampshire before the Conquest?
+- question: Who held Sheering in Essex before the Conquest?
   category: opendomesday
   expect:
-    name: Edsi
+    name: free men
+  realm:
+    view: DomesdayPlaceEntries
+    args:
+      placeId: '55086'
+    column: lords1066
+  source: Open Domesday Essex 36,1
+- question: Who was the tenant-in-chief of Litchfield in Hampshire in 1086?
+  category: opendomesday
+  expect:
+    name: Hugh of Port
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '39461'
-    column: lords1066
+    column: tenantsInChief
   source: Open Domesday Hampshire 23,24
-- question: Who was the tenant-in-chief of Buckden in Huntingdonshire in 1086?
+- question: How many villagers lived at Buckden in Huntingdonshire?
   category: opendomesday
   expect:
-    name: Lincoln
+    value: 37.0
   realm:
     view: DomesdayPlaceEntries
     args:
       placeId: '11001'
-    column: tenantsInChief
-  source: Open Domesday Huntingdonshire 2,4
-- question: How many villagers lived at Hungerton in Lincolnshire?
-  category: opendomesday
-  expect:
-    value: 13.0
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '34041'
     column: villagers
-  source: Open Domesday Lincolnshire 18,26
+  source: Open Domesday Huntingdonshire 2,4
 - question: What was Bladon in Oxfordshire worth in 1086?
   category: opendomesday
   expect:
@@ -474,16 +556,16 @@ answerable:
       placeId: '54746'
     column: value1086Pence
   source: Open Domesday Sussex 3,7
-- question: Who held Pertenhall in Bedfordshire before the Conquest?
+- question: Who held Bobbingworth in Essex before the Conquest?
   category: opendomesday
   expect:
-    name: Alwin Devil
+    name: free men
   realm:
     view: DomesdayPlaceEntries
     args:
-      placeId: '48931'
+      placeId: '7796'
     column: lords1066
-  source: Open Domesday Huntingdonshire 2,9
+  source: Open Domesday Essex 37,15
 - question: Who was the tenant-in-chief of Litchborough in Northamptonshire in 1086?
   category: opendomesday
   expect:
@@ -607,16 +689,16 @@ answerable:
       placeId: '24056'
     column: lords1066
   source: Open Domesday Gloucestershire 66,3
-- question: Who was the tenant-in-chief of Okeover in Staffordshire in 1086?
+- question: Who was the tenant-in-chief of Cleythorpe in Norfolk in 1086?
   category: opendomesday
   expect:
-    name: Burton
+    name: Reginald son of Ivo
   realm:
     view: DomesdayPlaceEntries
     args:
-      placeId: '46981'
+      placeId: '16026'
     column: tenantsInChief
-  source: Open Domesday Staffordshire 4,8
+  source: Open Domesday Norfolk 21,14
 - question: How many villagers lived at Trefreock in Cornwall?
   category: opendomesday
   expect:
@@ -627,17 +709,17 @@ answerable:
       placeId: '64761'
     column: villagers
   source: Open Domesday Cornwall 5,25,2
-- question: What was Romney Marsh in Kent worth in 1086?
+- question: What was Woodperry in Oxfordshire worth in 1086?
   category: opendomesday
   expect:
-    value: 144.0
+    value: 480.0
     money: true
   realm:
     view: DomesdayPlaceEntries
     args:
-      placeId: '52456'
+      placeId: '72266'
     column: value1086Pence
-  source: Open Domesday Kent 9,7
+  source: Open Domesday Oxfordshire 7,18
 - question: Who held Neenton in Shropshire before the Conquest?
   category: opendomesday
   expect:
@@ -740,88 +822,6 @@ answerable:
       placeId: '17576'
     column: tenantsInChief
   source: Open Domesday Northamptonshire 1,12
-- question: How many villagers lived at Cuddesdon in Oxfordshire?
-  category: opendomesday
-  expect:
-    value: 24.0
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '19081'
-    column: villagers
-  source: Open Domesday Oxfordshire 9,2
-- question: What was Coombes in Sussex worth in 1086?
-  category: opendomesday
-  expect:
-    value: 3120.0
-    money: true
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '17521'
-    column: value1086Pence
-  source: Open Domesday Sussex 13,19
-- question: Who held Choulston in Wiltshire before the Conquest?
-  category: opendomesday
-  expect:
-    name: Amesbury
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '15406'
-    column: lords1066
-  source: Open Domesday Wiltshire 16,4
-- question: Who was the tenant-in-chief of Tregamellyn in Cornwall in 1086?
-  category: opendomesday
-  expect:
-    name: Count Robert of Mortain
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '64781'
-    column: tenantsInChief
-  source: Open Domesday Cornwall 5,5,12
-- question: How many villagers lived at Umberleigh in Devon?
-  category: opendomesday
-  expect:
-    value: 12.0
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '66116'
-    column: villagers
-  source: Open Domesday Devon 13,1
-- question: What was Ambrosden in Oxfordshire worth in 1086?
-  category: opendomesday
-  expect:
-    value: 2400.0
-    money: true
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '1626'
-    column: value1086Pence
-  source: Open Domesday Oxfordshire 26,1
-- question: Who held Masham in Yorkshire before the Conquest?
-  category: opendomesday
-  expect:
-    name: Gospatric
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '41996'
-    column: lords1066
-  source: Open Domesday Yorkshire 6N118
-- question: Who was the tenant-in-chief of Lollingdon in Berkshire in 1086?
-  category: opendomesday
-  expect:
-    name: Richard Poynant
-  realm:
-    view: DomesdayPlaceEntries
-    args:
-      placeId: '39876'
-    column: tenantsInChief
-  source: Open Domesday Berkshire 43,1
 - question: Who was the richest landholder in England in 1086?
   category: history
   expect:
@@ -852,10 +852,10 @@ answerable:
   expect:
     name: Harold
   source: the historical record
-- question: Who held Hastings in 1086?
+- question: Who held Rye in Sussex in 1086?
   category: history
   expect:
-    name: Robert
+    name: Fécamp
   source: the historical record
 - question: Which bishop was the richest tenant-in-chief in 1086?
   category: history

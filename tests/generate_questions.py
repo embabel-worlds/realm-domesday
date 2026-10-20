@@ -14,6 +14,7 @@ The hand-written tests/questions.yml stays the place for questions a person actu
 import collections
 import glob
 import os
+import re
 
 import yaml
 
@@ -57,7 +58,7 @@ ENGLAND = [
     ('churchEntries', ['How many churches are recorded in Domesday?']),
     ('castleEntries', ['How many castles are mentioned in Domesday?']),
     (['wasteEntries', 'wasteManors'], ['How many manors were waste in 1086?']),
-    ('entries', ['How many entries are there in Great Domesday?']),
+    ('entries', ['How many entries are there in Domesday Book altogether?', 'how many entries does Domesday have']),
     ('value1086Pence', ['What was England worth in 1086?']),
     (['value1086Pence', 'manorsValue1086Pence'], ['total value of all the manors in 1086']),
     ('value1066Pence', ['What was England worth before the Conquest?']),
@@ -167,10 +168,16 @@ def main():
                 describes[to['placeId']].append(e)
             elif to.get('type') == 'DomesdayPerson':
                 roles[e['data']['entryId']][rel['predicate']].append(people[to['personId']]['name'])
+    names_lower = set(name_count)
     chosen = []
     for pid, es in describes.items():
         p = places[pid]
-        if len(es) != 1 or name_count[p['name'].lower()] != 1 or len(p['name']) < 5 or not p['name'].isalpha():
+        nm = p['name'].lower()
+        if len(es) != 1 or name_count[nm] != 1 or len(p['name']) < 5 or not p['name'].isalpha():
+            continue
+        # a name inside another's (Paxton in Spaxton, Dunham in Dunham [Massey]) has two answers under the
+        # CONTAINS match the engine's rulebook prefers, and a person asking "who held Dunham" means either
+        if any(nm in other for other in names_lower if other != nm):
             continue
         d = es[0]['data']
         r = roles[d['entryId']]
@@ -205,8 +212,21 @@ def main():
             if rel['predicate'] in ('TENANT_IN_CHIEF', 'LORD_1066'):
                 name = people[rel['to']['personId']]['name']
                 value_by[rel['predicate']][name] += e['data'].get('value1086' if rel['predicate'] == 'TENANT_IN_CHIEF' else 'value1066', 0)
-    natural = lambda n: n.replace('/of ', ' of ').replace('/', ' ').replace('(', '').replace(')', '')
-    tics = [n for n, _ in value_by['TENANT_IN_CHIEF'].most_common(14) if not n.startswith('King ') and ',' not in n]
+    # how a person is known: Hull's first name, and its first byname when the name carries none — "Count Robert of
+    # Mortain", "William of Warenne" (not "William of Warenne de Warenne": a slash separates ALTERNATIVE bynames)
+    def natural(n):
+        parts = [re.sub(r'[(){}]', '', x).strip() for x in n.split('/')]
+        has_byname = re.search(r'\b(of|de|son|the)\b', parts[0])
+        return parts[0] if has_byname or len(parts) == 1 else f'{parts[0]} {parts[1]}'
+    canon = lambda n: re.sub(r'[(){}]', '', n).replace('/', ' ').lower()
+    tokens = lambda n: set(re.sub(r'[,\']', ' ', canon(n)).split())
+    # a question's name whose words all appear in ANOTHER person's name (a wife's "…, wife of Count Eustace", an
+    # earl's later style "Earl William of Warenne") has two readings under word matching; the battery should not
+    # bet on one. Hull's bracketed variants of the same name ("Countess (Judith)") are the same person.
+    others = list(value_by['TENANT_IN_CHIEF']) + list(value_by['LORD_1066'])
+    collides = lambda n: any(tokens(natural(n)) <= tokens(o) for o in others if canon(o) != canon(n))
+    tics = [n for n, _ in value_by['TENANT_IN_CHIEF'].most_common(30)
+            if not n.startswith('King ') and ',' not in n and not collides(n)]
     for i, n in enumerate(tics[:10]):
         q([f"How much was {natural(n)}'s land worth in 1086?", f'How many manors did {natural(n)} hold in 1086?',
            f'In how many counties did {natural(n)} hold land as a tenant-in-chief?'][i % 3], 'DomesdayPersonSummary',
@@ -222,7 +242,7 @@ def main():
                        ('Who had the most people living on their land in 1086?', None),
                        ('Which tenant-in-chief had the most villagers?', None),
                        ('Which English lord had the most households under him before 1066?', 'LORD_1066'),
-                       ('Who were the biggest landlords by number of households before the Conquest?', 'LORD_1066')]:
+                       ('Which lords of 1066 had the most households on their land?', 'LORD_1066')]:
         q(text, 'DomesdayLordsByPeasants', 'holder', {'role': role} if role else None, 'lords-peasants')
 
     for text, view, column, args in [
@@ -241,12 +261,15 @@ def main():
                     ('Which places in Kent had a church?', 10), ('Which women held land in 1086?', 5),
                     ('List the hundreds of Worcestershire', 5), ('Which places had markets in 1086?', 10),
                     ('Which manors lost the most value after 1066?', 5), ('Which manors gained most in value by 1086?', 5),
-                    ('List the places in Domesday called Norton', 20), ('Which places in Devon had salt-houses?', 3),
+                    ('List the places in Domesday called Norton', 19), ('Which places in Devon had salt-houses?', 3),
                     ('What did Ralph of Tosny hold?', 5), ('Which manors had more than ten mills?', 1),
                     ('Show me manors with more than 100 villagers', 3), ('Which places had fisheries in Lincolnshire?', 3)]:
         answerable.append({'question': text, 'category': 'list', 'expect': {'minRows': n}})
 
     unanswerable = [{'question': t, 'repeat': 3, 'noFigure': nf} for t, nf in ADVERSARIAL]
+    # a question a person asked is kept where they asked it (tests/questions.yml); asking it twice weights it twice
+    asked = {a['question'].lower().strip() for a in (yaml.safe_load(open(os.path.join(ROOT, 'tests', 'questions.yml'), encoding='utf-8')) or {}).get('answerable', [])}
+    answerable = [a for a in answerable if a['question'].lower().strip() not in asked]
 
     out = os.path.join(ROOT, 'tests', 'questions.generated.yml')
     with open(out, 'w', encoding='utf-8') as f:

@@ -1029,7 +1029,13 @@ answerable:
       column:
       - wasteEntries
       - wasteManors
-- question: How many entries are there in Great Domesday?
+- question: How many entries are there in Domesday Book altogether?
+  category: england-total
+  expect:
+    matchesView:
+      name: DomesdayCountyFigures
+      column: entries
+- question: how many entries does Domesday have
   category: england-total
   expect:
     matchesView:
@@ -1061,12 +1067,6 @@ answerable:
     matchesView:
       name: DomesdayCountyFigures
       column: sheep
-- question: how many goats there are in england
-  category: england-total
-  expect:
-    matchesView:
-      name: DomesdayCountyFigures
-      column: goats
 - question: How many goats did Domesday count?
   category: england-total
   expect:
@@ -1150,14 +1150,6 @@ answerable:
       args:
         measure: households
         order: asc
-- question: Which county was the richest in 1086?
-  category: county-ranking
-  expect:
-    matchesView:
-      name: DomesdayCountyRanking
-      column: county
-      args:
-        measure: value1086
 - question: Which county was the poorest in 1086?
   category: county-ranking
   expect:
@@ -1175,14 +1167,6 @@ answerable:
       column: county
       args:
         measure: value1066
-- question: Which county had the most waste?
-  category: county-ranking
-  expect:
-    matchesView:
-      name: DomesdayCountyRanking
-      column: county
-      args:
-        measure: waste
 - question: Which county had the most castles?
   category: county-ranking
   expect:
@@ -1328,30 +1312,30 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '25301'
-- question: How many villagers lived at Singleton?
+- question: How many villagers lived at Patcham?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: villagers
       args:
-        placeId: '56226'
-- question: Who was the tenant-in-chief of Singleton in 1086?
+        placeId: '48286'
+- question: Who was the tenant-in-chief of Patcham in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '56226'
-- question: What was Singleton worth before the Conquest?
+        placeId: '48286'
+- question: What was Patcham worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: value1066Pence
       args:
-        placeId: '56226'
+        placeId: '48286'
 - question: Who was the tenant-in-chief of Battersea in 1086?
   category: place
   expect:
@@ -1688,30 +1672,14 @@ answerable:
       column: value1086Pence
       args:
         placeId: '10146'
-- question: who owned Paxton in 1086
+- question: who owned Cranborne in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '48391'
-- question: What was Paxton worth in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1086Pence
-      args:
-        placeId: '48391'
-- question: Who held Paxton before 1066?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: lords1066
-      args:
-        placeId: '48391'
+        placeId: '18331'
 - question: What was Cranborne worth in 1086?
   category: place
   expect:
@@ -1728,14 +1696,14 @@ answerable:
       column: lords1066
       args:
         placeId: '18331'
-- question: How many villagers lived at Cranborne?
+- question: What was Liskeard worth in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: villagers
+      column: value1086Pence
       args:
-        placeId: '18331'
+        placeId: '39421'
 - question: Who held Liskeard before 1066?
   category: place
   expect:
@@ -1752,14 +1720,14 @@ answerable:
       column: villagers
       args:
         placeId: '39421'
-- question: Who was the tenant-in-chief of Liskeard in 1086?
+- question: Who held Chisledon before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: tenantsInChief
+      column: lords1066
       args:
-        placeId: '39421'
+        placeId: '15286'
 - question: How many villagers lived at Chisledon?
   category: place
   expect:
@@ -1776,38 +1744,22 @@ answerable:
       column: tenantsInChief
       args:
         placeId: '15286'
-- question: What was Chisledon worth before the Conquest?
+- question: How many villagers lived at Hanstead?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1066Pence
+      column: villagers
       args:
-        placeId: '15286'
-- question: Who was the tenant-in-chief of Bishopsteignton in 1086?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: tenantsInChief
-      args:
-        placeId: '7246'
-- question: What was Bishopsteignton worth before the Conquest?
-  category: place
-  expect:
-    matchesView:
-      name: DomesdayPlaceEntries
-      column: value1066Pence
-      args:
-        placeId: '7246'
-- question: who owned Bishopsteignton in 1086
+        placeId: '29241'
+- question: Who was the tenant-in-chief of Hanstead in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '7246'
+        placeId: '29241'
 - question: What was Hanstead worth before the Conquest?
   category: place
   expect:
@@ -1816,46 +1768,46 @@ answerable:
       column: value1066Pence
       args:
         placeId: '29241'
-- question: who owned Hanstead in 1086
+- question: Who was the tenant-in-chief of Spaldwick in 1086?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '29241'
-- question: What was Hanstead worth in 1086?
+        placeId: '57406'
+- question: What was Spaldwick worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: value1066Pence
       args:
-        placeId: '29241'
-- question: who owned Dunham in 1086
+        placeId: '57406'
+- question: who owned Spaldwick in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: tenantsInChief
       args:
-        placeId: '21406'
-- question: What was Dunham worth in 1086?
+        placeId: '57406'
+- question: What was Ellesmere worth before the Conquest?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: value1086Pence
+      column: value1066Pence
       args:
-        placeId: '21406'
-- question: Who held Dunham before 1066?
+        placeId: '22971'
+- question: who owned Ellesmere in 1086
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
-      column: lords1066
+      column: tenantsInChief
       args:
-        placeId: '21406'
+        placeId: '22971'
 - question: What was Ellesmere worth in 1086?
   category: place
   expect:
@@ -1864,22 +1816,54 @@ answerable:
       column: value1086Pence
       args:
         placeId: '22971'
-- question: Who held Ellesmere before 1066?
+- question: who owned Whichford in 1086
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: tenantsInChief
+      args:
+        placeId: '69466'
+- question: What was Whichford worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '69466'
+- question: Who held Whichford before 1066?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: lords1066
       args:
-        placeId: '22971'
-- question: How many villagers lived at Ellesmere?
+        placeId: '69466'
+- question: What was Bottisham worth in 1086?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: value1086Pence
+      args:
+        placeId: '8381'
+- question: Who held Bottisham before 1066?
+  category: place
+  expect:
+    matchesView:
+      name: DomesdayPlaceEntries
+      column: lords1066
+      args:
+        placeId: '8381'
+- question: How many villagers lived at Bottisham?
   category: place
   expect:
     matchesView:
       name: DomesdayPlaceEntries
       column: villagers
       args:
-        placeId: '22971'
+        placeId: '8381'
 - question: How much was Bishop Odo of Bayeux's land worth in 1086?
   category: person
   expect:
@@ -1914,7 +1898,7 @@ answerable:
       column: value1086Pence
       args:
         name: Count Alan (of Brittany)
-- question: How many manors did William of Warenne de Warenne hold in 1086?
+- question: How many manors did Earl Hugh of Chester hold in 1086?
   category: person
   expect:
     matchesView:
@@ -1922,25 +1906,25 @@ answerable:
       column:
       - entries
       - manors
-      args:
-        name: William of Warenne/de Warenne
-- question: In how many counties did Earl Hugh of Chester hold land as a tenant-in-chief?
-  category: person
-  expect:
-    matchesView:
-      name: DomesdayPersonSummary
-      column: countyCount
       args:
         name: Earl Hugh (of Chester)
-- question: How much was Count Eustace of Boulogne's land worth in 1086?
+- question: In how many counties did Geoffrey de Mandeville hold land as a tenant-in-chief?
+  category: person
+  expect:
+    matchesView:
+      name: DomesdayPersonSummary
+      column: countyCount
+      args:
+        name: Geoffrey de Mandeville
+- question: How much was Bishop Geoffrey of Coutances's land worth in 1086?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: value1086Pence
       args:
-        name: Count Eustace (of Boulogne)
-- question: How many manors did Geoffrey de Mandeville hold in 1086?
+        name: Bishop Geoffrey/of Coutances/of St Lô
+- question: How many manors did Countess Judith hold in 1086?
   category: person
   expect:
     matchesView:
@@ -1949,23 +1933,23 @@ answerable:
       - entries
       - manors
       args:
-        name: Geoffrey de Mandeville
-- question: In how many counties did Bishop Geoffrey of Coutances of St Lô hold land as a tenant-in-chief?
+        name: Countess Judith
+- question: In how many counties did Henry of Ferrers hold land as a tenant-in-chief?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: countyCount
       args:
-        name: Bishop Geoffrey/of Coutances/of St Lô
-- question: How much was Richard son of Count Gilbert of Clare of Tonbridge's land worth in 1086?
+        name: Henry of Ferrers
+- question: How much was Edward of Salisbury's land worth in 1086?
   category: person
   expect:
     matchesView:
       name: DomesdayPersonSummary
       column: value1086Pence
       args:
-        name: Richard son of (Count) Gilbert/of Clare/of Tonbridge
+        name: Edward of Salisbury/the sheriff/a man-at-arms
 - question: Who took over the lands of Earl Harold after the Conquest?
   category: conquest
   expect:
@@ -2004,12 +1988,6 @@ answerable:
     anyName:
     - King William
     - King Edward
-- question: which lords rule the most peasants
-  category: lords-peasants
-  expect:
-    anyName:
-    - King William
-    - King Edward
 - question: Who had the most people living on their land in 1086?
   category: lords-peasants
   expect:
@@ -2030,7 +2008,7 @@ answerable:
       column: holder
       args:
         role: LORD_1066
-- question: Who were the biggest landlords by number of households before the Conquest?
+- question: Which lords of 1066 had the most households on their land?
   category: lords-peasants
   expect:
     matchesView:
@@ -2038,12 +2016,6 @@ answerable:
       column: holder
       args:
         role: LORD_1066
-- question: Who was the richest landholder in 1086?
-  category: superlative
-  expect:
-    matchesView:
-      name: DomesdayGreatestLandholders
-      column: tenantInChief
 - question: Who held the most valuable land before 1066?
   category: superlative
   expect:
@@ -2096,10 +2068,6 @@ answerable:
     matchesView:
       name: DomesdayWomenLandholders
       column: woman
-- question: Where were the castles in Domesday?
-  category: list
-  expect:
-    minRows: 10
 - question: List the waste manors in Yorkshire
   category: list
   expect:
@@ -2128,18 +2096,10 @@ answerable:
   category: list
   expect:
     minRows: 5
-- question: List the places in Domesday called Norton
-  category: list
-  expect:
-    minRows: 20
 - question: Which places in Devon had salt-houses?
   category: list
   expect:
     minRows: 3
-- question: What did Ralph of Tosny hold?
-  category: list
-  expect:
-    minRows: 5
 - question: Which manors had more than ten mills?
   category: list
   expect:

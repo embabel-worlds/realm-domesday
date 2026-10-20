@@ -76,7 +76,8 @@ answerable:
   - question: "Which manors lost the most value between 1066 and 1086?"
     expect: { minRows: 5 }
   - question: "List the places in Domesday called Norton"
-    expect: { minRows: 20 }
+    # 19 places are named exactly Norton; one (Worcestershire) is only ever named inside another entry
+    expect: { minRows: 19 }
   - question: "What did Ralph of Tosny hold?"
     expect: { minRows: 5 }
   - question: "how many churches in worcestershire"
@@ -156,6 +157,12 @@ answerable:
     category: little-domesday
     expect: { nonEmpty: true }
 
+  - question: "who was the richest lord in 1086"
+    category: asked
+    expect: { name: King William }
+  - question: "Who was the richest lord before the Conquest?"
+    category: asked
+    expect: { matchesView: { name: DomesdayGreatestLords1066, column: lord1066 } }
 unanswerable:
   - question: "What was the name of the priest at Abberley?"
     repeat: 3

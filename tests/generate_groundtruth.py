@@ -64,7 +64,9 @@ HISTORY = [
     ('Where was the Harrying of the North most visible in Domesday — which county had most waste?', {'name': 'Yorkshire'}),
     ("Who was the richest lord before the Conquest, after the king?", {'name': 'Harold'}),
     ('Which earl held the most valuable land in 1066?', {'name': 'Harold'}),
-    ('Who held Hastings in 1086?', {'name': 'Robert'}),
+    # not Hastings: the castle town has no entry of its own (it is named inside Bullington and others), so no
+    # "who held <place>" reaches the Count of Eu; Rye's single entry names its holder outright
+    ('Who held Rye in Sussex in 1086?', {'name': 'Fécamp'}),
     ('Which bishop was the richest tenant-in-chief in 1086?', {'name': 'Odo'}),
     ("Who was William the Conqueror's half-brother who held most land in Kent?", {'name': 'Odo'}),
     ('Which countess held the most land in 1086?', {'name': 'Judith'}),
@@ -78,6 +80,14 @@ def main():
     places = []
     for f in glob.glob(os.path.join(ROOT, 'reference', '03-places-*.yml')):
         places += [r['data'] for r in yaml.safe_load(open(f, encoding='utf-8'))]
+    # Open Domesday showing one manor is not enough: the realm must hold one entry about the place too, or the
+    # question has two answers (Romney Marsh is one manor there and six entries here)
+    entries_about = collections.Counter()
+    for f in glob.glob(os.path.join(ROOT, 'reference', '05-entries-*.yml')):
+        for r in yaml.safe_load(open(f, encoding='utf-8')):
+            for rel in r.get('relations', []):
+                if rel['predicate'] == 'DESCRIBES':
+                    entries_about[rel['to']['placeId']] += 1
     name_count = collections.Counter(p['name'].lower() for p in places)
     by_grid = collections.defaultdict(list)
     for p in places:
@@ -105,6 +115,8 @@ def main():
             continue
         place = candidates[0]
         if name_count[place['name'].lower()] != 1 or not re.fullmatch(r"[A-Za-z' ]+", place['name']):
+            continue
+        if entries_about[place['placeId']] != 1:
             continue
         html = open(path, encoding='utf-8').read()
         manors, who = od_manors(html), owners(html)

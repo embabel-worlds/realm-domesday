@@ -27,6 +27,15 @@ BASE = (args[0] if args else 'http://localhost:11043').rstrip('/')
 AUTH = os.environ.get('EMBABEL_AUTH')
 # the app's Ask box scopes every question to Domesday; the battery asks what users actually send
 ASK_PREFIX = os.environ.get('ASK_PREFIX', 'In Domesday Book (1086): ')
+# ASK_SCHEMA_LINKING=1/0 sends the ask's experimental per-request schema-linking switch; unset sends nothing.
+SCHEMA_LINKING = {'1': True, '0': False}.get(os.environ.get('ASK_SCHEMA_LINKING', ''))
+# ASK_EXAMPLE_RETRIEVAL=k shows the generator only the k nearest examples; ASK_EXAMPLE_SHORTCUT=1 lets a
+# near-exact example answer without generation. Both experimental, per request; unset sends nothing.
+EXAMPLE_RETRIEVAL = int(os.environ['ASK_EXAMPLE_RETRIEVAL']) if os.environ.get('ASK_EXAMPLE_RETRIEVAL') else None
+EXAMPLE_SHORTCUT = {'1': True, '0': False}.get(os.environ.get('ASK_EXAMPLE_SHORTCUT', ''))
+# ASK_SCOPE=<focus> sends the ask's `scope`, as the app does (`domesday`, the realm's own focus): the model
+# sees that focus's realms and nothing else. Unset sends nothing, and the appliance resolves from the question.
+SCOPE = os.environ.get('ASK_SCOPE')
 ONLY = next((a.split('=')[1] for a in sys.argv[1:] if a.startswith('--only=')), None)
 
 
@@ -46,7 +55,16 @@ def get(path):
 def ask(question):
     """The ask's result; a timeout or HTTP failure comes back as an empty result carrying the reason."""
     try:
-        return post('/api/v1/tools/kg_ask', {'question': ASK_PREFIX + question, 'explain': True}, timeout=180).get('result') or {}
+        body = {'question': ASK_PREFIX + question, 'explain': True}
+        if SCOPE:
+            body['scope'] = SCOPE
+        if SCHEMA_LINKING is not None:
+            body['schemaLinking'] = SCHEMA_LINKING
+        if EXAMPLE_RETRIEVAL is not None:
+            body['exampleRetrieval'] = EXAMPLE_RETRIEVAL
+        if EXAMPLE_SHORTCUT is not None:
+            body['exampleShortcut'] = EXAMPLE_SHORTCUT
+        return post('/api/v1/tools/kg_ask', body, timeout=180).get('result') or {}
     except Exception as e:
         return {'rows': [], 'cypher': '', 'failure': f'{type(e).__name__}: {e}'}
 
@@ -77,19 +95,28 @@ def strings(value):
 ID_COLUMN = re.compile(r'(?i)(^id$|Id$|_id$|^ref$)')
 
 
-def reconciles(expected, rows):
+MONEY_COLUMN = re.compile(r'(?i)pence|pounds|value|worth')
+PERCENT_COLUMN = re.compile(r'(?i)percent|share')
+
+
+def reconciles(expected, rows, column=''):
     """Does any value of the ask's top row carry the view's figure? An id column never counts: entry
     8146 is not 8,146 villagers."""
     if not rows:
         return False
     top = [v for k, v in rows[0].items() if not ID_COLUMN.search(k)]
     if isinstance(expected, (int, float)) and not isinstance(expected, bool):
-        # The same money may come back in pence or in pounds, whichever the view or the answer chose;
-        # a view's pounds are rounded to two places, so pence match within the 2.4d that rounding allows.
         # Domesday counts halves (a household shared between two manors), and an answer that rounds
         # 214,191.5 households to 214,192 states the same figure: a fractional count matches its whole.
+        # A view's percentage is rounded to one place, so a share matches within the half-step that
+        # rounding allows (4.035 is the view's 4.0; a fan-out's 3.71 or 4.06 is not).
         x = float(expected)
-        targets = [(x, 0.5 if x != int(x) else 0.005), (x / 240, 0.005), (x * 240, 2.5)]
+        targets = [(x, 0.05 if PERCENT_COLUMN.search(column) else 0.5 if x != int(x) else 0.005)]
+        # Only money may come back in pence or in pounds, whichever the view or the answer chose; a view's
+        # pounds are rounded to two places, so pence match within the 2.4d that rounding allows. A count of
+        # 240 households is not one household.
+        if MONEY_COLUMN.search(column):
+            targets += [(x / 240, 0.005), (x * 240, 2.5)]
         return any(abs(n - t) <= e for v in top for n in numbers(v) for t, e in targets)
     wanted = strings(expected)
     have = [s for v in top for s in strings(v)]
@@ -147,7 +174,7 @@ def run_answerable(i, case, props):
         # estimate made from them)
         columns = mv['column'] if isinstance(mv['column'], list) else [mv['column']]
         wants = [view_top(mv['name'], mv.get('args'), c) for c in columns]
-        if not any(reconciles(w, rows) for w in wants):
+        if not any(reconciles(w, rows, c) for w, c in zip(wants, columns)):
             problem = f'expected {mv["name"]}.{"|".join(columns)} = {wants!r}, got {rows[:2]}'
     elif 'value' in expect:
         # a literal from Open Domesday: money may come back in pence or in pounds, within a few pence
@@ -177,10 +204,26 @@ def run_answerable(i, case, props):
         rv = case['realm']
         realm_value = view_top(rv['view'], rv.get('args'), rv['column'])
         realm_silent = realm_value in (None, [], '') or realm_value == [None]
-        if (realm_value is not None and reconciles(realm_value, rows)) or (realm_silent and not rows):
+        if (realm_value is not None and reconciles(realm_value, rows, rv['column'])) or (realm_silent and not rows):
             category, problem = 'data-differs', f'realm says {realm_value!r}; {problem}'
     return {'id': f'A{i}', 'question': q, 'category': category, 'ok': problem is None,
-            'problem': problem, 'cypher': cypher, 'ms': result.get('cost', {}).get('ms')}
+            'problem': problem, 'cypher': cypher, 'ms': result.get('cost', {}).get('ms'),
+            'llmCalls': result.get('cost', {}).get('llmCalls'), 'linking': result.get('linking'), 'exposure': result.get('exposure'),
+            'maxExampleSimilarity': result.get('maxExampleSimilarity'), 'answeredBy': result.get('answeredBy')}
+
+
+# A caveat travelling with a proxy figure. Beyond the plain refusals, a model names the substitution
+# itself: "records values for 1086, not 1100", "households, not people", "in ploughlands, not acres",
+# "not a complete county total", "may not cover the whole county". A column named for the caveat counts too.
+CAVEAT = re.compile(r'(?i)not recorded|no data|does not record|not in domesday|unavailable|not available|cannot'
+                    r'|\brecords? \w+ (?:for|in) 1086,? not\b|,\s*not (?:people|persons|population|acres|\d{4})\b'
+                    r'|\bno \d{4} (?:value|figure|data)'
+                    r'|\bnot an? (?:complete|whole|full|county|population|acreage)\b|\bnot a \w+ (?:count|total)\b'
+                    r'|\bmay not cover\b')
+# A plain `note` column is not one: its text must say the caveat. These names say it themselves.
+NOTE_COLUMN = re.compile(r'(?i)caveat|warning|limitation|isnot|not.?recorded|no.?data|unavailable')
+# Bookkeeping columns carry numbers that are no one's answer: an ingestion timestamp is not a figure put forward.
+BOOKKEEPING_COLUMN = re.compile(r'[Tt]imestamp|[a-z]At$|_at$')
 
 
 def run_unanswerable(i, run, case, props):
@@ -188,18 +231,20 @@ def run_unanswerable(i, run, case, props):
     result = ask(q)
     rows, cypher = result.get('rows') or [], result.get('cypher', '')
     bad = fabricated(cypher, props)
-    figures = [n for r in rows for v in r.values() for n in numbers(v) if n > 0]
+    figures = [n for r in rows for k, v in r.items() if not ID_COLUMN.search(k) and not BOOKKEEPING_COLUMN.search(k)
+               for n in numbers(v) if n > 0]
     # The spec counts an honestly flagged answer as correct: a figure that travels with its own
     # "this is not recorded" note is not a fabrication; a bare proxy figure is.
-    flagged = any(re.search(r'(?i)not recorded|no data|does not record|not in domesday|unavailable|cannot', s)
-                  for r in rows for v in r.values() for s in strings(v)) or any(
-                  re.search(r'(?i)not.?recorded|no.?data|unavailable|isnot', k) for r in rows for k in r)
+    flagged = any(re.search(CAVEAT, s) for r in rows for v in r.values() for s in strings(v)) or any(
+                  re.search(NOTE_COLUMN, k) for r in rows for k in r)
     if flagged:
         figures = []
     problem = (result.get('failure') or (f'fabricated {bad}' if bad
                else f'put forward {figures[:3]} as an answer' if case.get('noFigure') and figures else None))
     return {'id': f'U{i}.{run + 1}', 'question': q, 'category': 'adversarial', 'ok': problem is None,
-            'problem': problem, 'cypher': cypher, 'ms': result.get('cost', {}).get('ms')}
+            'problem': problem, 'cypher': cypher, 'ms': result.get('cost', {}).get('ms'),
+            'llmCalls': result.get('cost', {}).get('llmCalls'), 'linking': result.get('linking'), 'exposure': result.get('exposure'),
+            'maxExampleSimilarity': result.get('maxExampleSimilarity'), 'answeredBy': result.get('answeredBy')}
 
 
 def main():
