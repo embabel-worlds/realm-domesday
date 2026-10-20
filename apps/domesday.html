@@ -355,7 +355,7 @@
       <li>The Conquest and Wealth tabs: <code>DomesdayGreatestLords1066</code>, <code>DomesdayGreatestLandholders</code>, <code>DomesdayConquestTransfers</code>, <code>DomesdayWomenLandholders</code>, <code>DomesdayValueChange</code>, <code>DomesdayFeature</code>.</li>
       <li>Studies: <code>DomesdayDevastation</code>, <code>DomesdayWhoHeldTheLand</code>, <code>DomesdayAntecessors</code>, <code>DomesdayMenOf</code>, <code>DomesdayConquestSurvivors</code>, <code>DomesdayFateOfEnglishLords</code>, <code>DomesdayValueAnomalies</code> (a least-squares fit of value on resources), <code>DomesdayWomenBeforeAfter</code>, <code>DomesdayPloughStocking</code>, <code>DomesdayGrowth</code>, <code>DomesdayLostVillages</code>, <code>DomesdayRichThenRichNow</code> (a correlation), <code>DomesdayFeeScatter</code>.</li>
       <li>The text: <code>DomesdayTextMentions</code> and <code>DomesdayTextMentionsByCounty</code> (exact, complete); <code>DomesdaySearchText</code> (a judged search over the chapter documents); <code>DomesdayExtractFromText</code>.</li>
-      <li>Ask: <code>gateway.kg.ask({question, explain: true})</code>, with the question prefixed "In Domesday Book (1086): ". The appliance's model writes Cypher over the Domesday schema, runs it, and returns the rows with the query, which this page shows.</li>
+      <li>Ask: <code>gateway.kg.ask({question, explain: true, scope: 'domesday'})</code>, with the question prefixed "In Domesday Book (1086): ". <code>scope</code> names the realm's own focus, so the model is shown Domesday's schema and views and nothing else installed on the appliance. The appliance's model writes Cypher over the Domesday schema, runs it, and returns the rows with the query, which this page shows.</li>
     </ul>
     <p>Money is stored in pence (£1 = 20s = 240d) and shown in pounds, shillings and pence. Households are heads of household, not people.</p>
     <h3>When it looks wrong</h3>
@@ -1143,16 +1143,24 @@
 
   /* ── ask ────────────────────────────────────────────────────────────────────── */
   var askSeq = 0;
-  var ASK_SCOPE = 'In Domesday Book (1086): ';
+  var ASK_PREFIX = 'In Domesday Book (1086): ';
   $('ask-form').addEventListener('submit', function (e) {
     e.preventDefault();
     var q = $('ask').value.trim();
     if (q) location.hash = '#/ask/' + encodeURIComponent(q);
   });
-  function cell(k, v) {
+  /* A column is money in pence when its name says so, or when the expression behind it (the ask's
+     columnSources) reads a stored value field without converting it — the model names columns as it
+     likes, and `sum(e.value1086) AS totalValue1086` is pence however it is called. */
+  function isPence(k, source) {
+    if (/pence$/i.test(k)) return true;
+    if (!source || /pounds$/i.test(k)) return false;
+    return /\.(value1066|value1086|valueLater)\b/.test(source) && !/\/\s*(2\.4|240)\b|count\(|percent/i.test(source);
+  }
+  function cell(k, v, source) {
     if (v == null) return '—';
     if (Array.isArray(v)) return escapeHtml(v.map(function (x) { return typeof x === 'object' ? JSON.stringify(x) : x; }).join(', '));
-    if (typeof v === 'number' && /pence$/i.test(k)) return escapeHtml(lsd(v));
+    if (typeof v === 'number' && isPence(k, source)) return escapeHtml(lsd(v));
     if (typeof v === 'number') return n(v);
     if (typeof v === 'boolean') return v ? 'yes' : 'no';
     return escapeHtml(typeof v === 'object' ? JSON.stringify(v) : String(v));
@@ -1166,19 +1174,22 @@
     try {
       var result = await Promise.race([
         /* The box is a Domesday surface, and this world also holds modern places and census figures:
-         * "how many people in England" means 1086 here, so the question says so. */
-        gateway.kg.ask({ question: ASK_SCOPE + q, explain: true }),
+         * "how many people in England" means 1086 here, so the question says so. `scope` names the
+         * realm's own focus (focuses/domesday.yml), so the model is shown Domesday's schema and views
+         * and nothing else installed; an appliance that predates it ignores the field. */
+        gateway.kg.ask({ question: ASK_PREFIX + q, explain: true, scope: 'domesday' }),
         new Promise(function (_, reject) { setTimeout(function () { reject(new Error('No answer after two minutes; the question was stopped.')); }, 120000); })
       ]);
       if (mine !== askSeq) return;
       var rows = (result && result.rows) || [], warnings = (result && result.warnings) || [];
+      var sources = (result && result.columnSources) || {};
       var html = '';
       if (!rows.length) {
         html += '<div class="empty">The query ran and found nothing. That can mean Domesday does not record it, or that the question asks for something this edition does not hold (Little Domesday; the text itself; anything after 1086). Read the query below to see which.</div>';
       } else {
         var cols = Object.keys(rows[0]);
         html += '<div class="card"><table><tr>' + cols.map(function (c) { return '<th>' + escapeHtml(c) + '</th>'; }).join('') + '</tr>' +
-          rows.slice(0, 200).map(function (r) { return '<tr>' + cols.map(function (c) { return '<td>' + cell(c, r[c]) + '</td>'; }).join('') + '</tr>'; }).join('') + '</table>' +
+          rows.slice(0, 200).map(function (r) { return '<tr>' + cols.map(function (c) { return '<td>' + cell(c, r[c], sources[c]) + '</td>'; }).join('') + '</tr>'; }).join('') + '</table>' +
           (rows.length > 200 ? '<p class="note">Showing 200 of ' + rows.length + ' rows.</p>' : '') + '</div>';
       }
       if (warnings.length) html += '<div class="err" style="margin-top:10px">' + warnings.map(escapeHtml).join('<br>') + '</div>';
