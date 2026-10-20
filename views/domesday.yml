@@ -11,7 +11,7 @@
 # ── Finding things ────────────────────────────────────────────────────────────────────────────────
 
 - name: DomesdayPlaceSearch
-  description: Places whose modern name contains a word, with county, hundred, grid reference, coordinates and how many entries name them. Many names recur (several Abbertons, dozens of Nortons) — the county tells them apart. THE answer for "find <place> in Domesday", "is <place> in Domesday".
+  description: Places whose modern name contains a word, with county, hundred, grid reference, coordinates and how many entries name them. Many names recur (several Abbertons, nineteen Nortons) — the county tells them apart. THE answer for "find <place> in Domesday", "is <place> in Domesday", "list the places called <name>".
   params:
     name:
       type: string
@@ -139,7 +139,7 @@
 # ── The Conquest ──────────────────────────────────────────────────────────────────────────────────
 
 - name: DomesdayGreatestLandholders
-  description: The greatest landholders of 1086 — tenants-in-chief ranked by the total annual value of the entries they held of the king, with entries, counties and households. THE answer for "who were the richest men in 1086", "who gained most from the Conquest", "the biggest landholders". The king heads it (`King William`).
+  description: The greatest landholders of 1086 — tenants-in-chief ranked by the total annual value of the entries they held of the king, with entries, counties and households. THE answer for "who was the richest lord in 1086", "the richest landholder", "who were the richest men in 1086", "who gained most from the Conquest", "the biggest landholders". The king heads it (`King William`).
   params:
     limit:
       type: int
@@ -190,7 +190,7 @@
     LIMIT $limit
 
 - name: DomesdayLordsByPeasants
-  description: Landholders ranked by the people on their land - the households of every entry they held in a role, and of those the peasants (villagers, smallholders, cottagers and slaves). THE answer for "which lords ruled the most peasants", "who had the most people under them", "who held the most villagers". Domesday counts heads of household, not people. Role TENANT_IN_CHIEF (default, held of the king in 1086), TENANT_1086 (the man on the ground in 1086) or LORD_1066 (before the Conquest).
+  description: 'Landholders ranked by the households, and the peasants among them (villagers, smallholders, cottagers, slaves), on the entries they held in one role. THE answer for "which lords ruled the most peasants", "who had the most people under them", "who held the most villagers". Role TENANT_IN_CHIEF (default, 1086), TENANT_1086 or LORD_1066 (before the Conquest).'
   params:
     role:
       type: string
@@ -236,7 +236,7 @@
     ORDER BY county
 
 - name: DomesdayCountySummary
-  description: Per county — entries, households, plough teams, value in 1066 and 1086, the change between them, manors called waste, mills and churches. THE answer for "which county was richest", "which counties lost most value after the Conquest", "where was the waste". The change is measured only over entries that state BOTH values (comparableEntries), because many entries — most in the south-west — give a value for 1086 alone, and summing those against fewer 1066 values would invent a rise.
+  description: 'Every county in one table — entries, households, plough teams, value in 1066 and 1086 and the change between them over entries stating both (comparableEntries), waste manors, mills and churches. THE answer for "compare the counties", "which counties lost most value after the Conquest", "where was the waste".'
   cypher: |
     MATCH (e:DomesdayEntry)
     WITH e, (e.value1066 IS NOT NULL AND e.value1086 IS NOT NULL) AS both
@@ -255,7 +255,7 @@
     ORDER BY value1086Pounds DESC
 
 - name: DomesdayCountyFigures
-  description: One county's totals in one row — or ALL ENGLAND's, with county empty — entries, households and every class of people, plough teams, ploughlands, geld units, value in 1066 and 1086, mills, meadow, woodland, livestock, churches, castles, waste, and the same for manors alone (`manors`, `wasteManors`, `manorsValue1086Pence`). THE answer for "how many villagers / slaves / mills / goats were there in <county>" and "... in England". Totals are sums over the entries that state each figure. Essex, Norfolk and Suffolk (Little Domesday) are included, their figures parsed from the translation.
+  description: One county's totals in one row — or ALL ENGLAND's, with county empty — entries, households and every class of people, plough teams, ploughlands, geld units, value in 1066 and 1086, mills, meadow, woodland, livestock, and HOW MANY entries mention a church, a castle or waste (churchEntries, castleEntries, wasteEntries), with the same for manors alone (`manors`, `wasteManors`, `manorsValue1086Pence`). THE answer for "how many villagers / slaves / mills / churches / castles / goats were there in <county>" and "... in England / in Domesday altogether". Totals are sums over the entries that state each figure. Essex, Norfolk and Suffolk (Little Domesday) are included, their figures parsed from the translation.
   params:
     county:
       type: string
@@ -282,7 +282,7 @@
            sum(CASE WHEN e.kind = 'manor' THEN e.value1086 ELSE 0 END) AS manorsValue1086Pence
 
 - name: DomesdayCountyRanking
-  description: Counties ranked by one measure, most first (or fewest, with order asc). THE answer for "which county had the most mills / slaves / villagers / waste / castles", "which county was poorest", "rank the counties by plough teams". Measures - households, villagers, smallholders, slaves, cottagers, freemen, priests, burgesses, mills, ploughTeams, ploughlands, geldUnits, value1066, value1086 (both in pence), meadowAcres, woodlandPigs, sheep, cattle, goats, churches, castles, markets, waste, entries. Great Domesday counties only.
+  description: 'Counties ranked by one measure, most first (or fewest, with order asc). THE answer for "which county had the most mills / slaves / villagers / waste / castles", "which county was richest / poorest", "rank the counties by plough teams". Measures: households, villagers, smallholders, slaves, cottagers, freemen, priests, burgesses, mills, ploughTeams, ploughlands, geldUnits, value1066, value1086, meadowAcres, woodlandPigs, sheep, cattle, goats, churches, castles, markets, waste, entries.'
   params:
     measure:
       type: string
@@ -334,7 +334,7 @@
            'Domesday counts heads of household, not people; the estimate multiplies by four to five, a historians convention, not a record. London and Winchester were never surveyed, and Essex, Norfolk and Suffolk are counted from figures parsed from the translation.' AS note
 
 - name: DomesdayBeforeAndAfter
-  description: Before and after the Conquest — what Domesday lets you compare between 1066 and 1086, for England or one county. VALUE is compared over the entries that state both years (comparableEntries), with how many rose, fell or held steady. PEOPLE were counted before 1066 only in Little Domesday (Essex, Norfolk, Suffolk), so households, villagers and slaves are compared over the entries there that state both years (peopleComparableEntries); for any other county that comparison is empty and the note says why. THE answer for "was England richer before or after the Conquest", "did Yorkshire lose value after 1066", "were there more slaves before or after the Conquest".
+  description: 'Before and after the Conquest, for England or one county: value compared over the entries stating both years, with how many rose, fell or held; people only for Little Domesday (Essex, Norfolk, Suffolk), the one part that counted them in 1066. THE answer for "was England richer before or after the Conquest", "did Yorkshire lose value after 1066", "were there more slaves before or after the Conquest".'
   params:
     county:
       type: string
@@ -466,7 +466,7 @@
     LIMIT $limit
 
 - name: DomesdayFeature
-  description: Entries mentioning a castle, a market or a church — with place, county and tenant-in-chief. THE answer for "where were the castles in 1086", "which places had markets".
+  description: Lists the entries that mention a castle, a market or a church, each with its place, county and tenant-in-chief. THE answer for "where were the castles in 1086", "which places had markets", "which manors in Kent had a church". NOT a count — "how many churches / castles in <county>" is DomesdayCountyFigures (churchEntries, castleEntries).
   params:
     feature:
       type: string

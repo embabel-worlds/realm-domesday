@@ -33,7 +33,7 @@
            p.wikipedia AS wikipedia, p.wikidataId AS wikidataId
 
 - name: DomesdayGrowth
-  description: How much each parish has grown since Domesday — the households Domesday counted in the vills that lie in it, beside the households of 2021, and how many times more there are now. THE answer for "which places have grown most since 1086", "which villages are hardly bigger than in Domesday", "where are there fewer households than in 1086". Parishes whose vills record fewer than minHouseholds households in 1086 are left out, because a ratio over a handful means little. An entry describing several vills is shared equally among them, so a parish holding part of a great soke gets its share, not the whole.
+  description: 'How much each parish has grown since Domesday — the households of its vills in 1086 beside the households of 2021, and the ratio. THE answer for "which places have grown most since 1086", "which villages are hardly bigger than in Domesday", "where are there fewer households than in 1086".'
   params:
     order:
       type: string
@@ -62,7 +62,7 @@
     LIMIT $limit
 
 - name: DomesdayRichThenRichNow
-  description: Were the rich places of 1086 the comfortable places of 2025? The correlation, across Domesday places, between a place's 1086 value and its neighbourhood's 2025 deprivation decile (10 = least deprived), with how much the sample can tell. Measured over 8,479 places it is r = 0.03 — detectable with that many places, and practically nothing — so the honest answer is that 1086 wealth does not predict wealth today. THE answer for "were the richest Domesday manors still affluent", "does Domesday wealth predict wealth today". A correlation across places, not a claim about any one; a town of 1086 is often a deprived inner-city neighbourhood now.
+  description: 'Whether the rich places of 1086 are the comfortable places of 2025: the correlation across places between 1086 value and 2025 deprivation decile, with how much the sample can tell. THE answer for "were the richest Domesday manors still affluent", "does Domesday wealth predict wealth today".'
   params:
     county:
       type: string
@@ -107,7 +107,7 @@
 # which the app reports as "today's figures need realm-uk-streets".
 
 - name: DomesdayPlaceToday
-  description: A Domesday place today, from realm-uk-streets' live public data on its district and neighbourhood — median full-time pay in the district, population by age, recorded crime per 1,000, people claiming unemployment benefit, the district's 2025 deprivation rank and the neighbourhood's population density. THE answer for "what is <Domesday place> like today", "how prosperous is Abberley now". District figures describe the whole local authority, not the village. Crime is published by community safety partnership, so where several districts share one (South Worcestershire, East Devon) the crime figures are empty — not zero. Needs realm-uk-streets.
+  description: 'A Domesday place today, from its district and neighbourhood: median pay, population by age, crime per 1,000, benefit claimants, 2025 deprivation rank, population density. THE answer for "what is <Domesday place> like today", "how prosperous is Abberley now". Needs realm-uk-streets.'
   params:
     placeId:
       type: string
