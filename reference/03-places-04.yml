@@ -4,538 +4,6 @@
 
 - type: DomesdayPlace
   data:
-    placeId: '46251'
-    name: '[East] Norton'
-    county: LEC
-    countyName: Leicestershire
-    hundred: Goscote
-    gridRef: SK7800
-    lat: 52.59663
-    lng: -0.8425
-    entryCount: 2
-    inLittleDomesday: false
-    openDomesdayPath: SK7800/east-norton
-    wikidataId: Q2634650
-    wikipedia: East Norton
-    geonamesId: '2650370'
-    visionOfBritainPlaceId: '11190'
-    manorialDocumentsRegisterId: F285200
-    parishCode: E04005421
-    parishName: East Norton
-    ladCode: E07000131
-    ladName: Harborough
-    lsoa21Code: E01025815
-    modernPlaceName: East Norton
-    modernPlaceDistanceKm: 0.11
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: LEC:Goscote
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04005421
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01025815
-- type: DomesdayPlace
-  data:
-    placeId: '46256'
-    name: Norton [Fitzwarren]
-    county: SOM
-    countyName: Somerset
-    hundred: Taunton and Taunton Dean
-    gridRef: ST1925
-    lat: 51.02321
-    lng: -3.14915
-    entryCount: 2
-    inLittleDomesday: false
-    openDomesdayPath: ST1925/norton-fitzwarren
-    wikidataId: Q2000564
-    wikipedia: Norton Fitzwarren
-    geonamesId: '2641189'
-    visionOfBritainPlaceId: '13117'
-    manorialDocumentsRegisterId: F254273
-    parishCode: E04008803
-    parishName: Norton Fitzwarren
-    ladCode: E07000246
-    ladName: Somerset West and Taunton
-    lsoa21Code: E01032651
-    modernPlaceName: Norton Fitzwarren
-    modernPlaceDistanceKm: 0.37
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: SOM:Taunton and Taunton Dean
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04008803
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01032651
-- type: DomesdayPlace
-  data:
-    placeId: '46261'
-    name: '[Greens] Norton'
-    county: NTH
-    countyName: Northamptonshire
-    hundred: Foxley
-    gridRef: SP6649
-    lat: 52.1398
-    lng: -1.02973
-    entryCount: 3
-    inLittleDomesday: false
-    openDomesdayPath: SP6649/greens-norton
-    wikidataId: Q732508
-    wikipedia: Greens Norton
-    geonamesId: '7301975'
-    visionOfBritainPlaceId: '8107'
-    parishCode: E04006829
-    parishName: Greens Norton
-    ladCode: E06000062
-    ladName: West Northamptonshire
-    lsoa21Code: E01027289
-    modernPlaceName: Bengal
-    modernPlaceDistanceKm: 0.27
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: NTH:Foxley
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04006829
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01027289
-- type: DomesdayPlace
-  data:
-    placeId: '46266'
-    name: Norton [in Hales]
-    county: SHR
-    countyName: Shropshire
-    hundred: Hodnet
-    gridRef: SJ7038
-    lat: 52.94307
-    lng: -2.44043
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: SJ7038/norton-in-hales
-    wikidataId: Q3878290
-    wikipedia: Norton in Hales
-    geonamesId: '2641187'
-    visionOfBritainPlaceId: '10447'
-    parishCode: E04011334
-    parishName: Norton in Hales
-    ladCode: E06000051
-    ladName: Shropshire
-    lsoa21Code: E01028899
-    modernPlaceName: Norton in Hales
-    modernPlaceDistanceKm: 0.2
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: SHR:Hodnet
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04011334
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01028899
-- type: DomesdayPlace
-  data:
-    placeId: '46271'
-    name: Norton [-in-the-Moors]
-    county: STS
-    countyName: Staffordshire
-    hundred: Pirehill
-    gridRef: SJ8951
-    lat: 53.06064
-    lng: -2.15812
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: SJ8951/norton-in-the-moors
-    parishCode: E43000017
-    parishName: Stoke-on-Trent, unparished area
-    ladCode: E06000021
-    ladName: Stoke-on-Trent
-    lsoa21Code: E01014332
-    modernPlaceName: Norton in the Moors
-    modernPlaceDistanceKm: 0.26
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: STS:Pirehill
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E43000017
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01014332
-- type: DomesdayPlace
-  data:
-    placeId: '46276'
-    name: Norton [juxta Twycross]
-    county: LEC
-    countyName: Leicestershire
-    hundred: Guthlaxton
-    gridRef: SK3207
-    lat: 52.66425
-    lng: -1.52089
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: SK3207/norton-juxta-twycross
-    parishCode: E04005511
-    parishName: Twycross
-    ladCode: E07000132
-    ladName: Hinckley and Bosworth
-    lsoa21Code: E01025882
-    modernPlaceName: Norton juxta Twycross
-    modernPlaceDistanceKm: 0.51
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: LEC:Guthlaxton
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04005511
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01025882
-- type: DomesdayPlace
-  data:
-    placeId: '46281'
-    name: '[King''s] Norton'
-    county: LEC
-    countyName: Leicestershire
-    hundred: Gartree
-    gridRef: SK6800
-    lat: 52.59798
-    lng: -0.99011
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: SK6800/kings-norton
-    wikidataId: Q6411029
-    wikipedia: King's Norton, Leicestershire
-    geonamesId: '7295427'
-    visionOfBritainPlaceId: '11191'
-    parishCode: E04005443
-    parishName: King's Norton
-    ladCode: E07000131
-    ladName: Harborough
-    lsoa21Code: E01025770
-    modernPlaceName: King's Norton
-    modernPlaceDistanceKm: 0.22
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: LEC:Gartree
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04005443
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01025770
-- type: DomesdayPlace
-  data:
-    placeId: '46286'
-    name: '[King''s] Norton'
-    county: WAR
-    countyName: Warwickshire
-    hundred: Came
-    gridRef: SP0578
-    lat: 52.40448
-    lng: -1.92058
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: SP0578/kings-norton
-    wikidataId: Q2856469
-    wikipedia: Kings Norton
-    geonamesId: '2645450'
-    visionOfBritainPlaceId: '977'
-    parishCode: E43000250
-    parishName: Birmingham, unparished area
-    ladCode: E08000025
-    ladName: Birmingham
-    lsoa21Code: E01009120
-    modernPlaceName: Walkers Heath
-    modernPlaceDistanceKm: 0.09
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: WAR:Came
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E43000250
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01009120
-- type: DomesdayPlace
-  data:
-    placeId: '46296'
-    name: Norton [le Clay]
-    county: YKS
-    countyName: Yorkshire
-    hundred: Halikeld
-    area: West Riding
-    gridRef: SE4071
-    lat: 54.13775
-    lng: -1.38161
-    entryCount: 2
-    inLittleDomesday: false
-    openDomesdayPath: SE4071/norton-le-clay
-    wikidataId: Q2516042
-    wikipedia: Norton-le-Clay
-    geonamesId: '7302041'
-    visionOfBritainPlaceId: '13837'
-    parishCode: E04007402
-    parishName: Norton-le-Clay
-    ladCode: E07000165
-    ladName: Harrogate
-    lsoa21Code: E01027737
-    modernPlaceName: Norton-le-Clay
-    modernPlaceDistanceKm: 0.42
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: YKS:Halikeld
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04007402
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01027737
-- type: DomesdayPlace
-  data:
-    placeId: '46301'
-    name: Norton [Lindsey]
-    county: WAR
-    countyName: Warwickshire
-    hundred: Ferncombe
-    gridRef: SP2263
-    lat: 52.2692
-    lng: -1.6717
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: SP2263/norton-lindsey
-    wikidataId: Q7060654
-    wikipedia: Norton Lindsey
-    geonamesId: '2641185'
-    visionOfBritainPlaceId: '9240'
-    manorialDocumentsRegisterId: F245211
-    parishCode: E04009831
-    parishName: Norton Lindsey
-    ladCode: E07000222
-    ladName: Warwick
-    lsoa21Code: E01031267
-    modernPlaceName: Norton Curlieu
-    modernPlaceDistanceKm: 0.28
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: WAR:Ferncombe
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04009831
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01031267
-- type: DomesdayPlace
-  data:
-    placeId: '46306'
-    name: Norton [Malreward]
-    county: SOM
-    countyName: Somerset
-    hundred: Chew
-    gridRef: ST5965
-    lat: 51.38709
-    lng: -2.5834
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: ST5965/norton-malreward
-    wikidataId: Q3036266
-    wikipedia: Norton Malreward
-    geonamesId: '7296081'
-    visionOfBritainPlaceId: '13118'
-    manorialDocumentsRegisterId: F253947
-    parishCode: E04000981
-    parishName: Norton Malreward
-    ladCode: E06000022
-    ladName: Bath and North East Somerset
-    lsoa21Code: E01014382
-    modernPlaceName: Norton Malreward
-    modernPlaceDistanceKm: 0.61
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: SOM:Chew
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04000981
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01014382
-- type: DomesdayPlace
-  data:
-    placeId: '46311'
-    name: Norton [Mandeville]
-    county: ESS
-    countyName: Essex
-    hundred: Ongar
-    gridRef: TL5804
-    lat: 51.71684
-    lng: 0.29302
-    entryCount: 0
-    inLittleDomesday: true
-    openDomesdayPath: TL5804/norton-mandeville
-    wikidataId: Q2282841
-    wikipedia: Norton Mandeville
-    geonamesId: '9973409'
-    visionOfBritainPlaceId: '7118'
-    manorialDocumentsRegisterId: F248215
-    parishCode: E04004019
-    parishName: High Ongar
-    ladCode: E07000072
-    ladName: Epping Forest
-    lsoa21Code: E01021769
-    modernPlaceName: Norton Mandeville
-    modernPlaceDistanceKm: 0.54
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: ESS:Ongar
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04004019
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01021769
-- type: DomesdayPlace
-  data:
-    placeId: '46316'
-    name: '[Pudding] Norton'
-    county: NFK
-    countyName: Norfolk
-    hundred: Brothercross
-    gridRef: TF9227
-    lat: 52.81067
-    lng: 0.85472
-    entryCount: 0
-    inLittleDomesday: true
-    openDomesdayPath: TF9227/pudding-norton
-    wikidataId: Q3095447
-    wikipedia: Pudding Norton
-    geonamesId: '7299455'
-    visionOfBritainPlaceId: '5642'
-    manorialDocumentsRegisterId: F237591
-    parishCode: E04006459
-    parishName: Pudding Norton
-    ladCode: E07000147
-    ladName: North Norfolk
-    lsoa21Code: E01026780
-    modernPlaceName: Pudding Norton
-    modernPlaceDistanceKm: 0.46
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: NFK:Brothercross
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04006459
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01026780
-- type: DomesdayPlace
-  data:
-    placeId: '46321'
-    name: Norton [St Philip]
-    county: SOM
-    countyName: Somerset
-    hundred: Wellow
-    gridRef: ST7755
-    lat: 51.29818
-    lng: -2.3241
-    entryCount: 1
-    inLittleDomesday: false
-    openDomesdayPath: ST7755/norton-st-philip
-    wikidataId: Q2329378
-    wikipedia: Norton St Philip
-    geonamesId: '2641183'
-    visionOfBritainPlaceId: '13119'
-    manorialDocumentsRegisterId: F253948
-    parishCode: E04008575
-    parishName: Norton St Philip
-    ladCode: E07000187
-    ladName: Mendip
-    lsoa21Code: E01029057
-    modernPlaceName: Norton St Philip
-    modernPlaceDistanceKm: 0.49
-    likelyLost: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayHundred
-      hundredId: SOM:Wellow
-  - predicate: NOW_IN
-    to:
-      type: ModernParish
-      parishCode: E04008575
-  - predicate: NOW_IN_NEIGHBOURHOOD
-    to:
-      type: ModernNeighbourhood
-      lsoa21Code: E01029057
-- type: DomesdayPlace
-  data:
     placeId: '46326'
     name: Norton [sub Hamdon]
     county: SOM
@@ -1915,11 +1383,7 @@
     countyName: Somerset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SOM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '46526'
@@ -4769,11 +4233,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '46946'
@@ -4947,11 +4407,7 @@
     countyName: Devon
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DEV
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '46976'
@@ -6023,11 +5479,7 @@
     countyName: Suffolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SUF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '47136'
@@ -9830,11 +9282,7 @@
     countyName: Warwickshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WAR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '47671'
@@ -10896,11 +10344,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '47831'
@@ -10910,11 +10354,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '47836'
@@ -11902,11 +11342,7 @@
     countyName: Surrey
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SUR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '47996'
@@ -13098,11 +12534,7 @@
     countyName: Hertfordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HRT
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '48171'
@@ -14640,11 +14072,7 @@
     countyName: Devon
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DEV
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '48401'
@@ -14726,11 +14154,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '48416'
@@ -14813,11 +14237,7 @@
     countyName: Derbyshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DBY
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '48431'
@@ -18820,11 +18240,7 @@
     countyName: Derbyshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DBY
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '49036'
@@ -19819,11 +19235,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '49186'
@@ -20832,11 +20244,7 @@
     countyName: Herefordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HEF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '49331'
@@ -22118,11 +21526,7 @@
     area: North Lancashire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '49516'
@@ -24745,11 +24149,7 @@
     area: Kesteven
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: LIN
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '49921'
@@ -27342,11 +26742,7 @@
     area: Arundel
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SUS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '50301'
@@ -29304,11 +28700,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '50596'
@@ -31295,11 +30687,7 @@
     locationNote: near Gresford
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: CHS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '50906'
@@ -39881,11 +39269,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '52141'
@@ -42600,11 +41984,7 @@
     countyName: Herefordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HEF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '52556'
@@ -48369,11 +47749,7 @@
     countyName: Somerset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SOM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '53376'
@@ -48382,11 +47758,7 @@
     countyName: Cheshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: CHS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '53381'
@@ -48395,11 +47767,7 @@
     countyName: Gloucestershire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: GLS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '53386'
@@ -48446,11 +47814,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '53396'
@@ -48796,11 +48160,7 @@
     countyName: Berkshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: BRK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '53446'
@@ -48952,11 +48312,7 @@
     area: North Lancashire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '53471'
@@ -54599,11 +53955,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '54286'
@@ -54684,11 +54036,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '54301'
@@ -55257,11 +54605,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '54381'
@@ -61695,11 +61039,7 @@
     countyName: Hertfordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HRT
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '55301'
@@ -62639,11 +61979,7 @@
     countyName: Shropshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SHR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '55431'
@@ -65736,11 +65072,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '55901'
@@ -66084,11 +65416,7 @@
     countyName: Dorset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DOR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '55951'
@@ -66269,11 +65597,7 @@
     countyName: Devon
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DEV
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '55986'
@@ -66322,11 +65646,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '55996'
@@ -68138,11 +67458,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '56261'
@@ -68416,11 +67732,7 @@
     area: Lindsey South Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: LIN
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '56301'
@@ -73203,11 +72515,7 @@
     countyName: Warwickshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WAR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '56976'
@@ -74740,11 +74048,7 @@
     countyName: Middlesex
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: MDX
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '57201'
@@ -74753,11 +74057,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '57206'
@@ -74882,11 +74182,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '57226'
@@ -81914,11 +81210,7 @@
     countyName: Shropshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SHR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '58231'
@@ -86765,11 +86057,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '58926'
@@ -87729,11 +87017,7 @@
     locationNote: in St Mary Bourne
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '59076'
@@ -88022,11 +87306,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '59126'
@@ -88990,11 +88270,7 @@
     countyName: Middlesex
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: MDX
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '59271'
@@ -89719,11 +88995,7 @@
     area: Kesteven
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: LIN
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '59376'
@@ -90177,11 +89449,7 @@
     countyName: Somerset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SOM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '59441'
@@ -93805,11 +93073,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '59951'
@@ -94668,11 +93932,7 @@
     countyName: Herefordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HEF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '60081'
@@ -95128,11 +94388,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '60146'
@@ -97318,11 +96574,7 @@
     countyName: Cheshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: CHS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '60476'
@@ -102393,11 +101645,7 @@
     countyName: Worcestershire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WOR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '61196'
@@ -104388,11 +103636,7 @@
     area: Ati's Cross
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: CHS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '61486'
@@ -106264,3 +105508,721 @@
     to:
       type: ModernNeighbourhood
       lsoa21Code: E01026568
+- type: DomesdayPlace
+  data:
+    placeId: '61741'
+    name: Tavistock
+    county: DEV
+    countyName: Devon
+    hundred: Lifton (and Tavistock)
+    gridRef: SX4874
+    lat: 50.55058
+    lng: -4.13985
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SX4874/tavistock
+    wikidataId: Q668262
+    wikipedia: Tavistock
+    geonamesId: '2636174'
+    visionOfBritainPlaceId: '42'
+    manorialDocumentsRegisterId: F277442
+    parishCode: E04003354
+    parishName: Tavistock
+    ladCode: E07000047
+    ladName: West Devon
+    lsoa21Code: E01020335
+    modernPlaceName: Tavistock
+    modernPlaceDistanceKm: 0.3
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Lifton (and Tavistock)
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003354
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020335
+- type: DomesdayPlace
+  data:
+    placeId: '61746'
+    name: '[Mary] Tavy'
+    county: DEV
+    countyName: Devon
+    hundred: Lifton (and Tavistock)
+    gridRef: SX5079
+    lat: 50.59603
+    lng: -4.11365
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SX5079/mary-tavy
+    wikidataId: Q2039056
+    wikipedia: Mary Tavy
+    geonamesId: '2642925'
+    visionOfBritainPlaceId: '4209'
+    manorialDocumentsRegisterId: F277120
+    parishCode: E04003335
+    parishName: Mary Tavy
+    ladCode: E07000047
+    ladName: West Devon
+    lsoa21Code: E01020324
+    modernPlaceName: Mary Tavy
+    modernPlaceDistanceKm: 0.26
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Lifton (and Tavistock)
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003335
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020324
+- type: DomesdayPlace
+  data:
+    placeId: '61751'
+    name: '[Peter] Tavy'
+    county: DEV
+    countyName: Devon
+    hundred: Roborough
+    gridRef: SX5177
+    lat: 50.57831
+    lng: -4.09874
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SX5177/peter-tavy
+    wikidataId: Q1956524
+    wikipedia: Peter Tavy
+    geonamesId: '2640341'
+    visionOfBritainPlaceId: '4222'
+    parishCode: E04003344
+    parishName: Peter Tavy
+    ladCode: E07000047
+    ladName: West Devon
+    lsoa21Code: E01020324
+    modernPlaceName: Peter Tavy
+    modernPlaceDistanceKm: 0.13
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Roborough
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003344
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020324
+- type: DomesdayPlace
+  data:
+    placeId: '61756'
+    name: Taw [Green]
+    county: DEV
+    countyName: Devon
+    hundred: Wonford
+    gridRef: SX6597
+    lat: 50.76146
+    lng: -3.9084
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SX6597/taw-green
+    parishCode: E04003349
+    parishName: South Tawton
+    ladCode: E07000047
+    ladName: West Devon
+    lsoa21Code: E01020339
+    modernPlaceName: South Tawton
+    modernPlaceDistanceKm: 0.55
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Wonford
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003349
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020339
+- type: DomesdayPlace
+  data:
+    placeId: '61761'
+    name: Tawstock
+    county: DEV
+    countyName: Devon
+    hundred: Fremington
+    gridRef: SS5529
+    lat: 51.04663
+    lng: -4.06277
+    entryCount: 2
+    inLittleDomesday: false
+    openDomesdayPath: SS5529/tawstock
+    wikidataId: Q2186946
+    wikipedia: Tawstock
+    geonamesId: '2636169'
+    visionOfBritainPlaceId: '3311'
+    manorialDocumentsRegisterId: F277444
+    parishCode: E04003121
+    parishName: Tawstock
+    ladCode: E07000043
+    ladName: North Devon
+    lsoa21Code: E01020122
+    modernPlaceName: Tawstock
+    modernPlaceDistanceKm: 0.34
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Fremington
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003121
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020122
+- type: DomesdayPlace
+  data:
+    placeId: '61766'
+    name: '[Bishops] Tawton'
+    county: DEV
+    countyName: Devon
+    hundred: South Molton
+    gridRef: SS5630
+    lat: 51.05586
+    lng: -4.04891
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SS5630/bishops-tawton
+    wikidataId: Q4917449
+    wikipedia: Bishop's Tawton
+    geonamesId: '2655559'
+    visionOfBritainPlaceId: '6146'
+    manorialDocumentsRegisterId: F276472
+    parishCode: E04003072
+    parishName: Bishop's Tawton
+    ladCode: E07000043
+    ladName: North Devon
+    lsoa21Code: E01020122
+    modernPlaceName: Bishop's Tawton
+    modernPlaceDistanceKm: 0.2
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:South Molton
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003072
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020122
+- type: DomesdayPlace
+  data:
+    placeId: '61771'
+    name: '[North] Tawton'
+    county: DEV
+    countyName: Devon
+    hundred: North Tawton
+    gridRef: SS6601
+    lat: 50.79764
+    lng: -3.89569
+    entryCount: 2
+    inLittleDomesday: false
+    openDomesdayPath: SS6601/north-tawton
+    wikidataId: Q1221032
+    wikipedia: North Tawton
+    geonamesId: '2641245'
+    visionOfBritainPlaceId: '4330'
+    manorialDocumentsRegisterId: F277445
+    parishCode: E04003341
+    parishName: North Tawton
+    ladCode: E07000047
+    ladName: West Devon
+    lsoa21Code: E01020326
+    modernPlaceName: North Tawton
+    modernPlaceDistanceKm: 0.28
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:North Tawton
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003341
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020326
+- type: DomesdayPlace
+  data:
+    placeId: '61776'
+    name: '[South] Tawton'
+    county: DEV
+    countyName: Devon
+    hundred: Wonford
+    gridRef: SX6594
+    lat: 50.7345
+    lng: -3.90731
+    entryCount: 4
+    inLittleDomesday: false
+    openDomesdayPath: SX6594/south-tawton
+    wikidataId: Q4429545
+    wikipedia: South Tawton
+    geonamesId: '2637312'
+    visionOfBritainPlaceId: '1951'
+    manorialDocumentsRegisterId: F277446
+    parishCode: E04003349
+    parishName: South Tawton
+    ladCode: E07000047
+    ladName: West Devon
+    lsoa21Code: E01020339
+    modernPlaceName: South Tawton
+    modernPlaceDistanceKm: 0.11
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Wonford
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003349
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020339
+- type: DomesdayPlace
+  data:
+    placeId: '61781'
+    name: Taynton
+    county: GLS
+    countyName: Gloucestershire
+    hundred: Botloe
+    gridRef: SO7321
+    lat: 51.89142
+    lng: -2.38648
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SO7321/taynton
+    wikidataId: Q19722266
+    wikipedia: Taynton, Gloucestershire
+    geonamesId: '7300601'
+    visionOfBritainPlaceId: '11355'
+    parishCode: E04004327
+    parishName: Taynton
+    ladCode: E07000080
+    ladName: Forest of Dean
+    lsoa21Code: E01022271
+    modernPlaceName: Taynton
+    modernPlaceDistanceKm: 0.66
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04004327
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01022271
+- type: DomesdayPlace
+  data:
+    placeId: '61786'
+    name: Taynton
+    county: OXF
+    countyName: Oxfordshire
+    hundred: Shipton
+    gridRef: SP2313
+    lat: 51.81964
+    lng: -1.66047
+    entryCount: 2
+    inLittleDomesday: false
+    openDomesdayPath: SP2313/taynton
+    wikidataId: Q2158537
+    wikipedia: Taynton, Oxfordshire
+    geonamesId: '2636160'
+    visionOfBritainPlaceId: '10231'
+    manorialDocumentsRegisterId: F285965
+    parishCode: E04008332
+    parishName: Taynton
+    ladCode: E07000181
+    ladName: West Oxfordshire
+    lsoa21Code: E01028767
+    modernPlaceName: Taynton
+    modernPlaceDistanceKm: 0.24
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: OXF:Shipton
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04008332
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01028767
+- type: DomesdayPlace
+  data:
+    placeId: '61791'
+    name: '[Little] Taynton'
+    county: GLS
+    countyName: Gloucestershire
+    hundred: Botloe
+    gridRef: SO7423
+    lat: 51.90945
+    lng: -2.3721
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SO7423/little-taynton
+    wikidataId: Q19722266
+    wikipedia: Taynton, Gloucestershire
+    geonamesId: '7300601'
+    visionOfBritainPlaceId: '11355'
+    parishCode: E04004327
+    parishName: Taynton
+    ladCode: E07000080
+    ladName: Forest of Dean
+    lsoa21Code: E01022271
+    modernPlaceName: Kents Green
+    modernPlaceDistanceKm: 0.42
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Botloe
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04004327
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01022271
+- type: DomesdayPlace
+  data:
+    placeId: '61796'
+    name: Tealby
+    county: LIN
+    countyName: Lincolnshire
+    hundred: Walshcroft
+    area: Lindsey North Riding
+    gridRef: TF1590
+    lat: 53.3987
+    lng: -0.26435
+    entryCount: 15
+    inLittleDomesday: false
+    openDomesdayPath: TF1590/tealby
+    wikidataId: Q7691391
+    wikipedia: Tealby
+    geonamesId: '7299203'
+    visionOfBritainPlaceId: '13921'
+    parishCode: E04006063
+    parishName: Tealby
+    ladCode: E07000142
+    ladName: West Lindsey
+    lsoa21Code: E01026391
+    modernPlaceName: Tealby
+    modernPlaceDistanceKm: 0.18
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: LIN:Walshcroft
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04006063
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01026391
+- type: DomesdayPlace
+  data:
+    placeId: '61801'
+    name: Tealby
+    county: LIN
+    countyName: Lincolnshire
+    hundred: Walshcroft
+    area: Lindsey North Riding
+    locationNote: Hundred
+    gridRef: TF1590
+    gridRefMark: '*'
+    lat: 53.3987
+    lng: -0.26435
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: TF1590/tealby
+    wikidataId: Q7691391
+    wikipedia: Tealby
+    geonamesId: '7299203'
+    visionOfBritainPlaceId: '13921'
+    parishCode: E04006063
+    parishName: Tealby
+    ladCode: E07000142
+    ladName: West Lindsey
+    lsoa21Code: E01026391
+    modernPlaceName: Tealby
+    modernPlaceDistanceKm: 0.18
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: LIN:Walshcroft
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04006063
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01026391
+- type: DomesdayPlace
+  data:
+    placeId: '61806'
+    name: '[Lower and Upper] Tean'
+    county: STS
+    countyName: Staffordshire
+    hundred: Totmonslow
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: XX0000/lower-and-upper-tean
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: STS:Totmonslow
+- type: DomesdayPlace
+  data:
+    placeId: '61811'
+    name: Tedburn [St Mary]
+    county: DEV
+    countyName: Devon
+    hundred: Wonford
+    gridRef: SX8194
+    lat: 50.73799
+    lng: -3.68069
+    entryCount: 3
+    inLittleDomesday: false
+    openDomesdayPath: SX8194/tedburn-st-mary
+    wikidataId: Q2275673
+    wikipedia: Tedburn St Mary
+    geonamesId: '2636148'
+    visionOfBritainPlaceId: '5596'
+    parishCode: E04003232
+    parishName: Tedburn St. Mary
+    ladCode: E07000045
+    ladName: Teignbridge
+    lsoa21Code: E01020263
+    modernPlaceName: Tedburn St Mary
+    modernPlaceDistanceKm: 0.49
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: DEV:Wonford
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04003232
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01020263
+- type: DomesdayPlace
+  data:
+    placeId: '61816'
+    name: Teddington
+    county: GLS
+    countyName: Gloucestershire
+    hundred: Oswaldslow
+    gridRef: SO9633
+    lat: 51.99993
+    lng: -2.05239
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SO9633/teddington
+    wikidataId: Q3889684
+    wikipedia: Teddington, Gloucestershire
+    geonamesId: '2636146'
+    visionOfBritainPlaceId: '10103'
+    parishCode: E04004425
+    parishName: Teddington
+    ladCode: E07000083
+    ladName: Tewkesbury
+    lsoa21Code: E01022449
+    modernPlaceName: Teddington
+    modernPlaceDistanceKm: 0.66
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: GLS:Oswaldslow
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04004425
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01022449
+- type: DomesdayPlace
+  data:
+    placeId: '61826'
+    name: Tedstone [Delamere and Wafre]
+    county: HEF
+    countyName: Herefordshire
+    hundred: Plegelgate
+    entryCount: 2
+    inLittleDomesday: false
+    openDomesdayPath: XX0000/tedstone-delamere-and-wafre
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: HEF:Plegelgate
+- type: DomesdayPlace
+  data:
+    placeId: '61831'
+    name: Teeton
+    county: NTH
+    countyName: Northamptonshire
+    hundred: Nobottle
+    gridRef: SP6970
+    lat: 52.3282
+    lng: -0.98159
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SP6970/teeton
+    wikidataId: Q7694609
+    wikipedia: Teeton
+    visionOfBritainPlaceId: '8204'
+    manorialDocumentsRegisterId: F279093
+    parishCode: E04013018
+    parishName: Hollowell
+    ladCode: E06000062
+    ladName: West Northamptonshire
+    lsoa21Code: E01027021
+    modernPlaceName: Teeton
+    modernPlaceDistanceKm: 0.25
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: NTH:Nobottle
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04013018
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01027021
+- type: DomesdayPlace
+  data:
+    placeId: '61836'
+    name: Teffont [Evias]
+    county: WIL
+    countyName: Wiltshire
+    hundred: Dunworth
+    gridRef: ST9931
+    lat: 51.08282
+    lng: -2.00852
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: ST9931/teffont-evias
+    wikidataId: Q7694623
+    wikipedia: Teffont Evias
+    geonamesId: '8199187'
+    visionOfBritainPlaceId: '12118'
+    manorialDocumentsRegisterId: F273471
+    parishCode: E04011835
+    parishName: Teffont
+    ladCode: E06000054
+    ladName: Wiltshire
+    lsoa21Code: E01032004
+    modernPlaceName: Teffont Evias
+    modernPlaceDistanceKm: 0.32
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: WIL:Dunworth
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04011835
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01032004
+- type: DomesdayPlace
+  data:
+    placeId: '61841'
+    name: Tehidy
+    county: CON
+    countyName: Cornwall
+    hundred: Connerton
+    gridRef: SW6444
+    lat: 50.25344
+    lng: -5.30501
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SW6444/tehidy
+    parishCode: E04011448
+    parishName: Illogan
+    ladCode: E06000052
+    ladName: Cornwall
+    lsoa21Code: E01018891
+    modernPlaceName: Tehidy
+    modernPlaceDistanceKm: 1.08
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: CON:Connerton
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04011448
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01018891

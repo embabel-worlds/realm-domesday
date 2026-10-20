@@ -352,11 +352,7 @@
     countyName: Leicestershire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: LEC
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '51'
@@ -7804,11 +7800,7 @@
     area: North Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '1136'
@@ -11336,11 +11328,7 @@
     countyName: Warwickshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WAR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '1661'
@@ -12212,11 +12200,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '1791'
@@ -19771,11 +19755,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '2871'
@@ -19823,11 +19803,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '2881'
@@ -19836,11 +19812,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '2886'
@@ -21209,11 +21181,7 @@
     countyName: Gloucestershire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: GLS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '3071'
@@ -21600,11 +21568,7 @@
     locationNote: in Munslow
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SHR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '3126'
@@ -24218,11 +24182,7 @@
     countyName: Warwickshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WAR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '3491'
@@ -25715,11 +25675,7 @@
     locationNote: in Holt
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '3696'
@@ -27075,11 +27031,7 @@
     locationNote: in Wedmore
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SOM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '3881'
@@ -32233,11 +32185,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '4591'
@@ -35587,11 +35535,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '5076'
@@ -38246,11 +38190,7 @@
     countyName: Suffolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SUF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '5461'
@@ -49518,11 +49458,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '7126'
@@ -49532,11 +49468,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '7131'
@@ -52931,11 +52863,7 @@
     countyName: Bedfordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: BDF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '7621'
@@ -53303,11 +53231,7 @@
     countyName: Norfolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NFK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '7676'
@@ -56247,11 +56171,7 @@
     countyName: Nottinghamshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NTT
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '8111'
@@ -56791,11 +56711,7 @@
     area: North Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '8186'
@@ -57885,11 +57801,7 @@
     countyName: Cheshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: CHS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '8346'
@@ -59280,11 +59192,7 @@
     countyName: Devon
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DEV
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '8536'
@@ -61402,11 +61310,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '8851'
@@ -67193,11 +67097,7 @@
     countyName: Worcestershire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WOR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '9671'
@@ -67279,11 +67179,7 @@
     countyName: Dorset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DOR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '9686'
@@ -69103,11 +68999,7 @@
     countyName: Hampshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '9956'
@@ -70461,11 +70353,7 @@
     countyName: Oxfordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: OXF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '10156'
@@ -70781,11 +70669,7 @@
     countyName: Dorset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DOR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '10206'
@@ -71648,11 +71532,7 @@
     countyName: Staffordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: STS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '10331'
@@ -73528,11 +73408,7 @@
     countyName: Buckinghamshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: BUK
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '10606'
@@ -74134,11 +74010,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '10691'
@@ -77128,11 +77000,7 @@
     area: Lindsey South Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: LIN
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11106'
@@ -77258,11 +77126,7 @@
     countyName: Devon
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DEV
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11126'
@@ -78548,11 +78412,7 @@
     countyName: Cheshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: CHS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11306'
@@ -78904,11 +78764,7 @@
     countyName: Herefordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HEF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11356'
@@ -79453,11 +79309,7 @@
     countyName: Hertfordshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HRT
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11441'
@@ -81323,11 +81175,7 @@
     area: East Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11721'
@@ -81337,11 +81185,7 @@
     area: East Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11726'
@@ -81902,11 +81746,7 @@
     area: East Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '11811'
@@ -83379,11 +83219,7 @@
     countyName: Warwickshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WAR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '12016'
@@ -83697,11 +83533,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '12061'
@@ -84957,11 +84789,7 @@
     countyName: Somerset
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SOM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '12256'
@@ -85947,11 +85775,7 @@
     area: Kesteven
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: LIN
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '12396'
@@ -88872,11 +88696,7 @@
     countyName: Middlesex
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: MDX
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '12811'
@@ -90716,11 +90536,7 @@
     area: Isle of Wight
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: HAM
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '13071'
@@ -93052,11 +92868,7 @@
     countyName: Warwickshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WAR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '13396'
@@ -93101,11 +92913,7 @@
     countyName: Derbyshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: DBY
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '13406'
@@ -93796,11 +93604,7 @@
     area: West Riding
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '13506'
@@ -95100,11 +94904,7 @@
     countyName: Nottinghamshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NTT
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '13706'
@@ -100329,11 +100129,7 @@
     countyName: Suffolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SUF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '14471'
@@ -101227,11 +101023,7 @@
     area: North Lancashire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: YKS
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '14606'
@@ -103677,11 +103469,7 @@
     countyName: Worcestershire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: WOR
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '14981'
@@ -103768,11 +103556,7 @@
     countyName: Suffolk
     entryCount: 0
     inLittleDomesday: true
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: SUF
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '14996'
@@ -105355,11 +105139,7 @@
     countyName: Northamptonshire
     entryCount: 0
     inLittleDomesday: false
-  relations:
-  - predicate: IN
-    to:
-      type: DomesdayCounty
-      code: NTH
+  relations: []
 - type: DomesdayPlace
   data:
     placeId: '15241'
@@ -106215,3 +105995,155 @@
     to:
       type: ModernNeighbourhood
       lsoa21Code: E01023159
+- type: DomesdayPlace
+  data:
+    placeId: '15366'
+    name: Chollington
+    county: SUS
+    countyName: Sussex
+    hundred: Eastbourne
+    area: Pevensey
+    gridRef: TV6097
+    lat: 50.75491
+    lng: 0.27404
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: TV6097/chollington
+    parishCode: E43000055
+    parishName: Eastbourne, unparished area
+    ladCode: E07000061
+    ladName: Eastbourne
+    lsoa21Code: E01034298
+    modernPlaceName: Meads
+    modernPlaceDistanceKm: 0.42
+    likelyLost: true
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: SUS:Eastbourne
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E43000055
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01034298
+- type: DomesdayPlace
+  data:
+    placeId: '15371'
+    name: Cholmondeley
+    county: CHS
+    countyName: Cheshire
+    hundred: Broxton
+    gridRef: SJ5351
+    lat: 53.05872
+    lng: -2.69527
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SJ5351/cholmondeley
+    wikidataId: Q2381058
+    wikipedia: Cholmondeley, Cheshire
+    geonamesId: '7299896'
+    visionOfBritainPlaceId: '3588'
+    manorialDocumentsRegisterId: F286889
+    parishCode: E04010924
+    parishName: Cholmondeley
+    ladCode: E06000049
+    ladName: Cheshire East
+    lsoa21Code: E01018481
+    modernPlaceName: Cross Lanes
+    modernPlaceDistanceKm: 1.31
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: CHS:Broxton
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04010924
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01018481
+- type: DomesdayPlace
+  data:
+    placeId: '15376'
+    name: Cholmondeston
+    county: CHS
+    countyName: Cheshire
+    hundred: Nantwich
+    gridRef: SJ6359
+    lat: 53.1314
+    lng: -2.54698
+    entryCount: 1
+    inLittleDomesday: false
+    openDomesdayPath: SJ6359/cholmondeston
+    wikidataId: Q5104381
+    wikipedia: Cholmondeston
+    geonamesId: '7299897'
+    visionOfBritainPlaceId: '2100'
+    manorialDocumentsRegisterId: F286890
+    parishCode: E04010925
+    parishName: Cholmondeston
+    ladCode: E06000049
+    ladName: Cheshire East
+    lsoa21Code: E01034675
+    modernPlaceName: Cholmondeston
+    modernPlaceDistanceKm: 0.79
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: CHS:Nantwich
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04010925
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01034675
+- type: DomesdayPlace
+  data:
+    placeId: '15381'
+    name: Cholsey
+    county: BRK
+    countyName: Berkshire
+    hundred: Slotisford
+    gridRef: SU5886
+    lat: 51.57434
+    lng: -1.15725
+    entryCount: 2
+    inLittleDomesday: false
+    openDomesdayPath: SU5886/cholsey
+    wikidataId: Q5049410
+    wikipedia: Cholsey
+    geonamesId: '2653095'
+    visionOfBritainPlaceId: '5807'
+    manorialDocumentsRegisterId: F242821
+    parishCode: E04012474
+    parishName: Cholsey
+    ladCode: E07000179
+    ladName: South Oxfordshire
+    lsoa21Code: E01028619
+    modernPlaceName: West End
+    modernPlaceDistanceKm: 0.21
+    likelyLost: false
+  relations:
+  - predicate: IN
+    to:
+      type: DomesdayHundred
+      hundredId: BRK:Slotisford
+  - predicate: NOW_IN
+    to:
+      type: ModernParish
+      parishCode: E04012474
+  - predicate: NOW_IN_NEIGHBOURHOOD
+    to:
+      type: ModernNeighbourhood
+      lsoa21Code: E01028619

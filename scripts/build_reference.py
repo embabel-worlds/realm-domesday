@@ -444,9 +444,11 @@ def main(cache):
                 located += 1
         data['entryCount'] = entries_of_place[p['PlacesIdx']]
         data['inLittleDomesday'] = county in LITTLE_DOMESDAY
-        to = ({'type': 'DomesdayHundred', 'hundredId': f"{county}:{p['Hundred']}"} if p['Hundred']
-              else {'type': 'DomesdayCounty', 'code': county})
-        relations = [{'predicate': 'IN', 'to': to}]
+        # A place is IN its hundred and nothing else: a hundredless place pointing at its county instead gave
+        # IN two meanings, and a model that saw (:DomesdayPlace)-[:IN]->(:DomesdayCounty) used it for every
+        # place and found 314 of 14,334. Its county is on the place itself (countyName).
+        relations = ([{'predicate': 'IN', 'to': {'type': 'DomesdayHundred', 'hundredId': f"{county}:{p['Hundred']}"}}]
+                     if p['Hundred'] else [])
         link = crosswalk['places'].get(p['PlacesIdx'], {})
         for field, kind in PLACE_LINK_FIELDS.items():
             if link.get(field) not in (None, ''):
