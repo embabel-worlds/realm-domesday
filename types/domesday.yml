@@ -270,6 +270,19 @@
     - q: "what was Exampleshire worth in 1100"
       cypher: |
         MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayRecordsNoValueAfter1086 LIMIT 1
+    # A whole county today is NOT held: only the parishes Domesday places lie in, so a county sum would be short.
+    - q: "how many people live in Exampleshire today"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS onlyTheParishesOfDomesdayPlacesAreHeldNotWholeCounties LIMIT 1
+    - q: "how many children (or women, or old people) lived in Exampleshire in 1086"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayCountsHouseholdsNotAgeOrSex LIMIT 1
+    - q: "what did a villager earn, or what was the tax in euros"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS domesdayRecordsNoWagesOrModernMoney LIMIT 1
+    - q: "how many acres of arable land were there in Exampleshire"
+      cypher: |
+        MATCH (e:DomesdayEntry) WHERE false RETURN e.entryId AS arableIsRecordedAsPloughlandsNotAcres LIMIT 1
     # STEERING — a PLACE today is its parish, by NOW_IN; households beside households, never residents:
     - q: "how many households does Exampleton have today, and how many in 1086"
       cypher: |
@@ -326,6 +339,21 @@
     slaves:
       type: number
       description: "Slaves (servi), male and female."
+    cottagers:
+      type: number
+      description: "Cottagers (cotarii)."
+    freemen:
+      type: number
+      description: "Freemen — Phillimore's word for sokemen (sochemanni), common in the Danelaw. Sokemen."
+    freeMen:
+      type: number
+      description: "Free men (liberi homines). Distinct from freemen (sokemen). Free men, liberi homines."
+    priests:
+      type: number
+      description: "Priests."
+    burgesses:
+      type: number
+      description: "Burgesses, townspeople."
     ploughTeams:
       type: number
       description: "lordsTeams + mensTeams."
@@ -368,21 +396,6 @@
       description: "The status Hull gave the place the entry is about: `manor`, `outlier` (a berewick), `jurisdiction` (a soke), `land` (a non-manorial unit), `dependency`, `borough`, `unclassified`."
       values: ["manor", "outlier", "jurisdiction", "land", "dependency", "borough", "unclassified"]
     folio: "The folio image of Great Domesday the entry is on, e.g. `WOR 9`."
-    cottagers:
-      type: number
-      description: "Cottagers (cotarii)."
-    freemen:
-      type: number
-      description: "Freemen — Phillimore's word for sokemen (sochemanni), common in the Danelaw. Sokemen."
-    freeMen:
-      type: number
-      description: "Free men (liberi homines). Distinct from freemen (sokemen). Free men, liberi homines."
-    priests:
-      type: number
-      description: "Priests."
-    burgesses:
-      type: number
-      description: "Burgesses, townspeople."
     ploughmen:
       type: number
       description: "Ploughmen (bovarii)."
@@ -487,7 +500,6 @@
       description: "The entry's id and the moment, e.g. `201266:1066`. Identity."
     moment:
       description: "`1066` or `when acquired`."
-      values: ["1066", "when acquired"]
     ref: "The entry's Phillimore reference, e.g. `Norfolk 4,35`."
     beehives:
       type: number
