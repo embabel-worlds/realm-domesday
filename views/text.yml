@@ -129,7 +129,7 @@
     MATCH (e:DomesdayEntry)
     WHERE e.isWaste AND e.text IS NOT NULL AND (e.county = $county OR toLower(e.countyName) = toLower($county))
     WITH e LIMIT 100
-    RETURN count(e) AS entriesRead, themes(e.ref + ': ' + e.text, 'why the land is waste or what happened to it') AS reasons
+    RETURN count(e) AS entriesRead, themes(e.ref + ': ' + e.text, 'why the land is waste or what happened to it', {ai: {text: {chars: 1200}}}) AS reasons
 
 - name: DomesdayDisputes
   description: The disputed land — entries whose text records a claim, a seizure or a judgement (the claims sections of Lincolnshire, Huntingdonshire and Yorkshire, and the invasiones elsewhere), each labelled by kind of dispute. THE answer for "who was accused of seizing land", "which holdings were disputed", "what did the jurors say". Narrows by the words of dispute first, then labels each entry with a model call.
@@ -173,7 +173,8 @@
   params:
     name:
       type: string
-      default: "Merlesveinn"
+      # Wikipedia's spelling. Hull's "Merlesveinn" finds nothing there, so the default answered empty.
+      default: "Merleswein"
       description: "The name to search for — a person's searchName from DomesdayPersonWikipedia (the first of Hull's alternatives)."
   cypher: |
     MATCH (c:Concept {value: $name})-[r:RELEVANT_TO {via: 'keyword'}]->(m:DomesdayWikipediaMention)
