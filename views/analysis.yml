@@ -2,7 +2,7 @@
 # historian brings to Domesday. Each states its denominator, because a share without one misleads.
 
 - name: DomesdayValueAnomalies
-  description: Which manors were valued far above or below what their resources predict — a least-squares fit of the 1086 value on plough teams, households, mills and meadow, returning how well resources explain value (r2), which resource matters most, and the manors furthest above and below the fit. THE answer for "which manors were over-valued", "which estates were worth more than their land", "what determined a manor's value". Association, not cause; a manor far above the line usually had a render, a market or a town the figures do not code.
+  description: "Which manors were valued far above or below what their resources predict. A least-squares fit of the 1086 value on plough teams, households, mills and meadow, returning how well resources explain value (r2), which resource matters most, and the manors furthest above and below the fit. THE answer for \"which manors were over-valued\", \"which estates were worth more than their land\", \"what determined a manor's value\". Association, not cause; a manor far above the line usually had a render, a market or a town the figures do not code."
   params:
     county:
       type: string
@@ -16,7 +16,7 @@
                    e.ref + ' ' + coalesce(e.places, '')) AS model
 
 - name: DomesdayFeeScatter
-  description: How scattered each great landholder's estate was — tenants-in-chief with their entries, counties and the spread of their places in kilometres (the standard distance of their manors from the estate's centre). THE answer for "did William scatter his barons' lands", "whose estate was most compact", "which lords held a compact block". The Chester and Shrewsbury earldoms are compact; most baronies are scattered across many shires.
+  description: "How scattered each great landholder's estate was. Tenants-in-chief with their entries, counties and the spread of their places in kilometres (the standard distance of their manors from the estate's centre). THE answer for \"did William scatter his barons' lands\", \"whose estate was most compact\", \"which lords held a compact block\". The Chester and Shrewsbury earldoms are compact; most baronies are scattered across many shires. Only tenants-in-chief with at least `minEntries` located entries; the top `limit`."
   params:
     minEntries:
       type: int
@@ -38,7 +38,7 @@
     LIMIT $limit
 
 - name: DomesdayWomenBeforeAfter
-  description: How much land women held in 1066 against 1086 — entries, distinct women, value, and their share of all value recorded for that year. THE answer for "did women lose land at the Conquest", "how much land did women hold before and after 1066". 1066 counts lords of 1066; 1086 counts tenants-in-chief and their tenants.
+  description: "How much land women held in 1066 against 1086. Entries, distinct women, value, and their share of all value recorded for that year. THE answer for \"did women lose land at the Conquest\", \"how much land did women hold before and after 1066\". 1066 counts lords of 1066; 1086 counts tenants-in-chief and their tenants. Only women Hull codes as female; England-wide, not by county."
   cypher: |
     MATCH (x:DomesdayEntry)
     WITH sum(x.value1066) AS total1066, sum(x.value1086) AS total1086
@@ -55,7 +55,7 @@
     ORDER BY year
 
 - name: DomesdayWhoHeldTheLand
-  description: Per county, who held the land in 1086 by value — the King, the Church (sees, abbeys, churches), the bishops of Norman sees, and lay lords — as pounds and as percentages of the county's recorded value. THE answer for "how much land did the Church hold", "where was the King strongest", "what share of England did the Church own". Odo of Bayeux, Geoffrey of Coutances and Gilbert of Lisieux held their English land as barons, not for their churches, so they are counted apart — Odo's Kent was the earldom of the King's half-brother, not church land.
+  description: "Per county, who held the land in 1086 by value. The King, the Church (sees, abbeys, churches), the bishops of Norman sees, and lay lords — as pounds and as percentages of the county's recorded value. THE answer for \"how much land did the Church hold\", \"where was the King strongest\", \"what share of England did the Church own\". Odo of Bayeux, Geoffrey of Coutances and Gilbert of Lisieux held their English land as barons, not for their churches, so they are counted apart — Odo's Kent was the earldom of the King's half-brother, not church land."
   params:
     county:
       type: string
@@ -79,7 +79,7 @@
     ORDER BY churchPercent DESC
 
 - name: DomesdayPloughStocking
-  description: Per county, plough teams at work against ploughlands — land for so many ploughs — over the entries that give both; under 100 means land lay unploughed (understocked), over 100 more teams than land. THE answer for "was the land fully farmed", "where were there too few ploughs". Ploughlands are a fiscal or agrarian estimate whose meaning historians debate; read the ratio as Domesday's own comparison, not a measured yield.
+  description: "Per county, plough teams at work against ploughlands. Land for so many ploughs — over the entries that give both; under 100 means land lay unploughed (understocked), over 100 more teams than land. THE answer for \"was the land fully farmed\", \"where were there too few ploughs\". Ploughlands are a fiscal or agrarian estimate whose meaning historians debate; read the ratio as Domesday's own comparison, not a measured yield."
   cypher: |
     MATCH (e:DomesdayEntry)
     WHERE e.ploughTeams IS NOT NULL AND e.ploughlands IS NOT NULL AND e.ploughlands > 0
@@ -88,7 +88,7 @@
     ORDER BY stockingPercent
 
 - name: DomesdayFateOfEnglishLords
-  description: What became of the great English lords of 1066 — each lay lord's entries and value in 1066 beside what the same name held anywhere in 1086. THE answer for "what happened to the English aristocracy", "who lost most at the Conquest", "did Harold's family keep anything". A bare name in 1086 may be a different man.
+  description: "What became of the great English lords of 1066. Each lay lord's entries and value in 1066 beside what the same name held anywhere in 1086. THE answer for \"what happened to the English aristocracy\", \"who lost most at the Conquest\", \"did Harold's family keep anything\". A bare name in 1086 may be a different man. Lay lords only, matched by name; the top `limit`."
   params:
     limit:
       type: int

@@ -7,7 +7,7 @@
 # it touches. The share is an approximation, and the views say so.
 
 - name: DomesdayThenAndNow
-  description: One Domesday place in 1086 beside the same place today — its households, plough teams and value in 1086 (summed over the entries about it, an entry that describes several places shared equally among them; mostPlacesInOneEntry says when that happened), the civil parish it lies in now with its 2021 households and residents, its neighbourhood's 2025 deprivation decile and rural-urban class, the nearest modern place-name, and whether it looks lost. THE answer for "what is Abberley like now", "how has <place> changed since Domesday", "is <place> still there".
+  description: "One Domesday place in 1086 beside the same place today. Its households, plough teams and value in 1086 (summed over the entries about it, an entry that describes several places shared equally among them; mostPlacesInOneEntry says when that happened), the civil parish it lies in now with its 2021 households and residents, its neighbourhood's 2025 deprivation decile and rural-urban class, the nearest modern place-name, and whether it looks lost. THE answer for \"what is Abberley like now\", \"how has <place> changed since Domesday\", \"is <place> still there\". One place only, by exact placeId."
   params:
     placeId:
       type: string
@@ -33,7 +33,7 @@
            p.wikipedia AS wikipedia, p.wikidataId AS wikidataId
 
 - name: DomesdayGrowth
-  description: 'How much each parish has grown since Domesday — the households of its vills in 1086 beside the households of 2021, and the ratio. THE answer for "which places have grown most since 1086", "which villages are hardly bigger than in Domesday", "where are there fewer households than in 1086".'
+  description: "How much each parish has grown since Domesday. The households of its vills in 1086 beside the households of 2021, and the ratio. THE answer for \"which places have grown most since 1086\", \"which villages are hardly bigger than in Domesday\", \"where are there fewer households than in 1086\". Only parishes whose vills had at least `minHouseholds` households in 1086."
   params:
     order:
       type: string
@@ -62,7 +62,7 @@
     LIMIT $limit
 
 - name: DomesdayRichThenRichNow
-  description: 'Whether the rich places of 1086 are the comfortable places of 2025: the correlation across places between 1086 value and 2025 deprivation decile, with how much the sample can tell. THE answer for "were the richest Domesday manors still affluent", "does Domesday wealth predict wealth today".'
+  description: "Whether the rich places of 1086 are the comfortable places of 2025. The correlation across places between 1086 value and 2025 deprivation decile, with how much the sample can tell. THE answer for \"were the richest Domesday manors still affluent\", \"does Domesday wealth predict wealth today\". English places only (the indices are England's); a correlation, not a cause."
   params:
     county:
       type: string
@@ -76,7 +76,7 @@
     RETURN correlate(toFloat(value), toFloat(n.imd2025Decile)) AS value1086VsDecile2025
 
 - name: DomesdayLostVillages
-  description: Places Domesday names that may be lost — with no Wikidata settlement and no same-named modern place within 2 km — with what Domesday recorded there, the nearest modern place-name and its distance. THE answer for "which Domesday villages have disappeared", "lost villages in <county>". CANDIDATES, not findings — a grid error, a renamed place or a surviving farm can look lost; the ones with many households in 1086 are the interesting ones. A name that survives in its parish's (Hardwicke in Elmstone Hardwicke) and a quarter of a town (Westgate, Canterbury) are left out.
+  description: "Places Domesday names that may be lost. With no Wikidata settlement and no same-named modern place within 2 km — with what Domesday recorded there, the nearest modern place-name and its distance. THE answer for \"which Domesday villages have disappeared\", \"lost villages in <county>\". CANDIDATES, not findings — a grid error, a renamed place or a surviving farm can look lost; the ones with many households in 1086 are the interesting ones. A name that survives in its parish's (Hardwicke in Elmstone Hardwicke) and a quarter of a town (Westgate, Canterbury) are left out."
   params:
     county:
       type: string
@@ -107,7 +107,7 @@
 # which the app reports as "today's figures need realm-uk-streets".
 
 - name: DomesdayPlaceToday
-  description: 'A Domesday place today, from its district and neighbourhood: median pay, population by age, crime per 1,000, benefit claimants, 2025 deprivation rank, population density. THE answer for "what is <Domesday place> like today", "how prosperous is Abberley now". Needs realm-uk-streets.'
+  description: "A Domesday place today, from its district and neighbourhood. Median pay, population by age, crime per 1,000, benefit claimants, 2025 deprivation rank, population density. THE answer for \"what is <Domesday place> like today\", \"how prosperous is Abberley now\". Needs realm-uk-streets. One place only; district-level figures are the district's, not the village's."
   params:
     placeId:
       type: string

@@ -32,7 +32,7 @@
       description: "The Wikipedia article for a place, through Wikidata: `(p:DomesdayPlace)-[:WIKIPEDIA]->(w:DomesdayWikipedia)`."
 
 - name: DomesdayWikipediaMention
-  description: "A Wikipedia page that MENTIONS a name, from Wikipedia's own search for the name with `Domesday` — most often a village the person held, their family, or an event, and only sometimes an article about them. Never an identification. Reached from the name as a Concept: `(c:Concept {value: 'Merlesveinn'})-[:RELEVANT_TO {via: 'keyword'}]->(m:DomesdayWikipediaMention)`; up to six, ranked by Wikipedia."
+  description: "One Wikipedia page, keyed by its article title `key`, that MENTIONS a name, from Wikipedia's own search for the name with `Domesday` — most often a village the person held, their family, or an event, and only sometimes an article about them. Never an identification. Reached from the name as a Concept: `(c:Concept {value: 'Merlesveinn'})-[:RELEVANT_TO {via: 'keyword'}]->(m:DomesdayWikipediaMention)`; up to six, ranked by Wikipedia."
   properties:
     key:
       identity: true

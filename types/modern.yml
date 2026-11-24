@@ -10,7 +10,7 @@
 # household in 1086, the census households in 2021 — never Domesday households with residents.
 
 - name: ModernParish
-  description: "A civil parish today (December 2022 boundaries), or an unparished area of a town, that one or more Domesday places lie in, with its Census 2021 figures. Reached from DomesdayPlace by NOW_IN. Unparished areas (codes beginning E43) and parishes under 50 residents have no census figures here. THE thing to compare a Domesday vill with: households2021 beside the vill's 1086 households."
+  description: "One civil parish today, keyed by `parishCode` (December 2022 boundaries), or an unparished area of a town, that one or more Domesday places lie in, with its Census 2021 figures. Reached from DomesdayPlace by NOW_IN. Unparished areas (codes beginning E43) and parishes under 50 residents have no census figures here. THE thing to compare a Domesday vill with: households2021 beside the vill's 1086 households."
   userAnchor: false
   examples:
     # STEERING — households today are households2021, NEVER usualResidents2021 (that is people):
@@ -56,13 +56,13 @@
       description: "Residents aged 65 and over, 2021."
     areaHectares:
       type: number
-      description: "Area of the generalised boundary, hectares (approximate)."
+      description: "Area of the generalised boundary in hectares (1 ha = 10,000 square metres), approximate."
     residentsPerHectare:
       type: number
       description: "Usual residents per hectare, 2021."
 
 - name: ModernNeighbourhood
-  description: "A 2021 Lower Layer Super Output Area (about 1,500 people) that a Domesday place lies in, with the English Indices of Deprivation 2025 and its rural-urban class. Reached from DomesdayPlace by NOW_IN_NEIGHBOURHOOD. Decile 1 is the most deprived tenth of England's neighbourhoods, 10 the least. Welsh neighbourhoods have no deprivation figures here (the indices are England's)."
+  description: "One 2021 Lower Layer Super Output Area, keyed by `lsoa21Code` (about 1,500 people), that a Domesday place lies in, with the English Indices of Deprivation 2025 and its rural-urban class. Reached from DomesdayPlace by NOW_IN_NEIGHBOURHOOD. Decile 1 is the most deprived tenth of England's neighbourhoods, 10 the least. Welsh neighbourhoods have no deprivation figures here (the indices are England's)."
   userAnchor: false
   properties:
     lsoa21Code:
@@ -80,10 +80,10 @@
       description: "IMD 2025 decile: 1 the most deprived tenth, 10 the least."
     incomeDecile2025:
       type: int
-      description: "Income-deprivation decile, 2025."
+      description: "Income-deprivation decile, 2025: 1 the most income-deprived 10% of English neighbourhoods, 10 the least."
     employmentDecile2025:
       type: int
-      description: "Employment-deprivation decile, 2025."
+      description: "Employment-deprivation decile, 2025: 1 the most employment-deprived 10% of English neighbourhoods, 10 the least."
     ruc21Code: "Rural-Urban Classification 2021 code, e.g. `UN1`."
     ruc21Name: "Its description, e.g. `Urban: Nearer to a major town or city`."
     urbanRural: "`Urban` or `Rural`."

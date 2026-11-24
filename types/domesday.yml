@@ -32,7 +32,7 @@
       description: "True when the county's entries are in Great Domesday, and so in this realm."
 
 - name: DomesdayHundred
-  description: "A hundred (a wapentake in the Danelaw), the subdivision of a county Domesday was surveyed by. IN its DomesdayCounty. Its entries reach it by IN_HUNDRED, once each: sum a hundred's figures over (e:DomesdayEntry)-[:IN_HUNDRED]->(h), never through DESCRIBES and the places, which counts an entry once per place. Filter a county's hundreds by the HUNDRED's county (`h.countyName = 'Worcestershire'`): an entry's IN_HUNDRED points at its own county's hundred of that name, so a detached part (Oswaldslow's land in Gloucestershire places) counts with the hundred it belonged to."
+  description: "One hundred, keyed by `hundredId` (`WOR:Doddingtree`): a hundred (a wapentake in the Danelaw) is the subdivision of a county Domesday was surveyed by. IN its DomesdayCounty. Its entries reach it by IN_HUNDRED, once each: sum a hundred's figures over (e:DomesdayEntry)-[:IN_HUNDRED]->(h), never through DESCRIBES and the places, which counts an entry once per place. Filter a county's hundreds by the HUNDRED's county (`h.countyName = 'Worcestershire'`): an entry's IN_HUNDRED points at its own county's hundred of that name, so a detached part (Oswaldslow's land in Gloucestershire places) counts with the hundred it belonged to."
   userAnchor: false
   properties:
     hundredId:
@@ -45,7 +45,7 @@
       values: ["Bedfordshire", "Berkshire", "Buckinghamshire", "Cambridgeshire", "Cheshire", "Cornwall", "Derbyshire", "Devon", "Dorset", "Essex", "Gloucestershire", "Hampshire", "Herefordshire", "Hertfordshire", "Huntingdonshire", "Kent", "Leicestershire", "Lincolnshire", "Middlesex", "Norfolk", "Northamptonshire", "Nottinghamshire", "Oxfordshire", "Rutland", "Shropshire", "Somerset", "Staffordshire", "Suffolk", "Surrey", "Sussex", "Warwickshire", "Wiltshire", "Worcestershire", "Yorkshire"]
 
 - name: DomesdayPlace
-  description: "A place Domesday names — a vill, in Hull's modern spelling (`Abberley`, `Milton Keynes`). IN its DomesdayHundred; NOW_IN the ModernParish and NOW_IN_NEIGHBOURHOOD the ModernNeighbourhood its grid square's centre lies in today. Reached from the entries about it by DESCRIBES, and from entries that name it as a dependency by INCLUDES. Many names recur: there are several Abbertons and dozens of Nortons, so expect more than one place per name and tell them apart by county. Find a named place by exact name, `toLower(p.name) = 'norton'`; CONTAINS only when the asker gives part of a name, since it takes Spaxton for Paxton and the Dunhams for Dunham."
+  description: "One place Domesday names, keyed by Hull's `placeId` — a vill, in Hull's modern spelling (`Abberley`, `Milton Keynes`). IN its DomesdayHundred; NOW_IN the ModernParish and NOW_IN_NEIGHBOURHOOD the ModernNeighbourhood its grid square's centre lies in today. Reached from the entries about it by DESCRIBES, and from entries that name it as a dependency by INCLUDES. Many names recur: there are several Abbertons and dozens of Nortons, so expect more than one place per name and tell them apart by county. Find a named place by exact name, `toLower(p.name) = 'norton'`; CONTAINS only when the asker gives part of a name, since it takes Spaxton for Paxton and the Dunhams for Dunham."
   userAnchor: false
   examples:
     # STEERING — finding or listing PLACES needs no entry: match the place alone, by exact name, case-insensitively
@@ -101,7 +101,7 @@
       description: "True when no Wikidata settlement and no same-named modern place within 2 km survives — a candidate lost or deserted village. A candidate, not a finding."
 
 - name: DomesdayPerson
-  description: "A person or institution Domesday names, from Hull's index: one record per name PER COUNTY, so a magnate who held in twenty counties is twenty records sharing a name (`Robert, Count of Mortain`). To ask about a person across England, match on `canonicalName` and aggregate by it: `name` keeps Hull's editorial brackets, so one man is indexed as `Earl Harold`, `(Earl) Harold` and `{Earl} Harold`, and grouping by `name` splits him. A name is not always one person — there are many Alwins — so a plain name across counties may be several people. Reached from entries by role. THE YEAR IS IN THE NAME: a LORD in 1086, the richest landholder of 1086, whoever held land in 1086, is TENANT_IN_CHIEF (held of the King) — never LORD_1066, which is ONLY the holder before the Conquest, and is never summed against value1086. Roles: LORD_1066, OVERLORD_1066, MAN_OF_OVERLORD_1066, HELD_PART_1066, TENANT_IN_CHIEF, TENANT_1086, SUBTENANT_1086, HELD_PART_1086, URBAN_HOLDER_1066, URBAN_HOLDER_1086, HOLDER_1070, CLAIMANT, DEFENDANT, OFFICIAL, NAMES."
+  description: "A person or institution Domesday names, keyed by `personId` in Hull's index: one record per name PER COUNTY, so a magnate who held in twenty counties is twenty records sharing a name (`Robert, Count of Mortain`). To ask about a person across England, match on `canonicalName` and aggregate by it: `name` keeps Hull's editorial brackets, so one man is indexed as `Earl Harold`, `(Earl) Harold` and `{Earl} Harold`, and grouping by `name` splits him. A name is not always one person — there are many Alwins — so a plain name across counties may be several people. Reached from entries by role. THE YEAR IS IN THE NAME: a LORD in 1086, the richest landholder of 1086, whoever held land in 1086, is TENANT_IN_CHIEF (held of the King) — never LORD_1066, which is ONLY the holder before the Conquest, and is never summed against value1086. Roles: LORD_1066, OVERLORD_1066, MAN_OF_OVERLORD_1066, HELD_PART_1066, TENANT_IN_CHIEF, TENANT_1086, SUBTENANT_1086, HELD_PART_1086, URBAN_HOLDER_1066, URBAN_HOLDER_1086, HOLDER_1070, CLAIMANT, DEFENDANT, OFFICIAL, NAMES."
   userAnchor: false
   examples:
     # STEERING — a "lord" or "landholder" IN 1086 is TENANT_IN_CHIEF. LORD_1066 is the 1066 holder, read with
@@ -208,7 +208,7 @@
       description: "How many entries name this record, in any role."
 
 - name: DomesdayEntry
-  description: "NOT RECORDED in Domesday, so never answer with a proxy — horses (only cobs, uncounted), ages, women or children as such, wages or earnings, anything between 1086 and today, the name of any peasant; `valueLater` is the value WHEN ACQUIRED (between 1066 and 1086), never a later year; `ploughlands` is land for so many ploughs, not acres. For those, return WHERE false. TODAY is held apart, for the places Domesday names only: a place NOW_IN its ModernParish (Census 2021) and NOW_IN_NEIGHBOURHOOD its ModernNeighbourhood (deprivation 2025). One entry of Domesday Book — Great Domesday, or Little Domesday for Essex, Norfolk and Suffolk (`edition`) — as the Phillimore edition numbers it (`ref`: `Worcestershire 15,8`). Only Little Domesday counts people and stock for 1066 and for when acquired: those counts are on DomesdayFigures, reached by FIGURES_1066 and FIGURES_WHEN_ACQUIRED — the entry's own figures are 1086. A before-and-after question about PEOPLE can be answered for East Anglia alone. The figures are parsed from the entry's coded clauses; an absent figure means the entry does not state it, which is NOT zero. Money is in PENCE: £1 = 20s = 240d, so value1086 2520 is £10 10s. Edges: DESCRIBES the place it is about, INCLUDES the dependencies it names, IN its county, IN_HUNDRED each hundred it is about (once each — the path for a hundred's figures), and one edge per person by role — LORD_1066 (held the manor before the Conquest), TENANT_IN_CHIEF (held it of the king in 1086), TENANT_1086 (held it of the tenant-in-chief in 1086), and the rest listed on DomesdayPerson."
+  description: "One Domesday entry, keyed by `entryId`. NOT RECORDED in Domesday, so never answer with a proxy — horses (only cobs, uncounted), ages, women or children as such, wages or earnings, anything between 1086 and today, the name of any peasant; `valueLater` is the value WHEN ACQUIRED (between 1066 and 1086), never a later year; `ploughlands` is land for so many ploughs, not acres. For those, return WHERE false. TODAY is held apart, for the places Domesday names only: a place NOW_IN its ModernParish (Census 2021) and NOW_IN_NEIGHBOURHOOD its ModernNeighbourhood (deprivation 2025). One entry of Domesday Book — Great Domesday, or Little Domesday for Essex, Norfolk and Suffolk (`edition`) — as the Phillimore edition numbers it (`ref`: `Worcestershire 15,8`). Only Little Domesday counts people and stock for 1066 and for when acquired: those counts are on DomesdayFigures, reached by FIGURES_1066 and FIGURES_WHEN_ACQUIRED — the entry's own figures are 1086. A before-and-after question about PEOPLE can be answered for East Anglia alone. The figures are parsed from the entry's coded clauses; an absent figure means the entry does not state it, which is NOT zero. Money is in PENCE: £1 = 20s = 240d, so value1086 2520 is £10 10s. Edges: DESCRIBES the place it is about, INCLUDES the dependencies it names, IN its county, IN_HUNDRED each hundred it is about (once each — the path for a hundred's figures), and one edge per person by role — LORD_1066 (held the manor before the Conquest), TENANT_IN_CHIEF (held it of the king in 1086), TENANT_1086 (held it of the tenant-in-chief in 1086), and the rest listed on DomesdayPerson."
   userAnchor: false
   examples:
     # STEERING — every figure (villagers, slaves, mills, plough teams, households, value) is a property
@@ -350,13 +350,13 @@
       description: "Free men (liberi homines). Distinct from freemen (sokemen). Free men, liberi homines."
     priests:
       type: number
-      description: "Priests."
+      description: "Priests counted among the 1086 households, as the entry states it; absent means not stated, not zero. A church is hasChurch."
     burgesses:
       type: number
       description: "Burgesses, townspeople."
     ploughTeams:
       type: number
-      description: "lordsTeams + mensTeams."
+      description: "Plough teams at work in 1086 (conventionally eight oxen each), in units of teams: lordsTeams + mensTeams. Absent means not stated."
     value1066:
       type: number
       description: "What the manor was WORTH a year to its lord before the Conquest (TRE), in PENCE — the answer to \"what was X worth in 1066\"."
@@ -384,7 +384,7 @@
     section: "When the entry is in a part of a county's text other than its fiefs: `Lincolnshire claims`, `Yorkshire claims`, `Yorkshire summary`, `Huntingdonshire claims`, `Bruce fief`."
     taxPence:
       type: number
-      description: "What the village paid of each 20 shillings levied on its hundred, in pence (Little Domesday)."
+      description: "What the village paid of each 20 shillings levied on its hundred, in pence (d; 240d = £1). Little Domesday only."
     fief: "The fief (chapter) the entry is in, e.g. `Land of St Peter's of Westminster`."
     edition:
       description: "`Great Domesday` or `Little Domesday` (Essex, Norfolk, Suffolk)."
@@ -404,34 +404,34 @@
       description: "Riders (radmen)."
     menAtArms:
       type: number
-      description: "Men-at-arms."
+      description: "Men-at-arms (milites) counted among the 1086 households, as the entry states it; absent means not stated, not zero. A head count, in units of households."
     frenchmen:
       type: number
-      description: "Frenchmen."
+      description: "Frenchmen (francigenae) counted among the 1086 households, as the entry states it; absent means not stated, not zero."
     englishmen:
       type: number
-      description: "Englishmen."
+      description: "Englishmen, as distinct from Frenchmen, counted among the 1086 households, as the entry states it; absent means not stated, not zero."
     smiths:
       type: number
-      description: "Smiths."
+      description: "Smiths counted among the 1086 households, as the entry states it; absent means not stated, not zero."
     swineherds:
       type: number
-      description: "Swineherds."
+      description: "Swineherds counted among the 1086 households. No entry in this realm states any, so it is always absent: never read it as zero."
     beekeepers:
       type: number
-      description: "Beekeepers."
+      description: "Beekeepers counted among the 1086 households, as the entry states it; absent means not stated, not zero. Three entries state any."
     fishermen:
       type: number
-      description: "Fishermen."
+      description: "Fishermen counted among the 1086 households, as the entry states it; absent means not stated, not zero."
     ploughlands:
       type: number
       description: "Land for this many ploughs — the arable's capacity, not the teams actually there."
     lordsTeams:
       type: number
-      description: "Plough teams in lordship (the lord's demesne)."
+      description: "Plough teams in lordship (the lord's demesne) in 1086, in units of teams."
     mensTeams:
       type: number
-      description: "Plough teams of the villagers and other peasants."
+      description: "Plough teams of the villagers and other peasants in 1086, in units of teams."
     geldUnits:
       type: number
       description: "Tax assessment in geld units: hides (most of England), carucates (the Danelaw) or sulungs (Kent), each counted as one unit, with their fractions."
@@ -446,10 +446,10 @@
       description: "Woodland, measured by the pigs it would feed."
     fisheries:
       type: number
-      description: "Fisheries."
+      description: "Fisheries on the holding in 1086 (a half is a share of one); absent means not stated, not zero."
     saltHouses:
       type: number
-      description: "Salt-houses."
+      description: "Salt-houses or salt-pans (salinae) on the holding in 1086; absent means not stated, not zero."
     text: "What the entry says, in the Phillimore translation as Hull transcribed it (CC BY-NC-SA) — the READING text: what an editor supplied is in square brackets, `***` is a figure the scribe left blank, and `?` after a name is the editor's doubt. Hull's apparatus (folios, marginalia, fief headings, struck-out words) is removed; `textEdition` keeps it. Absent for Yorkshire, which Hull's transcription omits, and for fief headings. Quote it for what Domesday SAYS; read the figures for what it COUNTS."
     textEdition: "The same entry exactly as Hull's edition publishes it, apparatus and all: [= =] fief heading, ?M? marginalia and chapter numbers, <210c> folio and column, other <…> Hull's conjectured byname, [* *] an identification made elsewhere, ^[ ]^ implied meaning, [ ] words the Phillimore editor supplied, { } a word left in Latin or its Domesday spelling, {{ }} words struck out (never count a figure inside them). For citation and close reading."
     pigs:
@@ -460,7 +460,7 @@
       description: "Cobs \u2014 working horses \u2014 counted in Little Domesday."
     beehives:
       type: number
-      description: "Beehives."
+      description: "Hives of bees on the holding in 1086, as stated. Little Domesday (Essex, Norfolk, Suffolk) only; absent means not stated, not zero."
     oxen:
       type: number
       description: "Oxen counted apart from plough teams."
@@ -478,13 +478,13 @@
       description: "Sheep (counted mostly in the south-west, from Exeter Domesday)."
     cattle:
       type: number
-      description: "Cattle."
+      description: "Head of cattle (livestock) in 1086, as stated — mostly the south-west and Little Domesday; absent means not stated, not zero."
     goats:
       type: number
-      description: "Goats."
+      description: "Goats (livestock) in 1086, as stated — mostly the south-west and Little Domesday; absent means not stated, not zero."
 
 - name: DomesdayFigures
-  description: "What Little Domesday (Essex, Norfolk, Suffolk) counted on a holding BEFORE 1086 — in 1066 (moment `1066`, reached by FIGURES_1066) or when the holder acquired it (moment `when acquired`, by FIGURES_WHEN_ACQUIRED). The same names as the entry's 1086 figures: villagers, slaves, ploughTeams, sheep … Great Domesday counted none of this, so a then-and-now comparison of people or stock is East Anglia's only. Compare over entries that state BOTH years: `MATCH (e:DomesdayEntry)-[:FIGURES_1066]->(f:DomesdayFigures) WHERE f.slaves IS NOT NULL AND e.slaves IS NOT NULL RETURN sum(f.slaves) AS slaves1066, sum(e.slaves) AS slaves1086`. Parsed from the translation."
+  description: "One entry's figures at one moment, keyed by `figuresId`: what Little Domesday (Essex, Norfolk, Suffolk) counted on a holding BEFORE 1086 — in 1066 (moment `1066`, reached by FIGURES_1066) or when the holder acquired it (moment `when acquired`, by FIGURES_WHEN_ACQUIRED). The same names as the entry's 1086 figures: villagers, slaves, ploughTeams, sheep … Great Domesday counted none of this, so a then-and-now comparison of people or stock is East Anglia's only. Compare over entries that state BOTH years: `MATCH (e:DomesdayEntry)-[:FIGURES_1066]->(f:DomesdayFigures) WHERE f.slaves IS NOT NULL AND e.slaves IS NOT NULL RETURN sum(f.slaves) AS slaves1066, sum(e.slaves) AS slaves1086`. Parsed from the translation."
   userAnchor: false
   examples:
     # STEERING — before and after the Conquest, for PEOPLE: only Little Domesday counted them in 1066, on DomesdayFigures:
@@ -536,13 +536,13 @@
       description: "`households` at that moment, as the entry states it; absent when it does not."
     lordsTeams:
       type: number
-      description: "`lordsTeams` at that moment, as the entry states it; absent when it does not."
+      description: "Plough teams in lordship at that moment, in units of teams, as the entry states it; absent when it does not."
     meadowAcres:
       type: number
       description: "`meadowAcres` at that moment, as the entry states it; absent when it does not."
     mensTeams:
       type: number
-      description: "`mensTeams` at that moment, as the entry states it; absent when it does not."
+      description: "The peasants' plough teams at that moment, in units of teams, as the entry states it; absent when it does not."
     mills:
       type: number
       description: "`mills` at that moment, as the entry states it; absent when it does not."
@@ -554,7 +554,7 @@
       description: "`pigs` at that moment, as the entry states it; absent when it does not."
     ploughTeams:
       type: number
-      description: "`ploughTeams` at that moment, as the entry states it; absent when it does not."
+      description: "Plough teams at that moment, in units of teams, as the entry states it; absent when it does not."
     priests:
       type: number
       description: "`priests` at that moment, as the entry states it; absent when it does not."
