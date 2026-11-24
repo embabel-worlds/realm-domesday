@@ -9,12 +9,12 @@
 # to — and say so in their descriptions.
 
 - name: DomesdayTextMentions
-  description: Every entry whose text mentions a word or phrase, exactly — with the place, county and the text itself. Complete, not a top-ten. THE answer for "where does Domesday mention eels / vineyards / salt / a market / a castle", "which entries say 'waste'", and for counting them. Yorkshire has no text in this edition.
+  description: "Every entry whose text mentions a word or phrase, exactly. With the place, county and the text itself. Complete, not a top-ten. THE answer for \"where does Domesday mention eels / vineyards / salt / a market / a castle\", \"which entries say 'waste'\", and for counting them. Yorkshire has no text in this edition."
   params:
     word:
       type: string
       default: "eels"
-      description: "A word or phrase, any case, e.g. `eels`, `vineyard`, `salt-pan`, `hawk`, `burgesses`."
+      description: "A word or phrase, any case, matched as a partial (substring) match anywhere in the text, e.g. `eels`, `vineyard`, `salt-pan`, `hawk`."
     county:
       type: string
       default: ""
@@ -32,12 +32,12 @@
     LIMIT $limit
 
 - name: DomesdayTextMentionsByCounty
-  description: How many entries in each county mention a word or phrase in their text — the map of where a thing was. THE answer for "which county had most vineyards / salt-pans / fisheries mentioned", "where were eels rendered". Counts entries that mention it, not the things themselves.
+  description: "How many entries in each county mention a word or phrase in their text. The map of where a thing was. THE answer for \"which county had most vineyards / salt-pans / fisheries mentioned\", \"where were eels rendered\". Counts entries that mention it, not the things themselves."
   params:
     word:
       type: string
       default: "salt"
-      description: "A word or phrase, any case."
+      description: "A word or phrase, any case, matched as a partial (substring) match anywhere in the text."
   cypher: |
     MATCH (e:DomesdayEntry)
     WHERE e.text IS NOT NULL AND toLower(e.text) CONTAINS toLower($word)
@@ -45,7 +45,7 @@
     ORDER BY entries DESC, county
 
 - name: DomesdaySearchText
-  description: Search what Domesday says by MEANING — a judged search over the translation, chapter by chapter, that reformulates the question, reads the candidates and returns the chapters that bear on it, with the evidence it read. THE answer for "where does Domesday talk about…", "find the entries about a dispute over a mill", "which entries describe the town being burnt". Makes model calls; for an exact word use DomesdayTextMentions.
+  description: "Search what Domesday says by MEANING. A judged search over the translation, chapter by chapter, that reformulates the question, reads the candidates and returns the chapters that bear on it, with the evidence it read. THE answer for \"where does Domesday talk about…\", \"find the entries about a dispute over a mill\", \"which entries describe the town being burnt\". Makes model calls; for an exact word use DomesdayTextMentions. At most `limit` chapters; a judged search, not an exhaustive one."
   params:
     query:
       type: string
@@ -65,7 +65,7 @@
     LIMIT $limit
 
 - name: DomesdayWhatItSaysAbout
-  description: What Domesday says about one person — every entry naming them (any role, any county), the text of each, and an account written ONLY from those entries, citing each by ref, beside the texts it was written from. THE answer for "tell me about Leofwin the forester", "what does Domesday say about Countess Judith", "who was <name>". Makes one model call; for a magnate with hundreds of entries it reads the most valuable sixty.
+  description: "What Domesday says about one person. Every entry naming them (any role, any county), the text of each, and an account written ONLY from those entries, citing each by ref, beside the texts it was written from. THE answer for \"tell me about Leofwin the forester\", \"what does Domesday say about Countess Judith\", \"who was <name>\". Makes one model call; for a magnate with hundreds of entries it reads the most valuable sixty."
   params:
     name:
       type: string
@@ -96,12 +96,12 @@
                      'What these Domesday entries say about ' + $name + ': what they held or lost, where, of whom and when, and anything said about them. Use only these entries and cite the ref in brackets after every statement. Keep apart who did a thing and who testified to it (the Hundred, the jurors, the shire). Say plainly what the entries do not tell.') AS account
 
 - name: DomesdayExtractFromText
-  description: Pull out of the text what the figures do not code — renders of eels, salt-pans, vineyards, honey, iron, hawks — from the entries that mention a word, one list item per thing found, each with its entry. THE answer for "how many eels did Wisbech render", "what did the salt-pans of Droitwich pay", "list the vineyards". Narrows by the word first, then makes one model call over at most eighty entries.
+  description: "Pull out of the text what the figures do not code. Renders of eels, salt-pans, vineyards, honey, iron, hawks — from the entries that mention a word, one list item per thing found, each with its entry. THE answer for \"how many eels did Wisbech render\", \"what did the salt-pans of Droitwich pay\", \"list the vineyards\". Narrows by the word first, then makes one model call over at most eighty entries."
   params:
     word:
       type: string
       default: "eels"
-      description: "The word that narrows the entries read, e.g. `eels`, `salt`, `vineyard`, `honey`."
+      description: "The word that narrows the entries read, a partial (substring) match in the text, any case, e.g. `eels`, `salt`, `vineyard`, `honey`."
     what:
       type: string
       default: "each render of eels, with the number of eels and the place"
@@ -119,7 +119,7 @@
     RETURN count(e) AS entriesRead, extract(e.ref + ' ' + coalesce(e.places, '') + ': ' + e.text, $what) AS found
 
 - name: DomesdayWhyWaste
-  description: Why the land lay waste, in Domesday's words — the recurring reasons and circumstances the text gives for waste entries in a county (burnt, laid waste by the King, by the Welsh, taken into a castle or the forest), grouped into themes with their entries. THE answer for "why was the land waste", "what does Domesday say caused the devastation". One model call over at most a hundred waste entries; Yorkshire has no text.
+  description: "Why the land lay waste, in Domesday's words. The recurring reasons and circumstances the text gives for waste entries in a county (burnt, laid waste by the King, by the Welsh, taken into a castle or the forest), grouped into themes with their entries. THE answer for \"why was the land waste\", \"what does Domesday say caused the devastation\". One model call over at most a hundred waste entries; Yorkshire has no text."
   params:
     county:
       type: string
@@ -132,7 +132,7 @@
     RETURN count(e) AS entriesRead, themes(e.ref + ': ' + e.text, 'why the land is waste or what happened to it', {ai: {text: {chars: 1200}}}) AS reasons
 
 - name: DomesdayDisputes
-  description: The disputed land — entries whose text records a claim, a seizure or a judgement (the claims sections of Lincolnshire, Huntingdonshire and Yorkshire, and the invasiones elsewhere), each labelled by kind of dispute. THE answer for "who was accused of seizing land", "which holdings were disputed", "what did the jurors say". Narrows by the words of dispute first, then labels each entry with a model call.
+  description: "Disputed land: entries recording a claim, a seizure or a judgement. The disputed land — entries whose text records a claim, a seizure or a judgement (the claims sections of Lincolnshire, Huntingdonshire and Yorkshire, and the invasiones elsewhere), each labelled by kind of dispute. THE answer for \"who was accused of seizing land\", \"which holdings were disputed\", \"what did the jurors say\". Narrows by the words of dispute first, then labels each entry with a model call."
   params:
     county:
       type: string
@@ -153,7 +153,7 @@
            e.text AS text
 
 - name: DomesdayPersonWikipedia
-  description: The checked Wikipedia article for a Domesday person, when there is one — with its Wikidata and ODNB ids and how sure the match is. THE answer for "is there a Wikipedia article about <person>", "who was Odo of Bayeux". 168 of the greatest landholders are linked; for anyone else use DomesdayWikipediaMentions. Fetched live; text is CC BY-SA 4.0, given with its link.
+  description: "The checked Wikipedia article for a Domesday person, when there is one. With its Wikidata and ODNB ids and how sure the match is. THE answer for \"is there a Wikipedia article about <person>\", \"who was Odo of Bayeux\". 168 of the greatest landholders are linked; for anyone else use DomesdayWikipediaMentions. Fetched live; text is CC BY-SA 4.0, given with its link. Only hand-checked matches; no article is not evidence of no fame."
   params:
     name:
       type: string
@@ -169,7 +169,7 @@
            w.extract AS extract, w.pageUrl AS pageUrl, w.thumbnail AS thumbnail
 
 - name: DomesdayWikipediaMentions
-  description: Wikipedia pages that MENTION a name, from Wikipedia's own search for it beside "Domesday" — usually the villages a person held, their family or an event, sometimes an article about them. Pages that name them, never an identification. THE answer for "what does Wikipedia say about Leofwin the forester", "where else is Merleswein mentioned", for anyone without a checked article. Live search.
+  description: "Wikipedia pages that MENTION a name. From Wikipedia's own search for it beside \"Domesday\" — usually the villages a person held, their family or an event, sometimes an article about them. Pages that name them, never an identification. THE answer for \"what does Wikipedia say about Leofwin the forester\", \"where else is Merleswein mentioned\", for anyone without a checked article. Live search."
   params:
     name:
       type: string
@@ -182,7 +182,7 @@
     ORDER BY rank
 
 - name: DomesdayPlaceWikipedia
-  description: The English Wikipedia article for a Domesday place, reached through its Wikidata item (6 places in 10 have one) — Wikipedia's own summary, fetched live, with the links to Wikidata, Vision of Britain and the Manorial Documents Register. THE answer for "tell me about <place> today", "what does Wikipedia say about Abberley". Text is CC BY-SA 4.0, given with its link.
+  description: "The English Wikipedia article for a Domesday place. Reached through its Wikidata item (6 places in 10 have one) — Wikipedia's own summary, fetched live, with the links to Wikidata, Vision of Britain and the Manorial Documents Register. THE answer for \"tell me about <place> today\", \"what does Wikipedia say about Abberley\". Text is CC BY-SA 4.0, given with its link. Only places with a Wikidata article; nothing is stored."
   params:
     placeId:
       type: string

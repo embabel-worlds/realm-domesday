@@ -11,7 +11,7 @@
 # ── Finding things ────────────────────────────────────────────────────────────────────────────────
 
 - name: DomesdayPlaceSearch
-  description: Places whose modern name contains a word, with county, hundred, grid reference, coordinates and how many entries name them. Many names recur (several Abbertons, nineteen Nortons) — the county tells them apart. THE answer for "find <place> in Domesday", "is <place> in Domesday", "list the places called <name>".
+  description: "Places whose modern name contains a word. With county, hundred, grid reference, coordinates and how many entries name them. Many names recur (several Abbertons, nineteen Nortons) — the county tells them apart. THE answer for \"find <place> in Domesday\", \"is <place> in Domesday\", \"list the places called <name>\". A partial name match, the top `limit`; not the entries about each place."
   params:
     name:
       type: string
@@ -31,7 +31,7 @@
     LIMIT $limit
 
 - name: DomesdayPersonSearch
-  description: People and institutions whose name contains a word, one row per county record, with how many entries name them. THE answer for "find <person> in Domesday".
+  description: "People and institutions whose name contains a word. One row per county record, with how many entries name them. THE answer for \"find <person> in Domesday\". A partial name match, the top `limit` records; not their holdings."
   params:
     name:
       type: string
@@ -52,7 +52,7 @@
 # ── One place, one entry, one person ──────────────────────────────────────────────────────────────
 
 - name: DomesdayPlaceEntries
-  description: Every entry about one place (by placeId), with its figures and who held it in 1066 and 1086. THE dossier for a place.
+  description: "Every entry about one place (by placeId). With its figures and who held it in 1066 and 1086. THE dossier for a place. One place only, by exact placeId."
   params:
     placeId:
       type: string
@@ -76,7 +76,7 @@
     LIMIT 50
 
 - name: DomesdayEntryDetail
-  description: One entry (by entryId) in full — every figure it states, the places it is about and includes, every person it names with their role, and what it says (the reading text, and Hull's edition with its apparatus).
+  description: "One Domesday entry in full: figures, places, people and its text. One entry (by entryId) in full — every figure it states, the places it is about and includes, every person it names with their role, and what it says (the reading text, and Hull's edition with its apparatus). One entry only, by exact entryId."
   params:
     entryId:
       type: string
@@ -103,7 +103,7 @@
            e.isWaste AS waste, e.text AS text, e.textEdition AS textEdition
 
 - name: DomesdayPersonHoldings
-  description: Every entry naming a person (exact name, any county), with the role they held it in and its value. THE answer for "what did <person> hold", "where did <person> hold land". Roles — LORD_1066 held the manor before the Conquest; TENANT_IN_CHIEF held it of the king in 1086; TENANT_1086 held it of a tenant-in-chief.
+  description: "Every entry naming one person, with the role and its value. Every entry naming a person (exact name, any county), with the role they held it in and its value. THE answer for \"what did <person> hold\", \"where did <person> hold land\". Roles — LORD_1066 held the manor before the Conquest; TENANT_IN_CHIEF held it of the king in 1086; TENANT_1086 held it of a tenant-in-chief. Exact name only (canonicalName, any case); not a partial match."
   params:
     name:
       type: string
@@ -118,7 +118,7 @@
     LIMIT 500
 
 - name: DomesdayPersonSummary
-  description: One person's standing, by name across every county — entries and manors held by role, counties, households and total value in 1066 and 1086. THE answer for "how rich was <person>", "how much land did <person> hold".
+  description: "One person's standing, by name across every county. Entries and manors held by role, counties, households and total value in 1066 and 1086. THE answer for \"how rich was <person>\", \"how much land did <person> hold\". Exact name only; a namesake in another county is merged under that name."
   params:
     name:
       type: string
@@ -139,7 +139,7 @@
 # ── The Conquest ──────────────────────────────────────────────────────────────────────────────────
 
 - name: DomesdayGreatestLandholders
-  description: The greatest landholders of 1086 — tenants-in-chief ranked by the total annual value of the entries they held of the king, with entries, counties and households. THE answer for "who was the richest lord in 1086", "the richest landholder", "who were the richest men in 1086", "who gained most from the Conquest", "the biggest landholders". The king heads it (`King William`).
+  description: "The richest tenants-in-chief of 1086, by value of land held. The greatest landholders of 1086 — tenants-in-chief ranked by the total annual value of the entries they held of the king, with entries, counties and households. THE answer for \"who was the richest lord in 1086\", \"the richest landholder\", \"who were the richest men in 1086\", \"who gained most from the Conquest\", \"the biggest landholders\". The king heads it (`King William`). Tenants-in-chief only, not sub-tenants; the top `limit`."
   params:
     limit:
       type: int
@@ -155,7 +155,7 @@
     LIMIT $limit
 
 - name: DomesdayGreatestLords1066
-  description: The greatest landholders before the Conquest — lords of 1066 ranked by the total value of the manors they held, as Domesday records it in 1066. THE answer for "who were the richest English lords before 1066", "who held most land under Edward the Confessor". Earl Harold and King Edward lead.
+  description: "The greatest landholders before the Conquest. Lords of 1066 ranked by the total value of the manors they held, as Domesday records it in 1066. THE answer for \"who were the richest English lords before 1066\", \"who held most land under Edward the Confessor\". Earl Harold and King Edward lead. Lords of 1066 only, not 1086 holders; the top `limit`."
   params:
     limit:
       type: int
@@ -170,7 +170,7 @@
     LIMIT $limit
 
 - name: DomesdayConquestTransfers
-  description: Who replaced whom — pairs of the 1066 lord and the 1086 tenant-in-chief of the same entries, ranked by how many entries passed between them. THE answer for "who took over Harold's lands", "where did the English lords' land go".
+  description: "Who replaced whom: 1066 lord and 1086 tenant-in-chief of the same entries. Who replaced whom — pairs of the 1066 lord and the 1086 tenant-in-chief of the same entries, ranked by how many entries passed between them. THE answer for \"who took over Harold's lands\", \"where did the English lords' land go\". Only entries naming both a 1066 lord and a 1086 tenant-in-chief; the top `limit`."
   params:
     lord1066:
       type: string
@@ -190,7 +190,7 @@
     LIMIT $limit
 
 - name: DomesdayLordsByPeasants
-  description: 'Landholders ranked by the households, and the peasants among them (villagers, smallholders, cottagers, slaves), on the entries they held in one role. THE answer for "which lords ruled the most peasants", "who had the most people under them", "who held the most villagers". Role TENANT_IN_CHIEF (default, 1086), TENANT_1086 or LORD_1066 (before the Conquest).'
+  description: "Landholders ranked by the households and peasants on their land. Landholders ranked by the households, and the peasants among them (villagers, smallholders, cottagers, slaves), on the entries they held in one role. THE answer for \"which lords ruled the most peasants\", \"who had the most people under them\", \"who held the most villagers\". Role TENANT_IN_CHIEF (default, 1086), TENANT_1086 or LORD_1066 (before the Conquest). Only entries held in the chosen role; the top `limit`."
   params:
     role:
       type: string
@@ -211,7 +211,7 @@
     LIMIT $limit
 
 - name: DomesdayWomenLandholders
-  description: Women who held land, in 1066 or 1086, ranked by the entries they held — queens, countesses, widows, nuns. THE answer for "which women held land in Domesday".
+  description: "Women who held land, in 1066 or 1086, ranked by the entries they held. Queens, countesses, widows, nuns. THE answer for \"which women held land in Domesday\". Only women Hull codes as female; the top `limit`."
   params:
     limit:
       type: int
@@ -229,14 +229,14 @@
 # ── Counties, hundreds and the land ───────────────────────────────────────────────────────────────
 
 - name: DomesdayCounties
-  description: The 34 Domesday counties, with circuit and whether their entries are in Great Domesday (and so in this realm).
+  description: "The 34 Domesday counties, with circuit and which book they are in. The 34 Domesday counties, with circuit and whether their entries are in Great Domesday (and so in this realm). Counties only, no figures (see DomesdayCountySummary)."
   cypher: |
     MATCH (c:DomesdayCounty)
     RETURN c.code AS code, c.name AS county, c.circuit AS circuit, c.inGreatDomesday AS inGreatDomesday
     ORDER BY county
 
 - name: DomesdayCountySummary
-  description: 'Every county in one table — entries, households, plough teams, value in 1066 and 1086 and the change between them over entries stating both (comparableEntries), waste manors, mills and churches. THE answer for "compare the counties", "which counties lost most value after the Conquest", "where was the waste".'
+  description: "Every county side by side: entries, households, ploughs, value, waste. Every county in one table — entries, households, plough teams, value in 1066 and 1086 and the change between them over entries stating both (comparableEntries), waste manors, mills and churches. THE answer for \"compare the counties\", \"which counties lost most value after the Conquest\", \"where was the waste\". Totals per county only, not per entry or place."
   cypher: |
     MATCH (e:DomesdayEntry)
     WITH e, (e.value1066 IS NOT NULL AND e.value1086 IS NOT NULL) AS both
@@ -255,7 +255,7 @@
     ORDER BY value1086Pounds DESC
 
 - name: DomesdayCountyFigures
-  description: One county's totals in one row — or ALL ENGLAND's, with county empty — entries, households and every class of people, plough teams, ploughlands, geld units, value in 1066 and 1086, mills, meadow, woodland, livestock, and HOW MANY entries mention a church, a castle or waste (churchEntries, castleEntries, wasteEntries), with the same for manors alone (`manors`, `wasteManors`, `manorsValue1086Pence`). THE answer for "how many villagers / slaves / mills / churches / castles / goats were there in <county>" and "... in England / in Domesday altogether". Totals are sums over the entries that state each figure. Essex, Norfolk and Suffolk (Little Domesday) are included, their figures parsed from the translation.
+  description: "One county's totals in one row, or all England's with county empty. One county's totals in one row — or ALL ENGLAND's, with county empty — entries, households and every class of people, plough teams, ploughlands, geld units, value in 1066 and 1086, mills, meadow, woodland, livestock, and HOW MANY entries mention a church, a castle or waste (churchEntries, castleEntries, wasteEntries), with the same for manors alone (`manors`, `wasteManors`, `manorsValue1086Pence`). THE answer for \"how many villagers / slaves / mills / churches / castles / goats were there in <county>\" and \"... in England / in Domesday altogether\". Totals are sums over the entries that state each figure. Essex, Norfolk and Suffolk (Little Domesday) are included, their figures parsed from the translation. Totals only, never a list of entries."
   params:
     county:
       type: string
@@ -320,7 +320,7 @@
     LIMIT $limit
 
 - name: DomesdayPopulation
-  description: How many PEOPLE - England's or one county's population in 1086, answered honestly. Domesday counts heads of household, not people, so this gives the households recorded and the conventional estimate of people (four to five to a household), with a note saying what is and is not counted. THE answer for "how many people lived in England / in <county>", "what was the population", "how many inhabitants".
+  description: "Households in 1086 and the estimated people, for England or a county. How many PEOPLE - England's or one county's population in 1086, answered honestly. Domesday counts heads of household, not people, so this gives the households recorded and the conventional estimate of people (four to five to a household), with a note saying what is and is not counted. THE answer for \"how many people lived in England / in <county>\", \"what was the population\", \"how many inhabitants\"."
   params:
     county:
       type: string
@@ -334,7 +334,7 @@
            'Domesday counts heads of household, not people; the estimate multiplies by four to five, a historians convention, not a record. London and Winchester were never surveyed, and Essex, Norfolk and Suffolk are counted from figures parsed from the translation.' AS note
 
 - name: DomesdayBeforeAndAfter
-  description: 'Before and after the Conquest, for England or one county: value compared over the entries stating both years, with how many rose, fell or held; people only for Little Domesday (Essex, Norfolk, Suffolk), the one part that counted them in 1066. THE answer for "was England richer before or after the Conquest", "did Yorkshire lose value after 1066", "were there more slaves before or after the Conquest".'
+  description: "Before and after the Conquest, for England or one county. Value compared over the entries stating both years, with how many rose, fell or held; people only for Little Domesday (Essex, Norfolk, Suffolk), the one part that counted them in 1066. THE answer for \"was England richer before or after the Conquest\", \"did Yorkshire lose value after 1066\", \"were there more slaves before or after the Conquest\"."
   params:
     county:
       type: string
@@ -374,7 +374,7 @@
                 ELSE 'Values are compared over entries that give both years. People were counted before 1066 only in Little Domesday (Essex, Norfolk, Suffolk); no people comparison across the Conquest can be made for this area.' END AS note
 
 - name: DomesdayHundredSummary
-  description: Per hundred in one county — places, entries, households and value in 1066 and 1086. THE answer for "which hundred of a county had the most households / was richest". A hundred's figures are the land that lay in it, whichever county's text records it (two Herefordshire entries describe land in Worcestershire's Oswaldslow), counted once per entry.
+  description: "Per hundred in one county: places, entries, households, value. Per hundred in one county — places, entries, households and value in 1066 and 1086. THE answer for \"which hundred of a county had the most households / was richest\". A hundred's figures are the land that lay in it, whichever county's text records it (two Herefordshire entries describe land in Worcestershire's Oswaldslow), counted once per entry. One county's hundreds only."
   params:
     county:
       type: string
@@ -393,7 +393,7 @@
     ORDER BY value1086Pounds DESC
 
 - name: DomesdayRichestManors
-  description: The most valuable manors of 1086, with the place, county, tenant-in-chief and households. THE answer for "the richest manors", "the most valuable estates in Domesday". Boroughs (Shrewsbury, Oxford) are kind `urban` and left out unless asked for.
+  description: "The most valuable manors of 1086, with place, county and holder. The most valuable manors of 1086, with the place, county, tenant-in-chief and households. THE answer for \"the richest manors\", \"the most valuable estates in Domesday\". Boroughs (Shrewsbury, Oxford) are kind `urban` and left out unless asked for. Only entries stating a 1086 value; the top `limit`."
   params:
     kind:
       type: string
@@ -419,7 +419,7 @@
     LIMIT $limit
 
 - name: DomesdayValueChange
-  description: Entries whose annual value changed most between 1066 and 1086, falls first — the manors the Conquest hit hardest, or (direction `rise`) those that gained most. THE answer for "which manors lost most value", "where did value fall after 1066".
+  description: "Entries whose annual value changed most between 1066 and 1086, falls first. The manors the Conquest hit hardest, or (direction `rise`) those that gained most. THE answer for \"which manors lost most value\", \"where did value fall after 1066\"."
   params:
     direction:
       type: string
@@ -445,7 +445,7 @@
     LIMIT $limit
 
 - name: DomesdayWaste
-  description: Entries that call land waste, by county — the mark of devastation, above all the Harrying of the North (1069–70) in Yorkshire. With a county, lists its waste entries; without, counts them per county.
+  description: "Entries that call land waste, by county. The mark of devastation, above all the Harrying of the North (1069–70) in Yorkshire. With a county, lists its waste entries; without, counts them per county."
   params:
     county:
       type: string
@@ -466,7 +466,7 @@
     LIMIT $limit
 
 - name: DomesdayFeature
-  description: Lists the entries that mention a castle, a market or a church, each with its place, county and tenant-in-chief. THE answer for "where were the castles in 1086", "which places had markets", "which manors in Kent had a church". NOT a count — "how many churches / castles in <county>" is DomesdayCountyFigures (churchEntries, castleEntries).
+  description: "Entries that mention a castle, a market or a church. Lists the entries that mention a castle, a market or a church, each with its place, county and tenant-in-chief. THE answer for \"where were the castles in 1086\", \"which places had markets\", \"which manors in Kent had a church\". NOT a count — \"how many churches / castles in <county>\" is DomesdayCountyFigures (churchEntries, castleEntries)."
   params:
     feature:
       type: string
@@ -494,7 +494,7 @@
 # ── The map ───────────────────────────────────────────────────────────────────────────────────────
 
 - name: DomesdayMapPlaces
-  description: Located places with their summed households and value in 1086, for drawing a map — all England or one county.
+  description: "Located places with their summed households and value in 1086. For drawing a map — all England or one county. Only places Hull could locate; unlocated places are left out."
   params:
     county:
       type: string

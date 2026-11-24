@@ -3,7 +3,7 @@
 # Distances and shares are measured here, never inside a fixpoint (realm spec §13.5).
 
 - name: DomesdayAntecessors
-  description: Who succeeded whom — each Norman tenant-in-chief and the English lord of 1066 whose land he was given, where he holds at least half of that lord's entries in a county. THE answer for "who was <person>'s antecessor", "who took over <English lord>'s land", "which estates passed whole".
+  description: "Who succeeded whom: a Norman tenant-in-chief and his English antecessor. Who succeeded whom — each Norman tenant-in-chief and the English lord of 1066 whose land he was given, where he holds at least half of that lord's entries in a county. THE answer for \"who was <person>'s antecessor\", \"who took over <English lord>'s land\", \"which estates passed whole\". Only pairs the realm's succession rule concludes; not every transfer of land."
   params:
     name:
       type: string
@@ -22,7 +22,7 @@
     LIMIT $limit
 
 - name: DomesdayMenOf
-  description: A lord's men — the sub-tenants of 1086 who held two or more entries of the same tenant-in-chief in a county, with how many and their value. THE answer for "who were <lord>'s men", "who held of Earl Hugh", "whose man was <person>".
+  description: "A lord's men: sub-tenants holding two or more entries of him in a county. A lord's men — the sub-tenants of 1086 who held two or more entries of the same tenant-in-chief in a county, with how many and their value. THE answer for \"who were <lord>'s men\", \"who held of Earl Hugh\", \"whose man was <person>\". Only sub-tenants with two or more entries of the lord; a single holding is left out."
   params:
     name:
       type: string
@@ -41,7 +41,7 @@
     LIMIT $limit
 
 - name: DomesdayDevastation
-  description: The devastated hundreds — where much of the land lay waste, and the hundreds beside them the waste spread into — with each one's entries, waste entries and waste share, and its centre for a map. THE answer for "where was the Harrying of the North", "how far did the devastation reach", "which hundreds were laid waste".
+  description: "The devastated hundreds of a county: waste entries and waste share. The devastated hundreds — where much of the land lay waste, and the hundreds beside them the waste spread into — with each one's entries, waste entries and waste share, and its centre for a map. THE answer for \"where was the Harrying of the North\", \"how far did the devastation reach\", \"which hundreds were laid waste\". Only hundreds with waste entries and their neighbours; not the whole county."
   params:
     county:
       type: string
@@ -59,7 +59,7 @@
     ORDER BY wasteSharePercent DESC, hundred
 
 - name: DomesdayConquestSurvivors
-  description: Who held land on both sides of the Conquest — lay lords of 1066 who still held in 1086, as tenant-in-chief or as someone's tenant, under the same name in the same county, with what they held before and after. THE answer for "which English lords survived the Conquest", "did any Englishmen keep their land". Mostly English (Thorkell of Warwick, Gospatric), but Domesday records no nationality, and Edward the Confessor's Normans (Osbern son of Richard, Alfred of Marlborough) qualify too. `distinctiveName` is false for a bare name (`Ralph`, `Aelfric`), where one record may join two men.
+  description: "Who held land on both sides of the Conquest. Lay lords of 1066 who still held in 1086, as tenant-in-chief or as someone's tenant, under the same name in the same county, with what they held before and after. THE answer for \"which English lords survived the Conquest\", \"did any Englishmen keep their land\". Mostly English (Thorkell of Warwick, Gospatric), but Domesday records no nationality, and Edward the Confessor's Normans (Osbern son of Richard, Alfred of Marlborough) qualify too. `distinctiveName` is false for a bare name (`Ralph`, `Aelfric`), where one record may join two men. Same name in the same county only; a namesake elsewhere is not counted."
   params:
     limit:
       type: int

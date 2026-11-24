@@ -21,6 +21,8 @@
     extract: extract
     thumbnail: thumbnail.source
     pageUrl: content_urls.desktop.page
+  # One article by its exact title: nothing is left for the source to filter.
+  pushdown: []
   # Articles change slowly; a week keeps repeat lookups off Wikipedia, a day for a missing page.
   cache: { kind: ttl, seconds: 604800, negativeTtlSeconds: 86400 }
 
@@ -33,3 +35,5 @@
   args: { q: '"{query}" Domesday', limit: 10 }
   records: "$.pages[*]"
   k: 6
+  # A name's mentions change as slowly as the articles; a day for a name Wikipedia finds nothing for.
+  cache: { kind: ttl, seconds: 604800, negativeTtlSeconds: 86400 }
