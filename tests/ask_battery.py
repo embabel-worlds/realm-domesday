@@ -69,50 +69,11 @@ def ask(question):
         return {'rows': [], 'cypher': '', 'failure': f'{type(e).__name__}: {e}'}
 
 
-# Warning codes that mean an answer's rows or values may be missing: a source that failed, a capped
-# page, a cut traversal. Cost notes, an honest FILTER_STARVED empty, STALE_COPY, FIELDS_WITHHELD and
-# UNKNOWN_VIA leave every row in place, and are not here.
-SHORT_CODES = (
-    'PARTIAL_RESULT', 'PRODUCER_ERROR', 'NEEDS_FILTER', 'NEEDS_PRODUCER', 'FILTER_REJECTED',
-    'UNPUSHED_FILTER', 'AMBIGUOUS_LABEL', 'INCOMPLETE_TRAVERSAL', 'INCOMPLETE_RANKING',
-    'INCOMPLETE_AGGREGATE', 'INCOMPLETE_INPUT', 'MATERIALIZATION_FAILED', 'REDUCTION_FAILED',
-    'UNPARSEABLE_ANSWER', 'TERMS_UNAVAILABLE', 'COMPUTE_FAILED', 'PROPERTY_NOT_STORED',
-    'FOLLOW_CAPPED', 'UNLINKED_CHILDREN', 'RESOLUTION_DROPPED', 'AGENTIC_DEGRADED',
-    'SOURCE_UNANSWERED',
-)
-SHORT_REASONS = ('UNBOUNDED', 'PARTIAL_NOT_MATCHED', 'UNPUSHED_FILTER', 'DISCONNECTED',
-                 'INTERNAL_ERROR', 'WRITE_IN_PROGRESS', 'KILLED', 'TOO_EXPENSIVE')
-SHORT_PUBLIC = ('PARTIAL', 'REDUCTION_FAILED', 'COMPUTE_FAILED', 'PROPERTY_NOT_STORED',
-                'AGENTIC_DEGRADED', 'RATE_LIMITED', 'SOURCE_UNAVAILABLE', 'SOURCE_REJECTED',
-                'INVALID_FILTER', 'UNPUSHED_FILTER', 'TOO_BROAD', 'FETCH_CAPPED',
-                'INDEX_UNAVAILABLE', 'ARGUMENT_REFUSED')
-
-
-def short(d, figure=None):
-    """None when the engine says this answer is whole; else what to report in place of its figure,
-    `REFUSED: <why>` or `PARTIAL <figure>: <the engine's reason>`. A figure off a short answer is
-    the source's shortfall, not the realm's, and reconciling it either way says nothing."""
-    tag = 'PARTIAL' if figure is None else f'PARTIAL {figure}'
-    if 'outcome' in d or 'status' in d:  # a view envelope
-        if d.get('status') != 'SUCCEEDED':
-            return f'REFUSED: {d.get("status")} {d.get("error")}'[:240]
-        ws = [w for w in d.get('warnings') or [] if isinstance(w, dict) and w.get('code') in SHORT_PUBLIC]
-        if d.get('outcome') not in ('OK', 'EMPTY') or ws:
-            return f'{tag}: ' + (f'{ws[0]["code"]}: {ws[0].get("message", "")}' if ws else f'outcome {d.get("outcome")}')[:200]
-        return None
-    if d.get('error'):
-        return f'REFUSED: {d["error"]}'[:240]
-    ws = [w for w in d.get('warnings') or [] if isinstance(w, str) and w.split(':', 1)[0].strip() in SHORT_CODES]
-    if ws:
-        return f'{tag}: {ws[0][:200]}'
-    # The ask's own qualifier on an incomplete read, and its code for an empty no source answered.
-    if d.get('incomplete'):
-        return f'{tag}: {d["incomplete"][:200]}'
-    if d.get('emptyCause') == 'SOURCE_UNANSWERED':
-        return f'{tag}: emptyCause SOURCE_UNANSWERED'
-    if d.get('reason') in SHORT_REASONS:
-        return f'{tag}: reason {d["reason"]}'
-    return None
+# Whether an answer is the whole truth is the engine's to say, beside the rows: short() from the
+# battery library (tests/lib, pinned from embabel-worlds/realm-spec) is None when it is, else the
+# line to print in place of the figure, `REFUSED: <why>` or `PARTIAL <figure>: <the engine's reason>`.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+from short import short  # noqa: E402
 
 
 class Short(Exception):
