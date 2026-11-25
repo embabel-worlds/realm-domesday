@@ -69,8 +69,62 @@ def ask(question):
         return {'rows': [], 'cypher': '', 'failure': f'{type(e).__name__}: {e}'}
 
 
+# Warning codes that mean an answer's rows or values may be missing: a source that failed, a capped
+# page, a cut traversal. Cost notes, an honest FILTER_STARVED empty, STALE_COPY, FIELDS_WITHHELD and
+# UNKNOWN_VIA leave every row in place, and are not here.
+SHORT_CODES = (
+    'PARTIAL_RESULT', 'PRODUCER_ERROR', 'NEEDS_FILTER', 'NEEDS_PRODUCER', 'FILTER_REJECTED',
+    'UNPUSHED_FILTER', 'AMBIGUOUS_LABEL', 'INCOMPLETE_TRAVERSAL', 'INCOMPLETE_RANKING',
+    'INCOMPLETE_AGGREGATE', 'INCOMPLETE_INPUT', 'MATERIALIZATION_FAILED', 'REDUCTION_FAILED',
+    'UNPARSEABLE_ANSWER', 'TERMS_UNAVAILABLE', 'COMPUTE_FAILED', 'PROPERTY_NOT_STORED',
+    'FOLLOW_CAPPED', 'UNLINKED_CHILDREN', 'RESOLUTION_DROPPED', 'AGENTIC_DEGRADED',
+    'SOURCE_UNANSWERED',
+)
+SHORT_REASONS = ('UNBOUNDED', 'PARTIAL_NOT_MATCHED', 'UNPUSHED_FILTER', 'DISCONNECTED',
+                 'INTERNAL_ERROR', 'WRITE_IN_PROGRESS', 'KILLED', 'TOO_EXPENSIVE')
+SHORT_PUBLIC = ('PARTIAL', 'REDUCTION_FAILED', 'COMPUTE_FAILED', 'PROPERTY_NOT_STORED',
+                'AGENTIC_DEGRADED', 'RATE_LIMITED', 'SOURCE_UNAVAILABLE', 'SOURCE_REJECTED',
+                'INVALID_FILTER', 'UNPUSHED_FILTER', 'TOO_BROAD', 'FETCH_CAPPED',
+                'INDEX_UNAVAILABLE', 'ARGUMENT_REFUSED')
+
+
+def short(d, figure=None):
+    """None when the engine says this answer is whole; else what to report in place of its figure,
+    `REFUSED: <why>` or `PARTIAL <figure>: <the engine's reason>`. A figure off a short answer is
+    the source's shortfall, not the realm's, and reconciling it either way says nothing."""
+    tag = 'PARTIAL' if figure is None else f'PARTIAL {figure}'
+    if 'outcome' in d or 'status' in d:  # a view envelope
+        if d.get('status') != 'SUCCEEDED':
+            return f'REFUSED: {d.get("status")} {d.get("error")}'[:240]
+        ws = [w for w in d.get('warnings') or [] if isinstance(w, dict) and w.get('code') in SHORT_PUBLIC]
+        if d.get('outcome') not in ('OK', 'EMPTY') or ws:
+            return f'{tag}: ' + (f'{ws[0]["code"]}: {ws[0].get("message", "")}' if ws else f'outcome {d.get("outcome")}')[:200]
+        return None
+    if d.get('error'):
+        return f'REFUSED: {d["error"]}'[:240]
+    ws = [w for w in d.get('warnings') or [] if isinstance(w, str) and w.split(':', 1)[0].strip() in SHORT_CODES]
+    if ws:
+        return f'{tag}: {ws[0][:200]}'
+    # The ask's own qualifier on an incomplete read, and its code for an empty no source answered.
+    if d.get('incomplete'):
+        return f'{tag}: {d["incomplete"][:200]}'
+    if d.get('emptyCause') == 'SOURCE_UNANSWERED':
+        return f'{tag}: emptyCause SOURCE_UNANSWERED'
+    if d.get('reason') in SHORT_REASONS:
+        return f'{tag}: reason {d["reason"]}'
+    return None
+
+
+class Short(Exception):
+    """A reference view answered short or refused: there is no figure to reconcile against."""
+
+
 def view_top(name, view_args, column):
-    rows = post(f'/api/v1/views/{name}/invoke', {'args': view_args or {}}).get('data') or []
+    env = post(f'/api/v1/views/{name}/invoke', {'args': view_args or {}})
+    rows = env.get('data') or []
+    why = short(env, rows[0].get(column) if rows else None)
+    if why:
+        raise Short(f'{name}: {why}')
     return rows[0].get(column) if rows else None
 
 
@@ -162,7 +216,7 @@ def run_answerable(i, case, props):
     q, expect = case['question'], case['expect']
     result = ask(q)
     rows, cypher = result.get('rows') or [], result.get('cypher', '')
-    problem = result.get('failure')
+    problem = result.get('failure') or short(result, len(rows))
     bad = fabricated(cypher, props)
     if problem:
         pass
@@ -173,8 +227,11 @@ def run_answerable(i, case, props):
         # `column` may name several: any one of them reconciling is the figure (households, or the
         # estimate made from them)
         columns = mv['column'] if isinstance(mv['column'], list) else [mv['column']]
-        wants = [view_top(mv['name'], mv.get('args'), c) for c in columns]
-        if not any(reconciles(w, rows, c) for w, c in zip(wants, columns)):
+        try:
+            wants = [view_top(mv['name'], mv.get('args'), c) for c in columns]
+        except Short as e:
+            wants, problem = None, str(e)
+        if wants is not None and not any(reconciles(w, rows, c) for w, c in zip(wants, columns)):
             problem = f'expected {mv["name"]}.{"|".join(columns)} = {wants!r}, got {rows[:2]}'
     elif 'value' in expect:
         # a literal from Open Domesday: money may come back in pence or in pounds, within a few pence
@@ -198,14 +255,19 @@ def run_answerable(i, case, props):
     elif expect.get('nonEmpty') and not rows:
         problem = 'no rows'
     category = case.get('category', 'asked')
-    if problem and case.get('realm') and not result.get('failure'):
+    if problem and case.get('realm') and not result.get('failure') and not short(result):
         # Ground truth disagrees. If the realm's own view says what the ask said, the question was
         # answered right and the realm's DATA differs from the outside source: a data finding, kept apart.
         rv = case['realm']
-        realm_value = view_top(rv['view'], rv.get('args'), rv['column'])
-        realm_silent = realm_value in (None, [], '') or realm_value == [None]
-        if (realm_value is not None and reconciles(realm_value, rows, rv['column'])) or (realm_silent and not rows):
-            category, problem = 'data-differs', f'realm says {realm_value!r}; {problem}'
+        try:
+            realm_value = view_top(rv['view'], rv.get('args'), rv['column'])
+        except Short as e:
+            # The realm's own figure is short: it settles nothing, so the failure stands as asked.
+            problem = f'{problem}; {e}'
+        else:
+            realm_silent = realm_value in (None, [], '') or realm_value == [None]
+            if (realm_value is not None and reconciles(realm_value, rows, rv['column'])) or (realm_silent and not rows):
+                category, problem = 'data-differs', f'realm says {realm_value!r}; {problem}'
     return {'id': f'A{i}', 'question': q, 'category': category, 'ok': problem is None,
             'problem': problem, 'cypher': cypher, 'ms': result.get('cost', {}).get('ms'),
             'llmCalls': result.get('cost', {}).get('llmCalls'), 'linking': result.get('linking'), 'exposure': result.get('exposure'),

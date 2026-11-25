@@ -140,6 +140,8 @@ def main():
         rows, warnings = body.get('data') or [], body.get('warnings') or []
         problem = (f'{body.get("status")} {body.get("outcome")} {body.get("error") or body.get("message")}'
                    if body.get('status') != 'SUCCEEDED'
+                   # PARTIAL is still SUCCEEDED: its rows are not the view's answer, warned or not.
+                   else f'PARTIAL {len(rows)}: outcome {body.get("outcome")}' if body.get('outcome') not in ('OK', 'EMPTY')
                    else 'no rows' if not rows else '; '.join(map(str, warnings)) if warnings
                    else check(rows) if check else None)
         if problem is None and view in FIRST_PAINT and not params and ms > BUDGET_MS:
